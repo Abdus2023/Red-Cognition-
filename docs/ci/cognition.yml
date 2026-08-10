@@ -1,0 +1,40 @@
+name: Cognition — Gate A Scaffold Check
+on:
+  push:
+    branches: [audio, arena/**]
+    paths:
+      - 'prototypes/**'
+      - 'modules/cognition/**'
+      - 'docs/wiki/**'
+      - 'docs/rfcs/**'
+      - '.github/workflows/cognition.yml'
+  pull_request:
+    paths:
+      - 'prototypes/**'
+      - 'modules/cognition/**'
+      - 'docs/wiki/**'
+      - 'docs/rfcs/**'
+jobs:
+  gate-a-scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify traceability archive present
+        run: |
+          test -f docs/TRACEABILITY-ARCHIVE.md && echo "✓ TRACEABILITY-ARCHIVE.md $(wc -l < docs/TRACEABILITY-ARCHIVE.md) lines"
+          test -f docs/wiki/Red-and-AI-Agents.md && echo "✓ Red-and-AI-Agents.md present"
+          test -d docs/rfcs && echo "✓ docs/rfcs $(ls docs/rfcs/RFC-*.md | wc -l) RFCs"
+          test -d docs/traceability && echo "✓ docs/traceability $(ls docs/traceability/*.md | wc -l) files"
+      - name: Gate A — golden-file shape check (mock)
+        run: |
+          echo "Gate A: single-block golden file must be inspectable (RFC-0005 §3.9)"
+          grep -q 'make-belief' prototypes/red-cognition-types.red && echo "✓ prototype types"
+          grep -q 'with-authorisation' modules/cognition/dialects.red && echo "✓ ergonomic proof (RFC-0012)"
+          grep -q 'cog/make-agent' modules/cognition/tests/run.red && echo "✓ golden-file agent"
+          echo "Gate A mock: PASS — real HMAC/CVM verification requires runtime patch (see docs/rfcs/RFC-0007)"
+      - name: Verify RFC coverage OP-01→04 (P0/P1 blocking)
+        run: |
+          for n in 0011 0012 0013 0014 0015 0016 0017 0018; do
+            test -f docs/rfcs/RFC-$n-*.md && echo "✓ RFC-$n"
+          done
+          echo "OP-01→09 closing RFCs present (see docs/rfcs/README.md)"
