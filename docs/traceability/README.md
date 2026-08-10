@@ -1,6 +1,6 @@
 # Red/Cognition Traceability Suite — Index
 
-**Master Archive:** [`../TRACEABILITY-ARCHIVE.md`](../TRACEABILITY-ARCHIVE.md) — 776-line formal auditor's report containing all phases 0–5, appendices, and mandatory provenance per item. **Start there for the complete intellectual history.**
+**Master Archive:** [`../TRACEABILITY-ARCHIVE.md`](../TRACEABILITY-ARCHIVE.md) — 814-line formal auditor's report (v1.1, Amendment #1 including MSG-10 `Red_and_AI_Agents.md`) containing all phases 0–5, appendices, and mandatory provenance per item. **Start there for the complete intellectual history.**
 
 This `docs/traceability/` suite splits the master archive's **Phase 4** ten deliverables into individually citable Markdown files (each retains Origin / Evolution / Final / Status provenance). The suite together with `docs/wiki/` (20 canonical + analysis files, 8177 lines) constitutes the formal engineering traceability archive for the 9-turn Red/Cognition research conversation.
 
@@ -14,8 +14,9 @@ This `docs/traceability/` suite splits the master archive's **Phase 4** ten deli
 | 5 | [`05-Formal-Model-Traceability.md`](05-Formal-Model-Traceability.md) | Phase 4.4 — 15 formal models → RFC mappings (BDI, LoT, CoALA, GWT, RHTT, etc.) | Master §4.4 |
 | 6 | [`06-Dependency-Graph.md`](06-Dependency-Graph.md) | Phase 4.5 — Conceptual RFC DAG + technical file DAG (Mermaid) | Master §4.5 |
 | 7 | [`07-Implementation-Roadmap.md`](07-Implementation-Roadmap.md) | Phase 4.6 — 12-phase roadmap (-1→11) with gates A–D | Master §4.6 |
-| 8 | [`08-Open-Problems-Registry.md`](08-Open-Problems-Registry.md) | Phase 4.7 — 13 open problems OP-01→13 with severity & closing RFC | Master §4.7 |
+| 8 | [`08-Open-Problems-Registry.md`](08-Open-Problems-Registry.md) | Phase 4.7 — 13 open problems OP-01→13 with severity & closing RFC (OP-14 in Amendment) | Master §4.7 + Amendment |
 | 9 | [`09-Future-RFC-Roadmap.md`](09-Future-RFC-Roadmap.md) | Phase 4.8 — RFC-011→025 future roadmap, priority & dependencies | Master §4.8 |
+| 10 | [`10-Amendment-Red-and-AI-Agents.md`](10-Amendment-Red-and-AI-Agents.md) | Amendment 1 — Integration of `Red_and_AI_Agents.md` as MSG-10 / `RED-AI-SYNTHESIS-001`, reconstruction rationale, OP-14 delta tracking | Master Amendment Log |
 
 **Conventions (all files):** Every item carries **Origin** (MSG-01..09 + Stable ID), **Evolution** (how it changed), **Final Representation** (RFC/Component/REQ), **Status** (`Implemented`/`Proposed`/`Rejected`/`Open Question`). No early discussion is ignored; failed approaches are preserved (see ADR-002, ADR-004, `00-Research-Timeline §0.3`).
 
