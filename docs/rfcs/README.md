@@ -19,6 +19,26 @@ All RFCs satisfy the mandatory provenance rule **Origin / Evolution / Final Repr
 | [0010](RFC-0010-Analysis-and-Grounding-Suite.md) | Analysis & Grounding Suite (Meta-RFC) | All `*-ANALYSIS-001` | MSG-01–08 | `Implemented` | All `*-Analysis.md` (8 files) |
 | Synthesis | [Red and AI Agents](../../docs/wiki/Red-and-AI-Agents.md) | `RED-AI-SYNTHESIS-001` | MSG-10 | `Draft` | `Red-and-AI-Agents.md` (canon synthesis of 0001–0009) |
 
-Future RFCs `0011→0025` are tracked in `docs/traceability/09-Future-RFC-Roadmap.md` and will be added here as they are drafted (see `docs/TRACEABILITY-ARCHIVE.md` §4.8). Process: draft in this index, close corresponding `OP-01→13` from `docs/traceability/08-Open-Problems-Registry.md`, update `docs/TRACEABILITY-ARCHIVE.md` Amendment Log.
+Future RFCs `0011→0025` — **all now drafted** (see commits `ce65dd5` for 0011→0014, this commit for 0015→0025):
+
+| RFC | OP Closed | Priority | Title |
+|-----|-----------|----------|-------|
+| 0011 | OP-01 | P0 Blocking | Ecosystem Bridge |
+| 0012 | OP-02 | P1 | Ergonomic Proof |
+| 0013 | OP-03 | P1 | Totality |
+| 0014 | OP-04 | P1 | Cognitive Lock File |
+| 0015 | OP-05 | P1 | Cooperative Yield |
+| 0016 | OP-06+08 | P0 | MESI Coherence |
+| 0017 | OP-07 | P0 Safety | Misalignment Gate |
+| 0018 | OP-09 | P1 | Mnemonic Sovereignty |
+| 0019 | OP-10 | P2 | Red JIT |
+| 0020 | OP-11 | P1 | Calibrated Confidence |
+| 0021 | OP-12 | P1 | Attention Liveness |
+| 0022 | OP-13 | P2 | Skill Algebra |
+| 0023 | MSG-09 open | P2 | Lexer v2 |
+| 0024 | MSG-07 object | P2 | Cognitive Object Model |
+| 0025 | Roadmap-derived | P3 Future | Proof-Carrying Artifact (only roadmap-derived RFC per horizon note) |
+
+Process per `docs/TRACEABILITY-ARCHIVE.md` §4.8: each closes its `OP-xx`, updates `08-Open-Problems-Registry.md` to `Closed (RFC-00yy)` on merge.
 
 **How to review an RFC:** Each file carries a *Provenance* header table (Origin / Evolution / Final / Status) plus the canonical content verbatim from `docs/wiki`, reorganised into IETF-style sections (Abstract, Motivation, Specification, Consequences, Traceability). Changes vs `docs/wiki` are diff-marked; no early discussion is omitted.
