@@ -1,16 +1,16 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #25, sub-message [259], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-025-original-part*.md
-  Status in corpus: RFC-0057 CDTCP v1.2 (Candidate for Final Ratification); supersedes v1.0 ([255]) and v1.1 ([257]) drafts (preserved in archive; D-83). Reviews: [256] (v1.0: ten normative additions), [258] (v1.1: ten remaining gaps), [260] (v1.2: ≈9.5/10, thirteen remaining gaps incl. coordinator recovery, commit durability, timeout semantics, error schema, security; "suitable for Candidate for Final Ratification"). No ratification decision present in corpus.
+  Origin: corpus message #26, sub-message [265], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-026-original-part*.md
+  Status in corpus: RFC-0057 CDTCP v1.3 (Candidate for Final Ratification); three successive iterations under the same version label: [261] → [263] (adds §7.1 Wire Message Schemas) → [265] (adds Prepared vote schema) (D-85/D-86); supersedes v1.0 [255], v1.1 [257], v1.2 [259] (preserved in archive). RATIFIED per review assessment [266] ("Ready for Ratification") and user ratification record [267]. Reviews [262]/[264]/[266] preserved in archive.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
 
 
-**RFC-0057 — Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.2**
+**RFC-0057 — Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.3**
 
-**Version:** 1.2  
+**Version:** 1.3  
 
 **Status:** Candidate for Final Ratification  
 
@@ -66,19 +66,33 @@ TransactionManifest {
 
     Timeout,
 
+    Priority,
+
+    Deadline,
+
     ReplayPolicy,
+
+    RetryPolicy,
+
+    VersionConstraints,
 
     TraceContext,
 
-    CompensationPlan,
-
-    VersionConstraints
+    CompensationPlan
 
 }
 
 ```
 
-### 4. Participant State Machine
+### 4. Transaction Identifier Requirements
+
+- `TransactionID` **MUST** be globally unique.
+
+- A `TransactionID` **MUST NOT** be reused after completion.
+
+- Participants **MUST** reject duplicate `BeginTransaction` messages for completed transactions.
+
+### 5. Participant State Machine
 
 Every transaction participant **MUST** follow this state machine:
 
@@ -112,7 +126,7 @@ Committed
 
 ```
 
-### 5. Coordinator State Machine
+### 6. Coordinator State Machine
 
 The transaction coordinator **MUST** follow this state machine:
 
@@ -146,7 +160,7 @@ Archived
 
 ```
 
-### 6. Standard Protocol Messages
+### 7. Standard Protocol Messages
 
 CDTCP defines the following core message types:
 
@@ -174,7 +188,67 @@ CDTCP defines the following core message types:
 
 - `Status`
 
-### 7. Transaction Log Schema
+#### 7.1 Wire Message Schemas (Normative)
+
+```
+
+Prepare {
+
+    TransactionID,
+
+    Epoch,
+
+    ParticipantID,
+
+    ManifestHash
+
+}
+
+Prepared {
+
+    TransactionID,
+
+    Epoch,
+
+    ParticipantID,
+
+    Vote: Commit | Abort
+
+}
+
+Commit {
+
+    TransactionID,
+
+    Epoch,
+
+    DecisionProof
+
+}
+
+Abort {
+
+    TransactionID,
+
+    Epoch,
+
+    Reason
+
+}
+
+Compensate {
+
+    TransactionID,
+
+    Epoch,
+
+    CompensationPlan
+
+}
+
+```
+
+### 8. Transaction Log Schema
 
 Every transaction decision **MUST** be recorded in a deterministic log:
 
@@ -202,7 +276,7 @@ TransactionLogEntry {
 
 ```
 
-### 8. Deterministic Ordering
+### 9. Deterministic Ordering
 
 Concurrent transactions **MUST** be ordered according to:
 
@@ -214,7 +288,7 @@ Concurrent transactions **MUST** be ordered according to:
 
 Replay **MUST** preserve the same ordering.
 
-### 9. Isolation Semantics
+### 10. Isolation Semantics
 
 CDTCP defines the following isolation levels:
 
@@ -232,7 +306,7 @@ CDTCP defines the following isolation levels:
 
 | Serializable     | Appears to execute sequentially                  | Not allowed            |
 
-### 10. Commit Decision Rules
+### 11. Commit Decision Rules
 
 A transaction **MAY** commit only when all of the following are true:
 
@@ -244,7 +318,21 @@ A transaction **MAY** commit only when all of the following are true:
 
 - Policy evaluation has succeeded.
 
-### 11. Failure Matrix
+### 12. Commit Durability
+
+A commit decision **MUST** be durably recorded before `Commit` messages are emitted.
+
+### 13. Timeout Semantics
+
+- Timeout **MUST** start at the beginning of the `Prepare` phase.
+
+- Timeout **MUST** include any compensation phase.
+
+- Timeout **MUST** reset upon receipt of a heartbeat.
+
+- Timeout policy **MUST** be deterministic and declared in the `TransactionManifest`.
+
+### 14. Failure Matrix
 
 The protocol defines the following normative failure behaviors:
 
@@ -262,7 +350,7 @@ The protocol defines the following normative failure behaviors:
 
 | Capability revoked       | Immediate abort                            |
 
-### 12. Idempotency
+### 15. Idempotency
 
 The following messages **MUST** be idempotent:
 
@@ -272,7 +360,17 @@ The following messages **MUST** be idempotent:
 
 - `Compensate`
 
-### 13. Transaction Events
+### 16. Compensation Ordering
+
+Compensation actions **MUST** be executed in reverse dependency order of the original transaction steps.
+
+Nested compensation **MUST** be explicitly declared in the `CompensationPlan`.
+
+### 17. Read-Only Participants
+
+A participant that only performs read operations **MAY** respond with `ReadOnly` during the `Prepare` phase and transition directly to `Archived` upon receiving a `Commit` message.
+
+### 18. Transaction Events
 
 CDTCP defines the following standard events (integrated with RFC-0018):
 
@@ -298,7 +396,45 @@ CDTCP defines the following standard events (integrated with RFC-0018):
 
 - `TransactionArchived`
 
-### 14. Standard CLI
+### 19. Security
+
+CDTCP integrates with RFC-0022 (Identity and Trust) and RFC-0025 (Security Policy).
+
+Requirements:
+
+- Coordinator election **MUST** be authenticated.
+
+- Transaction integrity **MUST** be protected.
+
+- Replay protection tokens **MUST** be employed.
+
+- Coordinator and participant identities **MUST** be verified.
+
+### 20. Transaction Error Schema
+
+```
+
+TransactionError {
+
+    Code,
+
+    Category,
+
+    Retryable,
+
+    Participant,
+
+    Phase,
+
+    Cause,
+
+    TraceReference
+
+}
+
+```
+
+### 21. Standard CLI
 
 A conforming implementation **SHOULD** provide the following commands:
 
@@ -322,7 +458,7 @@ cog tx verify
 
 ```
 
-### 15. Conformance Profiles
+### 22. Conformance Profiles
 
 CDTCP defines the following conformance profiles:
 
@@ -340,7 +476,7 @@ CDTCP defines the following conformance profiles:
 
 | **Verified** | Proof-backed transaction correctness              |
 
-### 16. Verification Integration
+### 23. Verification Integration
 
 Every transaction **SHOULD** produce or reference verification artifacts (RFC-0052), including:
 
@@ -354,11 +490,11 @@ Every transaction **SHOULD** produce or reference verification artifacts (RFC-00
 
 - Transaction coverage metrics
 
-### 17. Relationship to Other RFCs
+### 24. Relationship to Other RFCs
 
 CDTCP integrates with RFC-0002, RFC-0006, RFC-0023, RFC-0055, and RFC-0056.
 
-### 18. Open Questions
+### 25. Open Questions
 
 The following areas require future specification:
 
@@ -372,6 +508,6 @@ The following areas require future specification:
 
 ---
 
-**RFC-0057 — Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.2** is now ready for **Final Ratification Review**.
+**RFC-0057 — Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.3** is now ready for **Final Ratification Review**.
 
-This version incorporates a normative `TransactionManifest`, participant state machine, coordinator state machine, standard protocol messages, transaction log schema, deterministic ordering rules, isolation semantics, commit decision rules, failure matrix, idempotency requirements, transaction events, standard CLI, conformance profiles, and verification integration, bringing it in line with the precision of the strongest RFCs in the series.
+This version incorporates a normative `TransactionManifest`, participant state machine, coordinator state machine, standard protocol messages with wire schemas, transaction log schema, deterministic ordering rules, isolation semantics, commit decision rules, commit durability, timeout semantics, failure matrix, idempotency requirements, compensation ordering, read-only participant handling, transaction events, security requirements, transaction error schema, standard CLI, conformance profiles, and verification integration, bringing it in line with the precision of the strongest RFCs in the series.

@@ -168,3 +168,7 @@ Current scaffold totals: 12 documents in `specs/`, 46 files in `rfcs/` (42 RFC d
 ## Message #25 update — rfcs/ populated with RFC-0054…RFC-0057; RFC-0053 updated (2026-08-11)
 
 `rfcs/` now contains **65 files**: 57 RFC documents (RFC-0001…RFC-0057) + 8 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049, RFC-0050, RFC-0052, RFC-0053). Changes: RFC-0053 scaffold updated to v1.2 ([241], ratified per [244]/[245]/[247]) + new RFC-0053-ratification-record.md (revised record [247]); new RFC-0054-cadfp-agent-discovery-federation.md ([249]), RFC-0055-cmcwp-multi-agent-coordination.md ([251]), RFC-0056-csmksp-shared-memory-knowledge-sync.md ([253]), RFC-0057-cdtcp-distributed-transaction.md ([259] v1.2) — documented placement per RC-000 §8, byte-exact from archive.
+
+## Message #26 update — rfcs/ populated with RFC-0058…RFC-0059; RFC-0057 updated (2026-08-11)
+
+`rfcs/` now contains **69 files**: 59 RFC documents (RFC-0001…RFC-0059) + 10 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049, RFC-0050, RFC-0052, RFC-0053, RFC-0057, RFC-0058). Changes: RFC-0057 scaffold updated to v1.3 third iteration ([265], ratified per [266]/[267]) + new RFC-0057-ratification-record.md ([267]); new RFC-0058-ctwp-transaction-wire-protocol.md ([275] v1.2, ratified per [276]/[277]/[278]) + RFC-0058-ratification-record.md ([277]); new RFC-0059-ctstp-transaction-security-trust.md ([279] v1.0; CHATGPT v1.1 proposal [280] archived, not scaffolded) — documented placement per RC-000 §8, byte-exact from archive.

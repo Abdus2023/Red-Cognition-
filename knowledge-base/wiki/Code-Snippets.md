@@ -6,7 +6,7 @@
 
 ## Count summary
 
-**Corpus totals: 1419 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419, Message #25 Annex at the bottom of this page).
+**Corpus totals: 1591 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591, Message #26 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -316,6 +316,31 @@ Message #25 breakdown:
 | [258] | 9 | SN-1402 … SN-1410 |
 | [259] | 5 | SN-1411 … SN-1415 |
 | [260] | 4 | SN-1416 … SN-1419 |
+
+Message #26 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [261] | 6 | SN-1420 … SN-1425 |
+| [262] | 5 | SN-1426 … SN-1430 |
+| [263] | 7 | SN-1431 … SN-1437 |
+| [264] | 15 | SN-1438 … SN-1452 |
+| [265] | 7 | SN-1453 … SN-1459 |
+| [266] | 11 | SN-1460 … SN-1470 |
+| [267] | 0 | — |
+| [268] | 0 | — |
+| [269] | 2 | SN-1471 … SN-1472 |
+| [270] | 18 | SN-1473 … SN-1490 |
+| [271] | 2 | SN-1491 … SN-1492 |
+| [272] | 20 | SN-1493 … SN-1512 |
+| [273] | 2 | SN-1513 … SN-1514 |
+| [274] | 21 | SN-1515 … SN-1535 |
+| [275] | 6 | SN-1536 … SN-1541 |
+| [276] | 16 | SN-1542 … SN-1557 |
+| [277] | 0 | — |
+| [278] | 10 | SN-1558 … SN-1567 |
+| [279] | 0 | — |
+| [280] | 24 | SN-1568 … SN-1591 |
 
 ## Ledger
 
@@ -24044,5 +24069,3807 @@ compensation_count
 prepare_latency
 
 commit_latency
+
+```
+
+## Message #26 Annex — SN-1420 … SN-1591 (verbatim embeddings)
+
+> Each fenced block from corpus message #26 (sub-messages [261]–[280]) embedded exactly once, unchanged from the archive (incl. the repeated RFC-0057 v1.3 fences across [261]/[263]/[265] and the identical RFC-0058 fences across [269]/[271]/[273], preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [261]
+
+**SN-1420**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    RetryPolicy,
+
+    VersionConstraints,
+
+    TraceContext,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1421**
+
+```
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   |
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1422**
+
+```
+
+Created
+
+   ↓
+
+CollectingParticipants
+
+   ↓
+
+Preparing
+
+   ↓
+
+Committing
+
+   |
+
+   ├── Aborting
+
+   ├── Recovering
+
+   └── Compensating
+
+   ↓
+
+Archived
+
+```
+
+**SN-1423**
+
+```
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1424**
+
+```
+
+TransactionError {
+
+    Code,
+
+    Category,
+
+    Retryable,
+
+    Participant,
+
+    Phase,
+
+    Cause,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1425**
+
+```
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+### Sub-message [262]
+
+**SN-1426**
+
+```
+
+Prepared
+
+    ├── Ready
+
+    ├── Aborted
+
+    └── TimedOut
+
+```
+
+**SN-1427**
+
+```
+
+Committed
+
+```
+
+**SN-1428**
+
+```
+
+Coordinator
+
+      ↓ Commit
+
+Participant
+
+      ↓ Committed
+
+Coordinator
+
+      ↓ Archive
+
+```
+
+**SN-1429**
+
+```
+
+Prepare {
+
+    TransactionID
+
+    Epoch
+
+    ParticipantID
+
+    ManifestHash
+
+}
+
+```
+
+**SN-1430**
+
+```
+
+SupportedProtocolVersions
+
+VersionConstraints
+
+NegotiatedVersion
+
+```
+
+### Sub-message [263]
+
+**SN-1431**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    RetryPolicy,
+
+    VersionConstraints,
+
+    TraceContext,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1432**
+
+```
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   |
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1433**
+
+```
+
+Created
+
+   ↓
+
+CollectingParticipants
+
+   ↓
+
+Preparing
+
+   ↓
+
+Committing
+
+   |
+
+   ├── Aborting
+
+   ├── Recovering
+
+   └── Compensating
+
+   ↓
+
+Archived
+
+```
+
+**SN-1434**
+
+```
+
+Prepare {
+
+    TransactionID,
+
+    Epoch,
+
+    ParticipantID,
+
+    ManifestHash
+
+}
+
+Commit {
+
+    TransactionID,
+
+    Epoch,
+
+    DecisionProof
+
+}
+
+Abort {
+
+    TransactionID,
+
+    Epoch,
+
+    Reason
+
+}
+
+Compensate {
+
+    TransactionID,
+
+    Epoch,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1435**
+
+```
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1436**
+
+```
+
+TransactionError {
+
+    Code,
+
+    Category,
+
+    Retryable,
+
+    Participant,
+
+    Phase,
+
+    Cause,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1437**
+
+```
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+### Sub-message [264]
+
+**SN-1438**
+
+```
+
+Ready
+
+ ├── Commit
+
+ ├── Abort
+
+ ├── Timeout
+
+```
+
+**SN-1439**
+
+```
+
+Prepared -> TimedOut
+
+```
+
+**SN-1440**
+
+```
+
+Compensated -> Commit
+
+```
+
+**SN-1441**
+
+```
+
+Prepare
+
+Prepared
+
+```
+
+**SN-1442**
+
+```
+
+PrepareRejected
+
+```
+
+**SN-1443**
+
+```
+
+VoteAbort
+
+```
+
+**SN-1444**
+
+```
+
+BeginTransaction
+
+JoinTransaction
+
+Prepared
+
+Committed
+
+Aborted
+
+Heartbeat
+
+Status
+
+```
+
+**SN-1445**
+
+```
+
+DecisionProof
+
+```
+
+**SN-1446**
+
+```
+
+MaximumRetries
+
+BackoffPolicy
+
+RetryWindow
+
+RetryConditions
+
+```
+
+**SN-1447**
+
+```
+
+SupportedVersions
+
+Negotiation
+
+Downgrade rules
+
+Failure behavior
+
+```
+
+**SN-1448**
+
+```
+
+parent transaction
+
+child transaction
+
+savepoints
+
+rollback propagation
+
+```
+
+**SN-1449**
+
+```
+
+Commit record MUST reach durable storage before acknowledgements.
+
+Compensation MUST be logged before execution.
+
+Replay MUST reconstruct ordering from the transaction log.
+
+```
+
+**SN-1450**
+
+```
+
+TransactionVerificationReport
+
+ReplayHash
+
+Coverage
+
+IsolationProof
+
+CompensationProof
+
+ManifestHash
+
+```
+
+**SN-1451**
+
+```
+
+Code
+
+```
+
+**SN-1452**
+
+```
+
+PrepareTimeout
+
+CapabilityRevoked
+
+PolicyDenied
+
+ReplayMismatch
+
+ParticipantUnavailable
+
+CoordinatorLost
+
+VersionMismatch
+
+ManifestMismatch
+
+DuplicateTransaction
+
+IsolationViolation
+
+```
+
+### Sub-message [265]
+
+**SN-1453**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    RetryPolicy,
+
+    VersionConstraints,
+
+    TraceContext,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1454**
+
+```
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   |
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1455**
+
+```
+
+Created
+
+   ↓
+
+CollectingParticipants
+
+   ↓
+
+Preparing
+
+   ↓
+
+Committing
+
+   |
+
+   ├── Aborting
+
+   ├── Recovering
+
+   └── Compensating
+
+   ↓
+
+Archived
+
+```
+
+**SN-1456**
+
+```
+
+Prepare {
+
+    TransactionID,
+
+    Epoch,
+
+    ParticipantID,
+
+    ManifestHash
+
+}
+
+Prepared {
+
+    TransactionID,
+
+    Epoch,
+
+    ParticipantID,
+
+    Vote: Commit | Abort
+
+}
+
+Commit {
+
+    TransactionID,
+
+    Epoch,
+
+    DecisionProof
+
+}
+
+Abort {
+
+    TransactionID,
+
+    Epoch,
+
+    Reason
+
+}
+
+Compensate {
+
+    TransactionID,
+
+    Epoch,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1457**
+
+```
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1458**
+
+```
+
+TransactionError {
+
+    Code,
+
+    Category,
+
+    Retryable,
+
+    Participant,
+
+    Phase,
+
+    Cause,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1459**
+
+```
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+### Sub-message [266]
+
+**SN-1460**
+
+```
+
+DecisionProof
+
+```
+
+**SN-1461**
+
+```
+
+ManifestHash
+
+```
+
+**SN-1462**
+
+```
+
+ReadOnly
+
+```
+
+**SN-1463**
+
+```
+
+ReadOnly
+
+```
+
+**SN-1464**
+
+```
+
+Prepared {
+
+    Vote = ReadOnly
+
+}
+
+```
+
+**SN-1465**
+
+```
+
+ReadOnly
+
+```
+
+**SN-1466**
+
+```
+
+RetryPolicy
+
+```
+
+**SN-1467**
+
+```
+
+Epoch
+
+```
+
+**SN-1468**
+
+```
+
+Recovering
+
+```
+
+**SN-1469**
+
+```
+
+Committed
+
+```
+
+**SN-1470**
+
+```
+
+Compensating
+
+```
+
+### Sub-message [269]
+
+**SN-1471**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43445450 "CDTP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| TransactionID      | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1472**
+
+```
+
+Prepare {
+
+    TransactionID (16 bytes)
+
+    Epoch (8 bytes)
+
+    ParticipantID (16 bytes)
+
+    ManifestHash (32 bytes)
+
+}
+
+```
+
+### Sub-message [270]
+
+**SN-1473**
+
+```
+
+CognitiveTransactionEnvelope {
+
+    Header {
+
+        Magic,
+
+        ProtocolVersion,
+
+        MessageType,
+
+        Flags,
+
+        Length
+
+    }
+
+    TransactionContext {
+
+        TransactionID,
+
+        Epoch,
+
+        CoordinatorID,
+
+        ParticipantID
+
+    }
+
+    TraceContext {
+
+        TraceID,
+
+        SpanID,
+
+        ParentSpanID,
+
+        ReplaySessionID
+
+    }
+
+    SecurityContext {
+
+        Identity,
+
+        Signature,
+
+        IntegrityHash
+
+    }
+
+    Payload
+
+}
+
+```
+
+**SN-1474**
+
+```
+
+MessageType Registry
+
+0x0001 BeginTransaction
+
+0x0002 JoinTransaction
+
+0x0003 Prepare
+
+0x0004 Prepared
+
+0x0005 Commit
+
+0x0006 Committed
+
+0x0007 Abort
+
+0x0008 Aborted
+
+0x0009 Compensate
+
+0x000A Compensated
+
+0x000B Heartbeat
+
+0x000C Status
+
+0x000D Error
+
+0x000E VersionHandshake
+
+0x000F CapabilityCheck
+
+```
+
+**SN-1475**
+
+```
+
+0x8000 - 0x8FFF Experimental
+
+0x9000 - 0xFFFF Private
+
+```
+
+**SN-1476**
+
+```
+
+VersionHandshake {
+
+    SupportedMajorMin,
+
+    SupportedMajorMax,
+
+    SupportedMinorMin,
+
+    SupportedMinorMax,
+
+    SupportedFeatures,
+
+    SupportedEncodings,
+
+    NodeID
+
+}
+
+```
+
+**SN-1477**
+
+```
+
+Coordinator
+
+    |
+
+    | VersionHandshake
+
+    |
+
+    v
+
+Participant
+
+    |
+
+    | VersionHandshakeAck
+
+    |
+
+    v
+
+Negotiated CDTP/1.0
+
+```
+
+**SN-1478**
+
+```
+
+Flags uint16
+
+Bit 0:
+
+    SignedMessage
+
+Bit 1:
+
+    Compressed
+
+Bit 2:
+
+    Replayable
+
+Bit 3:
+
+    RequiresAck
+
+Bit 4:
+
+    PriorityMessage
+
+Bit 5:
+
+    ErrorResponse
+
+Bit 6:
+
+    Streaming
+
+Bit 7:
+
+    ExtensionPresent
+
+```
+
+**SN-1479**
+
+```
+
+uint8   = 1 byte
+
+uint16  = 2 bytes
+
+uint32  = 4 bytes
+
+uint64  = 8 bytes
+
+UUID    = 16 bytes
+
+Hash256 = 32 bytes
+
+```
+
+**SN-1480**
+
+```
+
+Little Endian
+
+Example:
+
+Transaction Epoch:
+
+0x0102030405060708
+
+Serialized:
+
+08 07 06 05 04 03 02 01
+
+```
+
+**SN-1481**
+
+```
+
+EncodingProfile {
+
+    EncodingID,
+
+    Version,
+
+    Features
+
+}
+
+```
+
+**SN-1482**
+
+```
+
+Connection
+
+ |
+
+ +-- Stream 1
+
+ |      Transaction A
+
+ |
+
+ +-- Stream 2
+
+ |      Transaction B
+
+ |
+
+ +-- Stream 3
+
+        Heartbeats
+
+```
+
+**SN-1483**
+
+```
+
+StreamID uint32
+
+```
+
+**SN-1484**
+
+```
+
+TransactionID
+
+StreamID
+
+SequenceNumber
+
+```
+
+**SN-1485**
+
+```
+
+MessageSequence {
+
+    TransactionID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-1486**
+
+```
+
+ReplayToken {
+
+    SessionID,
+
+    Nonce,
+
+    SequenceNumber,
+
+    ExpirationEpoch
+
+}
+
+```
+
+**SN-1487**
+
+```
+
+(TransactionID,
+
+ Epoch,
+
+ SequenceNumber,
+
+ Hash)
+
+```
+
+**SN-1488**
+
+```
+
+TransactionErrorCode
+
+0x0001 InvalidManifest
+
+0x0002 VersionMismatch
+
+0x0003 CapabilityDenied
+
+0x0004 InvalidEpoch
+
+0x0005 ReplayDetected
+
+0x0006 IntegrityFailure
+
+0x0007 ParticipantUnavailable
+
+0x0008 Timeout
+
+0x0009 CompensationFailure
+
+```
+
+**SN-1489**
+
+```
+
+                 Cognitive Application Layer
+
+                          |
+
+                          v
+
+        RFC-0055 Multi-Agent Coordination
+
+                          |
+
+                          v
+
+        RFC-0057 Distributed Transactions
+
+                          |
+
+                          v
+
+        RFC-0058 Transaction Wire Protocol
+
+                          |
+
+        -----------------------------------
+
+        TCP        QUIC        IPC        MQ
+
+        -----------------------------------
+
+                          |
+
+                          v
+
+              Cognitive Runtime Nodes
+
+```
+
+**SN-1490**
+
+```
+
+RFC-0058 v1.1
+
+Status:
+
+Candidate for Ratification
+
+```
+
+### Sub-message [271]
+
+**SN-1491**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43445450 "CDTP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| TransactionID      | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1492**
+
+```
+
+Prepare {
+
+    TransactionID (16 bytes)
+
+    Epoch (8 bytes)
+
+    ParticipantID (16 bytes)
+
+    ManifestHash (32 bytes)
+
+}
+
+```
+
+### Sub-message [272]
+
+**SN-1493**
+
+```
+
+                Cognitive Transaction Stack
+
+RFC-0057  CDTCP
+
+    |
+
+    |  Transaction Semantics
+
+    |  State Machines
+
+    |  Commit Rules
+
+    |
+
+RFC-0058  CTWP
+
+    |
+
+    |  Framing
+
+    |  Encoding
+
+    |  Versioning
+
+    |  Integrity
+
+    |  Transport Mapping
+
+    |
+
+TCP / QUIC / IPC / Message Bus
+
+```
+
+**SN-1494**
+
+```
+
+Client
+
+ |
+
+ | Supported Versions
+
+ |
+
+ v
+
+Server
+
+ |
+
+ | Selected Version
+
+ |
+
+ v
+
+Transaction Channel
+
+```
+
+**SN-1495**
+
+```
+
+Message Type | 2 bytes
+
+```
+
+**SN-1496**
+
+```
+
+MessageTypeRegistry {
+
+0x0001 BeginTransaction
+
+0x0002 JoinTransaction
+
+0x0003 Prepare
+
+0x0004 Prepared
+
+0x0005 Commit
+
+0x0006 Committed
+
+0x0007 Abort
+
+0x0008 Aborted
+
+0x0009 Compensate
+
+0x000A Compensated
+
+0x000B Heartbeat
+
+0x000C Status
+
+0x00FF Error
+
+}
+
+```
+
+**SN-1497**
+
+```
+
+Flags | 2 bytes
+
+```
+
+**SN-1498**
+
+```
+
+Flags {
+
+bit 0:
+
+  Authenticated
+
+bit 1:
+
+  Signed
+
+bit 2:
+
+  Compressed
+
+bit 3:
+
+  Encrypted
+
+bit 4:
+
+  ReplayProtected
+
+bit 5:
+
+  Priority
+
+bit 6-15:
+
+  Reserved
+
+}
+
+```
+
+**SN-1499**
+
+```
+
+CDTPEnvelope {
+
+Magic
+
+Version
+
+MessageType
+
+Flags
+
+TransactionID
+
+Epoch
+
+SenderID
+
+CoordinatorID
+
+SequenceNumber
+
+Timestamp
+
+TraceReference
+
+PayloadLength
+
+Payload
+
+IntegrityBlock
+
+}
+
+```
+
+**SN-1500**
+
+```
+
+Connection
+
+ |
+
+ +-- Stream 0
+
+ |     Handshake
+
+ |
+
+ +-- Stream 1
+
+ |     Transaction Control
+
+ |
+
+ +-- Stream 2
+
+ |     Transaction Events
+
+ |
+
+ +-- Stream 3
+
+       Compensation
+
+```
+
+**SN-1501**
+
+```
+
+SequenceNumber {
+
+    TransactionID,
+
+    SenderID,
+
+    Epoch,
+
+    Counter
+
+}
+
+```
+
+**SN-1502**
+
+```
+
+CRC32C integrity
+
+```
+
+**SN-1503**
+
+```
+
+SHA-256 hash
+
++
+
+Ed25519 signature
+
+```
+
+**SN-1504**
+
+```
+
+SHA-512
+
++
+
+Post-quantum signature profile
+
+```
+
+**SN-1505**
+
+```
+
+EncodingProfile {
+
+0x01 CISA Binary Encoding
+
+0x02 CBOR
+
+0x03 MessagePack
+
+0x04 JSON Diagnostic Mode
+
+}
+
+```
+
+**SN-1506**
+
+```
+
+CISA Binary Encoding
+
+```
+
+**SN-1507**
+
+```
+
+TransactionError
+
+```
+
+**SN-1508**
+
+```
+
+ErrorCode Registry
+
+0x0001 InvalidManifest
+
+0x0002 UnsupportedVersion
+
+0x0003 CapabilityDenied
+
+0x0004 TransactionExpired
+
+0x0005 ReplayMismatch
+
+0x0006 IntegrityFailure
+
+0x0007 AuthenticationFailure
+
+0x0008 ProtocolViolation
+
+```
+
+**SN-1509**
+
+```
+
+Candidate for Ratification
+
+```
+
+**SN-1510**
+
+```
+
+Candidate → Approved with Required Amendments
+
+```
+
+**SN-1511**
+
+```
+
+RFC-0058 v1.2
+
+        |
+
+        v
+
+Final Ratification
+
+```
+
+**SN-1512**
+
+```
+
+                 Red/Cognition Distributed Stack
+
+                 Application Layer
+
+                        |
+
+              CMCWP RFC-0055
+
+          Multi-Agent Coordination
+
+                        |
+
+              CDTCP RFC-0057
+
+        Distributed Cognitive Transactions
+
+                        |
+
+              CTWP RFC-0058
+
+          Transaction Wire Protocol
+
+                        |
+
+       --------------------------------
+
+       TCP | QUIC | IPC | Message Bus
+
+       --------------------------------
+
+                        |
+
+             Cognitive Runtime Kernel
+
+                        |
+
+              RFC-0018 Event Log
+
+              RFC-0011 Scheduler
+
+              RFC-0002 Effects
+
+```
+
+### Sub-message [273]
+
+**SN-1513**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43445450 "CDTP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| TransactionID      | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1514**
+
+```
+
+Prepare {
+
+    TransactionID (16 bytes)
+
+    Epoch (8 bytes)
+
+    ParticipantID (16 bytes)
+
+    ManifestHash (32 bytes)
+
+}
+
+```
+
+### Sub-message [274]
+
+**SN-1515**
+
+```
+
+Cognitive Transaction Model
+
+        │
+
+        ▼
+
+RFC-0057 CDTCP
+
+(Transaction semantics)
+
+        │
+
+        ▼
+
+RFC-0058 CTWP
+
+(Wire encoding + interoperability)
+
+        │
+
+        ▼
+
+Transport Layer
+
+(TCP / QUIC / IPC / MQ)
+
+```
+
+**SN-1516**
+
+```
+
+Magic
+
+Version
+
+Length
+
+Type
+
+Flags
+
+TransactionID
+
+Epoch
+
+Payload
+
+Integrity
+
+```
+
+**SN-1517**
+
+```
+
+CDTPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    TransactionID,
+
+    Epoch,
+
+    SenderID,
+
+    CoordinatorID,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1518**
+
+```
+
+BeginTransaction
+
+JoinTransaction
+
+Prepare
+
+...
+
+```
+
+**SN-1519**
+
+```
+
+MessageType Registry
+
+0x0001 BeginTransaction
+
+0x0002 JoinTransaction
+
+0x0003 Prepare
+
+0x0004 Prepared
+
+0x0005 Commit
+
+0x0006 Committed
+
+0x0007 Abort
+
+0x0008 Aborted
+
+0x0009 Compensate
+
+0x000A Compensated
+
+0x000B Heartbeat
+
+0x000C Status
+
+```
+
+**SN-1520**
+
+```
+
+Flags (2 bytes)
+
+```
+
+**SN-1521**
+
+```
+
+Flags {
+
+bit 0:
+
+    Authenticated
+
+bit 1:
+
+    Encrypted
+
+bit 2:
+
+    Compressed
+
+bit 3:
+
+    ReplayProtected
+
+bit 4:
+
+    PriorityMessage
+
+bit 5:
+
+    ControlMessage
+
+bit 6:
+
+    Streaming
+
+bits 7-15:
+
+    Reserved
+
+}
+
+```
+
+**SN-1522**
+
+```
+
+ClientHello
+
+{
+
+ SupportedVersions,
+
+ SupportedEncodings,
+
+ SupportedSecurityProfiles,
+
+ NodeID
+
+}
+
+```
+
+**SN-1523**
+
+```
+
+ServerHello
+
+{
+
+ SelectedVersion,
+
+ SelectedEncoding,
+
+ SelectedSecurityProfile,
+
+ SessionID
+
+}
+
+```
+
+**SN-1524**
+
+```
+
+Client
+
+ |
+
+ | ClientHello
+
+ |
+
+ |-------->
+
+ |
+
+ | ServerHello
+
+ |
+
+<---------
+
+ |
+
+CDTCP Messages
+
+```
+
+**SN-1525**
+
+```
+
+Encoding Profile Registry
+
+0x01 CBE
+
+(Canonical Binary Encoding)
+
+0x02 CBOR
+
+0x03 Protobuf Deterministic Mode
+
+0x04 JSON Canonical Mode
+
+```
+
+**SN-1526**
+
+```
+
+CDTCP-CBE/1
+
+```
+
+**SN-1527**
+
+```
+
+StreamID
+
+```
+
+**SN-1528**
+
+```
+
+Connection
+
+ |
+
+ +-- Stream 1
+
+ |      Transaction A
+
+ |
+
+ +-- Stream 2
+
+ |      Transaction B
+
+ |
+
+ +-- Stream 3
+
+        Heartbeats
+
+```
+
+**SN-1529**
+
+```
+
+MAY
+
+```
+
+**SN-1530**
+
+```
+
+MUST for distributed deployments
+
+```
+
+**SN-1531**
+
+```
+
+ReplayProtection {
+
+Nonce,
+
+SequenceNumber,
+
+Epoch,
+
+SessionID
+
+}
+
+```
+
+**SN-1532**
+
+```
+
+                Red/Cognition Distributed Cognition Stack
+
+                    Application Layer
+
+                           │
+
+                           ▼
+
+              RFC-0055 CMCWP
+
+        Multi-Agent Coordination Layer
+
+                           │
+
+              RFC-0056 CSMKSP
+
+        Shared Knowledge Synchronization
+
+                           │
+
+              RFC-0057 CDTCP
+
+        Distributed Transaction Layer
+
+                           │
+
+              RFC-0058 CTWP
+
+        Transaction Wire Protocol
+
+                           │
+
+        ┌──────────┬──────────┬──────────┐
+
+        ▼          ▼          ▼
+
+       QUIC       TCP        IPC
+
+```
+
+**SN-1533**
+
+```
+
+RFC-0058 v1.3
+
+Status:
+
+Candidate for Final Ratification
+
+```
+
+**SN-1534**
+
+```
+
+Status: Ratified
+
+Authority: Normative Specification
+
+```
+
+**SN-1535**
+
+```
+
+RFC-0055  Coordination
+
+RFC-0056  Shared Knowledge
+
+RFC-0057  Distributed Transactions
+
+RFC-0058  Transaction Wire Protocol
+
+```
+
+### Sub-message [275]
+
+**SN-1536**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43445450 "CDTP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| TransactionID      | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1537**
+
+```
+
+CDTPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    TransactionID,
+
+    Epoch,
+
+    SenderID,
+
+    CoordinatorID,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1538**
+
+```
+
+ClientHello {
+
+    SupportedMajorMin,
+
+    SupportedMajorMax,
+
+    SupportedMinorMin,
+
+    SupportedMinorMax,
+
+    SupportedFeatures,
+
+    SupportedEncodings,
+
+    NodeID
+
+}
+
+ServerHello {
+
+    SelectedVersion,
+
+    SelectedEncoding,
+
+    SelectedSecurityProfile,
+
+    SessionID
+
+}
+
+```
+
+**SN-1539**
+
+```
+
+Connection
+
+   |
+
+   +-- Stream 1: Transaction A
+
+   +-- Stream 2: Transaction B
+
+   +-- Stream 3: Heartbeats
+
+```
+
+**SN-1540**
+
+```
+
+MessageSequence {
+
+    TransactionID,
+
+    SenderID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-1541**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [276]
+
+**SN-1542**
+
+```
+
+                 Red/Cognition Cognitive Stack
+
+        RFC-0055 CMCWP
+
+        Multi-Agent Coordination
+
+                │
+
+                ▼
+
+        RFC-0056 CSMKSP
+
+        Shared Knowledge Synchronization
+
+                │
+
+                ▼
+
+        RFC-0057 CDTCP
+
+        Distributed Transaction Semantics
+
+                │
+
+                ▼
+
+        RFC-0058 CTWP
+
+        Transaction Wire Protocol
+
+                │
+
+                ▼
+
+        Transport Layer
+
+        TCP / QUIC / IPC / Message Bus
+
+```
+
+**SN-1543**
+
+```
+
+CDTPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    TransactionID,
+
+    Epoch,
+
+    SenderID,
+
+    CoordinatorID,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1544**
+
+```
+
+0x0001 BeginTransaction
+
+0x0002 JoinTransaction
+
+0x0003 Prepare
+
+0x0004 Prepared
+
+0x0005 Commit
+
+0x0006 Committed
+
+0x0007 Abort
+
+0x0008 Aborted
+
+0x0009 Compensate
+
+0x000A Compensated
+
+0x000B Heartbeat
+
+0x000C Status
+
+0x00FF Error
+
+```
+
+**SN-1545**
+
+```
+
+0x8000–0x8FFF Experimental
+
+0x9000–0xFFFF Vendor
+
+```
+
+**SN-1546**
+
+```
+
+Bit 0  Authenticated
+
+Bit 1  Encrypted
+
+Bit 2  Compressed
+
+Bit 3  ReplayProtected
+
+Bit 4  PriorityMessage
+
+Bit 5  ControlMessage
+
+Bit 6  Streaming
+
+Bit 7-15 Reserved
+
+```
+
+**SN-1547**
+
+```
+
+ClientHello
+
+        |
+
+        |
+
+        v
+
+ServerHello
+
+        |
+
+        |
+
+        v
+
+CDTP Session Established
+
+```
+
+**SN-1548**
+
+```
+
+CDTP-CBE/1
+
+```
+
+**SN-1549**
+
+```
+
+CDTP Connection
+
+ ├── Stream 1
+
+ │       Transaction A
+
+ │
+
+ ├── Stream 2
+
+ │       Transaction B
+
+ │
+
+ └── Stream 3
+
+         Control / Heartbeat
+
+```
+
+**SN-1550**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+**SN-1551**
+
+```
+
+FrameLength
+
+```
+
+**SN-1552**
+
+```
+
+PayloadLength
+
+```
+
+**SN-1553**
+
+```
+
+RFC-0059
+
+Cognitive Transaction Security Profile
+
+```
+
+**SN-1554**
+
+```
+
+RFC-0060
+
+Cognitive Transport Binding Protocol
+
+```
+
+**SN-1555**
+
+```
+
+CDTP over:
+
+- QUIC
+
+- TCP/TLS
+
+- Unix IPC
+
+- Message Queues
+
+```
+
+**SN-1556**
+
+```
+
+RFC-0058 — Cognitive Transaction Wire Protocol
+
+and Message Encoding v1.2
+
+STATUS:
+
+RATIFICATION APPROVED
+
+Authority:
+
+Normative Specification
+
+Role:
+
+Canonical wire interoperability layer
+
+for RFC-0057 CDTCP transactions
+
+```
+
+**SN-1557**
+
+```
+
+Goal
+
+ │
+
+ ▼
+
+Agent Coordination
+
+ │
+
+ ▼
+
+Shared Knowledge
+
+ │
+
+ ▼
+
+Transaction Creation
+
+ │
+
+ ▼
+
+Distributed Commit
+
+ │
+
+ ▼
+
+Wire-Level Exchange
+
+ │
+
+ ▼
+
+Deterministic Replay
+
+ │
+
+ ▼
+
+Verified Cognitive State
+
+```
+
+### Sub-message [278]
+
+**SN-1558**
+
+```
+
+RFC-0055
+
+Cognitive Multi-Agent Coordination
+
+          |
+
+          v
+
+RFC-0056
+
+Shared Memory Synchronization
+
+          |
+
+          v
+
+RFC-0057
+
+Distributed Transaction Semantics
+
+          |
+
+          v
+
+RFC-0058
+
+Transaction Wire Encoding
+
+          |
+
+          v
+
+Transport Layer
+
+(TCP / QUIC / IPC / Message Bus)
+
+```
+
+**SN-1559**
+
+```
+
++--------------------+
+
+| Magic Number       |
+
++--------------------+
+
+| Protocol Version   |
+
++--------------------+
+
+| Message Length     |
+
++--------------------+
+
+| Message Type       |
+
++--------------------+
+
+| Flags              |
+
++--------------------+
+
+| TransactionID      |
+
++--------------------+
+
+| Epoch              |
+
++--------------------+
+
+| Payload            |
+
++--------------------+
+
+| Integrity Block    |
+
++--------------------+
+
+```
+
+**SN-1560**
+
+```
+
+CDTPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    TransactionID,
+
+    Epoch,
+
+    SenderID,
+
+    CoordinatorID,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1561**
+
+```
+
+0x8000 - 0x8FFF
+
+Experimental
+
+0x9000 - 0xFFFF
+
+Vendor Extensions
+
+```
+
+**SN-1562**
+
+```
+
+Little Endian
+
+No Padding
+
+Canonical Field Ordering
+
+Explicit Length Prefixes
+
+Deterministic Encoding
+
+```
+
+**SN-1563**
+
+```
+
+ClientHello
+
+      |
+
+      v
+
+ServerHello
+
+      |
+
+      v
+
+CDTP Session
+
+```
+
+**SN-1564**
+
+```
+
+MUST support:
+
+CDTP-CBE/1
+
+```
+
+**SN-1565**
+
+```
+
+CDTP Connection
+
+ ├── Stream 1
+
+ │     Transaction A
+
+ │
+
+ ├── Stream 2
+
+ │     Transaction B
+
+ │
+
+ └── Stream 3
+
+       Control Messages
+
+```
+
+**SN-1566**
+
+```
+
+TransactionID
+
+Epoch
+
+SenderID
+
+SequenceNumber
+
+SessionID
+
+```
+
+**SN-1567**
+
+```
+
+Identity
+
+   |
+
+   v
+
+Authentication
+
+   |
+
+   v
+
+Authorization
+
+   |
+
+   v
+
+Cryptographic Integrity
+
+   |
+
+   v
+
+Trust Chains
+
+   |
+
+   v
+
+Secure Transaction Execution
+
+```
+
+### Sub-message [280]
+
+**SN-1568**
+
+```
+
+SecurityDecision =
+
+f(
+
+ Identity,
+
+ Capability,
+
+ Policy,
+
+ Context,
+
+ TransactionState
+
+)
+
+```
+
+**SN-1569**
+
+```
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+ReplayDetected
+
+IntegrityViolation
+
+TrustRevoked
+
+```
+
+**SN-1570**
+
+```
+
+EffectivePermission =
+
+Identity
+
++
+
+Capability
+
++
+
+Policy
+
++
+
+TransactionScope
+
+```
+
+**SN-1571**
+
+```
+
+Agent A
+
+Allowed:
+
+  Read Knowledge Graph
+
+Denied:
+
+  Modify Runtime State
+
+  Deploy Package
+
+  Alter Security Policy
+
+```
+
+**SN-1572**
+
+```
+
+Identity
+
+ |
+
+ +-- NodeID
+
+ |
+
+ +-- AgentID
+
+ |
+
+ +-- CVMID
+
+ |
+
+ +-- ServiceID
+
+```
+
+**SN-1573**
+
+```
+
+CognitiveIdentity {
+
+    IdentityID,
+
+    IdentityType,
+
+    PublicKey,
+
+    AlgorithmProfile,
+
+    Issuer,
+
+    ValidFrom,
+
+    ValidUntil,
+
+    Capabilities,
+
+    TrustLevel,
+
+    AttestationReference
+
+}
+
+```
+
+**SN-1574**
+
+```
+
+Root Trust Authority
+
+          |
+
+          v
+
+Domain Trust Authority
+
+          |
+
+          v
+
+Cognitive Runtime
+
+          |
+
+          v
+
+Agent Identity
+
+          |
+
+          v
+
+Transaction Participant
+
+```
+
+**SN-1575**
+
+```
+
+Participant A                 Participant B
+
+     Hello
+
+       |
+
+       v
+
+  Identity Proof
+
+       |
+
+       v
+
+ Signature Verify
+
+       |
+
+       v
+
+ Capability Check
+
+       |
+
+       v
+
+ Authentication Result
+
+```
+
+**SN-1576**
+
+```
+
+AuthenticationResult {
+
+    IdentityID,
+
+    Status,
+
+    TrustLevel,
+
+    Capabilities,
+
+    SessionID,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1577**
+
+```
+
+IntegrityBlock {
+
+    Algorithm,
+
+    Hash,
+
+    Signature,
+
+    KeyReference,
+
+    Timestamp,
+
+    Nonce
+
+}
+
+```
+
+**SN-1578**
+
+```
+
+Receive Message
+
+      |
+
+      v
+
+Verify Envelope
+
+      |
+
+      v
+
+Verify Integrity
+
+      |
+
+      v
+
+Verify Identity
+
+      |
+
+      v
+
+Verify Authorization
+
+      |
+
+      v
+
+Process Transaction
+
+```
+
+**SN-1579**
+
+```
+
+Signature {
+
+    Algorithm,
+
+    SignerID,
+
+    SignatureValue,
+
+    KeyID
+
+}
+
+```
+
+**SN-1580**
+
+```
+
+CDTPEnvelope
+
++
+
+Payload
+
++
+
+Sequence Information
+
+```
+
+**SN-1581**
+
+```
+
+Identity
+
++
+
+Capability
+
++
+
+Policy
+
++
+
+Transaction Context
+
+```
+
+**SN-1582**
+
+```
+
+AuthorizationDecision {
+
+    Allowed,
+
+    Denied,
+
+    Reason,
+
+    PolicyReference,
+
+    CapabilityReference
+
+}
+
+```
+
+**SN-1583**
+
+```
+
+TransactionSecurityContext {
+
+    TransactionID,
+
+    CoordinatorIdentity,
+
+    ParticipantIdentities,
+
+    GrantedCapabilities,
+
+    SecurityPolicy,
+
+    TrustLevel,
+
+    SessionKeys,
+
+    AuditReference
+
+}
+
+```
+
+**SN-1584**
+
+```
+
+ReplayProtection {
+
+    SessionID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    Nonce,
+
+    Expiration
+
+}
+
+```
+
+**SN-1585**
+
+```
+
+Confidentiality
+
+Integrity
+
+Authentication
+
+Replay Protection
+
+Forward Security
+
+```
+
+**SN-1586**
+
+```
+
+TCP + TLS
+
+QUIC
+
+Authenticated IPC
+
+Secure Message Queue
+
+```
+
+**SN-1587**
+
+```
+
+Generate
+
+   |
+
+Distribute
+
+   |
+
+Activate
+
+   |
+
+Rotate
+
+   |
+
+Revoke
+
+   |
+
+Archive
+
+```
+
+**SN-1588**
+
+```
+
+KeyCreated
+
+KeyRotated
+
+KeyRevoked
+
+KeyExpired
+
+```
+
+**SN-1589**
+
+```
+
+Attestation {
+
+    SubjectID,
+
+    Measurement,
+
+    Evidence,
+
+    Issuer,
+
+    Timestamp
+
+}
+
+```
+
+**SN-1590**
+
+```
+
+IdentityCreated
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+SignatureVerified
+
+IntegrityFailed
+
+ReplayDetected
+
+TrustRevoked
+
+SecurityPolicyViolation
+
+```
+
+**SN-1591**
+
+```
+
+RFC-0057
+
+Transaction Semantics
+
+        |
+
+        v
+
+RFC-0058
+
+Wire Protocol
+
+        |
+
+        v
+
+RFC-0059
+
+Security + Trust
+
+        |
+
+        v
+
+Secure Cognitive Transactions
 
 ```

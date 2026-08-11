@@ -376,3 +376,31 @@ The ratification records [245]/[247] include an RFC-0001…0053 status table tha
 ### Distributed plane layering (X-111)
 
 Invocation/data plane RFC-0053 CRAIP → control plane RFC-0054 CADFP (discovery/registration/federation) → coordination plane RFC-0055 CMCWP (workflows/delegation/shared goals) → knowledge plane RFC-0056 CSMKSP (shared memory/synchronization) → transaction plane RFC-0057 CDTCP (atomic multi-agent operations) ([248]/[252]/[254]/[256]/[260]). Roadmap note: actual numbering (0054 CADFP, 0055 CMCWP) follows the review-chain proposals and diverges from the [215]/[222] roadmap assignments (0054 Formal Language Semantics, 0055 Cognitive IDE) — C-11 lineage; those proposals remain undrafted at their assigned numbers.
+
+---
+
+## Message #26 additions — RFC-0057 CDTCP ratified; RFC-0058 CTWP ratified; RFC-0059 CTSTP (sub-messages [261]–[280])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #26 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0057 | CDTCP — Cognitive Distributed Transaction and Consistency Protocol | v1.0 ([255]) → v1.1 ([257]) → v1.2 ([259]) → **v1.3 in three successive same-label iterations**: [261] → [263] (adds §7.1 Wire Message Schemas) → [265] (adds Prepared vote schema) (D-85/D-86); reviews [262] (9.6/10), [264] (9.3/10), [266] ("Ready for Ratification", 9.5/10); ratification record ([267]) — **RATIFIED** | [`rfcs/RFC-0057-cdtcp-distributed-transaction.md`](../../rfcs/RFC-0057-cdtcp-distributed-transaction.md) (v1.3 per [265]), [`rfcs/RFC-0057-ratification-record.md`](../../rfcs/RFC-0057-ratification-record.md) |
+| RFC-0058 | Cognitive Transaction Wire Protocol and Message Encoding (CTWP) | v1.0 ([269]) → v1.1 ([271]) → v1.2 first iteration ([273]) — normative bodies of [269]/[271]/[273] identical (D-87/D-88); [271]/[273] closing claims of additions absent from bodies flagged by review [272] (C-15); CHATGPT-authored v1.1 candidate improvements embedded in review [270]; **v1.2 second iteration ([275])** adds envelope, message type registry, flag registry, handshake, encoding profiles, stream multiplexing, sequence ordering, replay protection, error codes; review [274] ("APPROVED WITH MINOR AMENDMENTS"); review [276] ("Decision: APPROVED FOR RATIFICATION"; "STATUS: RATIFICATION APPROVED"); ratification record ([277]); confirmation ([278]) — **RATIFIED** | [`rfcs/RFC-0058-ctwp-transaction-wire-protocol.md`](../../rfcs/RFC-0058-ctwp-transaction-wire-protocol.md) (v1.2 per [275]), [`rfcs/RFC-0058-ratification-record.md`](../../rfcs/RFC-0058-ratification-record.md) |
+| RFC-0059 | CTSTP — Cognitive Transaction Security and Trust Profile | v1.0 Draft ([279], Parent: RFC-0058 v1.2 (Ratified)); CHATGPT-authored v1.1 Candidate proposal embedded in review [280] (expanded security plane; preserved in archive, not scaffolded); no ratification decision in corpus | [`rfcs/RFC-0059-ctstp-transaction-security-trust.md`](../../rfcs/RFC-0059-ctstp-transaction-security-trust.md) (v1.0) |
+
+### Ratified set after message #26
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001, RFC-0002, RFC-0011, RFC-0042 (CADP), RFC-0046 (CODP), RFC-0047 (CPMWS), RFC-0049 (CSTS), RFC-0050 (Architecture & Conformance), RFC-0052 (CTVF), RFC-0053 (CRAIP), **RFC-0057 (CDTCP v1.3, ratified per [266]/[267])**, **RFC-0058 (CTWP v1.2, ratified per [276]/[277]/[278])**. RFC-0054/0055/0056 remain Draft; RFC-0059 v1.0 remains Draft.
+
+### Conflict C-14 — [267]/[277] status tables vs ratification events
+
+The ratification records [267] and [277] include RFC status tables that **omit RFC-0049…RFC-0052** (and [277] omits RFC-0054…0056) and list **RFC-0046/RFC-0047 as "Final Candidate"** although ratification events exist for both ([196]/[202]) — same snapshot-conflict pattern as C-9 ([179]), C-12 ([215]), C-13 ([245]/[247]). Resolution: ratification events authoritative; tables preserved verbatim; RFC Index reflects authoritative statuses.
+
+### Conflict C-15 — RFC-0058 claimed-vs-actual content in [271]/[273]
+
+The closing paragraphs of RFC-0058 v1.1 [271] and first v1.2 [273] claim incorporation of canonical envelope, registries, handshake, encoding profiles, multiplexing, replay protection, and error codes, but their normative bodies are identical to v1.0 [269] (verified programmatically) — the claimed sections are absent. Review [272] flags the gap ("gap between the claimed feature set and the normative sections"). The claimed additions first actually appear in the second v1.2 iteration [275]. Resolution: document bodies treated as authoritative; closing claims of [271]/[273] recorded as erroneous; all versions preserved.
+
+### Distributed transaction subsystem (X-112…X-116)
+
+Semantic plane RFC-0057 CDTCP (ratified) → wire plane RFC-0058 CTWP (ratified) → security plane RFC-0059 CTSTP (draft); CDTP framing/envelope/registries/handshake/encoding profiles now normative ([275]/[276]/[277]/[278]). Roadmap notes: [262] proposed RFC-0059 = transaction verification & formal proofs and RFC-0060 = advanced distributed transactions; [270] proposed RFC-0059 = CCISCP; [276]/[277] proposed RFC-0059 = CTSTP (drafted), RFC-0060 = transport binding, RFC-0061 = persistence engine — actual drafting followed the [276]/[277] assignment (C-11 lineage). [268] observation: ratified interfaces (RFC-0053/0057) constrain the still-draft foundational RFCs (RFC-0018/0022/0023), which must preserve compatibility or introduce explicit versioning.
