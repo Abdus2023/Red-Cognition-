@@ -64,7 +64,7 @@ while True:
     num = int(m.group(1))
     rest = annex[idx + m.end():]
     fm = re.search(r'^[^\S\n]*```[^\n]*\n(.*?)^[^\S\n]*```[^\n]*$', rest, re.M | re.S)
-    if fm and num >= 994:
+    if fm and 994 <= num <= 1093:
         annex_blocks.append((num, fm.group(1)))
     idx += m.end()
 check('2d annex blocks for SN-994..SN-1093 = 100', len(annex_blocks) == 100, str(len(annex_blocks)))
@@ -75,7 +75,7 @@ seq_ok = [n for n, _ in annex_blocks] == list(range(994, 1094))
 check('2f annex SN sequence 994..1093', seq_ok)
 
 # breakdown table sum
-bt = re.search(r'Message #18 breakdown:(.*?)## Ledger', cs, re.S)
+bt = re.search(r'Message #18 breakdown:(.*?)(?=Note:)', cs, re.S)
 rows = re.findall(r'\| \[(\d+)\] \| (\d+) \|', bt.group(1)) if bt else []
 check('2g breakdown table has 20 rows summing to 100', len(rows) == 20 and sum(int(r[1]) for r in rows) == 100,
       'rows=%d sum=%d' % (len(rows), sum(int(r[1]) for r in rows)))
@@ -86,12 +86,13 @@ check('2h breakdown table matches archive per-sub counts', table_ok)
 specs = sorted(f for f in os.listdir('specs') if f.endswith('.md'))
 rfcs = sorted(f for f in os.listdir('rfcs') if f.endswith('.md'))
 check('3a specs/ = 12 files', len(specs) == 12, str(len(specs)))
-check('3b rfcs/ = 46 files', len(rfcs) == 46, str(len(rfcs)))
+check('3b rfcs/ >= 46 files (monotonic)', len(rfcs) >= 46, str(len(rfcs)))
 rfc_docs = [f for f in rfcs if re.match(r'RFC-\d{4}-[a-z]', f) and 'ratification' not in f]
 records = [f for f in rfcs if 'ratification' in f]
 ids = sorted(int(re.match(r'RFC-(\d{4})', f).group(1)) for f in rfc_docs)
-check('3c RFC-0001..0042 exactly once each', ids == list(range(1, 43)), 'docs=%d records=%d' % (len(rfc_docs), len(records)))
-check('3d 4 ratification records', len(records) == 4, str(records))
+check('3c RFC-0001..0042 present (monotonic)', set(range(1, 43)) <= set(ids), 'docs=%d records=%d' % (len(rfc_docs), len(records)))
+check('3d ratification records include 0001/0002/0011/0042 (monotonic)',
+      set(int(re.match(r'RFC-(\d{4})', f).group(1)) for f in records) >= {1, 2, 11, 42}, str(records))
 
 def sub_body(n):
     b = subs18[n]
@@ -165,11 +166,11 @@ check('5a register rows include 1..18 (monotonic)', set(range(1, 19)) <= reg, st
 idx_rows = set(int(m) for m in re.findall(r'^\| \[(\d+)\] \|', st, re.M))
 check('5b sub-message index contains [161]..[180]', set(range(161, 181)) <= idx_rows)
 xs = sorted(set(int(m) for m in re.findall(r'^\| X-(\d+) \|', st, re.M)))
-check('5c X-refs contiguous X-01..X-87', xs == list(range(1, 88)), 'max=%d count=%d' % (max(xs), len(xs)))
+check('5c X-refs contiguous incl. X-01..X-87 (monotonic)', xs == list(range(1, max(xs) + 1)) and max(xs) >= 87, 'max=%d count=%d' % (max(xs), len(xs)))
 ds = sorted(set(int(m) for m in re.findall(r'^\| D-(\d+) \|', st, re.M)))
 check('5d duplicates include D-1..D-62 (monotonic)', set(range(1, 63)) <= set(ds), 'max=%d count=%d' % (max(ds), len(ds)))
 csids = sorted(set(int(m) for m in re.findall(r'^\| C-(\d+) \|', st, re.M)))
-check('5e conflicts contiguous C-1..C-10', csids == list(range(1, 11)), str(csids))
+check('5e conflicts contiguous incl. C-1..C-10 (monotonic)', csids == list(range(1, max(csids) + 1)) and max(csids) >= 10, str(csids))
 cl = open(f'{KB}/wiki/Changelog.md', encoding='utf-8').read()
 missing_cl = [i for i in range(1, 19) if ('Message #%d' % i) not in cl]
 check('5f changelog entries messages 1..18', not missing_cl, str(missing_cl))
@@ -178,7 +179,14 @@ check('5g reports message-001..018 exist (monotonic)', len(reps) >= 18, str(len(
 
 # ---------- 6. README / RFC-Index coherence ----------
 readme = open(f'{KB}/README.md', encoding='utf-8').read()
-check('6a README totals', re.search(r'\d+ messages processed', readme) and all(s in readme for s in ['**1093 code snippets**', '**12 scaffolded documents in `specs/`**', '**46 files in `rfcs/`**']))
+m_sn = re.search(r'\*\*(\d+) code snippets\*\*', readme)
+m_rf = re.search(r'\*\*(\d+) files in `rfcs/`\*\*', readme)
+check('6a README totals (monotonic: >= 1093 snippets, 12 specs, >= 46 rfcs)',
+      re.search(r'\d+ messages processed', readme)
+      and '**12 scaffolded documents in `specs/`**' in readme
+      and m_sn and int(m_sn.group(1)) >= 1093
+      and m_rf and int(m_rf.group(1)) >= 46,
+      'sn=%s rfcs=%s' % (m_sn.group(1) if m_sn else None, m_rf.group(1) if m_rf else None))
 ri = open(f'{KB}/wiki/RFC-Index.md', encoding='utf-8').read()
 check('6b RFC-Index lists RFC-0042 Ratified', re.search(r'RFC-0042.*ratified', ri, re.I) is not None)
 
