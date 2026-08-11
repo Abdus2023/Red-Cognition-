@@ -321,3 +321,32 @@ The ratification record [215] includes an RFC-0001…0049 status table that list
 - **RFC-100 reference error:** [217] v1.0 §6 referenced "Layer Interface Contract Model (RFC-100)"; flagged as a numbering conflict in review [218]; v1.1 [219] removes the RFC-100 citation ("the Layer Interface Contract Model and the Cognitive Runtime Architecture (RFC-0016)"). Both versions preserved in archive.
 - **[220] decision wording:** "Decision: ACCEPT — Ready for Ratification" with recommended transition Draft → Candidate → Final Ratification Review → Ratified; no explicit "Status: Ratified" declaration — RFC-0050 therefore remains Candidate for Ratification.
 - Review [220] describes RFC-0050 as the "architectural constitution" / "constitutional architecture layer" of Red/Cognition v1.x (cf. [216]: "Red/Cognition v1.0 Constitution").
+
+---
+
+## Message #23 additions — RFC-0050 ratified (platform constitution); RFC-0051 CMMS; RFC-0052 CTVF ratified; RFC-0053 CRAIP (sub-messages [221]–[240])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #23 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0050 | Red/Cognition v1.0 Architecture and Conformance Specification (capstone) | v1.0 ([217]) → v1.1 ([219]) → v1.2 Candidate for Final Ratification ([221]; identical re-send [223], D-76; adds §15 Memory Architecture Boundary, §16 Cognitive Application Boundary, §17 Architecture Governance Rule, Cognitive Epoch definition, ConformanceManifest schema); review [222]: "APPROVED FOR FINAL RATIFICATION"; ratification record ([224]) + ratification acknowledgement ([225]) — **RATIFIED** as the constitutional architecture specification of v1.x | [`rfcs/RFC-0050-architecture-conformance-specification.md`](../../rfcs/RFC-0050-architecture-conformance-specification.md) (v1.2), [`rfcs/RFC-0050-ratification-record.md`](../../rfcs/RFC-0050-ratification-record.md) |
+| RFC-0051 | CMMS — Cognitive Macro and Metaprogramming System | structure proposed ([226]); v1.0 Draft ([227], Parent: RFC-0050 v1.2); review [228]: "Draft → Candidate for Ratification Recommended" / "APPROVED FOR RATIFICATION PATH" with four additions (resource limits, trust model, package metadata, debugging/provenance tooling); no v1.1 or ratification in corpus | [`rfcs/RFC-0051-cmms-macro-metaprogramming.md`](../../rfcs/RFC-0051-cmms-macro-metaprogramming.md) |
+| RFC-0052 | CTVF — Cognitive Testing and Verification Framework | v1.0 Draft ([229]); review [230] (10 additions); v1.1 Candidate ([231]; D-77); review [232]: "Approved for Final Ratification"; v1.2 Candidate for Final Ratification ([233], SHOULD→MUST for core conformance); review [234]: "Ratify as a Normative Specification"; ratification acknowledgement ([235]) — **RATIFIED** as a normative specification | [`rfcs/RFC-0052-ctvf-testing-verification.md`](../../rfcs/RFC-0052-ctvf-testing-verification.md) (v1.2), [`rfcs/RFC-0052-ratification-record.md`](../../rfcs/RFC-0052-ratification-record.md) |
+| RFC-0053 | CRAIP — Cognitive Remote Agent Invocation Protocol | structure proposed ([236]); v1.0 Draft ([237]); review [238] (85–90%, 10 areas); v1.1 Candidate for Ratification ([239], adds state machine, AgentManifest, RemoteError, transport properties, enriched TraceContext; D-78); review [240]: 95–98%, recommends v1.2 (version negotiation, message schemas, streaming semantics, error categories, idempotency, verification artifacts, matrix, typo fix); "would not ratify v1.1 immediately" | [`rfcs/RFC-0053-craip-remote-agent-invocation.md`](../../rfcs/RFC-0053-craip-remote-agent-invocation.md) (v1.1) |
+
+### Ratified set after message #23
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001 (Cognitive Type System), RFC-0002 (Effect Ordering), RFC-0011 (Scheduler), RFC-0042 (CADP), RFC-0046 (CODP), RFC-0047 (CPMWS), RFC-0049 (CSTS), **RFC-0050 (Architecture & Conformance v1.2 — constitutional architecture specification, ratified per [224]/[225])**, **RFC-0052 (CTVF v1.2, ratified per [235])**. RFC-0051 v1.0 remains Draft; RFC-0053 v1.1 remains Candidate for Ratification.
+
+### Constitutional governance (RFC-0050 §17, ratified)
+
+Future RFCs **MUST NOT** violate the architectural principles, security boundaries, execution model, or conformance model defined in RFC-0050 ([221]/[224]); extensions MUST integrate through the RFC ecosystem; the v1.x platform architecture is "frozen at the constitutional level" ([224]). Ratified normative content includes: Deterministic Cognition, Capability-Oriented Execution, Event-Sourced Cognition, Provider Neutral Cognition; ConformanceManifest declaration; canonical runtime boundary; the Cognitive Epoch execution primitive; four-tier memory boundary; Cognitive Application definition; native implementation direction (Rust Core Runtime + Red Compatibility Layer).
+
+### Source quirk note
+
+[237] §12 and [239] §13 contain a stray closing parenthesis after `RemoteInvocationFailed` — preserved as received; flagged as a minor editorial issue by review [240] §8 (no corrected version in corpus).
+
+### Roadmap update (X-100/X-105 extension)
+
+Post-ratification roadmaps [224]/[225]: RFC-0051 CMMS ✓ drafted, RFC-0052 CTVF ✓ drafted+ratified, RFC-0053 CRAIP ✓ drafted, RFC-0054 Formal Language Semantics (not drafted), RFC-0055 Cognitive IDE and Interactive Development Environment (not drafted; first proposed in [222]). Drafting so far follows this sequence.

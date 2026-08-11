@@ -1,8 +1,8 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #22, sub-message [219], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-022-original-part*.md
-  Status in corpus: RFC-0050 Red/Cognition v1.0 Architecture and Conformance Specification v1.1 (Candidate for Ratification); supersedes v1.0 draft of sub-message [217] (which contained the "RFC-100" reference error flagged in review [218]; preserved in archive). Review [220]: "Decision: ACCEPT - Ready for Ratification" - no formal ratification decision present in corpus. Proposed structure [216] preserved in archive.
+  Origin: corpus message #23, sub-message [221], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-023-original-part*.md
+  Status in corpus: RFC-0050 v1.2; RATIFIED per ratification record [224] and user ratification acknowledgement [225]; supersedes v1.0 ([217]) and v1.1 ([219]) drafts (preserved in archive); [223] is an identical re-send of [221] (D-76). Constitutional governance rule (§17): future RFCs MUST NOT violate the architectural principles, security boundaries, execution model, or conformance model.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
@@ -10,9 +10,9 @@
 
 **RFC-0050 — Red/Cognition v1.0 Architecture and Conformance Specification**
 
-**Version:** 1.1  
+**Version:** 1.2  
 
-**Status:** Candidate for Ratification  
+**Status:** Candidate for Final Ratification  
 
 **Parent:** RFC-0049 Cognitive Standard Toolchain Specification v1.2 (Candidate)  
 
@@ -144,7 +144,35 @@ Red/Cognition defines three conformance levels:
 
 - **Full Conformance** — Includes complete CogOS, hardware acceleration, governance systems, and marketplace integration.
 
-Every implementation **MUST** declare its conformance level and supported RFCs via a machine-readable `ConformanceManifest`.
+Every implementation **MUST** declare its conformance level and supported RFCs via a machine-readable `ConformanceManifest`:
+
+```
+
+ConformanceManifest {
+
+    ImplementationName,
+
+    Version,
+
+    Profile,
+
+    ConformanceLevel,
+
+    SupportedRFCs,
+
+    OptionalFeatures,
+
+    SecurityLevel,
+
+    ReplayCapability,
+
+    FederationCapability,
+
+    RuntimeCapabilities
+
+}
+
+```
 
 ### 6. Runtime Architecture
 
@@ -318,6 +346,8 @@ Checkpoint Creation
 
 ```
 
+**A Cognitive Epoch** is the smallest deterministic execution interval containing observation, reasoning, planning, capability evaluation, effect execution, and state recording.
+
 ### 13. AI Model Provider Independence
 
 Red/Cognition implementations **MUST NOT** depend on a specific AI model provider. Models are treated as replaceable reasoning providers accessed through defined interfaces. This supports local models, cloud models, symbolic engines, and hybrid reasoning.
@@ -334,7 +364,37 @@ A reference implementation architecture is:
 
 - **Runtime**: Rust/Core Runtime + Red Compatibility Layer
 
-### 15. Final Architecture Diagram
+### 15. Memory Architecture Boundary
+
+The runtime **MUST** implement the four-tier memory architecture (RFC-0008):
+
+```
+
+Working Memory
+
+   ↓
+
+Episodic Memory
+
+   ↓
+
+Semantic Memory
+
+   ↓
+
+Procedural / Skill Memory
+
+```
+
+### 16. Cognitive Application Boundary
+
+**A Cognitive Application** is a deployable CPCPF artifact containing cognitive programs, capabilities, policies, dependencies, and runtime requirements.
+
+### 17. Architecture Governance Rule
+
+Future RFCs **MUST NOT** violate the architectural principles, security boundaries, execution model, or conformance model defined in this specification.
+
+### 18. Final Architecture Diagram
 
 ```
 
@@ -368,6 +428,6 @@ Hardware + Acceleration + Distributed Execution
 
 ---
 
-**RFC-0050 — Red/Cognition v1.0 Architecture and Conformance Specification v1.1** is now ready for **Final Ratification Review**.
+**RFC-0050 — Red/Cognition v1.0 Architecture and Conformance Specification v1.2** is now ready for **Final Ratification**.
 
-This document serves as the capstone specification that freezes the first-generation Red/Cognition platform and defines what it means for an implementation to be compliant. All future RFCs in the v1.x generation **MUST** be evaluated against the principles and conformance model established herein.
+This document serves as the constitutional architecture layer for the Red/Cognition v1.x generation. All future RFCs in this generation **MUST** be evaluated against the principles and conformance model established herein.

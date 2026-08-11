@@ -160,3 +160,7 @@ Current scaffold totals: 12 documents in `specs/`, 46 files in `rfcs/` (42 RFC d
 ## Message #22 update — rfcs/ populated with RFC-0048…RFC-0050; RFC-0047 updated (2026-08-11)
 
 `rfcs/` now contains **55 files**: 50 RFC documents (RFC-0001…RFC-0050) + 5 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049). Changes: RFC-0047 scaffold updated to v1.2 ([201], ratified per [202]); new scaffolds RFC-0048-cffi-foreign-function-interface.md ([205] v1.1), RFC-0049-csts-standard-toolchain.md ([211] v1.2), RFC-0049-ratification-record.md ([215]), RFC-0050-architecture-conformance-specification.md ([219] v1.1) — documented placement per RC-000 §8, byte-exact from archive.
+
+## Message #23 update — rfcs/ populated with RFC-0051…RFC-0053; RFC-0050 updated (2026-08-11)
+
+`rfcs/` now contains **60 files**: 53 RFC documents (RFC-0001…RFC-0053) + 7 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049, RFC-0050, RFC-0052). Changes: RFC-0050 scaffold updated to v1.2 ([221], ratified per [224]/[225]) + new RFC-0050-ratification-record.md ([225]); new RFC-0051-cmms-macro-metaprogramming.md ([227]), RFC-0052-ctvf-testing-verification.md ([233] v1.2, ratified per [235]), RFC-0052-ratification-record.md ([235]), RFC-0053-craip-remote-agent-invocation.md ([239] v1.1) — documented placement per RC-000 §8, byte-exact from archive.

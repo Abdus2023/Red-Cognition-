@@ -2,6 +2,17 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #23 processed ([221]–[240]: RFC-0050 ratified; RFC-0051 CMMS; RFC-0052 CTVF ratified; RFC-0053 CRAIP)
+
+- **Source:** Conversation message #23 — a 20-part transcript ([221]–[240]): RFC-0050 v1.2 ([221]; identical re-send [223]) → review "APPROVED FOR FINAL RATIFICATION" ([222]) → ratification record ([224]) + acknowledgement ([225]) — **RATIFIED** as the constitutional architecture specification; RFC-0051 CMMS: scope proposed ([226]), v1.0 Draft ([227]), review "APPROVED FOR RATIFICATION PATH" ([228]); RFC-0052 CTVF: v1.0 ([229]) → review ([230]) → v1.1 ([231]) → review ([232]) → v1.2 ([233]) → review "Ratify as a Normative Specification" ([234]) → acknowledgement ([235]) — **RATIFIED**; RFC-0053 CRAIP: structure proposed ([236]), v1.0 ([237]) → review ([238]) → v1.1 Candidate ([239]) → review 95–98% recommending v1.2 ([240]).
+- **Classification:** New knowledge; supersession (RFC-0050 scaffold updated v1.1→v1.2; CTVF/CRAIP drafts superseded); duplicates D-75…D-79 added (incl. D-76: [223] identical re-send of [221]); no new conflicts (stray-parenthesis typo in [237]/[239] preserved as received and documented). All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-023-original-part1..5.md` ([221]–[224], [225]–[228], [229]–[232], [233]–[236], [237]–[240]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — RFC-0050 updated to v1.2 ([221]) + ratification record ([225]); new RFC-0051 ([227]), RFC-0052 ([233]) + ratification record ([235]), RFC-0053 ([239]) — programmatic, byte-exact. Total: 53 RFC documents + 7 ratification records = 60 files.
+  - 119 code snippets extracted (SN-1230…SN-1348), embedded verbatim in Code Snippets Message #23 Annex (incl. duplicated RFC-0050 fences from [223] and the indented CLI fence from [236], preserved); corpus total now **1348 snippets**.
+  - Wiki pages updated (12): RFC Index (statuses, ratified set +RFC-0050/+RFC-0052, constitutional governance, roadmap), Architecture (ratified principles/runtime/memory/epoch, macro/verification/invocation layers), Data Models (ConformanceManifest, MacroExpansionRecord, Test manifests, CRAIP schemas), Workflows (macro/verification/invocation pipelines, CLIs), Security (compile-time capability model, remote security), Glossary (+14 terms), Specifications (lineage), Repository Structure, Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-101…X-105 (5). Report: `reports/message-023-report.md`.
+
 ## 2026-08-11 — Message #22 processed ([201]–[220]: RFC-0047 ratified; RFC-0048 CFFI; RFC-0049 CSTS ratified; RFC-0050 capstone)
 
 - **Source:** Conversation message #22 — a 20-part transcript ([201]–[220]): RFC-0047 CPMWS v1.2 ([201]) **RATIFIED** per ratification decision [202]; RFC-0048 CFFI v1.0 ([203]) → review ([204]) → v1.1 Candidate ([205]) → review Candidate for Final Ratification ([206]); RFC-0049 CSTS v1.0 ([207]) → v1.1 ([209]) → v1.2 ([211]; identical re-send [213]) → reviews ([208]/[210]/[212]/[214]) → **Ratification Record ([215], RATIFIED)**; RFC-0050 capstone: structure proposed ([216]), v1.0 Draft ([217], "RFC-100" reference error), review ([218]), v1.1 Candidate ([219]), review "Decision: ACCEPT — Ready for Ratification" ([220], no formal ratification); roadmaps [202] vs [215]/[216].

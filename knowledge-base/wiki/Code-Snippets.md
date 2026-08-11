@@ -6,7 +6,7 @@
 
 ## Count summary
 
-**Corpus totals: 1229 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229, Message #22 Annex at the bottom of this page).
+**Corpus totals: 1348 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348, Message #23 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -266,6 +266,31 @@ Message #22 breakdown:
 | [218] | 16 | SN-1193 … SN-1208 |
 | [219] | 6 | SN-1209 … SN-1214 |
 | [220] | 15 | SN-1215 … SN-1229 |
+
+Message #23 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [221] | 8 | SN-1230 … SN-1237 |
+| [222] | 10 | SN-1238 … SN-1247 |
+| [223] | 8 | SN-1248 … SN-1255 |
+| [224] | 11 | SN-1256 … SN-1266 |
+| [225] | 0 | — |
+| [226] | 16 | SN-1267 … SN-1282 |
+| [227] | 7 | SN-1283 … SN-1289 |
+| [228] | 20 | SN-1290 … SN-1309 |
+| [229] | 0 | — |
+| [230] | 5 | SN-1310 … SN-1314 |
+| [231] | 4 | SN-1315 … SN-1318 |
+| [232] | 5 | SN-1319 … SN-1323 |
+| [233] | 4 | SN-1324 … SN-1327 |
+| [234] | 1 | SN-1328 |
+| [235] | 0 | — |
+| [236] | 1 | SN-1329 |
+| [237] | 2 | SN-1330 … SN-1331 |
+| [238] | 6 | SN-1332 … SN-1337 |
+| [239] | 5 | SN-1338 … SN-1342 |
+| [240] | 6 | SN-1343 … SN-1348 |
 
 ## Ledger
 
@@ -19086,5 +19111,3107 @@ Ratified
                          |
 
        Federation + Governance + Hardware
+
+```
+
+## Message #23 Annex — SN-1230 … SN-1348 (verbatim embeddings)
+
+> Each fenced block from corpus message #23 (sub-messages [221]–[240]) embedded exactly once, unchanged from the archive (incl. the duplicated RFC-0050 v1.2 fences from [223] and the indented CLI fence from [236], preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [221]
+
+**SN-1230**
+
+```
+
+Cognitive Applications
+
+   ↓
+
+Cognitive Language (RFC-0043)
+
+   ↓
+
+Cognitive Standard Library (RFC-0044)
+
+   ↓
+
+Tooling & Observability (RFC-0045–0046)
+
+   ↓
+
+Package Ecosystem & Deployment (RFC-0047, RFC-0042)
+
+   ↓
+
+Compiler & Verification (RFC-0027–0032)
+
+   ↓
+
+Cognitive Intermediate Representation (RFC-0028–0029)
+
+   ↓
+
+Cognitive Virtual Machine + CISA (RFC-0012–0014)
+
+   ↓
+
+Cognitive Runtime (RFC-0016–0018)
+
+   ↓
+
+Cognitive Operating System (RFC-0019–0026)
+
+   ↓
+
+Distributed Execution & Federation (RFC-0020–0023)
+
+   ↓
+
+Hardware & Acceleration (RFC-0026)
+
+```
+
+**SN-1231**
+
+```
+
+Intent → Capability Check → Policy Validation → Effect Execution → Trace Recording
+
+```
+
+**SN-1232**
+
+```
+
+ConformanceManifest {
+
+    ImplementationName,
+
+    Version,
+
+    Profile,
+
+    ConformanceLevel,
+
+    SupportedRFCs,
+
+    OptionalFeatures,
+
+    SecurityLevel,
+
+    ReplayCapability,
+
+    FederationCapability,
+
+    RuntimeCapabilities
+
+}
+
+```
+
+**SN-1233**
+
+```
+
+Source
+
+   ↓
+
+Parse & Semantic Analysis
+
+   ↓
+
+Cognitive IR (CIR)
+
+   ↓
+
+COIL Optimisation + Verification
+
+   ↓
+
+CISA Generation
+
+   ↓
+
+Binary Encoding
+
+   ↓
+
+CPCPF Packaging
+
+   ↓
+
+Deployment
+
+```
+
+**SN-1234**
+
+```
+
+Identity (RFC-0022)
+
+   ↓
+
+Capability (RFC-0006)
+
+   ↓
+
+Policy (RFC-0025)
+
+   ↓
+
+Sandbox (RFC-0035)
+
+   ↓
+
+Execution + Audit
+
+```
+
+**SN-1235**
+
+```
+
+Observe
+
+   ↓
+
+Interpret
+
+   ↓
+
+Retrieve Memory
+
+   ↓
+
+Reason
+
+   ↓
+
+Plan
+
+   ↓
+
+Capability Resolution
+
+   ↓
+
+Effect Execution
+
+   ↓
+
+Observation Recording
+
+   ↓
+
+Checkpoint Creation
+
+```
+
+**SN-1236**
+
+```
+
+Working Memory
+
+   ↓
+
+Episodic Memory
+
+   ↓
+
+Semantic Memory
+
+   ↓
+
+Procedural / Skill Memory
+
+```
+
+**SN-1237**
+
+```
+
+Cognitive Applications
+
+   ↓
+
+Cognitive Language + Standard Library
+
+   ↓
+
+Tooling + Observability + Package Management
+
+   ↓
+
+Compiler + CIR + CISA + CVM
+
+   ↓
+
+Cognitive Runtime + Scheduler + Memory + Capabilities
+
+   ↓
+
+Cognitive Operating System + Governance + Federation
+
+   ↓
+
+Hardware + Acceleration + Distributed Execution
+
+```
+
+### Sub-message [222]
+
+**SN-1238**
+
+```text
+
+Application Creation
+
+        ↓
+
+Language Expression
+
+        ↓
+
+Compilation
+
+        ↓
+
+Verification
+
+        ↓
+
+Packaging
+
+        ↓
+
+Deployment
+
+        ↓
+
+Runtime Execution
+
+        ↓
+
+Observation
+
+        ↓
+
+Replay / Evolution
+
+```
+
+**SN-1239**
+
+```text
+
+ConformanceManifest {
+
+    ImplementationName,
+
+    Version,
+
+    Profile,
+
+    ConformanceLevel,
+
+    SupportedRFCs,
+
+    OptionalFeatures,
+
+    SecurityLevel,
+
+    ReplayCapability,
+
+    FederationCapability,
+
+    RuntimeCapabilities
+
+}
+
+```
+
+**SN-1240**
+
+```text
+
+Registry
+
+   ↓
+
+Conformance Scanner
+
+   ↓
+
+Compatibility Check
+
+   ↓
+
+Deployment Decision
+
+```
+
+**SN-1241**
+
+```text
+
+Cognitive Epoch
+
+================
+
+Observe
+
+   ↓
+
+Interpret
+
+   ↓
+
+Memory Retrieval
+
+   ↓
+
+Reason
+
+   ↓
+
+Plan
+
+   ↓
+
+Capability Resolution
+
+   ↓
+
+Effect Execution
+
+   ↓
+
+Record
+
+   ↓
+
+Checkpoint
+
+```
+
+**SN-1242**
+
+```text
+
+Working Memory
+
+       ↓
+
+Episodic Memory
+
+       ↓
+
+Semantic Memory
+
+       ↓
+
+Procedural / Skill Memory
+
+```
+
+**SN-1243**
+
+```text
+
+Identity
+
+   ↓
+
+Capability
+
+   ↓
+
+Policy
+
+   ↓
+
+Sandbox
+
+   ↓
+
+Execution
+
+   ↓
+
+Audit
+
+```
+
+**SN-1244**
+
+```text
+
+Frontend
+
+   ↓
+
+Red/Cognition Parser
+
+Middle
+
+   ↓
+
+CIR + COIL
+
+Backend
+
+   ↓
+
+CVM
+
+Native
+
+WASM
+
+Runtime
+
+   ↓
+
+Rust Core Runtime
+
++
+
+Red Compatibility Layer
+
+```
+
+**SN-1245**
+
+```text
+
+Status:
+
+Candidate for Final Ratification
+
+Recommendation:
+
+RATIFY
+
+```
+
+**SN-1246**
+
+```text
+
+RFC-0050
+
+Red/Cognition v1.0 Architecture
+
+        |
+
+        |
+
+        +-- Defines platform constitution
+
+        |
+
+        +-- Defines implementation compliance
+
+        |
+
+        +-- Defines future RFC compatibility rules
+
+```
+
+**SN-1247**
+
+```text
+
+┌─────────────────────────────┐
+
+│ Cognitive Applications       │
+
+│ CPCPF Deployable Artifacts   │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ Cognitive Language           │
+
+│ RFC-0043 + RFC-0044          │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ Developer Ecosystem          │
+
+│ CSTS + CODP + CPMWS + CFFI   │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ Compiler Infrastructure      │
+
+│ CIR + COIL + CISA + CPCPF    │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ Cognitive Runtime            │
+
+│ CVM + Agent Loop + Memory    │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ CogOS                        │
+
+│ Identity + Security + Policy │
+
+└──────────────┬──────────────┘
+
+               ↓
+
+┌─────────────────────────────┐
+
+│ Federation + Hardware        │
+
+│ Distributed Cognition        │
+
+└─────────────────────────────┘
+
+```
+
+### Sub-message [223]
+
+**SN-1248**
+
+```
+
+Cognitive Applications
+
+   ↓
+
+Cognitive Language (RFC-0043)
+
+   ↓
+
+Cognitive Standard Library (RFC-0044)
+
+   ↓
+
+Tooling & Observability (RFC-0045–0046)
+
+   ↓
+
+Package Ecosystem & Deployment (RFC-0047, RFC-0042)
+
+   ↓
+
+Compiler & Verification (RFC-0027–0032)
+
+   ↓
+
+Cognitive Intermediate Representation (RFC-0028–0029)
+
+   ↓
+
+Cognitive Virtual Machine + CISA (RFC-0012–0014)
+
+   ↓
+
+Cognitive Runtime (RFC-0016–0018)
+
+   ↓
+
+Cognitive Operating System (RFC-0019–0026)
+
+   ↓
+
+Distributed Execution & Federation (RFC-0020–0023)
+
+   ↓
+
+Hardware & Acceleration (RFC-0026)
+
+```
+
+**SN-1249**
+
+```
+
+Intent → Capability Check → Policy Validation → Effect Execution → Trace Recording
+
+```
+
+**SN-1250**
+
+```
+
+ConformanceManifest {
+
+    ImplementationName,
+
+    Version,
+
+    Profile,
+
+    ConformanceLevel,
+
+    SupportedRFCs,
+
+    OptionalFeatures,
+
+    SecurityLevel,
+
+    ReplayCapability,
+
+    FederationCapability,
+
+    RuntimeCapabilities
+
+}
+
+```
+
+**SN-1251**
+
+```
+
+Source
+
+   ↓
+
+Parse & Semantic Analysis
+
+   ↓
+
+Cognitive IR (CIR)
+
+   ↓
+
+COIL Optimisation + Verification
+
+   ↓
+
+CISA Generation
+
+   ↓
+
+Binary Encoding
+
+   ↓
+
+CPCPF Packaging
+
+   ↓
+
+Deployment
+
+```
+
+**SN-1252**
+
+```
+
+Identity (RFC-0022)
+
+   ↓
+
+Capability (RFC-0006)
+
+   ↓
+
+Policy (RFC-0025)
+
+   ↓
+
+Sandbox (RFC-0035)
+
+   ↓
+
+Execution + Audit
+
+```
+
+**SN-1253**
+
+```
+
+Observe
+
+   ↓
+
+Interpret
+
+   ↓
+
+Retrieve Memory
+
+   ↓
+
+Reason
+
+   ↓
+
+Plan
+
+   ↓
+
+Capability Resolution
+
+   ↓
+
+Effect Execution
+
+   ↓
+
+Observation Recording
+
+   ↓
+
+Checkpoint Creation
+
+```
+
+**SN-1254**
+
+```
+
+Working Memory
+
+   ↓
+
+Episodic Memory
+
+   ↓
+
+Semantic Memory
+
+   ↓
+
+Procedural / Skill Memory
+
+```
+
+**SN-1255**
+
+```
+
+Cognitive Applications
+
+   ↓
+
+Cognitive Language + Standard Library
+
+   ↓
+
+Tooling + Observability + Package Management
+
+   ↓
+
+Compiler + CIR + CISA + CVM
+
+   ↓
+
+Cognitive Runtime + Scheduler + Memory + Capabilities
+
+   ↓
+
+Cognitive Operating System + Governance + Federation
+
+   ↓
+
+Hardware + Acceleration + Distributed Execution
+
+```
+
+### Sub-message [224]
+
+**SN-1256**
+
+```
+
+Program
+
++
+
+Initial State
+
++
+
+Inputs
+
++
+
+Capabilities
+
++
+
+Environment
+
+        ↓
+
+Equivalent Execution Trace
+
+```
+
+**SN-1257**
+
+```
+
+Intent
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Policy Validation
+
+   ↓
+
+Effect Execution
+
+   ↓
+
+Trace Recording
+
+```
+
+**SN-1258**
+
+```
+
+Cognitive Event
+
+       ↓
+
+Event Log
+
+       ↓
+
+Checkpoint
+
+       ↓
+
+Replay
+
+       ↓
+
+Verification
+
+```
+
+**SN-1259**
+
+```
+
+Cognitive Runtime
+
+        |
+
+        |
+
+ Reasoning Provider Interface
+
+        |
+
+ -----------------------------
+
+ |            |              |
+
+Local AI   Cloud AI    Symbolic Engine
+
+```
+
+**SN-1260**
+
+```text
+
+ConformanceManifest {
+
+    ImplementationName,
+
+    Version,
+
+    Profile,
+
+    ConformanceLevel,
+
+    SupportedRFCs,
+
+    OptionalFeatures,
+
+    SecurityLevel,
+
+    ReplayCapability,
+
+    FederationCapability,
+
+    RuntimeCapabilities
+
+}
+
+```
+
+**SN-1261**
+
+```
+
+Agent Manager
+
+      |
+
+Scheduler
+
+      |
+
+CVM Executor
+
+      |
+
+Memory Manager
+
+      |
+
+Capability Manager
+
+      |
+
+Trace Engine
+
+      |
+
+Exception Manager
+
+      |
+
+Checkpoint Manager
+
+```
+
+**SN-1262**
+
+```
+
+Observe
+
+   ↓
+
+Interpret
+
+   ↓
+
+Retrieve Memory
+
+   ↓
+
+Reason
+
+   ↓
+
+Plan
+
+   ↓
+
+Capability Resolution
+
+   ↓
+
+Effect Execution
+
+   ↓
+
+Observation Recording
+
+   ↓
+
+Checkpoint Creation
+
+```
+
+**SN-1263**
+
+```
+
+Working Memory
+
+        ↓
+
+Episodic Memory
+
+        ↓
+
+Semantic Memory
+
+        ↓
+
+Procedural / Skill Memory
+
+```
+
+**SN-1264**
+
+```
+
+Source
+
+ ↓
+
+Package
+
+ ↓
+
+Verify
+
+ ↓
+
+Deploy
+
+ ↓
+
+Execute
+
+ ↓
+
+Observe
+
+ ↓
+
+Replay
+
+```
+
+**SN-1265**
+
+```
+
+Frontend
+
+   ↓
+
+Red/Cognition Parser
+
+Middle
+
+   ↓
+
+CIR + COIL
+
+Backend
+
+   ↓
+
+CVM
+
+Native
+
+WASM
+
+Runtime
+
+   ↓
+
+Rust Core Runtime
+
++
+
+Red Compatibility Layer
+
+```
+
+**SN-1266**
+
+```
+
+┌──────────────────────────────┐
+
+│ Cognitive Applications        │
+
+│ CPCPF Artifacts               │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Cognitive Language            │
+
+│ RFC-0043 + Standard Library   │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Tooling / Observability       │
+
+│ CSTS + CODP + CPMWS + CFFI    │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Compiler Stack                │
+
+│ CIR + COIL + CISA + CPCPF     │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Cognitive Runtime             │
+
+│ CVM + Epoch Engine + Memory   │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Cognitive Operating System    │
+
+│ Identity + Policy + Security  │
+
+└──────────────┬───────────────┘
+
+               ↓
+
+┌──────────────────────────────┐
+
+│ Federation + Hardware         │
+
+│ Distributed Cognition          │
+
+└──────────────────────────────┘
+
+```
+
+### Sub-message [226]
+
+**SN-1267**
+
+```text
+
+Cognitive Source Code
+
+        |
+
+        ↓
+
+Macro Expansion Phase
+
+        |
+
+        ↓
+
+Expanded Cognitive AST
+
+        |
+
+        ↓
+
+Semantic Analysis
+
+        |
+
+        ↓
+
+CIR Generation
+
+        |
+
+        ↓
+
+Optimization + Verification
+
+        |
+
+        ↓
+
+CISA
+
+```
+
+**SN-1268**
+
+```text
+
+Macro = Text Transformation
+
+```
+
+**SN-1269**
+
+```text
+
+Cognitive Macro =
+
+Typed Program Transformation
+
++
+
+Semantic Awareness
+
++
+
+Capability Control
+
++
+
+Traceable Expansion
+
+```
+
+**SN-1270**
+
+```red
+
+define-goal improve-model [
+
+    objective: accuracy
+
+    constraint: latency < 50ms
+
+]
+
+```
+
+**SN-1271**
+
+```red
+
+goal! [
+
+    objective: accuracy
+
+    constraints: [
+
+        latency < 50ms
+
+    ]
+
+]
+
+```
+
+**SN-1272**
+
+```text
+
+Input:
+
+    Goal AST
+
+Output:
+
+    Goal + Plan + Capability requirements
+
+```
+
+**SN-1273**
+
+```red
+
+optimize-agent-training
+
+```
+
+**SN-1274**
+
+```
+
+Goal
+
+ ↓
+
+Plan
+
+ ↓
+
+Resources
+
+ ↓
+
+Evaluation Loop
+
+```
+
+**SN-1275**
+
+```red
+
+agent "researcher" {
+
+    goal "summarize papers"
+
+    memory semantic
+
+    capability web-search
+
+}
+
+```
+
+**SN-1276**
+
+```red
+
+macro repeat [
+
+    body
+
+]
+
+```
+
+**SN-1277**
+
+```text
+
+Generated identifiers
+
+must use compiler-managed namespaces
+
+```
+
+**SN-1278**
+
+```
+
+Macro Request
+
+      ↓
+
+Capability Check
+
+      ↓
+
+Policy Validation
+
+      ↓
+
+Expansion
+
+      ↓
+
+Trace Recording
+
+```
+
+**SN-1279**
+
+```text
+
+MacroExpansionRecord {
+
+    MacroName,
+
+    Version,
+
+    InputHash,
+
+    OutputHash,
+
+    ExpansionTrace,
+
+    CompilerVersion
+
+}
+
+```
+
+**SN-1280**
+
+```
+
+Source AST
+
+      ↓
+
+AST Macro
+
+      ↓
+
+Typed AST
+
+      ↓
+
+CIR Macro
+
+      ↓
+
+Optimized CIR
+
+```
+
+**SN-1281**
+
+```bash
+
+cog macro list
+
+cog macro expand
+
+cog macro trace
+
+cog macro verify
+
+cog macro inspect
+
+```
+
+**SN-1282**
+
+```text
+
+RFC-0043
+
+Language
+
+    |
+
+    ↓
+
+RFC-0051
+
+Metaprogramming
+
+    |
+
+    ↓
+
+Cognitive DSL Ecosystem
+
+    |
+
+    ↓
+
+Agent Frameworks
+
+```
+
+### Sub-message [227]
+
+**SN-1283**
+
+```
+
+Cognitive Source Code
+
+   ↓
+
+Macro Expansion Phase
+
+   ↓
+
+Expanded Cognitive AST
+
+   ↓
+
+Semantic Analysis
+
+   ↓
+
+CIR Generation
+
+   ↓
+
+Optimization + Verification
+
+   ↓
+
+CISA
+
+```
+
+**SN-1284**
+
+```
+
+Macro Request
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Policy Validation
+
+   ↓
+
+Expansion
+
+   ↓
+
+Trace Recording
+
+```
+
+**SN-1285**
+
+```red
+
+define-goal improve-model [
+
+    objective: accuracy
+
+    constraint: latency < 50ms
+
+]
+
+```
+
+**SN-1286**
+
+```red
+
+optimize-agent-training goal
+
+```
+
+**SN-1287**
+
+```red
+
+agent "researcher" [
+
+    goal "summarize papers"
+
+    memory semantic
+
+    capability web-search
+
+]
+
+```
+
+**SN-1288**
+
+```
+
+MacroExpansionRecord {
+
+    MacroName,
+
+    Version,
+
+    InputHash,
+
+    OutputHash,
+
+    ExpansionTrace,
+
+    CompilerVersion,
+
+    CapabilityUsage
+
+}
+
+```
+
+**SN-1289**
+
+```
+
+cog macro list
+
+cog macro expand
+
+cog macro trace
+
+cog macro verify
+
+cog macro inspect
+
+```
+
+### Sub-message [228]
+
+**SN-1290**
+
+```
+
+Human Cognitive Language
+
+          ↓
+
+Macro Transformation System
+
+          ↓
+
+Compiler Infrastructure
+
+          ↓
+
+Verified Cognitive Execution
+
+```
+
+**SN-1291**
+
+```
+
+Text
+
+ ↓
+
+Replace
+
+ ↓
+
+Compile
+
+```
+
+**SN-1292**
+
+```
+
+Cognitive Source
+
+       ↓
+
+Typed Transformation
+
+       ↓
+
+Semantic Validation
+
+       ↓
+
+CIR Generation
+
+       ↓
+
+Verification
+
+       ↓
+
+Executable Artifact
+
+```
+
+**SN-1293**
+
+```
+
+Source Code
+
+    ↓
+
+Macro Expansion
+
+    ↓
+
+Expanded AST
+
+    ↓
+
+Semantic Analysis
+
+    ↓
+
+CIR
+
+    ↓
+
+Optimization
+
+    ↓
+
+Verification
+
+    ↓
+
+CISA
+
+```
+
+**SN-1294**
+
+```
+
+User Namespace
+
+       |
+
+       X
+
+Compiler Namespace
+
+```
+
+**SN-1295**
+
+```
+
+IdentifierOrigin {
+
+    UserDefined,
+
+    MacroGenerated,
+
+    CompilerGenerated
+
+}
+
+```
+
+**SN-1296**
+
+```
+
+define-goal
+
+```
+
+**SN-1297**
+
+```
+
+optimize-agent-training
+
+```
+
+**SN-1298**
+
+```
+
+Goal
+
+ ↓
+
+Plan
+
+ ↓
+
+Capability Requirements
+
+ ↓
+
+Evaluation Strategy
+
+```
+
+**SN-1299**
+
+```
+
+agent "researcher"
+
+```
+
+**SN-1300**
+
+```
+
+Agent Definition
+
++
+
+Goals
+
++
+
+Memory Policy
+
++
+
+Capabilities
+
++
+
+Execution Constraints
+
+```
+
+**SN-1301**
+
+```
+
+Macro Request
+
+      ↓
+
+Capability Check
+
+      ↓
+
+Policy Validation
+
+      ↓
+
+Expansion
+
+      ↓
+
+Trace Recording
+
+```
+
+**SN-1302**
+
+```
+
+MacroExpansionRecord {
+
+    MacroName,
+
+    Version,
+
+    InputHash,
+
+    OutputHash,
+
+    ExpansionTrace,
+
+    CompilerVersion,
+
+    CapabilityUsage
+
+}
+
+```
+
+**SN-1303**
+
+```
+
+Macro Expansion
+
+       ↓
+
+CPCPF Artifact
+
+       ↓
+
+Build Provenance
+
+       ↓
+
+Replay Verification
+
+```
+
+**SN-1304**
+
+```
+
+Source Macro
+
+      ↓
+
+AST Macro
+
+      ↓
+
+Typed Macro
+
+      ↓
+
+CIR Macro
+
+```
+
+**SN-1305**
+
+```
+
+MacroResourceLimits {
+
+    MaxExpansionDepth,
+
+    MaxMemory,
+
+    MaxExecutionTime,
+
+    MaxGeneratedCodeSize
+
+}
+
+```
+
+**SN-1306**
+
+```
+
+MacroPackage {
+
+    Name,
+
+    Version,
+
+    RequiredCompiler,
+
+    Capabilities,
+
+    Transformations,
+
+    VerificationStatus
+
+}
+
+```
+
+**SN-1307**
+
+```
+
+cog macro debug
+
+cog macro explain
+
+cog macro provenance
+
+```
+
+**SN-1308**
+
+```
+
+Why was this code generated?
+
+Macro:
+
+    optimize-agent-training
+
+Transformation:
+
+    Goal → Plan
+
+Certificate:
+
+    COVF-92A71
+
+```
+
+**SN-1309**
+
+```
+
+                  Applications
+
+                       |
+
+                       ↓
+
+              Cognitive Language
+
+                       |
+
+                       ↓
+
+          Macro & Metaprogramming Layer
+
+                       |
+
+                       ↓
+
+        Compiler + CIR + Optimization
+
+                       |
+
+                       ↓
+
+          Verification + Packaging
+
+                       |
+
+                       ↓
+
+             Cognitive Runtime
+
+```
+
+### Sub-message [230]
+
+**SN-1310**
+
+```text
+
+cog test
+
+cog test replay
+
+cog test property
+
+cog test capability
+
+cog verify
+
+cog verify proof
+
+cog verify replay
+
+cog verify policy
+
+cog verify transformation
+
+```
+
+**SN-1311**
+
+```text
+
+TestManifest {
+
+    Name,
+
+    Version,
+
+    TestProfile,
+
+    Dependencies,
+
+    RequiredCapabilities,
+
+    ReplayRequired,
+
+    Deterministic,
+
+    ExpectedEffects
+
+}
+
+```
+
+**SN-1312**
+
+```text
+
+TestReport {
+
+    TestName,
+
+    Status,
+
+    Duration,
+
+    ReplayVerified,
+
+    CapabilityChecks,
+
+    EffectChecks,
+
+    Coverage,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1313**
+
+```text
+
+Source
+
+   ↓
+
+Static Analysis
+
+   ↓
+
+Unit Tests
+
+   ↓
+
+Property Tests
+
+   ↓
+
+Replay Verification
+
+   ↓
+
+Capability Verification
+
+   ↓
+
+Transformation Verification
+
+   ↓
+
+Proof Verification
+
+   ↓
+
+Deployment
+
+```
+
+**SN-1314**
+
+```text
+
+Language
+
+      ↓
+
+Macros
+
+      ↓
+
+Compiler
+
+      ↓
+
+Verification Framework
+
+      ↓
+
+Packaging
+
+      ↓
+
+Deployment
+
+      ↓
+
+Runtime
+
+```
+
+### Sub-message [231]
+
+**SN-1315**
+
+```
+
+cog test
+
+cog test replay
+
+cog test property
+
+cog test capability
+
+cog verify
+
+cog verify proof
+
+cog verify replay
+
+cog verify policy
+
+cog verify transformation
+
+```
+
+**SN-1316**
+
+```
+
+TestManifest {
+
+    Name,
+
+    Version,
+
+    TestProfile,
+
+    Dependencies,
+
+    RequiredCapabilities,
+
+    ReplayRequired,
+
+    Deterministic,
+
+    ExpectedEffects
+
+}
+
+```
+
+**SN-1317**
+
+```
+
+TestReport {
+
+    TestName,
+
+    Status,
+
+    Duration,
+
+    ReplayVerified,
+
+    CapabilityChecks,
+
+    EffectChecks,
+
+    Coverage,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1318**
+
+```
+
+Source
+
+   ↓
+
+Static Analysis
+
+   ↓
+
+Unit Tests
+
+   ↓
+
+Property Tests
+
+   ↓
+
+Replay Verification
+
+   ↓
+
+Capability Verification
+
+   ↓
+
+Transformation Verification
+
+   ↓
+
+Proof Verification
+
+   ↓
+
+Deployment
+
+```
+
+### Sub-message [232]
+
+**SN-1319**
+
+```text
+
+Cognitive Language
+
+        ↓
+
+Macro System (RFC-0051)
+
+        ↓
+
+Compiler + CIR + CISA
+
+        ↓
+
+Testing & Verification (RFC-0052)
+
+        ↓
+
+Packaging & Deployment
+
+        ↓
+
+Runtime
+
+```
+
+**SN-1320**
+
+```text
+
+TestManifest {
+
+    Name,
+
+    Version,
+
+    TestProfile,
+
+    Dependencies,
+
+    RequiredCapabilities,
+
+    ReplayRequired,
+
+    Deterministic,
+
+    ExpectedEffects,
+
+    RequiredRuntimeVersion,
+
+    SupportedRFCs
+
+}
+
+```
+
+**SN-1321**
+
+```text
+
+TestReport {
+
+    TestName,
+
+    Status,
+
+    Duration,
+
+    Coverage,
+
+    ReplayVerified,
+
+    CapabilityChecks,
+
+    EffectChecks,
+
+    TraceReference,
+
+    FailureReason,
+
+    VerificationCertificates
+
+}
+
+```
+
+**SN-1322**
+
+```text
+
+Source
+
+↓
+
+Static Analysis
+
+↓
+
+Unit Tests
+
+↓
+
+Property Tests
+
+↓
+
+Replay Verification
+
+↓
+
+Capability Verification
+
+↓
+
+Transformation Verification
+
+↓
+
+Proof Verification
+
+↓
+
+Deployment
+
+```
+
+**SN-1323**
+
+```text
+
+Write
+
+   ↓
+
+Expand
+
+   ↓
+
+Compile
+
+   ↓
+
+Verify
+
+   ↓
+
+Package
+
+   ↓
+
+Deploy
+
+   ↓
+
+Execute
+
+   ↓
+
+Replay
+
+```
+
+### Sub-message [233]
+
+**SN-1324**
+
+```
+
+cog test
+
+cog test replay
+
+cog test property
+
+cog test capability
+
+cog verify
+
+cog verify proof
+
+cog verify replay
+
+cog verify policy
+
+cog verify transformation
+
+```
+
+**SN-1325**
+
+```
+
+TestManifest {
+
+    Name,
+
+    Version,
+
+    TestProfile,
+
+    Dependencies,
+
+    RequiredCapabilities,
+
+    ReplayRequired,
+
+    Deterministic,
+
+    ExpectedEffects,
+
+    RequiredRuntimeVersion,
+
+    SupportedRFCs
+
+}
+
+```
+
+**SN-1326**
+
+```
+
+TestReport {
+
+    TestName,
+
+    Status,
+
+    Duration,
+
+    ReplayVerified,
+
+    CapabilityChecks,
+
+    EffectChecks,
+
+    Coverage,
+
+    TraceReference,
+
+    FailureReason,
+
+    VerificationCertificates
+
+}
+
+```
+
+**SN-1327**
+
+```
+
+Source
+
+   ↓
+
+Static Analysis
+
+   ↓
+
+Unit Tests
+
+   ↓
+
+Property Tests
+
+   ↓
+
+Replay Verification
+
+   ↓
+
+Capability Verification
+
+   ↓
+
+Transformation Verification
+
+   ↓
+
+Proof Verification
+
+   ↓
+
+Deployment
+
+```
+
+### Sub-message [234]
+
+**SN-1328**
+
+```text
+
+Author
+
+    ↓
+
+Macro Expansion
+
+    ↓
+
+Compilation
+
+    ↓
+
+Verification
+
+    ↓
+
+Packaging
+
+    ↓
+
+Deployment
+
+    ↓
+
+Execution
+
+    ↓
+
+Replay & Validation
+
+```
+
+### Sub-message [236]
+
+**SN-1329**
+
+   ```text
+
+   cog invoke
+
+   cog agent discover
+
+   cog agent list
+
+   cog trace remote
+
+   cog replay remote
+
+   cog verify remote
+
+   ```
+
+### Sub-message [237]
+
+**SN-1330**
+
+```
+
+InvocationManifest {
+
+    AgentID,
+
+    ProtocolVersion,
+
+    Method,
+
+    Parameters,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    ReplayPolicy,
+
+    TraceContext
+
+}
+
+```
+
+**SN-1331**
+
+```
+
+cog invoke
+
+cog agent discover
+
+cog agent list
+
+cog trace remote
+
+cog replay remote
+
+cog verify remote
+
+```
+
+### Sub-message [238]
+
+**SN-1332**
+
+```text
+
+InvocationManifest {
+
+    InvocationID,
+
+    AgentID,
+
+    CallerID,
+
+    ProtocolVersion,
+
+    Method,
+
+    Parameters,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    AuthenticationContext,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1333**
+
+```text
+
+Created
+
+    ↓
+
+Authenticated
+
+    ↓
+
+Authorized
+
+    ↓
+
+Scheduled
+
+    ↓
+
+Executing
+
+    ↓
+
+Completed
+
+      │
+
+      ├── Failed
+
+      ├── Cancelled
+
+      └── TimedOut
+
+```
+
+**SN-1334**
+
+```text
+
+RemoteError {
+
+    Code,
+
+    Category,
+
+    Message,
+
+    Retryable,
+
+    CapabilityViolation,
+
+    TraceReference,
+
+    Cause
+
+}
+
+```
+
+**SN-1335**
+
+```text
+
+AgentManifest {
+
+    AgentID,
+
+    Version,
+
+    SupportedMethods,
+
+    Capabilities,
+
+    SupportedRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Endpoint
+
+}
+
+```
+
+**SN-1336**
+
+```text
+
+TraceContext {
+
+    TraceID,
+
+    ParentInvocation,
+
+    Epoch,
+
+    SpanID
+
+}
+
+```
+
+**SN-1337**
+
+```text
+
+RemoteVerificationRecord {
+
+    InvocationID,
+
+    ReplayVerified,
+
+    PolicyVerified,
+
+    Certificates
+
+}
+
+```
+
+### Sub-message [239]
+
+**SN-1338**
+
+```
+
+AgentManifest {
+
+    AgentID,
+
+    Version,
+
+    SupportedMethods,
+
+    Capabilities,
+
+    SupportedRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Endpoint
+
+}
+
+```
+
+**SN-1339**
+
+```
+
+InvocationManifest {
+
+    InvocationID,
+
+    AgentID,
+
+    CallerID,
+
+    ProtocolVersion,
+
+    Method,
+
+    Parameters,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    AuthenticationContext,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1340**
+
+```
+
+Created
+
+   ↓
+
+Authenticated
+
+   ↓
+
+Authorized
+
+   ↓
+
+Scheduled
+
+   ↓
+
+Executing
+
+   ↓
+
+Completed
+
+   |
+
+   ├── Failed
+
+   ├── Cancelled
+
+   └── TimedOut
+
+```
+
+**SN-1341**
+
+```
+
+RemoteError {
+
+    Code,
+
+    Category,
+
+    Message,
+
+    Retryable,
+
+    CapabilityViolation,
+
+    TraceReference,
+
+    Cause
+
+}
+
+```
+
+**SN-1342**
+
+```
+
+cog invoke
+
+cog agent discover
+
+cog agent list
+
+cog trace remote
+
+cog replay remote
+
+cog verify remote
+
+```
+
+### Sub-message [240]
+
+**SN-1343**
+
+```text
+
+If no mutually supported protocol version exists, the invocation MUST fail with a VersionNegotiationFailed error before authentication or capability evaluation.
+
+```
+
+**SN-1344**
+
+```text
+
+Request {
+
+    InvocationManifest,
+
+    Payload
+
+}
+
+Response {
+
+    InvocationID,
+
+    Result,
+
+    Effects,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1345**
+
+```text
+
+Idempotent : Boolean
+
+```
+
+**SN-1346**
+
+```text
+
+InvocationSemantics {
+
+    AtMostOnce
+
+    AtLeastOnce
+
+    ExactlyOnce
+
+}
+
+```
+
+**SN-1347**
+
+```text
+
+RemoteVerificationRecord {
+
+    InvocationID,
+
+    ReplayVerified,
+
+    PolicyVerified,
+
+    VerificationCertificates
+
+}
+
+```
+
+**SN-1348**
+
+```text
+
+Lifecycle events
+
+RemoteInvocationStarted,
+
+RemoteInvocationCompleted,
+
+RemoteInvocationFailed)
 
 ```
