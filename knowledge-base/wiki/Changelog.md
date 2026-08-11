@@ -2,6 +2,16 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #30 processed ([321]–[340]: RFC-0072 CRCP Wire Format v1.6 RATIFIED)
+
+- **Source:** Conversation message #30 — a 20-part transcript ([321]–[340]; speakers USER, CHATGPT (gpt-5-5)): RFC-0072 CRCP Wire Format and Binary Message Encoding full version arc — v1.0 ([321]) → v1.1 ([323]) → v1.2 ([325]) → v1.3 ([327], re-send [329]) → v1.4 ([331]) → v1.5 ([333]) → v1.6 ([335], re-send [337]) — with nine reviews ([322]/[324]/[326]/[328]/[330]/[332]/[334]/[336]/[338]; final review [338] recommended Release Candidate, not Final), ratification record ([339], **RATIFIED**), and governance review of the record ([340]).
+- **Classification:** New knowledge; duplicates D-96 ([327]≡[329]), D-97 ([335]≡[337]), D-98 (label-only version bumps v1.1→v1.2 and v1.3→v1.4) added; conflict C-19 ([339] status-table snapshot vs ratification events) recorded. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-030-original-part1..5.md` ([321]–[324], [325]–[328], [329]–[332], [333]–[336], [337]–[340]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — new RFC-0072 (v1.6 per [335]) + ratification record ([339]) — programmatic, byte-exact. Total: 72 RFC documents + 14 ratification records = 86 files.
+  - 119 code snippets extracted (SN-1976…SN-2094), embedded verbatim in Code Snippets Message #30 Annex (incl. repeated fences across identical re-sends, preserved); corpus total now **2094 snippets**.
+  - Wiki pages updated (10): RFC Index (RFC-0072 RATIFIED, ratified set +0072, C-19, roadmap X-137), Architecture (wire-level control plane), Workflows (negotiation/sequence/replay/multiplexing workflows), Security (flags, integrity model, ratified baseline), Data Models (wire frame/envelope, registries, handshake/trace/integrity/error models), Glossary (+9 terms), Code Snippets, Changelog, Source Traceability, README index.
+  - Cross-references added: X-134…X-137 (4). Report: `reports/message-030-report.md`.
 ## 2026-08-11 — Message #29 processed ([301]–[320]: RFC-0061 formal record; RFC-0062 v1.1 Candidate; RFC-0063…RFC-0071 drafted)
 
 - **Source:** Conversation message #29 — a 20-part transcript ([301]–[320]; speakers USER, CHATGPT (gpt-5-5-mini), CHATGPT (gpt-5-5)): RFC-0061 CISA-RA formal ratification record ([301]; supersedes the [300]-based record scaffold — D-95); RFC-0062 CVM-BF divergent v1.0 drafts ([302]/[303]; D-94; magic divergence CVMB vs CVMX — C-18) → **v1.1 Candidate for Final Ratification** ([304]); RFC-0063 CVM-FOS (v1.0 [305] → v1.1 Candidate [306]); RFC-0064 CCC-VTP v1.0 Draft ([307]) + review w/ 10 v1.1 amendments ([308]); RFC-0065 CPCPF v1.0 Draft ([309]) + review w/ 7 clarifications ([310]); RFC-0066 CPRDP v1.0 Draft ([311]) + review/expansions ([312]); RFC-0067 CPM-WS v1.0 Draft ([313]); RFC-0068 CBS-RAP v1.0 Draft ([314], CHATGPT); RFC-0069 CRDLMP v1.0 Draft ([315]) + review ([316]); RFC-0070 CROFP v1.0 Draft ([317]) + review ([318]); RFC-0071 CRCP v1.0 Draft ([319]) + review ([320]) — formal semantics, verified compilation, proof-carrying artifacts, supply chain, build, deployment/lifecycle, orchestration, and coordination planes.

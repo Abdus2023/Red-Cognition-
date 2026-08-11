@@ -466,3 +466,25 @@ RFC-0062 v1.0 draft [288] (msg#27) defines magic 0x43564D42 ("CVMB"); the msg#29
 
 Message #29 chain: RFC-0061 record [301] → RFC-0062 drafts [302]/[303] → v1.1 [304] → RFC-0063 [305]/[306] → RFC-0064 [307]/[308] → RFC-0065 [309]/[310] → RFC-0066 [311]/[312] → RFC-0067 [313] → RFC-0068 [314] → RFC-0069 [315]/[316] → RFC-0070 [317]/[318] → RFC-0071 [319]/[320]. Roadmap numbering divergences (C-11): [310] proposed RFC-0067 = CBVE and RFC-0068 = Runtime Isolation; [312] proposed RFC-0067 = CPM, RFC-0068 = CAASS, RFC-0069 = Marketplace, RFC-0070 = Deployment; [316] named RFC-0071 = "Cognitive Observability and SRE Model" and RFC-0072 = Autonomous Evolution; actual drafting took RFC-0067 = CPM-WS, RFC-0068 = CBS-RAP, RFC-0069 = CRDLMP, RFC-0070 = CROFP, RFC-0071 = CRCP; [320] follow-on proposals RFC-0072…RFC-0079 (wire format, membership/consensus, scheduling/placement, service discovery, observability, security/trust, checkpointing/global replay, autonomous evolution). [318] marks RFC-0070 as the natural stopping point of the core runtime and execution infrastructure.
 
+---
+
+## Message #30 additions — RFC-0072 CRCP Wire Format ratified (sub-messages [321]–[340])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #30 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0072 | CRCP Wire Format and Binary Message Encoding | v1.0 Draft ([321]); v1.1 ([323]) adds canonical envelope, encoding profiles, stream multiplexing, sequence ordering, replay protection; v1.2 ([325]; body identical to v1.1 modulo labels — D-98); v1.3 ([327]; identical re-send [329] — D-96); v1.4 ([331]; body identical to v1.3 modulo labels and §2 wording — D-98); v1.5 ([333]) unifies framing/envelope with explicit field types, adds ClientHello/ServerHello, TraceContext, IntegrityBlock, ErrorMessage; v1.6 ([335]; identical re-send [337] — D-97) adds MessageLength semantics; reviews [322]/[324]/[326]/[328]/[330]/[332]/[334]/[336]/[338] preserved (final review [338]: "Release Candidate", not Final); ratification record ([339]; status-table snapshot per C-19) — **v1.6 RATIFIED** | [`rfcs/RFC-0072-crcp-wire-format-binary-message-encoding.md`](../../rfcs/RFC-0072-crcp-wire-format-binary-message-encoding.md) (v1.6 per [335]), [`rfcs/RFC-0072-ratification-record.md`](../../rfcs/RFC-0072-ratification-record.md) (from [339]) |
+
+### Ratified set after message #30
+
+Message #27 set + **RFC-0072 (CRCP Wire Format v1.6)**: RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001, RFC-0002, RFC-0011, RFC-0042 (CADP), RFC-0046 (CODP), RFC-0047 (CPMWS), RFC-0049 (CSTS), RFC-0050 (Architecture & Conformance), RFC-0052 (CTVF), RFC-0053 (CRAIP), RFC-0057 (CDTCP), RFC-0058 (CTWP), RFC-0059 (CTSTP v1.1), RFC-0060 (CVM-IESS v1.1), RFC-0061 (CISA-RA v1.2), RFC-0072 (CRCP Wire Format v1.6). RFC-0043/0048/0054/0055/0056 remain Draft; RFC-0044/0045 remain Candidate; RFC-0062 Candidate (v1.1); RFC-0063 Candidate (v1.1); RFC-0064…0071 Draft. Governance note per [340]: RFC-0072 ratified while parent RFC-0071 remains Draft/Candidate (X-136).
+
+### Conflict C-19 — [339] status table vs ratification events
+
+The RFC-0072 ratification record ([339]) "Current Ratified / Near-Ratified Foundation" table lists RFC-0002/0003/0004 as "Ratification-ready" although ratification events exist ([76]/[82]/[86]); RFC-0046/0047/0048 as "Final Candidate" although ratified (RFC-0046 per [196], RFC-0047 per [202], RFC-0049 per [215] — 0049 absent from the table entirely along with RFC-0050–0052 and RFC-0054–0061); RFC-0012 as "Ratified" although the corpus event is approved-only (msg#12); and its "Next Phase" proposes RFC-0061 although RFC-0061 was already ratified (msg#27). Same snapshot-conflict pattern as C-9/C-13/C-14/C-16/C-17. Resolution: ratification events authoritative; table preserved verbatim.
+
+### Roadmap (X-137; C-11 lineage extended)
+
+RFC-0072 drafting followed the [320] roadmap ("RFC-0072 — CRCP Wire Format and Binary Message Encoding"). Follow-on proposals diverge: [322] proposed RFC-0073 Session Establishment & Authentication / RFC-0074 Transport Bindings / RFC-0075 Cryptographic Profiles / RFC-0076 Distributed Consensus & Coordination Semantics / RFC-0077 Federated Runtime Discovery & Membership; [338] proposed RFC-0073 Canonical Binary Encoding (CBE) / RFC-0074 CRCP Security Profiles / RFC-0075 Transport Bindings / RFC-0076 Compression Profiles / RFC-0077 Capability & Feature Registry / RFC-0078 Message Schema Registry; both diverge from the [320] numbering (RFC-0073 = Federated Runtime Membership and Consensus).
+

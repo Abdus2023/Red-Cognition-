@@ -246,3 +246,13 @@ Shell MUST NOT directly modify cognitive state or bypass capability checks. Huma
 - **Build security model** (RFC-0068, [314] §11): before accepting build output the system MUST verify Source Integrity + Dependency Integrity + Compiler Integrity + Build Environment Integrity + Verification Result; unverified builds MUST NOT enter Verified repositories and MUST be marked non-attested; remote builders MUST provide environment attestation.
 - **Deployment security boundary** (RFC-0069 clarifications, [316] §6): recommended Deployment Security Context { Identity, Attestation, CapabilitySet, PolicySet, SandboxProfile, TrustLevel } with activation authorization = Artifact Trust + Runtime Trust + Node Trust.
 - **Formal security semantics** (RFC-0063, [306]): capability validation `authorize : CapabilityState × Instruction → Bool` with deterministic decisions; security-sensitive rule Capability=Allowed→Execute / Capability=Denied→SecurityViolation; machine invariant "No Capability → No Protected Effect"; Verified conformance profile requires machine-checked formal proofs.
+
+---
+
+## Message #30 additions — CRCP wire-level integrity, authentication, and flags (msg#30 [321]–[340])
+
+> Provenance: corpus message #30 ([321]–[340]); verbatim archives `sources/message-030-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Message security flags** (RFC-0072 flag registry, [321]/[335]): bit 0 Authenticated, 1 Encrypted, 2 Compressed, 3 ReplayProtected, 4 PriorityMessage, 5 ControlMessage, 6 Streaming, 7–15 Reserved (MUST be zero from v1.5; receiver behavior for non-zero reserved bits flagged as required by [336]/[338]).
+- **Integrity and authentication model** (RFC-0072 §8–9, [321]/[335]): messages MAY carry a cryptographic hash, a digital signature from the sending node, and a replay-protection token; v1.5+ defines IntegrityBlock { AlgorithmID, HashLength, Hash, SignatureAlgorithm, SignatureLength, Signature }; algorithm/security-profile/compression registries and authentication semantics (message vs session signature, mutual authentication, anonymous mode, federation trust) are deferred to future RFCs ([334]/[336]/[338]).
+- **Ratified security baseline** ([339]): conforming implementations MUST support at least the Canonical Binary Encoding profile; all CRCP exchanges MUST use the framing, versioning, and integrity mechanisms of RFC-0072 v1.6.

@@ -1,12 +1,12 @@
 # Code Snippets
 
-> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5).
+> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29, #30). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29/#30 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5, message-030-part1..5).
 >
 > **Scaffolding status: every snippet below is `Unresolved Location`** — no snippet in the corpus carries a documented repository path/filename, so none has been scaffolded into the repository source tree (per governance rule "never guess repository paths").
 
 ## Count summary
 
-**Corpus totals: 1975 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975, Message #29 Annex at the bottom of this page).
+**Corpus totals: 2094 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975; message #30: SN-1976…SN-2094, Message #30 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -391,6 +391,31 @@ Message #29 breakdown:
 | [318] | 1 | SN-1970 |
 | [319] | 0 | — |
 | [320] | 5 | SN-1971 … SN-1975 |
+
+Message #30 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [321] | 1 | SN-1976 |
+| [322] | 5 | SN-1977 … SN-1981 |
+| [323] | 4 | SN-1982 … SN-1985 |
+| [324] | 0 | — |
+| [325] | 4 | SN-1986 … SN-1989 |
+| [326] | 11 | SN-1990 … SN-2000 |
+| [327] | 4 | SN-2001 … SN-2004 |
+| [328] | 4 | SN-2005 … SN-2008 |
+| [329] | 4 | SN-2009 … SN-2012 |
+| [330] | 9 | SN-2013 … SN-2021 |
+| [331] | 4 | SN-2022 … SN-2025 |
+| [332] | 11 | SN-2026 … SN-2036 |
+| [333] | 7 | SN-2037 … SN-2043 |
+| [334] | 5 | SN-2044 … SN-2048 |
+| [335] | 7 | SN-2049 … SN-2055 |
+| [336] | 16 | SN-2056 … SN-2071 |
+| [337] | 7 | SN-2072 … SN-2078 |
+| [338] | 16 | SN-2079 … SN-2094 |
+| [339] | 0 | — |
+| [340] | 0 | — |
 
 ## Ledger
 
@@ -37614,3 +37639,2361 @@ Runtime Orchestration & Federation (RFC-0070)
     CRCP-0006 ReplayViolation
 
     ```
+
+## Message #30 Annex — SN-1976 … SN-2094 (verbatim embeddings)
+
+> Each fenced block from corpus message #30 (sub-messages [321]–[340]) embedded exactly once, unchanged from the archive (incl. repeated fences across the identical RFC-0072 re-sends [327]≡[329] and [335]≡[337] — D-96/D-97, and the indented review fences in [328]–[340], preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [321]
+
+**SN-1976**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+### Sub-message [322]
+
+**SN-1977**
+
+```
+
+RFC-0070  Runtime Orchestration Model
+
+        ↓
+
+RFC-0071  Runtime Coordination Protocol
+
+        ↓
+
+RFC-0072  Wire Format & Binary Encoding
+
+```
+
+**SN-1978**
+
+```
+
+Field ID
+
+Type
+
+Length
+
+Value
+
+```
+
+**SN-1979**
+
+```
+
+NodeID
+
+ClusterID
+
+RuntimeID
+
+PublicKeyHash
+
+CapabilitiesHash
+
+```
+
+**SN-1980**
+
+```
+
+TCP/QUIC established
+
+↓
+
+Hello
+
+↓
+
+Version negotiation
+
+↓
+
+Capability negotiation
+
+↓
+
+Authentication
+
+↓
+
+Lease establishment
+
+↓
+
+Heartbeat
+
+↓
+
+Normal operation
+
+```
+
+**SN-1981**
+
+```
+
+Disconnected
+
+↓
+
+Connecting
+
+↓
+
+Negotiating
+
+↓
+
+Authenticated
+
+↓
+
+Active
+
+↓
+
+Recovering
+
+↓
+
+Closing
+
+↓
+
+Closed
+
+```
+
+### Sub-message [323]
+
+**SN-1982**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1983**
+
+```
+
+CRCPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1984**
+
+```
+
+MessageSequence {
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-1985**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [325]
+
+**SN-1986**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-1987**
+
+```
+
+CRCPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-1988**
+
+```
+
+MessageSequence {
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-1989**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [326]
+
+**SN-1990**
+
+```
+
+Protocol Version
+
+2 bytes (major.minor)
+
+```
+
+**SN-1991**
+
+```
+
+MessageID
+
+```
+
+**SN-1992**
+
+```
+
+TraceContext {
+
+    TraceID
+
+    SpanID
+
+    ParentSpanID
+
+    ReplaySessionID
+
+}
+
+```
+
+**SN-1993**
+
+```
+
+IntegrityBlock
+
+```
+
+**SN-1994**
+
+```
+
+Heartbeat
+
+```
+
+**SN-1995**
+
+```
+
+LeaseGrant
+
+RuntimeAnnouncement
+
+TopologyUpdate
+
+RecoveryRequest
+
+```
+
+**SN-1996**
+
+```
+
+assign StreamID
+
+```
+
+**SN-1997**
+
+```
+
+ErrorMessage {
+
+    ErrorCode
+
+    Severity
+
+    MessageID
+
+    FailedRequestID
+
+    Retryable
+
+    Diagnostic
+
+}
+
+```
+
+**SN-1998**
+
+```
+
+MUST be zero when transmitted.
+
+MUST be ignored when received.
+
+```
+
+**SN-1999**
+
+```
+
+MessageLength
+
+```
+
+**SN-2000**
+
+```
+
+CRCP Security Profile
+
+```
+
+### Sub-message [327]
+
+**SN-2001**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-2002**
+
+```
+
+CRCPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-2003**
+
+```
+
+MessageSequence {
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-2004**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [328]
+
+**SN-2005**
+
+   ```text
+
+   IntegrityBlock {
+
+       AlgorithmID,
+
+       HashLength,
+
+       Hash,
+
+       SignatureAlgorithm,
+
+       SignatureLength,
+
+       Signature
+
+   }
+
+   ```
+
+**SN-2006**
+
+   ```text
+
+   TraceContext {
+
+       TraceID,
+
+       SpanID,
+
+       ParentSpanID,
+
+       ReplaySessionID,
+
+       CorrelationID
+
+   }
+
+   ```
+
+**SN-2007**
+
+   ```text
+
+   DISCONNECTED
+
+       ↓
+
+   CONNECTING
+
+       ↓
+
+   VERSION_NEGOTIATION
+
+       ↓
+
+   AUTHENTICATION
+
+       ↓
+
+   ACTIVE
+
+       ↓
+
+   DRAINING
+
+       ↓
+
+   CLOSED
+
+   ```
+
+**SN-2008**
+
+   ```text
+
+   ErrorMessage {
+
+       ErrorCode,
+
+       Severity,
+
+       Recoverable,
+
+       Message,
+
+       Details,
+
+       CorrelationID
+
+   }
+
+   ```
+
+### Sub-message [329]
+
+**SN-2009**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-2010**
+
+```
+
+CRCPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-2011**
+
+```
+
+MessageSequence {
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-2012**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [330]
+
+**SN-2013**
+
+```
+
+MessageID
+
+```
+
+**SN-2014**
+
+```
+
+TraceContext
+
+```
+
+**SN-2015**
+
+```
+
+IntegrityBlock
+
+```
+
+**SN-2016**
+
+```
+
+IntegrityBlock {
+
+    AlgorithmID
+
+    Length
+
+    Signature
+
+}
+
+```
+
+**SN-2017**
+
+```
+
+Hash
+
+MAC
+
+Signature
+
+```
+
+**SN-2018**
+
+```
+
+ClientHello
+
+ServerHello
+
+VersionSelect
+
+Reject
+
+```
+
+**SN-2019**
+
+```
+
+Binary
+
+CBOR
+
+MessagePack
+
+JSON
+
+```
+
+**SN-2020**
+
+```
+
+Error {
+
+    Code
+
+    Severity
+
+    Message
+
+    Details
+
+}
+
+```
+
+**SN-2021**
+
+```
+
+RuntimeAnnouncement
+
+```
+
+### Sub-message [331]
+
+**SN-2022**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (e.g., 0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (major.minor)
+
++--------------------+
+
+| Message Length     | 4 bytes
+
++--------------------+
+
+| Message Type       | 2 bytes
+
++--------------------+
+
+| Flags              | 2 bytes
+
++--------------------+
+
+| SourceNodeID       | 16 bytes
+
++--------------------+
+
+| TargetNodeID       | 16 bytes
+
++--------------------+
+
+| Epoch              | 8 bytes
+
++--------------------+
+
+| SequenceNumber     | 8 bytes
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| Integrity / Auth   | variable (optional)
+
++--------------------+
+
+```
+
+**SN-2023**
+
+```
+
+CRCPEnvelope {
+
+    MagicNumber,
+
+    ProtocolVersion,
+
+    MessageType,
+
+    Flags,
+
+    MessageID,
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    TraceContext,
+
+    PayloadLength,
+
+    Payload,
+
+    IntegrityBlock
+
+}
+
+```
+
+**SN-2024**
+
+```
+
+MessageSequence {
+
+    SourceNodeID,
+
+    TargetNodeID,
+
+    Epoch,
+
+    SequenceNumber
+
+}
+
+```
+
+**SN-2025**
+
+```
+
+ReplayProtection {
+
+    Nonce,
+
+    SequenceNumber,
+
+    Epoch,
+
+    SessionID
+
+}
+
+```
+
+### Sub-message [332]
+
+**SN-2026**
+
+```
+
+Protocol Version
+
+2 bytes (major.minor)
+
+```
+
+**SN-2027**
+
+```
+
+uint8 major
+
+uint8 minor
+
+```
+
+**SN-2028**
+
+```
+
+uint16 encoded as:
+
+bits 15-8 = major
+
+bits 7-0 = minor
+
+```
+
+**SN-2029**
+
+```
+
+uint32 MessageLength
+
+uint16 MessageType
+
+uint16 Flags
+
+uint64 Epoch
+
+uint64 SequenceNumber
+
+UUID128 SourceNodeID
+
+UUID128 TargetNodeID
+
+```
+
+**SN-2030**
+
+```
+
+IntegrityBlock
+
+```
+
+**SN-2031**
+
+```
+
+IntegrityBlock {
+
+    AlgorithmID
+
+    SignatureAlgorithm
+
+    DigestLength
+
+    Digest
+
+    SignatureLength
+
+    Signature
+
+}
+
+```
+
+**SN-2032**
+
+```
+
+assign StreamID
+
+```
+
+**SN-2033**
+
+```
+
+uint32 StreamID
+
+0 = control stream
+
+1..2^32-1 = logical streams
+
+```
+
+**SN-2034**
+
+```
+
+UUIDv7
+
+or
+
+128-bit random
+
+or
+
+64-bit monotonic
+
+```
+
+**SN-2035**
+
+```
+
+TraceID
+
+SpanID
+
+ParentSpanID
+
+CorrelationID
+
+```
+
+**SN-2036**
+
+```
+
+Error {
+
+    ErrorCode
+
+    Severity
+
+    Message
+
+    RelatedMessageID
+
+    Retryable
+
+}
+
+```
+
+### Sub-message [333]
+
+**SN-2037**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (uint8 major, uint8 minor)
+
++--------------------+
+
+| Message Length     | 4 bytes (uint32)
+
++--------------------+
+
+| Message Type       | 2 bytes (uint16)
+
++--------------------+
+
+| Flags              | 2 bytes (uint16)
+
++--------------------+
+
+| MessageID          | 16 bytes (UUIDv7)
+
++--------------------+
+
+| SourceNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| TargetNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| Epoch              | 8 bytes (uint64)
+
++--------------------+
+
+| SequenceNumber     | 8 bytes (uint64)
+
++--------------------+
+
+| TraceContext       | variable (see §8)
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| IntegrityBlock     | variable (see §9)
+
++--------------------+
+
+```
+
+**SN-2038**
+
+```
+
+ClientHello {
+
+    SupportedMajorMin (uint8),
+
+    SupportedMajorMax (uint8),
+
+    SupportedMinorMin (uint8),
+
+    SupportedMinorMax (uint8),
+
+    SupportedFeatures (uint32),
+
+    SupportedEncodings (uint32),
+
+    NodeID (UUID128)
+
+}
+
+ServerHello {
+
+    SelectedVersion (uint16),
+
+    SelectedEncoding (uint32),
+
+    SelectedSecurityProfile (uint32),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2039**
+
+```
+
+TraceContext {
+
+    TraceID (UUID128),
+
+    SpanID (uint64),
+
+    ParentSpanID (uint64),
+
+    ReplaySessionID (UUID128),
+
+    CorrelationID (UUID128)
+
+}
+
+```
+
+**SN-2040**
+
+```
+
+IntegrityBlock {
+
+    AlgorithmID (uint16),
+
+    HashLength (uint16),
+
+    Hash (variable),
+
+    SignatureAlgorithm (uint16),
+
+    SignatureLength (uint16),
+
+    Signature (variable)
+
+}
+
+```
+
+**SN-2041**
+
+```
+
+MessageSequence {
+
+    SourceNodeID (UUID128),
+
+    TargetNodeID (UUID128),
+
+    Epoch (uint64),
+
+    SequenceNumber (uint64)
+
+}
+
+```
+
+**SN-2042**
+
+```
+
+ReplayProtection {
+
+    Nonce (uint64),
+
+    SequenceNumber (uint64),
+
+    Epoch (uint64),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2043**
+
+```
+
+ErrorMessage {
+
+    ErrorCode (uint16),
+
+    Severity (uint8),
+
+    Message (UTF-8 string),
+
+    RelatedMessageID (UUID128),
+
+    Retryable (bool)
+
+}
+
+```
+
+### Sub-message [334]
+
+**SN-2044**
+
+```
+
+uint32 PayloadLength
+
+uint32 TraceContextLength
+
+uint32 IntegrityLength
+
+```
+
+**SN-2045**
+
+```
+
+Compression
+
+Encryption
+
+Streaming
+
+Replay
+
+Multiplexing
+
+Integrity
+
+Signatures
+
+Checkpoint Sync
+
+```
+
+**SN-2046**
+
+```
+
+0x0001 SHA-256
+
+0x0002 SHA-512
+
+0x0100 Ed25519
+
+0x0101 ECDSA-P256
+
+0x0200 Dilithium
+
+```
+
+**SN-2047**
+
+```
+
+Authenticated flag
+
+```
+
+**SN-2048**
+
+```
+
+Disconnected
+
+↓
+
+ClientHello
+
+↓
+
+ServerHello
+
+↓
+
+Negotiated
+
+↓
+
+Authenticated
+
+↓
+
+Active
+
+↓
+
+Closing
+
+↓
+
+Closed
+
+```
+
+### Sub-message [335]
+
+**SN-2049**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (uint8 major, uint8 minor)
+
++--------------------+
+
+| Message Length     | 4 bytes (uint32) — number of bytes following this field through the end of IntegrityBlock
+
++--------------------+
+
+| Message Type       | 2 bytes (uint16)
+
++--------------------+
+
+| Flags              | 2 bytes (uint16)
+
++--------------------+
+
+| MessageID          | 16 bytes (UUIDv7)
+
++--------------------+
+
+| SourceNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| TargetNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| Epoch              | 8 bytes (uint64)
+
++--------------------+
+
+| SequenceNumber     | 8 bytes (uint64)
+
++--------------------+
+
+| TraceContext       | variable (see §8)
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| IntegrityBlock     | variable (see §9)
+
++--------------------+
+
+```
+
+**SN-2050**
+
+```
+
+ClientHello {
+
+    SupportedMajorMin (uint8),
+
+    SupportedMajorMax (uint8),
+
+    SupportedMinorMin (uint8),
+
+    SupportedMinorMax (uint8),
+
+    SupportedFeatures (uint32 bitmap),
+
+    SupportedEncodings (uint32 bitmap),
+
+    NodeID (UUID128)
+
+}
+
+ServerHello {
+
+    SelectedVersion (uint16),
+
+    SelectedEncoding (uint32),
+
+    SelectedSecurityProfile (uint32),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2051**
+
+```
+
+TraceContext {
+
+    TraceID (UUID128),
+
+    SpanID (uint64),
+
+    ParentSpanID (uint64),
+
+    ReplaySessionID (UUID128),
+
+    CorrelationID (UUID128)
+
+}
+
+```
+
+**SN-2052**
+
+```
+
+IntegrityBlock {
+
+    AlgorithmID (uint16),
+
+    HashLength (uint16),
+
+    Hash (variable),
+
+    SignatureAlgorithm (uint16),
+
+    SignatureLength (uint16),
+
+    Signature (variable)
+
+}
+
+```
+
+**SN-2053**
+
+```
+
+MessageSequence {
+
+    SourceNodeID (UUID128),
+
+    TargetNodeID (UUID128),
+
+    Epoch (uint64),
+
+    SequenceNumber (uint64)
+
+}
+
+```
+
+**SN-2054**
+
+```
+
+ReplayProtection {
+
+    Nonce (uint64),
+
+    SequenceNumber (uint64),
+
+    Epoch (uint64),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2055**
+
+```
+
+ErrorMessage {
+
+    ErrorCode (uint16),
+
+    Severity (uint8),
+
+    Message (UTF-8 string),
+
+    RelatedMessageID (UUID128),
+
+    Retryable (bool)
+
+}
+
+```
+
+### Sub-message [336]
+
+**SN-2056**
+
+```
+
+Heartbeat
+
+```
+
+**SN-2057**
+
+```
+
+LeaseGrant
+
+```
+
+**SN-2058**
+
+```
+
+TopologyUpdate
+
+```
+
+**SN-2059**
+
+```
+
+SupportedFeatures (uint32 bitmap)
+
+```
+
+**SN-2060**
+
+```
+
+bit 0 = ...
+
+bit 1 = ...
+
+bit 2 = ...
+
+```
+
+**SN-2061**
+
+```
+
+SelectedSecurityProfile
+
+```
+
+**SN-2062**
+
+```
+
+AlgorithmID
+
+SignatureAlgorithm
+
+```
+
+**SN-2063**
+
+```
+
+AlgorithmID = 3
+
+```
+
+**SN-2064**
+
+```
+
+TraceContext {
+
+...
+
+}
+
+```
+
+**SN-2065**
+
+```
+
+MessageType = 0x4000
+
+```
+
+**SN-2066**
+
+```
+
+Reserved MUST be zero
+
+```
+
+**SN-2067**
+
+```
+
+StreamID
+
+```
+
+**SN-2068**
+
+```
+
+Extensions {
+
+    Type
+
+    Length
+
+    Value
+
+}
+
+```
+
+**SN-2069**
+
+```
+
+Supported
+
+Enabled
+
+Required
+
+```
+
+**SN-2070**
+
+```
+
+Minimum receiver MUST support:
+
+    64 KiB
+
+Recommended:
+
+    16 MiB
+
+Maximum:
+
+    implementation defined
+
+```
+
+**SN-2071**
+
+```
+
+Protocol
+
+Authentication
+
+Authorization
+
+Transport
+
+Replay
+
+Capability
+
+Internal
+
+Resource
+
+```
+
+### Sub-message [337]
+
+**SN-2072**
+
+```
+
++--------------------+ 4 bytes
+
+| Magic Number       |  (0x43524350 "CRCP")
+
++--------------------+
+
+| Protocol Version   | 2 bytes (uint8 major, uint8 minor)
+
++--------------------+
+
+| Message Length     | 4 bytes (uint32) — number of bytes following this field through the end of IntegrityBlock
+
++--------------------+
+
+| Message Type       | 2 bytes (uint16)
+
++--------------------+
+
+| Flags              | 2 bytes (uint16)
+
++--------------------+
+
+| MessageID          | 16 bytes (UUIDv7)
+
++--------------------+
+
+| SourceNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| TargetNodeID       | 16 bytes (UUID128)
+
++--------------------+
+
+| Epoch              | 8 bytes (uint64)
+
++--------------------+
+
+| SequenceNumber     | 8 bytes (uint64)
+
++--------------------+
+
+| TraceContext       | variable (see §8)
+
++--------------------+
+
+| Payload            | variable
+
++--------------------+
+
+| IntegrityBlock     | variable (see §9)
+
++--------------------+
+
+```
+
+**SN-2073**
+
+```
+
+ClientHello {
+
+    SupportedMajorMin (uint8),
+
+    SupportedMajorMax (uint8),
+
+    SupportedMinorMin (uint8),
+
+    SupportedMinorMax (uint8),
+
+    SupportedFeatures (uint32 bitmap),
+
+    SupportedEncodings (uint32 bitmap),
+
+    NodeID (UUID128)
+
+}
+
+ServerHello {
+
+    SelectedVersion (uint16),
+
+    SelectedEncoding (uint32),
+
+    SelectedSecurityProfile (uint32),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2074**
+
+```
+
+TraceContext {
+
+    TraceID (UUID128),
+
+    SpanID (uint64),
+
+    ParentSpanID (uint64),
+
+    ReplaySessionID (UUID128),
+
+    CorrelationID (UUID128)
+
+}
+
+```
+
+**SN-2075**
+
+```
+
+IntegrityBlock {
+
+    AlgorithmID (uint16),
+
+    HashLength (uint16),
+
+    Hash (variable),
+
+    SignatureAlgorithm (uint16),
+
+    SignatureLength (uint16),
+
+    Signature (variable)
+
+}
+
+```
+
+**SN-2076**
+
+```
+
+MessageSequence {
+
+    SourceNodeID (UUID128),
+
+    TargetNodeID (UUID128),
+
+    Epoch (uint64),
+
+    SequenceNumber (uint64)
+
+}
+
+```
+
+**SN-2077**
+
+```
+
+ReplayProtection {
+
+    Nonce (uint64),
+
+    SequenceNumber (uint64),
+
+    Epoch (uint64),
+
+    SessionID (UUID128)
+
+}
+
+```
+
+**SN-2078**
+
+```
+
+ErrorMessage {
+
+    ErrorCode (uint16),
+
+    Severity (uint8),
+
+    Message (UTF-8 string),
+
+    RelatedMessageID (UUID128),
+
+    Retryable (bool)
+
+}
+
+```
+
+### Sub-message [338]
+
+**SN-2079**
+
+```
+
+TraceContext
+
+Payload
+
+IntegrityBlock
+
+```
+
+**SN-2080**
+
+```
+
+uint32 TraceContextLength
+
+TraceContext
+
+uint32 PayloadLength
+
+Payload
+
+uint32 IntegrityLength
+
+IntegrityBlock
+
+```
+
+**SN-2081**
+
+```
+
+SupportedFeatures
+
+```
+
+**SN-2082**
+
+```
+
+Bit0 Compression
+
+Bit1 Replay
+
+Bit2 Integrity
+
+Bit3 Signature
+
+Bit4 Streaming
+
+...
+
+```
+
+**SN-2083**
+
+```
+
+SupportedEncodings
+
+```
+
+**SN-2084**
+
+```
+
+Bit0 Binary
+
+Bit1 CBOR
+
+Bit2 MessagePack
+
+Bit3 JSON
+
+```
+
+**SN-2085**
+
+```
+
+SelectedSecurityProfile
+
+```
+
+**SN-2086**
+
+```
+
+Profile 0
+
+No authentication
+
+Profile 1
+
+SHA-256
+
+Ed25519
+
+Profile 2
+
+SHA-512
+
+Ed448
+
+...
+
+```
+
+**SN-2087**
+
+```
+
+AlgorithmID
+
+```
+
+**SN-2088**
+
+```
+
+1 SHA-256
+
+2 SHA-512
+
+3 BLAKE3
+
+4 SHA3-256
+
+```
+
+**SN-2089**
+
+```
+
+Compressed
+
+```
+
+**SN-2090**
+
+```
+
+0 None
+
+1 Zstd
+
+2 LZ4
+
+3 Brotli
+
+```
+
+**SN-2091**
+
+```
+
+highest mutually supported version
+
+major first
+
+then highest minor
+
+otherwise fail
+
+```
+
+**SN-2092**
+
+```
+
+Reserved MUST be zero
+
+```
+
+**SN-2093**
+
+```
+
+minimum supported frame
+
+maximum frame
+
+maximum payload
+
+maximum integrity block
+
+```
+
+**SN-2094**
+
+```
+
+UUID version
+
+byte order
+
+wire order
+
+network representation
+
+```
