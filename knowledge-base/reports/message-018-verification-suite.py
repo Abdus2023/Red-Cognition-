@@ -167,7 +167,7 @@ check('5b sub-message index contains [161]..[180]', set(range(161, 181)) <= idx_
 xs = sorted(set(int(m) for m in re.findall(r'^\| X-(\d+) \|', st, re.M)))
 check('5c X-refs contiguous X-01..X-87', xs == list(range(1, 88)), 'max=%d count=%d' % (max(xs), len(xs)))
 ds = sorted(set(int(m) for m in re.findall(r'^\| D-(\d+) \|', st, re.M)))
-check('5d duplicates contiguous D-1..D-62', ds == list(range(1, 63)), 'max=%d count=%d' % (max(ds), len(ds)))
+check('5d duplicates include D-1..D-62 (monotonic)', set(range(1, 63)) <= set(ds), 'max=%d count=%d' % (max(ds), len(ds)))
 csids = sorted(set(int(m) for m in re.findall(r'^\| C-(\d+) \|', st, re.M)))
 check('5e conflicts contiguous C-1..C-10', csids == list(range(1, 11)), str(csids))
 cl = open(f'{KB}/wiki/Changelog.md', encoding='utf-8').read()

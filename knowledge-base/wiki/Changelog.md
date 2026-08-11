@@ -2,6 +2,16 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #20 processed (governing specification re-sent — identical duplicate of message #1)
+
+- **Source:** Conversation message #20 — re-send of the governing extraction specification ("Knowledge Base & Code Extraction Assistant").
+- **Classification:** Identical duplicate of message #1 (D-63). Programmatic comparison: archived bodies byte-exact equal (16 headings, 0 code snippets). Received rendering artifacts only: doubly-encoded `&amp;amp;` title entity, fragmented blank lines / trailing two-space breaks / split list formatting — cleaned per the same rules applied to message #1.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-020-original.md` (with duplicate-status header and cleanup note).
+  - Duplicate log: D-63 recorded; message #1 remains the governing origin of record.
+  - Traceability: register row 20 added. No new knowledge items, cross-references, RFC relationships, or repository scaffolds (nothing new to extract).
+  - Report: `reports/message-020-report.md`.
+
 ## 2026-08-11 — Message #19 ("Deeply Verification") — deep audit suite #5
 
 - **Trigger:** user directive "Deeply Verification" (no new corpus content; recorded as message #19).

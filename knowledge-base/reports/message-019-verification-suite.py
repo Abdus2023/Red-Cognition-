@@ -143,9 +143,9 @@ prov_pages = [p for p in wiki_pages if re.search(r'^>? ?\*?\*?Provenance|^> Prov
 check(4, 'wiki pages with provenance headers (>= 17 core content pages)', len(prov_pages) >= 17,
       '%d: %s' % (len(prov_pages), [os.path.basename(p) for p in prov_pages]))
 reps = sorted(glob.glob(f'{KB}/reports/message-*-report.md'))
-need = ['message-%03d-report.md' % i for i in range(1, 20)]
+need = ['message-%03d-report.md' % i for i in range(1, 21)]
 have = set(os.path.basename(r) for r in reps)
-check(4, 'reports message-001..019 exist', all(n in have for n in need), str(len(reps)))
+check(4, 'reports message-001..020 exist', all(n in have for n in need), str(len(reps)))
 link_re = re.compile(r'\[([^\]]*)\]\(([^)\s]+)\)')
 broken = []
 for md in glob.glob(f'{KB}/*.md') + wiki_pages + glob.glob(f'{KB}/reports/*.md'):
@@ -221,7 +221,7 @@ check(6, 'contiguous parent chain RFC-0024..0042 (each parent = preceding RFC)',
 # ---------- Category 7: Status & cross-page coherence ----------
 readme = open(f'{KB}/README.md', encoding='utf-8').read()
 check(7, 'README totals (messages/snippets/specs/rfcs)',
-      all(s in readme for s in ['19 messages processed', '**1093 code snippets**',
+      all(s in readme for s in ['20 messages processed', '**1093 code snippets**',
                                 '**12 scaffolded documents in `specs/`**', '**46 files in `rfcs/`**']))
 idx_rows = re.findall(r'^\| RFC-(00[34]\d) \|[^\n]*$', ri, re.M)
 draft_ok = True
@@ -240,13 +240,13 @@ check(7, 'changelog entries for messages 1..18 + finalization', not miss_cl and 
 
 # ---------- Category 8: Traceability bookkeeping ----------
 reg = sorted(set(int(m) for m in re.findall(r'^\| (\d+) \| 2026-', st, re.M)))
-check(8, 'register rows 1..19 contiguous', reg == list(range(1, 20)), str(reg))
+check(8, 'register rows 1..20 contiguous', reg == list(range(1, 21)), str(reg))
 idx_count = len(re.findall(r'^#{2,3} Message #\d+ sub-message index', st, re.M))
 check(8, 'sub-message indexes for msgs 2,3,5,8,10,12,14,16,18 (9 indexes)', idx_count == 9, str(idx_count))
 xs = sorted(set(int(m) for m in re.findall(r'^\| X-(\d+) \|', st, re.M)))
 check(8, 'cross-references contiguous X-01..X-87', xs == list(range(1, 88)), 'count=%d' % len(xs))
 ds = sorted(set(int(m) for m in re.findall(r'^\| D-(\d+) \|', st, re.M)))
-check(8, 'duplicate log contiguous D-1..D-62', ds == list(range(1, 63)), 'count=%d' % len(ds))
+check(8, 'duplicate log contiguous D-1..D-63', ds == list(range(1, 64)), 'count=%d' % len(ds))
 csids = sorted(set(int(m) for m in re.findall(r'^\| C-(\d+) \|', st, re.M)))
 check(8, 'conflict log contiguous C-1..C-10', csids == list(range(1, 11)), str(csids))
 mandated = ['specs', 'rfcs', 'compiler', 'runtime', 'dialects', 'cognition', 'tests', 'examples', 'docs']
