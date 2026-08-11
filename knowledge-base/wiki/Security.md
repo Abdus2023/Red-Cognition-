@@ -199,3 +199,11 @@ Shell MUST NOT directly modify cognitive state or bypass capability checks. Huma
 - **Workspace policies** ([199] §9): workspaces MAY declare minimum trust level, allowed registries, capability restrictions, compiler profile, reproducibility mode; policies MUST be inherited by member packages unless overridden (builds on RFC-0025).
 - **Package trust & verification** (proposed, [200] §3): installation should verify package signature, proof validity, PackageID hash, and registry trust chain before accepting a package (extends CPCPF/CPR-TDP trust).
 - **Registry mirrors / offline operation** ([199] §10): local mirrors, offline registries, cache registries, air-gapped environments; mirror configuration MUST be recorded in manifest/lockfile for reproducibility.
+
+## Message #22 additions — FFI security, toolchain provenance, conformance (msg#22 [201]–[220])
+
+- **CFFI security model ([203]/[205]):** foreign calls MUST NOT bypass the security/isolation/policy models of the Cognitive Runtime and CogOS; all effect-producing foreign calls pass through the capability system (RFC-0006) and security policies (RFC-0025); capability violations MUST produce traceable exceptions; sandboxing levels Trusted/Sandboxed/WASM/Remote/Verified (aligns with RFC-0035).
+- **FFI determinism safety ([205]):** non-deterministic foreign calls MUST record results in the trace; replays MUST use recorded values (replay equivalence across the FFI boundary).
+- **Package supply chain ([201]):** lockfile optional cryptographic signature; registry mirrors recorded for reproducibility; workspace policy inheritance (minimum trust level, allowed registries, capability restrictions) per [199]/[201]. Proposed v2.0 extensions ([202]): dependency classes, feature flags, package signing (algorithm/trust roots/revocation/transparency log/timestamping), registry resolution precedence.
+- **Toolchain provenance (CSTS §15, [211]):** emitted artefacts SHOULD carry provenance metadata (compiler/plugin/package-manager versions, build pipeline revision, RFC compatibility profile); complements RFC-0036 reproducibility.
+- **Conformance as verifiable artifact (RFC-0050 §5):** implementations MUST declare conformance level and supported RFCs via machine-readable ConformanceManifest ([219], [220]).

@@ -2,6 +2,17 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #22 processed ([201]–[220]: RFC-0047 ratified; RFC-0048 CFFI; RFC-0049 CSTS ratified; RFC-0050 capstone)
+
+- **Source:** Conversation message #22 — a 20-part transcript ([201]–[220]): RFC-0047 CPMWS v1.2 ([201]) **RATIFIED** per ratification decision [202]; RFC-0048 CFFI v1.0 ([203]) → review ([204]) → v1.1 Candidate ([205]) → review Candidate for Final Ratification ([206]); RFC-0049 CSTS v1.0 ([207]) → v1.1 ([209]) → v1.2 ([211]; identical re-send [213]) → reviews ([208]/[210]/[212]/[214]) → **Ratification Record ([215], RATIFIED)**; RFC-0050 capstone: structure proposed ([216]), v1.0 Draft ([217], "RFC-100" reference error), review ([218]), v1.1 Candidate ([219]), review "Decision: ACCEPT — Ready for Ratification" ([220], no formal ratification); roadmaps [202] vs [215]/[216].
+- **Classification:** New knowledge; supersession (v1.2/v1.1 drafts supersede earlier versions; RFC-0047 scaffold updated); duplicates D-69…D-74 added (incl. D-72: [213] identical re-send of [211]); conflict C-12 ([215] status table vs ratification events) recorded; C-11 roadmap divergence extended via X-100/D-74. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-022-original-part1..5.md` ([201]–[204], [205]–[208], [209]–[212], [213]–[216], [217]–[220]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — RFC-0047 updated to v1.2 ([201]); new RFC-0048 ([205]), RFC-0049 ([211]) + ratification record ([215]), RFC-0050 ([219]) — programmatic, byte-exact. Total: 50 RFC documents + 5 ratification records = 55 files.
+  - 91 code snippets extracted (SN-1139…SN-1229), embedded verbatim in Code Snippets Message #22 Annex (incl. duplicated RFC-0049 fences from [213], preserved); corpus total now **1229 snippets**.
+  - Wiki pages updated (12): RFC Index (statuses, ratified set +RFC-0047/+RFC-0049, C-12, roadmap evolution, RFC-0050 notes), Architecture (capstone architecture, principles, profiles, epochs, provider independence, native implementation), Data Models (manifests, FFI/CSTS/conformance models), Workflows (resolution algorithm, FFI flows, build pipeline, epochs, CI/CD), Security (FFI security, supply chain, provenance, conformance), Glossary (+17 terms), Specifications (lineage), Repository Structure, Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-95…X-100 (6). Report: `reports/message-022-report.md`.
+
 ## 2026-08-11 — Message #21 processed ([181]–[200]: RFC-0043 CLS; RFC-0044 CSL; RFC-0045 CTDX; RFC-0046 CODP ratified; RFC-0047 CPMWS)
 
 - **Source:** Conversation message #21 — a 20-part transcript ([181]–[200]): RFC-0043 CLS v1.0 Draft ([181], Parent RFC-0028); RFC-0044 CSL v1.0 ([183]) → review ([184]) → v1.1 Candidate ([185]) → review "Ratification Recommended (with editorial refinements)" ([186]); RFC-0045 CTDX v1.0 ([187]) → review ([188]) → v1.1 Candidate ([189]) → review "Ratification Recommended" ([190]); RFC-0046 CODP v1.0 ([191]) → review ([192]) → v1.1 ([193]) → review "Ratify" ([194]) → v1.2 ([195]) → review **"Status: Ratified"** ([196]); RFC-0047 CPMWS v1.0 ([197]) → review ([198]) → v1.1 Candidate ([199]) → conditional ratification recommendation ([200]); roadmap proposals [182] (0047=CCTS, 0049=CWPMS) and [196] (0047=CPMWS, 0048=CCTS, 0049=CDP, 0050=CTEF, 0051=Reference Runtime).

@@ -1,18 +1,18 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #21, sub-message [199], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-021-original-part*.md
-  Status in corpus: RFC-0047 CPMWS v1.1 (Candidate for Ratification); supersedes v1.0 draft of sub-message [197] (preserved in archive). Review [200]: "Candidate for Ratification (recommended, with a few final refinements)" - conditional ratification recommendation; no ratification decision present in corpus.
+  Origin: corpus message #22, sub-message [201], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-022-original-part*.md
+  Status in corpus: RFC-0047 CPMWS v1.2; RATIFIED per ratification decision in review [202] ("Status: Ratified"); supersedes v1.0 ([197]) and v1.1 ([199]) drafts (preserved in archive). Note: the status table in ratification record [215] lists RFC-0047 as "Final Candidate" although the ratification event [202] precedes it - contradiction C-12 recorded; ratification events treated as authoritative.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
 
 
-**RFC-0047 — Cognitive Package Manager and Workspace Specification (CPMWS) v1.1**
+**RFC-0047 — Cognitive Package Manager and Workspace Specification (CPMWS) v1.2**
 
-**Version:** 1.1  
+**Version:** 1.2  
 
-**Status:** Candidate for Ratification  
+**Status:** Candidate for Final Ratification  
 
 **Parent:** RFC-0046 Cognitive Observability and Diagnostics Protocol (CODP) v1.2 (Candidate)  
 
@@ -60,77 +60,85 @@ Not every development scenario requires the same workspace complexity. CPMWS def
 
 Implementations **MUST** document which profiles they support.
 
-### 4. Workspace Model
+### 4. Canonical Manifest Schema
 
-A workspace is defined as a directory tree containing at minimum:
-
-```
-
-workspace/
-
-├── cog.toml                 # Workspace manifest
-
-├── cog.lock                 # Lockfile (immutable)
-
-├── packages/                # Local packages
-
-├── tests/
-
-├── docs/
-
-├── examples/
-
-└── build/                 # Build artifacts and caches
+#### 4.1 Workspace Manifest
 
 ```
 
-The workspace manifest **MUST** declare:
+WorkspaceManifest {
 
-- Workspace name and version
+    WorkspaceID,
 
-- Member packages
+    Name,
 
-- Shared dependencies
+    Version,
 
-- Compiler and runtime configuration
+    Members: [PackageID],
 
-- Default deployment targets
+    Dependencies: [PackageID],
 
-- Workspace-level policies (security, capability, resource)
+    Policies: WorkspacePolicies,
 
-### 5. Package Manifest
+    CompilerProfile,
 
-Each package **MUST** contain a manifest declaring:
+    RuntimeProfile,
 
-- Package identity (aligned with RFC-0034)
+    DeploymentTargets: [Target],
 
-- Version
+    Registries: [RegistryReference]
 
-- Dependencies (with immutable `PackageID` references)
+}
 
-- Capability requirements
+```
 
-- Resource requirements
+#### 4.2 Package Manifest
 
-- Build configuration
+```
 
-- Test configuration
+PackageManifest {
 
-### 6. Dependency Resolution
+    PackageID,
 
-Dependency resolution **MUST** be deterministic.
+    Name,
 
-Requirements:
+    Version,
 
-- Dependencies **MUST** reference immutable `PackageID` values (including content hash).
+    Authors,
 
-- Version resolution **MUST** follow a defined, deterministic algorithm.
+    License,
 
-- The resulting set of artifacts **MUST** be recorded in the lockfile.
+    Dependencies: [PackageID],
 
-### 7. Lockfile Format
+    Capabilities: [CapabilityRequirement],
 
-The lockfile **MUST** be machine-readable and human-auditable. It **MUST** contain:
+    Resources: ResourceRequirements,
+
+    Build: BuildConfiguration,
+
+    Tests: TestConfiguration,
+
+    Metadata
+
+}
+
+```
+
+### 5. Dependency Resolution Algorithm
+
+Dependency resolution **MUST** be deterministic. A conforming implementation **MUST**:
+
+- Resolve dependencies using immutable `PackageID` values.
+
+- Detect and reject version conflicts, duplicate packages, and cyclic dependencies.
+
+- Record the resolved dependency graph in the lockfile.
+
+- Produce identical lockfiles for the same manifest and registry state.
+
+### 6. Lockfile Format
+
+The lockfile **MUST** contain:
 
 - Exact package identities and content hashes
 
@@ -144,7 +152,7 @@ The lockfile **MUST** be machine-readable and human-auditable. It **MUST** conta
 
 - Optional cryptographic signature
 
-### 8. Build Reproducibility
+### 7. Build Reproducibility
 
 The package manager **MUST** support reproducible builds by:
 
@@ -154,7 +162,7 @@ The package manager **MUST** support reproducible builds by:
 
 - Ensuring that the same inputs always produce bit-identical CPCPF artifacts
 
-### 9. Workspace Policies
+### 8. Workspace Policies
 
 Workspaces **MAY** declare policies that apply to all member packages, including:
 
@@ -170,7 +178,7 @@ Workspaces **MAY** declare policies that apply to all member packages, including
 
 These policies **MUST** be inherited by member packages unless overridden.
 
-### 10. Registry Mirrors and Offline Support
+### 9. Registry Mirrors and Offline Support
 
 The package manager **SHOULD** support:
 
@@ -184,7 +192,55 @@ The package manager **SHOULD** support:
 
 Mirror configuration **MUST** be recorded in the workspace manifest or lockfile for reproducibility.
 
-### 11. Integration with Other RFCs
+### 10. Standard CLI
+
+A conforming implementation **SHOULD** provide a standard command-line interface including at least:
+
+```
+
+cog new
+
+cog init
+
+cog add
+
+cog remove
+
+cog update
+
+cog build
+
+cog test
+
+cog publish
+
+cog install
+
+cog search
+
+cog lock
+
+cog verify
+
+cog tree
+
+cog doctor
+
+cog clean
+
+```
+
+### 11. Package Lifecycle Events
+
+Package lifecycle transitions **SHOULD** emit events in the unified event log (RFC-0018):
+
+```
+
+Created → Built → Verified → Packed → Published → Installed → Updated → Deprecated → Archived
+
+```
+
+### 12. Integration with Other RFCs
 
 CPMWS integrates with:
 
@@ -198,7 +254,7 @@ CPMWS integrates with:
 
 - RFC-0045 — CTDX (tooling integration)
 
-### 12. Conformance
+### 13. Conformance
 
 A conforming CPMWS implementation **SHOULD** provide:
 
@@ -214,7 +270,7 @@ A conforming CPMWS implementation **SHOULD** provide:
 
 If any capability is omitted, the implementation **MUST** document the omission.
 
-### 13. Open Questions
+### 14. Open Questions
 
 The following areas require future specification:
 
@@ -228,6 +284,6 @@ The following areas require future specification:
 
 ---
 
-**RFC-0047 — Cognitive Package Manager and Workspace Specification (CPMWS) v1.1** is now ready for **Final Ratification Review**.
+**RFC-0047 — Cognitive Package Manager and Workspace Specification (CPMWS) v1.2** is now ready for **Final Ratification Review**.
 
-This version incorporates workspace profiles, a canonical manifest schema, standard CLI commands, richer lockfile metadata, registry mirror support, and workspace policy inheritance, bringing it in line with the precision of the strongest RFCs in the series.
+This version incorporates workspace profiles, a canonical manifest schema, deterministic dependency resolution, richer lockfile metadata, registry mirror support, standard CLI, package lifecycle events, and workspace policy inheritance, bringing it in line with the precision of the strongest RFCs in the series.

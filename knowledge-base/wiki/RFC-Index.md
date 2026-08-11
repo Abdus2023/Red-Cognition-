@@ -288,3 +288,36 @@ Semantic Foundation (RFC-0001–0009) · Execution & Recovery (RFC-0010–0015) 
 ### Parent chain note
 
 RFC-0043's documented Parent is **RFC-0028 (CIR)** — not RFC-0042 — because CLS maps source programs onto CIR/CISA ([181] §1). The sequential chain resumes from RFC-0044 (→0043), 0045 (→0044), 0046 (→0045), 0047 (→0046).
+
+---
+
+## Message #22 additions — RFC-0047 ratified; RFC-0048 CFFI; RFC-0049 CSTS ratified; RFC-0050 capstone (sub-messages [201]–[220])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #22 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0047 | CPMWS — Cognitive Package Manager and Workspace Specification | v1.0 ([197]) → v1.1 ([199]) → v1.2 ([201], Candidate for Final Ratification); review [202]: "Recommendation: Ratify RFC-0047 v1.2" + "Status: **Ratified**" — **RATIFIED** per ratification decision [202] | [`rfcs/RFC-0047-cpmws-package-manager-workspace.md`](../../rfcs/RFC-0047-cpmws-package-manager-workspace.md) (v1.2) |
+| RFC-0048 | CFFI — Cognitive Foreign Function Interface | v1.0 Draft ([203]); review [204] (10 additions); v1.1 Candidate for Ratification ([205], supersedes v1.0; D-70); review [206]: Candidate for Final Ratification (96–98%) — no ratification decision in corpus | [`rfcs/RFC-0048-cffi-foreign-function-interface.md`](../../rfcs/RFC-0048-cffi-foreign-function-interface.md) |
+| RFC-0049 | CSTS — Cognitive Standard Toolchain Specification | v1.0 Draft ([207]) → review [208] → v1.1 Candidate ([209]) → review [210] → v1.2 Candidate for Final Ratification ([211], D-71) → identical re-send ([213], D-72) → reviews [212]/[214]: "Suitable/Ready for Final Ratification" → **Ratification Record** ([215], USER): "Status: **Ratified**" — **RATIFIED** per [215] | [`rfcs/RFC-0049-csts-standard-toolchain.md`](../../rfcs/RFC-0049-csts-standard-toolchain.md) (v1.2), [`rfcs/RFC-0049-ratification-record.md`](../../rfcs/RFC-0049-ratification-record.md) |
+| RFC-0050 | Red/Cognition v1.0 Architecture and Conformance Specification (capstone) | structure proposed ([216]); v1.0 Draft ([217], contains "RFC-100" reference error); review [218] (required corrections); v1.1 Candidate for Ratification ([219], corrections incorporated; D-73); review [220]: "Decision: ACCEPT — Ready for Ratification" — no formal ratification decision in corpus | [`rfcs/RFC-0050-architecture-conformance-specification.md`](../../rfcs/RFC-0050-architecture-conformance-specification.md) (v1.1) |
+
+### Ratified set after message #22
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001 (Cognitive Type System), RFC-0002 (Effect Ordering), RFC-0011 (Scheduler), RFC-0042 (CADP), RFC-0046 (CODP), **RFC-0047 (CPMWS v1.2, ratified per ratification decision [202])**, **RFC-0049 (CSTS v1.2, ratified per ratification record [215])**. RFC-0048 v1.1 and RFC-0050 v1.1 remain Candidate for Ratification (no ratification decisions in corpus).
+
+### Conflict C-12 — [215] status table vs ratification events
+
+The ratification record [215] includes an RFC-0001…0049 status table that lists **RFC-0046 as "Final Candidate"** and **RFC-0047 as "Final Candidate"** although ratification events exist for both ([196] and [202] respectively, both preceding [215] in this same message), and lists RFC-0002/0003/0004 as "Ratification-ready" although ratification decisions exist elsewhere in corpus (same pattern as C-9 for [179]). Resolution: ratification events treated as authoritative; the table is preserved verbatim in the scaffolded record.
+
+### Roadmap evolution (conflict C-11 extended; duplicate D-74)
+
+- **[202] roadmap:** RFC-0048 CFFI ✓ (drafted), RFC-0049 CSTS ✓ (drafted), RFC-0050 **CILSP** (IDE & LSP extensions) ✗ — actual RFC-0050 is the Architecture & Conformance capstone; RFC-0051 **CTVF**; RFC-0052 **Cognitive Ecosystem Profiles**.
+- **[215]/[216] roadmap:** RFC-0050 Architecture & Conformance capstone ✓ (drafted), RFC-0051 Cognitive Macro and Metaprogramming System, RFC-0052 Cognitive Testing and Verification Framework, RFC-0053 Cognitive Remote Agent Invocation Protocol, RFC-0054 Formal Language Semantics (EBNF and denotational semantics).
+- Combined with the earlier [182]/[196] proposals, topics for RFC-0050…0054 have been assigned three different ways ([182]: 0050 capstone; [196]: 0050 CTEF + 0051 Reference Runtime; [202]: 0050 CILSP, 0051 CTVF, 0052 Ecosystem Profiles; [215]/[216]: 0050 capstone, 0051 Macro, 0052 Testing, 0053 Remote Agent, 0054 Formal Semantics). Actual drafting has so far followed the [215]/[216] assignment for 0050. All proposals preserved; divergence recorded in C-11.
+
+### RFC-0050 capstone notes
+
+- **RFC-100 reference error:** [217] v1.0 §6 referenced "Layer Interface Contract Model (RFC-100)"; flagged as a numbering conflict in review [218]; v1.1 [219] removes the RFC-100 citation ("the Layer Interface Contract Model and the Cognitive Runtime Architecture (RFC-0016)"). Both versions preserved in archive.
+- **[220] decision wording:** "Decision: ACCEPT — Ready for Ratification" with recommended transition Draft → Candidate → Final Ratification Review → Ratified; no explicit "Status: Ratified" declaration — RFC-0050 therefore remains Candidate for Ratification.
+- Review [220] describes RFC-0050 as the "architectural constitution" / "constitutional architecture layer" of Red/Cognition v1.x (cf. [216]: "Red/Cognition v1.0 Constitution").
