@@ -6,7 +6,7 @@
 
 ## Count summary
 
-**Corpus totals: 1591 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591, Message #26 Annex at the bottom of this page).
+**Corpus totals: 1777 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777, Message #27 Annex at the bottom of this page). (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591, Message #26 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -341,6 +341,31 @@ Message #26 breakdown:
 | [278] | 10 | SN-1558 … SN-1567 |
 | [279] | 0 | — |
 | [280] | 24 | SN-1568 … SN-1591 |
+
+Message #27 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [281] | 0 | — |
+| [282] | 9 | SN-1592 … SN-1600 |
+| [283] | 1 | SN-1601 |
+| [284] | 19 | SN-1602 … SN-1620 |
+| [285] | 1 | SN-1621 |
+| [286] | 24 | SN-1622 … SN-1645 |
+| [287] | 1 | SN-1646 |
+| [288] | 15 | SN-1647 … SN-1661 |
+| [289] | 6 | SN-1662 … SN-1667 |
+| [290] | 23 | SN-1668 … SN-1690 |
+| [291] | 0 | — |
+| [292] | 5 | SN-1691 … SN-1695 |
+| [293] | 0 | — |
+| [294] | 9 | SN-1696 … SN-1704 |
+| [295] | 7 | SN-1705 … SN-1711 |
+| [296] | 11 | SN-1712 … SN-1722 |
+| [297] | 8 | SN-1723 … SN-1730 |
+| [298] | 24 | SN-1731 … SN-1754 |
+| [299] | 8 | SN-1755 … SN-1762 |
+| [300] | 15 | SN-1763 … SN-1777 |
 
 ## Ledger
 
@@ -27871,5 +27896,4860 @@ Security + Trust
         v
 
 Secure Cognitive Transactions
+
+```
+
+
+## Message #27 Annex — SN-1592 … SN-1777 (verbatim embeddings)
+
+> Each fenced block from corpus message #27 (sub-messages [281]–[300]) embedded exactly once, unchanged from the archive (incl. the repeated RFC-0059 ratification-record fences [281]/[291]/[293] and the divergent RFC-0060 fences [283]/[295], preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [282]
+
+**SN-1592**
+
+```text
+
+RFC-0057
+
+Cognitive Distributed Transaction Semantics
+
+          |
+
+          v
+
+RFC-0058
+
+Cognitive Transaction Wire Protocol
+
+          |
+
+          v
+
+RFC-0059
+
+Cognitive Transaction Security & Trust Profile
+
+```
+
+**SN-1593**
+
+```text
+
+Cognitive Identity
+
+      |
+
+      +── NodeID
+
+      |
+
+      +── AgentID
+
+      |
+
+      +── CVMID
+
+      |
+
+      +── ServiceID
+
+```
+
+**SN-1594**
+
+```text
+
+Root Trust Authority
+
+          |
+
+          v
+
+Domain Trust Authority
+
+          |
+
+          v
+
+Cognitive Runtime
+
+          |
+
+          v
+
+Agent / CVM Identity
+
+          |
+
+          v
+
+Transaction Participant
+
+```
+
+**SN-1595**
+
+```text
+
+TransactionSecurityContext {
+
+    TransactionID,
+
+    CoordinatorIdentity,
+
+    ParticipantIdentities,
+
+    GrantedCapabilities,
+
+    SecurityPolicy,
+
+    TrustLevel,
+
+    SessionKeys,
+
+    AuditReference
+
+}
+
+```
+
+**SN-1596**
+
+```text
+
+RFC-0057 TransactionManifest
+
+```
+
+**SN-1597**
+
+```text
+
+Receive CDTP Message
+
+        |
+
+        v
+
+Validate Envelope
+
+(RFC-0058)
+
+        |
+
+        v
+
+Verify Integrity
+
+(RFC-0059)
+
+        |
+
+        v
+
+Authenticate Identity
+
+        |
+
+        v
+
+Evaluate Capability
+
+(RFC-0006)
+
+        |
+
+        v
+
+Evaluate Policy
+
+(RFC-0025)
+
+        |
+
+        v
+
+Execute Transaction
+
+(RFC-0057)
+
+```
+
+**SN-1598**
+
+```text
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+SignatureVerified
+
+IntegrityFailed
+
+ReplayDetected
+
+TrustRevoked
+
+SecurityPolicyViolation
+
+```
+
+**SN-1599**
+
+```text
+
+Semantic Layer
+
+     |
+
+     | RFC-0057
+
+     v
+
+Wire Layer
+
+     |
+
+     | RFC-0058
+
+     v
+
+Security Layer
+
+     |
+
+     | RFC-0059
+
+     v
+
+Secure Cognitive Transactions
+
+```
+
+**SN-1600**
+
+```text
+
+Cognitive Program
+
+        |
+
+        v
+
+CISA / CIR
+
+        |
+
+        v
+
+CVM Instruction Set
+
+        |
+
+        v
+
+Scheduler (RFC-0011)
+
+        |
+
+        v
+
+Transaction Boundary (RFC-0057)
+
+        |
+
+        v
+
+Secure Execution (RFC-0059)
+
+```
+
+### Sub-message [283]
+
+**SN-1601**
+
+```
+
+Scheduler selects ExecutionContext
+
+   ↓
+
+CVM fetches next CISA instruction
+
+   ↓
+
+Validate instruction and operands
+
+   ↓
+
+Capability check (if required)
+
+   ↓
+
+Execute instruction
+
+   ↓
+
+Generate effects (if any)
+
+   ↓
+
+Update trace and execution context
+
+   ↓
+
+Yield to scheduler or continue
+
+```
+
+### Sub-message [284]
+
+**SN-1602**
+
+```text
+
+Cognitive Program
+
+        |
+
+        v
+
+CISA Instructions
+
+        |
+
+        v
+
+CVM Execution Engine
+
+        |
+
+        v
+
+Deterministic Scheduler
+
+        |
+
+        v
+
+Transaction Layer
+
+        |
+
+        v
+
+Security Layer
+
+```
+
+**SN-1603**
+
+```text
+
+InstructionExecuted {
+
+    ExecutionID,
+
+    ContextID,
+
+    InstructionPointer,
+
+    Opcode,
+
+    OperandsHash,
+
+    Effects,
+
+    SchedulerEpoch,
+
+    TransactionID
+
+}
+
+```
+
+**SN-1604**
+
+```text
+
+Pure Instruction
+
+        |
+
+        v
+
+No Transaction Required
+
+Effect Instruction
+
+        |
+
+        v
+
+Transaction Context Required
+
+```
+
+**SN-1605**
+
+```text
+
+Instruction
+
+      |
+
+      v
+
+Effect Classification
+
+      |
+
+      v
+
+Capability Check
+
+      |
+
+      v
+
+Policy Evaluation
+
+      |
+
+      v
+
+Execute
+
+```
+
+**SN-1606**
+
+```text
+
+ExecutionContext {
+
+    ContextID,
+
+    ProgramID,
+
+    InstructionPointer,
+
+    RegisterState,
+
+    MemoryState,
+
+    StackState,
+
+    TransactionContext,
+
+    SecurityContext,
+
+    SchedulerState,
+
+    TraceContext
+
+}
+
+```
+
+**SN-1607**
+
+```text
+
+FETCH
+
+  |
+
+DECODE
+
+  |
+
+VALIDATE
+
+  |
+
+AUTHORIZE
+
+  |
+
+EXECUTE
+
+  |
+
+GENERATE EFFECTS
+
+  |
+
+COMMIT / BUFFER EFFECTS
+
+  |
+
+TRACE
+
+  |
+
+YIELD
+
+```
+
+**SN-1608**
+
+```text
+
+Scheduler
+
+    |
+
+    v
+
+Select Ready Context
+
+    |
+
+    v
+
+Load CVM State
+
+    |
+
+    v
+
+Execute Instruction Quantum
+
+    |
+
+    v
+
+Update Trace
+
+    |
+
+    v
+
+Yield / Continue
+
+```
+
+**SN-1609**
+
+```text
+
+ExecutionQuantum {
+
+    ContextID,
+
+    StartInstruction,
+
+    InstructionCount,
+
+    SchedulerEpoch,
+
+    Deadline,
+
+    YieldReason
+
+}
+
+```
+
+**SN-1610**
+
+```text
+
+YieldState {
+
+    InstructionPointer,
+
+    Registers,
+
+    MemoryReference,
+
+    TransactionState,
+
+    TracePosition
+
+}
+
+```
+
+**SN-1611**
+
+```text
+
+TransactionManifest
+
+        |
+
+        v
+
+TransactionSecurityContext
+
+        |
+
+        v
+
+ExecutionContext
+
+        |
+
+        v
+
+CISA Instruction
+
+```
+
+**SN-1612**
+
+```text
+
+Instruction
+
+   |
+
+   v
+
+Effect Generated
+
+   |
+
+   v
+
+Effect Buffer
+
+   |
+
+   v
+
+Transaction Commit
+
+   |
+
+   v
+
+External Visibility
+
+```
+
+**SN-1613**
+
+```text
+
+Verify:
+
+Identity
+
+   +
+
+Capability
+
+   +
+
+Policy
+
+   +
+
+Transaction State
+
+```
+
+**SN-1614**
+
+```text
+
+SecurityViolation
+
+        |
+
+Abort Instruction
+
+        |
+
+Generate Trace Event
+
+```
+
+**SN-1615**
+
+```text
+
+CVMCheckpoint {
+
+    ContextID,
+
+    InstructionPointer,
+
+    RegisterState,
+
+    MemorySnapshot,
+
+    TransactionReference,
+
+    SchedulerEpoch,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1616**
+
+```text
+
+Scheduler Decisions
+
+        +
+
+Instruction Sequence
+
+        +
+
+Execution Context
+
+        +
+
+Effects
+
+        +
+
+Security Decisions
+
+```
+
+**SN-1617**
+
+```text
+
+Original Execution
+
+        ==
+
+Replay Execution
+
+```
+
+**SN-1618**
+
+```text
+
+CVM-A
+
+ |
+
+ | Transaction
+
+ |
+
+ v
+
+Coordinator
+
+ |
+
+ |
+
+ v
+
+CVM-B
+
+```
+
+**SN-1619**
+
+```text
+
+ContextCreated
+
+InstructionFetched
+
+InstructionExecuted
+
+InstructionYielded
+
+InstructionBlocked
+
+CapabilityChecked
+
+EffectGenerated
+
+TransactionAttached
+
+CheckpointCreated
+
+ContextRestored
+
+ExecutionCompleted
+
+```
+
+**SN-1620**
+
+```text
+
+RFC-0011
+
+Scheduler
+
+    |
+
+    v
+
+RFC-0060
+
+Instruction Execution Semantics
+
+    |
+
+    v
+
+RFC-0057
+
+Transactions
+
+    |
+
+    v
+
+RFC-0059
+
+Security
+
+```
+
+### Sub-message [285]
+
+**SN-1621**
+
+```
+
+Cognitive Program
+
+   ↓
+
+CISA Instructions (RFC-0013)
+
+   ↓
+
+CVM Execution + Scheduler Integration (RFC-0060)
+
+   ↓
+
+Transaction Boundaries (RFC-0057)
+
+   ↓
+
+Security Enforcement (RFC-0059)
+
+   ↓
+
+Effects, Memory, and Traces (RFC-0002, 0008, 0018)
+
+   ↓
+
+Deterministic Replay and Verification
+
+```
+
+### Sub-message [286]
+
+**SN-1622**
+
+```text
+
+Cognitive Program
+
+        |
+
+        v
+
+CIR / CISA Representation
+
+        |
+
+        v
+
+CISA Instruction Encoding
+
+        |
+
+        v
+
+CVM Register Machine
+
+        |
+
+        v
+
+RFC-0060 Execution Engine
+
+        |
+
+        v
+
+Transactions + Security
+
+```
+
+**SN-1623**
+
+```text
+
+CVM {
+
+    Register File
+
+    Operand Stack
+
+    Local Memory
+
+    Shared Memory Interface
+
+    Effect Buffer
+
+    Transaction Context
+
+    Security Context
+
+    Trace Context
+
+}
+
+```
+
+**SN-1624**
+
+```
+
+R0-R31
+
+```
+
+**SN-1625**
+
+```
+
+Register {
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Provenance
+
+}
+
+```
+
+**SN-1626**
+
+```
+
+BR0-BR7
+
+```
+
+**SN-1627**
+
+```
+
+GR0-GR7
+
+```
+
+**SN-1628**
+
+```
+
+MR0-MR7
+
+```
+
+**SN-1629**
+
+```
+
+Immediate
+
+Register
+
+Memory Reference
+
+Constant Pool
+
+Capability Handle
+
+Effect Reference
+
+```
+
+**SN-1630**
+
+```
+
+ADD R1,R2,R3
+
+```
+
+**SN-1631**
+
+```
+
+R1 = R2 + R3
+
+```
+
+**SN-1632**
+
+```
+
++------------+
+
+| Opcode     | 2 bytes
+
++------------+
+
+| Flags      | 2 bytes
+
++------------+
+
+| Operand A  |
+
++------------+
+
+| Operand B  |
+
++------------+
+
+| Operand C  |
+
++------------+
+
+| Metadata   |
+
++------------+
+
+```
+
+**SN-1633**
+
+```
+
+NOP
+
+HALT
+
+YIELD
+
+CALL
+
+RETURN
+
+JUMP
+
+BRANCH
+
+```
+
+**SN-1634**
+
+```
+
+ADD
+
+SUB
+
+MUL
+
+DIV
+
+COMPARE
+
+HASH
+
+```
+
+**SN-1635**
+
+```
+
+LOAD
+
+STORE
+
+ALLOC
+
+FREE
+
+READ
+
+WRITE
+
+```
+
+**SN-1636**
+
+```
+
+BELIEF_GET
+
+BELIEF_UPDATE
+
+KNOWLEDGE_QUERY
+
+MEMORY_RECALL
+
+REFLECT
+
+```
+
+**SN-1637**
+
+```
+
+GOAL_CREATE
+
+GOAL_UPDATE
+
+GOAL_CHECK
+
+GOAL_COMPLETE
+
+```
+
+**SN-1638**
+
+```
+
+TX_BEGIN
+
+TX_EFFECT
+
+TX_COMMIT
+
+TX_ABORT
+
+TX_COMPENSATE
+
+```
+
+**SN-1639**
+
+```
+
+CAP_CHECK
+
+IDENTITY_VERIFY
+
+POLICY_EVAL
+
+ATTEST
+
+```
+
+**SN-1640**
+
+```
+
+EffectDescriptor {
+
+    EffectID,
+
+    InstructionID,
+
+    CapabilityRequired,
+
+    TransactionID,
+
+    DeterminismClass,
+
+    CompensationHandler
+
+}
+
+```
+
+**SN-1641**
+
+```
+
++----------------+
+
+| Local Memory   |
+
++----------------+
+
+| Working Memory|
+
++----------------+
+
+| Shared Memory |
+
++----------------+
+
+```
+
+**SN-1642**
+
+```
+
+Decode
+
+ |
+
+Opcode Validation
+
+ |
+
+Operand Validation
+
+ |
+
+Capability Check
+
+ |
+
+Transaction Check
+
+ |
+
+Execute
+
+```
+
+**SN-1643**
+
+```
+
+InstructionVerificationFailed
+
+```
+
+**SN-1644**
+
+```
+
+cog cvm inspect
+
+cog cvm registers
+
+cog cvm trace
+
+cog cvm disassemble
+
+cog cvm replay
+
+```
+
+**SN-1645**
+
+```text
+
+RFC-0013
+
+CISA Concept
+
+      ↓
+
+RFC-0061
+
+Instruction Set + Registers
+
+      ↓
+
+RFC-0060
+
+Execution Semantics
+
+      ↓
+
+RFC-0057
+
+Transactions
+
+      ↓
+
+RFC-0059
+
+Security
+
+```
+
+### Sub-message [287]
+
+**SN-1646**
+
+```
+
+Cognitive Program
+
+   ↓
+
+CIR (RFC-0028)
+
+   ↓
+
+CISA Instructions (RFC-0013 + RFC-0061)
+
+   ↓
+
+CVM Execution + Scheduler (RFC-0012 + RFC-0060)
+
+   ↓
+
+Transaction + Security Layer (RFC-0057 + RFC-0059)
+
+   ↓
+
+Effects, Memory, and Traces (RFC-0002, 0008, 0018)
+
+   ↓
+
+Deterministic Replay and Verification
+
+```
+
+### Sub-message [288]
+
+**SN-1647**
+
+```text
+
+Cognitive Source / CIR
+
+          |
+
+          v
+
+      CISA IR
+
+          |
+
+          v
+
+ RFC-0062 Bytecode Encoder
+
+          |
+
+          v
+
+    CVM Bytecode Image
+
+          |
+
+          v
+
+ RFC-0060 Execution Engine
+
+          |
+
+          v
+
+    Cognitive Runtime
+
+```
+
+**SN-1648**
+
+```
+
++----------------------+
+
+| Magic Header         |
+
++----------------------+
+
+| Format Version       |
+
++----------------------+
+
+| Program Metadata     |
+
++----------------------+
+
+| Constant Pool        |
+
++----------------------+
+
+| Register Metadata    |
+
++----------------------+
+
+| Instruction Section  |
+
++----------------------+
+
+| Effect Manifest      |
+
++----------------------+
+
+| Debug Section        |
+
++----------------------+
+
+| Integrity Block      |
+
++----------------------+
+
+```
+
+**SN-1649**
+
+```
+
+0x43564D42
+
+```
+
+**SN-1650**
+
+```
+
+CVMB
+
+```
+
+**SN-1651**
+
+```
+
+CVMBytecodeHeader {
+
+    Magic,
+
+    FormatVersion,
+
+    MinimumRuntimeVersion,
+
+    ProgramID,
+
+    ProgramHash,
+
+    EntryPoint,
+
+    SectionCount
+
+}
+
+```
+
+**SN-1652**
+
+```
+
++----------------+
+
+| Opcode         | 2 bytes
+
++----------------+
+
+| InstructionID  | 8 bytes
+
++----------------+
+
+| Flags          | 2 bytes
+
++----------------+
+
+| OperandCount   | 1 byte
+
++----------------+
+
+| Operands       |
+
++----------------+
+
+| EffectInfo     |
+
++----------------+
+
+```
+
+**SN-1653**
+
+```
+
+Operand {
+
+    Type,
+
+    Length,
+
+    Value
+
+}
+
+```
+
+**SN-1654**
+
+```
+
+ConstantPool {
+
+    Strings,
+
+    Numbers,
+
+    Symbols,
+
+    TypeDescriptors,
+
+    CognitiveObjects
+
+}
+
+```
+
+**SN-1655**
+
+```
+
+RegisterMetadata {
+
+    RegisterID,
+
+    Type,
+
+    Permission,
+
+    InitialValue
+
+}
+
+```
+
+**SN-1656**
+
+```
+
+EffectManifest {
+
+    EffectID,
+
+    RequiredCapability,
+
+    TransactionMode,
+
+    CompensationHandler
+
+}
+
+```
+
+**SN-1657**
+
+```
+
+VerificationMetadata {
+
+    TypeSafetyHash,
+
+    CapabilityRequirements,
+
+    ControlFlowHash,
+
+    ReplayHash
+
+}
+
+```
+
+**SN-1658**
+
+```
+
+DebugInfo {
+
+    SourceMap,
+
+    SymbolTable,
+
+    InstructionMapping
+
+}
+
+```
+
+**SN-1659**
+
+```text
+
+Load Bytecode
+
+      |
+
+Verify Hash
+
+      |
+
+Validate Format
+
+      |
+
+Check Capabilities
+
+      |
+
+Verify Policy
+
+      |
+
+Execute
+
+```
+
+**SN-1660**
+
+```
+
+Original Execution
+
+        ==
+
+Replay Execution
+
+```
+
+**SN-1661**
+
+```text
+
+RFC-0028
+
+CIR
+
+    ↓
+
+RFC-0061
+
+Instruction Set + Registers
+
+    ↓
+
+RFC-0062
+
+Bytecode Encoding
+
+    ↓
+
+RFC-0060
+
+Execution Engine
+
+    ↓
+
+RFC-0057 / RFC-0059
+
+Transactions + Security
+
+```
+
+### Sub-message [289]
+
+**SN-1662**
+
+```
+
+Participant A                 Participant B
+
+    Hello
+
+       |
+
+       v
+
+Identity Proof
+
+       |
+
+       v
+
+Signature Verification
+
+       |
+
+       v
+
+Capability Check
+
+       |
+
+       v
+
+Authentication Result
+
+```
+
+**SN-1663**
+
+```
+
+IntegrityBlock {
+
+    Algorithm,
+
+    Hash,
+
+    Signature,
+
+    KeyReference,
+
+    Timestamp,
+
+    Nonce
+
+}
+
+```
+
+**SN-1664**
+
+```
+
+Identity + Capability + Policy + Transaction Context
+
+```
+
+**SN-1665**
+
+```
+
+AuthorizationDecision {
+
+    Allowed,
+
+    Denied,
+
+    Reason,
+
+    PolicyReference,
+
+    CapabilityReference
+
+}
+
+```
+
+**SN-1666**
+
+```
+
+TransactionSecurityContext {
+
+    TransactionID,
+
+    CoordinatorIdentity,
+
+    ParticipantIdentities,
+
+    GrantedCapabilities,
+
+    SecurityPolicy,
+
+    TrustLevel,
+
+    SessionKeys,
+
+    AuditReference
+
+}
+
+```
+
+**SN-1667**
+
+```
+
+Generate
+
+   ↓
+
+Distribute
+
+   ↓
+
+Activate
+
+   ↓
+
+Rotate
+
+   ↓
+
+Revoke
+
+   ↓
+
+Archive
+
+```
+
+### Sub-message [290]
+
+**SN-1668**
+
+```
+
+NodeID
+
+AgentID
+
+CVMID
+
+```
+
+**SN-1669**
+
+```
+
+RFC-0053 CRAIP
+
+        ↓
+
+RFC-0057 CDTCP
+
+        ↓
+
+RFC-0058 CTWP
+
+        ↓
+
+RFC-0059 CTSTP
+
+```
+
+**SN-1670**
+
+```
+
+Cryptographic Identity
+
+        +
+
+Capability Authority (RFC-0006)
+
+        +
+
+Policy Evaluation (RFC-0025)
+
+        +
+
+Attestation State
+
+        ↓
+
+Trust Decision
+
+```
+
+**SN-1671**
+
+```
+
+HELLO
+
+  |
+
+  v
+
+Identity Proof
+
+  |
+
+  v
+
+Signature Verification
+
+  |
+
+  v
+
+Capability Evaluation
+
+  |
+
+  v
+
+Authentication Result
+
+```
+
+**SN-1672**
+
+```
+
+IntegrityBlock {
+
+    Algorithm,
+
+    Hash,
+
+    Signature,
+
+    KeyReference,
+
+    Timestamp,
+
+    Nonce
+
+}
+
+```
+
+**SN-1673**
+
+```
+
+CDTPEnvelope
+
+      |
+
+      +-- Payload
+
+      |
+
+      +-- IntegrityBlock
+
+```
+
+**SN-1674**
+
+```
+
+Authorization =
+
+    Identity
+
+    +
+
+    Capability
+
+    +
+
+    Policy
+
+    +
+
+    Transaction Context
+
+```
+
+**SN-1675**
+
+```
+
+AuthorizationDecision {
+
+    Allowed,
+
+    Denied,
+
+    Reason,
+
+    PolicyReference,
+
+    CapabilityReference
+
+}
+
+```
+
+**SN-1676**
+
+```
+
+RFC-0006 Capability Model
+
+          |
+
+          v
+
+RFC-0025 Security Policy Language
+
+          |
+
+          v
+
+RFC-0059 CTSTP
+
+          |
+
+          v
+
+RFC-0057 Transaction Execution
+
+```
+
+**SN-1677**
+
+```
+
+TransactionSecurityContext
+
+```
+
+**SN-1678**
+
+```
+
+TransactionSecurityContext {
+
+    TransactionID,
+
+    CoordinatorIdentity,
+
+    ParticipantIdentities,
+
+    GrantedCapabilities,
+
+    SecurityPolicy,
+
+    TrustLevel,
+
+    SessionKeys,
+
+    AuditReference
+
+}
+
+```
+
+**SN-1679**
+
+```
+
+ExecutionContext      (RFC-0060)
+
+TransactionManifest   (RFC-0057)
+
+CDTPEnvelope          (RFC-0058)
+
+```
+
+**SN-1680**
+
+```
+
+Generate
+
+   ↓
+
+Distribute
+
+   ↓
+
+Activate
+
+   ↓
+
+Rotate
+
+   ↓
+
+Revoke
+
+   ↓
+
+Archive
+
+```
+
+**SN-1681**
+
+```
+
+Hardware Attestation
+
+          |
+
+          v
+
+CVM Trust Decision
+
+          |
+
+          v
+
+Sensitive Instruction Execution
+
+```
+
+**SN-1682**
+
+```
+
+RFC-0026 Hardware Acceleration
+
+RFC-0060 CVM-IESS
+
+RFC-0061 CISA-RA
+
+```
+
+**SN-1683**
+
+```
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+SignatureVerified
+
+IntegrityFailed
+
+ReplayDetected
+
+TrustRevoked
+
+SecurityPolicyViolation
+
+```
+
+**SN-1684**
+
+```
+
+Security Event
+
+       |
+
+       v
+
+Immutable Event Log
+
+       |
+
+       v
+
+Deterministic Replay
+
+```
+
+**SN-1685**
+
+```
+
+CTSTP-Crypto-Profile
+
+Profile A:
+
+- Hash: SHA-256 or SHA-3
+
+- Signature: Ed25519
+
+- Key Exchange: X25519
+
+Profile B:
+
+- Hash: SHA-3-512
+
+- Signature: Dilithium
+
+- Key Exchange: Kyber
+
+```
+
+**SN-1686**
+
+```
+
+TrustLevel {
+
+    UNKNOWN = 0,
+
+    BASIC = 1,
+
+    VERIFIED = 2,
+
+    ATTESTED = 3,
+
+    FORMALLY_VERIFIED = 4
+
+}
+
+```
+
+**SN-1687**
+
+```
+
+Created
+
+  |
+
+Authenticated
+
+  |
+
+Authorized
+
+  |
+
+Active
+
+  |
+
+Rotating
+
+  |
+
+Expired
+
+  |
+
+Revoked
+
+```
+
+**SN-1688**
+
+```
+
+SecurityDecisionHash =
+
+Hash(
+
+ IdentityState +
+
+ CapabilityState +
+
+ PolicyVersion +
+
+ TransactionContext +
+
+ TimestampEpoch
+
+)
+
+```
+
+**SN-1689**
+
+```
+
+                 Cognitive Application
+
+                         |
+
+                         v
+
+                  CISA Instructions
+
+                         |
+
+                         v
+
+              CVM Execution (0060/0061)
+
+                         |
+
+                         v
+
+              Transaction Layer (0057)
+
+                         |
+
+                         v
+
+              Wire Protocol (0058)
+
+                         |
+
+                         v
+
+        +--------------------------------+
+
+        | CTSTP Security Trust Layer     |
+
+        | RFC-0059                       |
+
+        +--------------------------------+
+
+                         |
+
+        Identity + Capability + Policy
+
+                         |
+
+                         v
+
+             Deterministic Audit Log
+
+                    RFC-0018
+
+```
+
+**SN-1690**
+
+```
+
+RFC-0057
+
+Transaction Semantics
+
+RFC-0058
+
+Wire Encoding
+
+RFC-0059
+
+Security + Trust
+
+```
+
+### Sub-message [292]
+
+**SN-1691**
+
+```
+
+                 Red/Cognition Distributed Transaction Stack
+
+┌───────────────────────────────────────────────┐
+
+│ RFC-0059 CTSTP                                 │
+
+│ Security + Trust Plane                         │
+
+│                                                │
+
+│ Identity                                       │
+
+│ Authentication                                 │
+
+│ Authorization                                  │
+
+│ Capability Enforcement                         │
+
+│ Attestation                                    │
+
+│ Replay Protection                              │
+
+│ Audit Events                                   │
+
+└───────────────────────────────────────────────┘
+
+                     ▲
+
+                     │
+
+┌───────────────────────────────────────────────┐
+
+│ RFC-0058 CTWP                                  │
+
+│ Wire Protocol Plane                            │
+
+│                                                │
+
+│ CDTP Envelope                                  │
+
+│ Message Registry                               │
+
+│ Encoding                                       │
+
+│ Version Negotiation                            │
+
+│ Stream Multiplexing                            │
+
+│ Sequence Ordering                              │
+
+└───────────────────────────────────────────────┘
+
+                     ▲
+
+                     │
+
+┌───────────────────────────────────────────────┐
+
+│ RFC-0057 CDTCP                                 │
+
+│ Transaction Semantics Plane                    │
+
+│                                                │
+
+│ Transaction Manifest                           │
+
+│ Coordinator State Machine                      │
+
+│ Participant State Machine                      │
+
+│ Commit / Abort / Compensation                  │
+
+│ Deterministic Ordering                         │
+
+│ Isolation                                      │
+
+└───────────────────────────────────────────────┘
+
+                     ▲
+
+                     │
+
+┌───────────────────────────────────────────────┐
+
+│ RFC-0018 Event Log + Replay                    │
+
+│                                                │
+
+│ Deterministic History                          │
+
+│ Trace Graph                                    │
+
+│ Verification                                   │
+
+└───────────────────────────────────────────────┘
+
+```
+
+**SN-1692**
+
+```
+
+Transaction Request
+
+        │
+
+        ▼
+
+Identity Verification
+
+        │
+
+        ▼
+
+Authentication
+
+        │
+
+        ▼
+
+Capability Resolution
+
+        │
+
+        ▼
+
+Policy Evaluation
+
+        │
+
+        ▼
+
+Trust Assessment
+
+        │
+
+        ▼
+
+TransactionSecurityContext Creation
+
+        │
+
+        ▼
+
+CDTCP BeginTransaction
+
+        │
+
+        ▼
+
+Prepare / Commit / Abort
+
+        │
+
+        ▼
+
+Audit + Event Log
+
+```
+
+**SN-1693**
+
+```
+
+RFC-0057
+
+Semantic Layer
+
+(transaction meaning)
+
+        +
+
+        
+
+RFC-0058
+
+Communication Layer
+
+(transaction transport)
+
+        +
+
+        
+
+RFC-0059
+
+Security Layer
+
+(transaction trust)
+
+```
+
+**SN-1694**
+
+```
+
+Cognitive Program
+
+        ↓
+
+CIR
+
+        ↓
+
+CISA
+
+        ↓
+
+CVM
+
+        ↓
+
+Scheduler
+
+        ↓
+
+CDTCP Transaction
+
+        ↓
+
+CTSTP Security
+
+        ↓
+
+Effects
+
+```
+
+**SN-1695**
+
+```
+
+RFC-0060  CVM Execution Semantics
+
+        ↓
+
+RFC-0061  CISA Instruction Set + Register Architecture
+
+        ↓
+
+RFC-0062  CVM Bytecode Format
+
+        ↓
+
+RFC-0063  Cognitive Runtime ABI
+
+        ↓
+
+RFC-0064  Cognitive Compiler Backend
+
+```
+
+### Sub-message [294]
+
+**SN-1696**
+
+```
+
+RFC-0057
+
+Cognitive Distributed Transaction and Consistency Protocol (CDTCP)
+
+        │
+
+        ▼
+
+RFC-0058
+
+Cognitive Transaction Wire Protocol and Message Encoding (CTWP)
+
+        │
+
+        ▼
+
+RFC-0059
+
+Cognitive Transaction Security and Trust Profile (CTSTP)
+
+        │
+
+        ▼
+
+RFC-0060
+
+Cognitive Virtual Machine Instruction Execution and Scheduling Semantics
+
+        │
+
+        ▼
+
+RFC-0061
+
+Cognitive Virtual Machine Instruction Set and Register Architecture
+
+```
+
+**SN-1697**
+
+```
+
+                 Cognitive Transaction System
+
+       Coordinator
+
+            │
+
+            │ CDTCP
+
+            ▼
+
+ ┌─────────────────────────┐
+
+ │ Transaction Manifest    │
+
+ │ RFC-0057                │
+
+ └─────────────────────────┘
+
+            │
+
+            ▼
+
+ ┌─────────────────────────┐
+
+ │ Wire Protocol Layer     │
+
+ │ RFC-0058                │
+
+ │                         │
+
+ │ Envelope                │
+
+ │ Versioning              │
+
+ │ Encoding                │
+
+ │ Replay Protection       │
+
+ └─────────────────────────┘
+
+            │
+
+            ▼
+
+ ┌─────────────────────────┐
+
+ │ Security Trust Layer    │
+
+ │ RFC-0059                │
+
+ │                         │
+
+ │ Identity                │
+
+ │ Authentication          │
+
+ │ Authorization           │
+
+ │ Attestation             │
+
+ │ Audit                   │
+
+ └─────────────────────────┘
+
+```
+
+**SN-1698**
+
+```
+
+Incoming Transaction Message
+
+        │
+
+        ▼
+
+Verify Envelope
+
+(RFC-0058)
+
+        │
+
+Verify Integrity
+
+        │
+
+Authenticate Identity
+
+(NodeID / AgentID / CVMID)
+
+        │
+
+Evaluate Capability
+
+(RFC-0006)
+
+        │
+
+Evaluate Policy
+
+(RFC-0025)
+
+        │
+
+Validate Transaction Security Context
+
+        │
+
+Authorize Execution
+
+        │
+
+Record Security Event
+
+(RFC-0018)
+
+        │
+
+Execute Transaction
+
+```
+
+**SN-1699**
+
+```
+
+Identity {
+
+    NodeID
+
+    AgentID
+
+    CVMID
+
+    PublicKey
+
+    TrustLevel
+
+    AttestationState
+
+}
+
+```
+
+**SN-1700**
+
+```
+
+TransactionSecurityContext {
+
+    TransactionID
+
+    CoordinatorIdentity
+
+    ParticipantIdentities
+
+    GrantedCapabilities
+
+    SecurityPolicy
+
+    TrustLevel
+
+    SessionKeys
+
+    AuditReference
+
+}
+
+```
+
+**SN-1701**
+
+```
+
+AuthorizationDecision {
+
+    Allowed
+
+    Denied
+
+    Reason
+
+    PolicyReference
+
+    CapabilityReference
+
+}
+
+```
+
+**SN-1702**
+
+```
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+SignatureVerified
+
+IntegrityFailed
+
+ReplayDetected
+
+TrustRevoked
+
+SecurityPolicyViolation
+
+```
+
+**SN-1703**
+
+```
+
+RFC-0018
+
+Event Log + Deterministic Replay
+
+```
+
+**SN-1704**
+
+```
+
+Cognitive Application
+
+        │
+
+        ▼
+
+CIR
+
+(RFC-0028)
+
+        │
+
+        ▼
+
+CISA
+
+(RFC-0013)
+
+        │
+
+        ▼
+
+CVM Instruction Execution
+
+(RFC-0060)
+
+        │
+
+        ▼
+
+Register + Opcode Architecture
+
+(RFC-0061)
+
+        │
+
+        ▼
+
+Transaction System
+
+(RFC-0057)
+
+        │
+
+        ▼
+
+Security Trust Model
+
+(RFC-0059)
+
+        │
+
+        ▼
+
+Verified Deterministic Cognitive Runtime
+
+```
+
+### Sub-message [295]
+
+**SN-1705**
+
+```
+
+ExecutionContext {
+
+    InstructionPointer,
+
+    OperandStack,
+
+    RegisterSet,
+
+    WorkingMemoryReference,
+
+    CurrentAgent,
+
+    CurrentPlan,
+
+    CurrentGoal,
+
+    CapabilityContext,
+
+    TraceContext
+
+}
+
+```
+
+**SN-1706**
+
+```
+
+Fetch
+
+   ↓
+
+Decode
+
+   ↓
+
+Validate
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Execute
+
+   ↓
+
+Produce Effects
+
+   ↓
+
+Update Trace
+
+   ↓
+
+Advance Instruction Pointer
+
+```
+
+**SN-1707**
+
+```
+
+Begin
+
+   ↓
+
+Validate
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Execute
+
+   ↓
+
+Generate Effects
+
+   ↓
+
+Commit
+
+   ↓
+
+Trace
+
+```
+
+**SN-1708**
+
+```
+
+ExecutionQuantum {
+
+    ContextID,
+
+    StartInstruction,
+
+    InstructionCount,
+
+    SchedulerEpoch,
+
+    Deadline,
+
+    YieldReason
+
+}
+
+```
+
+**SN-1709**
+
+```
+
+Instruction
+
+   ↓
+
+Effect Generated
+
+   ↓
+
+Effect Buffer
+
+   ↓
+
+Transaction Commit
+
+   ↓
+
+External Visibility
+
+```
+
+**SN-1710**
+
+```
+
+Verify:
+
+  Identity
+
+  + Capability
+
+  + Policy
+
+  + Transaction State
+
+```
+
+**SN-1711**
+
+```
+
+Scheduler Decisions
+
++ Instruction Sequence
+
++ Execution Context
+
++ Effects
+
++ Security Decisions
+
+```
+
+### Sub-message [296]
+
+**SN-1712**
+
+```
+
+CIR / Cognitive Program
+
+        ↓
+
+CISA Instructions (RFC-0013)
+
+        ↓
+
+CVM Execution Semantics (RFC-0012)
+
+        ↓
+
+CVM-IESS Execution + Scheduling (RFC-0060)
+
+        ↓
+
+CDTCP Transactions (RFC-0057)
+
+        ↓
+
+CTSTP Security (RFC-0059)
+
+        ↓
+
+Effects + Replay + Verification (RFC-0002, RFC-0018)
+
+```
+
+**SN-1713**
+
+```
+
+CVMExecutionState {
+
+    CREATED
+
+       |
+
+       v
+
+    READY
+
+       |
+
+       v
+
+    RUNNING
+
+       |
+
+       +----> BLOCKED
+
+       |
+
+       +----> WAITING_TRANSACTION
+
+       |
+
+       +----> WAITING_CAPABILITY
+
+       |
+
+       v
+
+    COMMITTING
+
+       |
+
+       v
+
+    COMPLETED
+
+    FAILED
+
+    TERMINATED
+
+}
+
+```
+
+**SN-1714**
+
+```
+
+pure
+
+internal
+
+capability
+
+external
+
+```
+
+**SN-1715**
+
+```
+
+OBSERVE
+
+   →
+
+PURE
+
+BELIEF_ASSERT
+
+   →
+
+LOCAL
+
+EFFECT_EMIT
+
+   →
+
+EFFECT
+
+NETWORK_SEND
+
+   →
+
+EXTERNAL
+
+DELETE_RESOURCE
+
+   →
+
+IRREVERSIBLE
+
+```
+
+**SN-1716**
+
+```
+
+SchedulerRequest {
+
+    ContextID,
+
+    Priority,
+
+    Deadline,
+
+    RequiredCapabilities,
+
+    TransactionID
+
+}
+
+SchedulerResponse {
+
+    GrantedQuantum,
+
+    SchedulerEpoch,
+
+    ExecutionPermission
+
+}
+
+```
+
+**SN-1717**
+
+```
+
+Parallel Execution
+
+CVM-A
+
+ |
+
+ | Effects A
+
+ |
+
+ +----+
+
+      |
+
+ Effect Ordering Layer
+
+      |
+
+ +----+
+
+ |
+
+CVM-B
+
+ |
+
+ Effects B
+
+```
+
+**SN-1718**
+
+```
+
+CVM Memory Model
+
+L0:
+
+Registers
+
+L1:
+
+Local Cognitive Memory
+
+L2:
+
+Working Memory
+
+L3:
+
+Shared Cognitive Memory
+
+L4:
+
+Persistent Knowledge Store
+
+```
+
+**SN-1719**
+
+```
+
+InstructionLifecycleEvent {
+
+ EventID,
+
+ ContextID,
+
+ InstructionID,
+
+ Opcode,
+
+ BeforeStateHash,
+
+ AfterStateHash,
+
+ CapabilityDecision,
+
+ EffectHash,
+
+ Timestamp,
+
+ ReplaySequence
+
+}
+
+```
+
+**SN-1720**
+
+```
+
+Same:
+
+CVM State
+
++
+
+Instruction Stream
+
++
+
+Scheduler Decisions
+
++
+
+External Inputs
+
++
+
+Security Decisions
+
+=
+
+Equivalent Observable Effects
+
+```
+
+**SN-1721**
+
+```
+
+RFC-0060 — Cognitive Virtual Machine Instruction Execution
+
+and Scheduling Semantics (CVM-IESS) v1.1
+
+Status:
+
+RATIFIED
+
+Depends on:
+
+RFC-0011 Scheduler
+
+RFC-0012 CVM Semantics
+
+RFC-0013 CISA
+
+RFC-0018 Event Replay
+
+RFC-0057 CDTCP
+
+RFC-0058 CTWP
+
+RFC-0059 CTSTP
+
+Provides:
+
+- CVM execution lifecycle
+
+- Scheduler integration
+
+- Instruction atomicity
+
+- Transaction-aware execution
+
+- Deterministic replay
+
+- Secure execution semantics
+
+```
+
+**SN-1722**
+
+```
+
+          Cognitive Applications
+
+                  |
+
+                  v
+
+              CIR Programs
+
+                  |
+
+                  v
+
+          CISA Instruction Set
+
+                  |
+
+                  v
+
+        +--------------------+
+
+        |        CVM         |
+
+        |  Execution Engine  |
+
+        +--------------------+
+
+             |          |
+
+             |          |
+
+        Scheduler    Security
+
+        RFC-0011     RFC-0059
+
+             |
+
+             v
+
+       Transaction Runtime
+
+          RFC-0057
+
+             |
+
+             v
+
+       Deterministic World State
+
+```
+
+### Sub-message [297]
+
+**SN-1723**
+
+```
+
+Cognitive Program
+
+   ↓
+
+CIR / CISA Representation
+
+   ↓
+
+CISA Instruction Encoding
+
+   ↓
+
+CVM Register Machine
+
+   ↓
+
+RFC-0060 Execution Engine
+
+   ↓
+
+Transactions + Security
+
+```
+
+**SN-1724**
+
+```
+
+CVM {
+
+    Register File,
+
+    Operand Stack,
+
+    Local Memory,
+
+    Shared Memory Interface,
+
+    Effect Buffer,
+
+    Transaction Context,
+
+    Security Context,
+
+    Trace Context
+
+}
+
+```
+
+**SN-1725**
+
+```
+
+Register {
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Provenance
+
+}
+
+```
+
+**SN-1726**
+
+```
+
+ADD R1, R2, R3     ; R1 = R2 + R3
+
+```
+
+**SN-1727**
+
+```
+
++------------+
+
+| Opcode     | 2 bytes
+
++------------+
+
+| Flags      | 2 bytes
+
++------------+
+
+| Operand A  |
+
++------------+
+
+| Operand B  |
+
++------------+
+
+| Operand C  |
+
++------------+
+
+| Metadata   |
+
++------------+
+
+```
+
+**SN-1728**
+
+```
+
+EffectDescriptor {
+
+    EffectID,
+
+    InstructionID,
+
+    CapabilityRequired,
+
+    TransactionID,
+
+    DeterminismClass,
+
+    CompensationHandler
+
+}
+
+```
+
+**SN-1729**
+
+```
+
+Decode
+
+   ↓
+
+Opcode Validation
+
+   ↓
+
+Operand Validation
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Transaction Check
+
+   ↓
+
+Execute
+
+```
+
+**SN-1730**
+
+```
+
+cog cvm inspect
+
+cog cvm registers
+
+cog cvm trace
+
+cog cvm disassemble
+
+cog cvm replay
+
+```
+
+### Sub-message [298]
+
+**SN-1731**
+
+```
+
+RFC-0028
+
+Cognitive Intermediate Representation (CIR)
+
+        |
+
+        v
+
+RFC-0013
+
+Cognitive Instruction Set Architecture (CISA)
+
+        |
+
+        v
+
+RFC-0061
+
+CISA Register + Instruction Architecture
+
+        |
+
+        v
+
+RFC-0060
+
+CVM Execution + Scheduling Semantics
+
+        |
+
+        v
+
+RFC-0057 / RFC-0058 / RFC-0059
+
+Transaction + Wire + Security
+
+```
+
+**SN-1732**
+
+```
+
+General Registers
+
+Special Runtime Registers
+
+Cognitive Registers
+
+```
+
+**SN-1733**
+
+```
+
+R0-R31
+
+ |
+
+ +-- PC
+
+ +-- SP
+
+ +-- FP
+
+ +-- TX
+
+ +-- CAP
+
+ +-- TRACE
+
+ +-- EPOCH
+
+ +-- FLAGS
+
+ |
+
+ +-- BR0-BR7
+
+ +-- GR0-GR7
+
+ +-- MR0-MR7
+
+```
+
+**SN-1734**
+
+```
+
+Register {
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Provenance
+
+}
+
+```
+
+**SN-1735**
+
+```
+
+RegisterType {
+
+    Scalar,
+
+    Boolean,
+
+    Integer,
+
+    Float,
+
+    Vector,
+
+    Tensor,
+
+    Reference,
+
+    Capability,
+
+    Effect,
+
+    BeliefRef,
+
+    GoalRef,
+
+    MemoryRef,
+
+    PlanRef
+
+}
+
+```
+
+**SN-1736**
+
+```
+
+Opcode
+
+Flags
+
+Operands
+
+Metadata
+
+```
+
+**SN-1737**
+
+```
+
+CISAInstruction {
+
+    InstructionID,
+
+    Opcode,
+
+    EncodingVersion,
+
+    Flags,
+
+    OperandCount,
+
+    Operands[],
+
+    EffectClass,
+
+    CapabilityRequirement,
+
+    TraceMetadata
+
+}
+
+```
+
+**SN-1738**
+
+```
+
+Operand {
+
+    OperandType,
+
+    Size,
+
+    Value
+
+}
+
+```
+
+**SN-1739**
+
+```
+
+InstructionClass {
+
+    PURE,
+
+    LOCAL_MUTATION,
+
+    EFFECT_GENERATING,
+
+    EXTERNAL,
+
+    IRREVERSIBLE
+
+}
+
+```
+
+**SN-1740**
+
+```
+
+ADD
+
+ |
+
+ PURE
+
+BELIEF_ASSERT
+
+ |
+
+ LOCAL_MUTATION
+
+EFFECT_EMIT
+
+ |
+
+ EFFECT_GENERATING
+
+NETWORK_SEND
+
+ |
+
+ EXTERNAL
+
+```
+
+**SN-1741**
+
+```
+
+0x0000-0xFFFF
+
+```
+
+**SN-1742**
+
+```
+
+OpcodeRegistry {
+
+    Opcode,
+
+    Name,
+
+    Version,
+
+    InputTypes,
+
+    OutputTypes,
+
+    EffectClass,
+
+    CapabilityRequired
+
+}
+
+```
+
+**SN-1743**
+
+```
+
+0x0301
+
+BELIEF_ASSERT
+
+Inputs:
+
+    BeliefRef
+
+Output:
+
+    Boolean
+
+Effect:
+
+    CognitiveStateMutation
+
+Capability:
+
+    BELIEF_WRITE
+
+```
+
+**SN-1744**
+
+```
+
+Bytecode
+
+   |
+
+   v
+
+Decoder
+
+   |
+
+   v
+
+Type Checker
+
+   |
+
+   v
+
+Capability Analyzer
+
+   |
+
+   v
+
+Transaction Analyzer
+
+   |
+
+   v
+
+Verified Program
+
+   |
+
+   v
+
+CVM
+
+```
+
+**SN-1745**
+
+```
+
+VerificationResult {
+
+    Valid,
+
+    Errors[],
+
+    RequiredCapabilities[],
+
+    EffectSummary
+
+}
+
+```
+
+**SN-1746**
+
+```
+
+Local Memory
+
+Working Memory
+
+Shared Memory
+
+```
+
+**SN-1747**
+
+```
+
+Local Memory
+
+-------------
+
+Thread/CVM private
+
+No synchronization
+
+Working Memory
+
+--------------
+
+Transaction scoped
+
+Checkpointed
+
+Shared Memory
+
+-------------
+
+Effect ordered
+
+Consensus controlled
+
+```
+
+**SN-1748**
+
+```
+
+BELIEF_ASSERT BR1
+
+Input:
+
+    BeliefReference
+
+Effect:
+
+    BeliefMutation
+
+```
+
+**SN-1749**
+
+```
+
+MEMORY_RECALL MR1,R2
+
+Input:
+
+    SemanticMemoryHandle
+
+Output:
+
+    R2
+
+```
+
+**SN-1750**
+
+```
+
+GOAL_CREATE GR1
+
+Effect:
+
+    GoalLifecycleChange
+
+```
+
+**SN-1751**
+
+```
+
+EFFECT_EMIT E1
+
+Requires:
+
+CAPABILITY:
+
+    EFFECT_WRITE
+
+Transaction:
+
+    Required
+
+```
+
+**SN-1752**
+
+```
+
++--------------------------------+
+
+| Cognitive Applications         |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CIR                           |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CISA Bytecode                 |
+
+| (future RFC-0062)             |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| Register Machine              |
+
+| RFC-0061                      |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CVM Runtime                   |
+
+| RFC-0060                     |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| Scheduler / Transactions      |
+
+| RFC-0011 / RFC-0057           |
+
++--------------------------------+
+
+```
+
+**SN-1753**
+
+```
+
+RFC-0061 CISA-RA
+
+        |
+
+        v
+
+RFC-0062 CVM-BF
+
+        |
+
+        v
+
+RFC-0063 CVM Formal Semantics
+
+        |
+
+        v
+
+RFC-0064 Cognitive Compiler Backend
+
+```
+
+**SN-1754**
+
+```
+
+RFC-0061 — Cognitive Virtual Machine Instruction Set
+
+and Register Architecture (CISA-RA) v1.1
+
+Status:
+
+FINAL CANDIDATE
+
+After additions:
+
+→ RATIFIED
+
+```
+
+### Sub-message [299]
+
+**SN-1755**
+
+```
+
+Cognitive Program
+
+   ↓
+
+CIR / CISA Representation
+
+   ↓
+
+CISA Instruction Encoding
+
+   ↓
+
+CVM Register Machine
+
+   ↓
+
+RFC-0060 Execution Engine
+
+   ↓
+
+Transactions + Security
+
+```
+
+**SN-1756**
+
+```
+
+CVM {
+
+    Register File,
+
+    Operand Stack,
+
+    Local Memory,
+
+    Shared Memory Interface,
+
+    Effect Buffer,
+
+    Transaction Context,
+
+    Security Context,
+
+    Trace Context
+
+}
+
+```
+
+**SN-1757**
+
+```
+
+Register {
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Provenance
+
+}
+
+```
+
+**SN-1758**
+
+```
+
+ADD R1, R2, R3     ; R1 = R2 + R3
+
+```
+
+**SN-1759**
+
+```
+
++------------+
+
+| Opcode     | 2 bytes
+
++------------+
+
+| Flags      | 2 bytes
+
++------------+
+
+| Operand A  |
+
++------------+
+
+| Operand B  |
+
++------------+
+
+| Operand C  |
+
++------------+
+
+| Metadata   |
+
++------------+
+
+```
+
+**SN-1760**
+
+```
+
+EffectDescriptor {
+
+    EffectID,
+
+    InstructionID,
+
+    CapabilityRequired,
+
+    TransactionID,
+
+    DeterminismClass,
+
+    CompensationHandler
+
+}
+
+```
+
+**SN-1761**
+
+```
+
+Decode
+
+   ↓
+
+Opcode Validation
+
+   ↓
+
+Operand Validation
+
+   ↓
+
+Capability Check
+
+   ↓
+
+Transaction Check
+
+   ↓
+
+Execute
+
+```
+
+**SN-1762**
+
+```
+
+cog cvm inspect
+
+cog cvm registers
+
+cog cvm trace
+
+cog cvm disassemble
+
+cog cvm replay
+
+```
+
+### Sub-message [300]
+
+**SN-1763**
+
+```
+
+Cognitive Application
+
+        |
+
+        v
+
+Cognitive Language / CIR
+
+        |
+
+        v
+
+CISA Representation
+
+        |
+
+        v
+
+CISA-RA v1.2
+
+(Register + Operand + Opcode Model)
+
+        |
+
+        v
+
+CVM-IESS v1.1
+
+(Execution + Scheduling)
+
+        |
+
+        v
+
+CDTCP
+
+(Transaction)
+
+        |
+
+        v
+
+CTSTP
+
+(Security + Trust)
+
+        |
+
+        v
+
+Event Log / Replay / Verification
+
+```
+
+**SN-1764**
+
+```
+
+R0 - R31
+
+```
+
+**SN-1765**
+
+```text
+
+Register {
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Provenance
+
+}
+
+```
+
+**SN-1766**
+
+```
+
+RegisterType {
+
+    Scalar
+
+    Boolean
+
+    Integer
+
+    Float
+
+    Vector
+
+    Tensor
+
+    Reference
+
+    Capability
+
+    Effect
+
+    BeliefRef
+
+    GoalRef
+
+    MemoryRef
+
+    PlanRef
+
+}
+
+```
+
+**SN-1767**
+
+```
+
++----------------+
+
+| General        |
+
+| R0-R31         |
+
++----------------+
+
++----------------+
+
+| Cognitive      |
+
+| BR0-BR7        |
+
+| GR0-GR7        |
+
+| MR0-MR7        |
+
++----------------+
+
++----------------+
+
+| Runtime        |
+
+| PC SP FP       |
+
+| TX CAP TRACE   |
+
+| EPOCH FLAGS    |
+
++----------------+
+
+```
+
+**SN-1768**
+
+```
+
+CISAInstruction {
+
+    InstructionID,
+
+    EncodingVersion,
+
+    Opcode,
+
+    Flags,
+
+    OperandCount,
+
+    Operands[],
+
+    EffectClass,
+
+    CapabilityRequirement,
+
+    TraceMetadata
+
+}
+
+```
+
+**SN-1769**
+
+```
+
+PURE
+
+ |
+
+LOCAL_MUTATION
+
+ |
+
+EFFECT_GENERATING
+
+ |
+
+EXTERNAL
+
+ |
+
+IRREVERSIBLE
+
+```
+
+**SN-1770**
+
+```
+
+ADD
+
+ |
+
+PURE
+
+BELIEF_ASSERT
+
+ |
+
+LOCAL_MUTATION
+
+EFFECT_EMIT
+
+ |
+
+EFFECT_GENERATING
+
+NETWORK_SEND
+
+ |
+
+EXTERNAL
+
+```
+
+**SN-1771**
+
+```
+
+0000-00FF   Control
+
+0100-01FF   Arithmetic
+
+0200-02FF   Memory
+
+0300-03FF   Cognitive
+
+0400-04FF   Goal
+
+0500-05FF   Planning
+
+0600-06FF   Communication
+
+0700-07FF   Transaction
+
+0800-08FF   Security
+
+FF00-FFFF   Experimental
+
+```
+
+**SN-1772**
+
+```
+
+Bytecode
+
+   |
+
+   v
+
+Decoder
+
+   |
+
+   v
+
+Type Checker
+
+   |
+
+   v
+
+Capability Analyzer
+
+   |
+
+   v
+
+Transaction Analyzer
+
+   |
+
+   v
+
+Verified Program
+
+   |
+
+   v
+
+CVM Execution
+
+```
+
+**SN-1773**
+
+```
+
+VerificationResult {
+
+    Valid,
+
+    Errors[],
+
+    RequiredCapabilities[],
+
+    EffectSummary
+
+}
+
+```
+
+**SN-1774**
+
+```
+
+Instruction
+
+      |
+
+      v
+
+EffectDescriptor
+
+      |
+
+      v
+
+Effect Buffer
+
+      |
+
+      v
+
+Transaction Commit
+
+      |
+
+      v
+
+External Visibility
+
+```
+
+**SN-1775**
+
+```
+
+EffectDescriptor {
+
+    EffectID,
+
+    InstructionID,
+
+    CapabilityRequired,
+
+    TransactionID,
+
+    DeterminismClass,
+
+    CompensationHandler
+
+}
+
+```
+
+**SN-1776**
+
+```
+
+Cognitive Language
+
+        |
+
+        v
+
+CIR
+
+        |
+
+        v
+
+CISA
+
+        |
+
+        v
+
+CVM Bytecode
+
+```
+
+**SN-1777**
+
+```
+
+RFC-0061 — Cognitive Virtual Machine
+
+Instruction Set and Register Architecture
+
+Version: 1.2
+
+Decision:
+
+APPROVED
+
+Status:
+
+RATIFIED
+
+Authority:
+
+Normative Specification
 
 ```

@@ -302,3 +302,12 @@
 | **IntegrityBlock** | CTSTP v1.1 message integrity structure { Algorithm, Hash, Signature, KeyReference, Timestamp, Nonce } ([280] proposal). | [280] |
 | **Trust Chain (CTSTP)** | Hierarchical trust Root Trust Authority → Domain Trust Authority → Cognitive Runtime → Agent Identity → Transaction Participant; explicit and auditable ([280] proposal). | [280] |
 | **CILSP/CRAIP numbering note** | [202] proposed RFC-0050=CILSP; capstone took 0050 instead; remote invocation drafted as RFC-0053 CRAIP per [215]/[235] sequence (conflict C-11 lineage). | [202], [235] |
+| **CVM-IESS (RFC-0060)** | Cognitive VM Instruction Execution and Scheduling Semantics — instruction-level execution integrated with scheduling, transaction boundaries, and security; ratified v1.1 per [285]. | [284], [285] |
+| **CISA-RA (RFC-0061)** | Cognitive VM Instruction Set and Register Architecture — concrete machine model (registers, operands, opcodes, encoding, execution semantics) beneath RFC-0060; ratified v1.2 per [300]. | [299], [300] |
+| **CVM-BF (RFC-0062)** | Cognitive VM Bytecode Format and Encoding — binary bytecode container, instruction layout, opcode numbering, operand encoding, deterministic serialization; v1.0 Draft [288]. | [288] |
+| **ExecutionContext** | CVM per-process state { ContextID, ProgramID, InstructionPointer, RegisterState, MemoryState, StackState, TransactionContext, SecurityContext, SchedulerState, TraceContext }; serializable for checkpoint/replay (RFC-0060). | [284], [295] |
+| **Cognitive Registers** | CISA special-purpose registers: belief BR0–BR7, goal GR0–GR7, memory MR0–MR7 (RFC-0061). | [299], [300] |
+| **Instruction Atomicity Levels** | PURE / LOCAL / EFFECT / EXTERNAL / IRREVERSIBLE — classify instructions by atomicity and transaction requirement (RFC-0060 [296], ratified model). | [296], [300] |
+| **Opcode Families** | CISA opcode classes Control/Arithmetic/Memory/Cognitive/Goal/Planning/Communication/Transaction/Security/Experimental over 0x0000–0xFFFF (RFC-0061). | [299], [300] |
+| **CVMB** | CVM bytecode magic number 0x43564D42 ("CVMB"), first four bytes of a CVM bytecode image (RFC-0062). | [288] |
+| **Cognitive Epoch** | Smallest deterministic execution interval (observe…checkpoint); foundational execution unit (RFC-0060 execution model, RFC-0050 §12). | [284] |

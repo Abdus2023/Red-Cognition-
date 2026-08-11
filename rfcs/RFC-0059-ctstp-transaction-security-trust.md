@@ -1,133 +1,843 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #26, sub-message [279], 2026-08-11
+  Origin: corpus message #26, sub-message [280], 2026-08-11
   Verbatim source: knowledge-base/sources/message-026-original-part*.md
-  Status in corpus: RFC-0059 CTSTP v1.0 (Draft). CHATGPT-authored v1.1 Candidate proposal [280] (expanded security plane: CognitiveIdentity, trust chains, authentication protocol, IntegrityBlock, authorization model, TransactionSecurityContext, replay protection, secure channel profiles, key lifecycle, attestation, security failure matrix, security events, conformance profiles) is preserved in archive but not scaffolded (review-embedded proposal, not a user-submitted document). No ratification decision present in corpus. Source quirk preserved as received: stray closing parentheses after inline identifiers in §3.
+  Status in corpus: RFC-0059 CTSTP v1.1; RATIFIED per ratification records [281]/[291]/[293] (message #27). v1.1 text is this CHATGPT-authored candidate [280] (message #26); ratified version. Earlier v1.0 drafts [279] (message #26) and [289] (message #27) are divergent and preserved in archive (D-92); ratification records [291]/[293] identical, [281] differs only in the RFC-0012 status cell (D-91).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
 
 
-**RFC-0059 — Cognitive Transaction Security and Trust Profile (CTSTP) v1.0 Draft**
+# RFC-0059 — Cognitive Transaction Security and Trust Profile (CTSTP) v1.1  
 
-**Version:** 1.0  
+**Version:** 1.1  
 
-**Status:** Draft  
+**Status:** Candidate for Ratification  
 
-**Parent:** RFC-0058 Cognitive Transaction Wire Protocol and Message Encoding v1.2 (Ratified)  
+**Parent:** RFC-0058 — Cognitive Transaction Wire Protocol and Message Encoding v1.2 (Ratified)  
 
-**Date:** 2026-07-29
+**Date:** 2026-07-29  
 
 ---
 
-### 1. Introduction
+# 1. Introduction
 
 This RFC defines the **Cognitive Transaction Security and Trust Profile (CTSTP)** for Red/Cognition.
 
-While RFC-0058 establishes the wire protocol for CDTCP messages, CTSTP defines the security mechanisms, cryptographic requirements, identity verification, integrity protection, and trust models required to secure distributed cognitive transactions. It ensures that all CDTCP operations can be authenticated, authorized, and audited while preserving determinism, traceability, and replay equivalence.
+RFC-0057 defines the transaction semantics and correctness model.  
 
-### 2. Design Principles
+RFC-0058 defines the wire-level exchange format.  
 
-CTSTP follows these principles:
+CTSTP defines the security plane that protects distributed cognitive transactions through:
 
-- **Determinism** — Security decisions must be reproducible given the same inputs and state.
+- cryptographic identity
 
-- **Traceability** — All security events must participate in the unified event log (RFC-0018).
+- authentication
 
-- **Capability Awareness** — Security enforcement must integrate with the capability model (RFC-0006).
+- authorization
 
-- **Replay Equivalence** — Replayed transactions must produce equivalent security outcomes.
+- integrity verification
 
-- **Provider Neutrality** — The security model must remain independent of specific reasoning mechanisms.
+- secure channel establishment
 
-- **Least Privilege** — Transaction participants should receive only the minimum trust necessary.
+- trust evaluation
 
-### 3. Cryptographic Identity Model
+- attestation
 
-Every node, agent, and CVM participating in CDTCP **MUST** possess a verifiable cryptographic identity.
+- key lifecycle management
 
-Requirements:
+- security event auditing
 
-- Identities **MUST** be based on public-key cryptography or equivalent verifiable mechanisms.
+CTSTP ensures that CDTCP transactions remain:
 
-- Identities **MUST** be bound to a stable identifier `NodeID`, `AgentID`, `CVMID`).
+- authenticated
 
-- Identities **MUST** be verifiable across domain boundaries (RFC-0041).
+- authorized
 
-### 4. Message Integrity and Authentication
+- confidential where required
 
-Every CDTCP message **SHOULD** include an integrity mechanism.
+- tamper-resistant
 
-Requirements:
+- replay-resistant
 
-- Messages **MUST** include a cryptographic hash of the message contents when exchanged across untrusted boundaries.
+- auditable
 
-- Messages **MAY** be digitally signed by the sending participant.
-
-- Implementations **MUST** verify integrity before processing any transaction message.
-
-### 5. Replay Protection
-
-Every CDTCP message exchanged across nodes **MUST** include replay protection.
-
-Requirements:
-
-- Messages **MUST** carry a nonce, sequence number, or equivalent mechanism.
-
-- The receiving party **MUST** detect and reject replayed messages.
-
-- Replay detection events **MUST** be recorded in the event log.
-
-### 6. Trust Model
-
-Trust in CDTCP is established through a combination of:
-
-- Cryptographic identity verification
-
-- Capability-based authorization (RFC-0006)
-
-- Policy evaluation (RFC-0025)
-
-- Attestation of software and hardware configuration (where available)
-
-Trust relationships **MUST** be recorded and auditable.
-
-### 7. Secure Channel Requirements
-
-When CDTCP messages traverse untrusted networks:
-
-- Messages **SHOULD** be protected by a secure channel (e.g., TLS, QUIC, or equivalent).
-
-- The secure channel **MUST** provide confidentiality, integrity, and replay protection.
-
-- Channel establishment **MUST** be authenticated using the identity model defined in this RFC.
-
-### 8. Relationship to Other RFCs
-
-CTSTP integrates with:
-
-- RFC-0022 — Cognitive Identity and Trust Framework
-
-- RFC-0025 — Security Policy Language
-
-- RFC-0057 — CDTCP
-
-- RFC-0058 — CTWP
-
-### 9. Open Questions
-
-The following areas require future specification:
-
-- Concrete cryptographic algorithm profiles
-
-- Certificate and attestation formats
-
-- Distributed trust revocation mechanisms
-
-- Integration with hardware security modules
+- deterministic under replay
 
 ---
 
-**RFC-0059 — Cognitive Transaction Security and Trust Profile (CTSTP) v1.0 Draft** is now complete.
+# 2. Security Design Principles
 
-This RFC establishes the security and trust layer required to protect CDTCP messages and participants in distributed cognitive transaction environments. It completes the security foundation of the distributed transaction subsystem in Red/Cognition.
+CTSTP follows these principles:
+
+## Deterministic Security Decisions
+
+Security outcomes MUST be reproducible:
+
+```
+
+SecurityDecision =
+
+f(
+
+ Identity,
+
+ Capability,
+
+ Policy,
+
+ Context,
+
+ TransactionState
+
+)
+
+```
+
+Given identical inputs and trust state, authorization results MUST be equivalent.
+
+---
+
+## Traceable Security
+
+All security operations MUST generate RFC-0018 compatible events:
+
+Examples:
+
+```
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+ReplayDetected
+
+IntegrityViolation
+
+TrustRevoked
+
+```
+
+---
+
+## Capability-Aware Security
+
+Security enforcement MUST integrate with RFC-0006.
+
+A transaction permission is determined by:
+
+```
+
+EffectivePermission =
+
+Identity
+
++
+
+Capability
+
++
+
+Policy
+
++
+
+TransactionScope
+
+```
+
+---
+
+## Least Privilege
+
+Participants MUST receive only the minimum permissions required.
+
+Example:
+
+```
+
+Agent A
+
+Allowed:
+
+  Read Knowledge Graph
+
+Denied:
+
+  Modify Runtime State
+
+  Deploy Package
+
+  Alter Security Policy
+
+```
+
+---
+
+# 3. Cryptographic Identity Model
+
+Every CDTCP participant MUST have a cryptographic identity.
+
+Identity types:
+
+```
+
+Identity
+
+ |
+
+ +-- NodeID
+
+ |
+
+ +-- AgentID
+
+ |
+
+ +-- CVMID
+
+ |
+
+ +-- ServiceID
+
+```
+
+---
+
+## 3.1 Identity Object
+
+Normative structure:
+
+```
+
+CognitiveIdentity {
+
+    IdentityID,
+
+    IdentityType,
+
+    PublicKey,
+
+    AlgorithmProfile,
+
+    Issuer,
+
+    ValidFrom,
+
+    ValidUntil,
+
+    Capabilities,
+
+    TrustLevel,
+
+    AttestationReference
+
+}
+
+```
+
+---
+
+## 3.2 Identity Requirements
+
+Implementations MUST:
+
+- bind identities to cryptographic keys
+
+- validate identity ownership
+
+- reject expired identities
+
+- reject revoked identities
+
+- preserve identity history
+
+---
+
+# 4. Trust Chain Model
+
+CTSTP defines hierarchical trust:
+
+```
+
+Root Trust Authority
+
+          |
+
+          v
+
+Domain Trust Authority
+
+          |
+
+          v
+
+Cognitive Runtime
+
+          |
+
+          v
+
+Agent Identity
+
+          |
+
+          v
+
+Transaction Participant
+
+```
+
+Trust relationships MUST be explicit and auditable.
+
+---
+
+# 5. Authentication Protocol
+
+CDTCP authentication occurs before transaction participation.
+
+Authentication flow:
+
+```
+
+Participant A                 Participant B
+
+     Hello
+
+       |
+
+       v
+
+  Identity Proof
+
+       |
+
+       v
+
+ Signature Verify
+
+       |
+
+       v
+
+ Capability Check
+
+       |
+
+       v
+
+ Authentication Result
+
+```
+
+---
+
+## Authentication Result
+
+```
+
+AuthenticationResult {
+
+    IdentityID,
+
+    Status,
+
+    TrustLevel,
+
+    Capabilities,
+
+    SessionID,
+
+    TraceReference
+
+}
+
+```
+
+---
+
+# 6. Message Integrity Protection
+
+Messages exchanged over untrusted boundaries MUST support integrity verification.
+
+Integrity block:
+
+```
+
+IntegrityBlock {
+
+    Algorithm,
+
+    Hash,
+
+    Signature,
+
+    KeyReference,
+
+    Timestamp,
+
+    Nonce
+
+}
+
+```
+
+---
+
+Verification order:
+
+```
+
+Receive Message
+
+      |
+
+      v
+
+Verify Envelope
+
+      |
+
+      v
+
+Verify Integrity
+
+      |
+
+      v
+
+Verify Identity
+
+      |
+
+      v
+
+Verify Authorization
+
+      |
+
+      v
+
+Process Transaction
+
+```
+
+---
+
+# 7. Digital Signature Requirements
+
+Signed messages SHOULD include:
+
+```
+
+Signature {
+
+    Algorithm,
+
+    SignerID,
+
+    SignatureValue,
+
+    KeyID
+
+}
+
+```
+
+The signature MUST cover:
+
+```
+
+CDTPEnvelope
+
++
+
+Payload
+
++
+
+Sequence Information
+
+```
+
+---
+
+# 8. Authorization Model
+
+Authorization combines:
+
+```
+
+Identity
+
++
+
+Capability
+
++
+
+Policy
+
++
+
+Transaction Context
+
+```
+
+Decision:
+
+```
+
+AuthorizationDecision {
+
+    Allowed,
+
+    Denied,
+
+    Reason,
+
+    PolicyReference,
+
+    CapabilityReference
+
+}
+
+```
+
+---
+
+# 9. Transaction Security Context
+
+Every transaction SHOULD maintain:
+
+```
+
+TransactionSecurityContext {
+
+    TransactionID,
+
+    CoordinatorIdentity,
+
+    ParticipantIdentities,
+
+    GrantedCapabilities,
+
+    SecurityPolicy,
+
+    TrustLevel,
+
+    SessionKeys,
+
+    AuditReference
+
+}
+
+```
+
+---
+
+# 10. Replay Protection
+
+Replay protection MUST integrate with RFC-0058.
+
+Required fields:
+
+```
+
+ReplayProtection {
+
+    SessionID,
+
+    Epoch,
+
+    SequenceNumber,
+
+    Nonce,
+
+    Expiration
+
+}
+
+```
+
+Rules:
+
+- duplicate messages MUST be rejected
+
+- expired sessions MUST be invalid
+
+- sequence rollback MUST trigger security failure
+
+---
+
+# 11. Secure Channel Profile
+
+When crossing untrusted networks:
+
+Required properties:
+
+```
+
+Confidentiality
+
+Integrity
+
+Authentication
+
+Replay Protection
+
+Forward Security
+
+```
+
+Supported transports:
+
+```
+
+TCP + TLS
+
+QUIC
+
+Authenticated IPC
+
+Secure Message Queue
+
+```
+
+---
+
+# 12. Key Lifecycle Management
+
+CTSTP defines:
+
+```
+
+Generate
+
+   |
+
+Distribute
+
+   |
+
+Activate
+
+   |
+
+Rotate
+
+   |
+
+Revoke
+
+   |
+
+Archive
+
+```
+
+Key events MUST be logged:
+
+```
+
+KeyCreated
+
+KeyRotated
+
+KeyRevoked
+
+KeyExpired
+
+```
+
+---
+
+# 13. Attestation Support
+
+Where available, implementations MAY provide:
+
+- hardware attestation
+
+- runtime attestation
+
+- software measurement
+
+- sandbox verification
+
+Attestation:
+
+```
+
+Attestation {
+
+    SubjectID,
+
+    Measurement,
+
+    Evidence,
+
+    Issuer,
+
+    Timestamp
+
+}
+
+```
+
+---
+
+# 14. Security Failure Matrix
+
+| Failure | Required Behavior |
+
+|-|-|
+
+| Invalid signature | Reject message |
+
+| Unknown identity | Authentication failure |
+
+| Revoked identity | Abort transaction |
+
+| Replay detected | Reject and log |
+
+| Capability violation | Authorization failure |
+
+| Integrity mismatch | Drop message |
+
+| Trust expired | Require re-authentication |
+
+---
+
+# 15. Security Events
+
+CTSTP defines:
+
+```
+
+IdentityCreated
+
+IdentityVerified
+
+AuthenticationSucceeded
+
+AuthenticationFailed
+
+AuthorizationGranted
+
+AuthorizationDenied
+
+SignatureVerified
+
+IntegrityFailed
+
+ReplayDetected
+
+TrustRevoked
+
+SecurityPolicyViolation
+
+```
+
+---
+
+# 16. Conformance Profiles
+
+| Profile | Security Capability |
+
+|-|-|
+
+| Minimal | Local identity validation |
+
+| Developer | Signed transactions |
+
+| Professional | Mutual authentication + replay protection |
+
+| Enterprise | Trust chains + policy enforcement |
+
+| Verified | Attestation + formal security proofs |
+
+---
+
+# 17. Relationship to Other RFCs
+
+CTSTP integrates with:
+
+| RFC | Integration |
+
+|-|-|
+
+| RFC-0006 | Capability Model |
+
+| RFC-0018 | Event Log and Replay |
+
+| RFC-0022 | Identity and Trust |
+
+| RFC-0025 | Security Policy Language |
+
+| RFC-0041 | Federation |
+
+| RFC-0057 | CDTCP |
+
+| RFC-0058 | CTWP |
+
+---
+
+# 18. Open Questions
+
+Future specifications:
+
+- Standard cryptographic algorithm suite
+
+- Certificate format
+
+- Trust federation protocol
+
+- Hardware security integration
+
+- Distributed revocation protocol
+
+- Zero-knowledge authorization mechanisms
+
+---
+
+# Summary
+
+**RFC-0059 — Cognitive Transaction Security and Trust Profile (CTSTP) v1.1** extends the CDTCP subsystem with a complete security plane:
+
+```
+
+RFC-0057
+
+Transaction Semantics
+
+        |
+
+        v
+
+RFC-0058
+
+Wire Protocol
+
+        |
+
+        v
+
+RFC-0059
+
+Security + Trust
+
+        |
+
+        v
+
+Secure Cognitive Transactions
+
+```
+
+This version is ready for **Final Ratification Review**. It provides the identity, authentication, authorization, integrity, trust, and audit mechanisms required for secure distributed cognition.

@@ -404,3 +404,28 @@ The closing paragraphs of RFC-0058 v1.1 [271] and first v1.2 [273] claim incorpo
 ### Distributed transaction subsystem (X-112…X-116)
 
 Semantic plane RFC-0057 CDTCP (ratified) → wire plane RFC-0058 CTWP (ratified) → security plane RFC-0059 CTSTP (draft); CDTP framing/envelope/registries/handshake/encoding profiles now normative ([275]/[276]/[277]/[278]). Roadmap notes: [262] proposed RFC-0059 = transaction verification & formal proofs and RFC-0060 = advanced distributed transactions; [270] proposed RFC-0059 = CCISCP; [276]/[277] proposed RFC-0059 = CTSTP (drafted), RFC-0060 = transport binding, RFC-0061 = persistence engine — actual drafting followed the [276]/[277] assignment (C-11 lineage). [268] observation: ratified interfaces (RFC-0053/0057) constrain the still-draft foundational RFCs (RFC-0018/0022/0023), which must preserve compatibility or introduce explicit versioning.
+
+---
+
+## Message #27 additions — RFC-0059 ratified; RFC-0060 CVM-IESS ratified; RFC-0061 CISA-RA ratified; RFC-0062 CVM-BF draft (sub-messages [281]–[300])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #27 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0059 | CTSTP — Cognitive Transaction Security and Trust Profile | v1.0 Draft variants ([279] msg#26, [289] msg#27 — divergent, D-92); v1.1 candidate ([280] msg#26); ratification records ([281]/[291]/[293]; [291]≡[293], [281] differs only in RFC-0012 status cell, D-91) — **v1.1 RATIFIED** | [`rfcs/RFC-0059-ctstp-transaction-security-trust.md`](../../rfcs/RFC-0059-ctstp-transaction-security-trust.md) (v1.1), [`rfcs/RFC-0059-ratification-record.md`](../../rfcs/RFC-0059-ratification-record.md) |
+| RFC-0060 | CVM-IESS — Cognitive VM Instruction Execution and Scheduling Semantics | two divergent v1.0 Drafts ([283] 10-section, [295] 18-section, D-93); v1.1 candidate ([284], CHATGPT); ratification record ([285]) — **v1.1 RATIFIED** | [`rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md`](../../rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md) (v1.1), [`rfcs/RFC-0060-ratification-record.md`](../../rfcs/RFC-0060-ratification-record.md) |
+| RFC-0061 | CISA-RA — Cognitive VM Instruction Set and Register Architecture | v1.0 proposal ([286], CHATGPT); v1.1 Draft ([297]) + ratification record ([287]) + review ([298]); v1.2 ([299]) + final ratification review ([300]) — **v1.2 RATIFIED** | [`rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md`](../../rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md) (v1.2), [`rfcs/RFC-0061-ratification-record.md`](../../rfcs/RFC-0061-ratification-record.md) |
+| RFC-0062 | CVM-BF — Cognitive VM Bytecode Format and Encoding | v1.0 Draft ([288], CHATGPT-authored; proposed after RFC-0061 ratification); no ratification decision in corpus | [`rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md`](../../rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md) (v1.0 Draft) |
+
+### Ratified set after message #27
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001, RFC-0002, RFC-0011, RFC-0042 (CADP), RFC-0046 (CODP), RFC-0047 (CPMWS), RFC-0049 (CSTS), RFC-0050 (Architecture & Conformance), RFC-0052 (CTVF), RFC-0053 (CRAIP), RFC-0057 (CDTCP), RFC-0058 (CTWP), **RFC-0059 (CTSTP v1.1)**, **RFC-0060 (CVM-IESS v1.1)**, **RFC-0061 (CISA-RA v1.2)**. RFC-0044/0045 remain Candidate; RFC-0043/0048/0054/0055/0056/0062 remain Draft.
+
+### Conflict C-14 (extended) — status tables vs ratification events
+
+The RFC-0059 ratification record status table ([281]/[291]/[293]) omits RFC-0049…RFC-0052 and lists RFC-0046/RFC-0047 as "Final Candidate" although ratification events exist for both — same snapshot-conflict pattern as C-9 ([179]) and C-12 ([215]). Additionally, [281] lists RFC-0012 as "Candidate" while [291]/[293] list it as "Ratified" (D-91 internal divergence). Resolution: ratification events authoritative; tables preserved verbatim.
+
+### Roadmap (X-111 extended)
+
+After RFC-0061 ratification, the declared next RFCs are RFC-0062 CVM-BF (drafted [288]), RFC-0063 Cognitive VM Formal Semantics, and RFC-0064 Cognitive Compiler Backend ([300]); earlier proposals also name RFC-0063 Cognitive Runtime ABI / Cognitive Cryptographic Algorithm and Trust Profile Registry in divergent threads ([292]/[290]) — C-11 lineage.

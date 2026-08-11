@@ -2,6 +2,17 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #27 processed ([281]–[300]: RFC-0059/0060/0061 ratified; RFC-0062 CVM-BF draft)
+
+- **Source:** Conversation message #27 — a 20-part transcript ([281]–[300]; speakers USER, CHATGPT (gpt-5-5-mini)): RFC-0059 CTSTP v1.1 **RATIFIED** (ratification records [281]/[291]/[293], [291]≡[293]); RFC-0060 CVM-IESS v1.0 Drafts ([283]/[295] divergent) → v1.1 ([284], CHATGPT) → **RATIFIED** ([285]); RFC-0061 CISA-RA v1.0 proposal ([286]) → v1.1 ([297], record [287]) → v1.2 ([299]) → **RATIFIED** ([300]); RFC-0062 CVM-BF v1.0 Draft ([288], CHATGPT); execution substrate completed (CIR → CISA → CVM execution → transaction + security → replay/verification).
+- **Classification:** New knowledge; supersession (RFC-0059 scaffold updated v1.0→v1.1; RFC-0060/0061 scaffolded from ratified versions); duplicates D-91…D-93 added ([291]≡[293]; divergent RFC-0059 v1.0 [279]/[289]; divergent RFC-0060 v1.0 [283]/[295]); conflict C-16 ([281]/[291]/[293] status table vs ratification events) recorded. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-027-original-part1..5.md` ([281]–[284], [285]–[288], [289]–[292], [293]–[296], [297]–[300]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — RFC-0059 updated to v1.1 ([280]) + ratification record ([291]); new RFC-0060 ([284]) + record ([285]); RFC-0061 ([299]) + record ([300]); RFC-0062 ([288]) — programmatic, byte-exact. Total: 62 RFC documents + 13 ratification records = 75 files.
+  - 186 code snippets extracted (SN-1592…SN-1777), embedded verbatim in Code Snippets Message #27 Annex (incl. repeated RFC-0059 ratification-record fences [281]/[291]/[293] and divergent RFC-0060 fences [283]/[295], preserved); corpus total now **1777 snippets**.
+  - Wiki pages updated (12): RFC Index (statuses, ratified set +0059/+0060/+0061, C-16, roadmap), Architecture (execution substrate, CVM-IESS/CISA-RA/CTSTP/CVM-BF models), Data Models (execution/security/bytecode models), Workflows (instruction lifecycle, bytecode verification/loading, security admission/authentication), Security (ratified security plane, instruction-level enforcement, bytecode security), Glossary (+9 terms), Specifications (lineage), Repository Structure, Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-117…X-121 (5). Report: `reports/message-027-report.md`.
+
 ## 2026-08-11 — Message #26 processed ([261]–[280]: RFC-0057 CDTCP ratified; RFC-0058 CTWP ratified; RFC-0059 CTSTP)
 
 - **Source:** Conversation message #26 — a 20-part transcript ([261]–[280]): RFC-0057 CDTCP v1.3 in three successive same-label iterations ([261] → [263] adds §7.1 wire schemas → [265] adds Prepared vote schema) → reviews ([262] 9.6/10; [264] 9.3/10; [266] "Ready for Ratification") → ratification record ([267]) — **RATIFIED**; RFC-0058 CTWP v1.0 ([269]) → v1.1 ([271]) → v1.2 first iteration ([273]) (normative bodies identical; closing-claim gap C-15) → CHATGPT v1.1 candidate improvements embedded in review ([270]) → v1.2 second iteration ([275], substantive additions) → reviews ([274]; [276] "APPROVED FOR RATIFICATION") → ratification record ([277]) + confirmation ([278]) — **RATIFIED**; RFC-0059 CTSTP v1.0 Draft ([279]) + CHATGPT-authored v1.1 Candidate proposal embedded in review ([280]).
