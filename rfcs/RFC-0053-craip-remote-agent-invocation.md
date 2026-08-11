@@ -1,18 +1,18 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #23, sub-message [239], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-023-original-part*.md
-  Status in corpus: RFC-0053 CRAIP v1.1 (Candidate for Ratification); supersedes v1.0 draft of sub-message [237] (preserved in archive). Reviews: [238] (v1.0: Draft, 85-90%), [240] (v1.1: 95-98%, recommends v1.2; "would not ratify v1.1 immediately"). Source quirk preserved as received: stray closing parenthesis after RemoteInvocationFailed in §13 (flagged in [240] §8). No ratification decision present in corpus.
+  Origin: corpus message #25, sub-message [241], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-025-original-part*.md
+  Status in corpus: RFC-0053 CRAIP v1.2 (Candidate for Final Ratification); RATIFIED per ratification decision in review [244] ("Status: Ratified") and user ratification records [245]/[247] (revised; D-82); supersedes v1.0 ([237]) and v1.1 ([239]) drafts (preserved in archive); [243] is an identical re-send of [241] (D-81). Source quirk preserved as received: stray closing parenthesis after RemoteInvocationFailed in §15 (flagged by [240]/[242]/[244]; no corrected version in corpus).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
 
 
-**RFC-0053 — Cognitive Remote Agent Invocation Protocol (CRAIP) v1.1**
+**RFC-0053 — Cognitive Remote Agent Invocation Protocol (CRAIP) v1.2**
 
-**Version:** 1.1  
+**Version:** 1.2  
 
-**Status:** Candidate for Ratification  
+**Status:** Candidate for Final Ratification  
 
 **Parent:** RFC-0052 Cognitive Testing and Verification Framework (CTVF) v1.2 (Candidate)  
 
@@ -220,7 +220,31 @@ RemoteError {
 
 ```
 
-### 8. Capability and Policy Enforcement
+### 8. Version Negotiation
+
+Version negotiation **MUST** occur before authentication or capability evaluation.
+
+Requirements:
+
+- Peers **MUST** exchange supported protocol version ranges.
+
+- If no mutually supported version exists, the invocation **MUST** fail with a `VersionNegotiationFailed` error.
+
+- Downgrade is permitted only when explicitly allowed by both parties.
+
+### 9. Streaming Semantics
+
+Streaming invocations **MUST** satisfy the following requirements:
+
+- Stream items **MUST** be delivered in order.
+
+- Exactly-once delivery **MUST** be provided within a single invocation.
+
+- End-of-stream **MUST** be explicitly marked.
+
+- Replay **MUST** preserve chunk boundaries and ordering.
+
+### 10. Capability and Policy Enforcement
 
 All remote invocations **MUST** pass through capability and policy checks before execution.
 
@@ -232,7 +256,7 @@ Requirements:
 
 - Capability violations **MUST** produce traceable errors and participate in the event log.
 
-### 9. Deterministic Replay Requirements
+### 11. Deterministic Replay Requirements
 
 Replayed remote invocations **MUST** produce equivalent observable behaviour.
 
@@ -244,7 +268,7 @@ Requirements:
 
 - Invocation ordering **MUST** respect the causal ordering defined in RFC-0002 and RFC-0023.
 
-### 10. Security Model
+### 12. Security Model
 
 CRAIP integrates with the identity and trust framework (RFC-0022) and security policy language (RFC-0025).
 
@@ -258,7 +282,7 @@ Requirements:
 
 - Mutual authentication **MAY** be required for high-trust interactions.
 
-### 11. Transport Bindings
+### 13. Transport Bindings
 
 CRAIP is defined abstractly and **MAY** be bound to multiple transports, provided they satisfy the following mandatory properties:
 
@@ -274,7 +298,7 @@ CRAIP is defined abstractly and **MAY** be bound to multiple transports, provide
 
 - Flow control
 
-### 12. Failure Semantics
+### 14. Failure Semantics
 
 CRAIP defines the following failure handling mechanisms:
 
@@ -290,7 +314,7 @@ CRAIP defines the following failure handling mechanisms:
 
 - Compensation actions for failed remote operations
 
-### 13. Observability
+### 15. Observability
 
 CRAIP integrates with the observability protocol (RFC-0046).
 
@@ -304,7 +328,7 @@ Requirements:
 
 - `TraceContext` **MUST** include `TraceID`, `ParentInvocation`, `Epoch`, `SpanID`, `DeterminismLevel`, `CapabilityContext`, and `ReplaySessionID`.
 
-### 14. Standard CLI
+### 16. Standard CLI
 
 A conforming implementation **SHOULD** provide the following commands:
 
@@ -324,7 +348,7 @@ cog verify remote
 
 ```
 
-### 15. Conformance Profiles
+### 17. Conformance Profiles
 
 CRAIP defines the following conformance profiles:
 
@@ -342,11 +366,11 @@ CRAIP defines the following conformance profiles:
 
 | **Federation**| Enterprise + cross-domain trust negotiation       |
 
-### 16. Relationship to Other RFCs
+### 18. Relationship to Other RFCs
 
 CRAIP integrates with RFC-0020, RFC-0021, RFC-0022, RFC-0048, RFC-0050, and RFC-0052.
 
-### 17. Open Questions
+### 19. Open Questions
 
 The following areas require future specification:
 
@@ -360,6 +384,6 @@ The following areas require future specification:
 
 ---
 
-**RFC-0053 — Cognitive Remote Agent Invocation Protocol (CRAIP) v1.1** is now ready for **Final Ratification Review**.
+**RFC-0053 — Cognitive Remote Agent Invocation Protocol (CRAIP) v1.2** is now ready for **Final Ratification Review**.
 
 This version incorporates a normative protocol state machine, richer `InvocationManifest`, standardized error model, `AgentManifest` for discovery, version negotiation rules, transport property requirements, distributed tracing schema, verification artifact integration, and a conformance matrix, bringing it in line with the precision of the strongest RFCs in the series.

@@ -2,6 +2,17 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #25 processed ([241]–[260]: RFC-0053 ratified; RFC-0054 CADFP; RFC-0055 CMCWP; RFC-0056 CSMKSP; RFC-0057 CDTCP)
+
+- **Source:** Conversation message #25 — a 20-part transcript ([241]–[260]): RFC-0053 CRAIP v1.2 ([241]; identical re-send [243]) → reviews ([242] 99% recommended; [244] **"Status: Ratified"**) → ratification record ([245]; revised [247]) — **RATIFIED**; RFC-0054 CADFP: scope proposed ([248]), v1.0 Draft ([249]), review ([250]); RFC-0055 CMCWP: proposed ([250]), v1.0 Draft ([251]), review ([252]); RFC-0056 CSMKSP: proposed ([252]), v1.0 Draft ([253]), review ([254]); RFC-0057 CDTCP: proposed ([254]), v1.0 ([255]) → review ([256]) → v1.1 ([257]) → review ([258]) → v1.2 Candidate for Final Ratification ([259]) → review ([260], ≈9.5/10).
+- **Classification:** New knowledge; supersession (CRAIP scaffold updated v1.1→v1.2; CDTCP drafts superseded; ratification record [245] superseded by revised [247]); duplicates D-80…D-84 added (incl. D-81: [243] identical re-send of [241]); conflict C-13 ([245]/[247] status table omits RFC-0049…0052 and mislists RFC-0046/0047 despite ratification events) recorded. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-025-original-part1..5.md` ([241]–[244], [245]–[248], [249]–[252], [253]–[256], [257]–[260]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — RFC-0053 updated to v1.2 ([241]) + ratification record ([247]); new RFC-0054 ([249]), RFC-0055 ([251]), RFC-0056 ([253]), RFC-0057 ([259] v1.2) — programmatic, byte-exact. Total: 57 RFC documents + 8 ratification records = 65 files.
+  - 71 code snippets extracted (SN-1349…SN-1419), embedded verbatim in Code Snippets Message #25 Annex (incl. duplicated RFC-0053 fences from [243], preserved); corpus total now **1419 snippets**.
+  - Wiki pages updated (12): RFC Index (statuses, ratified set +RFC-0053, C-13, plane layering, roadmap note), Architecture (five distributed planes, federation architecture, coordination/knowledge/transaction models), Data Models (CADFP/CMCWP/CSMKSP/CDTCP schemas incl. proposals), Workflows (version negotiation/streaming, federation/coordination/sync/transaction workflows, CLIs), Security (federation/knowledge/transaction security), Glossary (+16 terms, CRAIP entry updated), Specifications (lineage), Repository Structure, Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-106…X-111 (6). Report: `reports/message-025-report.md`.
+
 ## 2026-08-11 — Message #24 ("Deeply Verification") — deep audit suite #6
 
 - **Trigger:** user directive "Deeply Verification" (no new corpus content; recorded as message #24).

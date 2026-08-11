@@ -350,3 +350,29 @@ Future RFCs **MUST NOT** violate the architectural principles, security boundari
 ### Roadmap update (X-100/X-105 extension)
 
 Post-ratification roadmaps [224]/[225]: RFC-0051 CMMS ✓ drafted, RFC-0052 CTVF ✓ drafted+ratified, RFC-0053 CRAIP ✓ drafted, RFC-0054 Formal Language Semantics (not drafted), RFC-0055 Cognitive IDE and Interactive Development Environment (not drafted; first proposed in [222]). Drafting so far follows this sequence.
+
+---
+
+## Message #25 additions — RFC-0053 CRAIP ratified; RFC-0054 CADFP; RFC-0055 CMCWP; RFC-0056 CSMKSP; RFC-0057 CDTCP (sub-messages [241]–[260])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #25 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0053 | CRAIP — Cognitive Remote Agent Invocation Protocol | v1.0 ([237]) → v1.1 ([239]) → v1.2 Candidate for Final Ratification ([241]; identical re-send [243], D-81; adds §8 Version Negotiation, §9 Streaming Semantics); review [242] (99%, Recommended for Ratification); review [244]: **"Status: Ratified"**; ratification record ([245]; revised [247] with parent status correction, D-82) — **RATIFIED** | [`rfcs/RFC-0053-craip-remote-agent-invocation.md`](../../rfcs/RFC-0053-craip-remote-agent-invocation.md) (v1.2), [`rfcs/RFC-0053-ratification-record.md`](../../rfcs/RFC-0053-ratification-record.md) |
+| RFC-0054 | CADFP — Cognitive Agent Discovery and Federation Protocol | scope proposed ([248], control plane); v1.0 Draft ([249], Parent: RFC-0053 v1.2 (Ratified)); review [250] (seven v1.1 additions); no v1.1 or ratification in corpus | [`rfcs/RFC-0054-cadfp-agent-discovery-federation.md`](../../rfcs/RFC-0054-cadfp-agent-discovery-federation.md) |
+| RFC-0055 | CMCWP — Cognitive Multi-Agent Coordination and Workflow Protocol | proposed ([250]/[252], coordination plane); v1.0 Draft ([251], Parent: RFC-0054 v1.0 (Draft)); review [252] (nine v1.1 additions); no v1.1 or ratification in corpus | [`rfcs/RFC-0055-cmcwp-multi-agent-coordination.md`](../../rfcs/RFC-0055-cmcwp-multi-agent-coordination.md) |
+| RFC-0056 | CSMKSP — Cognitive Shared Memory and Knowledge Synchronization Protocol | proposed ([252]/[254], knowledge plane); v1.0 Draft ([253], Parent: RFC-0055 v1.0 (Draft)); review [254] (nine v1.1 additions); no v1.1 or ratification in corpus | [`rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md`](../../rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md) |
+| RFC-0057 | CDTCP — Cognitive Distributed Transaction and Consistency Protocol | proposed ([254]/[256], transaction plane); v1.0 Draft ([255]) → review ([256], ten normative additions) → v1.1 Candidate ([257], D-83) → review ([258], ten remaining gaps) → v1.2 Candidate for Final Ratification ([259]) → review ([260], ≈9.5/10, thirteen remaining gaps, "suitable for Candidate for Final Ratification"); no ratification decision in corpus | [`rfcs/RFC-0057-cdtcp-distributed-transaction.md`](../../rfcs/RFC-0057-cdtcp-distributed-transaction.md) (v1.2) |
+
+### Ratified set after message #25
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001 (Cognitive Type System), RFC-0002 (Effect Ordering), RFC-0011 (Scheduler), RFC-0042 (CADP), RFC-0046 (CODP), RFC-0047 (CPMWS), RFC-0049 (CSTS), RFC-0050 (Architecture & Conformance), RFC-0052 (CTVF), **RFC-0053 (CRAIP v1.2, ratified per ratification decision [244] + records [245]/[247])**. RFC-0054/0055/0056 remain Draft; RFC-0057 v1.2 remains Candidate for Final Ratification.
+
+### Conflict C-13 — [245]/[247] status table vs ratification events
+
+The ratification records [245]/[247] include an RFC-0001…0053 status table that **omits RFC-0049…RFC-0052** and lists **RFC-0046 and RFC-0047 as "Final Candidate"** although ratification events exist for both ([196] and [202]); RFC-0044/0045 listed as "Candidate" (recommendations only — consistent). Same snapshot-conflict pattern as C-9 ([179]) and C-12 ([215]). Resolution: ratification events treated as authoritative; tables preserved verbatim; RFC Index reflects authoritative statuses.
+
+### Distributed plane layering (X-111)
+
+Invocation/data plane RFC-0053 CRAIP → control plane RFC-0054 CADFP (discovery/registration/federation) → coordination plane RFC-0055 CMCWP (workflows/delegation/shared goals) → knowledge plane RFC-0056 CSMKSP (shared memory/synchronization) → transaction plane RFC-0057 CDTCP (atomic multi-agent operations) ([248]/[252]/[254]/[256]/[260]). Roadmap note: actual numbering (0054 CADFP, 0055 CMCWP) follows the review-chain proposals and diverges from the [215]/[222] roadmap assignments (0054 Formal Language Semantics, 0055 Cognitive IDE) — C-11 lineage; those proposals remain undrafted at their assigned numbers.

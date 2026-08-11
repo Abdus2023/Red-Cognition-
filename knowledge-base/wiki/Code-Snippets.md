@@ -6,7 +6,7 @@
 
 ## Count summary
 
-**Corpus totals: 1348 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348, Message #23 Annex at the bottom of this page).
+**Corpus totals: 1419 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419, Message #25 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -291,6 +291,31 @@ Message #23 breakdown:
 | [238] | 6 | SN-1332 … SN-1337 |
 | [239] | 5 | SN-1338 … SN-1342 |
 | [240] | 6 | SN-1343 … SN-1348 |
+
+Message #25 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [241] | 5 | SN-1349 … SN-1353 |
+| [242] | 5 | SN-1354 … SN-1358 |
+| [243] | 5 | SN-1359 … SN-1363 |
+| [244] | 2 | SN-1364 … SN-1365 |
+| [245] | 0 | — |
+| [246] | 0 | — |
+| [247] | 0 | — |
+| [248] | 4 | SN-1366 … SN-1369 |
+| [249] | 6 | SN-1370 … SN-1375 |
+| [250] | 5 | SN-1376 … SN-1380 |
+| [251] | 0 | — |
+| [252] | 4 | SN-1381 … SN-1384 |
+| [253] | 0 | — |
+| [254] | 5 | SN-1385 … SN-1389 |
+| [255] | 1 | SN-1390 |
+| [256] | 7 | SN-1391 … SN-1397 |
+| [257] | 4 | SN-1398 … SN-1401 |
+| [258] | 9 | SN-1402 … SN-1410 |
+| [259] | 5 | SN-1411 … SN-1415 |
+| [260] | 4 | SN-1416 … SN-1419 |
 
 ## Ledger
 
@@ -22213,5 +22238,1811 @@ RemoteInvocationStarted,
 RemoteInvocationCompleted,
 
 RemoteInvocationFailed)
+
+```
+
+## Message #25 Annex — SN-1349 … SN-1419 (verbatim embeddings)
+
+> Each fenced block from corpus message #25 (sub-messages [241]–[260]) embedded exactly once, unchanged from the archive (incl. the duplicated RFC-0053 v1.2 fences from [243], preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [241]
+
+**SN-1349**
+
+```
+
+AgentManifest {
+
+    AgentID,
+
+    Version,
+
+    SupportedMethods,
+
+    Capabilities,
+
+    SupportedRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Endpoint
+
+}
+
+```
+
+**SN-1350**
+
+```
+
+InvocationManifest {
+
+    InvocationID,
+
+    AgentID,
+
+    CallerID,
+
+    ProtocolVersion,
+
+    Method,
+
+    Parameters,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    AuthenticationContext,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1351**
+
+```
+
+Created
+
+   ↓
+
+Authenticated
+
+   ↓
+
+Authorized
+
+   ↓
+
+Scheduled
+
+   ↓
+
+Executing
+
+   ↓
+
+Completed
+
+   |
+
+   ├── Failed
+
+   ├── Cancelled
+
+   └── TimedOut
+
+```
+
+**SN-1352**
+
+```
+
+RemoteError {
+
+    Code,
+
+    Category,
+
+    Message,
+
+    Retryable,
+
+    CapabilityViolation,
+
+    TraceReference,
+
+    Cause
+
+}
+
+```
+
+**SN-1353**
+
+```
+
+cog invoke
+
+cog agent discover
+
+cog agent list
+
+cog trace remote
+
+cog replay remote
+
+cog verify remote
+
+```
+
+### Sub-message [242]
+
+**SN-1354**
+
+```text
+
+RemoteInvocationFailed)
+
+```
+
+**SN-1355**
+
+```text
+
+RemoteInvocationStarted
+
+RemoteInvocationCompleted
+
+RemoteInvocationFailed
+
+```
+
+**SN-1356**
+
+```text
+
+Request {
+
+    Header
+
+    InvocationManifest
+
+    Payload
+
+}
+
+Response {
+
+    Header
+
+    Result
+
+    TraceReference
+
+}
+
+Event {
+
+    EventID
+
+    InvocationID
+
+    Sequence
+
+    Payload
+
+}
+
+```
+
+**SN-1357**
+
+```text
+
+InvocationSemantics {
+
+    AtMostOnce
+
+    AtLeastOnce
+
+    ExactlyOnce
+
+}
+
+```
+
+**SN-1358**
+
+```text
+
+RemoteVerificationRecord {
+
+    ReplayVerified
+
+    Certificates
+
+    TraceReference
+
+}
+
+```
+
+### Sub-message [243]
+
+**SN-1359**
+
+```
+
+AgentManifest {
+
+    AgentID,
+
+    Version,
+
+    SupportedMethods,
+
+    Capabilities,
+
+    SupportedRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Endpoint
+
+}
+
+```
+
+**SN-1360**
+
+```
+
+InvocationManifest {
+
+    InvocationID,
+
+    AgentID,
+
+    CallerID,
+
+    ProtocolVersion,
+
+    Method,
+
+    Parameters,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    Priority,
+
+    Deadline,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    AuthenticationContext,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1361**
+
+```
+
+Created
+
+   ↓
+
+Authenticated
+
+   ↓
+
+Authorized
+
+   ↓
+
+Scheduled
+
+   ↓
+
+Executing
+
+   ↓
+
+Completed
+
+   |
+
+   ├── Failed
+
+   ├── Cancelled
+
+   └── TimedOut
+
+```
+
+**SN-1362**
+
+```
+
+RemoteError {
+
+    Code,
+
+    Category,
+
+    Message,
+
+    Retryable,
+
+    CapabilityViolation,
+
+    TraceReference,
+
+    Cause
+
+}
+
+```
+
+**SN-1363**
+
+```
+
+cog invoke
+
+cog agent discover
+
+cog agent list
+
+cog trace remote
+
+cog replay remote
+
+cog verify remote
+
+```
+
+### Sub-message [244]
+
+**SN-1364**
+
+```text
+
+Lifecycle events `RemoteInvocationStarted`,
+
+`RemoteInvocationCompleted`,
+
+`RemoteInvocationFailed`)
+
+```
+
+**SN-1365**
+
+```text
+
+Lifecycle events
+
+RemoteInvocationStarted
+
+RemoteInvocationCompleted
+
+RemoteInvocationFailed
+
+```
+
+### Sub-message [248]
+
+**SN-1366**
+
+```text
+
+FederationManifest {
+
+    FederationID,
+
+    Name,
+
+    Version,
+
+    Members,
+
+    TrustDomain,
+
+    DiscoveryPolicy,
+
+    RoutingPolicy,
+
+    SecurityPolicy,
+
+    SupportedRFCs
+
+}
+
+```
+
+**SN-1367**
+
+```text
+
+AgentRegistration {
+
+    AgentManifest,
+
+    RegistrationTime,
+
+    LeaseDuration,
+
+    HealthEndpoint,
+
+    DiscoveryScopes,
+
+    TrustAssertions
+
+}
+
+```
+
+**SN-1368**
+
+```text
+
+DiscoveryQuery {
+
+    RequiredCapabilities,
+
+    RequiredRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Region,
+
+    Constraints
+
+}
+
+```
+
+**SN-1369**
+
+```text
+
+Applications
+
+      │
+
+      ▼
+
+ CADFP (RFC-0054)
+
+ Discovery
+
+ Registration
+
+ Federation
+
+ Topology
+
+ Membership
+
+      │
+
+      ▼
+
+ CRAIP (RFC-0053)
+
+ Remote Invocation
+
+ Streaming
+
+ Replay
+
+ Capabilities
+
+      │
+
+      ▼
+
+ Cognitive Runtime
+
+```
+
+### Sub-message [249]
+
+**SN-1370**
+
+```
+
+AgentRegistration {
+
+    AgentManifest,
+
+    RegistrationTime,
+
+    LeaseDuration,
+
+    HealthEndpoint,
+
+    DiscoveryScopes,
+
+    TrustAssertions,
+
+    FederationAgreements
+
+}
+
+```
+
+**SN-1371**
+
+```
+
+DiscoveryQuery {
+
+    RequiredCapabilities,
+
+    RequiredRFCs,
+
+    RuntimeVersion,
+
+    SecurityLevel,
+
+    Region,
+
+    Constraints
+
+}
+
+```
+
+**SN-1372**
+
+```
+
+DiscoveryResponse {
+
+    MatchingAgents: [AgentManifest],
+
+    TrustAssertions,
+
+    FederationContext
+
+}
+
+```
+
+**SN-1373**
+
+```
+
+FederationManifest {
+
+    FederationID,
+
+    Name,
+
+    Version,
+
+    Members,
+
+    TrustDomain,
+
+    DiscoveryPolicy,
+
+    RoutingPolicy,
+
+    SecurityPolicy,
+
+    SupportedRFCs
+
+}
+
+```
+
+**SN-1374**
+
+```
+
+Registered
+
+   ↓
+
+Active
+
+   ↓
+
+Suspended
+
+   ↓
+
+Expired / Revoked
+
+   ↓
+
+Deregistered
+
+```
+
+**SN-1375**
+
+```
+
+cog federation join
+
+cog federation leave
+
+cog agent register
+
+cog agent deregister
+
+cog agent discover
+
+cog agent health
+
+cog federation list
+
+cog federation policy
+
+```
+
+### Sub-message [250]
+
+**SN-1376**
+
+```text
+
+Query
+
+  ↓
+
+Capability Filter
+
+  ↓
+
+Policy Filter
+
+  ↓
+
+Trust Filter
+
+  ↓
+
+Version Filter
+
+  ↓
+
+Health Filter
+
+  ↓
+
+Deterministic Ranking
+
+  ↓
+
+DiscoveryResponse
+
+```
+
+**SN-1377**
+
+```text
+
+Created
+
+    ↓
+
+Initializing
+
+    ↓
+
+Serving
+
+    ↓
+
+Synchronizing
+
+    ↓
+
+ReadOnly
+
+    ↓
+
+Retired
+
+```
+
+**SN-1378**
+
+```text
+
+FederationAgreement {
+
+    AgreementID,
+
+    FederationID,
+
+    Participants,
+
+    TrustLevel,
+
+    SharedCapabilities,
+
+    VisibilityRules,
+
+    ValidFrom,
+
+    ValidUntil,
+
+    SignatureSet
+
+}
+
+```
+
+**SN-1379**
+
+```text
+
+Register
+
+    ↓
+
+Lease Active
+
+    ↓
+
+Renew
+
+    ↓
+
+Extended
+
+or
+
+Expired
+
+    ↓
+
+Automatic Deregistration
+
+```
+
+**SN-1380**
+
+```text
+
+CapabilityOffer
+
+CapabilityAccept
+
+CapabilityReject
+
+CapabilityWithdraw
+
+```
+
+### Sub-message [252]
+
+**SN-1381**
+
+```text
+
+WorkflowManifest {
+
+    WorkflowID,
+
+    Version,
+
+    Owner,
+
+    Goals,
+
+    Tasks,
+
+    Dependencies,
+
+    Participants,
+
+    RequiredCapabilities,
+
+    CoordinationPolicy,
+
+    RetryPolicy,
+
+    TerminationPolicy
+
+}
+
+```
+
+**SN-1382**
+
+```text
+
+Created
+
+    ↓
+
+Planned
+
+    ↓
+
+ParticipantsAssigned
+
+    ↓
+
+Executing
+
+    ↓
+
+Synchronizing
+
+    ↓
+
+Completed
+
+    ├── Failed
+
+    ├── Cancelled
+
+    └── Suspended
+
+```
+
+**SN-1383**
+
+```text
+
+Pending
+
+    ↓
+
+Accepted
+
+    ↓
+
+Executing
+
+    ↓
+
+Completed
+
+or
+
+Rejected
+
+or
+
+Failed
+
+or
+
+Cancelled
+
+```
+
+**SN-1384**
+
+```text
+
+CoordinationManifest {
+
+    CoordinationID,
+
+    WorkflowID,
+
+    Participants,
+
+    Roles,
+
+    Responsibilities,
+
+    VotingPolicy,
+
+    ConsensusPolicy,
+
+    ConflictPolicy,
+
+    TimeoutPolicy
+
+}
+
+```
+
+### Sub-message [254]
+
+**SN-1385**
+
+```text
+
+SharedKnowledgeObject {
+
+    KnowledgeID,
+
+    Namespace,
+
+    Type,
+
+    Value,
+
+    Version,
+
+    Epoch,
+
+    Provenance,
+
+    AccessPolicy,
+
+    CreatedAt,
+
+    UpdatedAt
+
+}
+
+```
+
+**SN-1386**
+
+```text
+
+Created
+
+    ↓
+
+Validated
+
+    ↓
+
+Propagated
+
+    ↓
+
+Applied
+
+    ↓
+
+Confirmed
+
+or
+
+Rejected
+
+or
+
+Conflicted
+
+```
+
+**SN-1387**
+
+```text
+
+SubscriptionManifest {
+
+    SubscriptionID,
+
+    SubscriberID,
+
+    Query,
+
+    Filters,
+
+    DeliveryPolicy,
+
+    OrderingGuarantee,
+
+    ReplayPolicy,
+
+    Expiration
+
+}
+
+```
+
+**SN-1388**
+
+```text
+
+ConflictResolutionRecord {
+
+    ConflictID,
+
+    KnowledgeID,
+
+    CompetingVersions,
+
+    ResolutionPolicy,
+
+    WinningVersion,
+
+    ResolutionEpoch,
+
+    Resolver
+
+}
+
+```
+
+**SN-1389**
+
+```text
+
+KnowledgeSnapshot {
+
+    SnapshotID,
+
+    Epoch,
+
+    Objects,
+
+    ProvenanceRoot,
+
+    Hash
+
+}
+
+```
+
+### Sub-message [255]
+
+**SN-1390**
+
+```
+
+Created
+
+   ↓
+
+Prepared
+
+   ↓
+
+Executing
+
+   ↓
+
+Committing / Aborting
+
+   ↓
+
+Committed / Compensated / Aborted
+
+   ↓
+
+Archived
+
+```
+
+### Sub-message [256]
+
+**SN-1391**
+
+```text
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    CompensationPlan,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1392**
+
+```text
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   │
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1393**
+
+```
+
+BeginTransaction
+
+JoinTransaction
+
+Prepare
+
+Prepared
+
+Commit
+
+Committed
+
+Abort
+
+Aborted
+
+Compensate
+
+Compensated
+
+Heartbeat
+
+Status
+
+```
+
+**SN-1394**
+
+```text
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1395**
+
+```
+
+TransactionCreated
+
+ParticipantJoined
+
+PrepareStarted
+
+PrepareSucceeded
+
+PrepareFailed
+
+CommitStarted
+
+Committed
+
+Aborted
+
+CompensationStarted
+
+CompensationCompleted
+
+TransactionArchived
+
+```
+
+**SN-1396**
+
+```text
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+**SN-1397**
+
+```
+
+RFC-0053  CRAIP
+
+      │
+
+RFC-0054  CADFP
+
+      │
+
+RFC-0055  CMCWP
+
+      │
+
+RFC-0056  CSMKSP
+
+      │
+
+RFC-0057  CDTCP
+
+```
+
+### Sub-message [257]
+
+**SN-1398**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    CompensationPlan,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1399**
+
+```
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   |
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1400**
+
+```
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1401**
+
+```
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+### Sub-message [258]
+
+**SN-1402**
+
+```text
+
+Created
+
+   ↓
+
+CollectingParticipants
+
+   ↓
+
+Preparing
+
+   ↓
+
+Committing
+
+   │
+
+   ├── Aborting
+
+   ├── Recovering
+
+   └── Compensating
+
+   ↓
+
+Archived
+
+```
+
+**SN-1403**
+
+```
+
+IsolationLevel
+
+```
+
+**SN-1404**
+
+```
+
+Commit iff
+
+• every participant reached Ready
+
+AND
+
+• capabilities remain valid
+
+AND
+
+• replay constraints satisfied
+
+AND
+
+• policy evaluation succeeded
+
+```
+
+**SN-1405**
+
+```
+
+Nested transactions
+
+MUST NOT
+
+```
+
+**SN-1406**
+
+```
+
+Nested transactions
+
+MAY
+
+```
+
+**SN-1407**
+
+```
+
+Commit
+
+Abort
+
+Compensate
+
+```
+
+**SN-1408**
+
+```
+
+MUST be idempotent.
+
+```
+
+**SN-1409**
+
+```text
+
+VerificationArtifact {
+
+    TransactionID
+
+    ReplayHash
+
+    DeterminismResult
+
+    IsolationResult
+
+    CompensationResult
+
+    Coverage
+
+}
+
+```
+
+**SN-1410**
+
+```
+
+Committed transactions
+
+MUST appear atomically.
+
+Aborted transactions
+
+MUST have no observable effects except
+
+recorded compensation.
+
+Replay
+
+MUST preserve the same visible commit order.
+
+```
+
+### Sub-message [259]
+
+**SN-1411**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    RequiredCapabilities,
+
+    ExpectedEffects,
+
+    Timeout,
+
+    ReplayPolicy,
+
+    TraceContext,
+
+    CompensationPlan,
+
+    VersionConstraints
+
+}
+
+```
+
+**SN-1412**
+
+```
+
+Created
+
+   ↓
+
+Registered
+
+   ↓
+
+Prepared
+
+   ↓
+
+Ready
+
+   ↓
+
+Committed
+
+   |
+
+   ├── Aborted
+
+   ├── Compensated
+
+   └── TimedOut
+
+```
+
+**SN-1413**
+
+```
+
+Created
+
+   ↓
+
+CollectingParticipants
+
+   ↓
+
+Preparing
+
+   ↓
+
+Committing
+
+   |
+
+   ├── Aborting
+
+   ├── Recovering
+
+   └── Compensating
+
+   ↓
+
+Archived
+
+```
+
+**SN-1414**
+
+```
+
+TransactionLogEntry {
+
+    TransactionID,
+
+    ParticipantID,
+
+    Phase,
+
+    Timestamp,
+
+    Epoch,
+
+    Effects,
+
+    Decision,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1415**
+
+```
+
+cog tx begin
+
+cog tx status
+
+cog tx prepare
+
+cog tx commit
+
+cog tx abort
+
+cog tx compensate
+
+cog tx replay
+
+cog tx verify
+
+```
+
+### Sub-message [260]
+
+**SN-1416**
+
+```
+
+Prepare
+
+↓
+
+ReadOnly
+
+↓
+
+Archived
+
+```
+
+**SN-1417**
+
+```
+
+TransactionError {
+
+    Code,
+
+    Category,
+
+    Retryable,
+
+    Participant,
+
+    Phase,
+
+    Cause,
+
+    TraceReference
+
+}
+
+```
+
+**SN-1418**
+
+```
+
+TransactionManifest {
+
+    TransactionID,
+
+    CoordinatorID,
+
+    Participants,
+
+    IsolationLevel,
+
+    Priority,
+
+    Deadline,
+
+    RequiredCapabilities,
+
+    PolicyContext,
+
+    ExpectedEffects,
+
+    ReplayPolicy,
+
+    RetryPolicy,
+
+    VersionConstraints,
+
+    TraceContext,
+
+    CompensationPlan
+
+}
+
+```
+
+**SN-1419**
+
+```
+
+TraceContext MUST propagate.
+
+Transaction spans MUST be generated.
+
+Metrics SHOULD include:
+
+transactions_started
+
+transactions_committed
+
+transactions_aborted
+
+compensation_count
+
+prepare_latency
+
+commit_latency
 
 ```

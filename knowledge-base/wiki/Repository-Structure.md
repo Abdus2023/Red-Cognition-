@@ -164,3 +164,7 @@ Current scaffold totals: 12 documents in `specs/`, 46 files in `rfcs/` (42 RFC d
 ## Message #23 update — rfcs/ populated with RFC-0051…RFC-0053; RFC-0050 updated (2026-08-11)
 
 `rfcs/` now contains **60 files**: 53 RFC documents (RFC-0001…RFC-0053) + 7 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049, RFC-0050, RFC-0052). Changes: RFC-0050 scaffold updated to v1.2 ([221], ratified per [224]/[225]) + new RFC-0050-ratification-record.md ([225]); new RFC-0051-cmms-macro-metaprogramming.md ([227]), RFC-0052-ctvf-testing-verification.md ([233] v1.2, ratified per [235]), RFC-0052-ratification-record.md ([235]), RFC-0053-craip-remote-agent-invocation.md ([239] v1.1) — documented placement per RC-000 §8, byte-exact from archive.
+
+## Message #25 update — rfcs/ populated with RFC-0054…RFC-0057; RFC-0053 updated (2026-08-11)
+
+`rfcs/` now contains **65 files**: 57 RFC documents (RFC-0001…RFC-0057) + 8 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042, RFC-0049, RFC-0050, RFC-0052, RFC-0053). Changes: RFC-0053 scaffold updated to v1.2 ([241], ratified per [244]/[245]/[247]) + new RFC-0053-ratification-record.md (revised record [247]); new RFC-0054-cadfp-agent-discovery-federation.md ([249]), RFC-0055-cmcwp-multi-agent-coordination.md ([251]), RFC-0056-csmksp-shared-memory-knowledge-sync.md ([253]), RFC-0057-cdtcp-distributed-transaction.md ([259] v1.2) — documented placement per RC-000 §8, byte-exact from archive.
