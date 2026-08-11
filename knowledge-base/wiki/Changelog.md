@@ -2,6 +2,17 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #21 processed ([181]–[200]: RFC-0043 CLS; RFC-0044 CSL; RFC-0045 CTDX; RFC-0046 CODP ratified; RFC-0047 CPMWS)
+
+- **Source:** Conversation message #21 — a 20-part transcript ([181]–[200]): RFC-0043 CLS v1.0 Draft ([181], Parent RFC-0028); RFC-0044 CSL v1.0 ([183]) → review ([184]) → v1.1 Candidate ([185]) → review "Ratification Recommended (with editorial refinements)" ([186]); RFC-0045 CTDX v1.0 ([187]) → review ([188]) → v1.1 Candidate ([189]) → review "Ratification Recommended" ([190]); RFC-0046 CODP v1.0 ([191]) → review ([192]) → v1.1 ([193]) → review "Ratify" ([194]) → v1.2 ([195]) → review **"Status: Ratified"** ([196]); RFC-0047 CPMWS v1.0 ([197]) → review ([198]) → v1.1 Candidate ([199]) → conditional ratification recommendation ([200]); roadmap proposals [182] (0047=CCTS, 0049=CWPMS) and [196] (0047=CPMWS, 0048=CCTS, 0049=CDP, 0050=CTEF, 0051=Reference Runtime).
+- **Classification:** New knowledge; supersession (v1.1/v1.2 drafts supersede v1.0 drafts; [196] roadmap supersedes [182] for 0047); duplicates D-64…D-68 added; conflict C-11 (roadmap numbering divergence [182] vs [196]) recorded. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-021-original-part1..5.md` ([181]–[184], [185]–[188], [189]–[192], [193]–[196], [197]–[200]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/` — RFC-0043 ([181]), RFC-0044 ([185]), RFC-0045 ([189]), RFC-0046 ([195]; ratification basis [196] recorded in provenance), RFC-0047 ([199]) — programmatic, byte-exact. Total: 47 RFC documents + 4 ratification records = 51 files.
+  - 45 code snippets extracted (SN-1094…SN-1138), embedded verbatim in Code Snippets Message #21 Annex; corpus total now **1138 snippets**.
+  - Wiki pages updated (12): RFC Index (statuses, ratified set +RFC-0046, roadmap evolution, layer table, parent-chain note), Architecture (Language & Developer Platform layer, CLS compilation/evaluation models, stack snapshots), Data Models (CLS/CSL/CODP/CPMWS models, ObservabilityEvent evolution, manifest schemas), Workflows (cog CLI, dependency resolution, sampling, package lifecycle), Security (CODP security & privacy, workspace policies, package trust), Glossary (+20 terms, CLS entry updated), Specifications (lineage), Repository Structure, Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-88…X-94 (7). Report: `reports/message-021-report.md`.
+
 ## 2026-08-11 — Message #20 processed (governing specification re-sent — identical duplicate of message #1)
 
 - **Source:** Conversation message #20 — re-send of the governing extraction specification ("Knowledge Base & Code Extraction Assistant").

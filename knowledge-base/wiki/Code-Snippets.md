@@ -6,7 +6,7 @@
 
 ## Count summary
 
-**Corpus totals: 1093 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093, Message #18 Annex at the bottom of this page).
+**Corpus totals: 1138 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138, Message #21 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -216,6 +216,31 @@ Message #18 breakdown:
 | [180] | 1 | SN-1093 |
 
 Note: the [18] system-prompt document contains short unfenced text chains (e.g., "Hardware ↓ Red/System ↓ …"); these are recorded as document text, not counted as separate snippets.
+
+Message #21 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [181] | 2 | SN-1094 … SN-1095 |
+| [182] | 7 | SN-1096 … SN-1102 |
+| [183] | 1 | SN-1103 |
+| [184] | 8 | SN-1104 … SN-1111 |
+| [185] | 2 | SN-1112 … SN-1113 |
+| [186] | 2 | SN-1114 … SN-1115 |
+| [187] | 0 | — |
+| [188] | 3 | SN-1116 … SN-1118 |
+| [189] | 2 | SN-1119 … SN-1120 |
+| [190] | 3 | SN-1121 … SN-1123 |
+| [191] | 1 | SN-1124 |
+| [192] | 0 | — |
+| [193] | 1 | SN-1125 |
+| [194] | 3 | SN-1126 … SN-1128 |
+| [195] | 1 | SN-1129 |
+| [196] | 0 | — |
+| [197] | 1 | SN-1130 |
+| [198] | 2 | SN-1131 … SN-1132 |
+| [199] | 1 | SN-1133 |
+| [200] | 5 | SN-1134 … SN-1138 |
 
 ## Ledger
 
@@ -15394,3 +15419,1207 @@ Ecosystem
        ↓
    CISA
    ```
+
+## Message #21 Annex — SN-1094 … SN-1138 (verbatim embeddings)
+
+> Each fenced block from corpus message #21 (sub-messages [181]–[200]) embedded exactly once, unchanged from the archive. IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [181]
+
+**SN-1094**
+
+```
+
+program        ::= module*
+
+module         ::= "module" word block
+
+definition     ::= word ":" ( "func" | "goal" | "plan" | "belief" | "skill" | "capability" ) block
+
+expression     ::= block | word | path | literal | dialect-block
+
+dialect-block  ::= word block          ; interpreted by a cognitive dialect
+
+```
+
+**SN-1095**
+
+```
+
+Source (CLS)
+
+   ↓
+
+Lexer / Parser
+
+   ↓
+
+Red AST
+
+   ↓
+
+Cognitive Dialect Lowering
+
+   ↓
+
+Cognitive IR (CIR)
+
+   ↓
+
+COIL Optimisation (RFC-0030, RFC-0031)
+
+   ↓
+
+CISA Generation (RFC-0013)
+
+   ↓
+
+Binary Encoding (RFC-0014)
+
+   ↓
+
+CVM Execution
+
+```
+
+### Sub-message [182]
+
+**SN-1096**
+
+```text
+
+module navigation [
+
+    export [
+
+        planner
+
+        route
+
+    ]
+
+    import [
+
+        memory
+
+        capability
+
+    ]
+
+]
+
+```
+
+**SN-1097**
+
+```text
+
+Parse
+
+↓
+
+Bind
+
+↓
+
+Expand Dialects
+
+↓
+
+Static Analysis
+
+↓
+
+Capability Analysis
+
+↓
+
+CIR Generation
+
+↓
+
+Optimisation
+
+↓
+
+Execution
+
+```
+
+**SN-1098**
+
+```text
+
+deterministic [
+
+    ...
+
+]
+
+eventual [
+
+    ...
+
+]
+
+best-effort [
+
+    ...
+
+]
+
+```
+
+**SN-1099**
+
+```text
+
+match belief [
+
+    connected? => ...
+
+    disconnected? => ...
+
+]
+
+```
+
+**SN-1100**
+
+```text
+
+goal deliver-package [
+
+    requires [
+
+        capability navigation
+
+    ]
+
+    ensures [
+
+        delivered?
+
+    ]
+
+]
+
+```
+
+**SN-1101**
+
+```text
+
+skill send-message [
+
+    effects [
+
+        network
+
+        storage
+
+    ]
+
+]
+
+```
+
+**SN-1102**
+
+```text
+
+skill move [
+
+    capability navigation
+
+]
+
+```
+
+### Sub-message [183]
+
+**SN-1103**
+
+```red
+
+goal        [target constraints? priority? deadline?]
+
+belief      [proposition confidence source timestamp]
+
+plan        [goal steps dependencies?]
+
+skill       [name spec body effects capabilities?]
+
+capability  [type scope granted-to granted-by expiration?]
+
+effect      [type target strength timestamp]
+
+agent       [identity capabilities goals beliefs]
+
+checkpoint  [agent context timestamp]
+
+```
+
+### Sub-message [184]
+
+**SN-1104**
+
+```text
+
+cognition.goal
+
+Version: 1.0.0
+
+Compatibility: RFC-0044
+
+```
+
+**SN-1105**
+
+```text
+
+infer()
+
+plan()
+
+remember()
+
+observe()
+
+```
+
+**SN-1106**
+
+```text
+
+infer(...)
+
+evaluate(...)
+
+score(...)
+
+```
+
+**SN-1107**
+
+```text
+
+observe(...)
+
+remember(...)
+
+execute(...)
+
+checkpoint(...)
+
+```
+
+**SN-1108**
+
+```text
+
+CapabilityDenied
+
+GoalUnsatisfied
+
+MemoryUnavailable
+
+CheckpointInvalid
+
+PolicyViolation
+
+ProofVerificationFailed
+
+```
+
+**SN-1109**
+
+```text
+
+observe
+
+plan
+
+execute
+
+```
+
+**SN-1110**
+
+```text
+
+reflect.trace()
+
+reflect.goals()
+
+reflect.effects()
+
+reflect.capabilities()
+
+reflect.reasoning()
+
+reflect.memory()
+
+```
+
+**SN-1111**
+
+```text
+
+cognition.core
+
+cognition.types
+
+cognition.goal
+
+cognition.plan
+
+cognition.belief
+
+cognition.capability
+
+cognition.effect
+
+cognition.memory
+
+cognition.agent
+
+cognition.trace
+
+cognition.reflect
+
+cognition.scheduler
+
+cognition.workflow
+
+cognition.policy
+
+cognition.simulation
+
+cognition.checkpoint
+
+cognition.compiler
+
+cognition.proof
+
+cognition.package
+
+cognition.registry
+
+cognition.governance
+
+cognition.federation
+
+cognition.marketplace
+
+```
+
+### Sub-message [185]
+
+**SN-1112**
+
+```
+
+cognition.goal Version: 1.0.0 Compatibility: RFC-0044
+
+```
+
+**SN-1113**
+
+```
+
+cognition.core
+
+cognition.types
+
+cognition.goal
+
+cognition.plan
+
+cognition.belief
+
+cognition.capability
+
+cognition.effect
+
+cognition.memory
+
+cognition.agent
+
+cognition.trace
+
+cognition.reflect
+
+cognition.scheduler
+
+cognition.workflow
+
+cognition.policy
+
+cognition.simulation
+
+cognition.checkpoint
+
+cognition.compiler
+
+cognition.proof
+
+cognition.package
+
+cognition.registry
+
+cognition.governance
+
+cognition.federation
+
+cognition.marketplace
+
+```
+
+### Sub-message [186]
+
+**SN-1114**
+
+```text
+
+OperationDescriptor {
+
+    Name
+
+    Purity
+
+    EffectClass
+
+    RequiredCapabilities
+
+    SchedulerRequirements
+
+    ReplayBehaviour
+
+}
+
+```
+
+**SN-1115**
+
+```text
+
+Applications
+
+        │
+
+Cognitive Standard Library (RFC-0044)
+
+        │
+
+Cognitive Language (RFC-0043)
+
+        │
+
+Compiler (RFC-0027–0032)
+
+        │
+
+CVM / Runtime
+
+        │
+
+CogOS
+
+        │
+
+Deployment / Federation / Governance
+
+        │
+
+Infrastructure
+
+```
+
+### Sub-message [188]
+
+**SN-1116**
+
+```text
+
+cog build
+
+cog test
+
+cog run
+
+cog fmt
+
+cog lint
+
+cog doc
+
+cog publish
+
+cog verify
+
+cog replay
+
+```
+
+**SN-1117**
+
+```text
+
+Compiler
+
+↓
+
+Language Server
+
+↓
+
+Formatter
+
+↓
+
+Linter
+
+↓
+
+Debugger
+
+↓
+
+Profiler
+
+↓
+
+Documentation Generator
+
+↓
+
+Package Manager
+
+↓
+
+Deployment Tool
+
+```
+
+**SN-1118**
+
+```text
+
+Applications
+
+        │
+
+CSL (RFC-0044)
+
+        │
+
+CLS (RFC-0043)
+
+        │
+
+CTDX (RFC-0045)
+
+        │
+
+Compiler & Toolchain
+
+        │
+
+Runtime / CVM
+
+        │
+
+CogOS
+
+        │
+
+Deployment / Federation
+
+```
+
+### Sub-message [189]
+
+**SN-1119**
+
+```
+
+cog build
+
+cog test
+
+cog run
+
+cog fmt
+
+cog lint
+
+cog doc
+
+cog publish
+
+cog verify
+
+cog replay
+
+```
+
+**SN-1120**
+
+```
+
+Compiler
+
+   ↓
+
+Language Server
+
+   ↓
+
+Formatter + Linter
+
+   ↓
+
+Debugger + Profiler
+
+   ↓
+
+Documentation Generator
+
+   ↓
+
+Package Manager
+
+   ↓
+
+Deployment Tool
+
+```
+
+### Sub-message [190]
+
+**SN-1121**
+
+```text
+
+ToolCapabilities {
+
+    LSP
+
+    Debugger
+
+    ReplayDebugger
+
+    Profiler
+
+    Formatter
+
+    AICompletion
+
+    ProofAssistant
+
+}
+
+```
+
+**SN-1122**
+
+```text
+
+workspace/
+
+    cog.toml
+
+    cog.lock
+
+    packages/
+
+    tests/
+
+    docs/
+
+    examples/
+
+    scripts/
+
+    build/
+
+```
+
+**SN-1123**
+
+```text
+
+Applications
+
+      │
+
+Cognitive Standard Library
+
+      │
+
+Cognitive Language
+
+      │
+
+Developer Tooling (CTDX)
+
+      │
+
+Compiler
+
+      │
+
+Runtime / CVM
+
+      │
+
+CogOS
+
+      │
+
+Deployment / Federation
+
+```
+
+### Sub-message [191]
+
+**SN-1124**
+
+```
+
+ObservabilityEvent {
+
+    EventID,
+
+    Timestamp,
+
+    SourceService,
+
+    EventType,
+
+    AgentID,
+
+    TraceID,
+
+    CorrelationID,
+
+    Payload,
+
+    Provenance
+
+}
+
+```
+
+### Sub-message [193]
+
+**SN-1125**
+
+```
+
+ObservabilityEvent {
+
+    EventID,
+
+    Timestamp,
+
+    SourceService,
+
+    EventType,
+
+    AgentID,
+
+    TraceID,
+
+    SpanID,
+
+    ParentSpanID,
+
+    ExecutionEpoch,
+
+    DeterminismLevel,
+
+    CapabilityContext,
+
+    ReplaySessionID,
+
+    Payload,
+
+    Provenance
+
+}
+
+```
+
+### Sub-message [194]
+
+**SN-1126**
+
+```text
+
+ObservabilityEvent
+
+ ├── EventHeader
+
+ ├── TraceContext
+
+ ├── Payload
+
+ └── Provenance
+
+```
+
+**SN-1127**
+
+```text
+
+Healthy
+
+Degraded
+
+Recovering
+
+Paused
+
+Quarantined
+
+Failed
+
+Retired
+
+```
+
+**SN-1128**
+
+```text
+
+observe.runtime
+
+observe.trace
+
+observe.metrics
+
+observe.memory
+
+observe.agent
+
+observe.scheduler
+
+observe.checkpoint
+
+observe.replay
+
+```
+
+### Sub-message [195]
+
+**SN-1129**
+
+```
+
+ObservabilityEvent {
+
+    EventID,
+
+    Timestamp,
+
+    SourceService,
+
+    EventType,
+
+    AgentID,
+
+    TraceID,
+
+    SpanID,
+
+    ParentSpanID,
+
+    ExecutionEpoch,
+
+    DeterminismLevel,
+
+    CapabilityContext,
+
+    ReplaySessionID,
+
+    Payload,
+
+    Provenance
+
+}
+
+```
+
+### Sub-message [197]
+
+**SN-1130**
+
+```
+
+workspace/
+
+├── cog.toml                 # Workspace manifest
+
+├── cog.lock                 # Lockfile (immutable)
+
+├── packages/                # Local packages
+
+├── tests/
+
+├── docs/
+
+├── examples/
+
+└── build/                 # Build artifacts and caches
+
+```
+
+### Sub-message [198]
+
+**SN-1131**
+
+```toml
+
+[package]
+
+name = "navigation"
+
+version = "1.0.0"
+
+[dependencies]
+
+[capabilities]
+
+[resources]
+
+[build]
+
+[test]
+
+[deployment]
+
+```
+
+**SN-1132**
+
+```text
+
+cog new
+
+cog init
+
+cog add
+
+cog remove
+
+cog update
+
+cog build
+
+cog test
+
+cog publish
+
+cog install
+
+cog verify
+
+cog tree
+
+cog doctor
+
+cog clean
+
+```
+
+### Sub-message [199]
+
+**SN-1133**
+
+```
+
+workspace/
+
+├── cog.toml                 # Workspace manifest
+
+├── cog.lock                 # Lockfile (immutable)
+
+├── packages/                # Local packages
+
+├── tests/
+
+├── docs/
+
+├── examples/
+
+└── build/                 # Build artifacts and caches
+
+```
+
+### Sub-message [200]
+
+**SN-1134**
+
+```text
+
+WorkspaceManifest {
+
+    WorkspaceID
+
+    Name
+
+    Version
+
+    Members[]
+
+    Dependencies[]
+
+    Policies
+
+    CompilerProfile
+
+    RuntimeProfile
+
+    DeploymentTargets[]
+
+    Registries[]
+
+}
+
+```
+
+**SN-1135**
+
+```text
+
+PackageManifest {
+
+    PackageID
+
+    Name
+
+    Version
+
+    Authors
+
+    License
+
+    Dependencies[]
+
+    Capabilities[]
+
+    Resources
+
+    Build
+
+    Tests
+
+    Metadata
+
+}
+
+```
+
+**SN-1136**
+
+```text
+
+cog new
+
+cog init
+
+cog add
+
+cog remove
+
+cog update
+
+cog build
+
+cog test
+
+cog publish
+
+cog install
+
+cog search
+
+cog lock
+
+cog verify
+
+```
+
+**SN-1137**
+
+```text
+
+Created
+
+↓
+
+Built
+
+↓
+
+Verified
+
+↓
+
+Packed
+
+↓
+
+Published
+
+↓
+
+Installed
+
+↓
+
+Updated
+
+↓
+
+Deprecated
+
+↓
+
+Archived
+
+```
+
+**SN-1138**
+
+```
+
+RFC-0043  Language
+
+        ↓
+
+RFC-0044  Standard Library
+
+        ↓
+
+RFC-0045  Tooling
+
+        ↓
+
+RFC-0046  Observability
+
+        ↓
+
+RFC-0047  Package Manager / Workspace
+
+        ↓
+
+RFC-0034  Registry
+
+        ↓
+
+RFC-0042  Deployment
+
+```

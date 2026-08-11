@@ -256,3 +256,35 @@ Actual drafting matched the preceding review proposals: 0034 CPR-TDP ([162]→[1
 ### First-generation completion declaration ([179], [178])
 
 RFC-0042 "closes the operational lifecycle: design → compile → verify → package → distribute → govern → federate → deploy → monitor → evolve → retire" and "constitutes a complete first-generation Cognitive Computing Platform Architecture". Stack grouping ([179]): Semantic Foundation (0001–0009) · Execution & Recovery (0010–0015) · Runtime & Infrastructure (0016–0018) · Operating System & Governance (0019–0025) · Hardware & Compiler (0026–0032) · Distribution & Ecosystem (0033–0039) · Operational Lifecycle (0040–0042). Focus shifts from core architecture to standards, tooling, and ecosystem maturation (RFC-0043 onward).
+
+---
+
+## Message #21 additions — RFC-0043 CLS; RFC-0044 CSL; RFC-0045 CTDX; RFC-0046 CODP ratified; RFC-0047 CPMWS (sub-messages [181]–[200])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #21 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0043 | CLS — Cognitive Language Specification | v1.0 Draft ([181]; Parent: RFC-0028 CIR); review [182] recommends v1.1 additions (module system, name resolution, evaluation model, determinism levels, pattern matching, contracts, effect/capability annotations, dialect interfaces); no v1.1 or ratification in corpus | [`rfcs/RFC-0043-cls-language-specification.md`](../../rfcs/RFC-0043-cls-language-specification.md) |
+| RFC-0044 | CSL — Cognitive Standard Library | v1.0 Draft ([183]); review [184]; v1.1 Candidate for Ratification ([185], supersedes v1.0; D-64); review [186]: "Ratification Recommended (with editorial refinements)" — no ratification decision in corpus | [`rfcs/RFC-0044-csl-standard-library.md`](../../rfcs/RFC-0044-csl-standard-library.md) |
+| RFC-0045 | CTDX — Cognitive Tooling and Developer Experience | v1.0 Draft ([187]); review [188]; v1.1 Candidate for Ratification ([189], supersedes v1.0; D-65); review [190]: "Ratification Recommended" — no ratification decision in corpus | [`rfcs/RFC-0045-ctdx-tooling-developer-experience.md`](../../rfcs/RFC-0045-ctdx-tooling-developer-experience.md) |
+| RFC-0046 | CODP — Cognitive Observability and Diagnostics Protocol | v1.0 Draft ([191]); review [192]; v1.1 Candidate ([193]; D-66); review [194]: "Ratify RFC-0046 v1.1"; v1.2 Candidate for Final Ratification ([195], supersedes v1.0/v1.1); review [196]: **"Status: Ratified"** — **RATIFIED** per review declaration [196] (no separate user ratification acknowledgement in corpus) | [`rfcs/RFC-0046-codp-observability-diagnostics.md`](../../rfcs/RFC-0046-codp-observability-diagnostics.md) |
+| RFC-0047 | CPMWS — Cognitive Package Manager and Workspace Specification | v1.0 Draft ([197]); review [198]; v1.1 Candidate for Ratification ([199], supersedes v1.0; D-67); review [200]: "Candidate for Ratification (recommended, with a few final refinements)" — conditional ratification recommendation; no ratification decision in corpus | [`rfcs/RFC-0047-cpmws-package-manager-workspace.md`](../../rfcs/RFC-0047-cpmws-package-manager-workspace.md) |
+
+### Ratified set after message #21
+
+RC-000 (Constitution), RC-100 (Architecture), RC-200 (Language), RFC-0001 (Cognitive Type System), RFC-0002 (Effect Ordering), RFC-0011 (Scheduler), RFC-0042 (CADP), **RFC-0046 (CODP v1.2, ratified per review declaration [196])**. RFC-0044 v1.1 ([186]) and RFC-0045 v1.1 ([190]) have ratification *recommendations* only — they remain Candidate for Ratification; RFC-0047 v1.1 has a conditional recommendation ([200]).
+
+### Roadmap evolution — [182] vs [196] proposals (conflict C-11, duplicate D-68)
+
+- **[182] roadmap** (after RFC-0043): RFC-0044 CSL; RFC-0045 CTDX; RFC-0046 CODP; RFC-0047 **CCTS** (Conformance Test Suite); RFC-0048 **CFFI**; RFC-0049 **CWPMS** (Workspace and Package Manager); RFC-0050 Red/Cognition v1.0 Architecture and Conformance Specification (capstone).
+- **[196] roadmap** (after RFC-0046 ratification): RFC-0047 **CPMWS** (Package Manager and Workspace); RFC-0048 **CCTS**; RFC-0049 **CDP** (Cognitive Debug Protocol); RFC-0050 **CTEF** (Cognitive Trace Exchange Format); RFC-0051 Reference Runtime and Toolchain Specification.
+- **Actual drafting:** 0044 CSL ✓, 0045 CTDX ✓, 0046 CODP ✓, 0047 CPMWS ✓ — matching the [196] assignment; the [182] assignment (0047=CCTS, 0049=CWPMS) is superseded for 0047 (CWPMS≈CPMWS renamed) but the two roadmaps still assign **different topics to RFC-0048…0051** — recorded as conflict C-11; both proposals preserved. RFC-0048 onward not yet drafted.
+
+### Updated architecture layer table ([196])
+
+Semantic Foundation (RFC-0001–0009) · Execution & Recovery (RFC-0010–0015) · Runtime & Infrastructure (RFC-0016–0018) · Operating System & Distributed Platform (RFC-0019–0026) · Compiler & Verification (RFC-0027–0032) · Packaging & Ecosystem (RFC-0033–0042) · **Language & Developer Platform (RFC-0043–0046)** — all "Defined". Note: these cohort ranges differ from the [179] grouping (e.g., 0026 placed in OS layer here vs "Hardware & Compiler 0026–0032" in [179]) — both snapshots preserved (D-68).
+
+### Parent chain note
+
+RFC-0043's documented Parent is **RFC-0028 (CIR)** — not RFC-0042 — because CLS maps source programs onto CIR/CISA ([181] §1). The sequential chain resumes from RFC-0044 (→0043), 0045 (→0044), 0046 (→0045), 0047 (→0046).

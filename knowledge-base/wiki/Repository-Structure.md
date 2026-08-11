@@ -152,3 +152,7 @@ Current scaffold totals: 12 documents in `specs/`, 36 files in `rfcs/` (33 RFC d
 | `rfcs/RFC-0042-ratification-record.md` | RFC-0042 ratification acknowledgement | msg#18 [179] | Scaffolded verbatim |
 
 Current scaffold totals: 12 documents in `specs/`, 46 files in `rfcs/` (42 RFC documents RFC-0001…RFC-0042 current versions + 4 ratification records: RFC-0001, RFC-0002, RFC-0011, RFC-0042). Only current versions scaffolded; superseded/truncated precursors preserved in archive.
+
+## Message #21 update — rfcs/ populated with RFC-0043…RFC-0047 (2026-08-11)
+
+`rfcs/` now contains **51 files**: 47 RFC documents (RFC-0001…RFC-0047) + 4 ratification records (RFC-0001, RFC-0002, RFC-0011, RFC-0042). New scaffolds (documented placement per RC-000 §8, byte-exact from archive): RFC-0043-cls-language-specification.md ([181]), RFC-0044-csl-standard-library.md ([185]), RFC-0045-ctdx-tooling-developer-experience.md ([189]), RFC-0046-codp-observability-diagnostics.md ([195]), RFC-0047-cpmws-package-manager-workspace.md ([199]). No standalone ratification record for RFC-0046: its ratification exists as the review declaration in [196] (recorded in the scaffold's provenance header and RFC Index).

@@ -279,3 +279,7 @@ Parent chain documented in headers: RFC-0024→RFC-0023 v1.0; RFC-0025→RFC-002
 | RFC-0043 CLS proposal | structure + roadmap proposed | [178], [180] | RFC Index only (no document) |
 
 Parent chain documented in headers: RFC-0034→RFC-0033; RFC-0035→RFC-0034; RFC-0036→RFC-0035; RFC-0037→RFC-0036; RFC-0038→RFC-0037; RFC-0039→RFC-0038; RFC-0040→RFC-0039; RFC-0041→RFC-0040; RFC-0042→RFC-0041. Title-variant notes ([162]/[164]/[166]/[168] proposed alternate titles for 0036/0037/0040/0041) recorded in RFC Index. Note: [165] header quotes curly quotes in §6 ("only accept builds from attested compilers.") — preserved as received.
+
+## Message #21 additions — RFC lineage (sub-messages [181]–[200])
+
+RFC-0043 CLS v1.0 Draft ([181]; Parent RFC-0028) → review [182] (v1.1 recommendations). RFC-0044 CSL: v1.0 Draft ([183]) → review [184] → v1.1 Candidate for Ratification ([185]) → review [186] "Ratification Recommended (with editorial refinements)". RFC-0045 CTDX: v1.0 Draft ([187]) → review [188] → v1.1 Candidate ([189]) → review [190] "Ratification Recommended". RFC-0046 CODP: v1.0 Draft ([191]) → review [192] → v1.1 Candidate ([193]) → review [194] "Ratify" → v1.2 Candidate for Final Ratification ([195]) → review [196] **"Status: Ratified"**. RFC-0047 CPMWS: v1.0 Draft ([197]) → review [198] → v1.1 Candidate ([199]) → review [200] conditional ratification recommendation. All scaffolded verbatim in `rfcs/` (latest ratified/candidate version each; superseded drafts preserved in archive — D-64…D-67).

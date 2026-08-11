@@ -682,3 +682,13 @@ Created → Confirmed/Updated → Contradicted → Deprecated/Archived; semantic
 - **Cross-domain migration (RFC-0041 §8):** Running Agent → Checkpoint → Capability Validation → Federation Agreement Check → Target Domain Approval → Resume Execution. Trust negotiation: Domain A (Identity Proof) → Domain B (Capability Request) → Policy Evaluation → Federation Session Created.
 - **Policy evolution loop (RFC-0040/[172]):** Observe → Identify Issue → Create Proposal → Analyze Impact → Vote → Approve → Version Policy → Deploy → Monitor — a self-evolving governance system.
 - **Failure recovery (RFC-0042 §9):** checkpoint restoration, rollback to verified versions, sandbox restart, federation failover, quarantine; all recovery actions recorded as lifecycle events.
+
+## Message #21 additions — language, tooling, observability, and package workflows (msg#21 [181]–[200])
+
+- **CLS compilation & evaluation** ([181] §9, [182]): full pipeline Source (CLS) → … → CVM Execution (see Architecture); proposed evaluation phases Parse → Bind → Expand Dialects → Static Analysis → Capability Analysis → CIR Generation → Optimisation → Execution.
+- **cog CLI toolchain** ([188]/[189] via RFC-0045): `cog build/test/run/fmt/lint/doc/publish/verify/replay`; package-management extensions proposed: [198] `cog new/init/add/remove/update/build/test/publish/install/verify/tree/doctor/clean`; [200] `cog new/init/add/remove/update/build/test/publish/install/search/lock/verify` (variants preserved — no canonical command set fixed in corpus).
+- **Deterministic dependency resolution** ([197]/[199] §6): dependencies MUST reference immutable PackageID values (incl. content hash); version resolution MUST follow a defined deterministic algorithm; results MUST be recorded in the lockfile. Normative conflict/cycle/feature-flag behaviour still open ([200] §2).
+- **Reproducible builds** ([197]/[199] §8): record exact compiler version/flags; capture build-environment hash where attestation available; same inputs MUST produce bit-identical CPCPF artifacts.
+- **Observability sampling workflow** ([193]/[195] §4): Mandatory Replay Traces (MUST always record) · Optional Diagnostic Traces (MAY sample) · Statistical Telemetry (MAY statistically sample); sampling policy MUST be documented; mandatory traces never dropped.
+- **Package lifecycle** (proposed, [200] §6): Created → Built → Verified → Packed → Published → Installed → Updated → Deprecated → Archived; each transition emits an event (integrates RFC-0018, aligns with CADP).
+- **Workspace event logging** (proposed, [200] §4): add/remove dependency, update lockfile, publish/install package recorded in event log for replayable workspace history.
