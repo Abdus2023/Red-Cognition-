@@ -1,256 +1,335 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #27, sub-message [288], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-027-original-part*.md
-  Status in corpus: RFC-0062 CVM-BF v1.0 (Draft). CHATGPT-authored draft [288] proposed as next specification after RFC-0061 ratification. No ratification decision present in corpus. Parent: RFC-0061 CISA-RA v1.1 (Ratified).
+  Origin: corpus message #29, sub-message [304], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-029-original-part1.md
+  Status in corpus: RFC-0062 CVM-BF v1.1 (Candidate for Final Ratification) — CHATGPT final review / ratification-preparation draft ("READY FOR RATIFICATION"); supersedes the v1.0 drafts [288] (msg#27, previously scaffolded), [302] and [303] (divergent variants — D-94; magic number diverges CVMB 0x43564D42 in [288] vs CVMX 0x43564D58 in [302]–[304] — C-18). No ratification decision present in corpus. Parent: RFC-0061 CISA-RA v1.2 (Ratified).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
 
 
-Yes. The next logical specification is **RFC-0062 — Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.0**, because RFC-0061 defines the abstract instruction architecture while the byte-level executable representation remains unspecified.
+
+# RFC-0062 — Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.1  
+
+## Final Review / Ratification Preparation Draft
+
+**Document:** RFC-0062 — Cognitive Virtual Machine Bytecode Format and Encoding  
+
+**Version:** 1.1  
+
+**Status:** Candidate for Final Ratification  
+
+**Authority:** Normative Specification Candidate  
+
+**Parent:** RFC-0061 — Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA) v1.2 (Ratified)  
+
+**Date:** 2026-07-31  
 
 ---
 
-# RFC-0062 — Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.0 Draft
+# 1. Review Summary
 
-**Version:** 1.0  
+RFC-0062 v1.0 successfully defines the executable representation layer of the Cognitive Virtual Machine.
 
-**Status:** Draft  
+The specification establishes:
 
-**Parent:** RFC-0061 — Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA) v1.1 (Ratified)  
+- deterministic bytecode container format
 
-**Date:** 2026-07-29  
+- binary instruction encoding
+
+- opcode allocation
+
+- operand serialization
+
+- capability/effect declarations
+
+- verification metadata
+
+- replay compatibility requirements
+
+The v1.1 review introduces additional precision required for ratification:
+
+- canonical module identity
+
+- section integrity model
+
+- bytecode ABI versioning
+
+- register metadata encoding
+
+- formal operand tags
+
+- deterministic hashing domain separation
+
+- verifier execution stages
+
+- bytecode compatibility rules
 
 ---
 
-# 1. Introduction
+# 2. Canonical CVM Bytecode Architecture
 
-This RFC defines the **Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF)** for Red/Cognition.
+The executable stack is now defined as:
 
-RFC-0061 establishes:
+```
 
-- register architecture
++--------------------------------+
 
-- instruction classes
+| Cognitive Application           |
 
-- operand model
++--------------------------------+
 
-- effect semantics
+              |
 
-This specification defines the concrete executable representation:
+              v
 
-- bytecode container format
++--------------------------------+
 
-- instruction binary layout
+| Cognitive Compiler              |
 
-- opcode numbering
++--------------------------------+
 
-- operand encoding
+              |
 
-- constant pools
+              v
 
-- metadata sections
++--------------------------------+
 
-- verification information
+| CIR                             |
 
-- deterministic serialization
+| RFC-0028                        |
 
-CVM-BF enables portable execution across all conforming CVM implementations.
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CISA Instruction Stream         |
+
+| RFC-0013 + RFC-0061             |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CVM Bytecode                    |
+
+| RFC-0062                        |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| CVM Execution Engine             |
+
+| RFC-0060                        |
+
++--------------------------------+
+
+              |
+
+              v
+
++--------------------------------+
+
+| Transactions / Security / Replay |
+
+| RFC-0057 / RFC-0059             |
+
++--------------------------------+
+
+```
+
+---
+
+# 3. Canonical Bytecode Identity
+
+Every CVM module MUST have a stable identity.
+
+New normative structure:
 
 ```text
 
-Cognitive Source / CIR
+ModuleIdentity {
 
-          |
+    ModuleID,
 
-          v
+    Namespace,
 
-      CISA IR
+    Version,
 
-          |
+    CompilerID,
 
-          v
+    SourceHash,
 
- RFC-0062 Bytecode Encoder
-
-          |
-
-          v
-
-    CVM Bytecode Image
-
-          |
-
-          v
-
- RFC-0060 Execution Engine
-
-          |
-
-          v
-
-    Cognitive Runtime
-
-```
-
----
-
-# 2. Design Principles
-
-CVM-BF follows:
-
-## Deterministic Encoding
-
-The same logical program MUST produce identical bytecode.
-
----
-
-## Platform Independence
-
-Bytecode MUST NOT depend on:
-
-- CPU architecture
-
-- operating system
-
-- hardware vendor
-
----
-
-## Verification First
-
-Bytecode MUST contain sufficient metadata for:
-
-- validation
-
-- security checking
-
-- replay verification
-
----
-
-## Forward Compatibility
-
-Unknown extensions MUST be safely ignored or rejected according to version rules.
-
----
-
-# 3. Bytecode Container Format
-
-A CVM bytecode image MUST use:
-
-```
-
-+----------------------+
-
-| Magic Header         |
-
-+----------------------+
-
-| Format Version       |
-
-+----------------------+
-
-| Program Metadata     |
-
-+----------------------+
-
-| Constant Pool        |
-
-+----------------------+
-
-| Register Metadata    |
-
-+----------------------+
-
-| Instruction Section  |
-
-+----------------------+
-
-| Effect Manifest      |
-
-+----------------------+
-
-| Debug Section        |
-
-+----------------------+
-
-| Integrity Block      |
-
-+----------------------+
-
-```
-
----
-
-# 4. Magic Header
-
-The first four bytes MUST be:
-
-```
-
-0x43564D42
-
-```
-
-ASCII:
-
-```
-
-CVMB
-
-```
-
----
-
-# 5. Header Schema
-
-```
-
-CVMBytecodeHeader {
-
-    Magic,
-
-    FormatVersion,
-
-    MinimumRuntimeVersion,
-
-    ProgramID,
-
-    ProgramHash,
-
-    EntryPoint,
-
-    SectionCount
+    BytecodeHash
 
 }
 
 ```
 
+Properties:
+
+- `ModuleID` identifies the logical program.
+
+- `BytecodeHash` identifies the exact executable representation.
+
+- `SourceHash` enables provenance tracking.
+
 ---
 
-# 6. Instruction Binary Format
+# 4. Bytecode Container v1.1
 
-Each instruction MUST encode:
+Canonical layout:
+
+```
+
++-----------------------------+
+
+| CVMX Magic                  |
+
++-----------------------------+
+
+| Format Version              |
+
++-----------------------------+
+
+| Runtime Compatibility       |
+
++-----------------------------+
+
+| Module Identity             |
+
++-----------------------------+
+
+| Section Directory            |
+
++-----------------------------+
+
+| Code Section                 |
+
++-----------------------------+
+
+| Data Sections                |
+
++-----------------------------+
+
+| Verification Section         |
+
++-----------------------------+
+
+| Integrity Block              |
+
++-----------------------------+
+
+```
+
+---
+
+# 5. Section Directory Format
+
+Each section MUST have:
+
+```text
+
+SectionHeader {
+
+    SectionID,
+
+    Offset,
+
+    Length,
+
+    Flags,
+
+    Hash
+
+}
+
+```
+
+Section properties:
+
+| Flag | Meaning |
+
+|-|-|
+
+|0x01|Required|
+
+|0x02|Signed|
+
+|0x04|Immutable|
+
+|0x08|Debug|
+
+|0x10|Extension|
+
+---
+
+# 6. Instruction Encoding v1.1
+
+Canonical instruction:
+
+```
+
+CVMInstruction {
+
+    Opcode,
+
+    Flags,
+
+    InstructionID,
+
+    EffectClass,
+
+    CapabilityID,
+
+    OperandCount,
+
+    Operands[]
+
+}
+
+```
+
+Binary:
 
 ```
 
 +----------------+
 
-| Opcode         | 2 bytes
+| Opcode 16-bit  |
 
 +----------------+
 
-| InstructionID  | 8 bytes
+| Flags 16-bit   |
 
 +----------------+
 
-| Flags          | 2 bytes
+| ID 64-bit      |
 
 +----------------+
 
-| OperandCount   | 1 byte
+| Effect 8-bit   |
+
++----------------+
+
+| Capability 32  |
+
++----------------+
+
+| Operand Count  |
 
 +----------------+
 
@@ -258,480 +337,508 @@ Each instruction MUST encode:
 
 +----------------+
 
-| EffectInfo     |
+```
 
-+----------------+
+All integer values:
+
+```
+
+Little Endian
+
+No Alignment Padding
 
 ```
 
 ---
 
-# 7. Opcode Registry
+# 7. Instruction Flags
 
-Initial opcode ranges:
+The instruction flag registry is introduced:
 
-| Range | Family |
-
-|-|-|
-
-| 0x0000-0x00FF | Control |
-
-| 0x0100-0x01FF | Arithmetic |
-
-| 0x0200-0x02FF | Memory |
-
-| 0x0300-0x03FF | Cognitive |
-
-| 0x0400-0x04FF | Goal |
-
-| 0x0500-0x05FF | Planning |
-
-| 0x0600-0x06FF | Communication |
-
-| 0x0700-0x07FF | Transaction |
-
-| 0x0800-0x08FF | Security |
-
----
-
-# 8. Core Opcode Assignments
-
-## Control Family
-
-| Opcode | Instruction |
+| Bit | Meaning |
 
 |-|-|
 
-| 0x0001 | NOP |
+|0|Pure|
 
-| 0x0002 | HALT |
+|1|Transaction Required|
 
-| 0x0003 | YIELD |
+|2|Capability Required|
 
-| 0x0004 | CALL |
+|3|Deterministic|
 
-| 0x0005 | RETURN |
+|4|Checkpoint Safe|
 
-| 0x0006 | JUMP |
+|5|Replay Sensitive|
 
----
+|6|Experimental|
 
-## Memory Family
-
-| Opcode | Instruction |
-
-|-|-|
-
-| 0x0201 | LOAD |
-
-| 0x0202 | STORE |
-
-| 0x0203 | ALLOC |
-
-| 0x0204 | FREE |
+|7-15|Reserved|
 
 ---
 
-## Cognitive Family
+# 8. Operand Encoding v1.1
 
-| Opcode | Instruction |
+Canonical:
 
-|-|-|
-
-| 0x0301 | BELIEF_ASSERT |
-
-| 0x0302 | BELIEF_QUERY |
-
-| 0x0303 | MEMORY_RECALL |
-
-| 0x0304 | INFER |
-
-| 0x0305 | OBSERVE |
-
----
-
-## Goal Family
-
-| Opcode | Instruction |
-
-|-|-|
-
-| 0x0401 | GOAL_CREATE |
-
-| 0x0402 | GOAL_UPDATE |
-
-| 0x0403 | GOAL_COMPLETE |
-
----
-
-## Planning Family
-
-| Opcode | Instruction |
-
-|-|-|
-
-| 0x0501 | PLAN_CREATE |
-
-| 0x0502 | PLAN_EXECUTE |
-
----
-
-## Transaction Family
-
-| Opcode | Instruction |
-
-|-|-|
-
-| 0x0701 | TX_BEGIN |
-
-| 0x0702 | EFFECT_EMIT |
-
-| 0x0703 | TX_COMMIT |
-
-| 0x0704 | TX_ABORT |
-
----
-
-## Security Family
-
-| Opcode | Instruction |
-
-|-|-|
-
-| 0x0801 | CAP_VERIFY |
-
-| 0x0802 | IDENTITY_VERIFY |
-
-| 0x0803 | POLICY_CHECK |
-
----
-
-# 9. Operand Encoding
-
-Operands MUST use tagged encoding:
-
-```
+```text
 
 Operand {
 
-    Type,
+    OperandType,
+
+    Flags,
 
     Length,
 
-    Value
+    Payload
 
 }
 
 ```
 
-Supported types:
+Binary:
 
-| Type | Meaning |
+```
 
-|-|-|
++--------------+
 
-| 0x01 | Register |
+| Type 8-bit   |
 
-| 0x02 | Immediate |
++--------------+
 
-| 0x03 | Constant Pool Reference |
+| Flags 8-bit  |
 
-| 0x04 | Memory Reference |
++--------------+
 
-| 0x05 | Capability Handle |
+| Length 16bit |
 
-| 0x06 | Effect Reference |
++--------------+
+
+| Payload      |
+
++--------------+
+
+```
 
 ---
 
-# 10. Constant Pool
+# 9. Register Metadata Section
 
-Programs MAY contain:
+The bytecode MUST describe register usage.
 
-```
+Format:
 
-ConstantPool {
-
-    Strings,
-
-    Numbers,
-
-    Symbols,
-
-    TypeDescriptors,
-
-    CognitiveObjects
-
-}
-
-```
-
-All constants MUST be immutable.
-
----
-
-# 11. Register Metadata Section
-
-Bytecode MUST declare register usage:
-
-```
+```text
 
 RegisterMetadata {
 
     RegisterID,
 
-    Type,
+    RegisterClass,
+
+    RegisterType,
+
+    AccessMode
+
+}
+
+```
+
+Register classes:
+
+```
+
+G  General
+
+M  Memory
+
+C  Cognitive
+
+T  Transaction
+
+S  Security
+
+```
+
+Access modes:
+
+```
+
+Read
+
+Write
+
+ReadWrite
+
+Immutable
+
+```
+
+---
+
+# 10. Capability Manifest
+
+Capability requirements are now structured:
+
+```text
+
+CapabilityRequirement {
+
+    CapabilityID,
 
     Permission,
 
-    InitialValue
+    SecurityLevel,
+
+    TransactionRequirement
 
 }
 
 ```
 
----
-
-# 12. Effect Manifest
-
-Programs producing external effects MUST contain:
+Example:
 
 ```
 
-EffectManifest {
+CAP_NETWORK_SEND
+
+    Permission: Execute
+
+    Security: Enterprise
+
+    Transaction: Required
+
+```
+
+---
+
+# 11. Effect Manifest
+
+Effects MUST declare:
+
+```text
+
+EffectDeclaration {
 
     EffectID,
 
-    RequiredCapability,
+    EffectClass,
 
-    TransactionMode,
+    DeterminismClass,
 
-    CompensationHandler
+    CompensationRequired,
 
-}
-
-```
-
----
-
-# 13. Verification Section
-
-Bytecode SHOULD include:
-
-```
-
-VerificationMetadata {
-
-    TypeSafetyHash,
-
-    CapabilityRequirements,
-
-    ControlFlowHash,
-
-    ReplayHash
+    CapabilityRequired
 
 }
 
 ```
 
----
-
-# 14. Debug Information
-
-Optional section:
+Effect classes:
 
 ```
 
-DebugInfo {
+PURE
 
-    SourceMap,
+LOCAL
 
-    SymbolTable,
+TRANSACTIONAL
 
-    InstructionMapping
+EXTERNAL
 
-}
+IRREVERSIBLE
 
 ```
 
 ---
 
-# 15. Serialization Rules
+# 12. Verification Pipeline
 
-CVM-BF serialization MUST use:
+The bytecode verifier is now normative.
 
-- little-endian encoding
-
-- deterministic ordering
-
-- explicit lengths
-
-- no padding
-
-- canonical hashing
-
----
-
-# 16. Security Requirements
-
-Before execution:
-
-```text
+```
 
 Load Bytecode
 
-      |
+       |
 
-Verify Hash
+       v
 
-      |
+Check Magic
 
-Validate Format
+       |
 
-      |
+       v
 
-Check Capabilities
+Check Version
 
-      |
+       |
 
-Verify Policy
+       v
 
-      |
+Verify Integrity
 
-Execute
+       |
+
+       v
+
+Validate Sections
+
+       |
+
+       v
+
+Validate Types
+
+       |
+
+       v
+
+Validate Control Flow
+
+       |
+
+       v
+
+Validate Capabilities
+
+       |
+
+       v
+
+Validate Effects
+
+       |
+
+       v
+
+Executable
 
 ```
 
-Unsigned or invalid bytecode MUST NOT execute in secure profiles.
-
 ---
 
-# 17. Replay Compatibility
+# 13. Canonical Hashing
 
-The bytecode image MUST preserve:
-
-- instruction ordering
-
-- constant ordering
-
-- metadata ordering
-
-- effect declarations
-
-so that:
+All hashes MUST use:
 
 ```
 
-Original Execution
+HashDomain {
 
-        ==
+    FormatID,
 
-Replay Execution
+    Version,
+
+    SectionID,
+
+    Payload
+
+}
 
 ```
 
----
+Example:
 
-# 18. Conformance Profiles
+```
 
-| Profile | Capability |
+HASH(
 
-|-|-|
+ "CVMX-CODE-v1"
 
-| Minimal | Load and execute bytecode |
+ +
 
-| Developer | Debug metadata |
+ CodeSection
 
-| Professional | Transaction-aware bytecode |
+)
 
-| Enterprise | Signed bytecode |
+```
 
-| Verified | Proof-carrying bytecode |
-
----
-
-# 19. Relationship to Existing RFCs
-
-CVM-BF integrates with:
-
-| RFC | Role |
-
-|-|-|
-
-| RFC-0011 | Scheduler |
-
-| RFC-0012 | CVM Semantics |
-
-| RFC-0013 | CISA |
-
-| RFC-0028 | CIR |
-
-| RFC-0033 | Proof-Carrying Programs |
-
-| RFC-0057 | Transactions |
-
-| RFC-0058 | Wire Encoding |
-
-| RFC-0059 | Security |
-
-| RFC-0060 | Execution |
-
-| RFC-0061 | Instruction Architecture |
+This prevents cross-domain hash collisions.
 
 ---
 
-# 20. Open Questions
+# 14. Bytecode Compatibility Rules
 
-Future specifications:
+A CVM implementation:
 
-- bytecode optimization format
+MUST support:
 
-- formal bytecode verifier
+- same major version
 
-- proof-carrying bytecode integration
+- older minor versions
 
-- compressed bytecode profiles
+MAY support:
 
-- streaming execution format
+- future extensions
 
-- WASM interoperability layer
+MUST reject:
+
+- unknown mandatory sections
+
+- incompatible instruction encoding
+
+- invalid capability requirements
 
 ---
 
-# Summary
+# 15. Signed Bytecode
 
-**RFC-0062 — Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.0 Draft** completes the executable representation layer:
+Secure profiles MAY attach:
 
 ```text
 
-RFC-0028
+SignatureBlock {
 
-CIR
+    Algorithm,
 
-    ↓
+    PublicKeyID,
 
-RFC-0061
+    Signature,
 
-Instruction Set + Registers
+    CertificateChain
 
-    ↓
-
-RFC-0062
-
-Bytecode Encoding
-
-    ↓
-
-RFC-0060
-
-Execution Engine
-
-    ↓
-
-RFC-0057 / RFC-0059
-
-Transactions + Security
+}
 
 ```
 
-This RFC establishes the foundation for a portable, verifiable, deterministic Cognitive Virtual Machine executable format.
+Required for:
+
+- Enterprise
+
+- Verified
+
+profiles.
+
+---
+
+# 16. Replay Model
+
+The complete replay input is:
+
+```
+
+ReplayState {
+
+    BytecodeHash,
+
+    RegisterState,
+
+    MemoryState,
+
+    SchedulerEpoch,
+
+    TransactionState,
+
+    SecurityState,
+
+    EventLogPosition
+
+}
+
+```
+
+A conforming implementation MUST reproduce equivalent observable effects.
+
+---
+
+# 17. Updated Conformance Profiles
+
+| Profile | Required Features |
+
+|-|-|
+
+| Minimal | Basic CVM loading |
+
+| Developer | Debug + metadata |
+
+| Professional | Transactions + effects |
+
+| Enterprise | Signed modules + trust validation |
+
+| Verified | Formal verification metadata |
+
+---
+
+# 18. Ratification Recommendation
+
+RFC-0062 v1.1 is recommended for ratification.
+
+It completes the executable representation chain:
+
+```
+
+RFC-0028
+
+Cognitive Intermediate Representation
+
+        ↓
+
+RFC-0013 / RFC-0061
+
+CISA Instruction Architecture
+
+        ↓
+
+RFC-0062
+
+Portable Cognitive Bytecode
+
+        ↓
+
+RFC-0060
+
+Deterministic Execution
+
+        ↓
+
+RFC-0057 / RFC-0059
+
+Trusted Cognitive Transactions
+
+```
+
+---
+
+# Final Review Decision
+
+```
+
+RFC-0062 — Cognitive Virtual Machine
+
+Bytecode Format and Encoding
+
+Version: 1.1
+
+Status:
+
+READY FOR RATIFICATION
+
+Authority:
+
+Normative Specification Candidate
+
+```
+
+## Next Logical Specification
+
+After RFC-0062 ratification:
+
+**RFC-0063 — Cognitive Virtual Machine Formal Operational Semantics (CVM-FOS) v1.0**
+
+would define:
+
+- mathematical machine state
+
+- transition rules
+
+- instruction correctness
+
+- deterministic execution proofs
+
+- Lean 4 formalization target
+
+- proof-carrying bytecode foundation
+
+This would move Red/Cognition from a defined VM architecture into a formally verifiable execution model.
