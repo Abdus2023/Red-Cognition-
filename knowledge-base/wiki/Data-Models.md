@@ -1,0 +1,565 @@
+# Data Models
+
+> Provenance: Corpus message #2, sub-messages [10], [12], [14], [16], [18], [19]. Snippet IDs link to [Code Snippets](Code-Snippets.md). All types are proposals from the corpus.
+
+## Current Red Value Types (sub-message [10])
+
+Today, Red has values such as:
+
+**SN-052**
+
+```red
+integer!
+string!
+block!
+object!
+function!
+```
+
+The agent system prompt ([19]) additionally references (against the "Red Deep Technical Specification", not present in corpus): all 50+ datatypes, `vector!`, `map!`, `date!`, `error!`, `routine!`, `port!`, `event!`, `font!`, `para!`.
+
+## New Cognitive Primitive Data Types (sub-message [10])
+
+A cognitive layer could introduce semantic types. These are not merely data—they carry meaning for the runtime.
+
+**SN-053**
+
+```red
+goal!
+plan!
+belief!
+memory!
+skill!
+observation!
+hypothesis!
+policy!
+evidence!
+event!
+capability!
+```
+
+## Cognitive Types — Meaning Instead of Structure (sub-message [16])
+
+Traditional type systems describe structure.
+
+**SN-112**
+
+```text
+integer
+string
+object
+block
+```
+
+A cognitive type system describes meaning. The compiler understands relationships between these concepts.
+
+**SN-113**
+
+```text
+Fact
+Observation
+Belief
+Hypothesis
+Prediction
+Decision
+Evidence
+Goal
+Constraint
+Policy
+Capability
+```
+
+## Goals Instead of Functions (sub-message [10])
+
+Instead of writing imperative procedures (**SN-054**):
+
+```red
+analyse: func [file][
+    parse file
+    summarize
+]
+```
+
+You could declare an intent (**SN-055**). The runtime decides *how* to achieve the goal.
+
+```red
+goal analyse-log [
+    observe %server.log
+    extract errors
+    summarize
+    verify
+]
+```
+
+## Intent Contracts (sub-message [16])
+
+Today's languages define function contracts (**SN-110**):
+
+```red
+func [
+    x [integer!]
+]
+```
+
+A cognitive language defines intent contracts. The runtime now understands expectations.
+
+**SN-111**
+
+```red
+goal [
+    purpose: "Summarise repository"
+    expected-output: report!
+    quality >= 95%
+    deadline: 5 minutes
+    budget: low
+]
+```
+
+## Goal Attributes — Native Goal Scheduler (sub-message [12])
+
+Traditional runtimes schedule threads.
+
+**SN-078**
+
+```
+Thread A
+Thread B
+Thread C
+```
+
+A cognitive runtime schedules goals. Scheduling becomes a language feature instead of an application concern.
+
+**SN-079**
+
+```
+Goal
+ │
+ ├── Priority
+ ├── Deadline
+ ├── Dependencies
+ ├── Confidence
+ ├── Cost
+ └── Policies
+```
+
+## Policies Become Types (sub-message [12])
+
+Today's type systems answer questions like:
+
+**SN-073**
+
+```
+integer?
+string?
+block?
+```
+
+A cognitive language extends the type system. The compiler can reject unsafe plans before execution. (See also [Security](Security.md).)
+
+**SN-074**
+
+```
+safe?
+trusted?
+private?
+external?
+verified?
+reversible?
+idempotent?
+```
+
+**SN-075** — Example:
+
+```red
+delete-directory: capability! [
+    policy: dangerous
+]
+```
+
+## Cognitive Effects (sub-message [12])
+
+Functional languages have **effect systems**. A Cognitive Red could introduce semantic effects. The compiler now knows not only the types, but also the behavioural impact of the code.
+
+**SN-076**
+
+```
+observe!
+remember!
+modify!
+communicate!
+reason!
+execute!
+learn!
+```
+
+**SN-077** — A function signature might become:
+
+```red
+analyse: func [
+    repo [repository!]
+][
+    effects [
+        observe
+        remember
+        reason
+    ]
+]
+```
+
+(The agent system prompt [19] lists "effects" among the Red/Cognition cognitive layer items and refers to "the BDI-style semantics and four-dimensional uncertainty model defined in the specification" — specification not present in corpus.)
+
+## Native Reasoning Blocks (sub-message [10])
+
+Blocks are already one of Red's greatest strengths. A cognitive dialect could extend them naturally. The block becomes a structured reasoning graph rather than ordinary control flow.
+
+**SN-056**
+
+```red
+reason [
+    if confidence < 80% [
+        gather-more-evidence
+    ]
+    compare alternatives
+    estimate cost
+    choose best-plan
+]
+```
+
+## Memory as a Language Primitive (sub-message [10])
+
+Instead of manually storing variables:
+
+**SN-057**
+
+```red
+cache: make map! []
+```
+
+you could express semantic memory directly. The runtime would determine where and how to store and retrieve that information.
+
+**SN-058**
+
+```red
+remember [
+    user prefers offline execution
+]
+
+remember [
+    repository contains Rust workspace
+]
+
+recall [
+    projects about OpenClaw
+]
+```
+
+## First-Class Skills (sub-message [10])
+
+Today's functions are general-purpose code. A cognitive language could distinguish reusable *skills*. Skills may internally call local code, external tools, or AI models.
+
+**SN-059**
+
+```red
+skill summarize
+skill search-web
+skill inspect-github
+skill compile-rust
+skill debug-tests
+```
+
+## Multi-Model Reasoning (sub-message [10])
+
+The language could allow different reasoning engines. The runtime selects the most appropriate model while presenting a uniform language interface.
+
+**SN-063**
+
+```red
+reason using small-model [
+    classify message
+]
+
+reason using planner [
+    build execution graph
+]
+
+reason using verifier [
+    check consistency
+]
+```
+
+## Built-in Reflection Syntax (sub-message [10])
+
+Traditional programs rarely analyse themselves. A cognitive language could support reflection explicitly. Reflection becomes part of normal program execution.
+
+**SN-062**
+
+```red
+reflect [
+    expected success
+    actual partial-success
+    explain failure
+    improve future plan
+]
+```
+
+## A Complete Agent Example (sub-message [10])
+
+This reads less like a traditional program and more like a specification of autonomous behaviour.
+
+**SN-065**
+
+```red
+agent "Repository Assistant" [
+
+    remember [
+        project: "OpenClaw"
+        language: Rust
+    ]
+
+    when github.push [
+        observe repository
+
+        reason [
+            identify changed modules
+            estimate impact
+            choose review strategy
+        ]
+
+        plan [
+            run tests
+            inspect architecture
+            summarize changes
+        ]
+
+        act [
+            generate report
+        ]
+
+        reflect [
+            compare prediction with results
+            remember lessons
+        ]
+    ]
+]
+```
+
+## Agent Object Model & Agent Ownership (sub-messages [14], [18])
+
+**SN-104** (cognitive object model; objects model *reasoning entities*, not *things*):
+
+```red
+agent! [
+    beliefs
+    goals
+    memories
+    skills
+    policies
+    capabilities
+    reflection
+]
+```
+
+Agent Principles from the agent system prompt ([18]): agents are persistent cognitive entities. Each agent owns: identity; goals; beliefs; skills; capabilities; policies; working memory; reflection history; execution history. Agents communicate through structured protocols rather than arbitrary text.
+
+## Related pages
+
+[Components](Components.md) (CogProcess SN-041, semantic entities SN-095, provenance SN-099) · [Security](Security.md) · [Workflows](Workflows.md)
+
+---
+
+## Message #4 additions — Ratified language data model (RC-200, msg#4 [43]–[49])
+
+### Cognitive types (ratified, RC-200 §10; subject to RFC-0001)
+
+`goal!` · `belief!` · `plan!` · `skill!` · `memory!` · `capability!` · `effect!` · `agent!` · `checkpoint!`
+
+Evolution path (RC-200 §10.1, ratified): **Dialect → Structured Value → Native Type (optional)**. Types MAY be implemented initially as structured objects or dialects before becoming native datatypes. "Do not immediately make these native Red datatypes" ([44]); rationale: "Every abstraction must reduce complexity." This 9-type list is the ratified consolidation of earlier variants: msg#2 SN-053 (11 types incl. observation!/hypothesis!/policy!/evidence!/event!) and msg#3 [34] (7 types) — see duplicate log.
+
+### Goal / Belief / Plan semantics (RC-200 §7, ratified)
+
+- **Goal** — a desired state or outcome. Declarative by default (what, not how); may contain constraints, priorities, deadlines; may be satisfied through multiple plans.
+- **Belief** — a proposition held by an agent with associated confidence and provenance. Must carry confidence value; must carry source/provenance; may carry temporal validity; may be contradicted or updated.
+- **Plan** — a sequence of actions intended to achieve a goal. May be declarative or procedural; may contain parallel and dependent steps; must be inspectable and modifiable.
+
+Cognitive block example (ratified spec, SN-225): `goal [ achieve: system-healthy priority: high constraints: [energy-low cost-low] deadline: 2026-12-31 ]`
+
+### Cognitive Block Evaluation Contract (RC-200 §5.1, ratified)
+
+A cognitive block MUST: remain valid Red data at all times; be fully inspectable without execution; require explicit cognitive evaluation to produce external effects; preserve its original source representation. **Evaluation boundary (v1.2 clause):** "A cognitive block SHALL have no external effect unless passed through an approved cognitive evaluation boundary." Evaluation via `evaluate`, `run`, or equivalent cognitive primitives ([45]). Principle: "Data is data until evaluated" ([44]). Semantic model ([44]): `goal [...]` creates Block Value → Cognitive AST → Cognitive Runtime Evaluation; execution requires explicit evaluation.
+
+### Effect System Contract (RC-200 §8.1, ratified)
+
+Every cognitive action MUST declare its effects, MUST identify the required capabilities, MUST produce an execution trace. **Effect** = a state change outside the agent's internal reasoning context. **Effect classes (initial)**: `pure!` · `internal!` · `external!` · `capability!`. Effect ordering deferred to RFC-0002. Effects enable static analysis, security verification, replay, simulation ([44]). Example ([44]): `plan [ step [ action: read-file effect: [filesystem.read] ] ]` (source shows auto-linked `[[filesystem.read](http://filesystem.read)]`).
+
+### Agent type separation ([44] §4.4)
+
+`agent!` should not represent intelligence. An agent is a runtime entity: agent! { identity, capabilities, memory, goals, state }. The intelligence mechanism remains external (symbolic planner / rule engine / neural model / human operator) — preserves Cognitive Neutrality.
+
+### Error and failure semantics (RC-200 §13, ratified)
+
+New failure classes, MUST be first-class and traceable: Goal failure · Belief conflict · Capability denial · Planning failure · Verification failure · Memory inconsistency.
+
+### Agent & Session state models (msg#4 [58], [59], [60])
+
+- **Agent (RC-600 §5):** Agent { Identity, Capabilities, Goals, Beliefs, Plans, Memory References, Execution State, Trace History, Checkpoint State }.
+- **Agent State canonical runtime object ([58]):** { Identity, Goals, Beliefs, Plans, Memory References, Capabilities, Execution Trace, Checkpoint State }.
+- **Session ([60]):** Session { Identity, Agent Reference, Execution Mode, Interaction History, Active Capabilities, Trace Context, Checkpoint Reference }.
+- **Runtime Event ([56]):** Event { id, timestamp, source, capability-context, payload, provenance }.
+- **CIR node model (RC-300 v1.1 §6):** Goal/Plan/Belief/Effect structures (see Architecture page).
+
+---
+
+## Message #8 additions — Ratified cognitive value model (RFC-0001 v1.2 RATIFIED; RFC-0002 v1.1 RATIFIED; RFC-0003 v1.1 candidate)
+
+### Cognitive Value Base Contract (RFC-0001 §3, ratified [72])
+
+Every cognitive value MUST conform to: `cognitive-value { cognitive-meta { id: UUID, created: timestamp, modified: timestamp, provenance: source, version: integer }, type: cognitive-type, schema-version: integer }`. "Every cognitive value is therefore: Identity + Metadata + Semantic Type + Versioned Schema."
+
+### Ratified cognitive types (RFC-0001 §4/§7, ratified [72])
+
+| Type | Category | Initial Form | Evolution | Mutation Model | Owner |
+|---|---|---|---|---|---|
+| `goal!` | Intent | Structured block/object | Native (optional) | Mutable lifecycle (Created → Active → Planning → Executing → Satisfied/Failed → Archived) | Agent |
+| `belief!` | Knowledge | Structured block/object | Native (optional) | Append/revision (Created → Confirmed/Updated → Contradicted → Deprecated/Archived; statuses: tentative/confirmed/disputed/deprecated/retracted) | Agent/System |
+| `plan!` | Procedure | Structured block/object | Native (optional) | Mutable with history (Draft → Validated → Executable → Running → Completed/Failed) | Agent |
+| `skill!` | Procedure | Object/compiled | Native | Versioned immutable | System |
+| `memory!` | Knowledge | Object | Native | Reference-controlled | Agent/System |
+| `capability!` | Security | Object | Native | Immutable token | System |
+| `effect!` | Event | Structured value | Native | Immutable event | System |
+| `agent!` | Entity | Object | Native | Persistent entity (runtime lifecycle managed) | Runtime |
+| `checkpoint!` | Snapshot | Object/serialized | Native | Immutable snapshot | Runtime |
+
+### Ratified semantic graph + cardinality (RFC-0001 §6, ratified [72])
+
+goal! (1:N) ──satisfied-by──▶ plan! (1:N) ──executes──▶ skill! (1:N) ──produces──▶ effect! (N:M) ──updates──▶ belief!. Implementations MUST NOT remove these relationships; they are part of the Cognitive IR contract. Memory mapping ([70]): belief!→Semantic Memory; effect!→Episodic Memory; skill!→Procedural Memory; goal!/plan!→Working Memory.
+
+### Type identity (RFC-0001 §5)
+
+Every cognitive value MUST support `type-of value` (returns e.g. goal!, belief!). Compiler pipeline (ratified [72]): Red Source → Dialect AST → Cognitive IR → Unified IR → CVM → Cognitive Runtime. Conformance: preserve type identity, metadata/provenance, mutation rules, semantic relationships, deterministic serialization; implementations MAY use blocks/objects/native datatypes.
+
+### Effect model (RFC-0002 v1.1, ratified [76])
+
+**Effect Identity:** globally unique Effect ID, stable through serialization/checkpointing/restoration/distributed propagation/replay. **Classes:** pure! (no side effects; rollback N/A) · internal! (internal state only; rollback yes) · capability! (authorization required; controlled) · external! (direct external change; limited). **Lifecycle (normative state machine):** Created → Validated → Authorized → Scheduled → Executing → Committed → Archived (rollback/compensation transitions where supported). **Metadata contract:** effect { id: EffectID, type: effect-class, provenance: source, capability: capability-reference (optional), timestamp, dependencies: [EffectID], replay-policy: deterministic | best-effort }. **Ordering:** Temporal Order vs Causal Order (independent dimensions; causal order MUST be preserved under parallelization); "The Effect Dependency Graph **MUST** form a **Directed Acyclic Graph (DAG)**" — circular dependencies are invalid and MUST be rejected during analysis or execution; prerequisites execute before dependents; independent branches MAY run concurrently. This graph "becomes the canonical execution model for Cognitive IR and CVM scheduling" ([76] §4). **Conflicts:** Direct / Capability / Temporal / Causal; strategies: rejection, serialization with retry, transactional boundaries, human/agent mediation. **Transactions:** atomic wrt external state; commit all or rollback/compensate; declared or inferred from capability usage. **Rollback/compensation:** pure!/internal! generally rollback-safe; capability!/external! MUST declare support; compensation actions are themselves effects. **Replay contract:** externally observable behaviour equivalent; internal scheduling may differ where permitted. **Parallelism:** allowed when no causal dependency, no resource conflict, capabilities permit; sequential trace semantics MUST be preserved. **Distributed:** causal ordering across nodes; cross-stream conflict detection; consistent checkpointing.
+
+### Belief model (RFC-0003 v1.1, [79]; accepted for final ratification [80])
+
+**Identity/versioning:** stable BeliefID; revisions increment version preserving BeliefID; historical revisions addressable. **Metadata:** belief { cognitive-meta…, proposition, confidence: float 0.0–1.0, source, timestamp, validity-window (optional), contradictions: [BeliefID], revision-cause: observation | inference | external-input | effect | manual, status: tentative | confirmed | disputed | deprecated | retracted }. **Revision graph:** directed graph (review [80] recommends MUST be DAG; cycles rejected; non-initial revisions reference ≥1 parent); alternative paths before reconciliation; deterministic replay of any valid path. **Update rules:** direct update (higher/equal authority, valid confidence bounds, no unresolved contradiction); on contradiction record contradiction + adjust confidence; agent MAY revise/observe/escalate. **Confidence:** all changes recorded in trace with cause/source; contradictory evidence MUST decrease confidence. **Authority policy:** implementations MUST define a deterministic, documented policy. **Effect coupling:** belief-changing effects MUST reference affected beliefs; traceable to originating action and capability. Causal chain ([78]): Action → effect! → belief revision → plan revision → goal evaluation. Recommended editorial additions ([80]): confidence boundary semantics (0.0 no confidence, 1.0 complete, outside invalid); "Replay MUST preserve both belief values and revision topology"; beliefs SHALL normally reside in Semantic Memory (Working Memory MAY hold transient references); extensible revision causes (implementation-defined, documented); authority policy in conformance reports.
+
+---
+
+## Message #10 additions — Goal/Plan/Capability/Skill/Memory models (RFC-0003 v1.2 ratified; RFC-0004 v1.1 ratified; RFC-0005 v1.0; RFC-0006 v1.2 approved; RFC-0007 v1.1; RFC-0008 v1.0)
+
+### Belief model final (RFC-0003 v1.2, RATIFIED [82])
+
+Supersedes v1.1 additions: revision-cause enum extended with `implementation-defined` (extensible, implementations document additions); revision graph MUST be DAG (non-initial revisions reference ≥1 parent; cycles rejected); replay MUST preserve revision topology; Memory Placement section: beliefs SHALL normally reside in Semantic Memory; Working Memory MAY hold transient references; authority policy MUST be included in conformance reports.
+
+### Goal model (RFC-0004 v1.1, RATIFIED [86])
+
+**Identity/versioning:** stable GoalID, constant across revisions and state transitions; every modification increments version; historical versions addressable. **Metadata:** goal { cognitive-meta…, target, priority: float (optional), constraints: [constraint] (optional), deadline: timestamp (optional), required-capabilities: [CapabilityID] (optional), status: pending | active | planning | executing | satisfied | failed | archived, satisfied-by: [EffectID] (optional), supporting-beliefs: [BeliefID] (optional), completion-time: timestamp (optional) }. **Lifecycle:** Created (Pending) → Active → Planning → Executing → Satisfied/Failed → Archived; backward transitions prohibited unless restored from checkpoint; terminal states: Satisfied, Failed, Archived. **Satisfaction:** target condition true under current belief state AND all declared constraints met; evaluated against current belief set; respects constraints and required capabilities; deterministic given same belief state. **Failure:** all viable plans exhausted; hard constraint/deadline violated; unrecoverable contradiction in supporting beliefs; failure recorded with cause(s). **Dependency graph:** goal dependencies MUST form DAG; cycles rejected; goal MUST NOT be satisfied before prerequisites. **Ownership:** Personal / Shared / System goals. **Memory placement:** goals SHALL normally reside in Working Memory while active; MAY be archived into Episodic Memory on completion/failure. **Replay:** equivalent goal states; preserve identity/version and causal chain actions → effects → belief updates → goal state transitions. Review recommendations NOT adopted in v1.1 (preserved in [84]): Unsatisfied-vs-Failed distinction; goal-result metadata name (adopted as satisfied-by/supporting-beliefs/completion-time fields instead).
+
+### Plan model (RFC-0005 v1.0 draft [87]; v1.1 recommended by [88], not yet in corpus)
+
+**Identity/versioning:** stable PlanID; revisions increment version; history addressable. **Metadata:** plan { cognitive-meta…, goal: GoalID, steps: [step], dependencies: [PlanID] (optional), preconditions: [condition] (optional), expected-effects: [EffectID] (optional), required-capabilities: [CapabilityID] (optional), status: draft | validated | executable | running | completed | failed | abandoned }. **Lifecycle:** Draft → Validated → Executable → Running → Completed/Failed/Abandoned. **Goal coupling:** plan MUST associate with exactly one goal; goal MAY have zero or more plans; plan MUST NOT be successful unless its goal is satisfied. **Skills/effects:** each step MUST reference ≥1 skills; execution MUST produce traceable effects; expected effects MUST be consistent with produced effects. **Planning process:** invocation of planning mechanisms (symbolic, rule-based, learned, human); runtime/CVM MUST support invocation without embedding algorithms. **Revision/replanning:** revisions preserve PlanID; replanning triggered by belief changes, effect outcomes, capability revocation; all revisions traced. **Recommended v1.1 additions ([88], not yet normative):** plan dependency DAG; StepID (step {StepID, skill, preconditions, expected-effects, status}); validation criteria (structural correctness, dependency consistency, capability availability, precondition consistency, no cycles); execution states incl. Suspended; ownership (Agent/Shared/System plans); memory placement (active in Working, historical in Episodic); revision DAG with topology-preserving replay; "Goal satisfaction is determined by observed effects and supporting beliefs, not merely by plan completion."
+
+### Capability model (RFC-0006 v1.2, approved for Final Ratification [94])
+
+**Identity:** stable CapabilityID; every modification (incl. revocation, expiration, delegation metadata, administrative updates) MUST increment version preserving CapabilityID. **Metadata:** capability { cognitive-meta…, type: capability-type, scope, owner: AgentID | Runtime | CogOS, granted-to: AgentID, granted-by: authority, delegated-from: CapabilityID (optional), expiration: timestamp (optional), status: active | revoked | expired }. **Scope immutability:** scope MUST be immutable after issuance. **Lifecycle:** Created → Granted → Active → Revoked/Expired; legal transitions table: Created→Granted ✓, Granted→Active ✓, Active→Revoked ✓, Active→Expired ✓, Revoked→Active ✗, Expired→Active ✗. **Graph:** capability inheritance/dependencies MUST form DAG; cycles rejected; dependent capability MUST NOT be granted before prerequisites active. **Resolution order — RFC-0006 v1.2 §6 verbatim (deterministic order):**
+
+1. Capability exists
+2. Status == Active
+3. Scope is valid
+4. Not expired
+5. Not revoked
+6. Policy allows the action
+
+Evaluation **MUST** terminate at the first failed validation step, and the failure reason **MUST** be recorded in the execution trace. **Effects integration:** grants and revocations MUST themselves be `effect!` values (RFC-0002). **Enforcement:** checks before effect execution; violations produce traceable errors; usage recorded. **Trace contract:** CapabilityTrace { CapabilityID, AgentID, EffectID, Timestamp, Decision: Allow | Deny }. **Delegation:** MAY be delegable; MUST preserve provenance via `delegated-from`. **Memory placement:** active in Working; definitions MAY be Semantic; revoked/expired SHOULD be archived Episodic. **Replay:** same constraints; checks at same causal points; revoked stays revoked; equivalent error behaviour. **Conformance:** preserve CapabilityID; enforce checks; record all grants/revocations/usages; preserve state during replay; reject invalid transitions; include authority policy in conformance reports.
+
+### Skill model (RFC-0007 v1.1 Candidate [97]; v1.2 additions recommended [98])
+
+**Identity:** stable SkillID across versions. **Metadata:** skill { cognitive-meta…, name, specification: [parameter], inputs: [parameter], outputs: [parameter], preconditions: [condition] (optional), postconditions: [condition] (optional), declared-effects: [EffectClass], required-capabilities: [CapabilityID] (optional), performance-metadata: {…} (optional) }. **Lifecycle:** Created → Registered → Active → Deprecated → Archived; transitions: Created→Registered ✓, Registered→Active ✓, Active→Deprecated ✓, Deprecated→Archived ✓, Archived→Active ✗. **Interface contract:** MUST declare inputs, outputs, preconditions, postconditions, declared effects, required capabilities. **Purity:** pure! / internal! / capability! / external! (aligned with RFC-0002 effect classes). **Invocation identity:** SkillInvocationID; SkillInvocation { SkillInvocationID, SkillID, PlanID, GoalID, Timestamp, Inputs, Outputs, Effects, CapabilitiesUsed }. **Failure semantics:** failures MUST produce trace entries; MAY produce compensating effects; MUST be replayable. **Memory placement:** definitions MAY be Semantic; invocations/traces SHALL be Episodic; compiled implementations MAY be Procedural. **Recommended v1.2 additions ([98]):** registered skill definitions SHALL be immutable; invocation uniquely determined by {SkillID, Version, Inputs, Runtime Context, Capability Set, Relevant Belief State}; skill dependency DAG (recursion must be explicitly declared); invocation lifecycle (Created→Validated→Authorized→Executing→Completed/Failed→Archived); SkillTrace {SkillInvocationID, SkillID, PlanID, GoalID, StartTime, EndTime, Status, EffectsProduced, CapabilitiesUsed}; purity enforcement rules; registration validation; belief relations (belief changes only via effect!); memory access rules ("Skills MUST NOT directly mutate Semantic Memory. All memory modifications MUST occur through effects."); extended conformance.
+
+### Memory model (RFC-0008 v1.0 draft [99]; v1.1 additions recommended [100])
+
+**Four tiers (normative table):** Working (current execution context; ephemeral; per agent) · Episodic (events/experiences/traces; persistent; per agent) · Semantic (knowledge/concepts/facts; persistent; shared) · Procedural (skills/compiled procedures/capabilities; persistent; shared). **Access rules:** Working: free read/write, execution-scoped, bounded eviction. Episodic: read own episodes; append via effect!; historical episodes immutable. Semantic: read shared; write controlled by capability/policy; updates create new versions. Procedural: read skills; write via system registration; new versions create new skill! entries. **Ownership/isolation:** every entry MUST have owner; no cross-agent private access without capability; CogOS MAY manage shared memory with access control. **Mutations as effects:** observable memory mutations MUST be effect! values with provenance. **Replay:** reads consistent with original trace; mutations in same causal order; checkpoint restoration replayable. **Type placement:** goals/plans in Working while active; beliefs in Semantic; skills in Procedural; effects appended to Episodic. **Recommended v1.1 additions ([100], 15 items):** MemoryID + versioning; memory lifecycle (Created→Active→Updated→Archived→Deleted(optional), logical deletion); access contract (read/write/append/update/archive/forget with capability/trace/replay per op); MemoryReference/MemoryEntry/MemorySnapshot; Working Memory semantics (agent-local, execution-scoped, reconstructed on replay, never authoritative); Episodic append-only; Semantic versioned retrieval (deterministic policy); Procedural registration validation; memory dependency graph; consistency guarantees (immediate/deterministic/version/append); MemorySnapshot {SnapshotID, Timestamp, WorkingMemory, SemanticVersion, ProceduralVersion, EpisodicPosition}; forgetting rules (preserve provenance, replay correctness, historical traces); capability table per operation; MemoryTrace {MemoryID, Tier, Operation, AgentID, Timestamp, Provenance}; conformance guarantees.
+
+---
+
+## Message #12 additions — Agent/Checkpoint/Scheduler/CVM/CISA models (msg#12 [101]–[120])
+
+### Agent model (RFC-0009 v1.0 draft [101])
+
+**Identity:** stable AgentID, constant throughout lifetime. **Metadata:** agent { cognitive-meta…, name (optional), owner: AgentID | Runtime | CogOS, capabilities: [CapabilityID], status: created | initialized | active | suspended | checkpointed | terminated }. **Lifecycle:** Created → Initialized → Active → Suspended → Checkpointed/Restored → Terminated. **Ownership/isolation:** every agent MUST have owner; MUST NOT access another agent's private memory/state without capability authorization; CogOS MAY manage shared resources with access control. **State:** AgentState { Identity, Goals, Beliefs, Plans, Memory References, Active Capabilities, Execution Context, Trace History, Checkpoint References }. **Type relationships:** MAY own goals/beliefs/plans/capabilities; MUST invoke skills through plans; MUST produce effects when interacting with external world. **Memory placement:** identity/metadata MAY be Semantic; active state SHALL be Working; history/traces SHALL be Episodic. **Recommended v1.1 additions ([102]):** versioning rule; legal transition table (Terminated→Active ✗); agent execution loop (Observe → Update Beliefs → Evaluate Goals → Select Plan → Invoke Skills → Produce Effects → Update Memory); scheduler states orthogonal to lifecycle (Runnable/Waiting/Blocked/Sleeping/Executing); AgentTrace { AgentID, Timestamp, PreviousState, NewState, GoalID, PlanID, EffectID }; coordination graph (shares-goal, delegates; SHOULD be DAG); Mailbox { MessageID, Sender, Receiver, Timestamp } (basis for future Inter-Agent Communication RFC); Resources { WorkingMemory, ActiveGoals, ActivePlans, CapabilitySet, SchedulerQuota }; ownership classes (Runtime/Administrative/Logical/Parent); creation prerequisites (AgentID, initial Working Memory, capability set, execution context, scheduler registration); termination duties (archive traces/goals, release capabilities, flush Working Memory, produce termination effect); checkpoint capture { AgentState, WorkingMemory, ActivePlans, CapabilityState, SchedulerState }; conformance list.
+
+### Checkpoint model (RFC-0010 v1.0 draft [103])
+
+**Identity:** stable CheckpointID. **Metadata:** checkpoint { cognitive-meta…, agent: AgentID, timestamp, captured-state: { working-memory, active-goals, active-plans, capability-state, execution-context }, associated-trace: TraceID (optional) }. **Lifecycle:** Created → Stored → Restored → Archived. **Minimum contents:** agent identity+version; Working Memory state; active goals+versions; active plans+versions; capability state (grants/revocations); execution context (instruction pointer or equivalent); trace position/reference. **Creation:** explicit by agent / automatic at boundaries / by Runtime or CogOS; MUST be deterministic snapshot; MUST be traced. **Restoration:** MUST restore captured condition, resume from recorded context, preserve capability constraints. **Effects/traces:** associated with originating trace; creation/restoration MUST be effects where observable. **Recommended v1.1 additions ([104]):** immutability ("Any modification or re-capture MUST create a new CheckpointID"); legal transitions table (Archived→Stored ✗); completeness contract incl. scheduler/execution state; memory reference strategy (Working by value; Semantic/Procedural by version; Episodic by trace position); consistency boundaries (before plan execution, after effect commitment, after belief revision, after transaction; never during partial transitions); restoration validation (integrity, memory/skill/capability versions, trace consistency; MUST fail if unsatisfied); CheckpointTrace { CheckpointID, AgentID, Timestamp, TracePosition, Action: Create|Restore }; incremental checkpoints MAY (full = reference model); failure outcomes (Success, ValidationFailure, MissingDependency, CorruptedCheckpoint, UnsupportedVersion — each traced); scheduler state preservation (runnable/blocked/waiting/priority); conformance list.
+
+### Scheduler model (RFC-0011 v1.2, RATIFIED [111])
+
+**Identity:** Scheduler { SchedulerID, SchedulerClass, Policy, Version }; SchedulerID stable; policy/metadata changes increment version. **Execution states:** Runnable → Waiting (blocked on resource/capability/dependency) → Executing → Suspended → Terminated. **Legal transitions:** Runnable→Executing ✓, Executing→Waiting ✓, Waiting→Runnable ✓, Executing→Suspended ✓, Suspended→Runnable ✓, Executing→Terminated ✓, Waiting→Terminated ✓, Terminated→Runnable ✗. **Queues:** Ready (Runnable), Waiting (Blocked), Suspended, Completed; each schedulable entity MUST belong to exactly one queue. **ScheduleDecision trace:** { DecisionID, Timestamp, SchedulerID, AgentID, PlanID, RunnableSet, SelectedProcess, Reason }. **Inputs:** Priority, Deadline, Resource requirements, Capability constraints, Current execution state, Fairness metrics. **Deterministic tie-breaking (equal priorities):** 1. Earlier deadline, 2. Older enqueue timestamp, 3. Lower AgentID, 4. Lower PlanID. **Classes:** S0 Cooperative / S1 Priority-based / S2 Deadline-aware / S3 Adaptive Cognitive Scheduling. **WaitingReason model:** Goal | Plan | Effect | Capability | Resource | Timer | ExternalEvent | ImplementationDefined. **Scheduler events as effects:** suspend/resume/preempt/terminate MUST be effect! values. **Checkpoint integration:** MUST preserve runnable queue, waiting queue, current process, scheduler state, pending timers. **Hierarchy:** CogOS Scheduler → Runtime Scheduler → Agent Scheduler. **Conformance:** preserve deterministic order; preserve scheduler state during replay; record decisions; honour declared policy; reject illegal transitions; preserve fairness. Non-blocking editorial suggestions for v1.3 ([110]): PolicyID/PolicyVersion; queue ordering semantics (deterministic); PreviousDecisionID causal links; SchedulerState { ReadyQueue, WaitingQueue, SuspendedQueue, CurrentExecution, PolicyState, TimerState }.
+
+### CVM model (RFC-0012 v1.1, approved [116])
+
+**Identity:** CVM { CVMID, SupportedCISARevision, ExecutionProfile, Version }; CVMID stable; implementation/configuration changes increment version. **ExecutionContext:** { InstructionPointer, OperandStack, RegisterSet, WorkingMemoryReference, CurrentAgent, CurrentPlan, CurrentGoal, CapabilityContext, TraceContext }; MUST be serializable for checkpointing. **Pipeline:** Fetch → Decode → Validate → Capability Check → Execute → Produce Effects → Update Trace → Advance Instruction Pointer. **Transaction model (§5.1):** Begin → Validate → Capability Check → Execute → Generate Effects → Commit → Trace; on failure abort + trace; partial effects MUST NOT be committed. **Instruction classes (§6.1):** pure! / internal! / capability! / external!. **Scheduler contract:** scheduler owns WHEN execution happens; CVM owns HOW; CVM executes until completion/yield/block/preemption/termination; scheduler MUST resume from preserved instruction pointer and context. **Capability enforcement:** check before execution; failures traced; failed instructions MUST NOT produce partial effects. **Memory rules:** Working R/W in context; Semantic read + capability-mediated write; Episodic append-only; Procedural read for skill invocation. **Checkpoint:** MUST preserve IP, operand stack, registers, Working Memory reference, capability context, trace context; restoration resumes exact IP/context. **InstructionTrace:** { TraceID, Timestamp, CVMID, AgentID, InstructionPointer, InstructionID, Opcode, Operands, Result, Effects }. **Recommended v1.1 additions from review [114] that were adopted:** InstructionID, transaction model, purity classes, scheduler/CVM ownership rule. Recommended but NOT in v1.1 (preserved in [114]): ExternalInputRecord { InputID, Source, Timestamp, Value, TraceID } for deterministic sensor replay; register class details; CISA instruction format.
+
+### CISA model (RFC-0013 v1.1 candidate [119]; review [120])
+
+**Instruction format:** Instruction { InstructionID, EncodingVersion, Opcode, OperandCount, OperandTypes: [type], AddressingMode, CapabilityRequirement: CapabilityClass (optional), EffectClass: pure! | internal! | capability! | external! }. **Addressing modes:** Immediate, Register, Memory Reference, Capability Reference, Effect Reference, Belief Reference, Goal Reference, Plan Reference. **Register architecture (v1.1 with mutability):** G-registers (16, general-purpose, Mutable) · M-registers (8, memory references, Reference only) · C-registers (8, capability context, Runtime controlled) · T-registers (8, trace/provenance, Write-only by trace engine) · S-registers (4, scheduler interaction, Scheduler controlled). **Opcode families:** Data Movement (LOAD, STORE, MOVE, SWAP); Belief (BELIEF_ASSERT/RETRACT/QUERY/UPDATE); Goal (GOAL_CREATE/ACTIVATE/SATISFY/FAIL/ARCHIVE); Plan (PLAN_CREATE/VALIDATE/EXECUTE/REVISE/ABORT); Memory (MEM_READ/WRITE/APPEND/CHECKPOINT/RESTORE); Capability (CAP_REQUEST/RELEASE/VERIFY); Effect (EFFECT_EMIT/COMMIT); Control Flow (BRANCH/JUMP/CALL/RETURN/YIELD); Observation & Reflection (OBSERVE/INFER/REFLECT/EXPLAIN). **Transaction model (§6):** every instruction atomic: Begin → Validate → Capability Check → Execute → Generate Effects → Commit → Trace; abort with no partial effects on failure. **Binary representation:** versioned, deterministic, forward/backward compatibility within major version; concrete encoding deferred to RFC-0014. **Review recommendations for v1.2/future ([118]/[120]):** atomic effect boundary (EFFECT_BEGIN → EFFECT_EMIT → EFFECT_VALIDATE → EFFECT_COMMIT → TRACE_APPEND); meta-cognitive mapping (OBSERVE: Environment→Belief; INFER: Beliefs→Knowledge; REFLECT: Execution→Self-model; EXPLAIN: Trace→Human-readable reasoning); CognitiveException { InvalidInstruction, CapabilityDenied, BeliefConflict, GoalViolation, PlanFailure, MemoryFault, ExternalFailure }; full execution pipeline (Fetch Instruction → Decode Opcode → Validate Operands → Check Capability → Execute Semantic Operation → Generate Effects → Commit State → Write Trace → Advance PC); RFC-0014 scope (binary layout incl. Magic Number/Version/Opcode/Flags/Operand Count/Operands/Capability ID/Effect Class; opcode numeric assignments; operand encoding; deterministic serialization via Canonical Encoder → SHA-256 Execution Identity; register ABI; exception ABI; JIT constraints).
+
+---
+
+## Message #14 additions — execution/runtime/distributed data models (msg#14 [121]–[140])
+
+### Instruction binary model (RFC-0014 [121], ratified-grade draft)
+
+CISA binary instruction layout (10 fields, see Architecture); Operand { Type (1 byte), Size (2 bytes), Value (variable) }; operand types: Immediate, Register reference, Memory reference (UUID), Belief/Goal/Plan/Capability/Effect reference. Example opcode assignments: LOAD 0x0001, STORE 0x0002, MOVE 0x0003, BELIEF_ASSERT 0x0010, BELIEF_RETRACT 0x0011, GOAL_CREATE 0x0020, GOAL_SATISFY 0x0021, PLAN_EXECUTE 0x0030, CAP_VERIFY 0x0040, EFFECT_EMIT 0x0050, OBSERVE 0x0060, INFER 0x0061. Proposed future opcode space ([122]): 0000-00FF Core VM, 0100-01FF Memory, 0200-02FF Beliefs, 0300-03FF Goals, 0400-04FF Plans, 0500-05FF Skills, 0600-06FF Capabilities, 0700-07FF Effects, 0800-08FF Agent Operations, 0900-09FF Multi-Agent, 0A00-0AFF Reflection. Proposed CISA Program Container ([122]): CISA Program Header { ProgramID, CISA Version, Required CVM Version, Instruction Count, Entry Point, Metadata Offset } + instructions + metadata + debug info.
+
+### Exception model (RFC-0015 [123])
+
+**Exception hierarchy (8 categories):** ValidationError (instruction/operand validation; recoverable) · CapabilityError (capability missing/revoked; recoverable) · MemoryError (access violation/exhaustion; limited) · SkillError (skill execution failure; recoverable) · PlanError (plan execution failure; recoverable) · GoalError (satisfaction/failure condition; limited) · RuntimeError (internal CVM/runtime failure; not recoverable) · ExternalError (external world failure; limited). **ExceptionTrace:** { TraceID, Timestamp, CVMID, AgentID, InstructionID, ExceptionCategory, ErrorCode, Message, CapabilityContext, RecoveryAction }. **Layer mapping ([124]):** ValidationError→CISA/CVM (RFC-0013/0014), CapabilityError→Security boundary (RFC-0006), MemoryError→Memory (RFC-0008), SkillError→Procedural (RFC-0007), PlanError→Planning (RFC-0005), GoalError→Goals (RFC-0004), ExternalError→Effects (RFC-0002), RuntimeError→CVM/CogOS (RFC-0012). **Trace contract chain:** InstructionTrace → EffectTrace → CapabilityTrace → ExceptionTrace. **Effect recoverability classes ([124]):** reversible / compensatable / irreversible. Recommended additions: ExceptionID { ExceptionID, Category, ErrorCode, SourceInstruction, Timestamp, Version }; failure state machine Detected → Captured → Classified → RecoverySelected → {Retrying | Compensating | Escalated | Terminated}.
+
+### Runtime data models (RFC-0016/0017/0018 drafts + reviews)
+
+**CognitiveRuntime identity ([126] recommended):** { RuntimeID, Version, ConfigurationHash, SupportedRFCVersions, SupportedCISARevision }. **RuntimeEvent (RFC-0018 §3 normative; extended [130]):** { EventID, Timestamp, SourceService: Scheduler|CVM|Memory|Capability|Exception|Checkpoint|Agent, EventType, AgentID, TraceID, CorrelationID (optional), Payload, Provenance } + recommended { ParentEvents: [EventID], SequenceNumber, SchemaVersion, Hash }. **Event ordering:** logical timestamp (Lamport clock or equivalent) + causal dependencies + physical timestamp (observability only); log MUST form DAG. **Event categories:** Scheduling (ScheduleDecision, Preempt, Yield) · Instruction (InstructionExecuted, CapabilityCheck) · Memory (MemoryRead/Write/Append) · Capability (CapabilityGranted/Revoked/Verified) · Exception (ExceptionRaised, RecoveryAction) · Checkpoint (CheckpointCreated/Restored) · Agent (AgentCreated/Suspended/Terminated). **ExternalInputEvent ([130]):** { InputID, Source, Timestamp, Value, Hash } for sensor readings, API responses, human instructions, LLM outputs, network messages. **Event integrity hash chain ([130]):** Hash(A); Hash(B + Hash(A)); Hash(C + Hash(B)). **RuntimeMessage ([128] recommended):** { MessageID, SourceService, TargetService, Timestamp, CorrelationID, AgentID, Payload, TraceID }. **RuntimeService ([128]):** { ServiceID, ServiceType, Version, InterfaceRevision, Capabilities, State }. **Service lifecycle ([128]):** Created → Registered → Initialized → Active → Suspended → Stopped. **ResourceQuota ([126]):** { CPUBudget, MemoryLimit, EffectBudget, CapabilityBudget }. **ResourceAccount ([128]):** { AgentID, CPUTime, MemoryUsed, InstructionCount, CapabilityCalls, ExternalEffects }.
+
+### CogOS & distributed models (RFC-0019…0023 drafts + reviews)
+
+**Cognitive Process (RFC-0019 §4):** { Identity, Agent Reference, CVM Instance, Memory Namespace, Active Capabilities, Resource Quota, Execution State, Trace Context }. **Node (RFC-0020 §3):** { NodeID, Address, Capabilities, SupportedCISARevision, Version }; NodeID stable; config/version changes increment node version. **CNPMessage (RFC-0021 §4):** { MessageID, Timestamp, SourceNodeID, TargetNodeID (or broadcast), MessageType, Payload, CapabilityToken (optional), TraceReference, Signature (optional) }. **CNP message families:** Discovery (NodeAnnouncement/Query/Response) · Execution (RemoteCVMRequest/Response, ExecutionStateTransfer) · Capability (CapabilityDelegation/Revocation/Verification) · Event (EventPropagation/Acknowledgement) · Migration (AgentMigrationRequest/Response, StateTransfer) · Coordination (ConsensusProposal/Vote/Result). **Identity hierarchy (RFC-0022 §3):** NodeID ├── AgentID └── ExecutionContext, ├── CVMID, ├── SchedulerID, ├── CapabilityID, └── CheckpointID. **IdentityVerificationEvent ([138]):** { Identity, Verifier, Capability, Result }. **CapabilityToken ([138] proposed):** { ID, Issuer, Subject, Scope, Constraints, Expiration, Signature }. **ConsensusEvent ([140] proposed):** { ConsensusID, EventSet, Participants, Decision, LogicalTimestamp, Proof }. **Trust domains (RFC-0022 §8):** shared policy & capability authority, common event log visibility, coordinated checkpoint/recovery; cross-domain operations require capability delegation. **Distributed memory (RFC-0020 §7):** Working local per agent; Episodic partitioned/replicated; Semantic/Procedural shared with access control & consistency. **Consensus participation (RFC-0023 §4):** event ordering, checkpoint agreement, conflicting capability resolution, migration outcome coordination — capability-gated; guarantees: eventual causal consistency, deterministic conflict resolution, replay equivalence preserved.
+
+---
+
+## Message #16 additions — governance/hardware/compiler data models (msg#16 [141]–[160])
+
+### Resource models (RFC-0024 [141] + review [142])
+
+**Resource categories (normative table):** Execution Time (CVM cycles/CPU time; Instructions/Time) · Memory (four tiers; Bytes/Entries) · Capability Usage (count per type) · Effect Production (count per class) · Storage (Bytes) · Network/Messaging (Messages/Bytes). **ResourceQuota:** { AgentID, ExecutionBudget, MemoryLimit, CapabilityBudget: {type: count}, EffectBudget: {class: count}, StorageQuota, NetworkQuota } — enforced by CogOS, respected during scheduling/execution. **ResourceState ([142] proposed):** { AgentID, ExecutionUsed, MemoryUsed, CapabilityUsage, EffectUsage, StorageUsed, NetworkUsed, RemainingQuota } — part of checkpoints, replay, auditing, scheduling, consensus. **ResourceEvent ([142]):** { EventID, AgentID, ResourceType, PreviousValue, NewValue, Cause }. **ResourceError hierarchy ([142]):** ExecutionBudgetExceeded, MemoryQuotaExceeded, CapabilityBudgetExceeded, EffectBudgetExceeded, NetworkQuotaExceeded. **CRT (Cognitive Resource Token)** — proposed accounting unit ([142]).
+
+### Policy models (RFC-0025 [143] + review [144])
+
+**Policy:** { PolicyID, Scope: [Agent|Node|Domain|System], Rules: [Rule], Priority, Version }. **Rule:** { Subject, Action, Resource, Condition, Effect: Allow|Deny }. **Policy domains:** Capability, Resource, Trust, Effect, Agent, Domain policies. **Evaluation model:** collect applicable policies → evaluate conditions in priority order → first matching rule wins → record decision; default Deny. **PolicyDecisionTrace:** { TraceID, Timestamp, PolicyID, Subject, Action, Resource, Decision: Allow|Deny, Reason }. **PolicyDecisionEvent ([144]):** { EventID, Subject, Action, Resource, Policy, Decision, Reason }. **PolicyConsensus ([144]):** { PolicyID, Decision, Epoch, Participants }. **PolicyError hierarchy ([144]):** UnauthorizedAction, PolicyConflict, InvalidPolicy, MissingContext, TrustViolation.
+
+### Hardware models (RFC-0026 [145] + review [146])
+
+**Accelerator categories (normative table):** Vector/Matrix (GPU, TPU, NPU) · Symbolic (FPGA graph processors) · Secure Enclave (TPM, SGX, TrustZone) · Energy-Efficient (specialized MCUs, NPUs) · I/O Acceleration (DMA engines, RDMA). **AcceleratorContext ([146]):** { AcceleratorID, Type, CapabilityContext, AttestationState, ExecutionProfile, ResourceBudget }. **HardwareExecutionEvent ([146]):** { EventID, InstructionID, AcceleratorID, ExecutionMode: Hardware, InputHash, OutputHash, Attestation, Timestamp (logical epoch) }. **AcceleratorAccess capability example:** { DeviceClass: NPU, Operations: MatrixMultiply, Budget: 5000 operations, Expiry: Epoch 9000 }. Proposed CISA extensions: VECTOR_EXEC, MATRIX_EXEC, GRAPH_EXEC, SECURE_EXEC, PARALLEL_EXEC; instruction carries Target: Software|Accelerator.
+
+### Compiler models (RFC-0027…0033 drafts + reviews)
+
+**CIRModule (RFC-0028 §3):** { Identity, CognitiveTypes, Graphs: {GoalGraph, PlanGraph, EffectGraph, CapabilityGraph, MemoryAccessGraph}, Operations: [Observe, Infer, Remember, Plan, Execute, Reflect, Checkpoint], Constraints: {CapabilityRequirements, ResourceRequirements, DeterminismRules} }; graphs MUST be DAGs unless cycles explicitly declared/handled. **CIROperation ([150]):** { OperationID, Type, Inputs, Outputs, Preconditions, Postconditions, RequiredCapabilities, Effects, MemoryAccess, ResourceEstimate, Provenance }; ReplayMode: EXACT | DETERMINISTIC | RECORDED_INPUT | NON_REPLAYABLE. **CIR-SER binary structure (RFC-0029 §3):** Magic Number (4 bytes, e.g. 0x43495231 "CIR1") + Format Version (2 bytes) + ModuleID (16 bytes UUID) + Version (2 bytes) + CognitiveTypes + Graphs + Operations + Constraints + Metadata + Signature (optional); little-endian, no padding, canonical ordering, no implicit coercion; graphs serialized as node list (stable IDs) + edge list (source/target) + versions. **CIRModuleArtifact ([152]):** Header { Magic, FormatVersion, ModuleID, ModuleVersion } + SemanticLayer + ExecutionLayer + MetadataLayer { SourceProvenance, CompilerIdentity, BuildInformation, TraceReferences } + IntegrityLayer { Hash, Signature, Attestation }. **OptimizationPass (RFC-0030 [154]):** { InputCIR, Preconditions, Transformation, OutputCIR, SemanticGuarantees, CapabilityImpact, TraceImpact, ReplayGuarantees }; pass categories: Simplification, Capability Minimization, Effect Scheduling, Memory Optimization, Resource Optimization, Determinism Strengthening; legality rules: MUST NOT violate effect ordering / increase capabilities without policy / alter goal satisfaction semantics; MUST preserve replay traces. **COIL operations (RFC-0031 §3):** graph transformations (MergeNodes, SplitNode, ReorderEdges), operation transformations (InlineOperation, HoistCapability, EliminateDeadOperation), constraint transformations (StrengthenConstraint, WeakenConstraint), trace operations (RecordTransformation, AttachProvenance); every operation MUST carry proof obligation preserving effect ordering/goal semantics/capability requirements/determinism. **COILTransform ([156]):** { InputCIRFragment, OperationSequence, Preconditions, VerificationConditions, OutputCIRFragment, Certificate }. **OptimizationCertificate (COC, [156]):** { CertificateID, OriginalCIRHash, OptimizedCIRHash, COILProgram, VerificationResults, CapabilityImpact, EffectImpact, TraceImpact, CompilerVersion }. **OptimizationProof (RFC-0032 §4):** { TransformationID, VerificationConditions, ProofObligations, SolverResults, TrustedComputingBase }; TCB { CIR Validator, COIL Interpreter, Proof Checker, Theorem Kernel }; prover integrations: Lean 4, Coq, Isabelle/HOL, Z3, CVC5. **CPCPF artifact structure (RFC-0033 §3):** Header { Magic Number, Format Version, ArtifactID, Creation Timestamp } + CognitiveProgram { CISA Binary, Entry Point, Metadata } + CIRSection { Serialized CIR, Graph Representations, Operation Definitions } + OptimizationHistory { COIL Transformations, Transformation Certificates, COVF Proofs } + CapabilityManifest { Required Capabilities, Declared Effects, Resource Requirements } + TraceMetadata { Execution Trace References, Replay Information, Checkpoint References } + Integrity { Cryptographic Hash, Digital Signature, Attestation (optional) }. **CapabilityManifest ([160]):** { RequiredCapabilities, AllowedEffects, MemoryAccess, ResourceRequirements }. **ArtifactID identity ([160]):** ArtifactID → CIR Hash + CISA Hash + Proof Hash + Capability Hash.
+
+---
+
+## Message #18 additions — ecosystem data models (msg#18 [161]–[180])
+
+**Package model (RFC-0034 [163]):** CognitivePackage { PackageID, Name, Version, PublisherIdentity, CPCPFArtifact, Dependencies, CapabilityManifest, TrustMetadata, VerificationStatus }. PackageID { Namespace, Name, Version, ContentHash } — ContentHash computed over immutable CPCPF artifact; modification MUST produce new PackageID; example `red.cognition.navigation.path-planner@1.4.0`. PackageManifest { PackageID, Publisher, RequiredCapabilities, DeclaredEffects, ResourceRequirements, Dependencies, MinimumCVMVersion, MinimumCISARevision, VerificationLevel }. Trust levels T0–T5 (Unverified / Signature verified / CPCPF validated / Optimization proofs verified / Formally verified / Hardware-attested). PackageRevoked { PackageID, Reason, Authority, Timestamp }.
+
+**Sandbox model (RFC-0035 [164]):** CognitiveSandbox { SandboxID, AgentID, CVMInstance, MemoryNamespace, CapabilitySet, ResourceQuota, PolicyContext, EffectGateway, TraceContext, SecurityLevel }. CapabilityGrant { CapabilityID, Subject: SandboxID, Scope, Expiration, ResourceLimit }. SandboxQuota { CPUBudget, MemoryLimit, StorageLimit, NetworkLimit, CapabilityUsageLimit, EffectLimit }. Security events: SandboxViolation, CapabilityDenied, QuotaExceeded, UnauthorizedEffectAttempt, IsolationFailure, SandboxTerminated.
+
+**Lifecycle/deployment models (RFC-0037 [166], RFC-0042 [177], proposals [178]):** LifecycleIdentity { PackageID, ArtifactVersion, DeploymentID, RuntimeVersion, CompatibilityProfile, ProvenanceChain }. Deployment { DeploymentID, AgentID, CPCPFArtifact, SandboxID, ResourceQuota, PolicyContext, TrustLevel }. DeploymentManifest { ArtifactID, PackageID, RuntimeRequirements, CapabilityRequirements, ResourceLimits, SecurityPolicies, FederationScope, RollbackPolicy, MonitoringPolicy }. Proposed ([178]): DeploymentPolicy { SecurityPolicy, ResourcePolicy, CapabilityPolicy, UpgradePolicy, RollbackPolicy, FederationPolicy, GovernancePolicy }; DeploymentStrategy { Immediate, Rolling, Canary, BlueGreen, Shadow, Progressive }; health states { Healthy, Degraded, Recovering, Quarantined, Failed, Retired }; DeploymentEvent { EventID, ArtifactID, LifecycleStage, PreviousState, NewState, Timestamp, Actor, Authorization, Reason }; DeploymentContract { SourceDomain, TargetDomain, ArtifactID, AllowedCapabilities, ResourceQuota, Duration, FederationAgreement }.
+
+**Economy model (RFC-0038 [167]):** primitives — Cognitive Artifact, Cognitive Capability, Cognitive Agent, Cognitive Service, Cognitive Credit (system token for computational/cognitive resource value). Marketplace functions: Publishing, Discovery, Licensing, Reputation and Attestation, Incentive Distribution, Dispute Resolution. Economic transactions MUST be event-logged with participants, terms, proofs, settlement conditions. CognitivePackage extended view ([168]): { Identity, Provenance, Proofs, Capabilities, Effects, Resources, Trust Level, Execution Constraints, Economic Rights }.
+
+**Ownership model (RFC-0039 [169], [170]):** primitives — Cognitive Owner, Cognitive Artifact, Derivative Artifact, Capability Lineage, Intellectual Property Token. CognitiveOwnershipRecord ([170]) { ArtifactID, CreatorIdentity, CurrentOwner, OwnershipHistory, Rights, License, ParentArtifacts, ContributionGraph } — "Git history for code / copyright chain for media / package provenance, extended to cognitive systems"; lineage DAG (acyclic); creator attribution immutable; capability inheritance preserves provenance; revocation propagates. Connected graphs form a Cognitive Provenance Graph: Identity Graph / Ownership Graph / Cognitive Artifact Graph / Capability Graph / Event History DAG.
+
+**Governance model (RFC-0040 [171], [172]):** primitives — Cognitive Organization, Governance Proposal, Voting Mechanism, Delegation, Policy Object. CognitiveOrganization { OrganizationID, Members: [AgentID], SharedGoals: [GoalID], SharedCapabilities: [CapabilityID], ActivePolicies: [PolicyObject], OwnershipStructure, GovernanceRules }; hierarchical or federated. Voting models: simple majority, weighted, quadratic, delegated; verifiable records. GovernanceEvent { ProposalID, Participants, Votes, RuleSet, Outcome, Timestamp, Provenance }. Delegation { Grantor, Delegate, Scope, Capability, Expiration, RevocationState }. CognitiveConstitution { IdentityRules, OwnershipRules, CapabilityRules, EconomicRules, GovernanceRules, EvolutionRules } — "a programmable constitution" for organizations.
+
+**Federation model (RFC-0041 [173], [174]):** primitives — Cognitive Domain, Federation Agreement, Cross-Domain Capability, Inter-Domain Event, Trust Negotiation. CognitiveDomain { DomainID, IdentityAuthority, GovernanceModel, SupportedRFCs, SupportedCISA, CapabilityRegistry, PolicySet, TrustLevel }. FederationAgreement { AgreementID, DomainA, DomainB, AllowedCapabilities, TrustRequirements, ResourceRules, MigrationRules, Expiration }. InterDomainEvent { EventID, SourceDomain, TargetDomain, OriginalEvent, FederationAgreement, AuthorizationProof }. Federated Capability { OriginDomain, Owner, DelegationChain, TrustProof, RevocationSource }. MigrationBundle { CPCPF Artifact, Checkpoint State, Memory References, Capability Proofs, Ownership Records, Governance Approval }.
