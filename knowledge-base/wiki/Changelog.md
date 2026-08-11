@@ -2,6 +2,16 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-12 — Message #32 processed ([361]–[380]: RFC-0072 record publication form; RFC-0061 divergent v1.0; RFC-0062 v1.3 lineage)
+
+- **Source:** Conversation message #32 — a 20-part transcript ([361]–[380]; speakers USER, CHATGPT (gpt-5-5), CHATGPT (gpt-5-5-mini); arrived wrapped in one outer code fence — wrapper removed): RFC-0072 ratification record final publication form [361] (≡[363]≡[365]; Status-line effectiveness qualifier; stray parentheses corrected) with approvals [362]/[364]/[366]/[368] ("READY FOR PUBLICATION" + Publication Record) after USER directive [367] "READY"; RFC-0061 CISA-RA divergent v1.0 Draft [369] + review [370]; RFC-0062 CVM-BF lineage v1.0 [371] → v1.1 [373] → v1.2 [375] → v1.3 [377]/[379] with reviews [372]/[374]/[376]/[378] and final review [380] ("Ratification Recommendation: ACCEPT" pending five amendments; no USER ratification record).
+- **Classification:** Duplicates D-101 ([361]≡[363]≡[365]; updated revision of [353]), D-102 (divergent RFC-0061 v1.0 [369] vs [286]), D-103 (RFC-0062 re-presentations incl. same-label v1.1 divergence [373] vs [304]), D-104 ([377]≡[379]) added; C-19 extended to the [361]–[365] publication form; X-144 records the [380] "RFC-0063 CVM-BV" roadmap collision with existing RFC-0063 CVM-FOS (C-11 lineage). All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-032-original-part1..5.md` ([361]–[364], [365]–[368], [369]–[372], [373]–[376], [377]–[380]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/RFC-0072-ratification-record.md` updated [353] → [361]; `rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md` updated [304] v1.1 → [377] v1.3 — programmatic, byte-exact. Totals unchanged: 12 specs + 86 rfcs files (72 RFC documents + 14 ratification records).
+  - 76 code snippets extracted (SN-2123…SN-2198), embedded verbatim in Code Snippets Message #32 Annex (incl. repeated fences across identical re-sends, preserved); corpus total now **2198 snippets**.
+  - Wiki pages updated (7): RFC Index (status updates, ratified set unchanged, roadmap), Data Models (CISA-RA variant machine model; CVM-BF v1.2/v1.3 wire models; [380] amendments), Glossary (+6 terms), Code Snippets, Changelog, Source Traceability, README index.
+  - Cross-references added: X-141…X-144 (4). Report: `reports/message-032-report.md`.
 ## 2026-08-11 — Message #31 processed ([341]–[360]: RFC-0072 ratification record revision arc; publication approval)
 
 - **Source:** Conversation message #31 — a 20-part transcript ([341]–[360]; speakers USER, CHATGPT (gpt-5-5)): the RFC-0072 v1.6 ratification record iterated to publication quality — original record [339] re-sent four times ([341]/[343]/[345]/[347]) with governance reviews ([342]/[344]/[346]/[348]); revision [349] (parent-dependency note with provisional effectiveness, renamed status table + RFC-0060/0061 rows, Registry Governance, Protocol Evolution Policy, Normative References, Related Specifications, Conformance Profile) → [351] (+ Change Control) → [353] (section reorder; final form, re-sent [355]/[357]/[359]); approvals [350]/[352]/[354]/[356]/[358]/[360] culminating in "Approved as the publication version of RFC-0072 v1.6".

@@ -1,12 +1,12 @@
 # Code Snippets
 
-> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29, #30, #31). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29/#30/#31 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5, message-030-part1..5, message-031-part1..5).
+> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29, #30, #31, #32). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29/#30/#31/#32 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5, message-030-part1..5, message-031-part1..5, message-032-part1..5).
 >
 > **Scaffolding status: every snippet below is `Unresolved Location`** — no snippet in the corpus carries a documented repository path/filename, so none has been scaffolded into the repository source tree (per governance rule "never guess repository paths").
 
 ## Count summary
 
-**Corpus totals: 2122 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975; message #30: SN-1976…SN-2094; message #31: SN-2095…SN-2122, Message #31 Annex at the bottom of this page).
+**Corpus totals: 2198 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975; message #30: SN-1976…SN-2094; message #31: SN-2095…SN-2122; message #32: SN-2123…SN-2198, Message #32 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -441,6 +441,31 @@ Message #31 breakdown:
 | [358] | 4 | SN-2119 … SN-2122 |
 | [359] | 0 | — |
 | [360] | 0 | — |
+
+Message #32 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [361] | 0 | — |
+| [362] | 0 | — |
+| [363] | 0 | — |
+| [364] | 0 | — |
+| [365] | 0 | — |
+| [366] | 0 | — |
+| [367] | 0 | — |
+| [368] | 1 | SN-2123 |
+| [369] | 7 | SN-2124 … SN-2130 |
+| [370] | 1 | SN-2131 |
+| [371] | 9 | SN-2132 … SN-2140 |
+| [372] | 0 | — |
+| [373] | 9 | SN-2141 … SN-2149 |
+| [374] | 4 | SN-2150 … SN-2153 |
+| [375] | 10 | SN-2154 … SN-2163 |
+| [376] | 0 | — |
+| [377] | 10 | SN-2164 … SN-2173 |
+| [378] | 3 | SN-2174 … SN-2176 |
+| [379] | 10 | SN-2177 … SN-2186 |
+| [380] | 12 | SN-2187 … SN-2198 |
 
 ## Ledger
 
@@ -40263,4 +40288,1038 @@ Version negotiation handshake `ClientHello` / `ServerHello`)
 
 - Version negotiation handshake `ClientHello` / `ServerHello`)
 
+```
+
+## Message #32 Annex — SN-2123 … SN-2198 (verbatim embeddings)
+
+> Each fenced block from corpus message #32 (sub-messages [361]–[380]) embedded exactly once, unchanged from the archive (incl. repeated fences across identical re-sends [363]≡[365]≡[361] and [379]≡[377] — D-101/D-104, preserved; [380] review-record fences incl. the stray-bold-marker heading preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [368]
+
+**SN-2123**
+
+```
+RFC:        RFC-0072
+Title:      Cognitive Runtime Coordination Protocol (CRCP)
+            Wire Format and Binary Message Encoding
+Version:    1.6
+Status:     Ratified (Effective upon RFC-0071 Ratification)
+Authority:  Normative Specification
+Date:       2026-07-29
+State:      Publication Ready
+```
+
+### Sub-message [369]
+
+**SN-2124**
+
+```
+CVM {
+    Register File,
+    Operand Stack,
+    Local Memory,
+    Shared Memory Interface,
+    Effect Buffer,
+    Transaction Context,
+    Security Context,
+    Trace Context
+}
+```
+
+**SN-2125**
+
+```
+Register {
+    Type,
+    Value,
+    Version,
+    Provenance
+}
+```
+
+**SN-2126**
+
+```
+ADD R1, R2, R3     ; R1 = R2 + R3
+```
+
+**SN-2127**
+
+```
++------------+
+| Opcode     | 2 bytes
++------------+
+| Flags      | 2 bytes
++------------+
+| Operand A  |
++------------+
+| Operand B  |
++------------+
+| Operand C  |
++------------+
+| Metadata   |
++------------+
+```
+
+**SN-2128**
+
+```
+EffectDescriptor {
+    EffectID,
+    InstructionID,
+    CapabilityRequired,
+    TransactionID,
+    DeterminismClass,
+    CompensationHandler
+}
+```
+
+**SN-2129**
+
+```
+Decode
+   ↓
+Opcode Validation
+   ↓
+Operand Validation
+   ↓
+Capability Check
+   ↓
+Transaction Check
+   ↓
+Execute
+```
+
+**SN-2130**
+
+```
+cog cvm inspect
+cog cvm registers
+cog cvm trace
+cog cvm disassemble
+cog cvm replay
+```
+
+### Sub-message [370]
+
+**SN-2131**
+
+```
+Opcode
+Flags
+Operand A
+Operand B
+Operand C
+Metadata
+```
+
+### Sub-message [371]
+
+**SN-2132**
+
+```
+Cognitive Program
+   ↓
+CIR (RFC-0028)
+   ↓
+CISA Instructions (RFC-0013 + RFC-0061)
+   ↓
+CVM Bytecode (RFC-0062)
+   ↓
+CVM Execution (RFC-0060)
+   ↓
+Transactions + Security (RFC-0057 + RFC-0059)
+```
+
+**SN-2133**
+
+```
++----------------------------+
+| Magic                      |  "CVMX"
++----------------------------+
+| Format Version             |
++----------------------------+
+| Target CVM Version         |
++----------------------------+
+| Flags                      |
++----------------------------+
+| Module Identifier          |
++----------------------------+
+| Section Directory          |
++----------------------------+
+| Sections                   |
++----------------------------+
+| Integrity Block            |
++----------------------------+
+```
+
+**SN-2134**
+
+```
+0x43564D58   →   ASCII: CVMX
+```
+
+**SN-2135**
+
+```
+CVMHeader {
+    MagicNumber,
+    FormatVersion,
+    MinimumRuntimeVersion,
+    ModuleID,
+    Flags,
+    SectionCount,
+    EntryPoint,
+    IntegrityHash
+}
+```
+
+**SN-2136**
+
+```
++------------+
+| Opcode     | 2 bytes
++------------+
+| Flags      | 2 bytes
++------------+
+| InstructionID | 8 bytes
++------------+
+| EffectClass | 1 byte
++------------+
+| CapabilityID | 4 bytes (optional)
++------------+
+| OperandCount | 1 byte
++------------+
+| Operands   | variable
++------------+
+```
+
+**SN-2137**
+
+```
+Operand {
+    Type (1 byte),
+    Length (2 bytes),
+    Value (variable)
+}
+```
+
+**SN-2138**
+
+```
+ConstantPool {
+    Count,
+    Constants[]
+}
+```
+
+**SN-2139**
+
+```
+VerificationInfo {
+    TypeSafetyHash,
+    ControlFlowHash,
+    CapabilityRequirements,
+    EffectSummary,
+    CompilerSignature
+}
+```
+
+**SN-2140**
+
+```
+DebugInfo {
+    SourceMap,
+    InstructionLocations,
+    SymbolTable,
+    RegisterNames
+}
+```
+
+### Sub-message [373]
+
+**SN-2141**
+
+```
+Cognitive Program
+   ↓
+CIR (RFC-0028)
+   ↓
+CISA Instructions (RFC-0013 + RFC-0061)
+   ↓
+CVM Bytecode (RFC-0062)
+   ↓
+CVM Execution (RFC-0060)
+   ↓
+Transactions + Security (RFC-0057 + RFC-0059)
+```
+
+**SN-2142**
+
+```
++----------------------------+
+| Magic                      |  "CVMX"
++----------------------------+
+| Format Version             |
++----------------------------+
+| Target CVM Version         |
++----------------------------+
+| Flags                      |
++----------------------------+
+| Module Identifier          |
++----------------------------+
+| Section Directory          |
++----------------------------+
+| Sections                   |
++----------------------------+
+| Integrity Block            |
++----------------------------+
+```
+
+**SN-2143**
+
+```
+0x43564D58   →   ASCII: CVMX
+```
+
+**SN-2144**
+
+```
+CVMHeader {
+    MagicNumber,
+    FormatVersion,
+    MinimumRuntimeVersion,
+    ModuleID,
+    Flags,
+    SectionCount,
+    EntryPoint,
+    IntegrityHash
+}
+```
+
+**SN-2145**
+
+```
++------------+
+| Opcode     | 2 bytes
++------------+
+| Flags      | 2 bytes
++------------+
+| InstructionID | 8 bytes
++------------+
+| EffectClass | 1 byte
++------------+
+| CapabilityID | 4 bytes (optional)
++------------+
+| OperandCount | 1 byte
++------------+
+| Operands   | variable
++------------+
+```
+
+**SN-2146**
+
+```
+Operand {
+    Type (1 byte),
+    Length (2 bytes),
+    Value (variable)
+}
+```
+
+**SN-2147**
+
+```
+ConstantPool {
+    Count,
+    Constants[]
+}
+```
+
+**SN-2148**
+
+```
+VerificationInfo {
+    TypeSafetyHash,
+    ControlFlowHash,
+    CapabilityRequirements,
+    EffectSummary,
+    CompilerSignature
+}
+```
+
+**SN-2149**
+
+```
+DebugInfo {
+    SourceMap,
+    InstructionLocations,
+    SymbolTable,
+    RegisterNames
+}
+```
+
+### Sub-message [374]
+
+**SN-2150**
+
+```text
+CVMHeader {
+    MagicNumber,
+    FormatVersion,
+    MinimumRuntimeVersion,
+    ModuleID,
+    Flags,
+    SectionCount,
+    EntryPoint,
+    IntegrityHash
+}
+```
+
+**SN-2151**
+
+```text
+SectionEntry {
+    SectionID
+    Offset
+    Length
+    Flags
+}
+```
+
+**SN-2152**
+
+```
+CapabilityID (optional)
+```
+
+**SN-2153**
+
+```text
+0x01 int32
+0x02 int64
+0x03 float64
+0x04 UTF-8 string
+0x05 symbol
+0x06 type descriptor
+```
+
+### Sub-message [375]
+
+**SN-2154**
+
+```
+Cognitive Program
+   ↓
+CIR (RFC-0028)
+   ↓
+CISA Instructions (RFC-0013 + RFC-0061)
+   ↓
+CVM Bytecode (RFC-0062)
+   ↓
+CVM Execution (RFC-0060)
+   ↓
+Transactions + Security (RFC-0057 + RFC-0059)
+```
+
+**SN-2155**
+
+```
++----------------------------+
+| Magic                      |  "CVMX"
++----------------------------+
+| Format Version             |
++----------------------------+
+| Target CVM Version         |
++----------------------------+
+| Flags                      |
++----------------------------+
+| Module Identifier          |
++----------------------------+
+| Section Directory          |
++----------------------------+
+| Sections                   |
++----------------------------+
+| Integrity Block            |
++----------------------------+
+```
+
+**SN-2156**
+
+```
+0x43564D58   →   ASCII: CVMX
+```
+
+**SN-2157**
+
+```
+CVMHeader {
+    MagicNumber (4 bytes),
+    FormatVersion (2 bytes),
+    MinimumRuntimeVersion (2 bytes),
+    ModuleID (16 bytes, UUID128),
+    Flags (4 bytes),
+    SectionCount (2 bytes),
+    EntryPoint (8 bytes),
+    IntegrityHash (32 bytes, SHA-256)
+}
+```
+
+**SN-2158**
+
+```
+SectionEntry {
+    SectionID (2 bytes),
+    Offset (8 bytes),
+    Length (4 bytes),
+    Flags (2 bytes),
+    Hash (32 bytes, SHA-256)
+}
+```
+
+**SN-2159**
+
+```
++------------+
+| Opcode     | 2 bytes (uint16)
++------------+
+| Flags      | 2 bytes (uint16)
++------------+
+| InstructionID | 8 bytes (uint64)
++------------+
+| EffectClass | 1 byte (uint8)
++------------+
+| CapabilityID | 4 bytes (uint32, optional)
++------------+
+| OperandCount | 1 byte (uint8)
++------------+
+| Operands   | variable
++------------+
+```
+
+**SN-2160**
+
+```
+Operand {
+    Type (1 byte),
+    Length (2 bytes),
+    Value (variable)
+}
+```
+
+**SN-2161**
+
+```
+ConstantPool {
+    Count,
+    Constants[]
+}
+```
+
+**SN-2162**
+
+```
+VerificationInfo {
+    TypeSafetyHash,
+    ControlFlowHash,
+    CapabilityRequirements,
+    EffectSummary,
+    CompilerSignature
+}
+```
+
+**SN-2163**
+
+```
+DebugInfo {
+    SourceMap,
+    InstructionLocations,
+    SymbolTable,
+    RegisterNames
+}
+```
+
+### Sub-message [377]
+
+**SN-2164**
+
+```
+Cognitive Program
+   ↓
+CIR (RFC-0028)
+   ↓
+CISA Instructions (RFC-0013 + RFC-0061)
+   ↓
+CVM Bytecode (RFC-0062)
+   ↓
+CVM Execution (RFC-0060)
+   ↓
+Transactions + Security (RFC-0057 + RFC-0059)
+```
+
+**SN-2165**
+
+```
++----------------------------+
+| Magic                      |  "CVMX"
++----------------------------+
+| Format Version             |
++----------------------------+
+| Target CVM Version         |
++----------------------------+
+| Flags                      |
++----------------------------+
+| Module Identifier          |
++----------------------------+
+| Section Directory          |
++----------------------------+
+| Sections                   |
++----------------------------+
+| Integrity Block            |
++----------------------------+
+```
+
+**SN-2166**
+
+```
+0x43564D58   →   ASCII: CVMX
+```
+
+**SN-2167**
+
+```
+CVMHeader {
+    MagicNumber (4 bytes),
+    FormatVersion (2 bytes),
+    MinimumRuntimeVersion (2 bytes),
+    ModuleID (16 bytes, UUID128),
+    Flags (4 bytes),
+    SectionCount (2 bytes),
+    EntryPoint (8 bytes),
+    IntegrityHash (32 bytes, SHA-256)
+}
+```
+
+**SN-2168**
+
+```
+SectionEntry {
+    SectionID (2 bytes),
+    Offset (8 bytes),
+    Length (4 bytes),
+    Flags (2 bytes),
+    Hash (32 bytes, SHA-256)
+}
+```
+
+**SN-2169**
+
+```
++------------+
+| Opcode     | 2 bytes (uint16)
++------------+
+| Flags      | 2 bytes (uint16)
++------------+
+| InstructionID | 8 bytes (uint64)
++------------+
+| EffectClass | 1 byte (uint8)
++------------+
+| CapabilityID | 4 bytes (uint32, optional)
++------------+
+| OperandCount | 1 byte (uint8)
++------------+
+| Operands   | variable
++------------+
+```
+
+**SN-2170**
+
+```
+Operand {
+    Type (1 byte),
+    Length (2 bytes),
+    Value (variable)
+}
+```
+
+**SN-2171**
+
+```
+ConstantPool {
+    Count,
+    Constants[]
+}
+```
+
+**SN-2172**
+
+```
+VerificationInfo {
+    TypeSafetyHash,
+    ControlFlowHash,
+    CapabilityRequirements,
+    EffectSummary,
+    CompilerSignature
+}
+```
+
+**SN-2173**
+
+```
+DebugInfo {
+    SourceMap,
+    InstructionLocations,
+    SymbolTable,
+    RegisterNames
+}
+```
+
+### Sub-message [378]
+
+**SN-2174**
+
+```
+IntegrityBlock {
+    AlgorithmID
+    ContainerHash
+    OptionalSignature
+    CertificateChain
+}
+```
+
+**SN-2175**
+
+```
+Constant {
+    Type
+    Length
+    Value
+}
+```
+
+**SN-2176**
+
+```
+Read Header
+↓
+
+Validate Header
+
+↓
+
+Validate Directory
+
+↓
+
+Validate Section Hashes
+
+↓
+
+Validate Integrity Block
+
+↓
+
+Validate Version
+
+↓
+
+Validate Capability Manifest
+
+↓
+
+Validate Verification Metadata
+
+↓
+
+Load Module
+```
+
+### Sub-message [379]
+
+**SN-2177**
+
+```
+Cognitive Program
+   ↓
+CIR (RFC-0028)
+   ↓
+CISA Instructions (RFC-0013 + RFC-0061)
+   ↓
+CVM Bytecode (RFC-0062)
+   ↓
+CVM Execution (RFC-0060)
+   ↓
+Transactions + Security (RFC-0057 + RFC-0059)
+```
+
+**SN-2178**
+
+```
++----------------------------+
+| Magic                      |  "CVMX"
++----------------------------+
+| Format Version             |
++----------------------------+
+| Target CVM Version         |
++----------------------------+
+| Flags                      |
++----------------------------+
+| Module Identifier          |
++----------------------------+
+| Section Directory          |
++----------------------------+
+| Sections                   |
++----------------------------+
+| Integrity Block            |
++----------------------------+
+```
+
+**SN-2179**
+
+```
+0x43564D58   →   ASCII: CVMX
+```
+
+**SN-2180**
+
+```
+CVMHeader {
+    MagicNumber (4 bytes),
+    FormatVersion (2 bytes),
+    MinimumRuntimeVersion (2 bytes),
+    ModuleID (16 bytes, UUID128),
+    Flags (4 bytes),
+    SectionCount (2 bytes),
+    EntryPoint (8 bytes),
+    IntegrityHash (32 bytes, SHA-256)
+}
+```
+
+**SN-2181**
+
+```
+SectionEntry {
+    SectionID (2 bytes),
+    Offset (8 bytes),
+    Length (4 bytes),
+    Flags (2 bytes),
+    Hash (32 bytes, SHA-256)
+}
+```
+
+**SN-2182**
+
+```
++------------+
+| Opcode     | 2 bytes (uint16)
++------------+
+| Flags      | 2 bytes (uint16)
++------------+
+| InstructionID | 8 bytes (uint64)
++------------+
+| EffectClass | 1 byte (uint8)
++------------+
+| CapabilityID | 4 bytes (uint32, optional)
++------------+
+| OperandCount | 1 byte (uint8)
++------------+
+| Operands   | variable
++------------+
+```
+
+**SN-2183**
+
+```
+Operand {
+    Type (1 byte),
+    Length (2 bytes),
+    Value (variable)
+}
+```
+
+**SN-2184**
+
+```
+ConstantPool {
+    Count,
+    Constants[]
+}
+```
+
+**SN-2185**
+
+```
+VerificationInfo {
+    TypeSafetyHash,
+    ControlFlowHash,
+    CapabilityRequirements,
+    EffectSummary,
+    CompilerSignature
+}
+```
+
+**SN-2186**
+
+```
+DebugInfo {
+    SourceMap,
+    InstructionLocations,
+    SymbolTable,
+    RegisterNames
+}
+```
+
+### Sub-message [380]
+
+**SN-2187**
+
+```
+Cognitive Language
+        ↓
+CIR (RFC-0028)
+        ↓
+CISA Instruction Model (RFC-0013 / RFC-0061)
+        ↓
+CVM Bytecode Representation (RFC-0062)
+        ↓
+CVM Execution Engine (RFC-0060)
+        ↓
+Transactions / Security / Replay
+```
+
+**SN-2188**
+
+```
+Header
+ ↓
+Section Directory
+ ↓
+Sections
+ ↓
+Integrity Block
+```
+
+**SN-2189**
+
+```
+FormatVersion {
+    Major: uint8
+    Minor: uint8
+}
+```
+
+**SN-2190**
+
+```
+SectionDirectory {
+    SectionCount
+    SectionEntry[]
+}
+```
+
+**SN-2191**
+
+```
+Instruction {
+    Opcode
+    Flags
+    InstructionID
+    EffectClass
+    CapabilityID
+    OperandCount
+    Operands[]
+}
+```
+
+**SN-2192**
+
+```
+Operand {
+    Type:uint8
+    Length:uint16
+    Value:[Length bytes]
+}
+```
+
+**SN-2193**
+
+```
+Constant {
+    Type:uint8
+    Length:uint32
+    Value:[Length bytes]
+}
+```
+
+**SN-2194**
+
+```
+IntegrityBlock {
+    AlgorithmID
+    ContainerHash
+    SignatureType
+    Signature
+    CertificateReference
+}
+```
+
+**SN-2195**
+
+```
+SHA-256
+```
+
+**SN-2196**
+
+```
+1. Read Header
+        ↓
+2. Validate Magic
+        ↓
+3. Validate Format Version
+        ↓
+4. Validate Section Directory
+        ↓
+5. Validate Section Hashes
+        ↓
+6. Validate Integrity Block
+        ↓
+7. Validate Runtime Compatibility
+        ↓
+8. Validate Capability Manifest
+        ↓
+9. Validate Effect Manifest
+        ↓
+10. Validate Bytecode
+        ↓
+11. Execute
+```
+
+**SN-2197**
+
+```
+ReplayState {
+    BytecodeHash
+    RegisterState
+    MemoryState
+    SchedulerEpoch
+    TransactionContext
+    SecurityContext
+}
+```
+
+**SN-2198**
+
+```
+Source Language
+      ↓
+CIR
+      ↓
+CISA
+      ↓
+CVM-BF
+      ↓
+CVM-BV
+      ↓
+Verified Cognitive Execution
 ```

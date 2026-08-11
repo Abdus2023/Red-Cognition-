@@ -506,3 +506,23 @@ Message #31 iterates the RFC-0072 v1.6 ratification record to publication qualit
 ### Conflict C-19 (extended)
 
 C-19 now covers [339] and its revised iterations [349]–[359]: the revised table adds RFC-0060 "Candidate" and RFC-0061 "Planned" although both were ratified (RFC-0060 per [285], RFC-0061 per [300]/[301]), and retains the stale RFC-0002/0003/0004 "Ratification-ready", RFC-0046/0047/0048 "Final Candidate", and RFC-0012 "Ratified" entries. Ratification events remain authoritative; tables preserved verbatim.
+
+---
+
+## Message #32 additions — RFC-0072 record publication form; RFC-0061 divergent v1.0; RFC-0062 v1.3 lineage (sub-messages [361]–[380])
+
+### Status updates (scaffolded verbatim in `rfcs/`)
+
+| ID | Document | Corpus status after message #32 | Scaffolded |
+|----|----------|--------------------------------|-----------|
+| RFC-0072 (record) | CRCP Wire Format ratification record | final publication form ([361]; identical re-sends [363]/[365] — D-101): Status line now "Ratified (Effective upon ratification of RFC-0071)"; stray parentheses corrected (closing X-140); compact rendering; approvals [362]/[364]/[366]/[368] incl. Publication Record after USER directive [367] "READY"; record scaffold source moved [353]→[361] | [`rfcs/RFC-0072-ratification-record.md`](../../rfcs/RFC-0072-ratification-record.md) (from [361]) |
+| RFC-0061 | CISA-RA (ratified v1.2 unchanged) | divergent v1.0 Draft [369] preserved in archive (vs msg#27 v1.0 proposal [286] — D-102; closing paragraph names RFC-0062 — title-mismatch quirk flagged by [370]; review [370] lists 7 Candidate-gap areas); ratified document remains v1.2 per [299]/[301] | unchanged |
+| RFC-0062 | CVM-BF — Cognitive VM Bytecode Format and Encoding | message-#32 lineage: v1.0 [371] (re-presentation; D-103 vs [303]/[288]/[302]) → v1.1 [373] (same label as msg#29 [304] but different body — same-label divergence, D-103) → v1.2 [375] (typed header fields; SectionEntry + SHA-256 section hashes) → **v1.3 [377]** (Section Directory sorted by SectionID; identical re-send [379] — D-104); reviews [372]/[374]/[376]/[378]; final ratification review [380]: "Ratification Recommendation: ACCEPT" pending five amendments (IntegrityBlock, Constant encoding, section overlap rules, loader sequence, version compatibility); **no USER ratification record — remains Candidate**; scaffold source moved [304]→[377] | [`rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md`](../../rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md) (v1.3 per [377]) |
+
+### Ratified set after message #32
+
+Unchanged from message #29 (19 documents; RFC-0072 v1.6 provisionally effective pending RFC-0071; RFC-0062 v1.3 Candidate for Final Ratification with ACCEPT-pending-amendments review [380]).
+
+### Roadmap (X-144; C-11 lineage extended)
+
+[380] proposes the next specification as "RFC-0063 — Cognitive Virtual Machine Bytecode Verification and Formal Validation (CVM-BV)" — the number collides with the existing RFC-0063 CVM-FOS (drafted msg#29, v1.1 Candidate); same roadmap-numbering pattern as X-121/X-133/X-137.
