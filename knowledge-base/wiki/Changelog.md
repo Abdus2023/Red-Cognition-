@@ -2,6 +2,14 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #28 processed (directive "Deeply Verification" #7)
+
+- **Trigger:** user message "Deeply Verification" (no new corpus content).
+- **Action:** deep audit suite #7 executed over the full corpus ([1]–[300], SN-001…SN-1777, 1774 archived fenced blocks, 87 scaffolded documents): 8 categories, 66 checks — archive structure (3), snippet-ledger integrity incl. all 1774 annex blocks byte-faithful vs archives (16), scaffold fidelity (6), wiki fidelity & links (4), normative consistency of messages #25–#27 material incl. ratified RFC-0053/0057/0058/0059/0060/0061 and Draft RFC-0054/0055/0056/0062 (23), RFC parent-chain integrity across all 62 RFC docs (2), status & cross-page coherence incl. new stale-residue guards (6), bookkeeping (6). Final state: 66/66 PASS.
+- **Defects found & corrected (4, all stale edit residue in bookkeeping/meta text — no source content touched):** (1) README corpus-status paragraph: message-#27 sentence had been inserted before the message-#26 sentence, ordering the paragraph #25→#27→#26 and ending it with the stale message-#26 totals (1591/69); ordering corrected (#25→#26→#27) and the message-#25 cumulative totals sentence restored. (2) Code Snippets corpus-totals line: duplicated stale parenthetical breakdown (pre-#27 form) removed. (3) README Code Snippets table row updated 1093 → 1777 snippets. (4) Code Snippets provenance header coverage updated (messages #2…#27, full archive enumeration).
+- **Regression suites:** message-018 monotonic suite 25/25 PASS; message-027 suite 59/59 PASS after 2 disclosed monotonicity patches (README messages-processed ≥ 27; register rows contiguous with max ≥ 27) — checks only, no KB content.
+- **Bookkeeping:** register row 28; README "28 messages processed".
+- Report: `reports/message-028-report.md`; suite: `reports/message-028-verification-suite.py`.
 ## 2026-08-11 — Message #27 processed ([281]–[300]: RFC-0059/0060/0061 ratified; RFC-0062 CVM-BF draft)
 
 - **Source:** Conversation message #27 — a 20-part transcript ([281]–[300]; speakers USER, CHATGPT (gpt-5-5-mini)): RFC-0059 CTSTP v1.1 **RATIFIED** (ratification records [281]/[291]/[293], [291]≡[293]); RFC-0060 CVM-IESS v1.0 Drafts ([283]/[295] divergent) → v1.1 ([284], CHATGPT) → **RATIFIED** ([285]); RFC-0061 CISA-RA v1.0 proposal ([286]) → v1.1 ([297], record [287]) → v1.2 ([299]) → **RATIFIED** ([300]); RFC-0062 CVM-BF v1.0 Draft ([288], CHATGPT); execution substrate completed (CIR → CISA → CVM execution → transaction + security → replay/verification).

@@ -1,12 +1,12 @@
 # Code Snippets
 
-> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5).
+> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5).
 >
 > **Scaffolding status: every snippet below is `Unresolved Location`** — no snippet in the corpus carries a documented repository path/filename, so none has been scaffolded into the repository source tree (per governance rule "never guess repository paths").
 
 ## Count summary
 
-**Corpus totals: 1777 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777, Message #27 Annex at the bottom of this page). (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591, Message #26 Annex at the bottom of this page).
+**Corpus totals: 1777 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777, Message #27 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
