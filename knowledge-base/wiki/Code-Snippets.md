@@ -1,12 +1,12 @@
 # Code Snippets
 
-> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29, #30). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29/#30 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5, message-030-part1..5).
+> Provenance: ledger of every code snippet in the corpus (messages #2, #3, #5, #8, #10, #12, #14, #16, #18, #21, #22, #23, #25, #26, #27, #29, #30, #31). Each snippet is traced to its origin sub-message and embedded verbatim — message #2 in topic pages (Location column), messages #3/#5/#8/#10/#12/#14/#16/#18/#21/#22/#23/#25/#26/#27/#29/#30/#31 in the Annexes below; verbatim archives in `sources/` (message-002-part1..2, message-003-part1..4, message-005-part1..5, message-008-part1..5, message-010-part1..5, message-012-part1..5, message-014-part1..5, message-016-part1..5, message-018-part1..5, message-021-part1..5, message-022-part1..5, message-023-part1..5, message-025-part1..5, message-026-part1..5, message-027-part1..5, message-029-part1..5, message-030-part1..5, message-031-part1..5).
 >
 > **Scaffolding status: every snippet below is `Unresolved Location`** — no snippet in the corpus carries a documented repository path/filename, so none has been scaffolded into the repository source tree (per governance rule "never guess repository paths").
 
 ## Count summary
 
-**Corpus totals: 2094 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975; message #30: SN-1976…SN-2094, Message #30 Annex at the bottom of this page).
+**Corpus totals: 2122 snippets** (message #2: SN-001…SN-123, ledger below; message #3: SN-124…SN-212; message #5: SN-213…SN-318; message #8: SN-319…SN-427; message #10: SN-428…SN-493; message #12: SN-494…SN-640; message #14: SN-641…SN-825; message #16: SN-826…SN-993; message #18: SN-994…SN-1093; message #21: SN-1094…SN-1138; message #22: SN-1139…SN-1229; message #23: SN-1230…SN-1348; message #25: SN-1349…SN-1419; message #26: SN-1420…SN-1591; message #27: SN-1592…SN-1777; message #29: SN-1778…SN-1975; message #30: SN-1976…SN-2094; message #31: SN-2095…SN-2122, Message #31 Annex at the bottom of this page).
 
 Message #2 breakdown:
 
@@ -416,6 +416,31 @@ Message #30 breakdown:
 | [338] | 16 | SN-2079 … SN-2094 |
 | [339] | 0 | — |
 | [340] | 0 | — |
+
+Message #31 breakdown:
+
+| Origin sub-message | Snippets | IDs |
+|---|---|---|
+| [341] | 0 | — |
+| [342] | 0 | — |
+| [343] | 0 | — |
+| [344] | 0 | — |
+| [345] | 0 | — |
+| [346] | 4 | SN-2095 … SN-2098 |
+| [347] | 0 | — |
+| [348] | 4 | SN-2099 … SN-2102 |
+| [349] | 0 | — |
+| [350] | 4 | SN-2103 … SN-2106 |
+| [351] | 0 | — |
+| [352] | 4 | SN-2107 … SN-2110 |
+| [353] | 0 | — |
+| [354] | 4 | SN-2111 … SN-2114 |
+| [355] | 0 | — |
+| [356] | 4 | SN-2115 … SN-2118 |
+| [357] | 0 | — |
+| [358] | 4 | SN-2119 … SN-2122 |
+| [359] | 0 | — |
+| [360] | 0 | — |
 
 ## Ledger
 
@@ -39995,5 +40020,247 @@ byte order
 wire order
 
 network representation
+
+```
+
+## Message #31 Annex — SN-2095 … SN-2122 (verbatim embeddings)
+
+> Each fenced block from corpus message #31 (sub-messages [341]–[360]) embedded exactly once, unchanged from the archive (all 28 blocks are the reviews' stray-parenthesis quotation fences [346]/[348]/[350]/[352]/[354]/[356]/[358] — note the "Current" and "Prefer"/"Recommended" quotations are textually identical in the corpus, preserved). IDs assigned in corpus order. All remain **Unresolved Location** for source-tree scaffolding (no documented repository paths).
+
+### Sub-message [346]
+
+**SN-2095**
+
+```
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2096**
+
+```
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2097**
+
+```
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2098**
+
+```
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [348]
+
+**SN-2099**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2100**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2101**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2102**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [350]
+
+**SN-2103**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2104**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2105**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2106**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [352]
+
+**SN-2107**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2108**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2109**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2110**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [354]
+
+**SN-2111**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2112**
+
+```text
+
+Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2113**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2114**
+
+```text
+
+Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [356]
+
+**SN-2115**
+
+```text
+
+- Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2116**
+
+```text
+
+- Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2117**
+
+```text
+
+- Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2118**
+
+```text
+
+- Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+### Sub-message [358]
+
+**SN-2119**
+
+```text
+
+- Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2120**
+
+```text
+
+- Canonical envelope structure `CRCPEnvelope`)
+
+```
+
+**SN-2121**
+
+```text
+
+- Version negotiation handshake `ClientHello` / `ServerHello`)
+
+```
+
+**SN-2122**
+
+```text
+
+- Version negotiation handshake `ClientHello` / `ServerHello`)
 
 ```

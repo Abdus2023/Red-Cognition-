@@ -1,8 +1,8 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
-  Origin: corpus message #30, sub-message [339], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-030-original-part5.md
-  Status in corpus: ratification record for RFC-0072 CRCP Wire Format and Binary Message Encoding v1.6 (Status: Ratified; ratification declaration; ratified components; Canonical Binary Encoding interoperability baseline; status-table snapshot conflicts with corpus ratification events per C-19, preserved verbatim). Source quirks preserved as received: missing opening parentheses in two "Ratified Components" bullets ("...structure `CRCPEnvelope`)" and "...handshake `ClientHello` / `ServerHello`)"); parent RFC-0071 still Candidate while child ratified (governance observation recorded by review [340] — X-136).
+  Origin: corpus message #31, sub-message [353], 2026-08-11
+  Verbatim source: knowledge-base/sources/message-031-original-part4.md
+  Status in corpus: final revised ratification record for RFC-0072 CRCP Wire Format v1.6 (Status: Ratified; provisional-effectiveness note pending parent RFC-0071 ratification; ratified components; Current Red/Cognition RFC Status table — snapshot conflicts with corpus ratification events per C-19, preserved verbatim; Registry Governance; Protocol Evolution Policy; Change Control; Normative References; Related Specifications; Conformance Profile; approved for publication per [352]/[354]/[356]/[358]/[360]). Revision arc: original record [339] (msg#30; identical re-sends [341]/[343]/[345]/[347] — D-99) → revision [349] (parent-dependency note, renamed status heading + RFC-0060/0061 rows, registry governance, evolution policy, references, conformance profile) → [351] (+ Change Control) → [353] (Change Control moved before Normative References; identical re-sends [355]/[357]/[359] — D-100); supersedes the [339]-based scaffold of msg#30 (D-95 lineage extended; [339] retained in archive). Source quirks preserved as received: missing opening parentheses in two "Ratified Components" bullets ("...structure `CRCPEnvelope`)" and "...handshake `ClientHello` / `ServerHello`)") — flagged by every review [346]–[358] but never corrected in the corpus; [360] nevertheless states the editorial issues "have been corrected" (X-140).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
@@ -28,6 +28,8 @@
 ### Ratification Declaration
 
 **RFC-0072 — Cognitive Runtime Coordination Protocol (CRCP) Wire Format and Binary Message Encoding v1.6** is hereby ratified as a normative specification of the Red/Cognition platform.
+
+**Note on parent dependency:** Ratification of RFC-0072 is considered effective upon ratification of its parent specification, RFC-0071. Until RFC-0071 reaches Ratified status, implementations of RFC-0072 are expected to treat it provisionally.
 
 From this point forward:
 
@@ -65,7 +67,7 @@ The following are now part of the normative wire protocol model:
 
 - Transport independence with mandatory properties
 
-### Current Ratified / Near-Ratified Foundation
+### Current Red/Cognition RFC Status
 
 | RFC       | Topic                                      | Status             |
 
@@ -175,6 +177,66 @@ The following are now part of the normative wire protocol model:
 
 | **RFC-0059** | **Cognitive Transaction Security and Trust Profile** | **Ratified**    |
 
+| RFC-0060  | CVM Instruction Execution and Scheduling   | Candidate          |
+
+| RFC-0061  | CVM Instruction Set and Register Architecture | Planned         |
+
+### Registry Governance
+
+New assignments to protocol registries defined by RFC-0072 (Message Types, Flags, Encoding Profiles, Error Codes) **SHALL** require either:
+
+- a subsequently ratified RFC, or
+
+- approval by the designated protocol registry authority.
+
+### Protocol Evolution Policy
+
+- Major version increments **MAY** introduce incompatible wire-format changes.
+
+- Minor version increments **MUST** remain backward compatible within the same major version.
+
+- Experimental features **MUST** remain within reserved registry ranges.
+
+- Deprecated fields remain reserved until a future major revision.
+
+### Change Control
+
+Following ratification, substantive modifications to RFC-0072 **SHALL** require publication of a new revision or superseding RFC. Editorial corrections that do not alter normative behavior **MAY** be issued as errata.
+
+### Normative References
+
+- RFC-0071 — Cognitive Runtime Coordination Protocol
+
+- RFC-0018 — Event Log and Deterministic Replay
+
+### Related Specifications
+
+- RFC-0058 — Cognitive Transaction Wire Protocol and Message Encoding
+
+- RFC-0059 — Cognitive Transaction Security and Trust Profile
+
+- RFC-0041 — Cognitive Interoperability and Federation
+
+### Conformance Profile (Minimal Interoperable Implementation)
+
+A conforming implementation **SHALL**:
+
+- Implement `ClientHello` / `ServerHello` negotiation
+
+- Support Canonical Binary Encoding
+
+- Implement deterministic serialization
+
+- Validate replay protection metadata
+
+- Recognize all mandatory message types
+
+- Reject unsupported major protocol versions
+
 ### Next Phase
 
 The logical next specification is **RFC-0061 — Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA)**, which would define the concrete register model, operand semantics, and instruction encoding details that sit beneath the execution semantics established in RFC-0060, completing the executable representation layer of the Cognitive Virtual Machine.
+
+---
+
+**RFC-0072 v1.6 is hereby ratified.**

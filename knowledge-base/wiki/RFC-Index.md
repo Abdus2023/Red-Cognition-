@@ -488,3 +488,21 @@ The RFC-0072 ratification record ([339]) "Current Ratified / Near-Ratified Found
 
 RFC-0072 drafting followed the [320] roadmap ("RFC-0072 — CRCP Wire Format and Binary Message Encoding"). Follow-on proposals diverge: [322] proposed RFC-0073 Session Establishment & Authentication / RFC-0074 Transport Bindings / RFC-0075 Cryptographic Profiles / RFC-0076 Distributed Consensus & Coordination Semantics / RFC-0077 Federated Runtime Discovery & Membership; [338] proposed RFC-0073 Canonical Binary Encoding (CBE) / RFC-0074 CRCP Security Profiles / RFC-0075 Transport Bindings / RFC-0076 Compression Profiles / RFC-0077 Capability & Feature Registry / RFC-0078 Message Schema Registry; both diverge from the [320] numbering (RFC-0073 = Federated Runtime Membership and Consensus).
 
+---
+
+## Message #31 additions — RFC-0072 ratification record revision arc; publication approval (sub-messages [341]–[360])
+
+### Record revision arc (scaffold source updated)
+
+Message #31 iterates the RFC-0072 v1.6 ratification record to publication quality:
+
+- Original record [339] (msg#30) re-sent identically four times: [341]/[343]/[345]/[347] — D-99; governance reviews [342]/[344]/[346]/[348] (parent dependency, roadmap consistency, normative references, registry governance, evolution policy, conformance profile).
+- Revision [349]: adds **Note on parent dependency** (ratification effective upon RFC-0071 ratification; provisional until then), renames the table to "Current Red/Cognition RFC Status" adding RFC-0060 (Candidate) / RFC-0061 (Planned) rows (both already ratified elsewhere in the corpus — C-19 pattern persists), and adds Registry Governance, Protocol Evolution Policy, Normative References (RFC-0071, RFC-0018), Related Specifications (RFC-0058/0059/0041), Conformance Profile (minimal interoperable implementation).
+- Revision [351]: adds **Change Control** (substantive modifications require new revision/superseding RFC; editorial corrections as errata).
+- Revision [353]: Change Control moved before Normative References — final form; re-sent identically at [355]/[357]/[359] — D-100.
+- Approvals: [350] (10/10 governance), [352] ("Approve for publication", 10/10), [354]/[356]/[358] (approved, editorial fixes only), [360] ("Approved as the publication version of RFC-0072 v1.6"; optional status-wording note "Ratified (Pending Parent Ratification)" / "Provisionally Ratified").
+- Scaffold `rfcs/RFC-0072-ratification-record.md` updated from [339] to **[353]** (first occurrence of the approved final form). The record's stray-parenthesis bullets persist through every iteration including [359] (flagged by [346]–[358]; [360] claims them corrected — X-140).
+
+### Conflict C-19 (extended)
+
+C-19 now covers [339] and its revised iterations [349]–[359]: the revised table adds RFC-0060 "Candidate" and RFC-0061 "Planned" although both were ratified (RFC-0060 per [285], RFC-0061 per [300]/[301]), and retains the stale RFC-0002/0003/0004 "Ratification-ready", RFC-0046/0047/0048 "Final Candidate", and RFC-0012 "Ratified" entries. Ratification events remain authoritative; tables preserved verbatim.

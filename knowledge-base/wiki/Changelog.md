@@ -2,6 +2,16 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-11 — Message #31 processed ([341]–[360]: RFC-0072 ratification record revision arc; publication approval)
+
+- **Source:** Conversation message #31 — a 20-part transcript ([341]–[360]; speakers USER, CHATGPT (gpt-5-5)): the RFC-0072 v1.6 ratification record iterated to publication quality — original record [339] re-sent four times ([341]/[343]/[345]/[347]) with governance reviews ([342]/[344]/[346]/[348]); revision [349] (parent-dependency note with provisional effectiveness, renamed status table + RFC-0060/0061 rows, Registry Governance, Protocol Evolution Policy, Normative References, Related Specifications, Conformance Profile) → [351] (+ Change Control) → [353] (section reorder; final form, re-sent [355]/[357]/[359]); approvals [350]/[352]/[354]/[356]/[358]/[360] culminating in "Approved as the publication version of RFC-0072 v1.6".
+- **Classification:** Record evolution; duplicates D-99 ([339]≡[341]≡[343]≡[345]≡[347]) and D-100 ([353]≡[355]≡[357]≡[359]) added; conflict C-19 extended to the revised tables (RFC-0060 "Candidate" / RFC-0061 "Planned" added although both ratified); X-140 records the reviews' never-corrected stray-parenthesis flags and [360]'s contrary "corrected" claim. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-031-original-part1..5.md` ([341]–[344], [345]–[348], [349]–[352], [353]–[356], [357]–[360]).
+  - Repository scaffolding (documented placement, RC-000 §8): `rfcs/RFC-0072-ratification-record.md` updated [339] → [353] (first occurrence of the approved final form) — programmatic, byte-exact. Totals unchanged: 12 specs + 86 rfcs files (72 RFC documents + 14 ratification records).
+  - 28 code snippets extracted (SN-2095…SN-2122), embedded verbatim in Code Snippets Message #31 Annex (reviews' quotation fences); corpus total now **2122 snippets**.
+  - Wiki pages updated (6): RFC Index (record revision arc, C-19 extended), Glossary (+5 governance terms), Code Snippets, Changelog, Source Traceability, README index.
+  - Cross-references added: X-138…X-140 (3). Report: `reports/message-031-report.md`.
 ## 2026-08-11 — Message #30 processed ([321]–[340]: RFC-0072 CRCP Wire Format v1.6 RATIFIED)
 
 - **Source:** Conversation message #30 — a 20-part transcript ([321]–[340]; speakers USER, CHATGPT (gpt-5-5)): RFC-0072 CRCP Wire Format and Binary Message Encoding full version arc — v1.0 ([321]) → v1.1 ([323]) → v1.2 ([325]) → v1.3 ([327], re-send [329]) → v1.4 ([331]) → v1.5 ([333]) → v1.6 ([335], re-send [337]) — with nine reviews ([322]/[324]/[326]/[328]/[330]/[332]/[334]/[336]/[338]; final review [338] recommended Release Candidate, not Final), ratification record ([339], **RATIFIED**), and governance review of the record ([340]).
