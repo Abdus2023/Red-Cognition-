@@ -2,18 +2,6 @@
   "generated_from": "existing corpus only",
   "files": [
     {
-      "path": "rfcs/.gitkeep",
-      "document_type": "RFC",
-      "source_origin": "existing extracted corpus/repository file",
-      "related_documents": []
-    },
-    {
-      "path": "rfcs/README.md",
-      "document_type": "RFC",
-      "source_origin": "existing extracted corpus/repository file",
-      "related_documents": []
-    },
-    {
       "path": "rfcs/RFC-0001-cognitive-type-system.md",
       "document_type": "RFC",
       "source_origin": "existing extracted corpus/repository file",

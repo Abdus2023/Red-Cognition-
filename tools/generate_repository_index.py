@@ -43,7 +43,8 @@ groups=[('RFC','rfcs'),('Specification','docs/specifications'),('Extracted sourc
 files=[]
 for typ, rel in groups:
     base=ROOT/rel
-    for f in sorted(base.rglob('*')):
+    candidates = sorted(base.glob('RFC-*.md')) if rel == 'rfcs' else sorted(base.rglob('*'))
+    for f in candidates:
         if f.is_file(): files.append({'path':f.relative_to(ROOT).as_posix(),'document_type':typ,'source_origin':'existing extracted corpus/repository file','related_documents':[]})
 (DOCS/'repository-file-index.json').write_text(json.dumps({'generated_from':'existing corpus only','files':files},indent=2)+'\n')
 fi=['# Repository File Index','','Machine-readable complete index: [`repository-file-index.json`](repository-file-index.json). It inventories existing RFCs, extracted source fragments, reports, and wiki pages without moving them.','','| Type | Count | Existing location |','|---|---:|---|']
