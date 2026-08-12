@@ -1,13 +1,17 @@
 {
   "indexed_files": 339,
-  "expected_files": 339,
-  "missing_files": [],
+  "expected_files": 340,
+  "missing_files": [
+    "rfcs/README.md"
+  ],
   "stale_files": [],
   "rfc_files": 92,
   "unique_rfc_ids": 75,
   "missing_rfcs": [],
   "wiki_pages": 39,
   "missing_wiki_pages": [],
-  "result": "PASS",
-  "errors": []
+  "result": "FAIL",
+  "errors": [
+    "indexed corpus files missing: 1"
+  ]
 }

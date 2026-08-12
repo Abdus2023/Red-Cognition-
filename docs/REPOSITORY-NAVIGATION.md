@@ -1,6 +1,6 @@
 # Repository Navigation
 
-These navigation documents organize the existing extracted corpus without relocating, renaming, merging, or deleting any source material.
+Start at [Documentation Navigation](README.md). These navigation documents organize the existing extracted corpus without relocating, renaming, merging, or deleting any source material.
 
 - [RFC Index](RFC-INDEX.md) — header-derived RFC number, title, status, version, parent, children, and textual related-RFC references.
 - [Wiki Index](WIKI-INDEX.md) — existing wiki pages in their current locations.
