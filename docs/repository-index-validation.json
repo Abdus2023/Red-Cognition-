@@ -9,6 +9,7 @@
   "wiki_pages": 39,
   "missing_wiki_pages": [],
   "dependency_edges": 1122,
+  "rfc_artifact_groups": 17,
   "result": "PASS",
   "errors": []
 }

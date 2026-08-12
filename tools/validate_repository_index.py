@@ -34,10 +34,23 @@ rfc_paths={f.relative_to(ROOT).as_posix() for f in rfc_files}
 for edge in dependency_edges:
     if edge.get('source') not in rfc_paths: errors.append(f"dependency edge has unknown source: {edge.get('source')}")
     if edge.get('kind') != 'textual RFC reference': errors.append('dependency edge has unsupported inferred kind')
-result={'indexed_files':len(indexed),'expected_files':len(expected),'missing_files':missing,'stale_files':stale,'rfc_files':len(rfc_files),'unique_rfc_ids':len(rfc_ids),'missing_rfcs':missing_rfcs,'wiki_pages':len(wiki_paths),'missing_wiki_pages':missing_wikis,'dependency_edges':len(dependency_edges),'result':'PASS' if not errors else 'FAIL','errors':errors}
+try:
+    artifact_groups=json.loads((DOCS/'rfc-artifact-groups.json').read_text()).get('groups',{})
+except Exception as exc:
+    artifact_groups={}; errors.append(f'cannot read RFC artifact groups: {exc}')
+actual_groups={}
+for f in rfc_files:
+    ident=re.search(r'RFC-(\d{4})',f.name).group(0)
+    actual_groups.setdefault(ident,[]).append(f.relative_to(ROOT).as_posix())
+actual_groups={k:v for k,v in actual_groups.items() if len(v)>1}
+if set(artifact_groups) != set(actual_groups): errors.append('RFC artifact group identifier mismatch')
+for ident, paths in actual_groups.items():
+    listed={x.get('path') for x in artifact_groups.get(ident,[])}
+    if listed != set(paths): errors.append(f'RFC artifact group paths mismatch: {ident}')
+result={'indexed_files':len(indexed),'expected_files':len(expected),'missing_files':missing,'stale_files':stale,'rfc_files':len(rfc_files),'unique_rfc_ids':len(rfc_ids),'missing_rfcs':missing_rfcs,'wiki_pages':len(wiki_paths),'missing_wiki_pages':missing_wikis,'dependency_edges':len(dependency_edges),'rfc_artifact_groups':len(artifact_groups),'result':'PASS' if not errors else 'FAIL','errors':errors}
 (DOCS/'repository-index-validation.json').write_text(json.dumps(result,indent=2)+'\n')
 print('REPOSITORY INDEX VALIDATION\n===========================')
-for k in ('indexed_files','expected_files','rfc_files','unique_rfc_ids','wiki_pages','dependency_edges'): print(f'{k.replace("_"," ").title()+":":<24} {result[k]}')
+for k in ('indexed_files','expected_files','rfc_files','unique_rfc_ids','wiki_pages','dependency_edges','rfc_artifact_groups'): print(f'{k.replace("_"," ").title()+":":<24} {result[k]}')
 print('RESULT:',result['result'])
 for error in errors: print('ERROR:',error)
 sys.exit(0 if not errors else 1)
