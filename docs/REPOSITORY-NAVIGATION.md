@@ -5,6 +5,7 @@ These navigation documents organize the existing extracted corpus without reloca
 - [RFC Index](RFC-INDEX.md) — header-derived RFC number, title, status, version, parent, children, and textual related-RFC references.
 - [Wiki Index](WIKI-INDEX.md) — existing wiki pages in their current locations.
 - [Architecture Index](ARCHITECTURE-INDEX.md) — explicitly named architecture/runtime documents.
+- [Source and Test Index](SOURCE-INDEX.md) — existing code/test path navigation without inferred dependencies.
 - [File Index](FILE-INDEX.md) — corpus inventory and machine-readable companion.
 - [Traceability](traceability/rfc-0075/README.md) — existing RFC-0075 evidence package.
 

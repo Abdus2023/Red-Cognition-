@@ -13,6 +13,7 @@ This directory retains the existing documentation hierarchy. The links below are
 
 - [RFC corpus index](RFC-INDEX.md) → [`../rfcs/`](../rfcs/)
 - [Architecture index](ARCHITECTURE-INDEX.md)
+- [Source and test index](SOURCE-INDEX.md)
 - [Wiki index](WIKI-INDEX.md)
 - [`specifications/`](specifications/) — existing technical specifications
 - [`traceability/`](traceability/) — existing traceability packages
