@@ -14,11 +14,11 @@ The inspected authoritative target is `rfcs/RFC-0075-cfckep-federation-collabora
 | Unverified / specified-only requirements | 31 |
 | Critical gaps | 4 |
 | High gaps | 4 |
-| Conflicts | 3 |
+| Conflicts | 4 |
 | Traceability coverage (requirements with implementation or test / 31) | 0% |
 | Evidence confidence | E0: 0; E1: 31; E2–E6: 0 |
 
 **Overall status: NOT TRACEABLE.** The candidate text is traceable as a claim source only (E1). Its required lower layers are absent or unspecified.
 
 ## Ratification readiness
-**NOT READY FOR RATIFICATION.** This follows from the collected evidence: no executable CFCKEP implementation or tests, no wire/cryptographic/conformance definition, unresolved deterministic replay inputs, and CADFP copy-artifact conflicts. This conclusion does not alter the RFC.
+**NOT READY FOR RATIFICATION.** This follows from the collected evidence: no executable CFCKEP implementation or tests, no wire/cryptographic/conformance definition, unresolved deterministic replay inputs, CADFP copy-artifact conflicts, and a materially divergent conditional-ratification record. This conclusion does not alter the RFC.

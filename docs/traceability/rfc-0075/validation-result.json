@@ -7,7 +7,7 @@
   "tests": 0,
   "evidence_records": 1,
   "critical_gaps": 4,
-  "conflicts": 3,
+  "conflicts": 4,
   "broken_rfc_references": [],
   "errors": [
     "unresolved critical gaps: 4",
