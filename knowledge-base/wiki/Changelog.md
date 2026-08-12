@@ -2,6 +2,16 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-12 — Message #33 processed ([381]–[400]: RFC-0062/0063/0064 RATIFIED; RFC-0065/0066/0067 re-purposed lineage)
+
+- **Source:** Conversation message #33 — a 20-part transcript ([381]–[400]; speakers USER, CHATGPT (gpt-5-5-mini); outer wrapper fence removed): RFC-0062 CVM-BF v1.3 **RATIFIED** ([381], acks [382]/[383]); RFC-0063 CVM-FOS divergent v1.0 [384] (D-105) + v1.1 **RATIFIED** ([385], ack [386]); RFC-0064 CCC-VTP v1.0 re-presentation [387] (D-106) → v1.1 [389] (+TCB) → approved [390] → **RATIFIED** ([391], acks [392]/[393]); RFC-0065/0066/0067 lineage re-purposing (C-21): CPCPF→CPCAVP ([394]/[395]/[396]), CPRDP→CARTDP ([397]/[398]), CPM-WS→CDLMP ([399]/[400]); "Cognitive Software Supply Chain" milestone; next RFC-0068 CRGAOP proposed.
+- **Classification:** Ratifications (RFC-0062 v1.3, RFC-0063 v1.1, RFC-0064 v1.1); duplicates D-105…D-109; conflicts C-20 (status-table snapshots in [381]/[385]/[391]) and C-21 (RFC-0065/0066/0067 dual lineage); X-145…X-151. All versions preserved.
+- **Actions taken:**
+  - Verbatim archive: `sources/message-033-original-part1..5.md` ([381]–[384], [385]–[388], [389]–[392], [393]–[396], [397]–[400]).
+  - Repository scaffolding (documented placement, RC-000 §8): 3 new ratification records ([381]/[385]/[391]); RFC-0064 document updated [307]→[389] v1.1; RFC-0063 document provenance updated (ratified; D-105 noted; body remains [306]); RFC-0065/0066/0067 scaffolds replaced & renamed (CPCPF→CPCAVP, CPRDP→CARTDP, CPM-WS→CDLMP; msg#29 forms preserved in archives) — programmatic, byte-exact. Totals: 12 specs + 89 rfcs files (72 RFC documents + 17 ratification records).
+  - 134 code snippets extracted (SN-2199…SN-2332), embedded verbatim in Code Snippets Message #33 Annex (LaTeX `\[ … \]` math blocks not fenced → not snippetized); corpus total now **2332 snippets**.
+  - Wiki pages updated (9): RFC Index (status updates, ratified set 22 docs, C-20/C-21, roadmap, historical links re-pointed to renamed files), Architecture, Data Models, Security, Workflows, Glossary (+9 terms), Code Snippets, Changelog, Source Traceability (+ README index).
+  - Cross-references added: X-145…X-151 (7). Report: `reports/message-033-report.md`.
 ## 2026-08-12 — Message #32 processed ([361]–[380]: RFC-0072 record publication form; RFC-0061 divergent v1.0; RFC-0062 v1.3 lineage)
 
 - **Source:** Conversation message #32 — a 20-part transcript ([361]–[380]; speakers USER, CHATGPT (gpt-5-5), CHATGPT (gpt-5-5-mini); arrived wrapped in one outer code fence — wrapper removed): RFC-0072 ratification record final publication form [361] (≡[363]≡[365]; Status-line effectiveness qualifier; stray parentheses corrected) with approvals [362]/[364]/[366]/[368] ("READY FOR PUBLICATION" + Publication Record) after USER directive [367] "READY"; RFC-0061 CISA-RA divergent v1.0 Draft [369] + review [370]; RFC-0062 CVM-BF lineage v1.0 [371] → v1.1 [373] → v1.2 [375] → v1.3 [377]/[379] with reviews [372]/[374]/[376]/[378] and final review [380] ("Ratification Recommendation: ACCEPT" pending five amendments; no USER ratification record).

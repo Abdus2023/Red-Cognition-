@@ -1,8 +1,8 @@
 <!--
   KB-Scaffold Provenance (knowledge-base traceability):
   Origin: corpus message #29, sub-message [306], 2026-08-11
-  Verbatim source: knowledge-base/sources/message-029-original-part2.md
-  Status in corpus: RFC-0063 CVM-FOS v1.1 (Candidate for Final Ratification) — CHATGPT final review / ratification-preparation draft ("READY FOR RATIFICATION"); supersedes v1.0 draft [305] (preserved in archive). No ratification decision present in corpus. Parent: RFC-0062 CVM-BF v1.1 (Candidate).
+  Verbatim source: knowledge-base/sources/message-029-original-part1.md
+  Status in corpus: RFC-0063 CVM-FOS v1.1 — RATIFIED per ratification record [385] (msg#33; acknowledgements [386]). Lineage: v1.0 Draft [305] (USER, msg#29); divergent CHATGPT-authored v1.0 variant [384] (msg#33 — D-105; preserved in archive); v1.1 Final Review / Ratification Preparation Draft [306] (CHATGPT) scaffolded here; v1.1 ratification record [385] scaffolded at RFC-0063-ratification-record.md. Parent: RFC-0062 CVM-BF v1.3 (Ratified per [381]).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->

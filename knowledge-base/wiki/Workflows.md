@@ -757,3 +757,14 @@ Created → Confirmed/Updated → Contradicted → Deprecated/Archived; semantic
 - **Sequence & recovery workflow** (RFC-0072 §12, [323]/[335]): every message carries MessageSequence { SourceNodeID, TargetNodeID, Epoch, SequenceNumber }; sequence numbers MUST increase monotonically; duplicates MUST be ignored; missing numbers MUST trigger recovery.
 - **Replay-protection workflow** (RFC-0072 §13, [323]/[335]): distributed deployments MUST include ReplayProtection { Nonce, SequenceNumber, Epoch, SessionID }; reviews flag remaining specification of nonce lifetime, replay window, and epoch rollover ([324]/[336]/[338]).
 - **Stream multiplexing workflow** (RFC-0072 §11, [333]/[335]): each logical coordination stream is assigned a StreamID (uint32); stream 0 reserved for control messages; stream open/close/reset, flow control, and ordering guarantees remain open items per reviews [336]/[338].
+
+---
+
+## Message #33 additions — artifact lifecycle workflows (msg#33 [381]–[400])
+
+> Provenance: corpus message #33 ([381]–[400]); verbatim archives `sources/message-033-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **CPCAVP verification workflow ([395]):** Artifact → Integrity Check → Proof Validation → Capability Validation → Effect Validation → Replay Validation → CVM Load.
+- **CARTDP publication workflow ([397]):** submit CPCAVP container + ownership proof + capability/effect/resource declarations → automated registry verification → signed publication receipt; discovery MUST be deterministic for the same query + registry state; dependency resolution on immutable ArtifactIDs into a machine-verifiable lockfile.
+- **CDLMP lifecycle workflow ([399]):** Created→Verified(CPCAVP)→Registered→Approved→Deployed(into Sandbox)→Activated→Monitored→Updated/Migrated→Suspended/Rolled Back→Retired/Archived, every transition emitting a unified event-log event; migrations checkpointed and bounded by RFC-0057 transactions.
+- **Artifact security lifecycle ([398]):** Create→Compile→Prove→Publish→Verify→Distribute→Install→Execute→Monitor→Revoke/Retire.

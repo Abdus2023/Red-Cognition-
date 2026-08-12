@@ -256,3 +256,14 @@ Shell MUST NOT directly modify cognitive state or bypass capability checks. Huma
 - **Message security flags** (RFC-0072 flag registry, [321]/[335]): bit 0 Authenticated, 1 Encrypted, 2 Compressed, 3 ReplayProtected, 4 PriorityMessage, 5 ControlMessage, 6 Streaming, 7–15 Reserved (MUST be zero from v1.5; receiver behavior for non-zero reserved bits flagged as required by [336]/[338]).
 - **Integrity and authentication model** (RFC-0072 §8–9, [321]/[335]): messages MAY carry a cryptographic hash, a digital signature from the sending node, and a replay-protection token; v1.5+ defines IntegrityBlock { AlgorithmID, HashLength, Hash, SignatureAlgorithm, SignatureLength, Signature }; algorithm/security-profile/compression registries and authentication semantics (message vs session signature, mutual authentication, anonymous mode, federation trust) are deferred to future RFCs ([334]/[336]/[338]).
 - **Ratified security baseline** ([339]): conforming implementations MUST support at least the Canonical Binary Encoding profile; all CRCP exchanges MUST use the framing, versioning, and integrity mechanisms of RFC-0072 v1.6.
+
+---
+
+## Message #33 additions — zero-trust compilation and artifact trust (msg#33 [381]–[400])
+
+> Provenance: corpus message #33 ([381]–[400]); verbatim archives `sources/message-033-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Zero-trust compilation (RFC-0064, ratified [391]):** the verifier, not the compiler, is the root of trust; compiler MUST NOT introduce hidden capabilities, bypass policy constraints, or weaken execution restrictions ([392]); capability preservation Capabilities(Compiled) ⊆ Capabilities(Source) ([390]).
+- **Artifact verification boundary (RFC-0065 CPCAVP [395]):** untrusted = compiler/optimizer/artifact generator/package registry; trusted = cryptographic primitives, proof checker, formal semantics kernel, minimal parser; artifacts failing integrity/proof/capability/effect/replay validation MUST NOT execute in Verified profiles.
+- **Registry trust (RFC-0066 CARTDP [397]):** acceptance by verifiable proofs/signatures/attestations/provenance rather than reputation; revocation MUST invalidate future installations and propagate to federated registries.
+- **Deployment as security boundary (RFC-0067 CDLMP [399]/[400]):** runtime admission pipeline Artifact Verification→Capability Validation→Resource Allocation→Sandbox Creation→CVM Initialization→Activation; proposed AdmissionCertificate ties deployment to verified execution.

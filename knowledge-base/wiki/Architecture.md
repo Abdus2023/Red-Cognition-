@@ -969,3 +969,14 @@ The ratified RFC semantic core (RFC-0001…0004) plus capability/skill/memory mo
 - **Transport independence** ([321] §2, [338]): the CRCP encoding is usable over TCP, QUIC, IPC, and message queues; transport-specific bindings are reserved for separate future RFCs.
 - **Version arc** ([321]→[335]): v1.0 framing/registries → v1.1 canonical envelope + encoding profiles + stream multiplexing + sequence ordering + replay protection → v1.5 unified framing/envelope with explicit field types, handshake messages, TraceContext, IntegrityBlock, ErrorMessage → v1.6 MessageLength semantics + feature/encoding bitmaps; ratified at v1.6 with Canonical Binary Encoding as the mandatory interoperability baseline ([339]).
 - **Governance note** ([340]): RFC-0072 was ratified while its parent RFC-0071 remains Draft/Candidate; the corpus records the recommendation to ratify the parent first (or explicitly mark provisional ratification), plus registry-governance and change-control guidance (incompatible changes require a new major protocol version).
+
+---
+
+## Message #33 additions — execution foundation formally ratified; verified supply chain layer (msg#33 [381]–[400])
+
+> Provenance: corpus message #33 ([381]–[400]); verbatim archives `sources/message-033-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Execution foundation complete:** RFC-0062 CVM-BF v1.3 **RATIFIED** ([381]) joins RFC-0060/RFC-0061 — "Executable Cognitive Machine" milestone ([382]); RFC-0063 CVM-FOS v1.1 **RATIFIED** ([385]) — the CVM is now "a deterministic, capability-aware, transaction-safe, replay-compatible abstract machine with formally specified state transitions" ([386]); RFC-0064 CCC-VTP v1.1 **RATIFIED** ([391]) — the compiler is formally positioned as a verified translation system rather than a trusted opaque component ([392]).
+- **Verified compilation chain:** CLS ≈ CIR ≈ Optimized CIR ≈ CISA ≈ CVM Bytecode ≈ CVM Execution Trace (semantic equivalence under CVM-FOS, normative per [390]); Trusted Computing Base limits trust to the semantics kernel/proof checker/minimal verifier/cryptographic primitives ([389] §6).
+- **Cognitive Software Supply Chain layer ([400]):** Intent→Language→Compiler→Proof→Artifact→Registry→Deployment→Execution→Observation→Evolution, across RFC-0065 CPCAVP (trusted artifact), RFC-0066 CARTDP (trust distribution), RFC-0067 CDLMP (deployment lifecycle) — msg#33 lineage re-purposes those numbers from their msg#29 forms (C-21).
+- **Layering note:** ratified execution stack after message #33 = RFC-0060 execution + RFC-0061 instruction architecture + RFC-0062 bytecode + RFC-0063 formal semantics + RFC-0064 verified compiler ([392] table); next proposed layer RFC-0068 CRGAOP (runtime governance) per [400] — numbering collision with the msg#29 RFC-0068 CBS-RAP scaffold noted (C-21).
