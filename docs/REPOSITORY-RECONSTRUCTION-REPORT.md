@@ -6,6 +6,7 @@ Organization-only pass over the existing extracted corpus. No RFC, source fragme
 ## Summary
 - Directories created: none. Existing `docs/` was used for generated navigation artifacts.
 - RFC files indexed: 92 in `rfcs/`.
+- Same-number RFC artifact groups preserved: 17 (see `RFC-ARTIFACT-GROUPS.md`).
 - Specifications indexed: 52 in `docs/specifications/`.
 - Extracted source fragments indexed: 103.
 - Extraction reports indexed: 52.
