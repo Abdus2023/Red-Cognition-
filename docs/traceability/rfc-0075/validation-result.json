@@ -1,0 +1,18 @@
+{
+  "specification": "RFC-0075",
+  "requirements": 31,
+  "mapped": 0,
+  "orphaned": 31,
+  "implementations": 0,
+  "tests": 0,
+  "evidence_records": 1,
+  "critical_gaps": 4,
+  "conflicts": 4,
+  "broken_rfc_references": [],
+  "errors": [
+    "unresolved critical gaps: 4",
+    "inconsistent terminology: CADFP appears in RFC-0075"
+  ],
+  "warnings": [],
+  "result": "FAIL"
+}

@@ -1,0 +1,15 @@
+{
+  "indexed_files": 338,
+  "expected_files": 338,
+  "missing_files": [],
+  "stale_files": [],
+  "rfc_files": 92,
+  "unique_rfc_ids": 75,
+  "missing_rfcs": [],
+  "wiki_pages": 39,
+  "missing_wiki_pages": [],
+  "dependency_edges": 1122,
+  "rfc_artifact_groups": 17,
+  "result": "PASS",
+  "errors": []
+}
