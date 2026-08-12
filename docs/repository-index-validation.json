@@ -8,6 +8,7 @@
   "missing_rfcs": [],
   "wiki_pages": 39,
   "missing_wiki_pages": [],
+  "dependency_edges": 1122,
   "result": "PASS",
   "errors": []
 }

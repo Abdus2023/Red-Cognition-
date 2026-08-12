@@ -25,10 +25,19 @@ wiki_text=(DOCS/'WIKI-INDEX.md').read_text() if (DOCS/'WIKI-INDEX.md').is_file()
 wiki_paths=[f.relative_to(ROOT).as_posix() for base in ('knowledge-base/wiki','docs/wiki') for f in (ROOT/base).glob('*.md')]
 missing_wikis=sorted(x for x in wiki_paths if f'`{x}`' not in wiki_text)
 if missing_wikis: errors.append(f'wiki index omissions: {len(missing_wikis)}')
-result={'indexed_files':len(indexed),'expected_files':len(expected),'missing_files':missing,'stale_files':stale,'rfc_files':len(rfc_files),'unique_rfc_ids':len(rfc_ids),'missing_rfcs':missing_rfcs,'wiki_pages':len(wiki_paths),'missing_wiki_pages':missing_wikis,'result':'PASS' if not errors else 'FAIL','errors':errors}
+# Dependency navigation may list only references that occur in an indexed RFC artifact.
+try:
+    dependency_edges=json.loads((DOCS/'rfc-dependency-map.json').read_text()).get('edges',[])
+except Exception as exc:
+    dependency_edges=[]; errors.append(f'cannot read dependency map: {exc}')
+rfc_paths={f.relative_to(ROOT).as_posix() for f in rfc_files}
+for edge in dependency_edges:
+    if edge.get('source') not in rfc_paths: errors.append(f"dependency edge has unknown source: {edge.get('source')}")
+    if edge.get('kind') != 'textual RFC reference': errors.append('dependency edge has unsupported inferred kind')
+result={'indexed_files':len(indexed),'expected_files':len(expected),'missing_files':missing,'stale_files':stale,'rfc_files':len(rfc_files),'unique_rfc_ids':len(rfc_ids),'missing_rfcs':missing_rfcs,'wiki_pages':len(wiki_paths),'missing_wiki_pages':missing_wikis,'dependency_edges':len(dependency_edges),'result':'PASS' if not errors else 'FAIL','errors':errors}
 (DOCS/'repository-index-validation.json').write_text(json.dumps(result,indent=2)+'\n')
 print('REPOSITORY INDEX VALIDATION\n===========================')
-for k in ('indexed_files','expected_files','rfc_files','unique_rfc_ids','wiki_pages'): print(f'{k.replace("_"," ").title()+":":<24} {result[k]}')
+for k in ('indexed_files','expected_files','rfc_files','unique_rfc_ids','wiki_pages','dependency_edges'): print(f'{k.replace("_"," ").title()+":":<24} {result[k]}')
 print('RESULT:',result['result'])
 for error in errors: print('ERROR:',error)
 sys.exit(0 if not errors else 1)
