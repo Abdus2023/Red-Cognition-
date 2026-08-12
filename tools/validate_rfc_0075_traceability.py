@@ -9,7 +9,7 @@ required_docs=['README.md','00-overview.md','01-source-authority.md','02-require
 errors=[]; warnings=[]
 for name in required_docs:
     if not (D/name).is_file(): errors.append(f'missing package artifact: {name}')
-data=json.loads((D/'traceability.json').read_text()); target=ROOT/'rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md'
+data=json.loads((D/'traceability.json').read_text()); manifest=(D/'manifest.yaml').read_text() if (D/'manifest.yaml').is_file() else ''; target=ROOT/'rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md'
 if not target.is_file(): errors.append('missing authoritative RFC-0075 source')
 text=target.read_text() if target.is_file() else ''
 def unique(records, key, label, pattern=None):
@@ -27,6 +27,7 @@ evidence={x['id'] for x in data.get('evidence_records',[])}; statuses=set(data.g
 for r in reqs:
     rid=r.get('id','<unknown>'); source=r.get('source','')
     if not source or '§' not in source: errors.append(f'missing source location: {rid}')
+    if not isinstance(r.get('source_line'), int) or r['source_line'] < 1: errors.append(f'missing exact source line: {rid}')
     elif source.startswith('rfcs/RFC-0075'):
         sec=source.rsplit('§',1)[1].split(' (line',1)[0]
         if not re.search(r'^###\s+'+re.escape(sec)+r'[. ]',text,re.M): errors.append(f'broken source section: {rid} → {sec}')
@@ -46,6 +47,11 @@ if broken: errors.append('broken RFC references: '+', '.join(broken))
 orphan=[r['id'] for r in reqs if not r.get('implementation') and not r.get('test')]
 critical=sum(x.get('severity')=='CRITICAL' for x in data.get('gaps',[]))
 if critical: errors.append(f'unresolved critical gaps: {critical}')
+# Keep manifest summary synchronized with the authoritative machine inventory.
+for label, actual in [('requirements',len(reqs)), ('conflicts',len(data.get('conflicts',[])))]:
+    m=re.search(r'^  '+label+r': \{[^}]*total: (\d+)',manifest,re.M)
+    if not m: errors.append(f'missing manifest total: {label}')
+    elif int(m.group(1)) != actual: errors.append(f'manifest total mismatch: {label}')
 if 'CADFP' in text: errors.append('inconsistent terminology: CADFP appears in RFC-0075')
 result={'specification':'RFC-0075','requirements':len(reqs),'mapped':len(reqs)-len(orphan),'orphaned':len(orphan),'implementations':len(impl_ids),'tests':len(test_ids),'evidence_records':len(evidence),'critical_gaps':critical,'conflicts':len(data.get('conflicts',[])),'broken_rfc_references':broken,'errors':errors,'warnings':warnings,'result':'PASS' if not errors else 'FAIL'}
 (D/'validation-result.json').write_text(json.dumps(result,indent=2)+'\n')
