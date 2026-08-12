@@ -15,3 +15,7 @@ These navigation documents organize the existing extracted corpus without reloca
 - `knowledge-base/reports/`: extraction/verification reports.
 - `knowledge-base/wiki/` and `docs/wiki/`: existing wiki material.
 - Existing source and test paths remain unchanged; no code snippets were relocated.
+
+## Validation
+
+Regenerate with `python3 tools/generate_repository_index.py` and verify with `python3 tools/validate_repository_index.py`. The validator writes `docs/repository-index-validation.json`.

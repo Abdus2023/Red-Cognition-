@@ -22,4 +22,4 @@ Organization-only pass over the existing extracted corpus. No RFC, source fragme
 - Every existing wiki markdown page in `knowledge-base/wiki/` and `docs/wiki/` is represented in `WIKI-INDEX.md`: PASS.
 - No code or documentation relocation was performed, so no unsupported destination was guessed: PASS.
 
-Regenerate with `python3 tools/generate_repository_index.py`.
+Regenerate with `python3 tools/generate_repository_index.py`; verify with `python3 tools/validate_repository_index.py`.

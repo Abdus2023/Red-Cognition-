@@ -1,0 +1,12 @@
+{
+  "indexed_files": 339,
+  "expected_files": 339,
+  "missing_files": [],
+  "stale_files": [],
+  "rfcs": 75,
+  "missing_rfcs": [],
+  "wiki_pages": 39,
+  "missing_wiki_pages": [],
+  "result": "PASS",
+  "errors": []
+}
