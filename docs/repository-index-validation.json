@@ -1,10 +1,10 @@
 {
   "indexed_files": 339,
-  "expected_files": 340,
-  "missing_files": [
-    "rfcs/README.md"
+  "expected_files": 338,
+  "missing_files": [],
+  "stale_files": [
+    "rfcs/.gitkeep"
   ],
-  "stale_files": [],
   "rfc_files": 92,
   "unique_rfc_ids": 75,
   "missing_rfcs": [],
@@ -12,6 +12,6 @@
   "missing_wiki_pages": [],
   "result": "FAIL",
   "errors": [
-    "indexed corpus files missing: 1"
+    "stale indexed corpus files: 1"
   ]
 }

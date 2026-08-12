@@ -9,8 +9,9 @@ try:
 except Exception as exc:
     inventory=[]; errors.append(f'cannot read file index: {exc}')
 indexed={x.get('path') for x in inventory}
-expected=set()
-for rel in ('rfcs','docs/specifications','knowledge-base/sources','knowledge-base/reports','knowledge-base/wiki','docs/wiki'):
+# The corpus scope intentionally includes RFC source artifacts, not this directory's generated README.
+expected={f.relative_to(ROOT).as_posix() for f in (ROOT/'rfcs').glob('RFC-*.md')}
+for rel in ('docs/specifications','knowledge-base/sources','knowledge-base/reports','knowledge-base/wiki','docs/wiki'):
     expected|={f.relative_to(ROOT).as_posix() for f in (ROOT/rel).rglob('*') if f.is_file()}
 missing=sorted(expected-indexed); stale=sorted(indexed-expected)
 if missing: errors.append(f'indexed corpus files missing: {len(missing)}')
