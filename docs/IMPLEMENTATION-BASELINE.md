@@ -35,3 +35,18 @@ Provide a working, compatible Rebol interpreter/toolchain as documented in `READ
 | Lexer behavior (not modified) | `docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md` | `lexer.r` |
 
 This baseline deliberately does not begin RFC-0075 implementation: its traceability package records unresolved schema, lifecycle, cryptographic, replay, and source-authority blockers.
+
+## Approved-artifact workspace gate (continued inspection)
+
+A repository-local inspection was completed before any further network bootstrap attempt:
+
+| Search area | Result |
+|---|---|
+| executable candidates named `rebol`, `r3`, or `red` | None present in the workspace |
+| vendored `.zip`, `.tar`, `.tar.gz`, `.tgz`, or `.7z` archives | None present in the workspace |
+| local SDK/toolchain/bootstrap directories | None present in the workspace |
+| CI/container definitions | `.travis.yml` and `.appveyor.yml` are present; no vendored artifact is present |
+
+The CI definitions document a Red-hosted external provisioning path: `.travis.yml` downloads `https://static.red-lang.org/tmp/rebol` to `/bin/rebol` for its Linux CI container, while `.appveyor.yml` provisions a Windows `rebview.exe`. These are provenance evidence for CI, not already-present workspace artifacts. This baseline gate does not substitute or download an artifact without an explicitly available approved artifact input.
+
+**Classification: BLOCKED — external prerequisite unavailable.** No artifact record, executable verification, or lexer harness execution can be produced because no compatible interpreter artifact is available locally. `lexer.r` and `tests/source/compiler/lexer-test.r` remain unchanged.
