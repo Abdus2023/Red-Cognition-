@@ -21,6 +21,16 @@ for f in sorted((ROOT/'rfcs').glob('RFC-*.md')):
     rfcs.append({'id':'RFC-'+ident,'path':f.relative_to(ROOT).as_posix(),'title':title(text,f.stem),'version':first_meta(text,'Version'),'status':first_meta(text,'Status'),'parent':first_meta(text,'Parent'),'related':['RFC-'+x for x in refs if x != ident]})
 for r in rfcs:
     r['children']=[q['id'] for q in rfcs if q['parent'].startswith(r['id']+' ')]
+# A textual reference is preserved as an explicit documented edge, not upgraded to a semantic dependency.
+edges=[]
+for r in rfcs:
+    for related in r['related']:
+        edges.append({'from':r['id'],'to':related,'kind':'textual RFC reference','source':r['path']})
+(DOCS/'rfc-dependency-map.json').write_text(json.dumps({'scope':'explicit RFC references in existing RFC files only','edges':edges},indent=2)+'\n')
+dep=['# Explicit Dependency Map','','This map records only explicit RFC-to-RFC textual references found in existing `rfcs/RFC-*.md` files. A reference is not automatically a normative, implementation, module, service, API, database, infrastructure, or configuration dependency. No such non-RFC dependencies are asserted because the organization pass did not extract an explicit dependency manifest for them.','','Machine-readable edges: [`rfc-dependency-map.json`](rfc-dependency-map.json).','','| Source RFC file | Explicit related RFC IDs |','|---|---|']
+for r in rfcs:
+    dep.append('| [`'+r['id']+'`](../'+r['path']+') | '+(', '.join(r['related']) or '—')+' |')
+(DOCS/'DEPENDENCY-MAP.md').write_text('\n'.join(dep)+'\n')
 lines=['# RFC Index','','Generated from existing files in [`rfcs/`](../rfcs/); title/status/version/parent values are reproduced from each file header and may conflict with ratification artifacts. “Related” is a textual RFC reference, not an asserted dependency.','','| RFC ID | Title | Status | Version | Parent | Children | Related RFCs |','|---|---|---|---|---|---|---|']
 for r in rfcs:
     link='['+r['id']+'](../'+r['path']+')'

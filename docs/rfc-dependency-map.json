@@ -1,0 +1,6737 @@
+{
+  "scope": "explicit RFC references in existing RFC files only",
+  "edges": [
+    {
+      "from": "RFC-0001",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0001-cognitive-type-system.md"
+    },
+    {
+      "from": "RFC-0001",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0001-cognitive-type-system.md"
+    },
+    {
+      "from": "RFC-0001",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0001-ratification-record.md"
+    },
+    {
+      "from": "RFC-0001",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0001-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-effect-ordering-model.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0002",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0002-ratification-record.md"
+    },
+    {
+      "from": "RFC-0003",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0003-belief-revision-system.md"
+    },
+    {
+      "from": "RFC-0003",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0003-belief-revision-system.md"
+    },
+    {
+      "from": "RFC-0004",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md"
+    },
+    {
+      "from": "RFC-0004",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md"
+    },
+    {
+      "from": "RFC-0004",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md"
+    },
+    {
+      "from": "RFC-0004",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md"
+    },
+    {
+      "from": "RFC-0005",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0005-planning-semantics.md"
+    },
+    {
+      "from": "RFC-0005",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0005-planning-semantics.md"
+    },
+    {
+      "from": "RFC-0005",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0005-planning-semantics.md"
+    },
+    {
+      "from": "RFC-0005",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0005-planning-semantics.md"
+    },
+    {
+      "from": "RFC-0006",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0006-capability-model.md"
+    },
+    {
+      "from": "RFC-0006",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0006-capability-model.md"
+    },
+    {
+      "from": "RFC-0007",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0007-skill-model.md"
+    },
+    {
+      "from": "RFC-0007",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0007-skill-model.md"
+    },
+    {
+      "from": "RFC-0007",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0007-skill-model.md"
+    },
+    {
+      "from": "RFC-0008",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0008-memory-model.md"
+    },
+    {
+      "from": "RFC-0008",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0008-memory-model.md"
+    },
+    {
+      "from": "RFC-0008",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0008-memory-model.md"
+    },
+    {
+      "from": "RFC-0009",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0009-agent-model.md"
+    },
+    {
+      "from": "RFC-0009",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0009-agent-model.md"
+    },
+    {
+      "from": "RFC-0010",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0010-checkpoint-recovery-model.md"
+    },
+    {
+      "from": "RFC-0010",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0010-checkpoint-recovery-model.md"
+    },
+    {
+      "from": "RFC-0010",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0010-checkpoint-recovery-model.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-ratification-record.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-scheduler-execution-model.md"
+    },
+    {
+      "from": "RFC-0011",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0011-scheduler-execution-model.md"
+    },
+    {
+      "from": "RFC-0012",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0012-cvm-execution-semantics.md"
+    },
+    {
+      "from": "RFC-0012",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0012-cvm-execution-semantics.md"
+    },
+    {
+      "from": "RFC-0012",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0012-cvm-execution-semantics.md"
+    },
+    {
+      "from": "RFC-0013",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0013-cisa.md"
+    },
+    {
+      "from": "RFC-0013",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0013-cisa.md"
+    },
+    {
+      "from": "RFC-0013",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0013-cisa.md"
+    },
+    {
+      "from": "RFC-0014",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0014-cisa-binary-encoding.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0015",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+    },
+    {
+      "from": "RFC-0016",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0016-cognitive-runtime-architecture.md"
+    },
+    {
+      "from": "RFC-0017",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0017-runtime-interface-service-model.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0018",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0018-event-log-replay-protocol.md"
+    },
+    {
+      "from": "RFC-0019",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0019-cogos-architecture.md"
+    },
+    {
+      "from": "RFC-0019",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0019-cogos-architecture.md"
+    },
+    {
+      "from": "RFC-0019",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0019-cogos-architecture.md"
+    },
+    {
+      "from": "RFC-0020",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0020-distributed-execution-protocol.md"
+    },
+    {
+      "from": "RFC-0020",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0020-distributed-execution-protocol.md"
+    },
+    {
+      "from": "RFC-0020",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0020-distributed-execution-protocol.md"
+    },
+    {
+      "from": "RFC-0021",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0021-cognitive-network-protocol.md"
+    },
+    {
+      "from": "RFC-0021",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0021-cognitive-network-protocol.md"
+    },
+    {
+      "from": "RFC-0022",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0022-identity-trust-framework.md"
+    },
+    {
+      "from": "RFC-0022",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0022-identity-trust-framework.md"
+    },
+    {
+      "from": "RFC-0022",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0022-identity-trust-framework.md"
+    },
+    {
+      "from": "RFC-0022",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0022-identity-trust-framework.md"
+    },
+    {
+      "from": "RFC-0023",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0023-consensus-causal-agreement.md"
+    },
+    {
+      "from": "RFC-0023",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0023-consensus-causal-agreement.md"
+    },
+    {
+      "from": "RFC-0023",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0023-consensus-causal-agreement.md"
+    },
+    {
+      "from": "RFC-0023",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0023-consensus-causal-agreement.md"
+    },
+    {
+      "from": "RFC-0024",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0024-resource-management-quota-model.md"
+    },
+    {
+      "from": "RFC-0024",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0024-resource-management-quota-model.md"
+    },
+    {
+      "from": "RFC-0024",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0024-resource-management-quota-model.md"
+    },
+    {
+      "from": "RFC-0024",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0024-resource-management-quota-model.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0025",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0025-security-policy-language.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0026",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0026-hardware-acceleration-model.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0027",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0028",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+    },
+    {
+      "from": "RFC-0029",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0029-cir-serialization-format.md"
+    },
+    {
+      "from": "RFC-0029",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0029-cir-serialization-format.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0030",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0030-optimization-pass-framework.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0031",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0031-coil-transformation-language.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0032",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0032-covf-verification-framework.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0033",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0033-proof-carrying-program-format.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0034",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0035",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0036",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0037",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0038",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0039",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0040",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0041",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-cadp-autonomous-deployment.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0042",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0042-ratification-record.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0043",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0043-cls-language-specification.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0044",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0044-csl-standard-library.md"
+    },
+    {
+      "from": "RFC-0045",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md"
+    },
+    {
+      "from": "RFC-0045",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md"
+    },
+    {
+      "from": "RFC-0045",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0046",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0047",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0048",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-csts-standard-toolchain.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0051",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0052",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0049",
+      "to": "RFC-0054",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0049-ratification-record.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-architecture-conformance-specification.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-ratification-record.md"
+    },
+    {
+      "from": "RFC-0050",
+      "to": "RFC-0051",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0050-ratification-record.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0051",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0051",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ctvf-testing-verification.md"
+    },
+    {
+      "from": "RFC-0052",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0052-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0052",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-craip-remote-agent-invocation.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0052",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0053",
+      "to": "RFC-0054",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0053-ratification-record.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0054",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0055",
+      "to": "RFC-0054",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0056",
+      "to": "RFC-0055",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0052",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0055",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0056",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-cdtcp-distributed-transaction.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0056",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0057",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0057-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ctwp-transaction-wire-protocol.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ctwp-transaction-wire-protocol.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0058",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0058-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ctstp-transaction-security-trust.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0049",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0059",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0059-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0060",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0060-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0061",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0061-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0062",
+      "to": "RFC-0063",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0062-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0064",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0063",
+      "to": "RFC-0064",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0063-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0063",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0063",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0064",
+      "to": "RFC-0065",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0064-ratification-record.md"
+    },
+    {
+      "from": "RFC-0065",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+    },
+    {
+      "from": "RFC-0065",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+    },
+    {
+      "from": "RFC-0065",
+      "to": "RFC-0062",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+    },
+    {
+      "from": "RFC-0065",
+      "to": "RFC-0063",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+    },
+    {
+      "from": "RFC-0065",
+      "to": "RFC-0064",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0066",
+      "to": "RFC-0065",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0066",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0067",
+      "to": "RFC-0068",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0067",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0068",
+      "to": "RFC-0069",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+    },
+    {
+      "from": "RFC-0069",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+    },
+    {
+      "from": "RFC-0069",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+    },
+    {
+      "from": "RFC-0069",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+    },
+    {
+      "from": "RFC-0069",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+    },
+    {
+      "from": "RFC-0069",
+      "to": "RFC-0068",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0068",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0070",
+      "to": "RFC-0069",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0070",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0071",
+      "to": "RFC-0072",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-crcp-wire-format-binary-message-encoding.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0071",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-crcp-wire-format-binary-message-encoding.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0001",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0002",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0004",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0005",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0007",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0009",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0010",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0011",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0012",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0013",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0014",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0016",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0017",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0019",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0023",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0024",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0027",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0028",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0029",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0030",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0031",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0032",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0033",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0034",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0035",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0036",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0037",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0038",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0039",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0042",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0043",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0044",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0045",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0047",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0048",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0057",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0058",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0059",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0060",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0061",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0072",
+      "to": "RFC-0071",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0072-ratification-record.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0015",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0026",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0068",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0073",
+      "to": "RFC-0072",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0003",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0006",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0008",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0018",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0069",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0074",
+      "to": "RFC-0073",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0020",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0021",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0022",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0025",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0040",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0041",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0046",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0050",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0053",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0054",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0055",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0056",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    },
+    {
+      "from": "RFC-0075",
+      "to": "RFC-0074",
+      "kind": "textual RFC reference",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+    }
+  ]
+}
