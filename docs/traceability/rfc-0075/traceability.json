@@ -1348,5 +1348,19 @@
     "CONFLICT-0075-002",
     "CONFLICT-0075-003",
     "CONFLICT-0075-004"
+  ],
+  "source_artifacts": [
+    {
+      "path": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
+      "sha256": "08ae41657f6017d60ee192aed86ede05c200668c944baed33db46512b210241a",
+      "role": "primary candidate specification",
+      "inspected_on": "2026-08-12"
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0075-Ratification-Record.md",
+      "sha256": "0a323e954a9809ef1f64b3d35db10077fcc229fd128daddb1f4ac91bd8deeac4",
+      "role": "conflicting conditional ratification record",
+      "inspected_on": "2026-08-12"
+    }
   ]
 }
