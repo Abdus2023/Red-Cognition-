@@ -20,7 +20,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 34
+      "source_line": 34,
+      "subject": "Cross-domain collaboration",
+      "condition": "Across domains",
+      "required_behavior": "Cross-domain collaboration must be based on explicit agreements, capabilities, and provenance chains."
     },
     {
       "id": "REQ-0075-002",
@@ -37,7 +40,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 35
+      "source_line": 35,
+      "subject": "Collaborative decisions and knowledge exchanges",
+      "condition": "When producing outcomes",
+      "required_behavior": "Collaborative decisions and knowledge exchanges must produce reproducible outcomes."
     },
     {
       "id": "REQ-0075-003",
@@ -54,7 +60,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 36
+      "source_line": 36,
+      "subject": "Federation/collaboration/knowledge-exchange events",
+      "condition": "For every such event",
+      "required_behavior": "Federation, collaboration, and knowledge exchange events must participate in the unified event log."
     },
     {
       "id": "REQ-0075-004",
@@ -71,7 +80,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 37
+      "source_line": 37,
+      "subject": "Replayed collaborative executions",
+      "condition": "During replay",
+      "required_behavior": "Replayed collaborative executions must produce equivalent observable states."
     },
     {
       "id": "REQ-0075-005",
@@ -88,7 +100,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 38
+      "source_line": 38,
+      "subject": "Knowledge exchange and collaboration actions",
+      "condition": "For every action",
+      "required_behavior": "Knowledge exchange and collaboration actions must be capability-gated."
     },
     {
       "id": "REQ-0075-006",
@@ -105,7 +120,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 39
+      "source_line": 39,
+      "subject": "Protocol implementation",
+      "condition": "For implementations",
+      "required_behavior": "The protocol must remain independent of specific reasoning or planning implementations."
     },
     {
       "id": "REQ-0075-007",
@@ -122,7 +140,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 53
+      "source_line": 53,
+      "subject": "FederationAgreement",
+      "condition": "For every agreement",
+      "required_behavior": "A FederationAgreement MUST include AgreementID, ParticipatingDomains, SharedCapabilities, KnowledgeSharingRules, CollaborationPolicies, TrustRequirements, DisputeResolutionMechanism, TerminationConditions, and Version."
     },
     {
       "id": "REQ-0075-008",
@@ -140,7 +161,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 69
+      "source_line": 69,
+      "subject": "FederationAgreement",
+      "condition": "For every agreement",
+      "required_behavior": "Agreements must be versioned and recorded in the event log."
     },
     {
       "id": "REQ-0075-009",
@@ -156,7 +180,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 73
+      "source_line": 73,
+      "subject": "Knowledge exchange",
+      "condition": "Between domains",
+      "required_behavior": "Knowledge exchange between domains must follow the stated exchange rules."
     },
     {
       "id": "REQ-0075-010",
@@ -173,7 +200,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 75
+      "source_line": 75,
+      "subject": "Exchange",
+      "condition": "For each exchange",
+      "required_behavior": "Exchange must be capability-gated."
     },
     {
       "id": "REQ-0075-011",
@@ -191,7 +221,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 76
+      "source_line": 76,
+      "subject": "Receiving domain",
+      "condition": "Upon receipt",
+      "required_behavior": "The receiving domain must respect provenance and classification of shared knowledge."
     },
     {
       "id": "REQ-0075-012",
@@ -208,7 +241,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 77
+      "source_line": 77,
+      "subject": "Knowledge updates",
+      "condition": "When updating knowledge",
+      "required_behavior": "Knowledge updates must follow synchronization rules in RFC-0056."
     },
     {
       "id": "REQ-0075-013",
@@ -224,7 +260,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 78
+      "source_line": 78,
+      "subject": "Knowledge exchange",
+      "condition": "For each exchange",
+      "required_behavior": "All exchanges must generate federation events."
     },
     {
       "id": "REQ-0075-014",
@@ -240,7 +279,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 84
+      "source_line": 84,
+      "subject": "Collaborative decision process",
+      "condition": "When multiple domains participate",
+      "required_behavior": "The decision process must follow the governance model in RFC-0040."
     },
     {
       "id": "REQ-0075-015",
@@ -258,7 +300,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 85
+      "source_line": 85,
+      "subject": "Collaborative decision",
+      "condition": "When a decision is made",
+      "required_behavior": "A collaborative decision must be recorded with cross-domain provenance."
     },
     {
       "id": "REQ-0075-016",
@@ -275,7 +320,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 86
+      "source_line": 86,
+      "subject": "Collaborative decision",
+      "condition": "When multiple domains participate",
+      "required_behavior": "A collaborative decision must be deterministic and replayable."
     },
     {
       "id": "REQ-0075-017",
@@ -293,7 +341,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 90
+      "source_line": 90,
+      "subject": "Shared knowledge crossing domain boundary",
+      "condition": "For every shared item",
+      "required_behavior": "Each shared knowledge item crossing a domain boundary must carry original domain and creator, intermediate domains and transformations, capability context at each transfer, timestamps and logical epochs, and federation agreement references."
     },
     {
       "id": "REQ-0075-018",
@@ -309,7 +360,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 100
+      "source_line": 100,
+      "subject": "Federation",
+      "condition": "For every federation",
+      "required_behavior": "Federations must follow Proposal, Negotiation, Verification, Agreement, Activation, Operation, Suspension, and Termination lifecycle."
     },
     {
       "id": "REQ-0075-019",
@@ -326,7 +380,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 120
+      "source_line": 120,
+      "subject": "Federation lifecycle transition",
+      "condition": "For every transition",
+      "required_behavior": "Each federation lifecycle transition must generate a FederationEvent."
     },
     {
       "id": "REQ-0075-020",
@@ -344,7 +401,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 124
+      "source_line": 124,
+      "subject": "FederationTrust",
+      "condition": "Where trust is represented",
+      "required_behavior": "Trust must be represented explicitly as FederationTrust with DomainID, TrustLevel, TrustEvidence, CertificateChain, RevocationStatus, and ValidityPeriod."
     },
     {
       "id": "REQ-0075-021",
@@ -362,7 +422,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 139
+      "source_line": 139,
+      "subject": "KnowledgeExchange",
+      "condition": "For every exchange",
+      "required_behavior": "Knowledge exchange must be represented as canonical KnowledgeExchange with ExchangeID, SourceDomain, DestinationDomain, KnowledgeObjects, Classification, ProvenanceReference, AgreementReference, CapabilityContext, and IntegrityProof."
     },
     {
       "id": "REQ-0075-022",
@@ -380,7 +443,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 157
+      "source_line": 157,
+      "subject": "Federation",
+      "condition": "When conflict occurs",
+      "required_behavior": "Federations must define the deterministic conflict-resolution workflow Detect, Classify, Evaluate Policies, Negotiate, Resolve, Record Decision."
     },
     {
       "id": "REQ-0075-023",
@@ -399,7 +465,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 175
+      "source_line": 175,
+      "subject": "Sovereignty invariants",
+      "condition": "For all federation behavior",
+      "required_behavior": "Ownership, provenance, classification, delegation, federation-boundary, and replay invariants must be preserved."
     },
     {
       "id": "REQ-0075-024",
@@ -417,7 +486,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 186
+      "source_line": 186,
+      "subject": "Domain",
+      "condition": "At domain discretion",
+      "required_behavior": "Domains may expose governed KnowledgeView objects."
     },
     {
       "id": "REQ-0075-025",
@@ -434,7 +506,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 200
+      "source_line": 200,
+      "subject": "FederationEvent",
+      "condition": "For every event",
+      "required_behavior": "Federation events must follow canonical FederationEvent structure: EventID, AgreementID, Domains, EventType, Subject, Outcome, Provenance, Timestamp."
     },
     {
       "id": "REQ-0075-026",
@@ -451,7 +526,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 221
+      "source_line": 221,
+      "subject": "Registration and discovery operations",
+      "condition": "For all such operations",
+      "required_behavior": "All registration and discovery operations must be authenticated."
     },
     {
       "id": "REQ-0075-027",
@@ -468,7 +546,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 222
+      "source_line": 222,
+      "subject": "Cross-domain operations",
+      "condition": "For every operation",
+      "required_behavior": "Cross-domain operations must carry verifiable trust assertions."
     },
     {
       "id": "REQ-0075-028",
@@ -486,7 +567,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 223
+      "source_line": 223,
+      "subject": "Federation events",
+      "condition": "For every event",
+      "required_behavior": "Federation events must be integrity-protected."
     },
     {
       "id": "REQ-0075-029",
@@ -502,7 +586,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 231
+      "source_line": 231,
+      "subject": "Federation events",
+      "condition": "For every event",
+      "required_behavior": "Federation events must be observable via standard observability interfaces."
     },
     {
       "id": "REQ-0075-030",
@@ -518,7 +605,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 232
+      "source_line": 232,
+      "subject": "Discovery and registration metrics",
+      "condition": "Where metrics are exposed",
+      "required_behavior": "Discovery and registration metrics should be exposed under cognition.federation.* namespace."
     },
     {
       "id": "REQ-0075-031",
@@ -535,7 +625,10 @@
       "evidence": [
         "EVID-0075-001"
       ],
-      "source_line": 236
+      "source_line": 236,
+      "subject": "Conforming implementation",
+      "condition": "When providing CLI",
+      "required_behavior": "A conforming implementation should provide the listed cog federation and cog agent commands."
     }
   ],
   "valid_statuses": [

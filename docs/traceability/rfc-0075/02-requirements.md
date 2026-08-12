@@ -1,6 +1,6 @@
 # Normative requirements
 
-Extraction is from the authoritative candidate text. Lower-case “must” in §2 is retained because it expresses mandatory design principles; no RFC 2119 boilerplate is supplied. Container REQ-0075-009 is retained separately from its four child rules. Exact line citations are repository locations at audit date 2026-08-12.
+Extraction is from the authoritative candidate text. Lower-case “must” in §2 is retained because it expresses mandatory design principles; no RFC 2119 boilerplate is supplied. Container REQ-0075-009 is retained separately from its four child rules. Exact line citations are repository locations at audit date 2026-08-12. Machine records additionally contain `subject`, `condition`, and `required_behavior` for every ID.
 
 | ID | Exact source | Keyword | Statement | Classification | Status |
 |---|---|---|---|---|---|

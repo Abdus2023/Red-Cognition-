@@ -31,6 +31,8 @@ for r in reqs:
         sec=source.rsplit('§',1)[1].split(' (line',1)[0]
         if not re.search(r'^###\s+'+re.escape(sec)+r'[. ]',text,re.M): errors.append(f'broken source section: {rid} → {sec}')
     if r.get('status') not in statuses: errors.append(f'invalid status: {rid}')
+    for field in ('subject','condition','required_behavior'):
+        if not r.get(field): errors.append(f'missing {field}: {rid}')
     if not r.get('evidence'): errors.append(f'missing evidence: {rid}')
     for eid in r.get('evidence',[]):
         if eid not in evidence: errors.append(f'broken evidence reference: {rid} → {eid}')
