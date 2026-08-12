@@ -4,7 +4,7 @@ Machine-readable complete index: [`repository-file-index.json`](repository-file-
 
 | Type | Count | Existing location |
 |---|---:|---|
-| RFC | 93 | `rfcs/` |
+| RFC | 94 | `rfcs/` |
 | Specification | 52 | `docs/specifications/` |
 | Extracted source fragment | 103 | `knowledge-base/sources/` |
 | Extraction report | 52 | `knowledge-base/reports/` |
