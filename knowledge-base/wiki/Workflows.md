@@ -768,3 +768,16 @@ Created → Confirmed/Updated → Contradicted → Deprecated/Archived; semantic
 - **CARTDP publication workflow ([397]):** submit CPCAVP container + ownership proof + capability/effect/resource declarations → automated registry verification → signed publication receipt; discovery MUST be deterministic for the same query + registry state; dependency resolution on immutable ArtifactIDs into a machine-verifiable lockfile.
 - **CDLMP lifecycle workflow ([399]):** Created→Verified(CPCAVP)→Registered→Approved→Deployed(into Sandbox)→Activated→Monitored→Updated/Migrated→Suspended/Rolled Back→Retired/Archived, every transition emitting a unified event-log event; migrations checkpointed and bounded by RFC-0057 transactions.
 - **Artifact security lifecycle ([398]):** Create→Compile→Prove→Publish→Verify→Distribute→Install→Execute→Monitor→Revoke/Retire.
+
+---
+
+## Message #34 additions — governance, evolution, recovery, federation workflows (msg#34 [401]–[420])
+
+> Provenance: corpus message #34 ([401]–[420]); verbatim archives `sources/message-034-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Governance decision workflow ([401]):** all governance decisions recorded in the event log and participate in replay; supervision requires policy reference + provenance + replay record; automated rollback/compensation on detected violations.
+- **Self-optimization workflow ([405]/[406]):** Observation→Analysis→Optimization Proposal→Evidence Collection→Governance Evaluation (RFC-0040)→Controlled Adoption→Monitoring→Rollback if Required; evidence MUST be recorded and auditable; every adopted optimization carries a rollback plan restoring a previously verified state.
+- **Evaluation workflow (archived [407]):** Optimization Proposal→Simulation Scenario Definition→Digital Twin Execution→Result Collection→Baseline Comparison→Risk/Benefit Assessment→Governance Evaluation→Adoption Decision — all steps event-logged; "Evolution must be demonstrated before adoption" ([408]).
+- **Recovery workflow (archived [409]):** FailureDetectionEvent→Diagnosis→Recovery Actions (capability-gated, deterministic)→Compensation as effect! within RFC-0057 transaction boundary→self-healing workflows expressible via RFC-0005 planning semantics.
+- **Security operations workflow ([411]/[412]):** Security Observation→Threat Detection→Defense Decision→Defense Action→Incident Recording→Policy Evolution→Improved Security Posture; adaptive policy changes validated in digital twin before production activation ([412] refinement).
+- **Federation workflow ([419]):** federation lifecycle Proposal→Negotiation→Verification→Agreement→Activation→Operation→Suspension→Termination, every transition emitting a FederationEvent; knowledge exchange capability-gated with cross-domain provenance chains; deterministic conflict resolution Detect→Classify→Evaluate→Negotiate→Resolve→Record.

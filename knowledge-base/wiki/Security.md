@@ -267,3 +267,14 @@ Shell MUST NOT directly modify cognitive state or bypass capability checks. Huma
 - **Artifact verification boundary (RFC-0065 CPCAVP [395]):** untrusted = compiler/optimizer/artifact generator/package registry; trusted = cryptographic primitives, proof checker, formal semantics kernel, minimal parser; artifacts failing integrity/proof/capability/effect/replay validation MUST NOT execute in Verified profiles.
 - **Registry trust (RFC-0066 CARTDP [397]):** acceptance by verifiable proofs/signatures/attestations/provenance rather than reputation; revocation MUST invalidate future installations and propagate to federated registries.
 - **Deployment as security boundary (RFC-0067 CDLMP [399]/[400]):** runtime admission pipeline Artifact Verification→Capability Validation→Resource Allocation→Sandbox Creation→CVM Initialization→Activation; proposed AdmissionCertificate ties deployment to verified execution.
+
+---
+
+## Message #34 additions — adaptive defense and information sovereignty (msg#34 [401]–[420])
+
+> Provenance: corpus message #34 ([401]–[420]); verbatim archives `sources/message-034-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Adaptive defense (RFC-0073 CRSMADP [411]):** continuous monitoring (unauthorized capability usage, policy violations, anomalous resource consumption, unexpected effect patterns, identity/trust violations, replay/tampering attempts); detection MUST be deterministic (same inputs + same history = same security decision, [412]); defense actions capability-gated, event-logged, replayable; adaptive policies versioned and governance-approved (RFC-0040).
+- **Security invariants ([414]):** authorization, capability confinement, provenance, event-log integrity, replay consistency, artifact integrity — proof obligations for adaptive defense.
+- **Information sovereignty (RFC-0074 CRPDGSMP [415]):** Sovereign-class data MUST NOT be subject to mandatory sharing/synchronization without explicit owner consent; ownership transfers explicit, capability-gated, recorded; original creator attribution immutable; access decisions recorded as governance events.
+- **Federation trust (RFC-0075 CFCKEP [419]):** capability-gated knowledge exchange; receiving domains MUST respect provenance and classification of shared knowledge; federation events integrity-protected; cross-domain operations MUST carry verifiable trust assertions.

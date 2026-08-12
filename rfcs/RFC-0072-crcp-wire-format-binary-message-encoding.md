@@ -5,6 +5,7 @@
   Status in corpus: RFC-0072 CRCP Wire Format and Binary Message Encoding v1.6 — RATIFIED per ratification record [339] ("is hereby ratified as a normative specification"). Version lineage: v1.0 [321] → v1.1 [323] → v1.2 [325] (body identical to v1.1 modulo labels — D-98) → v1.3 [327] (identical re-send [329] — D-96) → v1.4 [331] (body identical to v1.3 modulo labels and §2 wording — D-98) → v1.5 [333] → v1.6 [335] (identical re-send [337] — D-97). Reviews [322]/[324]/[326]/[328]/[330]/[332]/[334]/[336]/[338] preserved in archive (final review [338] recommended Release Candidate, not Final; ratification proceeded per [339]). Source quirk preserved as received: parent header cites RFC-0071 "v1.1 (Candidate)" although only RFC-0071 v1.0 exists in the corpus; closing paragraph says v1.3 while the header is v1.6 (flagged by [336]/[338]).
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
+  NOTE (msg#34, D-114/C-22): msg#34 [409] drafts "RFC-0072 — Cognitive Runtime Autonomous Recovery and Self-Healing Protocol (CRARSH)" under this ALREADY-RATIFIED number; the ratified CRCP Wire Format lineage retains the scaffold and record, and the CRARSH draft is preserved in the archive only.
 -->
 
 

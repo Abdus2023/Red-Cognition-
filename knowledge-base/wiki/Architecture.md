@@ -980,3 +980,18 @@ The ratified RFC semantic core (RFC-0001…0004) plus capability/skill/memory mo
 - **Verified compilation chain:** CLS ≈ CIR ≈ Optimized CIR ≈ CISA ≈ CVM Bytecode ≈ CVM Execution Trace (semantic equivalence under CVM-FOS, normative per [390]); Trusted Computing Base limits trust to the semantics kernel/proof checker/minimal verifier/cryptographic primitives ([389] §6).
 - **Cognitive Software Supply Chain layer ([400]):** Intent→Language→Compiler→Proof→Artifact→Registry→Deployment→Execution→Observation→Evolution, across RFC-0065 CPCAVP (trusted artifact), RFC-0066 CARTDP (trust distribution), RFC-0067 CDLMP (deployment lifecycle) — msg#33 lineage re-purposes those numbers from their msg#29 forms (C-21).
 - **Layering note:** ratified execution stack after message #33 = RFC-0060 execution + RFC-0061 instruction architecture + RFC-0062 bytecode + RFC-0063 formal semantics + RFC-0064 verified compiler ([392] table); next proposed layer RFC-0068 CRGAOP (runtime governance) per [400] — numbering collision with the msg#29 RFC-0068 CBS-RAP scaffold noted (C-21).
+
+---
+
+## Message #34 additions — autonomous operating system layer (msg#34 [401]–[420])
+
+> Provenance: corpus message #34 ([401]–[420]); verbatim archives `sources/message-034-original-part1..5.md`; scaffolds in `rfcs/`.
+
+- **Autonomous control loop complete ([413]):** Red/Cognition now has the conceptual architecture of a self-governing, self-improving, self-healing, self-protecting cognitive operating system: Observe→Govern→Remember→Optimize→Simulate→Deploy→Recover→Defend→Improve.
+- **Runtime governance plane (RFC-0068 CRGAOP [401]/[402]):** Governance Control Plane + Policy Evaluation Engine + Resource Arbitration + Agent Supervision + Safety Constraint Enforcement + Event Replay/Audit Layer; governance becomes part of the execution model, not external administration; supervision actions OBSERVE/WARN/THROTTLE/SUSPEND/ROLLBACK/TERMINATE require policy reference + provenance + replay record.
+- **Governance memory (RFC-0069 CRDLMP Decision Ledger [403]/[404]):** immutable decision records, four ledger tiers (Operational/Policy/Resource/Audit), deterministic queries — the runtime can answer why a decision was made, which policy authorized it, and whether it can be reproduced.
+- **Adaptive evolution (RFC-0070 CRSOAEP [405]/[406]):** verified evolution boundary — the Cognitive Operating System does not directly rewrite itself; optimizations are proposed → evidenced → governance-evaluated → adopted → monitored → rolled back if required; every adopted optimization carries a rollback plan.
+- **Numbering collisions (C-22):** msg#34 drafts CRSEDTP (simulation/digital twin, [407]) under RFC-0071 and CRARSH (recovery/self-healing, [409]) under ratified RFC-0072; the ratified/dependency-bearing CRCP lineages retain their scaffolds, and the conflicting drafts are archived (see RFC Index C-22).
+- **Security resilience (RFC-0073 CRSMADP [411]–[414]):** security as an active runtime governance domain; layered detection (policy rules, behavioral analysis, capability monitoring, identity verification); four coordinated feedback loops (execution/governance/adaptation/security) all feed the unified event log.
+- **Information sovereignty (RFC-0074 CRPDGSMP [415]/[416]):** who may observe, retain, derive, and share cognitive information — classification, ownership, capability-gated access, immutable provenance.
+- **Federated collaboration (RFC-0075 CFCKEP [417]/[419]):** federation as a higher-level governance construct than interoperability (RFC-0041): FederationAgreement contracts, federation lifecycle, trust objects, knowledge-exchange contracts, sovereignty invariants — a federation of autonomous, verifiable, sovereign cognitive systems.

@@ -2,7 +2,7 @@
   KB-Scaffold Provenance (knowledge-base traceability):
   Origin: corpus message #29, sub-message [319], 2026-08-11
   Verbatim source: knowledge-base/sources/message-029-original-part5.md
-  Status in corpus: RFC-0071 CRCP v1.0 (Draft). Drafted title diverges from [316] roadmap naming for RFC-0071 ("Cognitive Observability and SRE Model") — C-11 roadmap lineage. Review [320] (CHATGPT gpt-5-5): 10 areas required before ratification (state machines, wire format, ordering, failure model, consistency, scheduling authority, security, invariants, version negotiation, error codes). No ratification decision present in corpus. Parent: RFC-0070 CROFP v1.0 (Draft).
+  Status in corpus: RFC-0071 CRCP v1.0 (Draft). Drafted title diverges from [316] roadmap naming for RFC-0071 ("Cognitive Observability and SRE Model") — C-11 lineage. Review [320] lists 10 pre-ratification areas. No ratification decision. NOTE (msg#34, D-113/C-22): msg#34 [407] drafts "RFC-0071 — Cognitive Runtime Simulation, Evaluation, and Digital Twin Protocol (CRSEDTP)" under this number; because RFC-0071 CRCP is the parent dependency on which the RATIFIED RFC-0072 CRCP Wire Format is conditionally effective ([361] record), the CRCP scaffold is retained and the CRSEDTP draft is preserved in the archive only. No ratification decision.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
