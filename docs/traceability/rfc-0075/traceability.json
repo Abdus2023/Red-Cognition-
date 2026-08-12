@@ -5,7 +5,7 @@
   "requirements": [
     {
       "id": "REQ-0075-001",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 34)",
       "normative_keyword": "MUST",
       "statement": "Cross-domain collaboration must be based on explicit agreements, capabilities, and provenance chains.",
       "classification": [
@@ -19,11 +19,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 34
     },
     {
       "id": "REQ-0075-002",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 35)",
       "normative_keyword": "MUST",
       "statement": "Collaborative decisions and knowledge exchanges must produce reproducible outcomes.",
       "classification": [
@@ -35,11 +36,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 35
     },
     {
       "id": "REQ-0075-003",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 36)",
       "normative_keyword": "MUST",
       "statement": "Federation, collaboration, and knowledge exchange events must participate in the unified event log.",
       "classification": [
@@ -51,11 +53,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 36
     },
     {
       "id": "REQ-0075-004",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 37)",
       "normative_keyword": "MUST",
       "statement": "Replayed collaborative executions must produce equivalent observable states.",
       "classification": [
@@ -67,11 +70,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 37
     },
     {
       "id": "REQ-0075-005",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 38)",
       "normative_keyword": "MUST",
       "statement": "Knowledge exchange and collaboration actions must be capability-gated.",
       "classification": [
@@ -83,11 +87,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 38
     },
     {
       "id": "REQ-0075-006",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72 (line 39)",
       "normative_keyword": "MUST",
       "statement": "The protocol must remain independent of specific reasoning or planning implementations.",
       "classification": [
@@ -99,11 +104,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 39
     },
     {
       "id": "REQ-0075-007",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74 (line 53)",
       "normative_keyword": "MUST",
       "statement": "A FederationAgreement MUST include AgreementID, ParticipatingDomains, SharedCapabilities, KnowledgeSharingRules, CollaborationPolicies, TrustRequirements, DisputeResolutionMechanism, TerminationConditions, and Version.",
       "classification": [
@@ -115,11 +121,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 53
     },
     {
       "id": "REQ-0075-008",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74 (line 69)",
       "normative_keyword": "MUST",
       "statement": "Agreements must be versioned and recorded in the event log.",
       "classification": [
@@ -132,11 +139,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 69
     },
     {
       "id": "REQ-0075-009",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75 (line 73)",
       "normative_keyword": "MUST",
       "statement": "Knowledge exchange between domains must follow the stated exchange rules.",
       "classification": [
@@ -147,11 +155,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 73
     },
     {
       "id": "REQ-0075-010",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75 (line 75)",
       "normative_keyword": "MUST",
       "statement": "Exchange must be capability-gated.",
       "classification": [
@@ -163,11 +172,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 75
     },
     {
       "id": "REQ-0075-011",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75 (line 76)",
       "normative_keyword": "MUST",
       "statement": "The receiving domain must respect provenance and classification of shared knowledge.",
       "classification": [
@@ -180,11 +190,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 76
     },
     {
       "id": "REQ-0075-012",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75 (line 77)",
       "normative_keyword": "MUST",
       "statement": "Knowledge updates must follow synchronization rules in RFC-0056.",
       "classification": [
@@ -196,11 +207,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 77
     },
     {
       "id": "REQ-0075-013",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75 (line 78)",
       "normative_keyword": "MUST",
       "statement": "All exchanges must generate federation events.",
       "classification": [
@@ -211,11 +223,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 78
     },
     {
       "id": "REQ-0075-014",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76 (line 84)",
       "normative_keyword": "MUST",
       "statement": "The decision process must follow the governance model in RFC-0040.",
       "classification": [
@@ -226,11 +239,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 84
     },
     {
       "id": "REQ-0075-015",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76 (line 85)",
       "normative_keyword": "MUST",
       "statement": "A collaborative decision must be recorded with cross-domain provenance.",
       "classification": [
@@ -243,11 +257,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 85
     },
     {
       "id": "REQ-0075-016",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76 (line 86)",
       "normative_keyword": "MUST",
       "statement": "A collaborative decision must be deterministic and replayable.",
       "classification": [
@@ -259,11 +274,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 86
     },
     {
       "id": "REQ-0075-017",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a77",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a77 (line 90)",
       "normative_keyword": "MUST",
       "statement": "Each shared knowledge item crossing a domain boundary must carry original domain and creator, intermediate domains and transformations, capability context at each transfer, timestamps and logical epochs, and federation agreement references.",
       "classification": [
@@ -276,11 +292,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 90
     },
     {
       "id": "REQ-0075-018",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78 (line 100)",
       "normative_keyword": "MUST",
       "statement": "Federations must follow Proposal, Negotiation, Verification, Agreement, Activation, Operation, Suspension, and Termination lifecycle.",
       "classification": [
@@ -291,11 +308,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 100
     },
     {
       "id": "REQ-0075-019",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78 (line 120)",
       "normative_keyword": "MUST",
       "statement": "Each federation lifecycle transition must generate a FederationEvent.",
       "classification": [
@@ -307,11 +325,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 120
     },
     {
       "id": "REQ-0075-020",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a79",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a79 (line 124)",
       "normative_keyword": "MUST",
       "statement": "Trust must be represented explicitly as FederationTrust with DomainID, TrustLevel, TrustEvidence, CertificateChain, RevocationStatus, and ValidityPeriod.",
       "classification": [
@@ -324,11 +343,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 124
     },
     {
       "id": "REQ-0075-021",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a710",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a710 (line 139)",
       "normative_keyword": "MUST",
       "statement": "Knowledge exchange must be represented as canonical KnowledgeExchange with ExchangeID, SourceDomain, DestinationDomain, KnowledgeObjects, Classification, ProvenanceReference, AgreementReference, CapabilityContext, and IntegrityProof.",
       "classification": [
@@ -341,11 +361,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 139
     },
     {
       "id": "REQ-0075-022",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a711",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a711 (line 157)",
       "normative_keyword": "MUST",
       "statement": "Federations must define the deterministic conflict-resolution workflow Detect, Classify, Evaluate Policies, Negotiate, Resolve, Record Decision.",
       "classification": [
@@ -358,11 +379,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 157
     },
     {
       "id": "REQ-0075-023",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a712",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a712 (line 175)",
       "normative_keyword": "MUST",
       "statement": "Ownership, provenance, classification, delegation, federation-boundary, and replay invariants must be preserved.",
       "classification": [
@@ -376,11 +398,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 175
     },
     {
       "id": "REQ-0075-024",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a713",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a713 (line 186)",
       "normative_keyword": "MAY",
       "statement": "Domains may expose governed KnowledgeView objects.",
       "classification": [
@@ -393,11 +416,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 186
     },
     {
       "id": "REQ-0075-025",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a714",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a714 (line 200)",
       "normative_keyword": "MUST",
       "statement": "Federation events must follow canonical FederationEvent structure: EventID, AgreementID, Domains, EventType, Subject, Outcome, Provenance, Timestamp.",
       "classification": [
@@ -409,11 +433,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 200
     },
     {
       "id": "REQ-0075-026",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715 (line 221)",
       "normative_keyword": "MUST",
       "statement": "All registration and discovery operations must be authenticated.",
       "classification": [
@@ -425,11 +450,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 221
     },
     {
       "id": "REQ-0075-027",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715 (line 222)",
       "normative_keyword": "MUST",
       "statement": "Cross-domain operations must carry verifiable trust assertions.",
       "classification": [
@@ -441,11 +467,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 222
     },
     {
       "id": "REQ-0075-028",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715 (line 223)",
       "normative_keyword": "MUST",
       "statement": "Federation events must be integrity-protected.",
       "classification": [
@@ -458,11 +485,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 223
     },
     {
       "id": "REQ-0075-029",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716 (line 231)",
       "normative_keyword": "MUST",
       "statement": "Federation events must be observable via standard observability interfaces.",
       "classification": [
@@ -473,11 +501,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 231
     },
     {
       "id": "REQ-0075-030",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716 (line 232)",
       "normative_keyword": "SHOULD",
       "statement": "Discovery and registration metrics should be exposed under cognition.federation.* namespace.",
       "classification": [
@@ -488,11 +517,12 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 232
     },
     {
       "id": "REQ-0075-031",
-      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a717",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a717 (line 236)",
       "normative_keyword": "SHOULD",
       "statement": "A conforming implementation should provide the listed cog federation and cog agent commands.",
       "classification": [
@@ -504,7 +534,8 @@
       "test": null,
       "evidence": [
         "EVID-0075-001"
-      ]
+      ],
+      "source_line": 236
     }
   ],
   "valid_statuses": [
@@ -602,7 +633,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -617,7 +648,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -632,7 +663,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -647,7 +678,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -662,7 +693,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -677,7 +708,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -692,7 +723,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -707,7 +738,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -722,7 +753,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a74",
+      "source": "RFC-0075 \u00a74 (structure begins line 56)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -737,7 +768,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -752,7 +783,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -767,7 +798,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -782,7 +813,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -797,7 +828,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -812,7 +843,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a79",
+      "source": "RFC-0075 \u00a79 (structure begins line 127)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -827,7 +858,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -842,7 +873,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -857,7 +888,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -872,7 +903,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -887,7 +918,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -902,7 +933,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -917,7 +948,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -932,7 +963,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -947,7 +978,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a710",
+      "source": "RFC-0075 \u00a710 (structure begins line 142)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -962,7 +993,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a713",
+      "source": "RFC-0075 \u00a713 (structure begins line 189)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -977,7 +1008,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a713",
+      "source": "RFC-0075 \u00a713 (structure begins line 189)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -992,7 +1023,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a713",
+      "source": "RFC-0075 \u00a713 (structure begins line 189)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1007,7 +1038,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a713",
+      "source": "RFC-0075 \u00a713 (structure begins line 189)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1022,7 +1053,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a713",
+      "source": "RFC-0075 \u00a713 (structure begins line 189)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1037,7 +1068,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1052,7 +1083,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1067,7 +1098,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1082,7 +1113,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1097,7 +1128,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1112,7 +1143,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1127,7 +1158,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     },
@@ -1142,7 +1173,7 @@
       "security_implications": "context-dependent; see 07-data-models.md",
       "provenance_implications": "context-dependent; see 07-data-models.md",
       "replay_implications": "context-dependent; see 07-data-models.md",
-      "source": "RFC-0075 \u00a714",
+      "source": "RFC-0075 \u00a714 (structure begins line 203)",
       "implementation": "MISSING",
       "test": "MISSING"
     }

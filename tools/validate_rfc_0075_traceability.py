@@ -28,7 +28,7 @@ for r in reqs:
     rid=r.get('id','<unknown>'); source=r.get('source','')
     if not source or '§' not in source: errors.append(f'missing source location: {rid}')
     elif source.startswith('rfcs/RFC-0075'):
-        sec=source.rsplit('§',1)[1]
+        sec=source.rsplit('§',1)[1].split(' (line',1)[0]
         if not re.search(r'^###\s+'+re.escape(sec)+r'[. ]',text,re.M): errors.append(f'broken source section: {rid} → {sec}')
     if r.get('status') not in statuses: errors.append(f'invalid status: {rid}')
     if not r.get('evidence'): errors.append(f'missing evidence: {rid}')
