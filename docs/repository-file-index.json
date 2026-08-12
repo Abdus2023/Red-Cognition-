@@ -1,0 +1,2039 @@
+{
+  "generated_from": "existing corpus only",
+  "files": [
+    {
+      "path": "rfcs/.gitkeep",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0001-cognitive-type-system.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0001-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0002-effect-ordering-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0002-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0003-belief-revision-system.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0005-planning-semantics.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0006-capability-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0007-skill-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0008-memory-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0009-agent-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0010-checkpoint-recovery-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0011-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0011-scheduler-execution-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0012-cvm-execution-semantics.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0013-cisa.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0014-cisa-binary-encoding.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0015-cognitive-exception-semantics.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0016-cognitive-runtime-architecture.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0017-runtime-interface-service-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0018-event-log-replay-protocol.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0019-cogos-architecture.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0020-distributed-execution-protocol.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0021-cognitive-network-protocol.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0022-identity-trust-framework.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0023-consensus-causal-agreement.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0024-resource-management-quota-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0025-security-policy-language.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0026-hardware-acceleration-model.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0027-compiler-toolchain-architecture.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0028-cognitive-intermediate-representation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0029-cir-serialization-format.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0030-optimization-pass-framework.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0031-coil-transformation-language.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0032-covf-verification-framework.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0033-proof-carrying-program-format.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0034-cpr-tdp-package-registry.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0035-cseim-sandbox-isolation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0036-cbr-scp-supply-chain.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0038-cmaep-marketplace-economy.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0039-cieop-identity-economy-ownership.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0041-cifp-interoperability-federation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0042-cadp-autonomous-deployment.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0042-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0043-cls-language-specification.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0044-csl-standard-library.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0046-codp-observability-diagnostics.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0047-cpmws-package-manager-workspace.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0048-cffi-foreign-function-interface.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0049-csts-standard-toolchain.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0049-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0050-architecture-conformance-specification.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0050-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0051-cmms-macro-metaprogramming.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0052-ctvf-testing-verification.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0052-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0053-craip-remote-agent-invocation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0053-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0057-cdtcp-distributed-transaction.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0057-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0058-ctwp-transaction-wire-protocol.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0058-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0059-ctstp-transaction-security-trust.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0059-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0060-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0061-cisa-ra-instruction-set-register-architecture.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0061-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0062-cvm-bf-bytecode-format-encoding.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0062-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0063-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0064-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0072-crcp-wire-format-binary-message-encoding.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0072-ratification-record.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
+      "document_type": "RFC",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/01-full-stack-architecture-diagram.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/02-complete-toolchain-diagram.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/03-red-system-compiler-structure.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/05-red-interpreter-evaluation-engine.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/06-red-context-and-word-binding-system.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/07-red-reactive-system-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/10-macro-and-preprocessor-system.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/11-concurrency-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/12-redbin-serialisation-format.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/13-compiler-cli-reference.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/14-static-linking-implications.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/15-new-lexer-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/16-transcode-api.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/17-routine-ffi-bridge.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/18-routine-examples.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/19-atomic-intrinsics-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/20-atomic-mpmc-queue.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/21-ownership-system-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/22-ownership-in-practice.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/23-port-and-scheme-system.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/24-custom-scheme-implementation.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/25-new-datatypes-history.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/26-draw-dialect-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/27-draw-program-example.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/28-fpu-control-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/29-fpu-control-usage.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/31-error-handling-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/32-error-handling-patterns.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/33-vector-datatype-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/34-vector-operations.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/35-map-datatype-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/35-rfc-0072-final-review.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/36-map-patterns.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/37-date-datatype-specification.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/38-red-console-repl-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/39-console-customisation.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/40-view-event-system-architecture.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/41-event-handling-patterns.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/42-font-and-para-objects.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/43-font-and-para-usage.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/44-red-system-calling-conventions.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/45-cross-platform-c-interop.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0031-Cognitive-Optimization-Intermediate-Language.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0038-Cognitive-Marketplace-and-Agent-Economy-Protocol.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0049-Cognitive-Standard-Toolchain-Specification-v1.2.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0059-Ratification-Record.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/RFC-0075-Ratification-Record.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/specifications/red-deep-technical-spec/Red-Cognition-Full-Traceability-Audit.md",
+      "document_type": "Specification",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-001-original.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-002-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-003-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-003-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-003-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-003-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-005-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-005-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-005-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-005-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-005-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-008-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-008-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-008-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-008-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-008-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-010-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-010-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-010-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-010-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-010-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-012-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-012-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-012-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-012-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-012-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-014-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-014-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-014-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-014-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-014-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-016-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-016-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-016-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-016-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-016-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-018-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-018-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-018-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-018-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-018-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-020-original.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-021-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-021-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-021-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-021-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-021-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-022-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-022-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-022-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-022-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-022-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-023-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-023-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-023-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-023-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-023-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-025-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-025-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-025-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-025-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-025-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-026-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-026-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-026-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-026-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-026-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-027-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-027-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-027-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-027-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-027-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-029-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-029-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-029-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-029-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-029-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-030-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-030-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-030-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-030-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-030-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-031-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-031-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-031-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-031-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-031-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-032-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-032-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-032-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-032-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-032-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-033-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-033-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-033-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-033-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-033-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-034-original-part1.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-034-original-part2.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-034-original-part3.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-034-original-part4.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/sources/message-034-original-part5.md",
+      "document_type": "Extracted source fragment",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-001-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-002-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-003-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-004-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-005-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-006-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-007-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-008-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-009-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-010-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-011-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-012-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-013-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-014-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-015-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-016-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-017-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-018-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-018-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-019-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-019-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-020-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-021-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-021-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-022-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-022-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-023-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-023-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-024-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-024-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-025-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-025-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-026-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-026-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-027-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-027-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-028-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-028-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-029-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-029-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-030-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-030-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-031-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-031-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-032-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-032-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-033-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-033-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-034-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-034-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-035-report.md",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/reports/message-035-verification-suite.py",
+      "document_type": "Extraction report",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/APIs.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Architecture.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Changelog.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Components.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Data-Models.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Deployment.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Design-Decisions.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Glossary.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Modules.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Overview.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/RFC-Index.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/References.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Repository-Structure.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Security.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Services.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Source-Traceability.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Specifications.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "knowledge-base/wiki/Workflows.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Agent-Operating-Environment-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Agent-Operating-Environment.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Agent-Runtime-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Cognitive-Operating-System-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Cognitive-Operating-System-CogOS.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Cognitive-Virtual-Machine-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Cognitive-Virtual-Machine-CVM.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/From-Operating-Systems-to-Cognitive-Systems-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/From-Operating-Systems-to-Cognitive-Systems.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-2.0-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-2.0-Cognitive-Computing-Architecture.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Cognition-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Cognition-Language.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Compiler-Analysis.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Compiler-Refactoring.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Deep-Technical-Specification.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Interpreter-Internals.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Red-Technical-Specification-Part-III.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    },
+    {
+      "path": "docs/wiki/Text-Interfaces-and-Agent-Runtimes.md",
+      "document_type": "Wiki page",
+      "source_origin": "existing extracted corpus/repository file",
+      "related_documents": []
+    }
+  ]
+}
