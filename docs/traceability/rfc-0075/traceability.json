@@ -1,0 +1,521 @@
+{
+  "specification": "RFC-0075",
+  "version": "1.1",
+  "status": "candidate-for-ratification",
+  "requirements": [
+    {
+      "id": "REQ-0075-001",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "Cross-domain collaboration must be based on explicit agreements, capabilities, and provenance chains.",
+      "classification": [
+        "Architecture",
+        "Capability",
+        "Provenance",
+        "Sovereignty"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-002",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "Collaborative decisions and knowledge exchanges must produce reproducible outcomes.",
+      "classification": [
+        "Determinism",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-003",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "Federation, collaboration, and knowledge exchange events must participate in the unified event log.",
+      "classification": [
+        "Observability",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-004",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "Replayed collaborative executions must produce equivalent observable states.",
+      "classification": [
+        "Replay",
+        "Determinism"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-005",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "Knowledge exchange and collaboration actions must be capability-gated.",
+      "classification": [
+        "Capability",
+        "Security"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-006",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a72",
+      "normative_keyword": "MUST",
+      "statement": "The protocol must remain independent of specific reasoning or planning implementations.",
+      "classification": [
+        "Architecture",
+        "Interoperability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-007",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74",
+      "normative_keyword": "MUST",
+      "statement": "A FederationAgreement MUST include AgreementID, ParticipatingDomains, SharedCapabilities, KnowledgeSharingRules, CollaborationPolicies, TrustRequirements, DisputeResolutionMechanism, TerminationConditions, and Version.",
+      "classification": [
+        "Data Model",
+        "Protocol"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-008",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a74",
+      "normative_keyword": "MUST",
+      "statement": "Agreements must be versioned and recorded in the event log.",
+      "classification": [
+        "Data Model",
+        "Observability",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-009",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "normative_keyword": "MUST",
+      "statement": "Knowledge exchange between domains must follow the stated exchange rules.",
+      "classification": [
+        "Protocol"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-010",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "normative_keyword": "MUST",
+      "statement": "Exchange must be capability-gated.",
+      "classification": [
+        "Capability",
+        "Security"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-011",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "normative_keyword": "MUST",
+      "statement": "The receiving domain must respect provenance and classification of shared knowledge.",
+      "classification": [
+        "Provenance",
+        "Privacy",
+        "Sovereignty"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-012",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "normative_keyword": "MUST",
+      "statement": "Knowledge updates must follow synchronization rules in RFC-0056.",
+      "classification": [
+        "Protocol",
+        "Distributed Execution"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-013",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a75",
+      "normative_keyword": "MUST",
+      "statement": "All exchanges must generate federation events.",
+      "classification": [
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-014",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "normative_keyword": "MUST",
+      "statement": "The decision process must follow the governance model in RFC-0040.",
+      "classification": [
+        "Governance"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-015",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "normative_keyword": "MUST",
+      "statement": "A collaborative decision must be recorded with cross-domain provenance.",
+      "classification": [
+        "Governance",
+        "Provenance",
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-016",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a76",
+      "normative_keyword": "MUST",
+      "statement": "A collaborative decision must be deterministic and replayable.",
+      "classification": [
+        "Determinism",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-017",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a77",
+      "normative_keyword": "MUST",
+      "statement": "Each shared knowledge item crossing a domain boundary must carry original domain and creator, intermediate domains and transformations, capability context at each transfer, timestamps and logical epochs, and federation agreement references.",
+      "classification": [
+        "Provenance",
+        "Sovereignty",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-018",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78",
+      "normative_keyword": "MUST",
+      "statement": "Federations must follow Proposal, Negotiation, Verification, Agreement, Activation, Operation, Suspension, and Termination lifecycle.",
+      "classification": [
+        "Lifecycle"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-019",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a78",
+      "normative_keyword": "MUST",
+      "statement": "Each federation lifecycle transition must generate a FederationEvent.",
+      "classification": [
+        "Lifecycle",
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-020",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a79",
+      "normative_keyword": "MUST",
+      "statement": "Trust must be represented explicitly as FederationTrust with DomainID, TrustLevel, TrustEvidence, CertificateChain, RevocationStatus, and ValidityPeriod.",
+      "classification": [
+        "Trust",
+        "Identity",
+        "Data Model"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-021",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a710",
+      "normative_keyword": "MUST",
+      "statement": "Knowledge exchange must be represented as canonical KnowledgeExchange with ExchangeID, SourceDomain, DestinationDomain, KnowledgeObjects, Classification, ProvenanceReference, AgreementReference, CapabilityContext, and IntegrityProof.",
+      "classification": [
+        "Protocol",
+        "Data Model",
+        "Integrity"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-022",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a711",
+      "normative_keyword": "MUST",
+      "statement": "Federations must define the deterministic conflict-resolution workflow Detect, Classify, Evaluate Policies, Negotiate, Resolve, Record Decision.",
+      "classification": [
+        "Governance",
+        "Determinism",
+        "Lifecycle"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-023",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a712",
+      "normative_keyword": "MUST",
+      "statement": "Ownership, provenance, classification, delegation, federation-boundary, and replay invariants must be preserved.",
+      "classification": [
+        "Sovereignty",
+        "Provenance",
+        "Security",
+        "Replay"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-024",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a713",
+      "normative_keyword": "MAY",
+      "statement": "Domains may expose governed KnowledgeView objects.",
+      "classification": [
+        "Data Model",
+        "Privacy",
+        "Sovereignty"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-025",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a714",
+      "normative_keyword": "MUST",
+      "statement": "Federation events must follow canonical FederationEvent structure: EventID, AgreementID, Domains, EventType, Subject, Outcome, Provenance, Timestamp.",
+      "classification": [
+        "Data Model",
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-026",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "normative_keyword": "MUST",
+      "statement": "All registration and discovery operations must be authenticated.",
+      "classification": [
+        "Identity",
+        "Security"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-027",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "normative_keyword": "MUST",
+      "statement": "Cross-domain operations must carry verifiable trust assertions.",
+      "classification": [
+        "Trust",
+        "Security"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-028",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a715",
+      "normative_keyword": "MUST",
+      "statement": "Federation events must be integrity-protected.",
+      "classification": [
+        "Security",
+        "Integrity",
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-029",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716",
+      "normative_keyword": "MUST",
+      "statement": "Federation events must be observable via standard observability interfaces.",
+      "classification": [
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-030",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a716",
+      "normative_keyword": "SHOULD",
+      "statement": "Discovery and registration metrics should be exposed under cognition.federation.* namespace.",
+      "classification": [
+        "Observability"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    },
+    {
+      "id": "REQ-0075-031",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a717",
+      "normative_keyword": "SHOULD",
+      "statement": "A conforming implementation should provide the listed cog federation and cog agent commands.",
+      "classification": [
+        "CLI / Tooling",
+        "Conformance"
+      ],
+      "status": "SPECIFIED_ONLY",
+      "implementation": null,
+      "test": null,
+      "evidence": [
+        "EVID-0075-001"
+      ]
+    }
+  ],
+  "valid_statuses": [
+    "VERIFIED",
+    "IMPLEMENTED",
+    "TESTED",
+    "PARTIALLY_IMPLEMENTED",
+    "SPECIFIED_ONLY",
+    "UNVERIFIED",
+    "MISSING",
+    "CONFLICTING",
+    "NOT_APPLICABLE"
+  ]
+}

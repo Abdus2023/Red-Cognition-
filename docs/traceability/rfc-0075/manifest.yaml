@@ -1,0 +1,12 @@
+traceability_package:
+  specification: RFC-0075
+  version: "1.1"
+  status: candidate-for-ratification
+  requirements: {total: 31, verified: 0, implemented: 0, tested: 0, unverified: 31, missing: 0}
+  invariants: {total: 9, formally_verified: 0, tested: 0, unverified: 9}
+  implementations: {found: 0, partial: 0, missing: 31}
+  tests: {total: 0, passing: 0, failing: 0}
+  evidence: {E0: 0, E1: 31, E2: 0, E3: 0, E4: 0, E5: 0, E6: 0}
+  gaps: {total: 12, critical: 4, high: 4, medium: 3, low: 1}
+  conflicts: {total: 3}
+  validator: tools/validate_rfc_0075_traceability.py
