@@ -11,7 +11,7 @@ This directory retains the existing documentation hierarchy. The links below are
 
 ## Documentation collections
 
-- [RFC corpus index](RFC-INDEX.md) → [`../rfcs/`](../rfcs/)
+- [RFC corpus index](RFC-INDEX.md) → existing `rfcs/` source-artifact directory
 - [Architecture index](ARCHITECTURE-INDEX.md)
 - [Source and test index](SOURCE-INDEX.md)
 - [Explicit dependency map](DEPENDENCY-MAP.md)
