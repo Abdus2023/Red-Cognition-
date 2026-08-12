@@ -1146,5 +1146,82 @@
       "implementation": "MISSING",
       "test": "MISSING"
     }
+  ],
+  "evidence_records": [
+    {
+      "id": "EVID-0075-001",
+      "level": "E1",
+      "source": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md \u00a7\u00a72\u201317",
+      "claim": "RFC text establishes the extracted normative claims only"
+    }
+  ],
+  "implementations": [],
+  "tests": [],
+  "gaps": [
+    {
+      "id": "GAP-0075-001",
+      "severity": "CRITICAL",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-002",
+      "severity": "CRITICAL",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-003",
+      "severity": "CRITICAL",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-004",
+      "severity": "CRITICAL",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-005",
+      "severity": "HIGH",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-006",
+      "severity": "HIGH",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-007",
+      "severity": "HIGH",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-008",
+      "severity": "HIGH",
+      "blocking_ratification": true
+    },
+    {
+      "id": "GAP-0075-009",
+      "severity": "MEDIUM",
+      "blocking_ratification": false
+    },
+    {
+      "id": "GAP-0075-010",
+      "severity": "MEDIUM",
+      "blocking_ratification": false
+    },
+    {
+      "id": "GAP-0075-011",
+      "severity": "MEDIUM",
+      "blocking_ratification": false
+    },
+    {
+      "id": "GAP-0075-012",
+      "severity": "LOW",
+      "blocking_ratification": false
+    }
+  ],
+  "conflicts": [
+    "CONFLICT-0075-001",
+    "CONFLICT-0075-002",
+    "CONFLICT-0075-003"
   ]
 }
