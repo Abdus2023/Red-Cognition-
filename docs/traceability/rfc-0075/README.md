@@ -8,5 +8,5 @@ This is an evidence-led package, not an implementation claim. It identifies 31 n
 |---|---|
 | [requirements](02-requirements.md) | Stable, verbatim-meaning requirement extraction |
 | [matrix](03-traceability-matrix.md) | Requirement-to-evidence chain |
-| [gaps](15-gaps.md) / [conflicts](16-conflicts.md) | Explicit unresolved issues |
+| [gaps](15-gaps.md) / [conflicts](16-conflicts.md) / [record reconciliation](19-ratification-record-reconciliation.md) | Explicit unresolved issues and divergent ratification artifact |
 | [manifest](manifest.yaml) / `traceability.json` | Machine-oriented inventory |
