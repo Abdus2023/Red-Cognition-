@@ -1,13 +1,18 @@
 # Architecture traceability
 
-| Component | Responsibility / boundary | Inputs → outputs | Source | Implementation status |
-|---|---|---|---|---|
-| Actors/domains/CogOS | independent participants; sovereignty boundary | agreement, identity → governed action | RFC-0075 §§1–4 | NOT_FOUND |
-| Runtime / transport / storage | execute, exchange, persist | contracts/events → state/event log | §§5,8,14; RFC-0018/0021 | NOT_FOUND |
-| Registry / identity / trust | discovery, authentication, assertions/revocation | identity/certificates → trust decision | §§9,15; RFC-0022 | NOT_FOUND |
-| Capability / governance | authorize and decide | capability/policy → decision | §§5–6; RFC-0006/0040 | NOT_FOUND |
-| Memory / knowledge layer | synchronize classified knowledge | KnowledgeExchange → KnowledgeView | §§5,10,13; RFC-0056/0074 | NOT_FOUND |
-| Event log / observability | persistent, replayable observation | FederationEvent → interface/metrics | §§2,4,8,14,16; RFC-0018/0046 | NOT_FOUND |
-| Security / verification | integrity, policy and conformance | proofs/assertions → acceptance evidence | §15; RFC-0025/0050 | NOT_FOUND |
+The machine inventory (`traceability.json.architectural_concepts`) assigns stable `ARCH-0075-*` identifiers. All statuses reflect this checkout, not a claim about external products.
 
-Persistence is mandated only generally (agreements/event participation); retention, transactionality, and storage authority are unspecified. Replay boundary and security boundary algorithms are gaps, not architecture facts.
+| ID / component | Responsibility / boundary | Inputs → outputs | Specification source / dependencies | Persistence, replay, implementation |
+|---|---|---|---|---|
+| ARCH-001 Agreement | versioned collaboration contract; federation/trust boundary | terms, domains → agreement reference | §4; RFC-0074 | event-log recording required; replay version semantics undefined; NOT_FOUND |
+| ARCH-002 Exchange layer | governed cross-domain transfer; sovereignty boundary | capability, knowledge → KnowledgeExchange/event | §§5,10; RFC-0006/0056/0074 | persistence undefined; NOT_FOUND |
+| ARCH-003 Decision layer | cross-domain governance | policy, participants → recorded decision | §6; RFC-0040 | provenance required; deterministic inputs absent; NOT_FOUND |
+| ARCH-004 Provenance | transfer lineage | origin/transforms → provenance chain | §7; RFC-0074 | immutable claim, storage/hash model absent; NOT_FOUND |
+| ARCH-005 Lifecycle manager | state transitions | lifecycle state → FederationEvent | §8 | event required; state/persistence/rollback absent; NOT_FOUND |
+| ARCH-006 Trust layer | assertion and validity | identity/certificates → trust decision | §§9,15; RFC-0022 | revocation listed only; NOT_FOUND |
+| ARCH-007 Conflict layer | deterministic resolution | conflict/policy → decision | §11; RFC-0040 | workflow only; no tie-breaker/version capture; NOT_FOUND |
+| ARCH-008 Knowledge views | optional governed disclosure | filters/capability → visible objects | §13; RFC-0074 | persistence/replay unspecified; NOT_FOUND |
+| ARCH-009 Event/observability | record and expose events | federation action → FederationEvent/interface | §§8,14,16; RFC-0018/0046 | event participation required; endpoint/schema absent; NOT_FOUND |
+| ARCH-010 CLI/conformance | operator commands/profiles | commands → operations | §§17–18 | CADFP conflict; implementation absent; UNVERIFIED |
+
+CogOS/runtime, registry, identity, capability, governance, memory, transport, storage, security and verification layers are architectural roles derived from these components and named dependency RFCs; RFC-0075 does not allocate interfaces to them. Such allocation would be inference, not a mapping.
