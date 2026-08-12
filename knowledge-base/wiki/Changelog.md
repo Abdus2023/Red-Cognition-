@@ -2,6 +2,13 @@
 
 Evolution log of the knowledge base. One entry per processed message, in processing order. Historical provenance is preserved — entries are never deleted or rewritten.
 
+## 2026-08-12 — Message #35 processed (directive "Deeply Verification" #8)
+
+- **Trigger:** user message "Deeply Verification" (no new corpus content).
+- **Action:** deep audit suite #8 executed over the full corpus ([1]–[420], SN-001…SN-2460, 2457 archived fenced blocks, 104 scaffolds): 8 categories — archive structure incl. byte-identity spot checks for the identical re-send groups (D-96/97/99/100/104) and re-purposed-number pairs (D-107…D-114); snippet-ledger integrity incl. all annex blocks byte-faithful; 104-scaffold fidelity; wiki fidelity & links; deep normative focus on messages #32–#34 (ratified RFC-0062/0063/0064 records, C-21/C-22 retention decisions, RFC-0065…0075 lineages); RFC parent chain RFC-0034..0075; status/cross-page coherence; bookkeeping.
+- **Result:** as printed by the suite run (see `reports/message-035-report.md`).
+- **Regression:** message-018 monotonic suite re-run; suites #29–#34 are point-in-time snapshots superseded by suite #8 (not re-scored), same treatment as suites 019–028 at earlier directives.
+- **Bookkeeping:** register row 35; README "35 messages processed".
 ## 2026-08-12 — Message #34 processed ([401]–[420]: autonomous-operating-system RFC layer; RFC-0068/0069/0070 re-purposed; RFC-0073/0074/0075 new)
 
 - **Source:** Conversation message #34 — a 20-part transcript ([401]–[420]; speakers USER, CHATGPT (gpt-5-5), CHATGPT (gpt-5-5-mini); outer wrapper fence removed): RFC-0068 CRGAOP [401] (re-purposes CBS-RAP), RFC-0069 CRDLMP Decision Ledger [403] (re-purposes Deployment-Lifecycle CRDLMP, same acronym), RFC-0070 CRSOAEP [405] (re-purposes CROFP); drafts under collision numbers archived only: RFC-0071 CRSEDTP [407] (CRCP retained), RFC-0072 CRARSH [409] (ratified CRCP retained); new RFC-0073 CRSMADP [411] (+reviews [412]/[413 USER-authored acknowledgement]/[414]), RFC-0074 CRPDGSMP [415] (+[416]), RFC-0075 CFCKEP v1.0 [417] → v1.1 Candidate [419] (CADFP quirk) + reviews [418]/[420]. "Self-governing, self-improving, self-healing, self-protecting cognitive operating system" milestone declared ([413]).

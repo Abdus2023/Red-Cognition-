@@ -2,7 +2,7 @@
   KB-Scaffold Provenance (knowledge-base traceability):
   Origin: corpus message #27, sub-message [299], 2026-08-11
   Verbatim source: knowledge-base/sources/message-027-original-part*.md
-  Status in corpus: RFC-0061 CISA-RA v1.2; RATIFIED per final ratification review [300] ("Decision: APPROVED; Status: RATIFIED"). v1.2 text is this USER draft [299]. Earlier v1.0 proposal [286], v1.1 draft [297], v1.1 ratification record [287], and v1.1 review [298] preserved in archive.
+  Status in corpus: RFC-0061 CISA-RA v1.2; RATIFIED per final ratification review [300] ("Decision: APPROVED; Status: RATIFIED"). v1.2 text is this USER draft [299]. Earlier v1.0 proposal [286], v1.1 draft [297], v1.1 ratification record [287], and v1.1 review [298] preserved in archive. A divergent RFC-0061 v1.0 Draft [369] (msg#32; machine model, R0–R31, special/cognitive registers; closing names RFC-0062) is preserved in the archive only — D-102; the ratified scaffold remains this v1.2 text.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
