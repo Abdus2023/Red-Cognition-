@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "controller": "impl_controller",
+  "controller_version": "1.1.0",
+  "project": "Red/Cognition",
+  "generated_at": "2026-08-12T11:37:26+00:00",
+  "manifest": "docs/implementation/implementation-plan.json",
+  "repo_head": "b33ddd4459ebd08b9c1973dcdd951b91cf18642b",
+  "mode": "dry-run",
+  "tool_registry": {
+    "rebol-278": {
+      "available": false,
+      "evidence": "docs/IMPLEMENTATION-BASELINE.md \u00a7A,\u00a7G.1-G.4",
+      "detail": "Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox."
+    },
+    "python3": {
+      "available": true,
+      "evidence": "PATH /usr/bin/python3",
+      "detail": "CPython 3.11.2 (infrastructure/validation only)"
+    },
+    "gcc": {
+      "available": true,
+      "evidence": "PATH /usr/bin/gcc",
+      "detail": "gcc 12.2.0"
+    },
+    "make": {
+      "available": true,
+      "evidence": "PATH /usr/bin/make",
+      "detail": "GNU make 4.3"
+    }
+  },
+  "task_count": 4,
+  "graph": {
+    "DISCOVERED": 0,
+    "PLANNED": 0,
+    "READY": 0,
+    "IN_PROGRESS": 0,
+    "PASS": 0,
+    "FAIL": 0,
+    "BLOCKED": 4,
+    "DEFERRED": 0,
+    "REJECTED": 0
+  },
+  "classifications": [
+    {
+      "task_id": "RED-LEX-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "TOOLCHAIN",
+      "reasons": [
+        "TOOLCHAIN",
+        "ARCHITECTURE",
+        "PROVISIONING",
+        "AUTHORIZATION"
+      ],
+      "detail": [
+        "required tool unavailable: rebol-278 (Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox.)",
+        "declared blocker [ARCHITECTURE] \u2014 Host x86_64 has no 32-bit execution capability (no /lib/ld-linux.so.2, no libc6-i386, no qemu-user/binfmt)",
+        "declared blocker [PROVISIONING] \u2014 All official binary-transfer channels egress-blocked; no faithful channel carries an approved 32-bit R2 artifact",
+        "declared blocker [AUTHORIZATION] \u2014 No grant to install host 32-bit compatibility or to substitute the toolchain"
+      ]
+    },
+    {
+      "task_id": "LIBRED-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "DEPENDENCY",
+      "reasons": [
+        "DEPENDENCY",
+        "TOOLCHAIN"
+      ],
+      "detail": [
+        "required tool unavailable: rebol-278 (Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox.)",
+        "dependency 'RED-LEX-001' not PASS (required_state=PASS)"
+      ]
+    },
+    {
+      "task_id": "HASH-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "INCOMPLETE_SPECIFICATION",
+      "reasons": [
+        "INCOMPLETE_SPECIFICATION",
+        "TOOLCHAIN"
+      ],
+      "detail": [
+        "incomplete specification (gaps): ['HASH-GAP-1: normative hash algorithm and seed(s) for the /hash refinement are undefined']",
+        "required tool unavailable: rebol-278 (Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox.)"
+      ]
+    },
+    {
+      "task_id": "RFC0075-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "SPECIFICATION_CONFLICT",
+      "reasons": [
+        "SPECIFICATION_CONFLICT",
+        "INCOMPLETE_SPECIFICATION"
+      ],
+      "detail": [
+        "specification conflicts: ['CONFLICT-0075-001', 'CONFLICT-0075-002', 'CONFLICT-0075-003', 'CONFLICT-0075-004']",
+        "incomplete specification (gaps): ['GAP-0075-001', 'GAP-0075-002', 'GAP-0075-003', 'GAP-0075-004']"
+      ]
+    }
+  ],
+  "ready_queue": [],
+  "execution_contracts": [],
+  "frontier": "PAUSED",
+  "evidence_integrity": {
+    "total_records": 0,
+    "trusted_records": 0,
+    "intact": true,
+    "broken_at": 0
+  },
+  "drift_notes": [],
+  "result": "PASS",
+  "errors": []
+}
