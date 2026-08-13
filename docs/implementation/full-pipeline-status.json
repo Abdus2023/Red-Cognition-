@@ -1,8 +1,8 @@
 {
   "pipeline_version": "5.0",
-  "started_at": "2026-08-13T08:38:21+00:00",
-  "completed_at": "2026-08-13T08:38:21+00:00",
-  "repository_head": "e124ac32115beac1513ed4970991aec141ce02e8",
+  "started_at": "2026-08-13T08:48:14+00:00",
+  "completed_at": "2026-08-13T08:48:14+00:00",
+  "repository_head": "4cc14497741382dd8a9e3bc84c23406d968ef05a",
   "stage1_extraction": {
     "rfcs": [
       {
@@ -1124,7 +1124,18 @@
       "ratified": 16,
       "specs": 52,
       "wiki_pages": 19,
-      "extraction_reports": 35
+      "extraction_reports": 35,
+      "normative_requirements": 1467
+    },
+    "normative_requirements": {
+      "total": 1467,
+      "by_strength": {
+        "mandatory": 1192,
+        "mandatory-prohibition": 47,
+        "optional": 165,
+        "recommended": 63
+      },
+      "rfcs_covered": 75
     }
   },
   "stage2_reconstruction": {

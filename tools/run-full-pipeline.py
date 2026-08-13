@@ -28,6 +28,11 @@ if HERE not in sys.path:
 
 from impl_controller.controller import Controller
 
+try:
+    from stage1_extract_requirements import extract_requirements as _extract_reqs
+except ImportError:
+    _extract_reqs = None
+
 
 def _repo_root() -> str:
     try:
@@ -97,6 +102,20 @@ def stage1_extract(root: Path) -> dict:
         "wiki_pages": len(inventory["wiki_pages"]),
         "extraction_reports": len(inventory["extraction_reports"]),
     }
+
+    # --- Normative requirement extraction ---
+    if _extract_reqs:
+        reqs = _extract_reqs(root / "rfcs")
+        by_strength = {}
+        for r in reqs:
+            by_strength.setdefault(r["strength"], 0)
+            by_strength[r["strength"]] += 1
+        inventory["normative_requirements"] = {
+            "total": len(reqs),
+            "by_strength": dict(sorted(by_strength.items())),
+            "rfcs_covered": len({r["rfc_id"] for r in reqs}),
+        }
+        inventory["totals"]["normative_requirements"] = len(reqs)
     return inventory
 
 
@@ -269,7 +288,13 @@ def main() -> int:
     print(json.dumps({
         "pipeline_version": "5.0",
         "stage1": {"rfcs": s1["totals"]["rfcs"], "ratified": s1["totals"]["ratified"],
-                    "specs": s1["totals"]["specs"]},
+                    "specs": s1["totals"]["specs"],
+                    "requirements": s1["totals"].get("normative_requirements", 0)},
+        "epistemic": {"specified": s1["totals"].get("normative_requirements",
+                                                      s1["totals"]["rfcs"]),
+                       "implemented": sum(1 for c in s2["components"]
+                                          if c["classification"] == "IMPLEMENTED"),
+                       "executed": s5.get("graph", {}).get("PASS", 0)},
         "stage2": {"components": len(s2["components"]),
                     "cognition": s2["cognition_implemented"]},
         "stage3": {"edges": s3["total_edges"]},
