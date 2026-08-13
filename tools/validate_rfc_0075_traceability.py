@@ -57,7 +57,11 @@ for label, actual in [('requirements',len(reqs)), ('conflicts',len(data.get('con
     m=re.search(r'^  '+label+r': \{[^}]*total: (\d+)',manifest,re.M)
     if not m: errors.append(f'missing manifest total: {label}')
     elif int(m.group(1)) != actual: errors.append(f'manifest total mismatch: {label}')
-if 'CADFP' in text: errors.append('inconsistent terminology: CADFP appears in RFC-0075')
+# Terminology check applies to the normative body only. The provenance comment
+# may legitimately reference "CADFP" when documenting the historical copy
+# artifact (corrected 2026-08-13); that is metadata, not normative content.
+_body = re.sub(r'<!--.*?-->', '', text, flags=re.S)
+if 'CADFP' in _body: errors.append('inconsistent terminology: CADFP appears in RFC-0075 body')
 result={'specification':'RFC-0075','requirements':len(reqs),'mapped':len(reqs)-len(orphan),'orphaned':len(orphan),'implementations':len(impl_ids),'tests':len(test_ids),'evidence_records':len(evidence),'critical_gaps':critical,'conflicts':len(data.get('conflicts',[])),'broken_rfc_references':broken,'errors':errors,'warnings':warnings,'result':'PASS' if not errors else 'FAIL'}
 (D/'validation-result.json').write_text(json.dumps(result,indent=2)+'\n')
 print('TRACEABILITY VALIDATION\n=======================')

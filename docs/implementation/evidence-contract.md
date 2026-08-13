@@ -1,7 +1,7 @@
 # Implementation Pipeline — Evidence Contract
 
 **Contract version:** 1.0  
-**Controller version:** 1.1.0  
+**Controller version:** 2.0.0  
 **Applies to:** the Red/Cognition implementation pipeline (Stage 5 of the five-stage
 process: Extraction → Knowledge Base → Repository Organization → Planning →
 Execution).

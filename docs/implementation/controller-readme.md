@@ -21,7 +21,7 @@ unblocking event occurs.
 ## Command summary
 
 ```
-python3 tools/impl-controller.py --self-test                       # unit suite (24 cases)
+python3 tools/impl-controller.py --self-test                       # unit suite (390 cases)
 python3 tools/impl-controller.py --dry-run                         # classify+queue+contracts, writes nothing
 python3 tools/impl-controller.py --dry-run --report OUT.json       # also write report
 python3 tools/impl-controller.py                                   # plan mode: persist checkpoint
@@ -125,7 +125,7 @@ tools/impl_controller/
   contract.py  evidence.py  checkpoint.py  controller.py  cli.py  __main__.py
   safety.py    validate_command + validate_targets (fail-closed)
   locking.py   FileLock (exclusive lease; fcntl, no external deps)
-  tests/test_controller.py           24 cases (8 mandated + fail-closed/extras)
+  tests/test_controller.py           24 core cases (8 mandated + fail-closed/extras); 390 across the full suite
   tests/test_hardening.py            61 adversarial cases (categories A..N)
 docs/implementation/
   implementation-plan.json           seed manifest (documented blockers)
@@ -154,7 +154,7 @@ The four current blockers are immutable unless an authoritative prerequisite
 changes (tool availability, spec reconciliation, dependency PASS, or a new
 authorized requirement).
 
-## Hardening (v1.1.0) — adversarial safety properties
+## Hardening (v2.0.0) — adversarial safety properties
 
 Validated by `tests/test_hardening.py` (61 cases). The controller fails closed:
 uncertainty is never transformed into permission.

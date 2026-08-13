@@ -24,7 +24,7 @@
       {
         "id": "RFC-0001",
         "path": "rfcs/RFC-0001-ratification-record.md",
-        "title": "RFC-0001-ratification-record",
+        "title": "RFC-0001 \u2014 Cognitive Type System v1.2",
         "version": "1.2",
         "status": "\u2705 Approved for Ratification",
         "parent": "RC-200 Language Specification v1.0 (Ratified)",
@@ -57,7 +57,7 @@
       {
         "id": "RFC-0002",
         "path": "rfcs/RFC-0002-ratification-record.md",
-        "title": "RFC-0002-ratification-record",
+        "title": "RFC-0002 \u2014 Effect Ordering Model v1.1",
         "version": "1.1",
         "status": "Ratified",
         "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)",
@@ -645,7 +645,7 @@
       {
         "id": "RFC-0059",
         "path": "rfcs/RFC-0059-ctstp-transaction-security-trust.md",
-        "title": "RFC-0059-ctstp-transaction-security-trust",
+        "title": "RFC-0059 \u2014 Cognitive Transaction Security and Trust Profile (CTSTP) v1.1",
         "version": "1.1",
         "status": "Candidate for Ratification",
         "parent": "RFC-0058 \u2014 Cognitive Transaction Wire Protocol and Message Encoding v1.2 (Ratified)",
@@ -736,7 +736,7 @@
       {
         "id": "RFC-0060",
         "path": "rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md",
-        "title": "RFC-0060-cvm-iess-instruction-execution-scheduling",
+        "title": "RFC-0060 \u2014 Cognitive Virtual Machine Instruction Execution and Scheduling Semantics (CVM-IESS) v1.1",
         "version": "1.1",
         "status": "Candidate for Ratification",
         "parent": "RFC-0059 \u2014 Cognitive Transaction Security and Trust Profile (CTSTP) v1.1 (Ratified)",
@@ -945,7 +945,7 @@
       {
         "id": "RFC-0063",
         "path": "rfcs/RFC-0063-cvm-fos-formal-operational-semantics.md",
-        "title": "RFC-0064 \u2014 Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP) v1.0",
+        "title": "RFC-0063 \u2014 Cognitive Virtual Machine Formal Operational Semantics (CVM-FOS) v1.1",
         "version": "1.1",
         "status": "Candidate for Final Ratification",
         "parent": "RFC-0062 \u2014 Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.1 (Candidate)",

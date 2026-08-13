@@ -1,0 +1,46 @@
+{
+  "document_class": "Authoritative Ratification Registry",
+  "status": "Normative governance record — the single source of truth for ratification status",
+  "authority": "Derived exclusively from corpus ratification events (knowledge-base/reports/message-035-report.md audit #8, 68/68 PASS) and the scaffolded ratification records in rfcs/.",
+  "as_of": "2026-08-13",
+  "baseline_audited": "4b06081ae5b13eb692968a1467e7a46ce6fd1f7a",
+  "supersedes": "Any independently maintained 'ratified' count in generated reports, indexes, dashboards, or traceability artifacts. Derived artifacts MUST read this registry; they MUST NOT recompute their own count.",
+  "counts": {
+    "rc_ratified": 3,
+    "rfc_ratified": 19,
+    "rfc_with_record_file": 17,
+    "rfc_without_record_file": 2,
+    "rfc_conditional_effective": 1,
+    "total_ratified_documents": 22
+  },
+  "ratified": [
+    {"id": "RC-000", "kind": "RC", "title": "Constitution", "record_file": null, "evidence": "corpus message #3"},
+    {"id": "RC-100", "kind": "RC", "title": "Architecture Specification", "record_file": "specs/RC-100-ratification-record.md", "evidence": "corpus message #3"},
+    {"id": "RC-200", "kind": "RC", "title": "Language Specification", "record_file": "specs/RC-200-ratification-record.md", "evidence": "corpus message #5"},
+    {"id": "RFC-0001", "kind": "RFC", "title": "Cognitive Type System", "version": "1.2", "record_file": "rfcs/RFC-0001-ratification-record.md", "evidence": "sub-message [72] (message #8)"},
+    {"id": "RFC-0002", "kind": "RFC", "title": "Effect Ordering Model", "version": "1.1", "record_file": "rfcs/RFC-0002-ratification-record.md", "evidence": "sub-message [76] (message #8)"},
+    {"id": "RFC-0011", "kind": "RFC", "title": "Scheduler and Execution Model", "version": "1.2", "record_file": "rfcs/RFC-0011-ratification-record.md", "evidence": "message #12"},
+    {"id": "RFC-0042", "kind": "RFC", "title": "Cognitive Autonomous Deployment Protocol (CADP)", "record_file": "rfcs/RFC-0042-ratification-record.md", "evidence": "message #18"},
+    {"id": "RFC-0046", "kind": "RFC", "title": "Cognitive Observability and Diagnostics Protocol (CODP)", "version": "1.2", "record_file": null, "evidence": "sub-message [196] (message #21); record file not scaffolded"},
+    {"id": "RFC-0047", "kind": "RFC", "title": "Cognitive Package Manager and Workspace Specification (CPMWS)", "record_file": null, "evidence": "sub-message [202] (message #22); record file not scaffolded"},
+    {"id": "RFC-0049", "kind": "RFC", "title": "Cognitive Standard Toolchain Specification (CSTS)", "version": "1.2", "record_file": "rfcs/RFC-0049-ratification-record.md", "evidence": "sub-message [215] (message #22)"},
+    {"id": "RFC-0050", "kind": "RFC", "title": "Red/Cognition v1.0 Architecture and Conformance Specification", "version": "1.2", "record_file": "rfcs/RFC-0050-ratification-record.md", "evidence": "sub-messages [224]/[225] (message #23)"},
+    {"id": "RFC-0052", "kind": "RFC", "title": "Cognitive Testing and Verification Framework (CTVF)", "record_file": "rfcs/RFC-0052-ratification-record.md", "evidence": "sub-message [235] (message #23)"},
+    {"id": "RFC-0053", "kind": "RFC", "title": "Cognitive Remote Agent Invocation Protocol (CRAIP)", "record_file": "rfcs/RFC-0053-ratification-record.md", "evidence": "sub-messages [244]/[247] (message #25)"},
+    {"id": "RFC-0057", "kind": "RFC", "title": "Cognitive Distributed Transaction and Consistency Protocol (CDTCP)", "record_file": "rfcs/RFC-0057-ratification-record.md", "evidence": "sub-messages [266]/[267] (message #26)"},
+    {"id": "RFC-0058", "kind": "RFC", "title": "Cognitive Transaction Wire Protocol and Message Encoding (CTWP)", "record_file": "rfcs/RFC-0058-ratification-record.md", "evidence": "sub-messages [276]/[277]/[278] (message #26)"},
+    {"id": "RFC-0059", "kind": "RFC", "title": "Cognitive Transaction Security and Trust Profile (CTSTP)", "record_file": "rfcs/RFC-0059-ratification-record.md", "evidence": "message #27"},
+    {"id": "RFC-0060", "kind": "RFC", "title": "Cognitive Virtual Machine Instruction Execution and Scheduling Semantics (CVM-IESS)", "record_file": "rfcs/RFC-0060-ratification-record.md", "evidence": "message #27"},
+    {"id": "RFC-0061", "kind": "RFC", "title": "Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA)", "version": "1.2", "record_file": "rfcs/RFC-0061-ratification-record.md", "evidence": "message #27; record sub-message [301] (message #29)"},
+    {"id": "RFC-0062", "kind": "RFC", "title": "Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF)", "version": "1.3", "record_file": "rfcs/RFC-0062-ratification-record.md", "evidence": "sub-message [381] (message #33)"},
+    {"id": "RFC-0063", "kind": "RFC", "title": "Cognitive Virtual Machine Formal Operational Semantics (CVM-FOS)", "version": "1.1", "record_file": "rfcs/RFC-0063-ratification-record.md", "evidence": "sub-message [385] (message #33)"},
+    {"id": "RFC-0064", "kind": "RFC", "title": "Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP)", "version": "1.1", "record_file": "rfcs/RFC-0064-ratification-record.md", "evidence": "sub-message [391] (message #33)"},
+    {"id": "RFC-0072", "kind": "RFC", "title": "Cognitive Runtime Coordination Protocol (CRCP) Wire Format and Binary Message Encoding", "version": "1.6", "record_file": "rfcs/RFC-0072-ratification-record.md", "evidence": "sub-message [339] (message #30)", "condition": "Effective upon ratification of RFC-0071 (RFC-0071 is not ratified)"}
+  ],
+  "notes": [
+    "RFC-0046 and RFC-0047 are ratified per the corpus but have no scaffolded ratification-record file. This is a scaffold-completeness gap, not an uncertainty about ratification status.",
+    "RFC-0072 ratification is conditional on RFC-0071, which is not ratified; treat RFC-0072 as provisionally effective.",
+    "RFC-0075 is NOT ratified. It is a Candidate in rfcs/. A divergent ratification record exists at docs/specifications/red-deep-technical-spec/RFC-0075-Ratification-Record.md (see CONFLICT-0075-004); it is not adopted by this registry.",
+    "The legacy substring heuristic (status contains 'Ratified') yielded 16 and missed RFC-0001 ('Approved for Ratification'), RFC-0046, and RFC-0047. This registry replaces that heuristic."
+  ]
+}

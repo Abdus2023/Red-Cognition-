@@ -1,8 +1,8 @@
 {
   "pipeline_version": "5.0",
-  "started_at": "2026-08-13T09:58:03+00:00",
-  "completed_at": "2026-08-13T09:58:03+00:00",
-  "repository_head": "06c13ba1b787bfaa1d1590d4694817334855f694",
+  "started_at": "2026-08-13T10:49:49+00:00",
+  "completed_at": "2026-08-13T10:49:50+00:00",
+  "repository_head": "4b06081ae5b13eb692968a1467e7a46ce6fd1f7a",
   "stage1_extraction": {
     "rfcs": [
       {
@@ -1121,7 +1121,7 @@
     "totals": {
       "rfcs": 92,
       "unique_rfc_ids": 75,
-      "ratified": 16,
+      "ratified": 19,
       "specs": 52,
       "wiki_pages": 19,
       "extraction_reports": 35,

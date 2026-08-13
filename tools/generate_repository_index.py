@@ -10,15 +10,24 @@ DOCS=ROOT/'docs'
 def first_meta(text, label):
     m=re.search(r'^\*\*'+re.escape(label)+r':\*\*\s*(.+?)\s*$',text,re.M)
     return m.group(1).strip() if m else 'UNSPECIFIED'
-def title(text, fallback):
-    m=re.search(r'^\*\*(RFC-\d{4}\s+—\s+.+?)\*\*\s*$',text,re.M)
-    return m.group(1).strip() if m else fallback
+def title(text, ident, fallback):
+    # A document's title is the heading whose RFC number matches the file's own
+    # identifier. Body cross-references to *other* RFCs (e.g. RFC-0063's body
+    # cites "**RFC-0064 — …**" at ~line 818) are never mistaken for the title.
+    for pat in (
+        r'^\*\*(' + ident + r'\s+—\s+.+?)\*\*\s*$',
+        r'^#{1,2}\s+(' + ident + r'\s+—\s+.+?)\s*$',
+    ):
+        m = re.search(pat, text, re.M)
+        if m:
+            return m.group(1).strip()
+    return fallback
 rfcs=[]
 for f in sorted((ROOT/'rfcs').glob('RFC-*.md')):
     text=f.read_text(errors='replace')
     ident=re.search(r'RFC-(\d{4})',f.name).group(1)
     refs=sorted(set(re.findall(r'RFC-(\d{4})',text)))
-    rfcs.append({'id':'RFC-'+ident,'path':f.relative_to(ROOT).as_posix(),'title':title(text,f.stem),'version':first_meta(text,'Version'),'status':first_meta(text,'Status'),'parent':first_meta(text,'Parent'),'related':['RFC-'+x for x in refs if x != ident]})
+    rfcs.append({'id':'RFC-'+ident,'path':f.relative_to(ROOT).as_posix(),'title':title(text,'RFC-'+ident,f.stem),'version':first_meta(text,'Version'),'status':first_meta(text,'Status'),'parent':first_meta(text,'Parent'),'related':['RFC-'+x for x in refs if x != ident]})
 for r in rfcs:
     r['children']=[q['id'] for q in rfcs if q['parent'].startswith(r['id']+' ')]
 # A textual reference is preserved as an explicit documented edge, not upgraded to a semantic dependency.
