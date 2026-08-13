@@ -32,6 +32,10 @@ try:
     from stage1_extract_requirements import extract_requirements as _extract_reqs
 except ImportError:
     _extract_reqs = None
+try:
+    from stage3_build_traceability import build_traceability as _build_trace
+except ImportError:
+    _build_trace = None
 
 
 def _repo_root() -> str:
@@ -157,8 +161,6 @@ def stage3_trace(root: Path, inventory: dict, reconstruction: dict,
                  plan: dict) -> dict:
     """Build bidirectional traceability graph."""
     edges = []
-
-    # requirement → specification (from task spec_refs)
     for task in plan.get("tasks", []):
         tid = task["task_id"]
         for req in task.get("requirement_refs", []):
@@ -170,13 +172,21 @@ def stage3_trace(root: Path, inventory: dict, reconstruction: dict,
             edges.append({"from": tid, "to": auth.get("doc", ""),
                           "kind": "task→authority"})
 
-    return {
+    result = {
         "edges": edges,
         "total_edges": len(edges),
         "requirement_to_task": sum(1 for e in edges if e["kind"] == "requirement→task"),
         "task_to_specification": sum(1 for e in edges if e["kind"] == "task→specification"),
         "task_to_authority": sum(1 for e in edges if e["kind"] == "task→authority"),
     }
+
+    # Enrich with structured coverage analysis from Stage 1 requirements
+    if _build_trace:
+        trace = _build_trace(root)
+        result["coverage"] = trace.get("coverage", {})
+        result["orphan_requirements_by_rfc"] = trace.get("orphan_requirements_by_rfc", {})
+
+    return result
 
 
 # ==========================================================================
@@ -297,7 +307,9 @@ def main() -> int:
                        "executed": s5.get("graph", {}).get("PASS", 0)},
         "stage2": {"components": len(s2["components"]),
                     "cognition": s2["cognition_implemented"]},
-        "stage3": {"edges": s3["total_edges"]},
+        "stage3": {"edges": s3["total_edges"],
+              "coverage_pct": s3.get("coverage", {}).get("coverage_pct", "N/A"),
+              "reqs_with_tasks": s3.get("coverage", {}).get("requirements_with_tasks", "N/A")},
         "stage4": {"valid": s4["valid"], "tasks": s4["task_count"]},
         "stage5": {"frontier": s5.get("frontier"), "graph": s5.get("graph"),
                     "result": s5.get("result")},

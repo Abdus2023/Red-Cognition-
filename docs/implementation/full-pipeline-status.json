@@ -1,8 +1,8 @@
 {
   "pipeline_version": "5.0",
-  "started_at": "2026-08-13T08:48:14+00:00",
-  "completed_at": "2026-08-13T08:48:14+00:00",
-  "repository_head": "4cc14497741382dd8a9e3bc84c23406d968ef05a",
+  "started_at": "2026-08-13T08:58:16+00:00",
+  "completed_at": "2026-08-13T08:58:16+00:00",
+  "repository_head": "4672f87694af0ac4312747a2082ff85f054b00d7",
   "stage1_extraction": {
     "rfcs": [
       {
@@ -1335,7 +1335,37 @@
     "total_edges": 24,
     "requirement_to_task": 8,
     "task_to_specification": 5,
-    "task_to_authority": 11
+    "task_to_authority": 11,
+    "coverage": {
+      "total_structured_requirements": 1407,
+      "requirements_with_tasks": 0,
+      "requirements_without_tasks": 1407,
+      "coverage_pct": 0.0,
+      "task_requirement_refs": [
+        "README-L185-205",
+        "REQ-0075-001",
+        "REQ-0075-031",
+        "build/build.r-L50",
+        "libred-architecture",
+        "libred-c-api-reference",
+        "runtime-crypto-hash",
+        "runtime-natives-hash"
+      ],
+      "structured_refs_matched": 0,
+      "informal_refs_unmatched": [
+        "README-L185-205",
+        "REQ-0075-001",
+        "REQ-0075-031",
+        "build/build.r-L50",
+        "libred-architecture",
+        "libred-c-api-reference",
+        "runtime-crypto-hash",
+        "runtime-natives-hash"
+      ]
+    },
+    "orphan_requirements_by_rfc": {
+      "RFC": 1407
+    }
   },
   "stage4_planning": {
     "valid": true,
