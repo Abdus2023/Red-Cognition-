@@ -1,0 +1,759 @@
+{
+  "total_rfcs": 75,
+  "rfcs_with_existing_source": 15,
+  "rfcs_without_source": 60,
+  "requirements_with_existing_source": 217,
+  "requirements_without_source": 1250,
+  "matrix": [
+    {
+      "rfc_id": "RFC-0001",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 17,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0002",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 35,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0003",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 31,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0004",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 30,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0005",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 24,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0006",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 33,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0007",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 33,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0008",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0009",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 22,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0010",
+      "domain": "Core cognitive types",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0011",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 26,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0012",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 23,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0013",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 14,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0014",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0015",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0016",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 6,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0017",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0018",
+      "domain": "Execution / CVM / CISA / runtime",
+      "candidate_module": "runtime/",
+      "module_exists": true,
+      "module_file_count": 106,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0019",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 4,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0020",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 29,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0021",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0022",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 25,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0023",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0024",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 25,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0025",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 10,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0026",
+      "domain": "CogOS / distributed / security",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 25,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0027",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0028",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 10,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0029",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 15,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0030",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0031",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 8,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0032",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 10,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0033",
+      "domain": "Compiler / CIR / verification",
+      "candidate_module": "system/",
+      "module_exists": true,
+      "module_file_count": 150,
+      "module_status": "SCAFFOLDED",
+      "requirement_count": 9,
+      "coverage_status": "SOURCE_EXISTS_UNCOMPILED"
+    },
+    {
+      "rfc_id": "RFC-0034",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0035",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 26,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0036",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0037",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0038",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 6,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0039",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0040",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0041",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 25,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0042",
+      "domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 17,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0043",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0044",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 24,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0045",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0046",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0047",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0048",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0049",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 26,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0050",
+      "domain": "Language / toolchain / conformance",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0051",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0052",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 13,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0053",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 42,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0054",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 32,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0055",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0056",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 18,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0057",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 35,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0058",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 27,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0059",
+      "domain": "Distributed cognition / transactions",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0060",
+      "domain": "Verified execution / formal semantics",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 18,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0061",
+      "domain": "Verified execution / formal semantics",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 11,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0062",
+      "domain": "Verified execution / formal semantics",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 21,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0063",
+      "domain": "Verified execution / formal semantics",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 9,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0064",
+      "domain": "Verified execution / formal semantics",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0065",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 14,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0066",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 24,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0067",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 16,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0068",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 8,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0069",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 10,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0070",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 15,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0071",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 26,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0072",
+      "domain": "Supply chain / proof-carrying",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 33,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0073",
+      "domain": "Security / monitoring / autonomous defense",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 19,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0074",
+      "domain": "Security / monitoring / autonomous defense",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 18,
+      "coverage_status": "SOURCE_ABSENT"
+    },
+    {
+      "rfc_id": "RFC-0075",
+      "domain": "Federation knowledge exchange",
+      "candidate_module": "cognition/",
+      "module_exists": false,
+      "module_file_count": 0,
+      "module_status": "ABSENT",
+      "requirement_count": 31,
+      "coverage_status": "SOURCE_ABSENT"
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "total_modules": 40,
+  "total_files": 1096,
+  "by_classification": {
+    "ABSENT": 1,
+    "AUTHORITATIVE": 320,
+    "IMPLEMENTED": 72,
+    "SCAFFOLDED": 580,
+    "UNKNOWN": 123
+  },
+  "modules": [
+    {
+      "module": ".appveyor.yml",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".yml": 1
+      },
+      "sample_files": [
+        ".appveyor.yml"
+      ]
+    },
+    {
+      "module": ".editorconfig",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        ".editorconfig"
+      ]
+    },
+    {
+      "module": ".gitattributes-sample",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        ".gitattributes-sample"
+      ]
+    },
+    {
+      "module": ".github",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 3,
+      "extensions": {
+        ".yml": 2,
+        ".md": 1
+      },
+      "sample_files": [
+        ".github/ISSUE_TEMPLATE/bug_report.md",
+        ".github/workflows/implementation-pipeline.yml",
+        ".github/workflows/main.yml"
+      ]
+    },
+    {
+      "module": ".gitignore-sample",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        ".gitignore-sample"
+      ]
+    },
+    {
+      "module": ".travis.yml",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".yml": 1
+      },
+      "sample_files": [
+        ".travis.yml"
+      ]
+    },
+    {
+      "module": "BSD-3-License.txt",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".txt": 1
+      },
+      "sample_files": [
+        "BSD-3-License.txt"
+      ]
+    },
+    {
+      "module": "BSL-License.txt",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".txt": 1
+      },
+      "sample_files": [
+        "BSL-License.txt"
+      ]
+    },
+    {
+      "module": "CODE_OF_CONDUCT.md",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".md": 1
+      },
+      "sample_files": [
+        "CODE_OF_CONDUCT.md"
+      ]
+    },
+    {
+      "module": "CONTRIBUTING.md",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".md": 1
+      },
+      "sample_files": [
+        "CONTRIBUTING.md"
+      ]
+    },
+    {
+      "module": "README.md",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".md": 1
+      },
+      "sample_files": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "boot.red",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".red": 1
+      },
+      "sample_files": [
+        "boot.red"
+      ]
+    },
+    {
+      "module": "bridges",
+      "domain": "Platform bridges (Android, Java)",
+      "classification": "SCAFFOLDED",
+      "file_count": 25,
+      "extensions": {
+        ".java": 9,
+        ".xml": 6,
+        ".png": 4,
+        ".red": 3,
+        ".r": 1,
+        ".dex": 1,
+        ".md": 1
+      },
+      "sample_files": [
+        "bridges/android/build.r",
+        "bridges/android/dex/classes.dex",
+        "bridges/android/samples/eval/AndroidManifest.xml"
+      ]
+    },
+    {
+      "module": "build",
+      "domain": "Build scripts (Rebol SDK)",
+      "classification": "SCAFFOLDED",
+      "file_count": 7,
+      "extensions": {
+        ".r": 5,
+        ".md": 1,
+        ".sample": 1
+      },
+      "sample_files": [
+        "build/README.md",
+        "build/build.r",
+        "build/encap-paths.r.sample"
+      ]
+    },
+    {
+      "module": "cognition",
+      "domain": "Cognition runtime (RFC-0050 architecture — ABSENT)",
+      "classification": "ABSENT",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        "cognition/.gitkeep"
+      ]
+    },
+    {
+      "module": "compiler",
+      "domain": "Red compiler (lexer/parser/codegen)",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        "compiler/.gitkeep"
+      ]
+    },
+    {
+      "module": "compiler.r",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".r": 1
+      },
+      "sample_files": [
+        "compiler.r"
+      ]
+    },
+    {
+      "module": "dialects",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        "dialects/.gitkeep"
+      ]
+    },
+    {
+      "module": "docs",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 56,
+      "extensions": {
+        ".md": 31,
+        ".r": 6,
+        ".xlsx": 4,
+        ".json": 4,
+        ".txt": 3,
+        ".html": 3,
+        ".red": 2,
+        ".css": 2,
+        ".csv": 1
+      },
+      "sample_files": [
+        "docs/ARCHITECTURE-INDEX.md",
+        "docs/DEPENDENCY-MAP.md",
+        "docs/FILE-INDEX.md"
+      ]
+    },
+    {
+      "module": "docs/implementation",
+      "domain": "Stage-5 pipeline + controller infrastructure",
+      "classification": "IMPLEMENTED",
+      "file_count": 31,
+      "extensions": {
+        ".md": 25,
+        ".json": 6
+      },
+      "sample_files": [
+        "docs/implementation/concurrency-model.md",
+        "docs/implementation/concurrency-report.md",
+        "docs/implementation/controller-readme.md"
+      ]
+    },
+    {
+      "module": "docs/specifications",
+      "domain": "UNCLASSIFIED",
+      "classification": "AUTHORITATIVE",
+      "file_count": 52,
+      "extensions": {
+        ".md": 52
+      },
+      "sample_files": [
+        "docs/specifications/red-deep-technical-spec/01-full-stack-architecture-diagram.md",
+        "docs/specifications/red-deep-technical-spec/02-complete-toolchain-diagram.md",
+        "docs/specifications/red-deep-technical-spec/03-red-system-compiler-structure.md"
+      ]
+    },
+    {
+      "module": "docs/traceability",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 24,
+      "extensions": {
+        ".md": 21,
+        ".json": 2,
+        ".yaml": 1
+      },
+      "sample_files": [
+        "docs/traceability/rfc-0075/00-overview.md",
+        "docs/traceability/rfc-0075/01-source-authority.md",
+        "docs/traceability/rfc-0075/02-requirements.md"
+      ]
+    },
+    {
+      "module": "environment",
+      "domain": "Red environment (console, codecs, schemes)",
+      "classification": "SCAFFOLDED",
+      "file_count": 38,
+      "extensions": {
+        ".red": 32,
+        ".reds": 5,
+        ".ico": 1
+      },
+      "sample_files": [
+        "environment/actions.red",
+        "environment/codecs/BMP.red",
+        "environment/codecs/CSV.red"
+      ]
+    },
+    {
+      "module": "examples",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        "(none)": 1
+      },
+      "sample_files": [
+        "examples/.gitkeep"
+      ]
+    },
+    {
+      "module": "knowledge-base",
+      "domain": "Extracted corpus knowledge (35 reports, 19 wiki)",
+      "classification": "AUTHORITATIVE",
+      "file_count": 175,
+      "extensions": {
+        ".md": 158,
+        ".py": 17
+      },
+      "sample_files": [
+        "knowledge-base/README.md",
+        "knowledge-base/reports/message-001-report.md",
+        "knowledge-base/reports/message-002-report.md"
+      ]
+    },
+    {
+      "module": "lexer.r",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".r": 1
+      },
+      "sample_files": [
+        "lexer.r"
+      ]
+    },
+    {
+      "module": "libRed",
+      "domain": "libRed C FFI (RFC-0048 CFFI)",
+      "classification": "SCAFFOLDED",
+      "file_count": 6,
+      "extensions": {
+        ".md": 1,
+        ".bas": 1,
+        ".def": 1,
+        ".lib": 1,
+        ".red": 1,
+        ".h": 1
+      },
+      "sample_files": [
+        "libRed/README.md",
+        "libRed/libRed.bas",
+        "libRed/libRed.def"
+      ]
+    },
+    {
+      "module": "modules",
+      "domain": "Red extension modules (audio, view)",
+      "classification": "SCAFFOLDED",
+      "file_count": 81,
+      "extensions": {
+        ".reds": 63,
+        ".red": 18
+      },
+      "sample_files": [
+        "modules/audio/audio.red",
+        "modules/audio/audio.reds",
+        "modules/audio/backends/alsa.reds"
+      ]
+    },
+    {
+      "module": "quick-test",
+      "domain": "Quick-Test framework",
+      "classification": "SCAFFOLDED",
+      "file_count": 8,
+      "extensions": {
+        ".r": 4,
+        ".reds": 3,
+        ".red": 1
+      },
+      "sample_files": [
+        "quick-test/quick-test.r",
+        "quick-test/quick-test.red",
+        "quick-test/quick-test.reds"
+      ]
+    },
+    {
+      "module": "red.r",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".r": 1
+      },
+      "sample_files": [
+        "red.r"
+      ]
+    },
+    {
+      "module": "rfcs",
+      "domain": "Authoritative RFC specifications (92 files, 75 RFCs)",
+      "classification": "AUTHORITATIVE",
+      "file_count": 93,
+      "extensions": {
+        ".md": 92,
+        "(none)": 1
+      },
+      "sample_files": [
+        "rfcs/.gitkeep",
+        "rfcs/RFC-0001-cognitive-type-system.md",
+        "rfcs/RFC-0001-ratification-record.md"
+      ]
+    },
+    {
+      "module": "run-all.r",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".r": 1
+      },
+      "sample_files": [
+        "run-all.r"
+      ]
+    },
+    {
+      "module": "runtime",
+      "domain": "Red runtime (RFC-0012..0018 CVM/CISA/execution)",
+      "classification": "SCAFFOLDED",
+      "file_count": 106,
+      "extensions": {
+        ".reds": 106
+      },
+      "sample_files": [
+        "runtime/actions.reds",
+        "runtime/allocator.reds",
+        "runtime/call.reds"
+      ]
+    },
+    {
+      "module": "specs",
+      "domain": "Deep technical specifications (52 documents)",
+      "classification": "UNKNOWN",
+      "file_count": 13,
+      "extensions": {
+        ".md": 12,
+        "(none)": 1
+      },
+      "sample_files": [
+        "specs/.gitkeep",
+        "specs/RC-000-constitution.md",
+        "specs/RC-100-architecture-specification.md"
+      ]
+    },
+    {
+      "module": "system",
+      "domain": "Red/System compiler (Red language infrastructure)",
+      "classification": "SCAFFOLDED",
+      "file_count": 150,
+      "extensions": {
+        ".reds": 70,
+        ".r": 58,
+        ".txt": 7,
+        ".so": 4,
+        ".ico": 3,
+        ".plist": 1,
+        ".icns": 1,
+        ".java": 1,
+        ".md": 1,
+        ".sh": 1,
+        ".dylib": 1,
+        ".c": 1,
+        ".dll": 1
+      },
+      "sample_files": [
+        "system/assets/macOS/Info.plist",
+        "system/assets/macOS/Resources/AppIcon.icns",
+        "system/assets/red-3D.ico"
+      ]
+    },
+    {
+      "module": "tests",
+      "domain": "Red test suite (Quick-Test harness)",
+      "classification": "SCAFFOLDED",
+      "file_count": 159,
+      "extensions": {
+        ".red": 106,
+        ".r": 36,
+        ".c": 3,
+        ".ico": 3,
+        ".reds": 2,
+        ".txt": 2,
+        ".png": 1,
+        ".gtk3": 1,
+        ".md": 1,
+        ".dll": 1,
+        ".xlsm": 1,
+        ".sh": 1,
+        ".tests": 1
+      },
+      "sample_files": [
+        "tests/align-test.red",
+        "tests/allocator-tests.reds",
+        "tests/android/vid.red"
+      ]
+    },
+    {
+      "module": "tools",
+      "domain": "Pipeline tools + validators",
+      "classification": "IMPLEMENTED",
+      "file_count": 41,
+      "extensions": {
+        ".py": 41
+      },
+      "sample_files": [
+        "tools/generate_repository_index.py",
+        "tools/impl-controller.py",
+        "tools/impl_controller/__init__.py"
+      ]
+    },
+    {
+      "module": "usage.txt",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".txt": 1
+      },
+      "sample_files": [
+        "usage.txt"
+      ]
+    },
+    {
+      "module": "utils",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 7,
+      "extensions": {
+        ".r": 4,
+        ".red": 3
+      },
+      "sample_files": [
+        "utils/call.r",
+        "utils/extractor.r",
+        "utils/generate-lexer-table.red"
+      ]
+    },
+    {
+      "module": "version.r",
+      "domain": "UNCLASSIFIED",
+      "classification": "UNKNOWN",
+      "file_count": 1,
+      "extensions": {
+        ".r": 1
+      },
+      "sample_files": [
+        "version.r"
+      ]
+    }
+  ]
+}

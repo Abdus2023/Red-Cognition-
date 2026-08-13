@@ -1,0 +1,1475 @@
+{
+  "pipeline_version": "5.0",
+  "started_at": "2026-08-13T09:58:03+00:00",
+  "completed_at": "2026-08-13T09:58:03+00:00",
+  "repository_head": "06c13ba1b787bfaa1d1590d4694817334855f694",
+  "stage1_extraction": {
+    "rfcs": [
+      {
+        "id": "RFC-0001",
+        "file": "RFC-0001-cognitive-type-system.md",
+        "title": "Cognitive Type System",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RC-200 Language Specification v1.0 (Ratified)"
+      },
+      {
+        "id": "RFC-0001",
+        "file": "RFC-0001-ratification-record.md",
+        "title": "",
+        "status": "\u2705 Approved for Ratification",
+        "version": "1.2",
+        "parent": "RC-200 Language Specification v1.0 (Ratified)"
+      },
+      {
+        "id": "RFC-0002",
+        "file": "RFC-0002-effect-ordering-model.md",
+        "title": "Effect Ordering Model",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)"
+      },
+      {
+        "id": "RFC-0002",
+        "file": "RFC-0002-ratification-record.md",
+        "title": "Belief Revision System",
+        "status": "Ratified",
+        "version": "1.1",
+        "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)"
+      },
+      {
+        "id": "RFC-0003",
+        "file": "RFC-0003-belief-revision-system.md",
+        "title": "Belief Revision System",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)"
+      },
+      {
+        "id": "RFC-0004",
+        "file": "RFC-0004-goal-lifecycle-satisfaction-model.md",
+        "title": "Goal Lifecycle and Satisfaction Model",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)"
+      },
+      {
+        "id": "RFC-0005",
+        "file": "RFC-0005-planning-semantics.md",
+        "title": "Planning Semantics",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0004 Goal Lifecycle and Satisfaction Model v1.1 (Ratifie"
+      },
+      {
+        "id": "RFC-0006",
+        "file": "RFC-0006-capability-model.md",
+        "title": "Capability Model",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0004 Goal Lifecycle and Satisfaction Model v1.1 (Ratifie"
+      },
+      {
+        "id": "RFC-0007",
+        "file": "RFC-0007-skill-model.md",
+        "title": "Skill Model",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0001 Cognitive Type System v1.2 (Ratified)"
+      },
+      {
+        "id": "RFC-0008",
+        "file": "RFC-0008-memory-model.md",
+        "title": "Memory Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0007 Skill Model v1.1 (Candidate)"
+      },
+      {
+        "id": "RFC-0009",
+        "file": "RFC-0009-agent-model.md",
+        "title": "Agent Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0007 Skill Model v1.1 (Candidate)"
+      },
+      {
+        "id": "RFC-0010",
+        "file": "RFC-0010-checkpoint-recovery-model.md",
+        "title": "Checkpoint and Recovery Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0009 Agent Model v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0011",
+        "file": "RFC-0011-ratification-record.md",
+        "title": "Scheduler and Execution Model",
+        "status": "Ratified",
+        "version": "1.2",
+        "parent": "RFC-0010 Checkpoint and Recovery Model v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0011",
+        "file": "RFC-0011-scheduler-execution-model.md",
+        "title": "Scheduler and Execution Model",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0010 Checkpoint and Recovery Model v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0012",
+        "file": "RFC-0012-cvm-execution-semantics.md",
+        "title": "Cognitive Virtual Machine (CVM) Execution Semantics",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0011 Scheduler and Execution Model v1.2 (Candidate)"
+      },
+      {
+        "id": "RFC-0013",
+        "file": "RFC-0013-cisa.md",
+        "title": "Cognitive Instruction Set Architecture (CISA)",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0012 Cognitive Virtual Machine (CVM) Execution Semantics"
+      },
+      {
+        "id": "RFC-0014",
+        "file": "RFC-0014-cisa-binary-encoding.md",
+        "title": "CISA Binary Encoding and Serialization Format",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0013 Cognitive Instruction Set Architecture (CISA) v1.1 "
+      },
+      {
+        "id": "RFC-0015",
+        "file": "RFC-0015-cognitive-exception-semantics.md",
+        "title": "Cognitive Exception and Failure Semantics",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0013 Cognitive Instruction Set Architecture (CISA) v1.1 "
+      },
+      {
+        "id": "RFC-0016",
+        "file": "RFC-0016-cognitive-runtime-architecture.md",
+        "title": "Cognitive Runtime Architecture",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0015 Cognitive Exception and Failure Semantics v1.0 (Dra"
+      },
+      {
+        "id": "RFC-0017",
+        "file": "RFC-0017-runtime-interface-service-model.md",
+        "title": "Cognitive Runtime Interface and Service Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0016 Cognitive Runtime Architecture v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0018",
+        "file": "RFC-0018-event-log-replay-protocol.md",
+        "title": "Cognitive Event Log and Deterministic Replay Protocol",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0017 Cognitive Runtime Interface and Service Model v1.0 "
+      },
+      {
+        "id": "RFC-0019",
+        "file": "RFC-0019-cogos-architecture.md",
+        "title": "Cognitive Operating System Architecture",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0018 Cognitive Event Log and Deterministic Replay Protoc"
+      },
+      {
+        "id": "RFC-0020",
+        "file": "RFC-0020-distributed-execution-protocol.md",
+        "title": "Distributed Cognitive Execution Protocol",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0019 Cognitive Operating System Architecture v1.0 (Draft"
+      },
+      {
+        "id": "RFC-0021",
+        "file": "RFC-0021-cognitive-network-protocol.md",
+        "title": "Cognitive Network Protocol (CNP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0020 Distributed Cognitive Execution Protocol v1.0 (Draf"
+      },
+      {
+        "id": "RFC-0022",
+        "file": "RFC-0022-identity-trust-framework.md",
+        "title": "Cognitive Identity and Trust Framework",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0021 Cognitive Network Protocol (CNP) v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0023",
+        "file": "RFC-0023-consensus-causal-agreement.md",
+        "title": "Distributed Consensus and Causal Agreement Protocol",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0022 Cognitive Identity and Trust Framework v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0024",
+        "file": "RFC-0024-resource-management-quota-model.md",
+        "title": "Cognitive Resource Management and Quota Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0023 Distributed Consensus and Causal Agreement Protocol"
+      },
+      {
+        "id": "RFC-0025",
+        "file": "RFC-0025-security-policy-language.md",
+        "title": "Cognitive Security Policy Language (CSPL)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0024 Cognitive Resource Management and Quota Model v1.0 "
+      },
+      {
+        "id": "RFC-0026",
+        "file": "RFC-0026-hardware-acceleration-model.md",
+        "title": "Cognitive Hardware Acceleration Model",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0025 Cognitive Security Policy Language (CSPL) v1.0 (Dra"
+      },
+      {
+        "id": "RFC-0027",
+        "file": "RFC-0027-compiler-toolchain-architecture.md",
+        "title": "Cognitive Compiler and Toolchain Architecture",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0026 Cognitive Hardware Acceleration Model v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0028",
+        "file": "RFC-0028-cognitive-intermediate-representation.md",
+        "title": "Cognitive Intermediate Representation (CIR)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0027 Cognitive Compiler and Toolchain Architecture v1.0 "
+      },
+      {
+        "id": "RFC-0029",
+        "file": "RFC-0029-cir-serialization-format.md",
+        "title": "Cognitive IR Serialization Format (CIR-SER)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0028 Cognitive Intermediate Representation (CIR) v1.0 (D"
+      },
+      {
+        "id": "RFC-0030",
+        "file": "RFC-0030-optimization-pass-framework.md",
+        "title": "Cognitive Optimization Pass Framework",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0029 Cognitive IR Serialization Format (CIR-SER) v1.0 (D"
+      },
+      {
+        "id": "RFC-0031",
+        "file": "RFC-0031-coil-transformation-language.md",
+        "title": "Cognitive Optimization Intermediate Language (COIL)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0030 Cognitive Optimization Pass Framework v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0032",
+        "file": "RFC-0032-covf-verification-framework.md",
+        "title": "Cognitive Optimization Verification Framework (COVF)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0031 Cognitive Optimization Intermediate Language (COIL)"
+      },
+      {
+        "id": "RFC-0033",
+        "file": "RFC-0033-proof-carrying-program-format.md",
+        "title": "Cognitive Proof-Carrying Program Format (CPCPF)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0032 Cognitive Optimization Verification Framework (COVF"
+      },
+      {
+        "id": "RFC-0034",
+        "file": "RFC-0034-cpr-tdp-package-registry.md",
+        "title": "Cognitive Package Registry and Trust Distribution Protocol (CPR-TDP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0033 Cognitive Proof-Carrying Program Format (CPCPF) v1."
+      },
+      {
+        "id": "RFC-0035",
+        "file": "RFC-0035-cseim-sandbox-isolation.md",
+        "title": "Cognitive Sandbox and Execution Isolation Model (CSEIM) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0034 Cognitive Package Registry and Trust Distribution P"
+      },
+      {
+        "id": "RFC-0036",
+        "file": "RFC-0036-cbr-scp-supply-chain.md",
+        "title": "Cognitive Build Reproducibility and Supply Chain Protocol (CBR-SCP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0035 Cognitive Sandbox and Execution Isolation Model (CS"
+      },
+      {
+        "id": "RFC-0037",
+        "file": "RFC-0037-cslemp-lifecycle-evolution.md",
+        "title": "Cognitive Software Lifecycle and Evolution Management Protocol (CSLEMP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0036 Cognitive Build Reproducibility and Supply Chain Pr"
+      },
+      {
+        "id": "RFC-0038",
+        "file": "RFC-0038-cmaep-marketplace-economy.md",
+        "title": "Cognitive Marketplace and Agent Economy Protocol (CMAEP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0037 Cognitive Software Lifecycle and Evolution Manageme"
+      },
+      {
+        "id": "RFC-0039",
+        "file": "RFC-0039-cieop-identity-economy-ownership.md",
+        "title": "Cognitive Identity Economy and Ownership Protocol (CIEOP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0038 Cognitive Marketplace and Agent Economy Protocol (C"
+      },
+      {
+        "id": "RFC-0040",
+        "file": "RFC-0040-cgcdp-governance-collective-decision.md",
+        "title": "Cognitive Governance and Collective Decision Protocol (CGCDP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0039 Cognitive Identity Economy and Ownership Protocol ("
+      },
+      {
+        "id": "RFC-0041",
+        "file": "RFC-0041-cifp-interoperability-federation.md",
+        "title": "Cognitive Interoperability and Federation Protocol (CIFP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0040 Cognitive Governance and Collective Decision Protoc"
+      },
+      {
+        "id": "RFC-0042",
+        "file": "RFC-0042-cadp-autonomous-deployment.md",
+        "title": "Cognitive Autonomous Deployment Protocol (CADP)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0041 Cognitive Interoperability and Federation Protocol "
+      },
+      {
+        "id": "RFC-0042",
+        "file": "RFC-0042-ratification-record.md",
+        "title": "Cognitive Autonomous Deployment Protocol (CADP) v1.0 \u2014 Ratification Acknowledgement",
+        "status": "Ratified as the operational orchestration layer of the Red/Cognition architecture.",
+        "version": "",
+        "parent": ""
+      },
+      {
+        "id": "RFC-0043",
+        "file": "RFC-0043-cls-language-specification.md",
+        "title": "Cognitive Language Specification (CLS)",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0028 Cognitive Intermediate Representation (CIR) v1.0 (D"
+      },
+      {
+        "id": "RFC-0044",
+        "file": "RFC-0044-csl-standard-library.md",
+        "title": "Cognitive Standard Library (CSL) v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0043 Cognitive Language Specification (CLS) v1.0 (Draft)"
+      },
+      {
+        "id": "RFC-0045",
+        "file": "RFC-0045-ctdx-tooling-developer-experience.md",
+        "title": "Cognitive Tooling and Developer Experience (CTDX) v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0044 Cognitive Standard Library (CSL) v1.1 (Candidate)"
+      },
+      {
+        "id": "RFC-0046",
+        "file": "RFC-0046-codp-observability-diagnostics.md",
+        "title": "Cognitive Observability and Diagnostics Protocol (CODP) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0045 Cognitive Tooling and Developer Experience (CTDX) v"
+      },
+      {
+        "id": "RFC-0047",
+        "file": "RFC-0047-cpmws-package-manager-workspace.md",
+        "title": "Cognitive Package Manager and Workspace Specification (CPMWS) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0046 Cognitive Observability and Diagnostics Protocol (C"
+      },
+      {
+        "id": "RFC-0048",
+        "file": "RFC-0048-cffi-foreign-function-interface.md",
+        "title": "Cognitive Foreign Function Interface (CFFI) v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0047 Cognitive Package Manager and Workspace Specificati"
+      },
+      {
+        "id": "RFC-0049",
+        "file": "RFC-0049-csts-standard-toolchain.md",
+        "title": "Cognitive Standard Toolchain Specification (CSTS) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0048 Cognitive Foreign Function Interface (CFFI) v1.1 (C"
+      },
+      {
+        "id": "RFC-0049",
+        "file": "RFC-0049-ratification-record.md",
+        "title": "Cognitive Standard Toolchain Specification (CSTS) v1.2 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.2",
+        "parent": "RFC-0048 Cognitive Foreign Function Interface (CFFI) v1.1 (C"
+      },
+      {
+        "id": "RFC-0050",
+        "file": "RFC-0050-architecture-conformance-specification.md",
+        "title": "Red/Cognition v1.0 Architecture and Conformance Specification",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0049 Cognitive Standard Toolchain Specification v1.2 (Ca"
+      },
+      {
+        "id": "RFC-0050",
+        "file": "RFC-0050-ratification-record.md",
+        "title": "Red/Cognition v1.0 Architecture and Conformance Specification v1.2 \u2014 Ratification Acknowledgement",
+        "status": "\u2705 **Ratified**",
+        "version": "",
+        "parent": ""
+      },
+      {
+        "id": "RFC-0051",
+        "file": "RFC-0051-cmms-macro-metaprogramming.md",
+        "title": "Cognitive Macro and Metaprogramming System (CMMS) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0050 Red/Cognition v1.0 Architecture and Conformance Spe"
+      },
+      {
+        "id": "RFC-0052",
+        "file": "RFC-0052-ctvf-testing-verification.md",
+        "title": "Cognitive Testing and Verification Framework (CTVF) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0051 Cognitive Macro and Metaprogramming System (CMMS) v"
+      },
+      {
+        "id": "RFC-0052",
+        "file": "RFC-0052-ratification-record.md",
+        "title": "Cognitive Testing and Verification Framework (CTVF) v1.2 \u2014 Ratification Acknowledgement",
+        "status": "\u2705 **Ratified**",
+        "version": "",
+        "parent": ""
+      },
+      {
+        "id": "RFC-0053",
+        "file": "RFC-0053-craip-remote-agent-invocation.md",
+        "title": "Cognitive Remote Agent Invocation Protocol (CRAIP) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0052 Cognitive Testing and Verification Framework (CTVF)"
+      },
+      {
+        "id": "RFC-0053",
+        "file": "RFC-0053-ratification-record.md",
+        "title": "Cognitive Remote Agent Invocation Protocol (CRAIP) v1.2 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.2",
+        "parent": "RFC-0052 Cognitive Testing and Verification Framework (CTVF)"
+      },
+      {
+        "id": "RFC-0054",
+        "file": "RFC-0054-cadfp-agent-discovery-federation.md",
+        "title": "Cognitive Agent Discovery and Federation Protocol (CADFP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0053 Cognitive Remote Agent Invocation Protocol (CRAIP) "
+      },
+      {
+        "id": "RFC-0055",
+        "file": "RFC-0055-cmcwp-multi-agent-coordination.md",
+        "title": "Cognitive Multi-Agent Coordination and Workflow Protocol (CMCWP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0054 Cognitive Agent Discovery and Federation Protocol ("
+      },
+      {
+        "id": "RFC-0056",
+        "file": "RFC-0056-csmksp-shared-memory-knowledge-sync.md",
+        "title": "Cognitive Shared Memory and Knowledge Synchronization Protocol (CSMKSP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0055 Cognitive Multi-Agent Coordination and Workflow Pro"
+      },
+      {
+        "id": "RFC-0057",
+        "file": "RFC-0057-cdtcp-distributed-transaction.md",
+        "title": "Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.3",
+        "status": "Candidate for Final Ratification",
+        "version": "1.3",
+        "parent": "RFC-0056 Cognitive Shared Memory and Knowledge Synchronizati"
+      },
+      {
+        "id": "RFC-0057",
+        "file": "RFC-0057-ratification-record.md",
+        "title": "Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.3 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.3",
+        "parent": "RFC-0056 Cognitive Shared Memory and Knowledge Synchronizati"
+      },
+      {
+        "id": "RFC-0058",
+        "file": "RFC-0058-ctwp-transaction-wire-protocol.md",
+        "title": "Cognitive Transaction Wire Protocol and Message Encoding v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0057 Cognitive Distributed Transaction and Consistency P"
+      },
+      {
+        "id": "RFC-0058",
+        "file": "RFC-0058-ratification-record.md",
+        "title": "Cognitive Transaction Wire Protocol and Message Encoding v1.2 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.2",
+        "parent": "RFC-0057 Cognitive Distributed Transaction and Consistency P"
+      },
+      {
+        "id": "RFC-0059",
+        "file": "RFC-0059-ctstp-transaction-security-trust.md",
+        "title": "Cognitive Transaction Security and Trust Profile (CTSTP) v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0058 \u2014 Cognitive Transaction Wire Protocol and Message E"
+      },
+      {
+        "id": "RFC-0059",
+        "file": "RFC-0059-ratification-record.md",
+        "title": "Cognitive Transaction Security and Trust Profile (CTSTP) v1.1 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.1",
+        "parent": "RFC-0058 Cognitive Transaction Wire Protocol and Message Enc"
+      },
+      {
+        "id": "RFC-0060",
+        "file": "RFC-0060-cvm-iess-instruction-execution-scheduling.md",
+        "title": "Cognitive Virtual Machine Instruction Execution and Scheduling Semantics v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0059 \u2014 Cognitive Transaction Security and Trust Profile "
+      },
+      {
+        "id": "RFC-0060",
+        "file": "RFC-0060-ratification-record.md",
+        "title": "Cognitive Virtual Machine Instruction Execution and Scheduling Semantics (CVM-IESS) v1.1 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.1",
+        "parent": "RFC-0059 Cognitive Transaction Security and Trust Profile (C"
+      },
+      {
+        "id": "RFC-0061",
+        "file": "RFC-0061-cisa-ra-instruction-set-register-architecture.md",
+        "title": "Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA) v1.2",
+        "status": "Candidate for Final Ratification",
+        "version": "1.2",
+        "parent": "RFC-0060 Cognitive Virtual Machine Instruction Execution and"
+      },
+      {
+        "id": "RFC-0061",
+        "file": "RFC-0061-ratification-record.md",
+        "title": "Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA) v1.2 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.2",
+        "parent": "RFC-0060 \u2014 Cognitive Virtual Machine Instruction Execution a"
+      },
+      {
+        "id": "RFC-0062",
+        "file": "RFC-0062-cvm-bf-bytecode-format-encoding.md",
+        "title": "Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.3",
+        "status": "Candidate for Final Ratification",
+        "version": "1.3",
+        "parent": "RFC-0061 \u2014 Cognitive Virtual Machine Instruction Set and Reg"
+      },
+      {
+        "id": "RFC-0062",
+        "file": "RFC-0062-ratification-record.md",
+        "title": "Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.3 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.3",
+        "parent": "RFC-0061 \u2014 Cognitive Virtual Machine Instruction Set and Reg"
+      },
+      {
+        "id": "RFC-0063",
+        "file": "RFC-0063-cvm-fos-formal-operational-semantics.md",
+        "title": "Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP) v1.0",
+        "status": "Candidate for Final Ratification",
+        "version": "1.1",
+        "parent": "RFC-0062 \u2014 Cognitive Virtual Machine Bytecode Format and Enc"
+      },
+      {
+        "id": "RFC-0063",
+        "file": "RFC-0063-ratification-record.md",
+        "title": "Cognitive Virtual Machine Formal Operational Semantics (CVM-FOS) v1.1 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.1",
+        "parent": "RFC-0062 \u2014 Cognitive Virtual Machine Bytecode Format and Enc"
+      },
+      {
+        "id": "RFC-0064",
+        "file": "RFC-0064-ccc-vtp-compiler-correctness-verified-translation.md",
+        "title": "Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP) v1.1 Draft",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0063 \u2014 Cognitive Virtual Machine Formal Operational Sema"
+      },
+      {
+        "id": "RFC-0064",
+        "file": "RFC-0064-ratification-record.md",
+        "title": "Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP) v1.1 \u2014 Ratification Record",
+        "status": "**Ratified**",
+        "version": "1.1",
+        "parent": "RFC-0063 \u2014 Cognitive Virtual Machine Formal Operational Sema"
+      },
+      {
+        "id": "RFC-0065",
+        "file": "RFC-0065-cpcavp-proof-carrying-artifact-verification.md",
+        "title": "Cognitive Proof-Carrying Artifact Format and Verification Protocol (CPCAVP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0064 \u2014 Cognitive Compiler Correctness and Verified Trans"
+      },
+      {
+        "id": "RFC-0066",
+        "file": "RFC-0066-cartdp-artifact-registry-trust-distribution.md",
+        "title": "Cognitive Artifact Registry and Trust Distribution Protocol (CARTDP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0065 \u2014 Cognitive Proof-Carrying Artifact Format and Veri"
+      },
+      {
+        "id": "RFC-0067",
+        "file": "RFC-0067-cdlmp-deployment-lifecycle-management.md",
+        "title": "Cognitive Deployment and Lifecycle Management Protocol (CDLMP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0066 \u2014 Cognitive Artifact Registry and Trust Distributio"
+      },
+      {
+        "id": "RFC-0068",
+        "file": "RFC-0068-crgaop-runtime-governance-autonomous-operations.md",
+        "title": "Cognitive Runtime Governance and Autonomous Operations Protocol (CRGAOP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0067 \u2014 Cognitive Deployment and Lifecycle Management Pro"
+      },
+      {
+        "id": "RFC-0069",
+        "file": "RFC-0069-crdlmp-decision-ledger-memory.md",
+        "title": "Cognitive Runtime Decision Ledger and Memory Protocol (CRDLMP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0068 Cognitive Runtime Governance and Autonomous Operati"
+      },
+      {
+        "id": "RFC-0070",
+        "file": "RFC-0070-crsoaep-self-optimization-adaptive-evolution.md",
+        "title": "Cognitive Runtime Self-Optimization and Adaptive Evolution Protocol (CRSOAEP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0069 \u2014 Cognitive Runtime Decision Ledger and Memory Prot"
+      },
+      {
+        "id": "RFC-0071",
+        "file": "RFC-0071-crcp-runtime-coordination-protocol.md",
+        "title": "Cognitive Runtime Coordination Protocol (CRCP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0070 Cognitive Runtime Orchestration and Federation Prot"
+      },
+      {
+        "id": "RFC-0072",
+        "file": "RFC-0072-crcp-wire-format-binary-message-encoding.md",
+        "title": "Cognitive Runtime Coordination Protocol (CRCP) Wire Format and Binary Message Encoding v1.6",
+        "status": "Candidate for Final Ratification",
+        "version": "1.6",
+        "parent": "RFC-0071 Cognitive Runtime Coordination Protocol (CRCP) v1.1"
+      },
+      {
+        "id": "RFC-0072",
+        "file": "RFC-0072-ratification-record.md",
+        "title": "Cognitive Runtime Coordination Protocol (CRCP) Wire Format and Binary Message Encoding v1.6 \u2014 Ratification Record",
+        "status": "**Ratified** (Effective upon ratification of RFC-0071)",
+        "version": "1.6",
+        "parent": "RFC-0071 Cognitive Runtime Coordination Protocol (CRCP) v1.1"
+      },
+      {
+        "id": "RFC-0073",
+        "file": "RFC-0073-crsmadp-security-monitoring-adaptive-defense.md",
+        "title": "Cognitive Runtime Security Monitoring and Adaptive Defense Protocol (CRSMADP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0072 \u2014 Cognitive Runtime Autonomous Recovery and Self-He"
+      },
+      {
+        "id": "RFC-0074",
+        "file": "RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md",
+        "title": "Cognitive Runtime Privacy, Data Governance, and Sovereign Memory Protocol (CRPDGSMP) v1.0 Draft",
+        "status": "Draft",
+        "version": "1.0",
+        "parent": "RFC-0073 \u2014 Cognitive Runtime Security Monitoring and Adaptiv"
+      },
+      {
+        "id": "RFC-0075",
+        "file": "RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
+        "title": "Cognitive Federation, Collaboration, and Knowledge Exchange Protocol (CFCKEP) v1.1",
+        "status": "Candidate for Ratification",
+        "version": "1.1",
+        "parent": "RFC-0074 \u2014 Cognitive Runtime Privacy, Data Governance, and S"
+      }
+    ],
+    "specs": [
+      {
+        "file": "01-full-stack-architecture-diagram.md",
+        "path": "docs/specifications/red-deep-technical-spec/01-full-stack-architecture-diagram.md"
+      },
+      {
+        "file": "02-complete-toolchain-diagram.md",
+        "path": "docs/specifications/red-deep-technical-spec/02-complete-toolchain-diagram.md"
+      },
+      {
+        "file": "03-red-system-compiler-structure.md",
+        "path": "docs/specifications/red-deep-technical-spec/03-red-system-compiler-structure.md"
+      },
+      {
+        "file": "04-red-system-bnf-grammar.md",
+        "path": "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md"
+      },
+      {
+        "file": "05-red-interpreter-evaluation-engine.md",
+        "path": "docs/specifications/red-deep-technical-spec/05-red-interpreter-evaluation-engine.md"
+      },
+      {
+        "file": "06-red-context-and-word-binding-system.md",
+        "path": "docs/specifications/red-deep-technical-spec/06-red-context-and-word-binding-system.md"
+      },
+      {
+        "file": "07-red-reactive-system-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/07-red-reactive-system-architecture.md"
+      },
+      {
+        "file": "08-libred-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md"
+      },
+      {
+        "file": "09-libred-c-api-reference.md",
+        "path": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md"
+      },
+      {
+        "file": "10-macro-and-preprocessor-system.md",
+        "path": "docs/specifications/red-deep-technical-spec/10-macro-and-preprocessor-system.md"
+      },
+      {
+        "file": "11-concurrency-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/11-concurrency-architecture.md"
+      },
+      {
+        "file": "12-redbin-serialisation-format.md",
+        "path": "docs/specifications/red-deep-technical-spec/12-redbin-serialisation-format.md"
+      },
+      {
+        "file": "13-compiler-cli-reference.md",
+        "path": "docs/specifications/red-deep-technical-spec/13-compiler-cli-reference.md"
+      },
+      {
+        "file": "14-static-linking-implications.md",
+        "path": "docs/specifications/red-deep-technical-spec/14-static-linking-implications.md"
+      },
+      {
+        "file": "15-new-lexer-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/15-new-lexer-architecture.md"
+      },
+      {
+        "file": "16-transcode-api.md",
+        "path": "docs/specifications/red-deep-technical-spec/16-transcode-api.md"
+      },
+      {
+        "file": "17-routine-ffi-bridge.md",
+        "path": "docs/specifications/red-deep-technical-spec/17-routine-ffi-bridge.md"
+      },
+      {
+        "file": "18-routine-examples.md",
+        "path": "docs/specifications/red-deep-technical-spec/18-routine-examples.md"
+      },
+      {
+        "file": "19-atomic-intrinsics-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/19-atomic-intrinsics-specification.md"
+      },
+      {
+        "file": "20-atomic-mpmc-queue.md",
+        "path": "docs/specifications/red-deep-technical-spec/20-atomic-mpmc-queue.md"
+      },
+      {
+        "file": "21-ownership-system-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/21-ownership-system-specification.md"
+      },
+      {
+        "file": "22-ownership-in-practice.md",
+        "path": "docs/specifications/red-deep-technical-spec/22-ownership-in-practice.md"
+      },
+      {
+        "file": "23-port-and-scheme-system.md",
+        "path": "docs/specifications/red-deep-technical-spec/23-port-and-scheme-system.md"
+      },
+      {
+        "file": "24-custom-scheme-implementation.md",
+        "path": "docs/specifications/red-deep-technical-spec/24-custom-scheme-implementation.md"
+      },
+      {
+        "file": "25-new-datatypes-history.md",
+        "path": "docs/specifications/red-deep-technical-spec/25-new-datatypes-history.md"
+      },
+      {
+        "file": "26-draw-dialect-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/26-draw-dialect-specification.md"
+      },
+      {
+        "file": "27-draw-program-example.md",
+        "path": "docs/specifications/red-deep-technical-spec/27-draw-program-example.md"
+      },
+      {
+        "file": "28-fpu-control-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/28-fpu-control-specification.md"
+      },
+      {
+        "file": "29-fpu-control-usage.md",
+        "path": "docs/specifications/red-deep-technical-spec/29-fpu-control-usage.md"
+      },
+      {
+        "file": "30-red-standard-library-map.md",
+        "path": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md"
+      },
+      {
+        "file": "31-error-handling-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/31-error-handling-architecture.md"
+      },
+      {
+        "file": "32-error-handling-patterns.md",
+        "path": "docs/specifications/red-deep-technical-spec/32-error-handling-patterns.md"
+      },
+      {
+        "file": "33-vector-datatype-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/33-vector-datatype-specification.md"
+      },
+      {
+        "file": "34-vector-operations.md",
+        "path": "docs/specifications/red-deep-technical-spec/34-vector-operations.md"
+      },
+      {
+        "file": "35-map-datatype-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/35-map-datatype-specification.md"
+      },
+      {
+        "file": "35-rfc-0072-final-review.md",
+        "path": "docs/specifications/red-deep-technical-spec/35-rfc-0072-final-review.md"
+      },
+      {
+        "file": "36-map-patterns.md",
+        "path": "docs/specifications/red-deep-technical-spec/36-map-patterns.md"
+      },
+      {
+        "file": "37-date-datatype-specification.md",
+        "path": "docs/specifications/red-deep-technical-spec/37-date-datatype-specification.md"
+      },
+      {
+        "file": "38-red-console-repl-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/38-red-console-repl-architecture.md"
+      },
+      {
+        "file": "39-console-customisation.md",
+        "path": "docs/specifications/red-deep-technical-spec/39-console-customisation.md"
+      },
+      {
+        "file": "40-view-event-system-architecture.md",
+        "path": "docs/specifications/red-deep-technical-spec/40-view-event-system-architecture.md"
+      },
+      {
+        "file": "41-event-handling-patterns.md",
+        "path": "docs/specifications/red-deep-technical-spec/41-event-handling-patterns.md"
+      },
+      {
+        "file": "42-font-and-para-objects.md",
+        "path": "docs/specifications/red-deep-technical-spec/42-font-and-para-objects.md"
+      },
+      {
+        "file": "43-font-and-para-usage.md",
+        "path": "docs/specifications/red-deep-technical-spec/43-font-and-para-usage.md"
+      },
+      {
+        "file": "44-red-system-calling-conventions.md",
+        "path": "docs/specifications/red-deep-technical-spec/44-red-system-calling-conventions.md"
+      },
+      {
+        "file": "45-cross-platform-c-interop.md",
+        "path": "docs/specifications/red-deep-technical-spec/45-cross-platform-c-interop.md"
+      },
+      {
+        "file": "RFC-0031-Cognitive-Optimization-Intermediate-Language.md",
+        "path": "docs/specifications/red-deep-technical-spec/RFC-0031-Cognitive-Optimization-Intermediate-Language.md"
+      },
+      {
+        "file": "RFC-0038-Cognitive-Marketplace-and-Agent-Economy-Protocol.md",
+        "path": "docs/specifications/red-deep-technical-spec/RFC-0038-Cognitive-Marketplace-and-Agent-Economy-Protocol.md"
+      },
+      {
+        "file": "RFC-0049-Cognitive-Standard-Toolchain-Specification-v1.2.md",
+        "path": "docs/specifications/red-deep-technical-spec/RFC-0049-Cognitive-Standard-Toolchain-Specification-v1.2.md"
+      },
+      {
+        "file": "RFC-0059-Ratification-Record.md",
+        "path": "docs/specifications/red-deep-technical-spec/RFC-0059-Ratification-Record.md"
+      },
+      {
+        "file": "RFC-0075-Ratification-Record.md",
+        "path": "docs/specifications/red-deep-technical-spec/RFC-0075-Ratification-Record.md"
+      },
+      {
+        "file": "Red-Cognition-Full-Traceability-Audit.md",
+        "path": "docs/specifications/red-deep-technical-spec/Red-Cognition-Full-Traceability-Audit.md"
+      }
+    ],
+    "wiki_pages": [
+      {
+        "file": "APIs.md"
+      },
+      {
+        "file": "Architecture.md"
+      },
+      {
+        "file": "Changelog.md"
+      },
+      {
+        "file": "Code-Snippets.md"
+      },
+      {
+        "file": "Components.md"
+      },
+      {
+        "file": "Data-Models.md"
+      },
+      {
+        "file": "Deployment.md"
+      },
+      {
+        "file": "Design-Decisions.md"
+      },
+      {
+        "file": "Glossary.md"
+      },
+      {
+        "file": "Modules.md"
+      },
+      {
+        "file": "Overview.md"
+      },
+      {
+        "file": "RFC-Index.md"
+      },
+      {
+        "file": "References.md"
+      },
+      {
+        "file": "Repository-Structure.md"
+      },
+      {
+        "file": "Security.md"
+      },
+      {
+        "file": "Services.md"
+      },
+      {
+        "file": "Source-Traceability.md"
+      },
+      {
+        "file": "Specifications.md"
+      },
+      {
+        "file": "Workflows.md"
+      }
+    ],
+    "extraction_reports": [
+      {
+        "file": "message-001-report.md"
+      },
+      {
+        "file": "message-002-report.md"
+      },
+      {
+        "file": "message-003-report.md"
+      },
+      {
+        "file": "message-004-report.md"
+      },
+      {
+        "file": "message-005-report.md"
+      },
+      {
+        "file": "message-006-report.md"
+      },
+      {
+        "file": "message-007-report.md"
+      },
+      {
+        "file": "message-008-report.md"
+      },
+      {
+        "file": "message-009-report.md"
+      },
+      {
+        "file": "message-010-report.md"
+      },
+      {
+        "file": "message-011-report.md"
+      },
+      {
+        "file": "message-012-report.md"
+      },
+      {
+        "file": "message-013-report.md"
+      },
+      {
+        "file": "message-014-report.md"
+      },
+      {
+        "file": "message-015-report.md"
+      },
+      {
+        "file": "message-016-report.md"
+      },
+      {
+        "file": "message-017-report.md"
+      },
+      {
+        "file": "message-018-report.md"
+      },
+      {
+        "file": "message-019-report.md"
+      },
+      {
+        "file": "message-020-report.md"
+      },
+      {
+        "file": "message-021-report.md"
+      },
+      {
+        "file": "message-022-report.md"
+      },
+      {
+        "file": "message-023-report.md"
+      },
+      {
+        "file": "message-024-report.md"
+      },
+      {
+        "file": "message-025-report.md"
+      },
+      {
+        "file": "message-026-report.md"
+      },
+      {
+        "file": "message-027-report.md"
+      },
+      {
+        "file": "message-028-report.md"
+      },
+      {
+        "file": "message-029-report.md"
+      },
+      {
+        "file": "message-030-report.md"
+      },
+      {
+        "file": "message-031-report.md"
+      },
+      {
+        "file": "message-032-report.md"
+      },
+      {
+        "file": "message-033-report.md"
+      },
+      {
+        "file": "message-034-report.md"
+      },
+      {
+        "file": "message-035-report.md"
+      }
+    ],
+    "totals": {
+      "rfcs": 92,
+      "unique_rfc_ids": 75,
+      "ratified": 16,
+      "specs": 52,
+      "wiki_pages": 19,
+      "extraction_reports": 35,
+      "normative_requirements": 1467
+    },
+    "normative_requirements": {
+      "total": 1467,
+      "by_strength": {
+        "mandatory": 1192,
+        "mandatory-prohibition": 47,
+        "optional": 165,
+        "recommended": 63
+      },
+      "rfcs_covered": 75
+    }
+  },
+  "stage2_reconstruction": {
+    "components": [
+      {
+        "name": "Red lexer/compiler",
+        "paths": [
+          "lexer.r",
+          "compiler.r",
+          "red.r"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "Red runtime",
+        "paths": [
+          "runtime/"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "Red tests",
+        "paths": [
+          "tests/source/compiler/lexer-test.r"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "libRed",
+        "paths": [
+          "libRed/"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "Cognition runtime",
+        "paths": [
+          "cognition/"
+        ],
+        "exists": true,
+        "classification": "ABSENT"
+      },
+      {
+        "name": "RFC-0075 traceability",
+        "paths": [
+          "docs/traceability/rfc-0075/"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "Implementation plan",
+        "paths": [
+          "docs/implementation/implementation-plan.json"
+        ],
+        "exists": true,
+        "classification": "SCAFFOLDED"
+      },
+      {
+        "name": "Stage-5 controller",
+        "paths": [
+          "tools/impl_controller/"
+        ],
+        "exists": true,
+        "classification": "IMPLEMENTED"
+      }
+    ],
+    "cognition_implemented": false
+  },
+  "stage3_traceability": {
+    "edges": [
+      {
+        "from": "README-L185-205",
+        "to": "RED-LEX-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "build/build.r-L50",
+        "to": "RED-LEX-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "RED-LEX-001",
+        "to": "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md",
+        "kind": "task\u2192specification"
+      },
+      {
+        "from": "RED-LEX-001",
+        "to": "README.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "RED-LEX-001",
+        "to": "build/build.r",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "RED-LEX-001",
+        "to": "docs/IMPLEMENTATION-BASELINE.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "libred-architecture",
+        "to": "LIBRED-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "libred-c-api-reference",
+        "to": "LIBRED-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "LIBRED-001",
+        "to": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+        "kind": "task\u2192specification"
+      },
+      {
+        "from": "LIBRED-001",
+        "to": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md",
+        "kind": "task\u2192specification"
+      },
+      {
+        "from": "LIBRED-001",
+        "to": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "LIBRED-001",
+        "to": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "runtime-natives-hash",
+        "to": "HASH-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "runtime-crypto-hash",
+        "to": "HASH-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "HASH-001",
+        "to": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md",
+        "kind": "task\u2192specification"
+      },
+      {
+        "from": "HASH-001",
+        "to": "runtime/natives.reds",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "HASH-001",
+        "to": "runtime/crypto.reds",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "HASH-001",
+        "to": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "REQ-0075-001",
+        "to": "RFC0075-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "REQ-0075-031",
+        "to": "RFC0075-001",
+        "kind": "requirement\u2192task"
+      },
+      {
+        "from": "RFC0075-001",
+        "to": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
+        "kind": "task\u2192specification"
+      },
+      {
+        "from": "RFC0075-001",
+        "to": "docs/traceability/rfc-0075/16-conflicts.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "RFC0075-001",
+        "to": "docs/traceability/rfc-0075/15-gaps.md",
+        "kind": "task\u2192authority"
+      },
+      {
+        "from": "RFC0075-001",
+        "to": "docs/traceability/rfc-0075/validation-result.json",
+        "kind": "task\u2192authority"
+      }
+    ],
+    "total_edges": 24,
+    "requirement_to_task": 8,
+    "task_to_specification": 5,
+    "task_to_authority": 11,
+    "coverage": {
+      "total_structured_requirements": 1407,
+      "requirements_with_tasks": 0,
+      "requirements_without_tasks": 1407,
+      "coverage_pct": 0.0,
+      "task_requirement_refs": [
+        "README-L185-205",
+        "REQ-0075-001",
+        "REQ-0075-031",
+        "build/build.r-L50",
+        "libred-architecture",
+        "libred-c-api-reference",
+        "runtime-crypto-hash",
+        "runtime-natives-hash"
+      ],
+      "structured_refs_matched": 0,
+      "informal_refs_unmatched": [
+        "README-L185-205",
+        "REQ-0075-001",
+        "REQ-0075-031",
+        "build/build.r-L50",
+        "libred-architecture",
+        "libred-c-api-reference",
+        "runtime-crypto-hash",
+        "runtime-natives-hash"
+      ]
+    },
+    "orphan_requirements_by_rfc": {
+      "RFC": 1407
+    }
+  },
+  "stage4_planning": {
+    "valid": true,
+    "task_count": 4,
+    "issues": [],
+    "plan_source": "docs/implementation/implementation-plan.json",
+    "gap_analysis": {
+      "rfcs_with_requirements": 75,
+      "rfcs_with_task_coverage": 1,
+      "rfcs_without_task_coverage": 74,
+      "coverage_pct": 1.33,
+      "requirements_in_gap_rfcs": 1436
+    }
+  },
+  "stage5_control": {
+    "frontier": "PAUSED",
+    "graph": {
+      "DISCOVERED": 0,
+      "PLANNED": 0,
+      "READY": 0,
+      "IN_PROGRESS": 0,
+      "PASS": 0,
+      "FAIL": 0,
+      "BLOCKED": 4,
+      "DEFERRED": 0,
+      "REJECTED": 0
+    },
+    "classifications": [
+      {
+        "task_id": "RED-LEX-001",
+        "effective_state": "BLOCKED",
+        "ready": false,
+        "blocker_class": "TOOLCHAIN",
+        "reasons": [
+          "TOOLCHAIN",
+          "ARCHITECTURE",
+          "PROVISIONING",
+          "AUTHORIZATION"
+        ],
+        "detail": [
+          "required tool unavailable: rebol-278",
+          "declared blocker [ARCHITECTURE] \u2014 Host x86_64 has no 32-bit execution capability (no /lib/ld-linux.so.2, no libc6-i386, no qemu-user/binfmt)",
+          "declared blocker [PROVISIONING] \u2014 All official binary-transfer channels egress-blocked; no faithful channel carries an approved 32-bit R2 artifact",
+          "declared blocker [AUTHORIZATION] \u2014 No grant to install host 32-bit compatibility or to substitute the toolchain"
+        ]
+      },
+      {
+        "task_id": "LIBRED-001",
+        "effective_state": "BLOCKED",
+        "ready": false,
+        "blocker_class": "DEPENDENCY",
+        "reasons": [
+          "DEPENDENCY",
+          "TOOLCHAIN"
+        ],
+        "detail": [
+          "required tool unavailable: rebol-278",
+          "dependency 'RED-LEX-001' not PASS (required_state=PASS)"
+        ]
+      },
+      {
+        "task_id": "HASH-001",
+        "effective_state": "BLOCKED",
+        "ready": false,
+        "blocker_class": "INCOMPLETE_SPECIFICATION",
+        "reasons": [
+          "INCOMPLETE_SPECIFICATION",
+          "TOOLCHAIN"
+        ],
+        "detail": [
+          "incomplete specification (gaps): ['HASH-GAP-1: normative hash algorithm and seed(s) for the /hash refinement are undefined']",
+          "required tool unavailable: rebol-278"
+        ]
+      },
+      {
+        "task_id": "RFC0075-001",
+        "effective_state": "BLOCKED",
+        "ready": false,
+        "blocker_class": "SPECIFICATION_CONFLICT",
+        "reasons": [
+          "SPECIFICATION_CONFLICT",
+          "INCOMPLETE_SPECIFICATION"
+        ],
+        "detail": [
+          "specification conflicts: ['CONFLICT-0075-001', 'CONFLICT-0075-002', 'CONFLICT-0075-003', 'CONFLICT-0075-004']",
+          "incomplete specification (gaps): ['GAP-0075-001', 'GAP-0075-002', 'GAP-0075-003', 'GAP-0075-004']"
+        ]
+      }
+    ],
+    "evidence_integrity": {
+      "total_records": 0,
+      "trusted_records": 0,
+      "intact": true,
+      "broken_at": 0
+    },
+    "result": "PASS"
+  },
+  "epistemic_states": {
+    "specified": 1467,
+    "implemented": 1,
+    "executed": 0,
+    "tested": 0,
+    "validated": 0,
+    "evidenced": 0,
+    "formally_verified": 0
+  }
+}

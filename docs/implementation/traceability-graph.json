@@ -1,0 +1,243 @@
+{
+  "forward_edges": [
+    {
+      "from": "RED-LEX-001",
+      "to": "README-L185-205",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "RED-LEX-001",
+      "to": "build/build.r-L50",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "RED-LEX-001",
+      "to": "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md",
+      "kind": "task→specification"
+    },
+    {
+      "from": "RED-LEX-001",
+      "to": "README.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "RED-LEX-001",
+      "to": "build/build.r",
+      "kind": "task→authority"
+    },
+    {
+      "from": "RED-LEX-001",
+      "to": "docs/IMPLEMENTATION-BASELINE.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "libred-architecture",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "libred-c-api-reference",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+      "kind": "task→specification"
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md",
+      "kind": "task→specification"
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "LIBRED-001",
+      "to": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "HASH-001",
+      "to": "runtime-natives-hash",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "HASH-001",
+      "to": "runtime-crypto-hash",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "HASH-001",
+      "to": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md",
+      "kind": "task→specification"
+    },
+    {
+      "from": "HASH-001",
+      "to": "runtime/natives.reds",
+      "kind": "task→authority"
+    },
+    {
+      "from": "HASH-001",
+      "to": "runtime/crypto.reds",
+      "kind": "task→authority"
+    },
+    {
+      "from": "HASH-001",
+      "to": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "REQ-0075-001",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "REQ-0075-031",
+      "kind": "task→requirement",
+      "structured": false
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
+      "kind": "task→specification"
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "docs/traceability/rfc-0075/16-conflicts.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "docs/traceability/rfc-0075/15-gaps.md",
+      "kind": "task→authority"
+    },
+    {
+      "from": "RFC0075-001",
+      "to": "docs/traceability/rfc-0075/validation-result.json",
+      "kind": "task→authority"
+    }
+  ],
+  "reverse_edges": [
+    {
+      "from": "README-L185-205",
+      "to": "RED-LEX-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "build/build.r-L50",
+      "to": "RED-LEX-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "libred-architecture",
+      "to": "LIBRED-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "libred-c-api-reference",
+      "to": "LIBRED-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "runtime-natives-hash",
+      "to": "HASH-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "runtime-crypto-hash",
+      "to": "HASH-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "REQ-0075-001",
+      "to": "RFC0075-001",
+      "kind": "requirement→task",
+      "explicit": true
+    },
+    {
+      "from": "REQ-0075-031",
+      "to": "RFC0075-001",
+      "kind": "requirement→task",
+      "explicit": true
+    }
+  ],
+  "total_edges": 32,
+  "coverage": {
+    "total_structured_requirements": 1407,
+    "requirements_with_tasks": 0,
+    "requirements_without_tasks": 1407,
+    "coverage_pct": 0.0,
+    "task_requirement_refs": [
+      "README-L185-205",
+      "REQ-0075-001",
+      "REQ-0075-031",
+      "build/build.r-L50",
+      "libred-architecture",
+      "libred-c-api-reference",
+      "runtime-crypto-hash",
+      "runtime-natives-hash"
+    ],
+    "structured_refs_matched": 0,
+    "informal_refs_unmatched": [
+      "README-L185-205",
+      "REQ-0075-001",
+      "REQ-0075-031",
+      "build/build.r-L50",
+      "libred-architecture",
+      "libred-c-api-reference",
+      "runtime-crypto-hash",
+      "runtime-natives-hash"
+    ]
+  },
+  "orphan_requirements_by_rfc": {
+    "RFC": 1407
+  },
+  "tasks": [
+    {
+      "id": "RED-LEX-001",
+      "requirement_refs": [
+        "README-L185-205",
+        "build/build.r-L50"
+      ]
+    },
+    {
+      "id": "LIBRED-001",
+      "requirement_refs": [
+        "libred-architecture",
+        "libred-c-api-reference"
+      ]
+    },
+    {
+      "id": "HASH-001",
+      "requirement_refs": [
+        "runtime-natives-hash",
+        "runtime-crypto-hash"
+      ]
+    },
+    {
+      "id": "RFC0075-001",
+      "requirement_refs": [
+        "REQ-0075-001",
+        "REQ-0075-031"
+      ]
+    }
+  ]
+}

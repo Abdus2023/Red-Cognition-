@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0",
+  "controller": "impl_controller",
+  "controller_version": "2.0.0",
+  "project": "Red/Cognition",
+  "generated_at": "2026-08-12T16:58:02+00:00",
+  "manifest": "/home/user/Red-Cognition-/docs/implementation/implementation-plan.json",
+  "repo_head": "438689ab96dab9caeb7fa5c0a86599d785aabfa0",
+  "provenance_context": {
+    "repository_identity": "repo-1abb67aa6d6149dbba629a1d800a4c1e",
+    "head": "438689ab96dab9caeb7fa5c0a86599d785aabfa0",
+    "manifest_hash": "a10b3885a22a0e22438292fcd8096e2c937ed796d958e706aad1790f6ac1aec7",
+    "validator": "impl_controller"
+  },
+  "mode": "dry-run",
+  "tool_registry": {
+    "rebol-278": {
+      "available": false,
+      "binary": "",
+      "version": "",
+      "evidence": "docs/IMPLEMENTATION-BASELINE.md \u00a7A,\u00a7G.1-G.4",
+      "detail": "Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox."
+    },
+    "python3": {
+      "available": true,
+      "binary": "",
+      "version": "",
+      "evidence": "PATH /usr/bin/python3",
+      "detail": "CPython 3.11.2 (infrastructure/validation only)"
+    },
+    "gcc": {
+      "available": true,
+      "binary": "",
+      "version": "",
+      "evidence": "PATH /usr/bin/gcc",
+      "detail": "gcc 12.2.0"
+    },
+    "make": {
+      "available": true,
+      "binary": "",
+      "version": "",
+      "evidence": "PATH /usr/bin/make",
+      "detail": "GNU make 4.3"
+    }
+  },
+  "task_count": 4,
+  "graph": {
+    "DISCOVERED": 0,
+    "PLANNED": 0,
+    "READY": 0,
+    "IN_PROGRESS": 0,
+    "PASS": 0,
+    "FAIL": 0,
+    "BLOCKED": 4,
+    "DEFERRED": 0,
+    "REJECTED": 0
+  },
+  "classifications": [
+    {
+      "task_id": "RED-LEX-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "TOOLCHAIN",
+      "reasons": [
+        "TOOLCHAIN",
+        "ARCHITECTURE",
+        "PROVISIONING",
+        "AUTHORIZATION"
+      ],
+      "detail": [
+        "required tool unavailable: rebol-278",
+        "declared blocker [ARCHITECTURE] \u2014 Host x86_64 has no 32-bit execution capability (no /lib/ld-linux.so.2, no libc6-i386, no qemu-user/binfmt)",
+        "declared blocker [PROVISIONING] \u2014 All official binary-transfer channels egress-blocked; no faithful channel carries an approved 32-bit R2 artifact",
+        "declared blocker [AUTHORIZATION] \u2014 No grant to install host 32-bit compatibility or to substitute the toolchain"
+      ]
+    },
+    {
+      "task_id": "LIBRED-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "DEPENDENCY",
+      "reasons": [
+        "DEPENDENCY",
+        "TOOLCHAIN"
+      ],
+      "detail": [
+        "required tool unavailable: rebol-278",
+        "dependency 'RED-LEX-001' not PASS (required_state=PASS)"
+      ]
+    },
+    {
+      "task_id": "HASH-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "INCOMPLETE_SPECIFICATION",
+      "reasons": [
+        "INCOMPLETE_SPECIFICATION",
+        "TOOLCHAIN"
+      ],
+      "detail": [
+        "incomplete specification (gaps): ['HASH-GAP-1: normative hash algorithm and seed(s) for the /hash refinement are undefined']",
+        "required tool unavailable: rebol-278"
+      ]
+    },
+    {
+      "task_id": "RFC0075-001",
+      "effective_state": "BLOCKED",
+      "ready": false,
+      "blocker_class": "SPECIFICATION_CONFLICT",
+      "reasons": [
+        "SPECIFICATION_CONFLICT",
+        "INCOMPLETE_SPECIFICATION"
+      ],
+      "detail": [
+        "specification conflicts: ['CONFLICT-0075-001', 'CONFLICT-0075-002', 'CONFLICT-0075-003', 'CONFLICT-0075-004']",
+        "incomplete specification (gaps): ['GAP-0075-001', 'GAP-0075-002', 'GAP-0075-003', 'GAP-0075-004']"
+      ]
+    }
+  ],
+  "ready_queue": [],
+  "execution_contracts": [],
+  "frontier": "PAUSED",
+  "evidence_integrity": {
+    "total_records": 0,
+    "trusted_records": 0,
+    "intact": true,
+    "broken_at": 0
+  },
+  "drift_notes": [],
+  "stages": {
+    "planner": {
+      "artifact": "implementation-plan.json",
+      "task_count": 4,
+      "validation": "strict (fail-closed)"
+    },
+    "controller": {
+      "classifications": 4,
+      "ready": 0,
+      "frontier": "PAUSED",
+      "contracts_emitted": 0
+    },
+    "executor": {
+      "attempted": false,
+      "task": null
+    },
+    "validator": {
+      "new_evidence": 0,
+      "pass": 0,
+      "fail": 0
+    },
+    "evidence": {
+      "total_records": 0,
+      "trusted_records": 0,
+      "intact": true,
+      "broken_at": 0
+    }
+  },
+  "traceability": [
+    {
+      "task_id": "RED-LEX-001",
+      "status": "BLOCKED",
+      "contract_id": "41ad658fba043846cd06ecfd5afb4ba5a7b2d2d7a6641db8b4783a39b499b835",
+      "closure": "OPEN",
+      "closure_gaps": [
+        "command 'LEX-BASELINE' has no PASS evidence bound to current contract_id"
+      ],
+      "criterion_attestations": [],
+      "requirement_refs": [
+        "README-L185-205",
+        "build/build.r-L50"
+      ],
+      "specification_refs": [
+        "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md"
+      ],
+      "source_authority": [
+        "README.md",
+        "build/build.r",
+        "docs/IMPLEMENTATION-BASELINE.md"
+      ],
+      "implementation_targets": [],
+      "validation_commands": [
+        "LEX-BASELINE"
+      ],
+      "evidence_refs": [],
+      "blocker_class": "TOOLCHAIN",
+      "blocker_reasons": [
+        "TOOLCHAIN",
+        "ARCHITECTURE",
+        "PROVISIONING",
+        "AUTHORIZATION"
+      ],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (TOOLCHAIN_BOOTSTRAP)"
+    },
+    {
+      "task_id": "LIBRED-001",
+      "status": "BLOCKED",
+      "contract_id": "a10ce9bd4a3925c1fa478aeac673adc40041fe13b889ee24abfc60ce20415211",
+      "closure": "OPEN",
+      "closure_gaps": [
+        "command 'LIBRED-BUILD' has no PASS evidence bound to current contract_id"
+      ],
+      "criterion_attestations": [],
+      "requirement_refs": [
+        "libred-architecture",
+        "libred-c-api-reference"
+      ],
+      "specification_refs": [
+        "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+        "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md"
+      ],
+      "source_authority": [
+        "docs/specifications/red-deep-technical-spec/08-libred-architecture.md",
+        "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md"
+      ],
+      "implementation_targets": [],
+      "validation_commands": [
+        "LIBRED-BUILD"
+      ],
+      "evidence_refs": [],
+      "blocker_class": "DEPENDENCY",
+      "blocker_reasons": [
+        "DEPENDENCY",
+        "TOOLCHAIN"
+      ],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (DEPENDENCY/TOOLCHAIN, transitive on RED-LEX-001)"
+    },
+    {
+      "task_id": "HASH-001",
+      "status": "BLOCKED",
+      "contract_id": "cc981ba0ed938a2b3575c80988aa2c84f865399f8a415a1fbb71b590d7c47344",
+      "closure": "OPEN",
+      "closure_gaps": [
+        "command 'HASH-RUNTIME-TEST' has no PASS evidence bound to current contract_id"
+      ],
+      "criterion_attestations": [],
+      "requirement_refs": [
+        "runtime-natives-hash",
+        "runtime-crypto-hash"
+      ],
+      "specification_refs": [
+        "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md"
+      ],
+      "source_authority": [
+        "runtime/natives.reds",
+        "runtime/crypto.reds",
+        "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md"
+      ],
+      "implementation_targets": [],
+      "validation_commands": [
+        "HASH-RUNTIME-TEST"
+      ],
+      "evidence_refs": [],
+      "blocker_class": "INCOMPLETE_SPECIFICATION",
+      "blocker_reasons": [
+        "INCOMPLETE_SPECIFICATION",
+        "TOOLCHAIN"
+      ],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (INCOMPLETE_SPECIFICATION + TOOLCHAIN)"
+    },
+    {
+      "task_id": "RFC0075-001",
+      "status": "BLOCKED",
+      "contract_id": "4300439db400190a7b1ddfec210bf5fbd3c9b2e02350a68d281ea977b5cdafdf",
+      "closure": "OPEN",
+      "closure_gaps": [
+        "command 'RFC0075-TRACE' has no PASS evidence bound to current contract_id"
+      ],
+      "criterion_attestations": [],
+      "requirement_refs": [
+        "REQ-0075-001",
+        "REQ-0075-031"
+      ],
+      "specification_refs": [
+        "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"
+      ],
+      "source_authority": [
+        "docs/traceability/rfc-0075/16-conflicts.md",
+        "docs/traceability/rfc-0075/15-gaps.md",
+        "docs/traceability/rfc-0075/validation-result.json"
+      ],
+      "implementation_targets": [],
+      "validation_commands": [
+        "RFC0075-TRACE"
+      ],
+      "evidence_refs": [
+        "validation-result.json"
+      ],
+      "blocker_class": "SPECIFICATION_CONFLICT",
+      "blocker_reasons": [
+        "SPECIFICATION_CONFLICT",
+        "INCOMPLETE_SPECIFICATION"
+      ],
+      "provenance": "docs/traceability/rfc-0075/ (SPECIFICATION_CONFLICT / INCOMPLETE_SPECIFICATION)"
+    }
+  ],
+  "blocker_policy": "Blockers are immutable unless an authoritative prerequisite changes (tool availability, spec reconciliation, dependency PASS, or a new authorized requirement).",
+  "requirement_ledger": [],
+  "coverage_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "result": "PASS",
+  "errors": [],
+  "contract_version": "1.0",
+  "started_at": "2026-08-12T16:58:02+00:00",
+  "pipeline_result": "PASS",
+  "planner": {
+    "stage": "planner",
+    "status": "OK",
+    "task_count": 4,
+    "validation": "strict"
+  }
+}

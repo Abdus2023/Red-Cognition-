@@ -1,0 +1,311 @@
+{
+  "rfcs_with_requirements": 75,
+  "rfcs_with_task_coverage": 1,
+  "rfcs_without_task_coverage": 74,
+  "coverage_pct": 1.33,
+  "requirements_in_gap_rfcs": 1436,
+  "gap_rfcs": [
+    {
+      "rfc_id": "RFC-0001",
+      "requirement_count": 17
+    },
+    {
+      "rfc_id": "RFC-0002",
+      "requirement_count": 35
+    },
+    {
+      "rfc_id": "RFC-0003",
+      "requirement_count": 31
+    },
+    {
+      "rfc_id": "RFC-0004",
+      "requirement_count": 30
+    },
+    {
+      "rfc_id": "RFC-0005",
+      "requirement_count": 24
+    },
+    {
+      "rfc_id": "RFC-0006",
+      "requirement_count": 33
+    },
+    {
+      "rfc_id": "RFC-0007",
+      "requirement_count": 33
+    },
+    {
+      "rfc_id": "RFC-0008",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0009",
+      "requirement_count": 22
+    },
+    {
+      "rfc_id": "RFC-0010",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0011",
+      "requirement_count": 26
+    },
+    {
+      "rfc_id": "RFC-0012",
+      "requirement_count": 23
+    },
+    {
+      "rfc_id": "RFC-0013",
+      "requirement_count": 14
+    },
+    {
+      "rfc_id": "RFC-0014",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0015",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0016",
+      "requirement_count": 6
+    },
+    {
+      "rfc_id": "RFC-0017",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0018",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0019",
+      "requirement_count": 4
+    },
+    {
+      "rfc_id": "RFC-0020",
+      "requirement_count": 29
+    },
+    {
+      "rfc_id": "RFC-0021",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0022",
+      "requirement_count": 25
+    },
+    {
+      "rfc_id": "RFC-0023",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0024",
+      "requirement_count": 25
+    },
+    {
+      "rfc_id": "RFC-0025",
+      "requirement_count": 10
+    },
+    {
+      "rfc_id": "RFC-0026",
+      "requirement_count": 25
+    },
+    {
+      "rfc_id": "RFC-0027",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0028",
+      "requirement_count": 10
+    },
+    {
+      "rfc_id": "RFC-0029",
+      "requirement_count": 15
+    },
+    {
+      "rfc_id": "RFC-0030",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0031",
+      "requirement_count": 8
+    },
+    {
+      "rfc_id": "RFC-0032",
+      "requirement_count": 10
+    },
+    {
+      "rfc_id": "RFC-0033",
+      "requirement_count": 9
+    },
+    {
+      "rfc_id": "RFC-0034",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0035",
+      "requirement_count": 26
+    },
+    {
+      "rfc_id": "RFC-0036",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0037",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0038",
+      "requirement_count": 6
+    },
+    {
+      "rfc_id": "RFC-0039",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0040",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0041",
+      "requirement_count": 25
+    },
+    {
+      "rfc_id": "RFC-0042",
+      "requirement_count": 17
+    },
+    {
+      "rfc_id": "RFC-0043",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0044",
+      "requirement_count": 24
+    },
+    {
+      "rfc_id": "RFC-0045",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0046",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0047",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0048",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0049",
+      "requirement_count": 26
+    },
+    {
+      "rfc_id": "RFC-0050",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0051",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0052",
+      "requirement_count": 13
+    },
+    {
+      "rfc_id": "RFC-0053",
+      "requirement_count": 42
+    },
+    {
+      "rfc_id": "RFC-0054",
+      "requirement_count": 32
+    },
+    {
+      "rfc_id": "RFC-0055",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0056",
+      "requirement_count": 18
+    },
+    {
+      "rfc_id": "RFC-0057",
+      "requirement_count": 35
+    },
+    {
+      "rfc_id": "RFC-0058",
+      "requirement_count": 27
+    },
+    {
+      "rfc_id": "RFC-0059",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0060",
+      "requirement_count": 18
+    },
+    {
+      "rfc_id": "RFC-0061",
+      "requirement_count": 11
+    },
+    {
+      "rfc_id": "RFC-0062",
+      "requirement_count": 21
+    },
+    {
+      "rfc_id": "RFC-0063",
+      "requirement_count": 9
+    },
+    {
+      "rfc_id": "RFC-0064",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0065",
+      "requirement_count": 14
+    },
+    {
+      "rfc_id": "RFC-0066",
+      "requirement_count": 24
+    },
+    {
+      "rfc_id": "RFC-0067",
+      "requirement_count": 16
+    },
+    {
+      "rfc_id": "RFC-0068",
+      "requirement_count": 8
+    },
+    {
+      "rfc_id": "RFC-0069",
+      "requirement_count": 10
+    },
+    {
+      "rfc_id": "RFC-0070",
+      "requirement_count": 15
+    },
+    {
+      "rfc_id": "RFC-0071",
+      "requirement_count": 26
+    },
+    {
+      "rfc_id": "RFC-0072",
+      "requirement_count": 33
+    },
+    {
+      "rfc_id": "RFC-0073",
+      "requirement_count": 19
+    },
+    {
+      "rfc_id": "RFC-0074",
+      "requirement_count": 18
+    }
+  ],
+  "covered_rfcs": [
+    "RFC-0075"
+  ],
+  "task_rfc_references": [
+    "RFC-0075"
+  ]
+}

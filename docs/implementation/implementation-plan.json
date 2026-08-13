@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "project": "Red/Cognition",
+  "generated": "2026-08-12",
+  "provenance": "docs/IMPLEMENTATION-BASELINE.md; docs/traceability/rfc-0075/; README.md; build/build.r",
+  "note": "This manifest encodes the currently DOCUMENTED implementation frontier and its established blocker classifications. It introduces NO new implementation requirements. Every blocker below is grounded in the cited authoritative evidence. The dependency engine recomputes READY/BLOCKED from this data deterministically and fail-closed.",
+  "tool_registry": {
+    "rebol-278": {
+      "available": false,
+      "evidence": "docs/IMPLEMENTATION-BASELINE.md §A,§G.1-G.4",
+      "detail": "Rebol 2.7.8 interpreter (Red's documented toolchain). Official Linux artifacts are 32-bit x86 only; host is x86_64 with no 32-bit userspace; all official binary-transfer channels are egress-blocked; no faithful provisioning channel exists in-sandbox."
+    },
+    "python3": {
+      "available": true,
+      "evidence": "PATH /usr/bin/python3",
+      "detail": "CPython 3.11.2 (infrastructure/validation only)"
+    },
+    "gcc": {
+      "available": true,
+      "evidence": "PATH /usr/bin/gcc",
+      "detail": "gcc 12.2.0"
+    },
+    "make": {
+      "available": true,
+      "evidence": "PATH /usr/bin/make",
+      "detail": "GNU make 4.3"
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "RED-LEX-001",
+      "title": "Red lexer/compiler baseline (Rebol tooling bootstrap)",
+      "description": "Establish the Red lexer/compiler test baseline by running the existing Rebol-hosted Quick-Test harness against lexer.r, UNCHANGED. No lexer rule is implemented unless a defect is first traced to the governing specification.",
+      "priority": 10,
+      "plan_order": 10,
+      "scope": "Tooling bootstrap: run tests/source/compiler/lexer-test.r under Rebol 2.7.8 with lexer.r unmodified.",
+      "source_authority": [
+        {"doc": "README.md", "anchor": "Running Red from the sources (L185-205)"},
+        {"doc": "build/build.r", "anchor": "system/version = 2.7.8.3.1 (L50)"},
+        {"doc": "docs/IMPLEMENTATION-BASELINE.md", "anchor": "Authority and selected scope"}
+      ],
+      "requirement_refs": ["README-L185-205", "build/build.r-L50"],
+      "specification_refs": [
+        {"doc": "docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md"}
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [],
+      "required_tools": ["rebol-278"],
+      "validation_commands": [
+        {"id": "LEX-BASELINE", "command": "rebol -qws tests/source/compiler/lexer-test.r", "expected_exit": 0, "purpose": "Existing lexer baseline, unchanged"}
+      ],
+      "acceptance_criteria": [
+        {"id": "LEX-AC-1", "criterion": "lexer-test.r exits 0 under Rebol 2.7.8 with lexer.r unchanged"}
+      ],
+      "evidence_refs": [],
+      "spec_conflicts": [],
+      "spec_gaps": [],
+      "declared_blockers": [
+        {"category": "ARCHITECTURE", "satisfied": false, "evidence": "docs/IMPLEMENTATION-BASELINE.md §A,§G.4", "detail": "Host x86_64 has no 32-bit execution capability (no /lib/ld-linux.so.2, no libc6-i386, no qemu-user/binfmt)"},
+        {"category": "PROVISIONING", "satisfied": false, "evidence": "docs/IMPLEMENTATION-BASELINE.md §B,§G.3", "detail": "All official binary-transfer channels egress-blocked; no faithful channel carries an approved 32-bit R2 artifact"},
+        {"category": "AUTHORIZATION", "satisfied": false, "evidence": "docs/IMPLEMENTATION-BASELINE.md §G.6", "detail": "No grant to install host 32-bit compatibility or to substitute the toolchain"}
+      ],
+      "allowed_tools": ["rebol-278"],
+      "prohibited_scope": ["lexer.r", "compiler.r", "red.r", "tests/source/compiler/lexer-test.r", "runtime/", "rfcs/", "docs/specifications/"],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (TOOLCHAIN_BOOTSTRAP)",
+      "rejected": false,
+      "deferred": false
+    },
+    {
+      "task_id": "LIBRED-001",
+      "title": "libRed C integration",
+      "description": "Build and integrate the libRed C library against the Red runtime (libRedRT), per the libRed architecture and C API reference. Requires a working Red build (Rebol-driven).",
+      "priority": 20,
+      "plan_order": 20,
+      "scope": "libRed/ build + C API integration; depends on a compiled Red runtime (libRedRT).",
+      "source_authority": [
+        {"doc": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md"},
+        {"doc": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md"}
+      ],
+      "requirement_refs": ["libred-architecture", "libred-c-api-reference"],
+      "specification_refs": [
+        {"doc": "docs/specifications/red-deep-technical-spec/08-libred-architecture.md"},
+        {"doc": "docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md"}
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {"ref": "RED-LEX-001", "required_state": "PASS"}
+      ],
+      "required_tools": ["rebol-278"],
+      "validation_commands": [
+        {"id": "LIBRED-BUILD", "command": "rebol -qws red.r --libred", "expected_exit": 0, "purpose": "Build libRed via the Red toolchain"}
+      ],
+      "acceptance_criteria": [
+        {"id": "LIBRED-AC-1", "criterion": "libRed builds and links against libRedRT produced by the Red toolchain"}
+      ],
+      "evidence_refs": [],
+      "spec_conflicts": [],
+      "spec_gaps": [],
+      "declared_blockers": [],
+      "allowed_tools": ["rebol-278", "gcc", "make"],
+      "prohibited_scope": ["rfcs/", "docs/specifications/", "lexer.r"],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (DEPENDENCY/TOOLCHAIN, transitive on RED-LEX-001)",
+      "rejected": false,
+      "deferred": false
+    },
+    {
+      "task_id": "HASH-001",
+      "title": "Runtime /hash behavior",
+      "description": "Define and validate the normative behavior of the Red runtime /hash refinement. Currently the specification is incomplete (normative hash algorithm/seeds are undefined); additionally the runtime compile path is Rebol-driven.",
+      "priority": 30,
+      "plan_order": 30,
+      "scope": "runtime/crypto.reds + runtime/natives.reds /hash refinement; requires a normative specification AND the Rebol-driven Red runtime compile.",
+      "source_authority": [
+        {"doc": "runtime/natives.reds", "anchor": "/hash refinement (L2255-2300)"},
+        {"doc": "runtime/crypto.reds", "anchor": "_hash symbol"},
+        {"doc": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md"}
+      ],
+      "requirement_refs": ["runtime-natives-hash", "runtime-crypto-hash"],
+      "specification_refs": [
+        {"doc": "docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md"}
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [],
+      "required_tools": ["rebol-278"],
+      "validation_commands": [
+        {"id": "HASH-RUNTIME-TEST", "command": "rebol -qws tests/source/units/run-all.r", "expected_exit": 0, "purpose": "Red runtime unit tests covering /hash"}
+      ],
+      "acceptance_criteria": [
+        {"id": "HASH-AC-1", "criterion": "/hash behavior is normatively specified and the runtime test exits 0"}
+      ],
+      "evidence_refs": [],
+      "spec_conflicts": [],
+      "spec_gaps": [
+        "HASH-GAP-1: normative hash algorithm and seed(s) for the /hash refinement are undefined"
+      ],
+      "declared_blockers": [],
+      "allowed_tools": ["rebol-278"],
+      "prohibited_scope": ["rfcs/", "docs/specifications/ (unless reconciled authoritatively)", "lexer.r"],
+      "provenance": "docs/IMPLEMENTATION-BASELINE.md (INCOMPLETE_SPECIFICATION + TOOLCHAIN)",
+      "rejected": false,
+      "deferred": false
+    },
+    {
+      "task_id": "RFC0075-001",
+      "title": "RFC-0075 CFCKEP federation knowledge-exchange implementation",
+      "description": "Implement the RFC-0075 CFCKEP federation collaboration/knowledge-exchange protocol at enforced runtime boundaries. INDEPENDENT of the Rebol toolchain, but blocked by unresolved specification conflicts and critical specification gaps. A reconciliation analysis is NOT authority.",
+      "priority": 40,
+      "plan_order": 40,
+      "scope": "RFC-0075 CFCKEP runtime implementation; specification must be reconciled first.",
+      "source_authority": [
+        {"doc": "docs/traceability/rfc-0075/16-conflicts.md"},
+        {"doc": "docs/traceability/rfc-0075/15-gaps.md"},
+        {"doc": "docs/traceability/rfc-0075/validation-result.json"}
+      ],
+      "requirement_refs": ["REQ-0075-001", "REQ-0075-031"],
+      "specification_refs": [
+        {"doc": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md"}
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [],
+      "required_tools": [],
+      "validation_commands": [
+        {"id": "RFC0075-TRACE", "command": "python3 tools/validate_rfc_0075_traceability.py", "expected_exit": 0, "purpose": "RFC-0075 traceability must PASS before implementation"}
+      ],
+      "acceptance_criteria": [
+        {"id": "RFC0075-AC-1", "criterion": "RFC-0075 traceability validator reports PASS (0 conflicts, 0 critical gaps) and an implementation is evidenced"}
+      ],
+      "evidence_refs": ["validation-result.json"],
+      "spec_conflicts": [
+        "CONFLICT-0075-001", "CONFLICT-0075-002", "CONFLICT-0075-003", "CONFLICT-0075-004"
+      ],
+      "spec_gaps": [
+        "GAP-0075-001", "GAP-0075-002", "GAP-0075-003", "GAP-0075-004"
+      ],
+      "declared_blockers": [],
+      "allowed_tools": ["python3"],
+      "prohibited_scope": ["rfcs/ (no RFC modification)", "docs/specifications/ (no spec modification)", "lexer.r"],
+      "provenance": "docs/traceability/rfc-0075/ (SPECIFICATION_CONFLICT / INCOMPLETE_SPECIFICATION)",
+      "rejected": false,
+      "deferred": false
+    }
+  ]
+}
