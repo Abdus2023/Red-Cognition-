@@ -3,12 +3,12 @@
   "controller": "impl_controller",
   "controller_version": "2.0.0",
   "project": "Red/Cognition",
-  "generated_at": "2026-08-13T12:39:24+00:00",
+  "generated_at": "2026-08-13T13:11:45+00:00",
   "manifest": "/home/user/Red-Cognition-/docs/implementation/implementation-plan.json",
-  "repo_head": "d7e5207401132099cd187bb1fb2f578cc7496203",
+  "repo_head": "3d128e160ccc747fd280c44d9f47d26601b1f25a",
   "provenance_context": {
-    "repository_identity": "repo-52318a066b5d489da566f2bbeb2b0ae5",
-    "head": "d7e5207401132099cd187bb1fb2f578cc7496203",
+    "repository_identity": "repo-6d1454e24ebe438c998588a97a4be1ac",
+    "head": "3d128e160ccc747fd280c44d9f47d26601b1f25a",
     "manifest_hash": "a10b3885a22a0e22438292fcd8096e2c937ed796d958e706aad1790f6ac1aec7",
     "validator": "impl_controller"
   },
@@ -159,7 +159,7 @@
     {
       "task_id": "RED-LEX-001",
       "status": "BLOCKED",
-      "contract_id": "1c39f7ff60fa3bc0cfc526d5cabf7f94e4ba5706f29ead702427816af25b264c",
+      "contract_id": "cdff6ba905bf6bdeb0f263cda65205fae26328cc70c9f097a81fcf114a5fc116",
       "closure": "OPEN",
       "closure_gaps": [
         "command 'LEX-BASELINE' has no PASS evidence bound to current contract_id"
@@ -194,7 +194,7 @@
     {
       "task_id": "LIBRED-001",
       "status": "BLOCKED",
-      "contract_id": "c67e47b8059feab11bf8b873573186fd1c68a409ccf8a357c831499ce2f5b841",
+      "contract_id": "6bf0ac7e245ad3a3b1af634996f6b651d1a562b9531ebbb5d421e51c23299ca7",
       "closure": "OPEN",
       "closure_gaps": [
         "command 'LIBRED-BUILD' has no PASS evidence bound to current contract_id"
@@ -227,7 +227,7 @@
     {
       "task_id": "HASH-001",
       "status": "BLOCKED",
-      "contract_id": "9cfd94d42351bcf0fa7dee7a5ae1e37ac331fe0f282abd8332686653501532f5",
+      "contract_id": "0de8d4ec8312189dfc74bb2044241addb60c565045247c98356d32462dd6776b",
       "closure": "OPEN",
       "closure_gaps": [
         "command 'HASH-RUNTIME-TEST' has no PASS evidence bound to current contract_id"
@@ -260,7 +260,7 @@
     {
       "task_id": "RFC0075-001",
       "status": "BLOCKED",
-      "contract_id": "35a59b95ecbaa58f307a95f2df2cf7c080e207fadb16214b590f9bead9a7b8d7",
+      "contract_id": "54347605f0556c0aa7f7f3b1986e45e9820284710300a69f03c0c644c2ec0050",
       "closure": "OPEN",
       "closure_gaps": [
         "command 'RFC0075-TRACE' has no PASS evidence bound to current contract_id"
@@ -299,7 +299,7 @@
   "result": "PASS",
   "errors": [],
   "contract_version": "1.0",
-  "started_at": "2026-08-13T12:39:24+00:00",
+  "started_at": "2026-08-13T13:11:45+00:00",
   "pipeline_result": "PASS",
   "planner": {
     "stage": "planner",
