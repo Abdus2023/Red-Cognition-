@@ -296,7 +296,7 @@ def main() -> int:
         "stage4_planning": s4,
         "stage5_control": s5,
         "epistemic_states": {
-            "specified": s1["totals"]["rfcs"],
+            "specified": s1["totals"].get("normative_requirements", s1["totals"]["rfcs"]),
             "implemented": sum(1 for c in s2["components"]
                                if c["classification"] == "IMPLEMENTED"),
             "executed": s5.get("graph", {}).get("PASS", 0),

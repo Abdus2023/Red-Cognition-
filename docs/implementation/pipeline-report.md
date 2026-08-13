@@ -1,8 +1,8 @@
 # Pipeline Report
 
-**Generated:** 2026-08-13 09:22 UTC
+**Generated:** 2026-08-13 09:24 UTC
 **Pipeline version:** 5.0
-**HEAD:** `765d6347f05f`
+**HEAD:** `eb4e79023e26`
 
 ## Executive Summary
 
@@ -21,7 +21,7 @@
 
 | State | Count |
 |---|---|
-| specified | 92 |
+| specified | 1467 |
 | implemented | 1 |
 | executed | 0 |
 | tested | 0 |
@@ -107,7 +107,7 @@
 ## Implementation Gap Summary
 
 ```
-specified(92) > implemented(1) > executed(0)
+specified(1467) > implemented(1) > executed(0)
   > tested(0) > validated(0)
   > evidenced(0) > formally_verified(0)
 ```

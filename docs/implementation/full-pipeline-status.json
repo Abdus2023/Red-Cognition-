@@ -1,8 +1,8 @@
 {
   "pipeline_version": "5.0",
-  "started_at": "2026-08-13T09:22:30+00:00",
-  "completed_at": "2026-08-13T09:22:30+00:00",
-  "repository_head": "765d6347f05fc0f6de328f002fa96120b33494c8",
+  "started_at": "2026-08-13T09:24:43+00:00",
+  "completed_at": "2026-08-13T09:24:43+00:00",
+  "repository_head": "eb4e79023e2693f43cf07fd4050f05f8a4f4177d",
   "stage1_extraction": {
     "rfcs": [
       {
@@ -1464,7 +1464,7 @@
     "result": "PASS"
   },
   "epistemic_states": {
-    "specified": 92,
+    "specified": 1467,
     "implemented": 1,
     "executed": 0,
     "tested": 0,
