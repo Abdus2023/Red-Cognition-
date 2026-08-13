@@ -1,15 +1,15 @@
 # Pipeline Report
 
-**Generated:** 2026-08-13 09:49 UTC
+**Generated:** 2026-08-13 10:48 UTC
 **Pipeline version:** 5.0
-**HEAD:** `ec0c6ef32484`
+**HEAD:** `4b06081ae5b1`
 
 ## Executive Summary
 
 | Metric | Value |
 |---|---|
 | Normative requirements | **1467** |
-| RFCs scanned | 75 (16 ratified) |
+| RFCs scanned | 75 (19 ratified) |
 | Repository modules | 40 (1096 files) |
 | Implementation tasks | 4 |
 | RFC task coverage | **1.33%** (1/75 RFCs) |
@@ -31,7 +31,7 @@
 
 ## Stage 1 — Extraction
 
-- **RFCs:** 92 files (75 unique, 16 ratified)
+- **RFCs:** 92 files (75 unique, 19 ratified)
 - **Specs:** 52 documents
 - **Wiki:** 19 pages
 - **Extraction reports:** 35

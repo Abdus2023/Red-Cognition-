@@ -42,6 +42,23 @@ except ImportError:
     _analyze_gaps = None
 
 
+def _ratified_rfc_count(root: str, inventory_rfcs: list) -> int:
+    """Single source of truth: docs/governance/ratification-registry.json.
+
+    Retired the legacy substring heuristic (``"Ratified" in status``), which
+    yielded 16 and missed RFC-0001 ('Approved for Ratification'), RFC-0046 and
+    RFC-0047. Derived artifacts MUST read the registry rather than recompute.
+    """
+    reg = Path(root) / "docs" / "governance" / "ratification-registry.json"
+    if reg.is_file():
+        try:
+            return int(json.loads(reg.read_text())["counts"]["rfc_ratified"])
+        except (KeyError, ValueError, json.JSONDecodeError):
+            pass
+    # Legacy fallback only when the registry is absent; never silently diverge.
+    return sum(1 for r in inventory_rfcs if "Ratified" in r["status"])
+
+
 def _repo_root() -> str:
     try:
         out = subprocess.run(["git", "rev-parse", "--show-toplevel"],
@@ -105,7 +122,7 @@ def stage1_extract(root: Path) -> dict:
     inventory["totals"] = {
         "rfcs": len(inventory["rfcs"]),
         "unique_rfc_ids": len({r["id"] for r in inventory["rfcs"]}),
-        "ratified": sum(1 for r in inventory["rfcs"] if "Ratified" in r["status"]),
+        "ratified": _ratified_rfc_count(root, inventory["rfcs"]),
         "specs": len(inventory["specs"]),
         "wiki_pages": len(inventory["wiki_pages"]),
         "extraction_reports": len(inventory["extraction_reports"]),

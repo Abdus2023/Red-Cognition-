@@ -1352,7 +1352,7 @@
   "source_artifacts": [
     {
       "path": "rfcs/RFC-0075-cfckep-federation-collaboration-knowledge-exchange.md",
-      "sha256": "08ae41657f6017d60ee192aed86ede05c200668c944baed33db46512b210241a",
+      "sha256": "e83a1dc11fa742af6f3531b53daf777fa30c24494b1685c2a11d93f9e25e4e72",
       "role": "primary candidate specification",
       "inspected_on": "2026-08-12"
     },

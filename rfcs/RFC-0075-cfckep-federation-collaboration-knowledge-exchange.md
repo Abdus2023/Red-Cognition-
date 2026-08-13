@@ -2,7 +2,7 @@
   KB-Scaffold Provenance (knowledge-base traceability):
   Origin: corpus message #34, sub-message [419], 2026-08-12
   Verbatim source: knowledge-base/sources/message-034-original-part5.md
-  Status in corpus: RFC-0075 CFCKEP (Cognitive Federation, Collaboration, and Knowledge Exchange Protocol) v1.1 (Candidate for Ratification); supersedes v1.0 [417] (preserved in archive). v1.1 adds federation lifecycle, FederationTrust, KnowledgeExchange contract, conflict-resolution workflow, sovereignty invariants, KnowledgeView, FederationEvent schema. Source quirk preserved as received: sections 15–19 refer to "CADFP" (the RFC-0054 acronym) instead of CFCKEP — copy artifact flagged by review [420] as the highest-priority terminology fix; review [420] rates v1.1 ready for ratification after refinements (federation identity, agreement evolution, trust lifecycle, KnowledgeObjects scope, agreement-version replay invariant, conformance section). No ratification decision.
+  Status in corpus: RFC-0075 CFCKEP (Cognitive Federation, Collaboration, and Knowledge Exchange Protocol) v1.1 (Candidate for Ratification); supersedes v1.0 [417] (preserved in archive). v1.1 adds federation lifecycle, FederationTrust, KnowledgeExchange contract, conflict-resolution workflow, sovereignty invariants, KnowledgeView, FederationEvent schema. Source quirk preserved as received: sections 15–19 refer to "CADFP" (the RFC-0054 acronym) instead of CFCKEP — copy artifact flagged by review [420] as the highest-priority terminology fix; review [420] rates v1.1 ready for ratification after refinements (federation identity, agreement evolution, trust lifecycle, KnowledgeObjects scope, agreement-version replay invariant, conformance section). No ratification decision. — 2026-08-13 authority correction: the four body occurrences of CADFP (former §§15–19 copy artifacts) were corrected to CFCKEP per review [420] and the ratification registry; the verbatim archive (knowledge-base/sources/) retains the uncorrected original as provenance.
   Placement rationale: RC-000 section 8 "Repository Governance" mandates rfcs/.
   Content below is the document text exactly as provided (no edits).
 -->
@@ -214,7 +214,7 @@ FederationEvent {
 
 ### 15. Security Model
 
-CADFP integrates with RFC-0022 (Identity and Trust) and RFC-0025 (Security Policy).
+CFCKEP integrates with RFC-0022 (Identity and Trust) and RFC-0025 (Security Policy).
 
 Requirements:
 
@@ -224,7 +224,7 @@ Requirements:
 
 ### 16. Observability
 
-CADFP integrates with RFC-0046 (Observability).
+CFCKEP integrates with RFC-0046 (Observability).
 
 Requirements:
 
@@ -248,7 +248,7 @@ cog federation policy
 
 ### 18. Conformance Profiles
 
-CADFP defines the following conformance profiles:
+CFCKEP defines the following conformance profiles:
 
 | Profile       | Capabilities                                      |
 |---------------|---------------------------------------------------|
@@ -260,7 +260,7 @@ CADFP defines the following conformance profiles:
 
 ### 19. Relationship to Other RFCs
 
-CADFP integrates with RFC-0020, RFC-0021, RFC-0022, RFC-0041, RFC-0050, and RFC-0053.
+CFCKEP integrates with RFC-0020, RFC-0021, RFC-0022, RFC-0041, RFC-0050, and RFC-0053.
 
 ### 20. Open Questions
 

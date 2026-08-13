@@ -10,8 +10,7 @@
   "conflicts": 4,
   "broken_rfc_references": [],
   "errors": [
-    "unresolved critical gaps: 4",
-    "inconsistent terminology: CADFP appears in RFC-0075"
+    "unresolved critical gaps: 4"
   ],
   "warnings": [],
   "result": "FAIL"
