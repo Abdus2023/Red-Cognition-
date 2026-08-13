@@ -36,6 +36,10 @@ try:
     from stage3_build_traceability import build_traceability as _build_trace
 except ImportError:
     _build_trace = None
+try:
+    from stage4_gap_analysis import analyze_gaps as _analyze_gaps
+except ImportError:
+    _analyze_gaps = None
 
 
 def _repo_root() -> str:
@@ -214,12 +218,25 @@ def stage4_plan(root: Path, inventory: dict, reconstruction: dict) -> dict:
             if doc and not (root / doc).exists():
                 issues.append(f"task {task['task_id']}: spec doc '{doc}' not found")
 
-    return {
+    result = {
         "valid": len(issues) == 0,
         "task_count": len(plan.get("tasks", [])),
         "issues": issues,
         "plan_source": str(plan_path.relative_to(root)),
     }
+
+    # Gap analysis: which RFCs have requirements but no tasks?
+    if _analyze_gaps:
+        gaps = _analyze_gaps(root)
+        result["gap_analysis"] = {
+            "rfcs_with_requirements": gaps.get("rfcs_with_requirements", 0),
+            "rfcs_with_task_coverage": gaps.get("rfcs_with_task_coverage", 0),
+            "rfcs_without_task_coverage": gaps.get("rfcs_without_task_coverage", 0),
+            "coverage_pct": gaps.get("coverage_pct", 0),
+            "requirements_in_gap_rfcs": gaps.get("requirements_in_gap_rfcs", 0),
+        }
+
+    return result
 
 
 # ==========================================================================
@@ -310,7 +327,9 @@ def main() -> int:
         "stage3": {"edges": s3["total_edges"],
               "coverage_pct": s3.get("coverage", {}).get("coverage_pct", "N/A"),
               "reqs_with_tasks": s3.get("coverage", {}).get("requirements_with_tasks", "N/A")},
-        "stage4": {"valid": s4["valid"], "tasks": s4["task_count"]},
+        "stage4": {"valid": s4["valid"], "tasks": s4["task_count"],
+                    "rfc_coverage_pct": s4.get("gap_analysis", {}).get("coverage_pct", "N/A"),
+                    "gap_rfcs": s4.get("gap_analysis", {}).get("rfcs_without_task_coverage", "N/A")},
         "stage5": {"frontier": s5.get("frontier"), "graph": s5.get("graph"),
                     "result": s5.get("result")},
         "status_out": str(out_path.relative_to(root)),

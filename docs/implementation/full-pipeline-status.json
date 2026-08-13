@@ -1,8 +1,8 @@
 {
   "pipeline_version": "5.0",
-  "started_at": "2026-08-13T09:02:40+00:00",
-  "completed_at": "2026-08-13T09:02:40+00:00",
-  "repository_head": "6a304cdc112df62d42e2bb99e033d78ac5f4bacd",
+  "started_at": "2026-08-13T09:15:43+00:00",
+  "completed_at": "2026-08-13T09:15:43+00:00",
+  "repository_head": "905e32cd5247c0925d5e692e95a5c70a0ea839f6",
   "stage1_extraction": {
     "rfcs": [
       {
@@ -1371,7 +1371,14 @@
     "valid": true,
     "task_count": 4,
     "issues": [],
-    "plan_source": "docs/implementation/implementation-plan.json"
+    "plan_source": "docs/implementation/implementation-plan.json",
+    "gap_analysis": {
+      "rfcs_with_requirements": 75,
+      "rfcs_with_task_coverage": 1,
+      "rfcs_without_task_coverage": 74,
+      "coverage_pct": 1.33,
+      "requirements_in_gap_rfcs": 1436
+    }
   },
   "stage5_control": {
     "frontier": "PAUSED",
