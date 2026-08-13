@@ -1,0 +1,5531 @@
+{
+  "backlog_version": "1.0",
+  "description": "Auto-generated implementation backlog from the requirements inventory. Tasks are SPECIFIED WORK, not fabricated completion. All are BLOCKED.",
+  "total_tasks": 74,
+  "total_requirements_covered": 1436,
+  "by_blocker": {
+    "TOOLCHAIN": 74
+  },
+  "by_confidence": {
+    "HIGH": 28,
+    "LOW": 46
+  },
+  "by_domain": {
+    "Core cognitive types": 10,
+    "Ecosystem (package/sandbox/marketplace)": 9,
+    "Distributed cognition / transactions": 9,
+    "Execution / CVM / CISA / runtime": 8,
+    "CogOS / distributed / security": 8,
+    "Language / toolchain / conformance": 8,
+    "Supply chain / proof-carrying": 8,
+    "Compiler / CIR / verification": 7,
+    "Verified execution / formal semantics": 5,
+    "Security / monitoring / autonomous defense": 2
+  },
+  "tasks": [
+    {
+      "task_id": "IMPL-RFC-0001",
+      "title": "RFC-0001: ",
+      "description": "Implementation of 17 requirements from RFC-0001 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 1,
+      "plan_order": 1,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0001-ratification-record.md",
+          "anchor": "RFC-0001 (✅ Approved for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0001-001",
+        "REQ-RFC-0001-002",
+        "REQ-RFC-0001-003",
+        "REQ-RFC-0001-004",
+        "REQ-RFC-0001-005",
+        "REQ-RFC-0001-001",
+        "REQ-RFC-0001-002",
+        "REQ-RFC-0001-003",
+        "REQ-RFC-0001-004",
+        "REQ-RFC-0001-005",
+        "REQ-RFC-0001-006",
+        "REQ-RFC-0001-007",
+        "REQ-RFC-0001-008",
+        "REQ-RFC-0001-009",
+        "REQ-RFC-0001-010",
+        "REQ-RFC-0001-011",
+        "REQ-RFC-0001-012"
+      ],
+      "requirement_count": 17,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0001-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0001)",
+      "rfc_id": "RFC-0001",
+      "rfc_status": "✅ Approved for Ratification",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0002",
+      "title": "RFC-0002: Belief Revision System",
+      "description": "Implementation of 35 requirements from RFC-0002 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 2,
+      "plan_order": 2,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0002-ratification-record.md",
+          "anchor": "RFC-0002 (Ratified)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0002-001",
+        "REQ-RFC-0002-002",
+        "REQ-RFC-0002-003",
+        "REQ-RFC-0002-004",
+        "REQ-RFC-0002-005",
+        "REQ-RFC-0002-006",
+        "REQ-RFC-0002-007",
+        "REQ-RFC-0002-008",
+        "REQ-RFC-0002-009",
+        "REQ-RFC-0002-010",
+        "REQ-RFC-0002-011",
+        "REQ-RFC-0002-012",
+        "REQ-RFC-0002-013",
+        "REQ-RFC-0002-014",
+        "REQ-RFC-0002-015",
+        "REQ-RFC-0002-016",
+        "REQ-RFC-0002-017",
+        "REQ-RFC-0002-018",
+        "REQ-RFC-0002-019",
+        "REQ-RFC-0002-020"
+      ],
+      "requirement_count": 35,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0002-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0001",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0002)",
+      "rfc_id": "RFC-0002",
+      "rfc_status": "Ratified",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0001",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0003",
+      "title": "RFC-0003: Belief Revision System",
+      "description": "Implementation of 31 requirements from RFC-0003 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 3,
+      "plan_order": 3,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0003-belief-revision-system.md",
+          "anchor": "RFC-0003 (Candidate for Final Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0003-001",
+        "REQ-RFC-0003-002",
+        "REQ-RFC-0003-003",
+        "REQ-RFC-0003-004",
+        "REQ-RFC-0003-005",
+        "REQ-RFC-0003-006",
+        "REQ-RFC-0003-007",
+        "REQ-RFC-0003-008",
+        "REQ-RFC-0003-009",
+        "REQ-RFC-0003-010",
+        "REQ-RFC-0003-011",
+        "REQ-RFC-0003-012",
+        "REQ-RFC-0003-013",
+        "REQ-RFC-0003-014",
+        "REQ-RFC-0003-015",
+        "REQ-RFC-0003-016",
+        "REQ-RFC-0003-017",
+        "REQ-RFC-0003-018",
+        "REQ-RFC-0003-019",
+        "REQ-RFC-0003-020"
+      ],
+      "requirement_count": 31,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0003-belief-revision-system.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0001",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0003)",
+      "rfc_id": "RFC-0003",
+      "rfc_status": "Candidate for Final Ratification",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0001",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0004",
+      "title": "RFC-0004: Goal Lifecycle and Satisfaction Model",
+      "description": "Implementation of 30 requirements from RFC-0004 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 4,
+      "plan_order": 4,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md",
+          "anchor": "RFC-0004 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0004-001",
+        "REQ-RFC-0004-002",
+        "REQ-RFC-0004-003",
+        "REQ-RFC-0004-004",
+        "REQ-RFC-0004-005",
+        "REQ-RFC-0004-006",
+        "REQ-RFC-0004-007",
+        "REQ-RFC-0004-008",
+        "REQ-RFC-0004-009",
+        "REQ-RFC-0004-010",
+        "REQ-RFC-0004-011",
+        "REQ-RFC-0004-012",
+        "REQ-RFC-0004-013",
+        "REQ-RFC-0004-014",
+        "REQ-RFC-0004-015",
+        "REQ-RFC-0004-016",
+        "REQ-RFC-0004-017",
+        "REQ-RFC-0004-018",
+        "REQ-RFC-0004-019",
+        "REQ-RFC-0004-020"
+      ],
+      "requirement_count": 30,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0001",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0004)",
+      "rfc_id": "RFC-0004",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0001",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0005",
+      "title": "RFC-0005: Planning Semantics",
+      "description": "Implementation of 24 requirements from RFC-0005 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 5,
+      "plan_order": 5,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0005-planning-semantics.md",
+          "anchor": "RFC-0005 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0005-001",
+        "REQ-RFC-0005-002",
+        "REQ-RFC-0005-003",
+        "REQ-RFC-0005-004",
+        "REQ-RFC-0005-005",
+        "REQ-RFC-0005-006",
+        "REQ-RFC-0005-007",
+        "REQ-RFC-0005-008",
+        "REQ-RFC-0005-009",
+        "REQ-RFC-0005-010",
+        "REQ-RFC-0005-011",
+        "REQ-RFC-0005-012",
+        "REQ-RFC-0005-013",
+        "REQ-RFC-0005-014",
+        "REQ-RFC-0005-015",
+        "REQ-RFC-0005-016",
+        "REQ-RFC-0005-017",
+        "REQ-RFC-0005-018",
+        "REQ-RFC-0005-019",
+        "REQ-RFC-0005-020"
+      ],
+      "requirement_count": 24,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0005-planning-semantics.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0004",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0005)",
+      "rfc_id": "RFC-0005",
+      "rfc_status": "Draft",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0004",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0006",
+      "title": "RFC-0006: Capability Model",
+      "description": "Implementation of 33 requirements from RFC-0006 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 6,
+      "plan_order": 6,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0006-capability-model.md",
+          "anchor": "RFC-0006 (Candidate for Final Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0006-001",
+        "REQ-RFC-0006-002",
+        "REQ-RFC-0006-003",
+        "REQ-RFC-0006-004",
+        "REQ-RFC-0006-005",
+        "REQ-RFC-0006-006",
+        "REQ-RFC-0006-007",
+        "REQ-RFC-0006-008",
+        "REQ-RFC-0006-009",
+        "REQ-RFC-0006-010",
+        "REQ-RFC-0006-011",
+        "REQ-RFC-0006-012",
+        "REQ-RFC-0006-013",
+        "REQ-RFC-0006-014",
+        "REQ-RFC-0006-015",
+        "REQ-RFC-0006-016",
+        "REQ-RFC-0006-017",
+        "REQ-RFC-0006-018",
+        "REQ-RFC-0006-019",
+        "REQ-RFC-0006-020"
+      ],
+      "requirement_count": 33,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0006-capability-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0004",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0006)",
+      "rfc_id": "RFC-0006",
+      "rfc_status": "Candidate for Final Ratification",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0004",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0007",
+      "title": "RFC-0007: Skill Model",
+      "description": "Implementation of 33 requirements from RFC-0007 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 7,
+      "plan_order": 7,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0007-skill-model.md",
+          "anchor": "RFC-0007 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0007-001",
+        "REQ-RFC-0007-002",
+        "REQ-RFC-0007-003",
+        "REQ-RFC-0007-004",
+        "REQ-RFC-0007-005",
+        "REQ-RFC-0007-006",
+        "REQ-RFC-0007-007",
+        "REQ-RFC-0007-008",
+        "REQ-RFC-0007-009",
+        "REQ-RFC-0007-010",
+        "REQ-RFC-0007-011",
+        "REQ-RFC-0007-012",
+        "REQ-RFC-0007-013",
+        "REQ-RFC-0007-014",
+        "REQ-RFC-0007-015",
+        "REQ-RFC-0007-016",
+        "REQ-RFC-0007-017",
+        "REQ-RFC-0007-018",
+        "REQ-RFC-0007-019",
+        "REQ-RFC-0007-020"
+      ],
+      "requirement_count": 33,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0007-skill-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0001",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0007)",
+      "rfc_id": "RFC-0007",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0001",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0008",
+      "title": "RFC-0008: Memory Model",
+      "description": "Implementation of 19 requirements from RFC-0008 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 8,
+      "plan_order": 8,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0008-memory-model.md",
+          "anchor": "RFC-0008 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0008-001",
+        "REQ-RFC-0008-002",
+        "REQ-RFC-0008-003",
+        "REQ-RFC-0008-004",
+        "REQ-RFC-0008-005",
+        "REQ-RFC-0008-006",
+        "REQ-RFC-0008-007",
+        "REQ-RFC-0008-008",
+        "REQ-RFC-0008-009",
+        "REQ-RFC-0008-010",
+        "REQ-RFC-0008-011",
+        "REQ-RFC-0008-012",
+        "REQ-RFC-0008-013",
+        "REQ-RFC-0008-014",
+        "REQ-RFC-0008-015",
+        "REQ-RFC-0008-016",
+        "REQ-RFC-0008-017",
+        "REQ-RFC-0008-018",
+        "REQ-RFC-0008-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0008-memory-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0007",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0008)",
+      "rfc_id": "RFC-0008",
+      "rfc_status": "Draft",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0007",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0009",
+      "title": "RFC-0009: Agent Model",
+      "description": "Implementation of 22 requirements from RFC-0009 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 9,
+      "plan_order": 9,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0009-agent-model.md",
+          "anchor": "RFC-0009 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0009-001",
+        "REQ-RFC-0009-002",
+        "REQ-RFC-0009-003",
+        "REQ-RFC-0009-004",
+        "REQ-RFC-0009-005",
+        "REQ-RFC-0009-006",
+        "REQ-RFC-0009-007",
+        "REQ-RFC-0009-008",
+        "REQ-RFC-0009-009",
+        "REQ-RFC-0009-010",
+        "REQ-RFC-0009-011",
+        "REQ-RFC-0009-012",
+        "REQ-RFC-0009-013",
+        "REQ-RFC-0009-014",
+        "REQ-RFC-0009-015",
+        "REQ-RFC-0009-016",
+        "REQ-RFC-0009-017",
+        "REQ-RFC-0009-018",
+        "REQ-RFC-0009-019",
+        "REQ-RFC-0009-020"
+      ],
+      "requirement_count": 22,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0009-agent-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0007",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0009)",
+      "rfc_id": "RFC-0009",
+      "rfc_status": "Draft",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0007",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0010",
+      "title": "RFC-0010: Checkpoint and Recovery Model",
+      "description": "Implementation of 21 requirements from RFC-0010 (Core cognitive types). Auto-generated; not a fabricated completion.",
+      "priority": 10,
+      "plan_order": 10,
+      "scope": "TBD — implementer must define based on Core cognitive types requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0010-checkpoint-recovery-model.md",
+          "anchor": "RFC-0010 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0010-001",
+        "REQ-RFC-0010-002",
+        "REQ-RFC-0010-003",
+        "REQ-RFC-0010-004",
+        "REQ-RFC-0010-005",
+        "REQ-RFC-0010-006",
+        "REQ-RFC-0010-007",
+        "REQ-RFC-0010-008",
+        "REQ-RFC-0010-009",
+        "REQ-RFC-0010-010",
+        "REQ-RFC-0010-011",
+        "REQ-RFC-0010-012",
+        "REQ-RFC-0010-013",
+        "REQ-RFC-0010-014",
+        "REQ-RFC-0010-015",
+        "REQ-RFC-0010-016",
+        "REQ-RFC-0010-017",
+        "REQ-RFC-0010-018",
+        "REQ-RFC-0010-019",
+        "REQ-RFC-0010-020"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0010-checkpoint-recovery-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0009",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0010)",
+      "rfc_id": "RFC-0010",
+      "rfc_status": "Draft",
+      "rfc_domain": "Core cognitive types",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0009",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0011",
+      "title": "RFC-0011: Scheduler and Execution Model",
+      "description": "Implementation of 26 requirements from RFC-0011 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 11,
+      "plan_order": 11,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0011-scheduler-execution-model.md",
+          "anchor": "RFC-0011 (Candidate for Final Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0011-001",
+        "REQ-RFC-0011-002",
+        "REQ-RFC-0011-003",
+        "REQ-RFC-0011-004",
+        "REQ-RFC-0011-001",
+        "REQ-RFC-0011-002",
+        "REQ-RFC-0011-003",
+        "REQ-RFC-0011-004",
+        "REQ-RFC-0011-005",
+        "REQ-RFC-0011-006",
+        "REQ-RFC-0011-007",
+        "REQ-RFC-0011-008",
+        "REQ-RFC-0011-009",
+        "REQ-RFC-0011-010",
+        "REQ-RFC-0011-011",
+        "REQ-RFC-0011-012",
+        "REQ-RFC-0011-013",
+        "REQ-RFC-0011-014",
+        "REQ-RFC-0011-015",
+        "REQ-RFC-0011-016"
+      ],
+      "requirement_count": 26,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0011-scheduler-execution-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0010",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0011)",
+      "rfc_id": "RFC-0011",
+      "rfc_status": "Candidate for Final Ratification",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0010",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0012",
+      "title": "RFC-0012: Cognitive Virtual Machine (CVM) Execution Semantics",
+      "description": "Implementation of 23 requirements from RFC-0012 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 12,
+      "plan_order": 12,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0012-cvm-execution-semantics.md",
+          "anchor": "RFC-0012 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0012-001",
+        "REQ-RFC-0012-002",
+        "REQ-RFC-0012-003",
+        "REQ-RFC-0012-004",
+        "REQ-RFC-0012-005",
+        "REQ-RFC-0012-006",
+        "REQ-RFC-0012-007",
+        "REQ-RFC-0012-008",
+        "REQ-RFC-0012-009",
+        "REQ-RFC-0012-010",
+        "REQ-RFC-0012-011",
+        "REQ-RFC-0012-012",
+        "REQ-RFC-0012-013",
+        "REQ-RFC-0012-014",
+        "REQ-RFC-0012-015",
+        "REQ-RFC-0012-016",
+        "REQ-RFC-0012-017",
+        "REQ-RFC-0012-018",
+        "REQ-RFC-0012-019",
+        "REQ-RFC-0012-020"
+      ],
+      "requirement_count": 23,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0012-cvm-execution-semantics.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0011",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0012)",
+      "rfc_id": "RFC-0012",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0011",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0013",
+      "title": "RFC-0013: Cognitive Instruction Set Architecture (CISA)",
+      "description": "Implementation of 14 requirements from RFC-0013 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 13,
+      "plan_order": 13,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0013-cisa.md",
+          "anchor": "RFC-0013 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0013-001",
+        "REQ-RFC-0013-002",
+        "REQ-RFC-0013-003",
+        "REQ-RFC-0013-004",
+        "REQ-RFC-0013-005",
+        "REQ-RFC-0013-006",
+        "REQ-RFC-0013-007",
+        "REQ-RFC-0013-008",
+        "REQ-RFC-0013-009",
+        "REQ-RFC-0013-010",
+        "REQ-RFC-0013-011",
+        "REQ-RFC-0013-012",
+        "REQ-RFC-0013-013",
+        "REQ-RFC-0013-014"
+      ],
+      "requirement_count": 14,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0013-cisa.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0012",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0013)",
+      "rfc_id": "RFC-0013",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0012",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0014",
+      "title": "RFC-0014: CISA Binary Encoding and Serialization Format",
+      "description": "Implementation of 16 requirements from RFC-0014 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 14,
+      "plan_order": 14,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0014-cisa-binary-encoding.md",
+          "anchor": "RFC-0014 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0014-001",
+        "REQ-RFC-0014-002",
+        "REQ-RFC-0014-003",
+        "REQ-RFC-0014-004",
+        "REQ-RFC-0014-005",
+        "REQ-RFC-0014-006",
+        "REQ-RFC-0014-007",
+        "REQ-RFC-0014-008",
+        "REQ-RFC-0014-009",
+        "REQ-RFC-0014-010",
+        "REQ-RFC-0014-011",
+        "REQ-RFC-0014-012",
+        "REQ-RFC-0014-013",
+        "REQ-RFC-0014-014",
+        "REQ-RFC-0014-015",
+        "REQ-RFC-0014-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0014-cisa-binary-encoding.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0013",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0014)",
+      "rfc_id": "RFC-0014",
+      "rfc_status": "Draft",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0013",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0015",
+      "title": "RFC-0015: Cognitive Exception and Failure Semantics",
+      "description": "Implementation of 16 requirements from RFC-0015 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 15,
+      "plan_order": 15,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0015-cognitive-exception-semantics.md",
+          "anchor": "RFC-0015 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0015-001",
+        "REQ-RFC-0015-002",
+        "REQ-RFC-0015-003",
+        "REQ-RFC-0015-004",
+        "REQ-RFC-0015-005",
+        "REQ-RFC-0015-006",
+        "REQ-RFC-0015-007",
+        "REQ-RFC-0015-008",
+        "REQ-RFC-0015-009",
+        "REQ-RFC-0015-010",
+        "REQ-RFC-0015-011",
+        "REQ-RFC-0015-012",
+        "REQ-RFC-0015-013",
+        "REQ-RFC-0015-014",
+        "REQ-RFC-0015-015",
+        "REQ-RFC-0015-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0015-cognitive-exception-semantics.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0013",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0015)",
+      "rfc_id": "RFC-0015",
+      "rfc_status": "Draft",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0013",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0016",
+      "title": "RFC-0016: Cognitive Runtime Architecture",
+      "description": "Implementation of 6 requirements from RFC-0016 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 16,
+      "plan_order": 16,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0016-cognitive-runtime-architecture.md",
+          "anchor": "RFC-0016 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0016-001",
+        "REQ-RFC-0016-002",
+        "REQ-RFC-0016-003",
+        "REQ-RFC-0016-004",
+        "REQ-RFC-0016-005",
+        "REQ-RFC-0016-006"
+      ],
+      "requirement_count": 6,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0016-cognitive-runtime-architecture.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0015",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0016)",
+      "rfc_id": "RFC-0016",
+      "rfc_status": "Draft",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0015",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0017",
+      "title": "RFC-0017: Cognitive Runtime Interface and Service Model",
+      "description": "Implementation of 13 requirements from RFC-0017 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 17,
+      "plan_order": 17,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0017-runtime-interface-service-model.md",
+          "anchor": "RFC-0017 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0017-001",
+        "REQ-RFC-0017-002",
+        "REQ-RFC-0017-003",
+        "REQ-RFC-0017-004",
+        "REQ-RFC-0017-005",
+        "REQ-RFC-0017-006",
+        "REQ-RFC-0017-007",
+        "REQ-RFC-0017-008",
+        "REQ-RFC-0017-009",
+        "REQ-RFC-0017-010",
+        "REQ-RFC-0017-011",
+        "REQ-RFC-0017-012",
+        "REQ-RFC-0017-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0017-runtime-interface-service-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0016",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0017)",
+      "rfc_id": "RFC-0017",
+      "rfc_status": "Draft",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0016",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0018",
+      "title": "RFC-0018: Cognitive Event Log and Deterministic Replay Protocol",
+      "description": "Implementation of 16 requirements from RFC-0018 (Execution / CVM / CISA / runtime). Auto-generated; not a fabricated completion.",
+      "priority": 18,
+      "plan_order": 18,
+      "scope": "TBD — implementer must define based on Execution / CVM / CISA / runtime requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0018-event-log-replay-protocol.md",
+          "anchor": "RFC-0018 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0018-001",
+        "REQ-RFC-0018-002",
+        "REQ-RFC-0018-003",
+        "REQ-RFC-0018-004",
+        "REQ-RFC-0018-005",
+        "REQ-RFC-0018-006",
+        "REQ-RFC-0018-007",
+        "REQ-RFC-0018-008",
+        "REQ-RFC-0018-009",
+        "REQ-RFC-0018-010",
+        "REQ-RFC-0018-011",
+        "REQ-RFC-0018-012",
+        "REQ-RFC-0018-013",
+        "REQ-RFC-0018-014",
+        "REQ-RFC-0018-015",
+        "REQ-RFC-0018-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0018-event-log-replay-protocol.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0017",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0018)",
+      "rfc_id": "RFC-0018",
+      "rfc_status": "Draft",
+      "rfc_domain": "Execution / CVM / CISA / runtime",
+      "candidate_source_path": "runtime/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0017",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0019",
+      "title": "RFC-0019: Cognitive Operating System Architecture",
+      "description": "Implementation of 4 requirements from RFC-0019 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 19,
+      "plan_order": 19,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0019-cogos-architecture.md",
+          "anchor": "RFC-0019 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0019-001",
+        "REQ-RFC-0019-002",
+        "REQ-RFC-0019-003",
+        "REQ-RFC-0019-004"
+      ],
+      "requirement_count": 4,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0019-cogos-architecture.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0018",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0019)",
+      "rfc_id": "RFC-0019",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0018",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0020",
+      "title": "RFC-0020: Distributed Cognitive Execution Protocol",
+      "description": "Implementation of 29 requirements from RFC-0020 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 20,
+      "plan_order": 20,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0020-distributed-execution-protocol.md",
+          "anchor": "RFC-0020 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0020-001",
+        "REQ-RFC-0020-002",
+        "REQ-RFC-0020-003",
+        "REQ-RFC-0020-004",
+        "REQ-RFC-0020-005",
+        "REQ-RFC-0020-006",
+        "REQ-RFC-0020-007",
+        "REQ-RFC-0020-008",
+        "REQ-RFC-0020-009",
+        "REQ-RFC-0020-010",
+        "REQ-RFC-0020-011",
+        "REQ-RFC-0020-012",
+        "REQ-RFC-0020-013",
+        "REQ-RFC-0020-014",
+        "REQ-RFC-0020-015",
+        "REQ-RFC-0020-016",
+        "REQ-RFC-0020-017",
+        "REQ-RFC-0020-018",
+        "REQ-RFC-0020-019",
+        "REQ-RFC-0020-020"
+      ],
+      "requirement_count": 29,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0020-distributed-execution-protocol.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0019",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0020)",
+      "rfc_id": "RFC-0020",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0019",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0021",
+      "title": "RFC-0021: Cognitive Network Protocol (CNP)",
+      "description": "Implementation of 19 requirements from RFC-0021 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 21,
+      "plan_order": 21,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0021-cognitive-network-protocol.md",
+          "anchor": "RFC-0021 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0021-001",
+        "REQ-RFC-0021-002",
+        "REQ-RFC-0021-003",
+        "REQ-RFC-0021-004",
+        "REQ-RFC-0021-005",
+        "REQ-RFC-0021-006",
+        "REQ-RFC-0021-007",
+        "REQ-RFC-0021-008",
+        "REQ-RFC-0021-009",
+        "REQ-RFC-0021-010",
+        "REQ-RFC-0021-011",
+        "REQ-RFC-0021-012",
+        "REQ-RFC-0021-013",
+        "REQ-RFC-0021-014",
+        "REQ-RFC-0021-015",
+        "REQ-RFC-0021-016",
+        "REQ-RFC-0021-017",
+        "REQ-RFC-0021-018",
+        "REQ-RFC-0021-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0021-cognitive-network-protocol.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0020",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0021)",
+      "rfc_id": "RFC-0021",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0020",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0022",
+      "title": "RFC-0022: Cognitive Identity and Trust Framework",
+      "description": "Implementation of 25 requirements from RFC-0022 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 22,
+      "plan_order": 22,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0022-identity-trust-framework.md",
+          "anchor": "RFC-0022 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0022-001",
+        "REQ-RFC-0022-002",
+        "REQ-RFC-0022-003",
+        "REQ-RFC-0022-004",
+        "REQ-RFC-0022-005",
+        "REQ-RFC-0022-006",
+        "REQ-RFC-0022-007",
+        "REQ-RFC-0022-008",
+        "REQ-RFC-0022-009",
+        "REQ-RFC-0022-010",
+        "REQ-RFC-0022-011",
+        "REQ-RFC-0022-012",
+        "REQ-RFC-0022-013",
+        "REQ-RFC-0022-014",
+        "REQ-RFC-0022-015",
+        "REQ-RFC-0022-016",
+        "REQ-RFC-0022-017",
+        "REQ-RFC-0022-018",
+        "REQ-RFC-0022-019",
+        "REQ-RFC-0022-020"
+      ],
+      "requirement_count": 25,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0022-identity-trust-framework.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0021",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0022)",
+      "rfc_id": "RFC-0022",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0021",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0023",
+      "title": "RFC-0023: Distributed Consensus and Causal Agreement Protocol",
+      "description": "Implementation of 13 requirements from RFC-0023 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 23,
+      "plan_order": 23,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0023-consensus-causal-agreement.md",
+          "anchor": "RFC-0023 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0023-001",
+        "REQ-RFC-0023-002",
+        "REQ-RFC-0023-003",
+        "REQ-RFC-0023-004",
+        "REQ-RFC-0023-005",
+        "REQ-RFC-0023-006",
+        "REQ-RFC-0023-007",
+        "REQ-RFC-0023-008",
+        "REQ-RFC-0023-009",
+        "REQ-RFC-0023-010",
+        "REQ-RFC-0023-011",
+        "REQ-RFC-0023-012",
+        "REQ-RFC-0023-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0023-consensus-causal-agreement.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0022",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0023)",
+      "rfc_id": "RFC-0023",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0022",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0024",
+      "title": "RFC-0024: Cognitive Resource Management and Quota Model",
+      "description": "Implementation of 25 requirements from RFC-0024 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 24,
+      "plan_order": 24,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0024-resource-management-quota-model.md",
+          "anchor": "RFC-0024 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0024-001",
+        "REQ-RFC-0024-002",
+        "REQ-RFC-0024-003",
+        "REQ-RFC-0024-004",
+        "REQ-RFC-0024-005",
+        "REQ-RFC-0024-006",
+        "REQ-RFC-0024-007",
+        "REQ-RFC-0024-008",
+        "REQ-RFC-0024-009",
+        "REQ-RFC-0024-010",
+        "REQ-RFC-0024-011",
+        "REQ-RFC-0024-012",
+        "REQ-RFC-0024-013",
+        "REQ-RFC-0024-014",
+        "REQ-RFC-0024-015",
+        "REQ-RFC-0024-016",
+        "REQ-RFC-0024-017",
+        "REQ-RFC-0024-018",
+        "REQ-RFC-0024-019",
+        "REQ-RFC-0024-020"
+      ],
+      "requirement_count": 25,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0024-resource-management-quota-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0023",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0024)",
+      "rfc_id": "RFC-0024",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0023",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0025",
+      "title": "RFC-0025: Cognitive Security Policy Language (CSPL)",
+      "description": "Implementation of 10 requirements from RFC-0025 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 25,
+      "plan_order": 25,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0025-security-policy-language.md",
+          "anchor": "RFC-0025 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0025-001",
+        "REQ-RFC-0025-002",
+        "REQ-RFC-0025-003",
+        "REQ-RFC-0025-004",
+        "REQ-RFC-0025-005",
+        "REQ-RFC-0025-006",
+        "REQ-RFC-0025-007",
+        "REQ-RFC-0025-008",
+        "REQ-RFC-0025-009",
+        "REQ-RFC-0025-010"
+      ],
+      "requirement_count": 10,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0025-security-policy-language.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0024",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0025)",
+      "rfc_id": "RFC-0025",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0024",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0026",
+      "title": "RFC-0026: Cognitive Hardware Acceleration Model",
+      "description": "Implementation of 25 requirements from RFC-0026 (CogOS / distributed / security). Auto-generated; not a fabricated completion.",
+      "priority": 26,
+      "plan_order": 26,
+      "scope": "TBD — implementer must define based on CogOS / distributed / security requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0026-hardware-acceleration-model.md",
+          "anchor": "RFC-0026 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0026-001",
+        "REQ-RFC-0026-002",
+        "REQ-RFC-0026-003",
+        "REQ-RFC-0026-004",
+        "REQ-RFC-0026-005",
+        "REQ-RFC-0026-006",
+        "REQ-RFC-0026-007",
+        "REQ-RFC-0026-008",
+        "REQ-RFC-0026-009",
+        "REQ-RFC-0026-010",
+        "REQ-RFC-0026-011",
+        "REQ-RFC-0026-012",
+        "REQ-RFC-0026-013",
+        "REQ-RFC-0026-014",
+        "REQ-RFC-0026-015",
+        "REQ-RFC-0026-016",
+        "REQ-RFC-0026-017",
+        "REQ-RFC-0026-018",
+        "REQ-RFC-0026-019",
+        "REQ-RFC-0026-020"
+      ],
+      "requirement_count": 25,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0026-hardware-acceleration-model.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0025",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0026)",
+      "rfc_id": "RFC-0026",
+      "rfc_status": "Draft",
+      "rfc_domain": "CogOS / distributed / security",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0025",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0027",
+      "title": "RFC-0027: Cognitive Compiler and Toolchain Architecture",
+      "description": "Implementation of 19 requirements from RFC-0027 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 27,
+      "plan_order": 27,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0027-compiler-toolchain-architecture.md",
+          "anchor": "RFC-0027 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0027-001",
+        "REQ-RFC-0027-002",
+        "REQ-RFC-0027-003",
+        "REQ-RFC-0027-004",
+        "REQ-RFC-0027-005",
+        "REQ-RFC-0027-006",
+        "REQ-RFC-0027-007",
+        "REQ-RFC-0027-008",
+        "REQ-RFC-0027-009",
+        "REQ-RFC-0027-010",
+        "REQ-RFC-0027-011",
+        "REQ-RFC-0027-012",
+        "REQ-RFC-0027-013",
+        "REQ-RFC-0027-014",
+        "REQ-RFC-0027-015",
+        "REQ-RFC-0027-016",
+        "REQ-RFC-0027-017",
+        "REQ-RFC-0027-018",
+        "REQ-RFC-0027-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0027-compiler-toolchain-architecture.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0026",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0027)",
+      "rfc_id": "RFC-0027",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0026",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0028",
+      "title": "RFC-0028: Cognitive Intermediate Representation (CIR)",
+      "description": "Implementation of 10 requirements from RFC-0028 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 28,
+      "plan_order": 28,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0028-cognitive-intermediate-representation.md",
+          "anchor": "RFC-0028 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0028-001",
+        "REQ-RFC-0028-002",
+        "REQ-RFC-0028-003",
+        "REQ-RFC-0028-004",
+        "REQ-RFC-0028-005",
+        "REQ-RFC-0028-006",
+        "REQ-RFC-0028-007",
+        "REQ-RFC-0028-008",
+        "REQ-RFC-0028-009",
+        "REQ-RFC-0028-010"
+      ],
+      "requirement_count": 10,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0028-cognitive-intermediate-representation.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0027",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0028)",
+      "rfc_id": "RFC-0028",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0027",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0029",
+      "title": "RFC-0029: Cognitive IR Serialization Format (CIR-SER)",
+      "description": "Implementation of 15 requirements from RFC-0029 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 29,
+      "plan_order": 29,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0029-cir-serialization-format.md",
+          "anchor": "RFC-0029 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0029-001",
+        "REQ-RFC-0029-002",
+        "REQ-RFC-0029-003",
+        "REQ-RFC-0029-004",
+        "REQ-RFC-0029-005",
+        "REQ-RFC-0029-006",
+        "REQ-RFC-0029-007",
+        "REQ-RFC-0029-008",
+        "REQ-RFC-0029-009",
+        "REQ-RFC-0029-010",
+        "REQ-RFC-0029-011",
+        "REQ-RFC-0029-012",
+        "REQ-RFC-0029-013",
+        "REQ-RFC-0029-014",
+        "REQ-RFC-0029-015"
+      ],
+      "requirement_count": 15,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0029-cir-serialization-format.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0028",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0029)",
+      "rfc_id": "RFC-0029",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0028",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0030",
+      "title": "RFC-0030: Cognitive Optimization Pass Framework",
+      "description": "Implementation of 16 requirements from RFC-0030 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 30,
+      "plan_order": 30,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0030-optimization-pass-framework.md",
+          "anchor": "RFC-0030 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0030-001",
+        "REQ-RFC-0030-002",
+        "REQ-RFC-0030-003",
+        "REQ-RFC-0030-004",
+        "REQ-RFC-0030-005",
+        "REQ-RFC-0030-006",
+        "REQ-RFC-0030-007",
+        "REQ-RFC-0030-008",
+        "REQ-RFC-0030-009",
+        "REQ-RFC-0030-010",
+        "REQ-RFC-0030-011",
+        "REQ-RFC-0030-012",
+        "REQ-RFC-0030-013",
+        "REQ-RFC-0030-014",
+        "REQ-RFC-0030-015",
+        "REQ-RFC-0030-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0030-optimization-pass-framework.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0029",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0030)",
+      "rfc_id": "RFC-0030",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0029",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0031",
+      "title": "RFC-0031: Cognitive Optimization Intermediate Language (COIL)",
+      "description": "Implementation of 8 requirements from RFC-0031 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 31,
+      "plan_order": 31,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0031-coil-transformation-language.md",
+          "anchor": "RFC-0031 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0031-001",
+        "REQ-RFC-0031-002",
+        "REQ-RFC-0031-003",
+        "REQ-RFC-0031-004",
+        "REQ-RFC-0031-005",
+        "REQ-RFC-0031-006",
+        "REQ-RFC-0031-007",
+        "REQ-RFC-0031-008"
+      ],
+      "requirement_count": 8,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0031-coil-transformation-language.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0030",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0031)",
+      "rfc_id": "RFC-0031",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0030",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0032",
+      "title": "RFC-0032: Cognitive Optimization Verification Framework (COVF)",
+      "description": "Implementation of 10 requirements from RFC-0032 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 32,
+      "plan_order": 32,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0032-covf-verification-framework.md",
+          "anchor": "RFC-0032 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0032-001",
+        "REQ-RFC-0032-002",
+        "REQ-RFC-0032-003",
+        "REQ-RFC-0032-004",
+        "REQ-RFC-0032-005",
+        "REQ-RFC-0032-006",
+        "REQ-RFC-0032-007",
+        "REQ-RFC-0032-008",
+        "REQ-RFC-0032-009",
+        "REQ-RFC-0032-010"
+      ],
+      "requirement_count": 10,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0032-covf-verification-framework.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0031",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0032)",
+      "rfc_id": "RFC-0032",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0031",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0033",
+      "title": "RFC-0033: Cognitive Proof-Carrying Program Format (CPCPF)",
+      "description": "Implementation of 9 requirements from RFC-0033 (Compiler / CIR / verification). Auto-generated; not a fabricated completion.",
+      "priority": 33,
+      "plan_order": 33,
+      "scope": "TBD — implementer must define based on Compiler / CIR / verification requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0033-proof-carrying-program-format.md",
+          "anchor": "RFC-0033 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0033-001",
+        "REQ-RFC-0033-002",
+        "REQ-RFC-0033-003",
+        "REQ-RFC-0033-004",
+        "REQ-RFC-0033-005",
+        "REQ-RFC-0033-006",
+        "REQ-RFC-0033-007",
+        "REQ-RFC-0033-008",
+        "REQ-RFC-0033-009"
+      ],
+      "requirement_count": 9,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0033-proof-carrying-program-format.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0032",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0033)",
+      "rfc_id": "RFC-0033",
+      "rfc_status": "Draft",
+      "rfc_domain": "Compiler / CIR / verification",
+      "candidate_source_path": "system/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0032",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0034",
+      "title": "RFC-0034: Cognitive Package Registry and Trust Distribution Protocol (CPR-TDP)",
+      "description": "Implementation of 21 requirements from RFC-0034 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 34,
+      "plan_order": 34,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0034-cpr-tdp-package-registry.md",
+          "anchor": "RFC-0034 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0034-001",
+        "REQ-RFC-0034-002",
+        "REQ-RFC-0034-003",
+        "REQ-RFC-0034-004",
+        "REQ-RFC-0034-005",
+        "REQ-RFC-0034-006",
+        "REQ-RFC-0034-007",
+        "REQ-RFC-0034-008",
+        "REQ-RFC-0034-009",
+        "REQ-RFC-0034-010",
+        "REQ-RFC-0034-011",
+        "REQ-RFC-0034-012",
+        "REQ-RFC-0034-013",
+        "REQ-RFC-0034-014",
+        "REQ-RFC-0034-015",
+        "REQ-RFC-0034-016",
+        "REQ-RFC-0034-017",
+        "REQ-RFC-0034-018",
+        "REQ-RFC-0034-019",
+        "REQ-RFC-0034-020"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0034-cpr-tdp-package-registry.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0033",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0034)",
+      "rfc_id": "RFC-0034",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0033",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0035",
+      "title": "RFC-0035: Cognitive Sandbox and Execution Isolation Model (CSEIM) v1.0 Draft",
+      "description": "Implementation of 26 requirements from RFC-0035 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 35,
+      "plan_order": 35,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0035-cseim-sandbox-isolation.md",
+          "anchor": "RFC-0035 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0035-001",
+        "REQ-RFC-0035-002",
+        "REQ-RFC-0035-003",
+        "REQ-RFC-0035-004",
+        "REQ-RFC-0035-005",
+        "REQ-RFC-0035-006",
+        "REQ-RFC-0035-007",
+        "REQ-RFC-0035-008",
+        "REQ-RFC-0035-009",
+        "REQ-RFC-0035-010",
+        "REQ-RFC-0035-011",
+        "REQ-RFC-0035-012",
+        "REQ-RFC-0035-013",
+        "REQ-RFC-0035-014",
+        "REQ-RFC-0035-015",
+        "REQ-RFC-0035-016",
+        "REQ-RFC-0035-017",
+        "REQ-RFC-0035-018",
+        "REQ-RFC-0035-019",
+        "REQ-RFC-0035-020"
+      ],
+      "requirement_count": 26,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0035-cseim-sandbox-isolation.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0034",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0035)",
+      "rfc_id": "RFC-0035",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0034",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0036",
+      "title": "RFC-0036: Cognitive Build Reproducibility and Supply Chain Protocol (CBR-SCP)",
+      "description": "Implementation of 13 requirements from RFC-0036 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 36,
+      "plan_order": 36,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0036-cbr-scp-supply-chain.md",
+          "anchor": "RFC-0036 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0036-001",
+        "REQ-RFC-0036-002",
+        "REQ-RFC-0036-003",
+        "REQ-RFC-0036-004",
+        "REQ-RFC-0036-005",
+        "REQ-RFC-0036-006",
+        "REQ-RFC-0036-007",
+        "REQ-RFC-0036-008",
+        "REQ-RFC-0036-009",
+        "REQ-RFC-0036-010",
+        "REQ-RFC-0036-011",
+        "REQ-RFC-0036-012",
+        "REQ-RFC-0036-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0036-cbr-scp-supply-chain.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0035",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0036)",
+      "rfc_id": "RFC-0036",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0035",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0037",
+      "title": "RFC-0037: Cognitive Software Lifecycle and Evolution Management Protocol (CSLEMP) v1.0 Draft",
+      "description": "Implementation of 21 requirements from RFC-0037 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 37,
+      "plan_order": 37,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md",
+          "anchor": "RFC-0037 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0037-001",
+        "REQ-RFC-0037-002",
+        "REQ-RFC-0037-003",
+        "REQ-RFC-0037-004",
+        "REQ-RFC-0037-005",
+        "REQ-RFC-0037-006",
+        "REQ-RFC-0037-007",
+        "REQ-RFC-0037-008",
+        "REQ-RFC-0037-009",
+        "REQ-RFC-0037-010",
+        "REQ-RFC-0037-011",
+        "REQ-RFC-0037-012",
+        "REQ-RFC-0037-013",
+        "REQ-RFC-0037-014",
+        "REQ-RFC-0037-015",
+        "REQ-RFC-0037-016",
+        "REQ-RFC-0037-017",
+        "REQ-RFC-0037-018",
+        "REQ-RFC-0037-019",
+        "REQ-RFC-0037-020"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0037-cslemp-lifecycle-evolution.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0036",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0037)",
+      "rfc_id": "RFC-0037",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0036",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0038",
+      "title": "RFC-0038: Cognitive Marketplace and Agent Economy Protocol (CMAEP)",
+      "description": "Implementation of 6 requirements from RFC-0038 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 38,
+      "plan_order": 38,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0038-cmaep-marketplace-economy.md",
+          "anchor": "RFC-0038 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0038-001",
+        "REQ-RFC-0038-002",
+        "REQ-RFC-0038-003",
+        "REQ-RFC-0038-004",
+        "REQ-RFC-0038-005",
+        "REQ-RFC-0038-006"
+      ],
+      "requirement_count": 6,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0038-cmaep-marketplace-economy.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0037",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0038)",
+      "rfc_id": "RFC-0038",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0037",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0039",
+      "title": "RFC-0039: Cognitive Identity Economy and Ownership Protocol (CIEOP)",
+      "description": "Implementation of 19 requirements from RFC-0039 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 39,
+      "plan_order": 39,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0039-cieop-identity-economy-ownership.md",
+          "anchor": "RFC-0039 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0039-001",
+        "REQ-RFC-0039-002",
+        "REQ-RFC-0039-003",
+        "REQ-RFC-0039-004",
+        "REQ-RFC-0039-005",
+        "REQ-RFC-0039-006",
+        "REQ-RFC-0039-007",
+        "REQ-RFC-0039-008",
+        "REQ-RFC-0039-009",
+        "REQ-RFC-0039-010",
+        "REQ-RFC-0039-011",
+        "REQ-RFC-0039-012",
+        "REQ-RFC-0039-013",
+        "REQ-RFC-0039-014",
+        "REQ-RFC-0039-015",
+        "REQ-RFC-0039-016",
+        "REQ-RFC-0039-017",
+        "REQ-RFC-0039-018",
+        "REQ-RFC-0039-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0039-cieop-identity-economy-ownership.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0038",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0039)",
+      "rfc_id": "RFC-0039",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0038",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0040",
+      "title": "RFC-0040: Cognitive Governance and Collective Decision Protocol (CGCDP)",
+      "description": "Implementation of 19 requirements from RFC-0040 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 40,
+      "plan_order": 40,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md",
+          "anchor": "RFC-0040 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0040-001",
+        "REQ-RFC-0040-002",
+        "REQ-RFC-0040-003",
+        "REQ-RFC-0040-004",
+        "REQ-RFC-0040-005",
+        "REQ-RFC-0040-006",
+        "REQ-RFC-0040-007",
+        "REQ-RFC-0040-008",
+        "REQ-RFC-0040-009",
+        "REQ-RFC-0040-010",
+        "REQ-RFC-0040-011",
+        "REQ-RFC-0040-012",
+        "REQ-RFC-0040-013",
+        "REQ-RFC-0040-014",
+        "REQ-RFC-0040-015",
+        "REQ-RFC-0040-016",
+        "REQ-RFC-0040-017",
+        "REQ-RFC-0040-018",
+        "REQ-RFC-0040-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0040-cgcdp-governance-collective-decision.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0039",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0040)",
+      "rfc_id": "RFC-0040",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0039",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0041",
+      "title": "RFC-0041: Cognitive Interoperability and Federation Protocol (CIFP)",
+      "description": "Implementation of 25 requirements from RFC-0041 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 41,
+      "plan_order": 41,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0041-cifp-interoperability-federation.md",
+          "anchor": "RFC-0041 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0041-001",
+        "REQ-RFC-0041-002",
+        "REQ-RFC-0041-003",
+        "REQ-RFC-0041-004",
+        "REQ-RFC-0041-005",
+        "REQ-RFC-0041-006",
+        "REQ-RFC-0041-007",
+        "REQ-RFC-0041-008",
+        "REQ-RFC-0041-009",
+        "REQ-RFC-0041-010",
+        "REQ-RFC-0041-011",
+        "REQ-RFC-0041-012",
+        "REQ-RFC-0041-013",
+        "REQ-RFC-0041-014",
+        "REQ-RFC-0041-015",
+        "REQ-RFC-0041-016",
+        "REQ-RFC-0041-017",
+        "REQ-RFC-0041-018",
+        "REQ-RFC-0041-019",
+        "REQ-RFC-0041-020"
+      ],
+      "requirement_count": 25,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0041-cifp-interoperability-federation.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0040",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0041)",
+      "rfc_id": "RFC-0041",
+      "rfc_status": "Draft",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0040",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0042",
+      "title": "RFC-0042: Cognitive Autonomous Deployment Protocol (CADP) v1.0 — Ratification Acknowledgement",
+      "description": "Implementation of 17 requirements from RFC-0042 (Ecosystem (package/sandbox/marketplace)). Auto-generated; not a fabricated completion.",
+      "priority": 42,
+      "plan_order": 42,
+      "scope": "TBD — implementer must define based on Ecosystem (package/sandbox/marketplace) requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0042-ratification-record.md",
+          "anchor": "RFC-0042 (Ratified as the operational orchestration layer of the Red/Cognition architecture.)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0042-001",
+        "REQ-RFC-0042-002",
+        "REQ-RFC-0042-003",
+        "REQ-RFC-0042-004",
+        "REQ-RFC-0042-005",
+        "REQ-RFC-0042-006",
+        "REQ-RFC-0042-007",
+        "REQ-RFC-0042-008",
+        "REQ-RFC-0042-009",
+        "REQ-RFC-0042-010",
+        "REQ-RFC-0042-011",
+        "REQ-RFC-0042-012",
+        "REQ-RFC-0042-013",
+        "REQ-RFC-0042-014",
+        "REQ-RFC-0042-015",
+        "REQ-RFC-0042-016",
+        "REQ-RFC-0042-017"
+      ],
+      "requirement_count": 17,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0042-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0042)",
+      "rfc_id": "RFC-0042",
+      "rfc_status": "Ratified as the operational orchestration layer of the Red/Cognition architecture.",
+      "rfc_domain": "Ecosystem (package/sandbox/marketplace)",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0043",
+      "title": "RFC-0043: Cognitive Language Specification (CLS)",
+      "description": "Implementation of 13 requirements from RFC-0043 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 43,
+      "plan_order": 43,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0043-cls-language-specification.md",
+          "anchor": "RFC-0043 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0043-001",
+        "REQ-RFC-0043-002",
+        "REQ-RFC-0043-003",
+        "REQ-RFC-0043-004",
+        "REQ-RFC-0043-005",
+        "REQ-RFC-0043-006",
+        "REQ-RFC-0043-007",
+        "REQ-RFC-0043-008",
+        "REQ-RFC-0043-009",
+        "REQ-RFC-0043-010",
+        "REQ-RFC-0043-011",
+        "REQ-RFC-0043-012",
+        "REQ-RFC-0043-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0043-cls-language-specification.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0028",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0043)",
+      "rfc_id": "RFC-0043",
+      "rfc_status": "Draft",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0028",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0044",
+      "title": "RFC-0044: Cognitive Standard Library (CSL) v1.1",
+      "description": "Implementation of 24 requirements from RFC-0044 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 44,
+      "plan_order": 44,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0044-csl-standard-library.md",
+          "anchor": "RFC-0044 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0044-001",
+        "REQ-RFC-0044-002",
+        "REQ-RFC-0044-003",
+        "REQ-RFC-0044-004",
+        "REQ-RFC-0044-005",
+        "REQ-RFC-0044-006",
+        "REQ-RFC-0044-007",
+        "REQ-RFC-0044-008",
+        "REQ-RFC-0044-009",
+        "REQ-RFC-0044-010",
+        "REQ-RFC-0044-011",
+        "REQ-RFC-0044-012",
+        "REQ-RFC-0044-013",
+        "REQ-RFC-0044-014",
+        "REQ-RFC-0044-015",
+        "REQ-RFC-0044-016",
+        "REQ-RFC-0044-017",
+        "REQ-RFC-0044-018",
+        "REQ-RFC-0044-019",
+        "REQ-RFC-0044-020"
+      ],
+      "requirement_count": 24,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0044-csl-standard-library.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0043",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0044)",
+      "rfc_id": "RFC-0044",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0043",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0045",
+      "title": "RFC-0045: Cognitive Tooling and Developer Experience (CTDX) v1.1",
+      "description": "Implementation of 16 requirements from RFC-0045 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 45,
+      "plan_order": 45,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md",
+          "anchor": "RFC-0045 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0045-001",
+        "REQ-RFC-0045-002",
+        "REQ-RFC-0045-003",
+        "REQ-RFC-0045-004",
+        "REQ-RFC-0045-005",
+        "REQ-RFC-0045-006",
+        "REQ-RFC-0045-007",
+        "REQ-RFC-0045-008",
+        "REQ-RFC-0045-009",
+        "REQ-RFC-0045-010",
+        "REQ-RFC-0045-011",
+        "REQ-RFC-0045-012",
+        "REQ-RFC-0045-013",
+        "REQ-RFC-0045-014",
+        "REQ-RFC-0045-015",
+        "REQ-RFC-0045-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0045-ctdx-tooling-developer-experience.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0044",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0045)",
+      "rfc_id": "RFC-0045",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0044",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0046",
+      "title": "RFC-0046: Cognitive Observability and Diagnostics Protocol (CODP) v1.2",
+      "description": "Implementation of 21 requirements from RFC-0046 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 46,
+      "plan_order": 46,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0046-codp-observability-diagnostics.md",
+          "anchor": "RFC-0046 (Candidate for Final Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0046-001",
+        "REQ-RFC-0046-002",
+        "REQ-RFC-0046-003",
+        "REQ-RFC-0046-004",
+        "REQ-RFC-0046-005",
+        "REQ-RFC-0046-006",
+        "REQ-RFC-0046-007",
+        "REQ-RFC-0046-008",
+        "REQ-RFC-0046-009",
+        "REQ-RFC-0046-010",
+        "REQ-RFC-0046-011",
+        "REQ-RFC-0046-012",
+        "REQ-RFC-0046-013",
+        "REQ-RFC-0046-014",
+        "REQ-RFC-0046-015",
+        "REQ-RFC-0046-016",
+        "REQ-RFC-0046-017",
+        "REQ-RFC-0046-018",
+        "REQ-RFC-0046-019",
+        "REQ-RFC-0046-020"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0046-codp-observability-diagnostics.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0045",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0046)",
+      "rfc_id": "RFC-0046",
+      "rfc_status": "Candidate for Final Ratification",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0045",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0047",
+      "title": "RFC-0047: Cognitive Package Manager and Workspace Specification (CPMWS) v1.2",
+      "description": "Implementation of 19 requirements from RFC-0047 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 47,
+      "plan_order": 47,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0047-cpmws-package-manager-workspace.md",
+          "anchor": "RFC-0047 (Candidate for Final Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0047-001",
+        "REQ-RFC-0047-002",
+        "REQ-RFC-0047-003",
+        "REQ-RFC-0047-004",
+        "REQ-RFC-0047-005",
+        "REQ-RFC-0047-006",
+        "REQ-RFC-0047-007",
+        "REQ-RFC-0047-008",
+        "REQ-RFC-0047-009",
+        "REQ-RFC-0047-010",
+        "REQ-RFC-0047-011",
+        "REQ-RFC-0047-012",
+        "REQ-RFC-0047-013",
+        "REQ-RFC-0047-014",
+        "REQ-RFC-0047-015",
+        "REQ-RFC-0047-016",
+        "REQ-RFC-0047-017",
+        "REQ-RFC-0047-018",
+        "REQ-RFC-0047-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0047-cpmws-package-manager-workspace.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0046",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0047)",
+      "rfc_id": "RFC-0047",
+      "rfc_status": "Candidate for Final Ratification",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0046",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0048",
+      "title": "RFC-0048: Cognitive Foreign Function Interface (CFFI) v1.1",
+      "description": "Implementation of 21 requirements from RFC-0048 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 48,
+      "plan_order": 48,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0048-cffi-foreign-function-interface.md",
+          "anchor": "RFC-0048 (Candidate for Ratification)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0048-001",
+        "REQ-RFC-0048-002",
+        "REQ-RFC-0048-003",
+        "REQ-RFC-0048-004",
+        "REQ-RFC-0048-005",
+        "REQ-RFC-0048-006",
+        "REQ-RFC-0048-007",
+        "REQ-RFC-0048-008",
+        "REQ-RFC-0048-009",
+        "REQ-RFC-0048-010",
+        "REQ-RFC-0048-011",
+        "REQ-RFC-0048-012",
+        "REQ-RFC-0048-013",
+        "REQ-RFC-0048-014",
+        "REQ-RFC-0048-015",
+        "REQ-RFC-0048-016",
+        "REQ-RFC-0048-017",
+        "REQ-RFC-0048-018",
+        "REQ-RFC-0048-019",
+        "REQ-RFC-0048-020"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0048-cffi-foreign-function-interface.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0047",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0048)",
+      "rfc_id": "RFC-0048",
+      "rfc_status": "Candidate for Ratification",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0047",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0049",
+      "title": "RFC-0049: Cognitive Standard Toolchain Specification (CSTS) v1.2 — Ratification Record",
+      "description": "Implementation of 26 requirements from RFC-0049 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 49,
+      "plan_order": 49,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0049-ratification-record.md",
+          "anchor": "RFC-0049 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0049-001",
+        "REQ-RFC-0049-002",
+        "REQ-RFC-0049-003",
+        "REQ-RFC-0049-004",
+        "REQ-RFC-0049-005",
+        "REQ-RFC-0049-006",
+        "REQ-RFC-0049-007",
+        "REQ-RFC-0049-008",
+        "REQ-RFC-0049-009",
+        "REQ-RFC-0049-010",
+        "REQ-RFC-0049-011",
+        "REQ-RFC-0049-012",
+        "REQ-RFC-0049-013",
+        "REQ-RFC-0049-014",
+        "REQ-RFC-0049-015",
+        "REQ-RFC-0049-016",
+        "REQ-RFC-0049-017",
+        "REQ-RFC-0049-018",
+        "REQ-RFC-0049-019",
+        "REQ-RFC-0049-020"
+      ],
+      "requirement_count": 26,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0049-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0048",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0049)",
+      "rfc_id": "RFC-0049",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0048",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0050",
+      "title": "RFC-0050: Red/Cognition v1.0 Architecture and Conformance Specification v1.2 — Ratification Acknowledgement",
+      "description": "Implementation of 13 requirements from RFC-0050 (Language / toolchain / conformance). Auto-generated; not a fabricated completion.",
+      "priority": 50,
+      "plan_order": 50,
+      "scope": "TBD — implementer must define based on Language / toolchain / conformance requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0050-ratification-record.md",
+          "anchor": "RFC-0050 (✅ **Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0050-001",
+        "REQ-RFC-0050-002",
+        "REQ-RFC-0050-003",
+        "REQ-RFC-0050-004",
+        "REQ-RFC-0050-005",
+        "REQ-RFC-0050-006",
+        "REQ-RFC-0050-007",
+        "REQ-RFC-0050-008",
+        "REQ-RFC-0050-009",
+        "REQ-RFC-0050-010",
+        "REQ-RFC-0050-011",
+        "REQ-RFC-0050-012",
+        "REQ-RFC-0050-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0050-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0050)",
+      "rfc_id": "RFC-0050",
+      "rfc_status": "✅ **Ratified**",
+      "rfc_domain": "Language / toolchain / conformance",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0051",
+      "title": "RFC-0051: Cognitive Macro and Metaprogramming System (CMMS) v1.0 Draft",
+      "description": "Implementation of 19 requirements from RFC-0051 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 51,
+      "plan_order": 51,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0051-cmms-macro-metaprogramming.md",
+          "anchor": "RFC-0051 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0051-001",
+        "REQ-RFC-0051-002",
+        "REQ-RFC-0051-003",
+        "REQ-RFC-0051-004",
+        "REQ-RFC-0051-005",
+        "REQ-RFC-0051-006",
+        "REQ-RFC-0051-007",
+        "REQ-RFC-0051-008",
+        "REQ-RFC-0051-009",
+        "REQ-RFC-0051-010",
+        "REQ-RFC-0051-011",
+        "REQ-RFC-0051-012",
+        "REQ-RFC-0051-013",
+        "REQ-RFC-0051-014",
+        "REQ-RFC-0051-015",
+        "REQ-RFC-0051-016",
+        "REQ-RFC-0051-017",
+        "REQ-RFC-0051-018",
+        "REQ-RFC-0051-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0051-cmms-macro-metaprogramming.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0050",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0051)",
+      "rfc_id": "RFC-0051",
+      "rfc_status": "Draft",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0050",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0052",
+      "title": "RFC-0052: Cognitive Testing and Verification Framework (CTVF) v1.2 — Ratification Acknowledgement",
+      "description": "Implementation of 13 requirements from RFC-0052 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 52,
+      "plan_order": 52,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0052-ratification-record.md",
+          "anchor": "RFC-0052 (✅ **Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0052-001",
+        "REQ-RFC-0052-002",
+        "REQ-RFC-0052-003",
+        "REQ-RFC-0052-004",
+        "REQ-RFC-0052-005",
+        "REQ-RFC-0052-006",
+        "REQ-RFC-0052-007",
+        "REQ-RFC-0052-008",
+        "REQ-RFC-0052-009",
+        "REQ-RFC-0052-010",
+        "REQ-RFC-0052-011",
+        "REQ-RFC-0052-012",
+        "REQ-RFC-0052-013"
+      ],
+      "requirement_count": 13,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0052-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0052)",
+      "rfc_id": "RFC-0052",
+      "rfc_status": "✅ **Ratified**",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0053",
+      "title": "RFC-0053: Cognitive Remote Agent Invocation Protocol (CRAIP) v1.2 — Ratification Record",
+      "description": "Implementation of 42 requirements from RFC-0053 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 53,
+      "plan_order": 53,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0053-ratification-record.md",
+          "anchor": "RFC-0053 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0053-001",
+        "REQ-RFC-0053-002",
+        "REQ-RFC-0053-003",
+        "REQ-RFC-0053-004",
+        "REQ-RFC-0053-005",
+        "REQ-RFC-0053-006",
+        "REQ-RFC-0053-007",
+        "REQ-RFC-0053-008",
+        "REQ-RFC-0053-009",
+        "REQ-RFC-0053-010",
+        "REQ-RFC-0053-011",
+        "REQ-RFC-0053-012",
+        "REQ-RFC-0053-013",
+        "REQ-RFC-0053-014",
+        "REQ-RFC-0053-015",
+        "REQ-RFC-0053-016",
+        "REQ-RFC-0053-017",
+        "REQ-RFC-0053-018",
+        "REQ-RFC-0053-019",
+        "REQ-RFC-0053-020"
+      ],
+      "requirement_count": 42,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0053-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0052",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0053)",
+      "rfc_id": "RFC-0053",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0052",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0054",
+      "title": "RFC-0054: Cognitive Agent Discovery and Federation Protocol (CADFP) v1.0 Draft",
+      "description": "Implementation of 32 requirements from RFC-0054 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 54,
+      "plan_order": 54,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md",
+          "anchor": "RFC-0054 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0054-001",
+        "REQ-RFC-0054-002",
+        "REQ-RFC-0054-003",
+        "REQ-RFC-0054-004",
+        "REQ-RFC-0054-005",
+        "REQ-RFC-0054-006",
+        "REQ-RFC-0054-007",
+        "REQ-RFC-0054-008",
+        "REQ-RFC-0054-009",
+        "REQ-RFC-0054-010",
+        "REQ-RFC-0054-011",
+        "REQ-RFC-0054-012",
+        "REQ-RFC-0054-013",
+        "REQ-RFC-0054-014",
+        "REQ-RFC-0054-015",
+        "REQ-RFC-0054-016",
+        "REQ-RFC-0054-017",
+        "REQ-RFC-0054-018",
+        "REQ-RFC-0054-019",
+        "REQ-RFC-0054-020"
+      ],
+      "requirement_count": 32,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0054-cadfp-agent-discovery-federation.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0053",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0054)",
+      "rfc_id": "RFC-0054",
+      "rfc_status": "Draft",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0053",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0055",
+      "title": "RFC-0055: Cognitive Multi-Agent Coordination and Workflow Protocol (CMCWP) v1.0 Draft",
+      "description": "Implementation of 19 requirements from RFC-0055 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 55,
+      "plan_order": 55,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md",
+          "anchor": "RFC-0055 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0055-001",
+        "REQ-RFC-0055-002",
+        "REQ-RFC-0055-003",
+        "REQ-RFC-0055-004",
+        "REQ-RFC-0055-005",
+        "REQ-RFC-0055-006",
+        "REQ-RFC-0055-007",
+        "REQ-RFC-0055-008",
+        "REQ-RFC-0055-009",
+        "REQ-RFC-0055-010",
+        "REQ-RFC-0055-011",
+        "REQ-RFC-0055-012",
+        "REQ-RFC-0055-013",
+        "REQ-RFC-0055-014",
+        "REQ-RFC-0055-015",
+        "REQ-RFC-0055-016",
+        "REQ-RFC-0055-017",
+        "REQ-RFC-0055-018",
+        "REQ-RFC-0055-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0055-cmcwp-multi-agent-coordination.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0054",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0055)",
+      "rfc_id": "RFC-0055",
+      "rfc_status": "Draft",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0054",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0056",
+      "title": "RFC-0056: Cognitive Shared Memory and Knowledge Synchronization Protocol (CSMKSP) v1.0 Draft",
+      "description": "Implementation of 18 requirements from RFC-0056 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 56,
+      "plan_order": 56,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md",
+          "anchor": "RFC-0056 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0056-001",
+        "REQ-RFC-0056-002",
+        "REQ-RFC-0056-003",
+        "REQ-RFC-0056-004",
+        "REQ-RFC-0056-005",
+        "REQ-RFC-0056-006",
+        "REQ-RFC-0056-007",
+        "REQ-RFC-0056-008",
+        "REQ-RFC-0056-009",
+        "REQ-RFC-0056-010",
+        "REQ-RFC-0056-011",
+        "REQ-RFC-0056-012",
+        "REQ-RFC-0056-013",
+        "REQ-RFC-0056-014",
+        "REQ-RFC-0056-015",
+        "REQ-RFC-0056-016",
+        "REQ-RFC-0056-017",
+        "REQ-RFC-0056-018"
+      ],
+      "requirement_count": 18,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0055",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0056)",
+      "rfc_id": "RFC-0056",
+      "rfc_status": "Draft",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0055",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0057",
+      "title": "RFC-0057: Cognitive Distributed Transaction and Consistency Protocol (CDTCP) v1.3 — Ratification Record",
+      "description": "Implementation of 35 requirements from RFC-0057 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 57,
+      "plan_order": 57,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0057-ratification-record.md",
+          "anchor": "RFC-0057 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0057-001",
+        "REQ-RFC-0057-002",
+        "REQ-RFC-0057-003",
+        "REQ-RFC-0057-004",
+        "REQ-RFC-0057-005",
+        "REQ-RFC-0057-006",
+        "REQ-RFC-0057-007",
+        "REQ-RFC-0057-008",
+        "REQ-RFC-0057-009",
+        "REQ-RFC-0057-010",
+        "REQ-RFC-0057-011",
+        "REQ-RFC-0057-012",
+        "REQ-RFC-0057-013",
+        "REQ-RFC-0057-014",
+        "REQ-RFC-0057-015",
+        "REQ-RFC-0057-016",
+        "REQ-RFC-0057-017",
+        "REQ-RFC-0057-018",
+        "REQ-RFC-0057-019",
+        "REQ-RFC-0057-020"
+      ],
+      "requirement_count": 35,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0057-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0056",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0057)",
+      "rfc_id": "RFC-0057",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0056",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0058",
+      "title": "RFC-0058: Cognitive Transaction Wire Protocol and Message Encoding v1.2 — Ratification Record",
+      "description": "Implementation of 27 requirements from RFC-0058 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 58,
+      "plan_order": 58,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0058-ratification-record.md",
+          "anchor": "RFC-0058 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0058-001",
+        "REQ-RFC-0058-002",
+        "REQ-RFC-0058-003",
+        "REQ-RFC-0058-004",
+        "REQ-RFC-0058-005",
+        "REQ-RFC-0058-006",
+        "REQ-RFC-0058-007",
+        "REQ-RFC-0058-008",
+        "REQ-RFC-0058-009",
+        "REQ-RFC-0058-010",
+        "REQ-RFC-0058-011",
+        "REQ-RFC-0058-012",
+        "REQ-RFC-0058-013",
+        "REQ-RFC-0058-014",
+        "REQ-RFC-0058-015",
+        "REQ-RFC-0058-016",
+        "REQ-RFC-0058-017",
+        "REQ-RFC-0058-018",
+        "REQ-RFC-0058-019",
+        "REQ-RFC-0058-020"
+      ],
+      "requirement_count": 27,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0058-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0057",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0058)",
+      "rfc_id": "RFC-0058",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0057",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0059",
+      "title": "RFC-0059: Cognitive Transaction Security and Trust Profile (CTSTP) v1.1 — Ratification Record",
+      "description": "Implementation of 21 requirements from RFC-0059 (Distributed cognition / transactions). Auto-generated; not a fabricated completion.",
+      "priority": 59,
+      "plan_order": 59,
+      "scope": "TBD — implementer must define based on Distributed cognition / transactions requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0059-ratification-record.md",
+          "anchor": "RFC-0059 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0059-001",
+        "REQ-RFC-0059-002",
+        "REQ-RFC-0059-003",
+        "REQ-RFC-0059-004",
+        "REQ-RFC-0059-005",
+        "REQ-RFC-0059-006",
+        "REQ-RFC-0059-007",
+        "REQ-RFC-0059-008",
+        "REQ-RFC-0059-009",
+        "REQ-RFC-0059-010",
+        "REQ-RFC-0059-011",
+        "REQ-RFC-0059-012",
+        "REQ-RFC-0059-013",
+        "REQ-RFC-0059-014",
+        "REQ-RFC-0059-015",
+        "REQ-RFC-0059-016",
+        "REQ-RFC-0059-017",
+        "REQ-RFC-0059-018",
+        "REQ-RFC-0059-001",
+        "REQ-RFC-0059-002"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0059-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0058",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0059)",
+      "rfc_id": "RFC-0059",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Distributed cognition / transactions",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0058",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0060",
+      "title": "RFC-0060: Cognitive Virtual Machine Instruction Execution and Scheduling Semantics (CVM-IESS) v1.1 — Ratification Record",
+      "description": "Implementation of 18 requirements from RFC-0060 (Verified execution / formal semantics). Auto-generated; not a fabricated completion.",
+      "priority": 60,
+      "plan_order": 60,
+      "scope": "TBD — implementer must define based on Verified execution / formal semantics requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0060-ratification-record.md",
+          "anchor": "RFC-0060 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0060-001",
+        "REQ-RFC-0060-002",
+        "REQ-RFC-0060-003",
+        "REQ-RFC-0060-004",
+        "REQ-RFC-0060-005",
+        "REQ-RFC-0060-006",
+        "REQ-RFC-0060-007",
+        "REQ-RFC-0060-008",
+        "REQ-RFC-0060-009",
+        "REQ-RFC-0060-010",
+        "REQ-RFC-0060-011",
+        "REQ-RFC-0060-012",
+        "REQ-RFC-0060-013",
+        "REQ-RFC-0060-014",
+        "REQ-RFC-0060-015",
+        "REQ-RFC-0060-001",
+        "REQ-RFC-0060-002",
+        "REQ-RFC-0060-003"
+      ],
+      "requirement_count": 18,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0060-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0059",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0060)",
+      "rfc_id": "RFC-0060",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Verified execution / formal semantics",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0059",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0061",
+      "title": "RFC-0061: Cognitive Virtual Machine Instruction Set and Register Architecture (CISA-RA) v1.2 — Ratification Record",
+      "description": "Implementation of 11 requirements from RFC-0061 (Verified execution / formal semantics). Auto-generated; not a fabricated completion.",
+      "priority": 61,
+      "plan_order": 61,
+      "scope": "TBD — implementer must define based on Verified execution / formal semantics requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0061-ratification-record.md",
+          "anchor": "RFC-0061 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0061-001",
+        "REQ-RFC-0061-002",
+        "REQ-RFC-0061-003",
+        "REQ-RFC-0061-004",
+        "REQ-RFC-0061-005",
+        "REQ-RFC-0061-006",
+        "REQ-RFC-0061-007",
+        "REQ-RFC-0061-008",
+        "REQ-RFC-0061-001",
+        "REQ-RFC-0061-002",
+        "REQ-RFC-0061-003"
+      ],
+      "requirement_count": 11,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0061-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0060",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0061)",
+      "rfc_id": "RFC-0061",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Verified execution / formal semantics",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0060",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0062",
+      "title": "RFC-0062: Cognitive Virtual Machine Bytecode Format and Encoding (CVM-BF) v1.3 — Ratification Record",
+      "description": "Implementation of 21 requirements from RFC-0062 (Verified execution / formal semantics). Auto-generated; not a fabricated completion.",
+      "priority": 62,
+      "plan_order": 62,
+      "scope": "TBD — implementer must define based on Verified execution / formal semantics requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0062-ratification-record.md",
+          "anchor": "RFC-0062 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0062-001",
+        "REQ-RFC-0062-002",
+        "REQ-RFC-0062-003",
+        "REQ-RFC-0062-004",
+        "REQ-RFC-0062-005",
+        "REQ-RFC-0062-006",
+        "REQ-RFC-0062-007",
+        "REQ-RFC-0062-008",
+        "REQ-RFC-0062-009",
+        "REQ-RFC-0062-010",
+        "REQ-RFC-0062-011",
+        "REQ-RFC-0062-012",
+        "REQ-RFC-0062-013",
+        "REQ-RFC-0062-014",
+        "REQ-RFC-0062-015",
+        "REQ-RFC-0062-016",
+        "REQ-RFC-0062-017",
+        "REQ-RFC-0062-018",
+        "REQ-RFC-0062-001",
+        "REQ-RFC-0062-002"
+      ],
+      "requirement_count": 21,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0062-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0061",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0062)",
+      "rfc_id": "RFC-0062",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Verified execution / formal semantics",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0061",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0063",
+      "title": "RFC-0063: Cognitive Virtual Machine Formal Operational Semantics (CVM-FOS) v1.1 — Ratification Record",
+      "description": "Implementation of 9 requirements from RFC-0063 (Verified execution / formal semantics). Auto-generated; not a fabricated completion.",
+      "priority": 63,
+      "plan_order": 63,
+      "scope": "TBD — implementer must define based on Verified execution / formal semantics requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0063-ratification-record.md",
+          "anchor": "RFC-0063 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0063-001",
+        "REQ-RFC-0063-002",
+        "REQ-RFC-0063-003",
+        "REQ-RFC-0063-004",
+        "REQ-RFC-0063-005",
+        "REQ-RFC-0063-006",
+        "REQ-RFC-0063-001",
+        "REQ-RFC-0063-002",
+        "REQ-RFC-0063-003"
+      ],
+      "requirement_count": 9,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0063-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0062",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0063)",
+      "rfc_id": "RFC-0063",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Verified execution / formal semantics",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0062",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0064",
+      "title": "RFC-0064: Cognitive Compiler Correctness and Verified Translation Pipeline (CCC-VTP) v1.1 — Ratification Record",
+      "description": "Implementation of 16 requirements from RFC-0064 (Verified execution / formal semantics). Auto-generated; not a fabricated completion.",
+      "priority": 64,
+      "plan_order": 64,
+      "scope": "TBD — implementer must define based on Verified execution / formal semantics requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0064-ratification-record.md",
+          "anchor": "RFC-0064 (**Ratified**)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0064-001",
+        "REQ-RFC-0064-002",
+        "REQ-RFC-0064-003",
+        "REQ-RFC-0064-004",
+        "REQ-RFC-0064-005",
+        "REQ-RFC-0064-006",
+        "REQ-RFC-0064-007",
+        "REQ-RFC-0064-008",
+        "REQ-RFC-0064-009",
+        "REQ-RFC-0064-010",
+        "REQ-RFC-0064-011",
+        "REQ-RFC-0064-012",
+        "REQ-RFC-0064-001",
+        "REQ-RFC-0064-002",
+        "REQ-RFC-0064-003",
+        "REQ-RFC-0064-004"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0064-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0063",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0064)",
+      "rfc_id": "RFC-0064",
+      "rfc_status": "**Ratified**",
+      "rfc_domain": "Verified execution / formal semantics",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0063",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0065",
+      "title": "RFC-0065: Cognitive Proof-Carrying Artifact Format and Verification Protocol (CPCAVP) v1.0 Draft",
+      "description": "Implementation of 14 requirements from RFC-0065 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 65,
+      "plan_order": 65,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md",
+          "anchor": "RFC-0065 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0065-001",
+        "REQ-RFC-0065-002",
+        "REQ-RFC-0065-003",
+        "REQ-RFC-0065-004",
+        "REQ-RFC-0065-005",
+        "REQ-RFC-0065-006",
+        "REQ-RFC-0065-007",
+        "REQ-RFC-0065-008",
+        "REQ-RFC-0065-009",
+        "REQ-RFC-0065-010",
+        "REQ-RFC-0065-011",
+        "REQ-RFC-0065-012",
+        "REQ-RFC-0065-013",
+        "REQ-RFC-0065-014"
+      ],
+      "requirement_count": 14,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0065-cpcavp-proof-carrying-artifact-verification.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0064",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0065)",
+      "rfc_id": "RFC-0065",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0064",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0066",
+      "title": "RFC-0066: Cognitive Artifact Registry and Trust Distribution Protocol (CARTDP) v1.0 Draft",
+      "description": "Implementation of 24 requirements from RFC-0066 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 66,
+      "plan_order": 66,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md",
+          "anchor": "RFC-0066 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0066-001",
+        "REQ-RFC-0066-002",
+        "REQ-RFC-0066-003",
+        "REQ-RFC-0066-004",
+        "REQ-RFC-0066-005",
+        "REQ-RFC-0066-006",
+        "REQ-RFC-0066-007",
+        "REQ-RFC-0066-008",
+        "REQ-RFC-0066-009",
+        "REQ-RFC-0066-010",
+        "REQ-RFC-0066-011",
+        "REQ-RFC-0066-012",
+        "REQ-RFC-0066-013",
+        "REQ-RFC-0066-014",
+        "REQ-RFC-0066-015",
+        "REQ-RFC-0066-016",
+        "REQ-RFC-0066-017",
+        "REQ-RFC-0066-018",
+        "REQ-RFC-0066-019",
+        "REQ-RFC-0066-020"
+      ],
+      "requirement_count": 24,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0066-cartdp-artifact-registry-trust-distribution.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0065",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0066)",
+      "rfc_id": "RFC-0066",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0065",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0067",
+      "title": "RFC-0067: Cognitive Deployment and Lifecycle Management Protocol (CDLMP) v1.0 Draft",
+      "description": "Implementation of 16 requirements from RFC-0067 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 67,
+      "plan_order": 67,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md",
+          "anchor": "RFC-0067 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0067-001",
+        "REQ-RFC-0067-002",
+        "REQ-RFC-0067-003",
+        "REQ-RFC-0067-004",
+        "REQ-RFC-0067-005",
+        "REQ-RFC-0067-006",
+        "REQ-RFC-0067-007",
+        "REQ-RFC-0067-008",
+        "REQ-RFC-0067-009",
+        "REQ-RFC-0067-010",
+        "REQ-RFC-0067-011",
+        "REQ-RFC-0067-012",
+        "REQ-RFC-0067-013",
+        "REQ-RFC-0067-014",
+        "REQ-RFC-0067-015",
+        "REQ-RFC-0067-016"
+      ],
+      "requirement_count": 16,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0067-cdlmp-deployment-lifecycle-management.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0066",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0067)",
+      "rfc_id": "RFC-0067",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0066",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0068",
+      "title": "RFC-0068: Cognitive Runtime Governance and Autonomous Operations Protocol (CRGAOP) v1.0 Draft",
+      "description": "Implementation of 8 requirements from RFC-0068 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 68,
+      "plan_order": 68,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md",
+          "anchor": "RFC-0068 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0068-001",
+        "REQ-RFC-0068-002",
+        "REQ-RFC-0068-003",
+        "REQ-RFC-0068-004",
+        "REQ-RFC-0068-005",
+        "REQ-RFC-0068-006",
+        "REQ-RFC-0068-007",
+        "REQ-RFC-0068-008"
+      ],
+      "requirement_count": 8,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0068-crgaop-runtime-governance-autonomous-operations.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0067",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0068)",
+      "rfc_id": "RFC-0068",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0067",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0069",
+      "title": "RFC-0069: Cognitive Runtime Decision Ledger and Memory Protocol (CRDLMP) v1.0 Draft",
+      "description": "Implementation of 10 requirements from RFC-0069 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 69,
+      "plan_order": 69,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md",
+          "anchor": "RFC-0069 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0069-001",
+        "REQ-RFC-0069-002",
+        "REQ-RFC-0069-003",
+        "REQ-RFC-0069-004",
+        "REQ-RFC-0069-005",
+        "REQ-RFC-0069-006",
+        "REQ-RFC-0069-007",
+        "REQ-RFC-0069-008",
+        "REQ-RFC-0069-009",
+        "REQ-RFC-0069-010"
+      ],
+      "requirement_count": 10,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0069-crdlmp-decision-ledger-memory.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0068",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0069)",
+      "rfc_id": "RFC-0069",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0068",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0070",
+      "title": "RFC-0070: Cognitive Runtime Self-Optimization and Adaptive Evolution Protocol (CRSOAEP) v1.0 Draft",
+      "description": "Implementation of 15 requirements from RFC-0070 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 70,
+      "plan_order": 70,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md",
+          "anchor": "RFC-0070 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0070-001",
+        "REQ-RFC-0070-002",
+        "REQ-RFC-0070-003",
+        "REQ-RFC-0070-004",
+        "REQ-RFC-0070-005",
+        "REQ-RFC-0070-006",
+        "REQ-RFC-0070-007",
+        "REQ-RFC-0070-008",
+        "REQ-RFC-0070-009",
+        "REQ-RFC-0070-010",
+        "REQ-RFC-0070-011",
+        "REQ-RFC-0070-012",
+        "REQ-RFC-0070-013",
+        "REQ-RFC-0070-014",
+        "REQ-RFC-0070-015"
+      ],
+      "requirement_count": 15,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0070-crsoaep-self-optimization-adaptive-evolution.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0069",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0070)",
+      "rfc_id": "RFC-0070",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0069",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0071",
+      "title": "RFC-0071: Cognitive Runtime Coordination Protocol (CRCP) v1.0 Draft",
+      "description": "Implementation of 26 requirements from RFC-0071 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 71,
+      "plan_order": 71,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md",
+          "anchor": "RFC-0071 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0071-001",
+        "REQ-RFC-0071-002",
+        "REQ-RFC-0071-003",
+        "REQ-RFC-0071-004",
+        "REQ-RFC-0071-005",
+        "REQ-RFC-0071-006",
+        "REQ-RFC-0071-007",
+        "REQ-RFC-0071-008",
+        "REQ-RFC-0071-009",
+        "REQ-RFC-0071-010",
+        "REQ-RFC-0071-011",
+        "REQ-RFC-0071-012",
+        "REQ-RFC-0071-013",
+        "REQ-RFC-0071-014",
+        "REQ-RFC-0071-015",
+        "REQ-RFC-0071-016",
+        "REQ-RFC-0071-017",
+        "REQ-RFC-0071-018",
+        "REQ-RFC-0071-019",
+        "REQ-RFC-0071-020"
+      ],
+      "requirement_count": 26,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0071-crcp-runtime-coordination-protocol.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0070",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0071)",
+      "rfc_id": "RFC-0071",
+      "rfc_status": "Draft",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0070",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0072",
+      "title": "RFC-0072: Cognitive Runtime Coordination Protocol (CRCP) Wire Format and Binary Message Encoding v1.6 — Ratification Record",
+      "description": "Implementation of 33 requirements from RFC-0072 (Supply chain / proof-carrying). Auto-generated; not a fabricated completion.",
+      "priority": 72,
+      "plan_order": 72,
+      "scope": "TBD — implementer must define based on Supply chain / proof-carrying requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0072-ratification-record.md",
+          "anchor": "RFC-0072 (**Ratified** (Effective upon ratification of RFC-0071))"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0072-001",
+        "REQ-RFC-0072-002",
+        "REQ-RFC-0072-003",
+        "REQ-RFC-0072-004",
+        "REQ-RFC-0072-005",
+        "REQ-RFC-0072-006",
+        "REQ-RFC-0072-007",
+        "REQ-RFC-0072-008",
+        "REQ-RFC-0072-009",
+        "REQ-RFC-0072-010",
+        "REQ-RFC-0072-011",
+        "REQ-RFC-0072-012",
+        "REQ-RFC-0072-013",
+        "REQ-RFC-0072-014",
+        "REQ-RFC-0072-015",
+        "REQ-RFC-0072-016",
+        "REQ-RFC-0072-017",
+        "REQ-RFC-0072-018",
+        "REQ-RFC-0072-019",
+        "REQ-RFC-0072-020"
+      ],
+      "requirement_count": 33,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0072-ratification-record.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0071",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0072)",
+      "rfc_id": "RFC-0072",
+      "rfc_status": "**Ratified** (Effective upon ratification of RFC-0071)",
+      "rfc_domain": "Supply chain / proof-carrying",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "HIGH",
+      "parent_rfc": "RFC-0071",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0073",
+      "title": "RFC-0073: Cognitive Runtime Security Monitoring and Adaptive Defense Protocol (CRSMADP) v1.0 Draft",
+      "description": "Implementation of 19 requirements from RFC-0073 (Security / monitoring / autonomous defense). Auto-generated; not a fabricated completion.",
+      "priority": 73,
+      "plan_order": 73,
+      "scope": "TBD — implementer must define based on Security / monitoring / autonomous defense requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md",
+          "anchor": "RFC-0073 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0073-001",
+        "REQ-RFC-0073-002",
+        "REQ-RFC-0073-003",
+        "REQ-RFC-0073-004",
+        "REQ-RFC-0073-005",
+        "REQ-RFC-0073-006",
+        "REQ-RFC-0073-007",
+        "REQ-RFC-0073-008",
+        "REQ-RFC-0073-009",
+        "REQ-RFC-0073-010",
+        "REQ-RFC-0073-011",
+        "REQ-RFC-0073-012",
+        "REQ-RFC-0073-013",
+        "REQ-RFC-0073-014",
+        "REQ-RFC-0073-015",
+        "REQ-RFC-0073-016",
+        "REQ-RFC-0073-017",
+        "REQ-RFC-0073-018",
+        "REQ-RFC-0073-019"
+      ],
+      "requirement_count": 19,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0073-crsmadp-security-monitoring-adaptive-defense.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0072",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0073)",
+      "rfc_id": "RFC-0073",
+      "rfc_status": "Draft",
+      "rfc_domain": "Security / monitoring / autonomous defense",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0072",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    },
+    {
+      "task_id": "IMPL-RFC-0074",
+      "title": "RFC-0074: Cognitive Runtime Privacy, Data Governance, and Sovereign Memory Protocol (CRPDGSMP) v1.0 Draft",
+      "description": "Implementation of 18 requirements from RFC-0074 (Security / monitoring / autonomous defense). Auto-generated; not a fabricated completion.",
+      "priority": 74,
+      "plan_order": 74,
+      "scope": "TBD — implementer must define based on Security / monitoring / autonomous defense requirements",
+      "source_authority": [
+        {
+          "doc": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md",
+          "anchor": "RFC-0074 (Draft)"
+        }
+      ],
+      "requirement_refs": [
+        "REQ-RFC-0074-001",
+        "REQ-RFC-0074-002",
+        "REQ-RFC-0074-003",
+        "REQ-RFC-0074-004",
+        "REQ-RFC-0074-005",
+        "REQ-RFC-0074-006",
+        "REQ-RFC-0074-007",
+        "REQ-RFC-0074-008",
+        "REQ-RFC-0074-009",
+        "REQ-RFC-0074-010",
+        "REQ-RFC-0074-011",
+        "REQ-RFC-0074-012",
+        "REQ-RFC-0074-013",
+        "REQ-RFC-0074-014",
+        "REQ-RFC-0074-015",
+        "REQ-RFC-0074-016",
+        "REQ-RFC-0074-017",
+        "REQ-RFC-0074-018"
+      ],
+      "requirement_count": 18,
+      "specification_refs": [
+        {
+          "doc": "rfcs/RFC-0074-crpdgsmp-privacy-data-governance-sovereign-memory.md"
+        }
+      ],
+      "implementation_targets": [],
+      "dependency_refs": [
+        {
+          "ref": "IMPL-RFC-0073",
+          "required_state": "PASS"
+        },
+        {
+          "ref": "RED-LEX-001",
+          "required_state": "PASS"
+        }
+      ],
+      "required_tools": [],
+      "validation_commands": [],
+      "acceptance_criteria": [
+        {
+          "id": "AC-001",
+          "criterion": "TBD — implementer must define acceptance criteria"
+        }
+      ],
+      "allowed_tools": [],
+      "prohibited_scope": [
+        "rfcs/",
+        "docs/specifications/"
+      ],
+      "expected_outputs": [],
+      "provenance": "auto-generated from requirements inventory (RFC-0074)",
+      "rfc_id": "RFC-0074",
+      "rfc_status": "Draft",
+      "rfc_domain": "Security / monitoring / autonomous defense",
+      "candidate_source_path": "cognition/",
+      "blocker_classification": "TOOLCHAIN",
+      "blocker_reason": "Red toolchain (Rebol 2.7.8) unavailable",
+      "confidence": "LOW",
+      "parent_rfc": "RFC-0073",
+      "auto_generated": true,
+      "implementation_status": "ABSENT"
+    }
+  ]
+}
