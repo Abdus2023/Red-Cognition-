@@ -1,0 +1,10 @@
+artifacts/
+diagnostics/
+.git/
+.github/
+quick-test/
+tests/source/units/auto-tests/
+system/tests/source/units/auto-tests/
+libRedRT.so
+libRedRT-*.r
+checksum-repro
