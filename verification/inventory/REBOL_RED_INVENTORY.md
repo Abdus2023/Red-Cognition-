@@ -1,0 +1,643 @@
+# Rebol + Red Inventory
+
+Generated: 2026-08-31T17:15:42.354515+00:00
+Tool: `tools/source-audit/generate_rebol_red_inventory.py`
+Repository: `https://github.com/Abdus2023/Red-Cognition-`
+Branch: `arena/01a058c5-red-cognition`
+Commit: `742181a8b868309b9fbebbf94e8355b8ac1eac06`
+
+## Scope and Method
+git ls-files enumeration; local byte-size and SHA-256 hashing; conservative rule-based classification from path, extension, and source headers.
+No upstream source was moved or rewritten by this inventory phase.
+
+## Summary
+- Total tracked files inventoried: 1120
+- Binary files: 28
+- Files with `REBOL [` headers: 113
+- Files with `Red [` headers: 166
+- Files with `Red/System [` headers: 251
+- UNKNOWN classifications: 0
+
+## Classification Counts
+| Classification | Count |
+|---|---:|
+| ARCHIVE | 1 |
+| BINARY | 27 |
+| BUILD-INFRASTRUCTURE | 11 |
+| DOCUMENTATION | 224 |
+| GOVERNANCE | 6 |
+| REBOL-BOOTSTRAP | 1 |
+| REBOL-SOURCE | 4 |
+| RED-COGNITION | 88 |
+| RED-COMPILER | 28 |
+| RED-FIXTURE | 16 |
+| RED-RUNTIME | 163 |
+| RED-SOURCE | 22 |
+| RED-SYSTEM-SOURCE | 65 |
+| RED-TEST | 240 |
+| RED-TOOLING | 33 |
+| RFC | 101 |
+| SPECIFICATION | 90 |
+
+## Key Inventories
+
+### REBOL-SOURCE (4)
+- `utils/call.r`
+- `utils/extractor.r`
+- `utils/preprocessor.r`
+- `version.r`
+
+### REBOL-BOOTSTRAP (1)
+- `docker/rebol-bootstrap/Dockerfile`
+
+### RED-COMPILER (28)
+- `compiler.r`
+- `lexer.r`
+- `run-all.r`
+- `system/compiler.r`
+- `system/config.r`
+- `system/emitter.r`
+- `system/formats/ELF.r`
+- `system/formats/Intel-HEX.r`
+- `system/formats/Mach-APP.r`
+- `system/formats/Mach-O.r`
+- `system/formats/PE.r`
+- `system/linker.r`
+- `system/loader.r`
+- `system/rsc.r`
+- `system/targets/ARM.r`
+- `system/targets/IA-32.r`
+- `system/targets/target-class.r`
+- `system/utils/IEEE-754.r`
+- `system/utils/encap-fs.r`
+- `system/utils/int-to-bin.r`
+- `system/utils/libRedRT-exports.r`
+- `system/utils/libRedRT.r`
+- `system/utils/profiler.r`
+- `system/utils/r2-forward.r`
+- `system/utils/secure-clean-path.r`
+- `system/utils/unicode.r`
+- `system/utils/virtual-struct.r`
+- `utils/redbin.r`
+
+### RED-RUNTIME (163)
+- `boot.red`
+- `environment/actions.red`
+- `environment/codecs/BMP.red`
+- `environment/codecs/CSV.red`
+- `environment/codecs/GIF.red`
+- `environment/codecs/JPEG.red`
+- `environment/codecs/JSON.red`
+- `environment/codecs/PNG.red`
+- `environment/codecs/redbin.red`
+- `environment/colors.red`
+- `environment/console/CLI/POSIX.reds`
+- `environment/console/CLI/console.red`
+- `environment/console/CLI/input.red`
+- `environment/console/CLI/settings.red`
+- `environment/console/CLI/wcwidth.reds`
+- `environment/console/CLI/win32.reds`
+- `environment/console/GUI/core.red`
+- `environment/console/GUI/gui-console.red`
+- `environment/console/GUI/highlight.red`
+- `environment/console/GUI/old/gui-console.red`
+- `environment/console/GUI/old/terminal.reds`
+- `environment/console/GUI/old/windows.reds`
+- `environment/console/GUI/settings.red`
+- `environment/console/GUI/tips.red`
+- `environment/console/auto-complete.red`
+- `environment/console/engine.red`
+- `environment/console/help.red`
+- `environment/css-colors.red`
+- `environment/datatypes.red`
+- `environment/functions.red`
+- `environment/natives.red`
+- `environment/networking.red`
+- `environment/operators.red`
+- `environment/reactivity.red`
+- `environment/routines.red`
+- `environment/scalars.red`
+- `environment/schemes/GPIO.red`
+- `environment/system.red`
+- `runtime/actions.reds`
+- `runtime/allocator.reds`
+- `runtime/call.reds`
+- `runtime/case-folding-table.reds`
+- `runtime/case-folding.reds`
+- `runtime/clipboard.reds`
+- `runtime/collector.reds`
+- `runtime/compress.reds`
+- `runtime/crush.reds`
+- `runtime/crypto.reds`
+- `runtime/datatypes/action.reds`
+- `runtime/datatypes/binary.reds`
+- `runtime/datatypes/bitset.reds`
+- `runtime/datatypes/block.reds`
+- `runtime/datatypes/char.reds`
+- `runtime/datatypes/common.reds`
+- `runtime/datatypes/context.reds`
+- `runtime/datatypes/datatype.reds`
+- `runtime/datatypes/date.reds`
+- `runtime/datatypes/email.reds`
+- `runtime/datatypes/error.reds`
+- `runtime/datatypes/event.reds`
+- `runtime/datatypes/file.reds`
+- `runtime/datatypes/float.reds`
+- `runtime/datatypes/function.reds`
+- `runtime/datatypes/get-path.reds`
+- `runtime/datatypes/get-word.reds`
+- `runtime/datatypes/handle.reds`
+- `runtime/datatypes/hash.reds`
+- `runtime/datatypes/image-utils.reds`
+- `runtime/datatypes/image.reds`
+- `runtime/datatypes/integer.reds`
+- `runtime/datatypes/issue.reds`
+- `runtime/datatypes/lit-path.reds`
+- `runtime/datatypes/lit-word.reds`
+- `runtime/datatypes/logic.reds`
+- `runtime/datatypes/map.reds`
+- `runtime/datatypes/money.reds`
+- `runtime/datatypes/native.reds`
+- `runtime/datatypes/none.reds`
+- `runtime/datatypes/object.reds`
+- `runtime/datatypes/op.reds`
+- ... 83 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+
+### RED-SYSTEM-SOURCE (65)
+- `modules/audio/audio.reds`
+- `modules/audio/backends/alsa.reds`
+- `modules/audio/backends/core-audio.reds`
+- `modules/audio/backends/null.reds`
+- `modules/audio/backends/wasapi.reds`
+- `modules/audio/codecs/pcm-wav.reds`
+- `modules/audio/utils/type-string.reds`
+- `modules/view/backends/gtk3/camera-dev.reds`
+- `modules/view/backends/gtk3/camera.reds`
+- `modules/view/backends/gtk3/color.reds`
+- `modules/view/backends/gtk3/comdlgs.reds`
+- `modules/view/backends/gtk3/css.reds`
+- `modules/view/backends/gtk3/draw.reds`
+- `modules/view/backends/gtk3/events.reds`
+- `modules/view/backends/gtk3/font.reds`
+- `modules/view/backends/gtk3/gtk.reds`
+- `modules/view/backends/gtk3/gui.reds`
+- `modules/view/backends/gtk3/handlers.reds`
+- `modules/view/backends/gtk3/menu.reds`
+- `modules/view/backends/gtk3/para.reds`
+- `modules/view/backends/gtk3/tab-panel.reds`
+- `modules/view/backends/gtk3/text-box.reds`
+- `modules/view/backends/gtk3/text-list.reds`
+- `modules/view/backends/gtk3/v4l2.reds`
+- `modules/view/backends/keycodes.reds`
+- `modules/view/backends/macOS/camera.reds`
+- `modules/view/backends/macOS/classes.reds`
+- `modules/view/backends/macOS/cocoa.reds`
+- `modules/view/backends/macOS/comdlgs.reds`
+- `modules/view/backends/macOS/delegates.reds`
+- `modules/view/backends/macOS/draw.reds`
+- `modules/view/backends/macOS/events.reds`
+- `modules/view/backends/macOS/font.reds`
+- `modules/view/backends/macOS/gui.reds`
+- `modules/view/backends/macOS/menu.reds`
+- `modules/view/backends/macOS/para.reds`
+- `modules/view/backends/macOS/selectors.reds`
+- `modules/view/backends/macOS/tab-panel.reds`
+- `modules/view/backends/macOS/text-box.reds`
+- `modules/view/backends/test/draw.reds`
+- `modules/view/backends/test/events.reds`
+- `modules/view/backends/test/gui.reds`
+- `modules/view/backends/test/text-box.reds`
+- `modules/view/backends/windows/base.reds`
+- `modules/view/backends/windows/button.reds`
+- `modules/view/backends/windows/calendar.reds`
+- `modules/view/backends/windows/camera.reds`
+- `modules/view/backends/windows/classes.reds`
+- `modules/view/backends/windows/comdlgs.reds`
+- `modules/view/backends/windows/direct2d.reds`
+- `modules/view/backends/windows/draw-gdi.reds`
+- `modules/view/backends/windows/draw.reds`
+- `modules/view/backends/windows/events.reds`
+- `modules/view/backends/windows/font.reds`
+- `modules/view/backends/windows/gui.reds`
+- `modules/view/backends/windows/matrix2d.reds`
+- `modules/view/backends/windows/menu.reds`
+- `modules/view/backends/windows/panel.reds`
+- `modules/view/backends/windows/para.reds`
+- `modules/view/backends/windows/tab-panel.reds`
+- `modules/view/backends/windows/text-box.reds`
+- `modules/view/backends/windows/text-list.reds`
+- `modules/view/backends/windows/win32.reds`
+- `system/bridges/java/JNI.reds`
+- `system/bridges/java/JNIdemo.reds`
+
+### RED-SOURCE (22)
+- `bridges/android/build.r`
+- `bridges/android/samples/eval/eval.red`
+- `bridges/java/bridge.red`
+- `bridges/java/hello.red`
+- `libRed/libRed.red`
+- `modules/audio/audio.red`
+- `modules/view/RTD.red`
+- `modules/view/VID.red`
+- `modules/view/backends/android/gui.red`
+- `modules/view/backends/gtk3/rules.red`
+- `modules/view/backends/macOS/rules.red`
+- `modules/view/backends/platform.red`
+- `modules/view/backends/test/gui.red`
+- `modules/view/backends/windows/rules.red`
+- `modules/view/draw.red`
+- `modules/view/rules.red`
+- `modules/view/styles.red`
+- `modules/view/utils.red`
+- `modules/view/view.red`
+- `utils/generate-lexer-table.red`
+- `utils/generate-misc-tables.red`
+- `utils/generate-unicode-table.red`
+
+### RED-TEST (240)
+- `modules/audio/tests/basic.red`
+- `modules/audio/tests/player.red`
+- `modules/audio/tests/sine-gui.red`
+- `modules/audio/tests/sine-wave.red`
+- `quick-test/quick-test.r`
+- `quick-test/quick-test.red`
+- `quick-test/quick-test.reds`
+- `quick-test/quick-unit-test.r`
+- `quick-test/run-test.r`
+- `quick-test/tests/overwrite-test.reds`
+- `quick-test/tests/qt-test.r`
+- `quick-test/tests/qt-test.reds`
+- `system/tests/build-arm-tests.r`
+- `system/tests/empty.reds`
+- `system/tests/float-matrix-manual.reds`
+- `system/tests/hello.reds`
+- `system/tests/nan-tests-manual.reds`
+- `system/tests/nan-tests-manual32.reds`
+- `system/tests/run-all.r`
+- `system/tests/run-float.r`
+- `system/tests/shared-lib.reds`
+- `system/tests/source/compiler/alias-test.r`
+- `system/tests/source/compiler/callback-test.r`
+- `system/tests/source/compiler/cast-test.r`
+- `system/tests/source/compiler/comp-err-test.r`
+- `system/tests/source/compiler/compiles-ok-test.r`
+- `system/tests/source/compiler/cond-expr-test.r`
+- `system/tests/source/compiler/define-test.reds`
+- `system/tests/source/compiler/dylib-test.r`
+- `system/tests/source/compiler/empty.reds`
+- `system/tests/source/compiler/enum-test.r`
+- `system/tests/source/compiler/exit-test.r`
+- `system/tests/source/compiler/hello.reds`
+- `system/tests/source/compiler/inference-test.r`
+- `system/tests/source/compiler/infix-test.r`
+- `system/tests/source/compiler/int-literals-test.r`
+- `system/tests/source/compiler/namespace-test.r`
+- `system/tests/source/compiler/not-test.r`
+- `system/tests/source/compiler/output-test.r`
+- `system/tests/source/compiler/pointer-test.r`
+- `system/tests/source/compiler/print-test.r`
+- `system/tests/source/compiler/regression-test-rsc.r`
+- `system/tests/source/compiler/return-test.r`
+- `system/tests/source/units/alias-test.reds`
+- `system/tests/source/units/array-test.reds`
+- `system/tests/source/units/atomic-test.reds`
+- `system/tests/source/units/byte-test.reds`
+- `system/tests/source/units/c-string-test.reds`
+- `system/tests/source/units/case-test.reds`
+- `system/tests/source/units/cast-test.reds`
+- `system/tests/source/units/compile-test-dylibs.r`
+- `system/tests/source/units/conditional-test.reds`
+- `system/tests/source/units/create-dylib-auto-test.r`
+- `system/tests/source/units/dll-test.r`
+- `system/tests/source/units/enum-test.reds`
+- `system/tests/source/units/exceptions-test.reds`
+- `system/tests/source/units/exit-test.reds`
+- `system/tests/source/units/float-lib-test-source.reds`
+- `system/tests/source/units/float-pointer-test.reds`
+- `system/tests/source/units/float-test.reds`
+- `system/tests/source/units/float32-lib-test-source.reds`
+- `system/tests/source/units/float32-test.reds`
+- `system/tests/source/units/function-test.reds`
+- `system/tests/source/units/get-pointer-test.reds`
+- `system/tests/source/units/infix-test.reds`
+- `system/tests/source/units/integer-test.reds`
+- `system/tests/source/units/length-test.reds`
+- `system/tests/source/units/lib-macOS-test.reds`
+- `system/tests/source/units/lib-test.reds`
+- `system/tests/source/units/lib-win32-test.reds`
+- `system/tests/source/units/libtest-dll1.reds`
+- `system/tests/source/units/libtest-dll2.reds`
+- `system/tests/source/units/logic-test.reds`
+- `system/tests/source/units/make-byte-auto-test.r`
+- `system/tests/source/units/make-dylib-auto-test.r`
+- `system/tests/source/units/make-float-auto-test.r`
+- `system/tests/source/units/make-float32-auto-test.r`
+- `system/tests/source/units/make-float32-lib-auto-test.r`
+- `system/tests/source/units/make-integer-auto-test.r`
+- `system/tests/source/units/make-maths-auto-test.r`
+- ... 160 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+
+### RED-FIXTURE (16)
+- `system/tests/all-tests.txt`
+- `system/tests/readme.txt`
+- `system/tests/run-all.sh`
+- `system/tests/source/units/dylib-libs.txt`
+- `system/tests/source/units/dylib-test-script-footer.txt`
+- `system/tests/source/units/dylib-test-script-header.txt`
+- `system/tests/source/units/dylib-tests.txt`
+- `system/tests/source/units/libs/structlib.c`
+- `tests/fixtures/chinese-characters.txt`
+- `tests/gtk3/README.gtk3`
+- `tests/libRed/README.md`
+- `tests/libRed/libRedTest.c`
+- `tests/libRed/libRedTests.c`
+- `tests/libRed/test.c`
+- `tests/run-all.sh`
+- `tests/source/units/all-tests.txt`
+
+### RED-COGNITION (88)
+- `cognition/.gitkeep`
+- `dialects/.gitkeep`
+- `docs/implementation/concurrency-model.md`
+- `docs/implementation/concurrency-report.md`
+- `docs/implementation/controller-readme.md`
+- `docs/implementation/crash-consistency-audit.md`
+- `docs/implementation/crash-consistency-report.md`
+- `docs/implementation/criterion-validation-model.md`
+- `docs/implementation/criterion-validation-report.md`
+- `docs/implementation/determinism-audit.md`
+- `docs/implementation/determinism-model.md`
+- `docs/implementation/determinism-report.md`
+- `docs/implementation/dry-run-report.json`
+- `docs/implementation/evidence-contract.md`
+- `docs/implementation/execution-integrity-model.md`
+- `docs/implementation/execution-integrity-report.md`
+- `docs/implementation/external-consistency-model.md`
+- `docs/implementation/freeze-baseline.md`
+- `docs/implementation/full-pipeline-status.json`
+- `docs/implementation/gap-analysis.json`
+- `docs/implementation/gate-a-protocol.md`
+- `docs/implementation/global-invariants-model.md`
+- `docs/implementation/global-invariants-report.md`
+- `docs/implementation/implementation-backlog.json`
+- `docs/implementation/implementation-plan.json`
+- `docs/implementation/pipeline-architecture.md`
+- `docs/implementation/pipeline-report.md`
+- `docs/implementation/pipeline-status.json`
+- `docs/implementation/provenance-hardening-report.md`
+- `docs/implementation/recovery-hardening-report.md`
+- `docs/implementation/repository-inventory.json`
+- `docs/implementation/requirement-coverage-model.md`
+- `docs/implementation/requirement-coverage-report.md`
+- `docs/implementation/requirements-inventory.json`
+- `docs/implementation/semantic-completeness-model.md`
+- `docs/implementation/semantic-completeness-report.md`
+- `docs/implementation/source-coverage-matrix.json`
+- `docs/implementation/state-machine-model.md`
+- `docs/implementation/state-machine-report.md`
+- `docs/implementation/traceability-graph.json`
+- `docs/implementation/transaction-recovery-model.md`
+- `tools/generate_report.py`
+- `tools/generate_repository_index.py`
+- `tools/impl-controller.py`
+- `tools/impl_controller/__init__.py`
+- `tools/impl_controller/__main__.py`
+- `tools/impl_controller/checkpoint.py`
+- `tools/impl_controller/cli.py`
+- `tools/impl_controller/contract.py`
+- `tools/impl_controller/controller.py`
+- `tools/impl_controller/engine.py`
+- `tools/impl_controller/evidence.py`
+- `tools/impl_controller/locking.py`
+- `tools/impl_controller/manifest.py`
+- `tools/impl_controller/model.py`
+- `tools/impl_controller/provenance.py`
+- `tools/impl_controller/queue.py`
+- `tools/impl_controller/safety.py`
+- `tools/impl_controller/tests/__init__.py`
+- `tools/impl_controller/tests/test_concurrency.py`
+- `tools/impl_controller/tests/test_controller.py`
+- `tools/impl_controller/tests/test_crash_consistency.py`
+- `tools/impl_controller/tests/test_criterion_validation.py`
+- `tools/impl_controller/tests/test_determinism.py`
+- `tools/impl_controller/tests/test_execution_integrity.py`
+- `tools/impl_controller/tests/test_external_consistency.py`
+- `tools/impl_controller/tests/test_global_invariants.py`
+- `tools/impl_controller/tests/test_hardening.py`
+- `tools/impl_controller/tests/test_pipeline.py`
+- `tools/impl_controller/tests/test_pipeline_attacks.py`
+- `tools/impl_controller/tests/test_pipeline_determinism.py`
+- `tools/impl_controller/tests/test_provenance_attacks.py`
+- `tools/impl_controller/tests/test_recovery_attacks.py`
+- `tools/impl_controller/tests/test_requirement_coverage.py`
+- `tools/impl_controller/tests/test_semantic_completeness.py`
+- `tools/impl_controller/tests/test_state_machine.py`
+- `tools/run-full-pipeline.py`
+- `tools/run-implementation-pipeline.py`
+- `tools/source-audit/generate_rebol_red_inventory.py`
+- `tools/source-audit/generate_supplemental_manifests.py`
+- ... 8 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+
+### SPECIFICATION (90)
+- `docs/red-system/dark.css`
+- `docs/red-system/light.css`
+- `docs/red-system/makedoc2.r`
+- `docs/red-system/red-system-quick-test.txt`
+- `docs/red-system/red-system-specs.txt`
+- `docs/red-system/template.html`
+- `docs/specifications/red-deep-technical-spec/01-full-stack-architecture-diagram.md`
+- `docs/specifications/red-deep-technical-spec/02-complete-toolchain-diagram.md`
+- `docs/specifications/red-deep-technical-spec/03-red-system-compiler-structure.md`
+- `docs/specifications/red-deep-technical-spec/04-red-system-bnf-grammar.md`
+- `docs/specifications/red-deep-technical-spec/05-red-interpreter-evaluation-engine.md`
+- `docs/specifications/red-deep-technical-spec/06-red-context-and-word-binding-system.md`
+- `docs/specifications/red-deep-technical-spec/07-red-reactive-system-architecture.md`
+- `docs/specifications/red-deep-technical-spec/08-libred-architecture.md`
+- `docs/specifications/red-deep-technical-spec/09-libred-c-api-reference.md`
+- `docs/specifications/red-deep-technical-spec/10-macro-and-preprocessor-system.md`
+- `docs/specifications/red-deep-technical-spec/11-concurrency-architecture.md`
+- `docs/specifications/red-deep-technical-spec/12-redbin-serialisation-format.md`
+- `docs/specifications/red-deep-technical-spec/13-compiler-cli-reference.md`
+- `docs/specifications/red-deep-technical-spec/14-static-linking-implications.md`
+- `docs/specifications/red-deep-technical-spec/15-new-lexer-architecture.md`
+- `docs/specifications/red-deep-technical-spec/16-transcode-api.md`
+- `docs/specifications/red-deep-technical-spec/17-routine-ffi-bridge.md`
+- `docs/specifications/red-deep-technical-spec/18-routine-examples.md`
+- `docs/specifications/red-deep-technical-spec/19-atomic-intrinsics-specification.md`
+- `docs/specifications/red-deep-technical-spec/20-atomic-mpmc-queue.md`
+- `docs/specifications/red-deep-technical-spec/21-ownership-system-specification.md`
+- `docs/specifications/red-deep-technical-spec/22-ownership-in-practice.md`
+- `docs/specifications/red-deep-technical-spec/23-port-and-scheme-system.md`
+- `docs/specifications/red-deep-technical-spec/24-custom-scheme-implementation.md`
+- `docs/specifications/red-deep-technical-spec/25-new-datatypes-history.md`
+- `docs/specifications/red-deep-technical-spec/26-draw-dialect-specification.md`
+- `docs/specifications/red-deep-technical-spec/27-draw-program-example.md`
+- `docs/specifications/red-deep-technical-spec/28-fpu-control-specification.md`
+- `docs/specifications/red-deep-technical-spec/29-fpu-control-usage.md`
+- `docs/specifications/red-deep-technical-spec/30-red-standard-library-map.md`
+- `docs/specifications/red-deep-technical-spec/31-error-handling-architecture.md`
+- `docs/specifications/red-deep-technical-spec/32-error-handling-patterns.md`
+- `docs/specifications/red-deep-technical-spec/33-vector-datatype-specification.md`
+- `docs/specifications/red-deep-technical-spec/34-vector-operations.md`
+- `docs/specifications/red-deep-technical-spec/35-map-datatype-specification.md`
+- `docs/specifications/red-deep-technical-spec/35-rfc-0072-final-review.md`
+- `docs/specifications/red-deep-technical-spec/36-map-patterns.md`
+- `docs/specifications/red-deep-technical-spec/37-date-datatype-specification.md`
+- `docs/specifications/red-deep-technical-spec/38-red-console-repl-architecture.md`
+- `docs/specifications/red-deep-technical-spec/39-console-customisation.md`
+- `docs/specifications/red-deep-technical-spec/40-view-event-system-architecture.md`
+- `docs/specifications/red-deep-technical-spec/41-event-handling-patterns.md`
+- `docs/specifications/red-deep-technical-spec/42-font-and-para-objects.md`
+- `docs/specifications/red-deep-technical-spec/43-font-and-para-usage.md`
+- `docs/specifications/red-deep-technical-spec/44-red-system-calling-conventions.md`
+- `docs/specifications/red-deep-technical-spec/45-cross-platform-c-interop.md`
+- `docs/specifications/red-deep-technical-spec/Red-Cognition-Full-Traceability-Audit.md`
+- `docs/traceability/rfc-0075/00-overview.md`
+- `docs/traceability/rfc-0075/01-source-authority.md`
+- `docs/traceability/rfc-0075/02-requirements.md`
+- `docs/traceability/rfc-0075/03-traceability-matrix.md`
+- `docs/traceability/rfc-0075/04-architecture-traceability.md`
+- `docs/traceability/rfc-0075/05-rfc-dependencies.md`
+- `docs/traceability/rfc-0075/06-invariants.md`
+- `docs/traceability/rfc-0075/07-data-models.md`
+- `docs/traceability/rfc-0075/08-lifecycle.md`
+- `docs/traceability/rfc-0075/09-security-traceability.md`
+- `docs/traceability/rfc-0075/10-determinism-replay.md`
+- `docs/traceability/rfc-0075/11-observability.md`
+- `docs/traceability/rfc-0075/12-implementation-mapping.md`
+- `docs/traceability/rfc-0075/13-test-mapping.md`
+- `docs/traceability/rfc-0075/14-evidence.md`
+- `docs/traceability/rfc-0075/15-gaps.md`
+- `docs/traceability/rfc-0075/16-conflicts.md`
+- `docs/traceability/rfc-0075/17-terminology.md`
+- `docs/traceability/rfc-0075/18-conformance.md`
+- `docs/traceability/rfc-0075/19-ratification-record-reconciliation.md`
+- `docs/traceability/rfc-0075/README.md`
+- `docs/traceability/rfc-0075/manifest.yaml`
+- `docs/traceability/rfc-0075/traceability.json`
+- `docs/traceability/rfc-0075/validation-result.json`
+- `specs/.gitkeep`
+- `specs/RC-000-constitution.md`
+- `specs/RC-100-architecture-specification.md`
+- ... 10 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+
+### RFC (101)
+- `docs/RFC-ARTIFACT-GROUPS.md`
+- `docs/RFC-INDEX.md`
+- `docs/specifications/red-deep-technical-spec/RFC-0031-Cognitive-Optimization-Intermediate-Language.md`
+- `docs/specifications/red-deep-technical-spec/RFC-0038-Cognitive-Marketplace-and-Agent-Economy-Protocol.md`
+- `docs/specifications/red-deep-technical-spec/RFC-0049-Cognitive-Standard-Toolchain-Specification-v1.2.md`
+- `docs/specifications/red-deep-technical-spec/RFC-0059-Ratification-Record.md`
+- `docs/specifications/red-deep-technical-spec/RFC-0075-Ratification-Record.md`
+- `knowledge-base/wiki/RFC-Index.md`
+- `rfcs/.gitkeep`
+- `rfcs/RFC-0001-cognitive-type-system.md`
+- `rfcs/RFC-0001-ratification-record.md`
+- `rfcs/RFC-0002-effect-ordering-model.md`
+- `rfcs/RFC-0002-ratification-record.md`
+- `rfcs/RFC-0003-belief-revision-system.md`
+- `rfcs/RFC-0004-goal-lifecycle-satisfaction-model.md`
+- `rfcs/RFC-0005-planning-semantics.md`
+- `rfcs/RFC-0006-capability-model.md`
+- `rfcs/RFC-0007-skill-model.md`
+- `rfcs/RFC-0008-memory-model.md`
+- `rfcs/RFC-0009-agent-model.md`
+- `rfcs/RFC-0010-checkpoint-recovery-model.md`
+- `rfcs/RFC-0011-ratification-record.md`
+- `rfcs/RFC-0011-scheduler-execution-model.md`
+- `rfcs/RFC-0012-cvm-execution-semantics.md`
+- `rfcs/RFC-0013-cisa.md`
+- `rfcs/RFC-0014-cisa-binary-encoding.md`
+- `rfcs/RFC-0015-cognitive-exception-semantics.md`
+- `rfcs/RFC-0016-cognitive-runtime-architecture.md`
+- `rfcs/RFC-0017-runtime-interface-service-model.md`
+- `rfcs/RFC-0018-event-log-replay-protocol.md`
+- `rfcs/RFC-0019-cogos-architecture.md`
+- `rfcs/RFC-0020-distributed-execution-protocol.md`
+- `rfcs/RFC-0021-cognitive-network-protocol.md`
+- `rfcs/RFC-0022-identity-trust-framework.md`
+- `rfcs/RFC-0023-consensus-causal-agreement.md`
+- `rfcs/RFC-0024-resource-management-quota-model.md`
+- `rfcs/RFC-0025-security-policy-language.md`
+- `rfcs/RFC-0026-hardware-acceleration-model.md`
+- `rfcs/RFC-0027-compiler-toolchain-architecture.md`
+- `rfcs/RFC-0028-cognitive-intermediate-representation.md`
+- `rfcs/RFC-0029-cir-serialization-format.md`
+- `rfcs/RFC-0030-optimization-pass-framework.md`
+- `rfcs/RFC-0031-coil-transformation-language.md`
+- `rfcs/RFC-0032-covf-verification-framework.md`
+- `rfcs/RFC-0033-proof-carrying-program-format.md`
+- `rfcs/RFC-0034-cpr-tdp-package-registry.md`
+- `rfcs/RFC-0035-cseim-sandbox-isolation.md`
+- `rfcs/RFC-0036-cbr-scp-supply-chain.md`
+- `rfcs/RFC-0037-cslemp-lifecycle-evolution.md`
+- `rfcs/RFC-0038-cmaep-marketplace-economy.md`
+- `rfcs/RFC-0039-cieop-identity-economy-ownership.md`
+- `rfcs/RFC-0040-cgcdp-governance-collective-decision.md`
+- `rfcs/RFC-0041-cifp-interoperability-federation.md`
+- `rfcs/RFC-0042-cadp-autonomous-deployment.md`
+- `rfcs/RFC-0042-ratification-record.md`
+- `rfcs/RFC-0043-cls-language-specification.md`
+- `rfcs/RFC-0044-csl-standard-library.md`
+- `rfcs/RFC-0045-ctdx-tooling-developer-experience.md`
+- `rfcs/RFC-0046-codp-observability-diagnostics.md`
+- `rfcs/RFC-0047-cpmws-package-manager-workspace.md`
+- `rfcs/RFC-0048-cffi-foreign-function-interface.md`
+- `rfcs/RFC-0049-csts-standard-toolchain.md`
+- `rfcs/RFC-0049-ratification-record.md`
+- `rfcs/RFC-0050-architecture-conformance-specification.md`
+- `rfcs/RFC-0050-ratification-record.md`
+- `rfcs/RFC-0051-cmms-macro-metaprogramming.md`
+- `rfcs/RFC-0052-ctvf-testing-verification.md`
+- `rfcs/RFC-0052-ratification-record.md`
+- `rfcs/RFC-0053-craip-remote-agent-invocation.md`
+- `rfcs/RFC-0053-ratification-record.md`
+- `rfcs/RFC-0054-cadfp-agent-discovery-federation.md`
+- `rfcs/RFC-0055-cmcwp-multi-agent-coordination.md`
+- `rfcs/RFC-0056-csmksp-shared-memory-knowledge-sync.md`
+- `rfcs/RFC-0057-cdtcp-distributed-transaction.md`
+- `rfcs/RFC-0057-ratification-record.md`
+- `rfcs/RFC-0058-ctwp-transaction-wire-protocol.md`
+- `rfcs/RFC-0058-ratification-record.md`
+- `rfcs/RFC-0059-ctstp-transaction-security-trust.md`
+- `rfcs/RFC-0059-ratification-record.md`
+- `rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md`
+- ... 21 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+
+### BINARY (27)
+- `bridges/android/dex/classes.dex`
+- `bridges/android/samples/eval/res/drawable-hdpi/ic_launcher.png`
+- `bridges/android/samples/eval/res/drawable-mdpi/ic_launcher.png`
+- `bridges/android/samples/eval/res/drawable-xhdpi/ic_launcher.png`
+- `bridges/android/samples/eval/res/drawable-xxhdpi/ic_launcher.png`
+- `docs/comparison-matrix.xlsx`
+- `docs/conversion-matrix.xlsx`
+- `docs/lexer/lexer-FSM.xlsx`
+- `docs/math-ops-matrix.xlsx`
+- `environment/console/GUI/app.ico`
+- `libRed/libRed.lib`
+- `system/assets/macOS/Resources/AppIcon.icns`
+- `system/assets/red-3D.ico`
+- `system/assets/red-mono.ico`
+- `system/assets/red.ico`
+- `system/tests/source/units/libs/libstruct-BSD.so`
+- `system/tests/source/units/libs/libstructlib-armhf.so`
+- `system/tests/source/units/libs/libstructlib-armsf.so`
+- `system/tests/source/units/libs/libstructlib.dylib`
+- `system/tests/source/units/libs/libstructlib.so`
+- `system/tests/source/units/libs/structlib.dll`
+- `tests/draw-windows.png`
+- `tests/libRed/libRed.dll`
+- `tests/libRed/test.xlsm`
+- `tests/red-3D.ico`
+- `tests/red-mono.ico`
+- `tests/red.ico`
+
+### ARCHIVE (1)
+- `artifacts/archives/red-cognition-test-artifacts.zip`
+
+## Duplicate Analysis Summary
+- Exact SHA-256 duplicate groups: 5
+- Same filename groups: 55
+- Normalized-content likely duplicate groups: 0
+- Policy: no duplicate deletion was performed.

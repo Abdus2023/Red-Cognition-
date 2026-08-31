@@ -1,0 +1,2371 @@
+{
+  "artifacts": [
+    {
+      "classification": "BUILD-INFRASTRUCTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".yml",
+      "path": ".github/workflows/red-container-tests.yml",
+      "sha256": "03dc01ad7530b9aeb178930029362467379d14d6ef107022bdabd533bf2a1cd0"
+    },
+    {
+      "classification": "ARCHIVE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".zip",
+      "path": "artifacts/archives/red-cognition-test-artifacts.zip",
+      "sha256": "56ce3c472cadf89f800d395c861f5fa49e59d3101b1092e8f2a71b54f48db081"
+    },
+    {
+      "classification": "SPECIFICATION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "docs/red-system/red-system-quick-test.txt",
+      "sha256": "97ac62fa69b89c9d005ec7af2d9e1c7235ed348f629c157008a693cadba926db"
+    },
+    {
+      "classification": "SPECIFICATION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".md",
+      "path": "docs/traceability/rfc-0075/13-test-mapping.md",
+      "sha256": "782cc8a0eacf83eaa4cf88fd681b2f0de6d24f28b825e846fc7c9f33882514c1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "modules/audio/tests/basic.red",
+      "sha256": "47b1678a12541f83f664e42bbcfa1fdeb0dd0a653f4d2323e20423aadb925dd0"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "modules/audio/tests/player.red",
+      "sha256": "1e8273c2d3bd908e3ed55b492cc3a9cd7cde21172cf780dfd46d3f6e648c905e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "modules/audio/tests/sine-gui.red",
+      "sha256": "357b712755ea34e4a39ef7314c808254a3ddb57a4e374ba55ec2524501d56c95"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "modules/audio/tests/sine-wave.red",
+      "sha256": "d01f2cd223cc5b211931e19b9d74a58fa23fcb5818aaba28ec43910eff34299b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "quick-test/quick-test.r",
+      "sha256": "43f25a98c5f42c0aca0fda971b8d89b129e180ac8d4fe5443e353688bf4d0f3b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "quick-test/quick-test.red",
+      "sha256": "3c16aec1e798cd8c3d48ac4a11f7f370081a3cb467ad6c729ac0be9396f847b8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "quick-test/quick-test.reds",
+      "sha256": "1c548cbe1a80d01a90959c66bb251c8c39e7a5e73ac64db0d068da0c0b1d8109"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "quick-test/quick-unit-test.r",
+      "sha256": "ab9ae465cf4f3df8c8a1ef74a6c3cabd111d5a7810b07481be2e6a333779c45a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "quick-test/run-test.r",
+      "sha256": "b3d318bbb3bee34bd175c37c9abc810ed12f6d3f382ce6514354ee65c1fc2ac4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "quick-test/tests/overwrite-test.reds",
+      "sha256": "6315cb8ce955b79204332d0407563d7886775a04feeb92f070c5603dbef07bff"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "quick-test/tests/qt-test.r",
+      "sha256": "03262c956f2f00c7945fb78dc82086281ee9f3d04905cd4f1b25aaabce10cbc0"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "quick-test/tests/qt-test.reds",
+      "sha256": "0e5449e439561fcbf089a78a807f058a4797c067f9eb609871cc542c4001f46e"
+    },
+    {
+      "classification": "RFC",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".md",
+      "path": "rfcs/RFC-0052-ctvf-testing-verification.md",
+      "sha256": "20cc63e79c1659becf968cb0a653ad002fa3430e0345deb7a2c1d1e772002462"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "system/tests/all-tests.txt",
+      "sha256": "bc79254c8121159fa6d9bfb043908e8db9893390612421f78ad77f61c9d3ad42"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/build-arm-tests.r",
+      "sha256": "fa58729605296b7712f33369b74ce2917e98854b36aa84d575979e2480c7dccf"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/empty.reds",
+      "sha256": "21879cb2c3b5af760923f36cc6d2119af082548fa2176a8ed17b43dd331ef1bd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/float-matrix-manual.reds",
+      "sha256": "52430c569c57b34ed0c2c61d4e81dae8331519ffc5d8af33472e55a689ca3da7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/hello.reds",
+      "sha256": "596d248c66468ddd2b381bcc0bbab2538083d276553f1e73c014dcdc84462f3a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/nan-tests-manual.reds",
+      "sha256": "b35767720570da0995b0426be641ef3179355e2bd27f6721496d2ed0764a7e16"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/nan-tests-manual32.reds",
+      "sha256": "d8bb4631a526b0168de61dfafd719bef8737d0a0681186a7c36876bd60de96b9"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "system/tests/readme.txt",
+      "sha256": "75422205d5b9fa9f7105066dd5c7cf57fd06a9c33d0236e4cdb7fe1bd1f0e42a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/run-all.r",
+      "sha256": "65b97ab1209b2f82d673726e31816c6875961c01257918bcb862a4d345faa23a"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".sh",
+      "path": "system/tests/run-all.sh",
+      "sha256": "1472be547b1d359dfdd480cccd45cc4e2c72bbd2815809a9454df3e83edb9fda"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/run-float.r",
+      "sha256": "794df7741f06792571bf023623cc90f8e9ba3294423f9a1803acb56352129a8a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/shared-lib.reds",
+      "sha256": "d872c8d7d97b09ea4468668e286d1b62d5f4bed4b582a021e7b22bc8f20e2368"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/alias-test.r",
+      "sha256": "e5cc87befcc5131e6e501db07ca0f97e4553a2334a030438f91ed0113427c68a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/callback-test.r",
+      "sha256": "e0d56859dacacce5d15b1e8ee0af03b07a6f8488d835e1a8bad69c7afc7c65ca"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/cast-test.r",
+      "sha256": "431a7461fbdf3cebabe430abea27aa5d25133ec1208cb9610c2d9c6db35b81c7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/comp-err-test.r",
+      "sha256": "8e99861627ab1777f4a0f75ac5c927551ddce21ba9336dff450a762652454bb9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/compiles-ok-test.r",
+      "sha256": "2b1fe411a61997e44cfec453e966f68fb123c16c6904e07e82268f62e7c3a9da"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/cond-expr-test.r",
+      "sha256": "026b1ad85a5c49a4f86645ac075539584fa1323bc263d496daffa2cbb70b51ea"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/compiler/define-test.reds",
+      "sha256": "83719dd5bb260b1e96e2de25865a6096994f620d892ae1f8fe2df6030b9bbb12"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/dylib-test.r",
+      "sha256": "408f93c138efc69c79e3338b7e0ef0f471c9e6af65324dba52750265b95c50ae"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/compiler/empty.reds",
+      "sha256": "21879cb2c3b5af760923f36cc6d2119af082548fa2176a8ed17b43dd331ef1bd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/enum-test.r",
+      "sha256": "55ffda9357c1c2560dd620535580f7fd31a5778392268268573b7f0a88cbc59c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/exit-test.r",
+      "sha256": "4a88982aea07fd074a680d37e2fbfb08609724bc534d84beadc458974dd93135"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/compiler/hello.reds",
+      "sha256": "55a2cbed96f58758c323805a6dd535a766aef38d1ed3095a6f5cca355dba42da"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/inference-test.r",
+      "sha256": "9bcd0f43356eede384f13edd8f08236ddd6b5504a740792570e064589dab56ac"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/infix-test.r",
+      "sha256": "1b79e9893f2b001c74d4418e044c6d6bc3ee0377d163295a4ae52d5ec7e57fd1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/int-literals-test.r",
+      "sha256": "164c1c9b865ee228aae38e4cfd93084539fed7f030d4e5b31f464516beebd456"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/namespace-test.r",
+      "sha256": "942bf1d95ffce683562e146cc12442d4fac6093c20a1752bafdebc89eb9a2db9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/not-test.r",
+      "sha256": "982f96d02090140201802b9fb0acfe70b2d9b9875f24c71b67f7cb1e5b636a05"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/output-test.r",
+      "sha256": "eb80a3f3316e50c68c93f9173b815cd0a28a2aa482729fabe3223c04d3836a76"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/pointer-test.r",
+      "sha256": "bf35a34aebbfe2d915c489d3576f62353e92c015159d27ff53532817b0e3f63e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/print-test.r",
+      "sha256": "e368f849a9627705d644d56224c7c8c8bcb62374ed41eb50ff4ed0ffa6a5fd62"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/regression-test-rsc.r",
+      "sha256": "6e592a287b9fc01b4c2e469f78825f1214bda5ce4d5de08512fb25beda1e020a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/compiler/return-test.r",
+      "sha256": "fb9ec109d9f1f02e0e2fe8fb483fd3957437bbc6630387230e9ab95dd5993583"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/alias-test.reds",
+      "sha256": "4fa4739bb86895c3cf061a042eab25ead7f36a6873bd337fde32bb6dc8218d64"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/array-test.reds",
+      "sha256": "e6b26e33f34f1d082643c84316445b11d437fcff330edc35c826a03e5d8bbfed"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/atomic-test.reds",
+      "sha256": "0cc8e04fb53b8cdaa6764558e9f40462c2d54d9122975503d570fd7846ff86f8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/byte-test.reds",
+      "sha256": "5d0b66b446c18edb043b341cbc9736116575126875ea4742663ad706669e1d04"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/c-string-test.reds",
+      "sha256": "0797340d5e9f3bdd3e22e4ada71c9755b39078d7bc0cec1d4bada2a2783c4962"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/case-test.reds",
+      "sha256": "ea2fa621eb6dd87be4a1b6c56c5bac162ee4d6352e302a350047ce8504a897b6"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/cast-test.reds",
+      "sha256": "c4bc2f1a5115a677b8edc9e0602388e56fd241e62ee4a12c4d0b9165c5a47a1b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/compile-test-dylibs.r",
+      "sha256": "40217af3c7343fef792a9cb310398615dd42862d061cbe4163d81855f0f361d5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/conditional-test.reds",
+      "sha256": "eb95b724500cbf3cbec8c05209706169dbb85645f1087507b3c8857813d5892d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/create-dylib-auto-test.r",
+      "sha256": "3aef9fa7a96c786b44f0483eeea927a38d626f68b3e83ca2c7ded0789ffbd395"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".r",
+      "path": "system/tests/source/units/dll-test.r",
+      "sha256": "713702b46712961f348cff1ca3742db00ec8ca8666faf827127ff352ee0d72fa"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "system/tests/source/units/dylib-libs.txt",
+      "sha256": "9273f24e6dd431f6ff6105999ba59c4d1328046ff814945a23df076e7effcba3"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "system/tests/source/units/dylib-test-script-footer.txt",
+      "sha256": "db307a291efd0237bf1c3d856c04da51f701ef4ad169580e29aa1a21c0f6f993"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/dylib-test-script-header.txt",
+      "sha256": "08c555bea92cd96b820889baad5c156a2b1450b73133ddcad25ca0b81d7fe055"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "system/tests/source/units/dylib-tests.txt",
+      "sha256": "625dc2ad0067a325cf0ff19287cafb969fc6f82e5b07513ab499ce74d506ea09"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/enum-test.reds",
+      "sha256": "36fe60bcd8b8ba0b45527028ef7e905af5e7c1288b51d0919ac96b79e65c3bfb"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/exceptions-test.reds",
+      "sha256": "eb01748dfd3fb20efc1c507185aa0df14e7faa959fd7efd12c3472f1ae72acca"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/exit-test.reds",
+      "sha256": "af106766e0bb749df08caabeef6ffb6ec923c717ed41aa55d21fd74b82e531a5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/float-lib-test-source.reds",
+      "sha256": "aec107fb315ef83a1774de4058356112828206c92f4ef6927c4ef220d8b8af3c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/float-pointer-test.reds",
+      "sha256": "9d3f2c5cec60ce1aff0fcb2eaf0961f166f01bcf94ab5e6cfe19840a452f42ae"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/float-test.reds",
+      "sha256": "bb75392a0c8b668c8791fdfc674a5d911d7c8e024b747e55bdea77f17612d1d9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/float32-lib-test-source.reds",
+      "sha256": "323c2a81fb1002dba794399eb1b24393c1dfbe2a2d4d0a11b6d5177ee2513026"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/float32-test.reds",
+      "sha256": "8ab3ad0dae16adad6f4f2a471a87ea9a1db7fcd1a02b7e5306e99cacdaec13a5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/function-test.reds",
+      "sha256": "4fe4b77c95c8b7be18a66632a59ddcad06b7f8ef3dbc85a5e185030302ba08ba"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/get-pointer-test.reds",
+      "sha256": "6f9c8832acc06351a6a7298612f05c604c4bfa9c1c29789aa175e991a86138f7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/infix-test.reds",
+      "sha256": "4521afb1ef732ed995c8034cf9e9599df9bdace38adc61526f3218e688dbada1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/integer-test.reds",
+      "sha256": "328e3ccd0775a24d638b7a1d5c782c0b1ae2aac0902dda118f9b5b1f4263505f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/length-test.reds",
+      "sha256": "1b565f4819cb7c58d8e45d12362c2a65305f534be2eb6a869d0fde8643da4c7f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/lib-macOS-test.reds",
+      "sha256": "bc9b6594011c5e60d008a71236e61fadba92fe529ea95bbd03db0d53cc19f561"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/lib-test.reds",
+      "sha256": "136084a939eecfad45f3f6fca7017215990bb8dc9fbb4374ab8f97e9f816f41f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/lib-win32-test.reds",
+      "sha256": "0528604bbc4e9c294c11c8eb42b86e536056638e6bc3b052aa04cfcf65082df2"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".so",
+      "path": "system/tests/source/units/libs/libstruct-BSD.so",
+      "sha256": "891ecc40011e51b33089105634afb35e0ca05c3950e586c80df287991ee91650"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".so",
+      "path": "system/tests/source/units/libs/libstructlib-armhf.so",
+      "sha256": "2c4382086328f19c98995b28ce6aeadb81cd35f77a0cc79969f7703d1042c057"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".so",
+      "path": "system/tests/source/units/libs/libstructlib-armsf.so",
+      "sha256": "795ecce332ba83f50b5dc1b21f330acd8ff8e7800e6fe829aba5cbc4e73c9907"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".dylib",
+      "path": "system/tests/source/units/libs/libstructlib.dylib",
+      "sha256": "887ea119e1de7a54cce55c2b3260bbe4f4ed1f941ad878a7065bce9d864b36b3"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".so",
+      "path": "system/tests/source/units/libs/libstructlib.so",
+      "sha256": "780f072d9a0324ab3dddd56ebc1b4c70139d745bace584d6ae96bab0fc071cb0"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".c",
+      "path": "system/tests/source/units/libs/structlib.c",
+      "sha256": "ebb5bb37c08541cf0f9b100f1f4dd86b1d745f71173222a5661004b340c58c9f"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".dll",
+      "path": "system/tests/source/units/libs/structlib.dll",
+      "sha256": "aa85993d2c6a8b59bff1bb4a866652f0c6a692e4ed774cd7a3e8ab3cd36d8353"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/libtest-dll1.reds",
+      "sha256": "82d526ef6d6652b15bd9a5a9d1c71d2d60d5902a4b82569ccfe0b550307b31fb"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/libtest-dll2.reds",
+      "sha256": "3c9828bccf15453f6ad958fac94c38f543999111a33a01161c1261fa514b7052"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/logic-test.reds",
+      "sha256": "2f2a94bb31fb02618085641cd7dcb0b4c593108d0b611f6749d0c729a1b41ebf"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-byte-auto-test.r",
+      "sha256": "12316bf54d7a8ff04252ec33a719afc4004734e94cbbb5e1241a10c314555906"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-dylib-auto-test.r",
+      "sha256": "66c8475f0e27209a9a3e9d24dcf778d9c54dfd4fe97d319d5c81c06ec4fd2ed3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-float-auto-test.r",
+      "sha256": "a9916643483bdd31fecc536e7e8c2e77c75ac539104e064290d857e095c55053"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-float32-auto-test.r",
+      "sha256": "6e1949ca03b4166ba84a757d455af90730f674a2756e363a718fb88de7e32adc"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-float32-lib-auto-test.r",
+      "sha256": "2fc1d79309902e16b09ad7817505c776a1a022e04e6c3fbc7444f391928ba122"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-integer-auto-test.r",
+      "sha256": "249875cb38ec26d07c8126d5a704ce8c3a1dd2cab460093b33b726bb68b35358"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-maths-auto-test.r",
+      "sha256": "5f92f502ddfa935da7152c1cc73853e7725866b4a3ef19c8958a4748790acba7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/make-red-system-auto-tests.r",
+      "sha256": "9765a248454a3723ee72d79dd88962acbed2c65d1e4e4ac69a1186570bf6b11d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/math-mixed-test.reds",
+      "sha256": "e141bf6811b348654d8c2e74ec0e450db3310ea8b20bd0d25876d71ec1dcf29b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/modulo-test.reds",
+      "sha256": "ddfad25ab07c3bb6739ec46d11ff92543c982a5cfa2bcb8d29bd5ae29a74fdcd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/namespace-test-include.reds",
+      "sha256": "897009c1bb789b44dc905b45bfd393909eba70d2ecd803f2b026f02c82118ec2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/namespace-test.reds",
+      "sha256": "ecaf34e977045abb495162e204a525fccf54c1a5c467e4dfea9fcea189cb6262"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/not-test.reds",
+      "sha256": "7199b2532c60698bc7876500be0374b8cbeb95631f7f20022f14988dc5c17763"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/null-test.reds",
+      "sha256": "ce3ff7ebf16994955ed88242b258cf068bfc201e3049d5fb251f4c66992e1640"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/pointer-test.reds",
+      "sha256": "81a2c6235d40e46c6b52af8062b6562c69f5afb579a56fe1714c85b6e6f7eb67"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "system/tests/source/units/prepare-dependencies.r",
+      "sha256": "e4f001738b0a5694ea1c17741c52b3a8d59d68cbfce984f57ee52d423489b384"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/queue-test.reds",
+      "sha256": "236cde48726b46e2a9134f97bcfcb5e169eecd6f38b75f404a5404a1c3e49e55"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/return-test.reds",
+      "sha256": "a0c4d98e2aa28c7ef1f0c03e6a9dc8005052b75a0493125f30bc6fe743923873"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/size-test.reds",
+      "sha256": "aae3a9b385fbecf58af615ec5afa4f6eaabf095c6873156ed372213b05588177"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/struct-test.reds",
+      "sha256": "c4a842f6023c4f837511812e0278fda1b18ee9a0fff24e5e8d7c95111ad4097d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/switch-test.reds",
+      "sha256": "3d645221c9ea26b3bff4a85fc140c1d24bf09ea84c565a0f58c6c1ad76b4d909"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "system/tests/source/units/system-test.reds",
+      "sha256": "98deed19c423a3df25f1eeb2921cfc905bb6413ebce444084e7b5faa9a81b2bb"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/align-test.red",
+      "sha256": "a561a6f04d7b09397d9b3198eee69333df3035ba2225c15ef0e49823dc352296"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "tests/allocator-tests.reds",
+      "sha256": "61116c4ef6c1137358480fd9be282821fe07dddd298523b2f310fd5e049ece77"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/android/vid.red",
+      "sha256": "23dd27410ba9a29ce8fad78941382f9c369dc5753290362a2fdb50a7d3e8282d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/build-arm-tests.r",
+      "sha256": "5dbe47ce18bb335bca09c72a6205038527f85d2dfd2512a96f952c3cf97d6e7c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/build-separate-arm-tests.r",
+      "sha256": "aa1f12a94cfec45a43abfe8da625f5aebaa5f8034828f017924751b102ba24a4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/clip-test.red",
+      "sha256": "afdf86c39ca1dd0b797526c22424bf5058a02e531b3be8f982c084a7fce7c3aa"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/complexpen-test.red",
+      "sha256": "2e633f3bd9ce31a63bc4ef393096d6cf72b44ffe1e689e9f95e5a28ecfe55ee7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/cursor.red",
+      "sha256": "946ff37f8375181848e4c4bd24bb61bdf2907de11709cd399d3f8720676793e1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/demo.red",
+      "sha256": "bc8601b532232cdb016780083a5540ec7ed61db532796f384a5c234363c16235"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".png",
+      "path": "tests/draw-windows.png",
+      "sha256": "ef0ba526e0d5f5c45aa8ee79c4c7640b20280b37ecdba2694534b2fd93db1f03"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/draw.red",
+      "sha256": "2f4f99c5740468aca705ca5c2cf193439a7d20779571c4d469acfe2c05c7105f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/dyn-gui.red",
+      "sha256": "6a8c6e1fa2e031c1129aab1de3fada487256f008e625b4d208091112cc8f0bf3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/events-flow.red",
+      "sha256": "6d281660c0fc43ac3a89becede49ad03b69319862ef6418ab1415028d6faa615"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/failing-tests.red",
+      "sha256": "871b7fcc9c9bc549924c87fc5a5a7dbc4a7e5f400a475527a59460cc3ef60b72"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "tests/fixtures/chinese-characters.txt",
+      "sha256": "b0a8fa6fdfa77811481ab53b4752641b41031ef4913a9aa4b859e6e8922979a6"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".gtk3",
+      "path": "tests/gtk3/README.gtk3",
+      "sha256": "b41b3cd82174e3204394ee777140bd963a6d30d5024ea8cd23a1ff33f3e370c2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/hello.red",
+      "sha256": "019fce931700a3a7afe9bad0bf2fccb4ca7dcaf676393badee825f166b1c91cf"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".md",
+      "path": "tests/libRed/README.md",
+      "sha256": "576f5187639dd74ec3305ca5b819a8e0de9695b42b0d0008370a7387aa70f59b"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".dll",
+      "path": "tests/libRed/libRed.dll",
+      "sha256": "5e523ee5adffaec632858955b031d4b5a2c5481c3c2f61655f56b062c2284b60"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".c",
+      "path": "tests/libRed/libRedTest.c",
+      "sha256": "b4f062a8312d4013431af4e514ff7da0d5a6e77cb296f3b3e00a10350d6df2c8"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".c",
+      "path": "tests/libRed/libRedTests.c",
+      "sha256": "d55ae12d9fd8eca568cc53c1138c3304aa7da690e49ec88a3989f54a3c80b1c8"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".c",
+      "path": "tests/libRed/test.c",
+      "sha256": "7d9209a457000be094e6f29aa130d03df233b0be295a3a3285aaaf01ed119279"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".xlsm",
+      "path": "tests/libRed/test.xlsm",
+      "sha256": "22cf4dd7499f586f0a690dd67ce9ec8c41147d4c7a21343b5053f48a1a193dbd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/matrix-test.red",
+      "sha256": "00d3748fb194d3ca5fa70f7d6569c5c2398428d3a1c0d2a4cc97f6c9dce7a62a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/modal.red",
+      "sha256": "926dda664db7052c11d2b2374594ba001707237bc6194f88d113af1eafde46f2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test.red",
+      "sha256": "0a9d54681d6175d6c6b8afbc4556486130ef00aff68ffa942ed995f495d7c5f6"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test2.red",
+      "sha256": "aaf113140786c276590d7614d8ba14a053808d6adb3ace437a6368514deaf25c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test3.red",
+      "sha256": "b4c9f073f5c646adfd0abd435b42c774689f9607d15be782591d500f7ca05f6f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test4.red",
+      "sha256": "c27b6c45aa776cca38eb5eb20d9fa5bdd17930879f2d1e0208dc3adca607c0a7"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test5.red",
+      "sha256": "8fd1f9f2d64741fad570719c31ee221d04c035577b6051eab5b3ac14eecb5ca5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/react-test6.red",
+      "sha256": "75c97dff239c3f95cedfd94765693f8d0ef8f8dec624a116e13c62e221b9f8a9"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".ico",
+      "path": "tests/red-3D.ico",
+      "sha256": "3e3abdf03e0437442f611bd41ac013f5bf0c2e230df1370a434efdb1aab1317f"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".ico",
+      "path": "tests/red-mono.ico",
+      "sha256": "ba048d73c60903ca35a3c0de614e698540c0045b487b780555736f1235554c48"
+    },
+    {
+      "classification": "BINARY",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".ico",
+      "path": "tests/red.ico",
+      "sha256": "d673fce729322e5a36e53a998947bf237cb77473c7e9ea46c13240e8e2c01559"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/run-all-simple-gc.red",
+      "sha256": "a6264b572bb02745759510cbe812c97c54e5d17b753911ad990127363d2974ee"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/run-all-together.r",
+      "sha256": "20c66887186987aa2b76db098c20394b182dac20a75305686eade86259c6cb1c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/run-all.r",
+      "sha256": "26447a2c847797e5d11673cd6f8956cf75c00438987fa87a08da4d48db3d54a4"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".sh",
+      "path": "tests/run-all.sh",
+      "sha256": "63bfd9eea1b24c5123572786b895c6956c2300ae3c17d9a95b2c12cfecd3f4b9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/run-core-tests.r",
+      "sha256": "5f82d74a42086be1b20bd7b84e0d82d5163cab8c27fab17f532d233a8db9b4f9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/run-regression-tests.r",
+      "sha256": "380a6c435699f35f1953e89db30f1339b7d06370d51bc2ce3f32bf922158d044"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/run-view-tests.r",
+      "sha256": "c67d01272a95f95c2cfe1537b71d77553d3b5b23e02fe67ddff9b91e9b58d87e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/scroller-test.red",
+      "sha256": "78aa68cd781be393482c4b82c8d291ce434bff53f0bc3f0206aaab427c9417f3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/select-text.red",
+      "sha256": "67e57c8e15cdbc416b28692fbb2984877cbdcec966f4859712e66e5267da1a2e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/shape-test.red",
+      "sha256": "e9a9a667155d5efabc98307957f190f5b18131a409d18c4062e84dc9a6ef54bc"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/shield.red",
+      "sha256": "3cf234aa855f6dab1b9ca0cc80b4cf71e7185060d63766c18af8409d44c5ede0"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/simple-scheme.red",
+      "sha256": "727b96e708e160bed3af7f9459a6cabe139da5ce0cb4d1a1751e82af6711f35b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/compile-error-test.r",
+      "sha256": "b188167dfc71a2d52466e6d04995f390a6c8e690bd6d6487ef664872e6a5cc23"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".r",
+      "path": "tests/source/compiler/lexer-test.r",
+      "sha256": "cd01e41d99863ac26b1dafe430cc29404a40b32732337d5995d76c6c6ab9e3cd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/preprocessor-test.r",
+      "sha256": "d2ea4348bedbf1a805fda65d4ab35182d93ba454646f87e9afb66929720533f8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/print-test.r",
+      "sha256": "0c64baed0d6501d05f8346687af94a35eee5f0c3ec6590afb31dbd456480e34e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/compiler/print-test.red",
+      "sha256": "111a2113d55d9017aa2770f3b0186261a86d9ca6c63d137dda8e595506272141"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/regression-test-redc-1.r",
+      "sha256": "3eb13336ea1bcebc1dfc29e8c9727f56c238c517c014ac9aae4ca701022ec469"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/regression-test-redc-2.r",
+      "sha256": "dc5e1dfd9946c41540cbd7441fc3a4c936bf85100941ae7a1568cd70ecf143aa"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/regression-test-redc-3.r",
+      "sha256": "d0c6ae9b5619a7a23ac1ea8ece8cb15e6a8b3146c9341078d595697621e3a33a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/regression-test-redc-4.r",
+      "sha256": "774f7103a170d9575ce53ac8dd65855dd5e1cdec28fef0ad025f170175e62bf2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/regression-test-redc-5.r",
+      "sha256": "db92e8d8f0c95ff2aed7f7da790816ba00b99945c70fe31a009faaf0d55026a9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/compiler/run-time-error-test.r",
+      "sha256": "b14b8a4f36e51fbe73bd340e63e1bde6ecdb91c55100f3701d39e1a3b7b1cff5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/environment/functions-test.red",
+      "sha256": "e1f6e63125d4da46c5b6708505bdaef43e5dd9abe1ba26a36546f4f2beacf33d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/environment/help-test.red",
+      "sha256": "6f75e0838fd6e514b12f754275c22feca9524218e1b3f9cd4ac735652773ea00"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/environment/scalars-test.red",
+      "sha256": "6319576ef26fa754e7f0371d6e719f5e13d75e53338532e5857c718acd7cd67f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/library/call-test.r",
+      "sha256": "dc95bc7642bcf7c080db0c91334f46e6e5013c88c540d88e975ac1becc5bf2b5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/library/call-test.red",
+      "sha256": "83a2d2419efa4cbdc8aa4128903dc3c68bd1b632a3bebfef4043f9dc4942246d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/library/called-test.red",
+      "sha256": "8bec3f81c032c43a81340c0a1e3c867e4aa577fb7cbd1a388164d8bbbe55693a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/runtime/preprocessor-test.red",
+      "sha256": "24890a6dd6586668fcc1bb8dd871d54db85fc4f052f162e829457b5e68f6854b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red/System",
+      "path": "tests/source/runtime/tools-test.reds",
+      "sha256": "3e6d89b706970a628a3341cef8acf7bba92e37159e30c520b8384c537336d2a3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/runtime/unicode-test.r",
+      "sha256": "25ac754d9d9b3700058541c959892a00afd50dfdf73c4850222b56d34078e4a3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/runtime/unicode-test.red",
+      "sha256": "ecfffab5d95da2dfc24d44ff7f561203cf321205370cea5e4f665494575d9d39"
+    },
+    {
+      "classification": "RED-FIXTURE",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".txt",
+      "path": "tests/source/units/all-tests.txt",
+      "sha256": "7e29a2c457ab750de926c082e053ef04668f81a7b8fbc449c7fc0f79df206fa8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/append-test.red",
+      "sha256": "e29042633dc0b3f6b5f137a216dbe8ad6524c774631c0b262483a1414b696ff1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/binding-test.red",
+      "sha256": "e1185acd0dd58ddd31db549149559c43167cfec403adb763afbf9947000c40dd"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/bitset-test.red",
+      "sha256": "356cd6fe2f394caa102f647f02856b011a0882f88215d526b673c28748f0b797"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/case-folding-test.red",
+      "sha256": "517e1058c3b2bb801c2fe79a60bc99450f88d7d99920d3b9b415e2c203834532"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/case-test.red",
+      "sha256": "b09be87a81e114384c7b3128fe5ef761b0457194df791b120328e3efbd2893ed"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/char-test.red",
+      "sha256": "89a81eb9e9bb57bb17a9a679458bc47f9133c5087d48e6fa3176d79c5c4e5b88"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/checksum-test.red",
+      "sha256": "801086adaeb8b29cc5ee0672c5cf0312790988091de97a9d79e34b1e53672f9f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/clipboard-test.red",
+      "sha256": "c7b561381b0162c55c53bab38b4fcab36191ef3b05c1e9fa9f3bfa54a2ed31f3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/comparison-test.red",
+      "sha256": "5bc10085b0636c013704ae5a188f4cfdb54176391e5cfd5f3847643ee6f6344e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/conditional-test.red",
+      "sha256": "39a85f9093dbc6ba7614f88078fc56154ca70d2538f587e0f7ca7fd02b6f6981"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/convert-test.red",
+      "sha256": "0f0d01a5e80a8dd91f1e329e59737477380a184715a443e2b49be02de444eaf8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/csv-test.red",
+      "sha256": "d0a38ac3c50e6b770e069b4389e3be7aad80cebe41f8e161c1e678d833bb45c5"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/date-test.red",
+      "sha256": "6002481fc205e016fab44c25504e31eb34f3c9529afbf66c4a0ae0b8ad8ab61b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/debase-test.red",
+      "sha256": "86bb7c86432ee001c3159708393f4301260e80f149776cf079ed7212504661de"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/decompress-test.red",
+      "sha256": "5ab443c9b2499ec3e9ec8ac7e1be61ed914e4f21040b615fb6c59e0fb5cb061f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/draw-test.red",
+      "sha256": "1b621cde52bf61c43a633a7611042a1ffa9a52d2984ec10516660cd9052f7269"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/enbase-test.red",
+      "sha256": "9b1fbce010f034a2dc9cdf76cf748e8f486310176534c02f242e384ce0993f33"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/evaluation-test.red",
+      "sha256": "c8baf428d9492e180a0e2873a2a01cb9a2b9992558fecfa439761ad7234da4e2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/file-test.red",
+      "sha256": "885ac15f809b7a2c2fb42f370b9ceb952bdcb0d75ac95fed08d9220dba4e3950"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/find-test.red",
+      "sha256": "e3d48d2f8393361e05b2ac1766f5837efbdc26962f4521708e7a5760ccd669b4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/float-test.red",
+      "sha256": "c1e0d9824b0e2b9f3c8530db96552befc16f36e3bbb78db056bdcbc0317c0075"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/function-test.red",
+      "sha256": "9cadab4ad4f63e5525a68d4bc928a988f025518063f2b67bb04203ca7b98fffb"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/image-test.red",
+      "sha256": "f2cea2beeaf11c8c1ec03208310169e9cd3159623956e4d593d339b617148b23"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/insert-test.red",
+      "sha256": "efa677ffe66fe4665a109e2f05fccd593d71077478855ed2cfc22ae97df6272b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/integer-test.red",
+      "sha256": "df02ad9fa52060575c68e4eb022f6bc714a59b3a2e042f4a910874f88467b8a6"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/json-test.red",
+      "sha256": "a99ee06f92292e6761a6c11e91222f8869676b4b1f3ac2de6de4424c37b095d8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/lexer-test.red",
+      "sha256": "bb572db5bb45293db193d6505ba19586a0873c43de4dd5639d371502db642f2a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".tests",
+      "path": "tests/source/units/lexer.tests",
+      "sha256": "68aec2b8acf46c5c76dad9fad204f882dfc3c54ea28a24be2e108c62e3bfa95b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/load-test.red",
+      "sha256": "c27dadae390f5b8d741a6ad8273e18ffda0c46142c19da43184ea26e7cb44206"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/logic-test.red",
+      "sha256": "19a76e096cad38ab9114444a421bd21b351e3d285fcfd71c1aecfefa8b22f9bc"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/loop-test.red",
+      "sha256": "34275473727d6d4bb500208a9ab57214a54faa27e131d7febdeb9464ddfbffb3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-equal-auto-test.r",
+      "sha256": "f709e7859b407e924ba8dfdc5c52efdc9bb28392ae3b45efbf9aa9fcbfb3dbca"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-float-auto-test.r",
+      "sha256": "1049dbed4b34b16f6147717f00b4401e984008f9bc8036bbce6f36033cca26f4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-greater-auto-test.r",
+      "sha256": "f8b7eba49eddf2ec30f5c8da5d83d404f54c33dbf61babe53d174dea7748b37c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-interpreter-auto-tests.r",
+      "sha256": "29ffe3f0afc9e864575581b44022b0507de27e08224180870c86d5cc8aefaba9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-lesser-auto-test.r",
+      "sha256": "93b26c8276a259de3c2b857087fefb12b475b1f9610bf762dd5ad26d41d3340f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-lexer-auto-tests.r",
+      "sha256": "26c35b6ffed34856d86a84120e8741c083e5443ab9117ca5b3bb956288f4d838"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-not-equal-auto-test.r",
+      "sha256": "366f9210910c0a35a0af5b123b2aa066f3fd443bf5e8ccebad7a8c072f957b93"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-red-auto-tests.r",
+      "sha256": "537b208baf508ac9741aec42c9e4af288046c950dc777421b99e2a7cf5e2645d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-run-all-red-together.r",
+      "sha256": "419722d24f34897a04542cad0b7381cf58d002a1fba3790a4190444c9aa17466"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-run-all-red.r",
+      "sha256": "78ad7ccb9b3f7f6fa8a99c8f9a45a4c0be3f9d4dc4dda8d16c2dea21e1b9d9b8"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-run-each-runner.r",
+      "sha256": "a96746527fd4dbd84ff1bb48235cf278b5889781f8536e9df608de527b401cce"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-same-auto-test.r",
+      "sha256": "cb47ba543554daa43ee06178dced1ef2c71d64fdca5d4373fef90b29537be407"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/make-strict-equal-auto-test.r",
+      "sha256": "9ed05e6ebc3496543d438da1ed0c1504bf083cb794c66ede268300dee2595e07"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/make-test.red",
+      "sha256": "09a6034d15e23669495aab2cfe0e198ccfa7ad2c8bc5268c0b971197f96cd8c9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/map-test.red",
+      "sha256": "9632c81a7f866c44be54f07c01589144c050d3b6ba016b1472ab37ea4413cbb1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/mold-test.red",
+      "sha256": "0cf751cad9331cc4838c3216a3d193030f0118609d7bec21cd6be5337c2ece19"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/money-test.red",
+      "sha256": "c5212164a16c52db71b501df31c4be74b4e2d526c9fea8b59b5ecac2d04526e9"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/move-test.red",
+      "sha256": "92018c38cecb84863a01d0d78e08e9ef624bb6304402ed2cc59fec85aa872228"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/object-test.red",
+      "sha256": "107b8a7d6db86ab638dc941ee25d2a81fbe09743126e522dde5e012c716e538a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/pair-test.red",
+      "sha256": "d714bee6686bbead39fa18b06a808dd956d060cf0b455116f9473daa5f6a8ce3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/parse-test.red",
+      "sha256": "e1b6fb2d92e1fca994107871848e03a92b83d39345cb2371f5eb241216a616d0"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/path-test.red",
+      "sha256": "da15d6e185d86f9b7467dd151386a204836ff7b3c593f54f1a034adc0c729b24"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/power-test.red",
+      "sha256": "cfd52a395ba377f13b14ffa962249f5c90322de2b6d2fd1dbeb1f4cb19939170"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/preprocessor-test.red",
+      "sha256": "4c7600f6dcf3e11c7b7d2e68d194bd7a0fa087db1e75f78b66bf14bef6c6652e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/reactivity-test.red",
+      "sha256": "ef81165f063a74cc340982bea6f2f7047fca759ed9072d1ac27b7d2aa5c12d9e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/recycle-test.red",
+      "sha256": "2dff5df716bdee7673d14bbe4bd09883628032d76fdd36a52f798c079908f78d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/redbin-codec-test.red",
+      "sha256": "33013d210acd3c2e988c43d9227cac6bf57a911cecf0fd530ceb67087e22776a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/regression-test-red.red",
+      "sha256": "79f70c083e3bd62716da7b77c60e1dd01b69ab8322fc544d7bcd59f31478279c"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/replace-test.red",
+      "sha256": "dede531894cb741c2b3d0e56f3a678ae8c5c4beee06fb7d97d3f28c288de7a37"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/routine-test.red",
+      "sha256": "d7a99330a0b463c8c3e303668430ec393d1cb76fd3ac675497720287837888cf"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/run-all-init.r",
+      "sha256": "06a0e1ab4c7b61057728f78b64128290915c3bbdc848f789e394790f4172c24d"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/run-all-together-init.r",
+      "sha256": "78c18cd528363eead657d41bb48e474983141c60f53cab35838e4593fd59992b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/run-post-extra-tests.r",
+      "sha256": "442e8738f8861c1fb387b0bcad24bd69927b45ef0bc35ee7a5193175e361f155"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "REBOL",
+      "path": "tests/source/units/run-pre-extra-tests.r",
+      "sha256": "e39661e5caea3e6ad1f53c003eabd800f27e551c77af54016ee859eb47558b1b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/same-test.red",
+      "sha256": "0c74c4295f90c9388d79b8afcb90613c3f9d776d27a7cbd26e905ad027c447c3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/select-test.red",
+      "sha256": "b97a08bb513e6e7cef5806522ec9451fe8049e97e1ecc55f863d96525ab60775"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/serialization-test.red",
+      "sha256": "5a24ae6be447cfff3f58643825f450da5101d3d90c100d92fe3584628645802b"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/series-test.red",
+      "sha256": "952bec866af8970d368097d08dca51b0a55bde5d03dbb62dfa9784d645f09156"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/stress-test.red",
+      "sha256": "16466ce67db891ffaf870b450ab36f29562653f601a5798343cfd61ac713ced6"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/strict-equal-test.red",
+      "sha256": "cd161138fe5bdd547c367b14f53cc7436fe94aa175e8c2463847da93e330b5ff"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/switch-test.red",
+      "sha256": "29faf77fbf35f477c66091057519c559341bbaadb7f1ccced8e93cfeb75f2e75"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/system-test.red",
+      "sha256": "f3c1b21b49dc6f85105e87cb2720e495592acbbdc2973416831201a257f7736f"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/throw-test.red",
+      "sha256": "cbb3286deba89b0d6f00bb971e48ef4018935c4df96fe5ff87c74d59a6f8e6f1"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/time-test.red",
+      "sha256": "4c8a41efffc2f858210649a35065ba248c3d0882fee4542718e8be4b50cf3679"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/try-test.red",
+      "sha256": "be494f3c7f92607c28461f27c9294cddb48c67d30ecb6020145a6e813d04c751"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/tuple-test.red",
+      "sha256": "04756ec0b224860285efca658ad6b4cb7670dc58d59afa188a6b1cacf6253159"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/type-test.red",
+      "sha256": "87b9943223a5d6c629260f7ca2fde1aaaaed1bf09bc226cdb87e185efa70663a"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/unset-test.red",
+      "sha256": "e1a71f0d3b178afccafdc8be718bd09431ea60667b10a0fcebb86a593ab80d17"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/url-test.red",
+      "sha256": "3b54ae0a7482dba01e97e03ebee2d6fa958d9918caeb36200483f75cb029e718"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/vector-test.red",
+      "sha256": "736628a8167b935e61214a7487c43ca50e39cda56ebacdeeaf8bbc17855f7cd4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/units/words-of-test.red",
+      "sha256": "3945fe52a6b0e59f4b41ddb48ba8901624423c95c5383c67cb7f8770ef0b22c3"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/source/view/base-self-test.red",
+      "sha256": "16b9fde34c1ee439fa65db57887c70f5edbcad1da71ea2a07620e2b0b32e0013"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/test-backend.red",
+      "sha256": "eae4f685a841ae3a5907d132707609b03f9e6eb9df96eba75e79d25d4d2a4931"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid.red",
+      "sha256": "73e7374f3c6689e30cd0852bf6b0a14a36707c6997a19bba7e93991720c21e18"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid2.red",
+      "sha256": "12000e495e4be291e1a718aab263e2613899ead2cf542634d55f010eb90ebaa4"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid3.red",
+      "sha256": "97b3eb10b51ded72e769baefd6c2b5b1c0f74a7a42932b857a3188376bf5b4f0"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid4.red",
+      "sha256": "2c783a4239e10cb8c3bff90515f74cfcaa791cdc3305f913e0a8f6d5a23f7843"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid5.red",
+      "sha256": "6bc88d660f0a2f30b0f8dc1cce09b5bd1bba65f81bfab1116c3a06e8ad79899e"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/vid6.red",
+      "sha256": "0ed1abdffb6059e0a618a794eb4d83670c6e2fe11a5d2d7362f867a91f900bd2"
+    },
+    {
+      "classification": "RED-TEST",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": "Red",
+      "path": "tests/view-test.red",
+      "sha256": "22f86eb078191a393ae3a3558a89f677af410d9170e0123474e7035a8fae483a"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_concurrency.py",
+      "sha256": "ce93fd073efb0dfdf408356b1f60cec6cc1b7e86d18bdfd93904c0882f2a5fcc"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_controller.py",
+      "sha256": "96b62b1e628991a8064c2c4e5226b296ba475dbf4400959ce78073336b1d462d"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_crash_consistency.py",
+      "sha256": "3b083e0ebb6c8b03a5e4f5e0e29ba596095e0aefe29272e7b1f7342494b95afb"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_criterion_validation.py",
+      "sha256": "6771e63cebc985718ebba372965fc7cee44e458f37d66f5fdcca19a346931fb3"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_determinism.py",
+      "sha256": "6a0381aab45e3775f9d9b4c4ab66f06218f19052e7ba829d39bf0fa112affbd8"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_execution_integrity.py",
+      "sha256": "0169eb1c892423a9293435b5d9b02dacac193b0660214ab5a4dc8acb0b6c5763"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_external_consistency.py",
+      "sha256": "6ffbce1c9c949d855a4180d8f473dd863c839b19f353f0f17dbd742aa44f72d9"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_global_invariants.py",
+      "sha256": "8b15022d9401ad8bc5fe13833552f4a301aaf1099a18e162569e2ffcb919f2dd"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_hardening.py",
+      "sha256": "0dde6f7e8167a9c9fb1d4f69ed6c7a541208a48b3633656d9ceb5ed277ed554a"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_pipeline.py",
+      "sha256": "4447998d5476f69867f3c9a673482be3739ef9a7f5dd6b8b58fd5217d22ec585"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_pipeline_attacks.py",
+      "sha256": "dc1dfc12d9224b9576402c446123ec3eb3b079e2ab7935913d9a9974e0449028"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_pipeline_determinism.py",
+      "sha256": "d26811a5db1529a150c01cb872a058e8aa87c5c227eb2c226a7c0a43e7f0e8df"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_provenance_attacks.py",
+      "sha256": "dd1b6fcb07dfea006239469a309bec27c259adb6e9bd73cfd9eff35a1408df79"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_recovery_attacks.py",
+      "sha256": "6db1a75b9e3ea35e5a2094cf1eac6eed1c2c7fbf637adfa6488bfdb2b56d52e4"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_requirement_coverage.py",
+      "sha256": "775f3b2c3bc5790e6949ec53a69f20d5a0d7efdb20b6de731d98c5c9f81683a8"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_semantic_completeness.py",
+      "sha256": "df36a55a4975e46c96575c487c1e182d921c9f212cf5ce2de0f08deb59d7eae6"
+    },
+    {
+      "classification": "RED-COGNITION",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".py",
+      "path": "tools/impl_controller/tests/test_state_machine.py",
+      "sha256": "4fc036477e5b4c2680a8c59c69232851d51f1f6a4bde2ef8f48d7184214cb5ce"
+    },
+    {
+      "classification": "RED-TOOLING",
+      "discovery_status": "DISCOVERED",
+      "execution_status": "NOT-RUN unless separately listed in local execution evidence",
+      "language_hint": ".sh",
+      "path": "tools/run-container-tests.sh",
+      "sha256": "ed8988fab8b5e02082d9d31d5f45c17c71f8179a7997d1066e5504b02ba8a1c0"
+    }
+  ],
+  "execution_summary": {
+    "ci": "NOT-RUN/NOT-VERIFIED in this phase",
+    "local_inventory_checks": "EXECUTED/PASSED; see verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
+    "python_pytest": "BLOCKED: pytest module unavailable",
+    "red_rebol_suites": "NOT-RUN locally in this phase"
+  },
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "derive test inventory from classifications, paths, and filenames in repository inventory",
+    "repository_commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06",
+    "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
+    "timestamp_utc": "2026-08-31T17:15:42.439029+00:00",
+    "tool": "tools/source-audit/generate_supplemental_manifests.py"
+  },
+  "schema_version": 1,
+  "summary": {
+    "by_top_level_root": {
+      ".github": 1,
+      "artifacts": 1,
+      "docs": 2,
+      "modules": 4,
+      "quick-test": 8,
+      "rfcs": 1,
+      "system": 97,
+      "tests": 159,
+      "tools": 19
+    },
+    "red_test_classified_files": 240,
+    "test_like_artifacts": 292
+  }
+}

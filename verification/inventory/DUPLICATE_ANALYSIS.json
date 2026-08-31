@@ -1,0 +1,915 @@
+{
+  "exact_sha256_groups": [
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "paths": [
+        "system/tests/empty.reds",
+        "system/tests/source/compiler/empty.reds"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "21879cb2c3b5af760923f36cc6d2119af082548fa2176a8ed17b43dd331ef1bd"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
+        "system/assets/red-3D.ico",
+        "tests/red-3D.ico"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "3e3abdf03e0437442f611bd41ac013f5bf0c2e230df1370a434efdb1aab1317f"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
+        "system/assets/red-mono.ico",
+        "tests/red-mono.ico"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "ba048d73c60903ca35a3c0de614e698540c0045b487b780555736f1235554c48"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
+        "system/assets/red.ico",
+        "tests/red.ico"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "d673fce729322e5a36e53a998947bf237cb77473c7e9ea46c13240e8e2c01559"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BUILD-INFRASTRUCTURE",
+        "RED-COGNITION",
+        "RFC",
+        "SPECIFICATION"
+      ],
+      "paths": [
+        "cognition/.gitkeep",
+        "compiler/.gitkeep",
+        "dialects/.gitkeep",
+        "examples/.gitkeep",
+        "rfcs/.gitkeep",
+        "specs/.gitkeep",
+        "tools/impl_controller/tests/__init__.py"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "derive duplicate groups from SHA-256, filename, and normalized-content groups in inventory",
+    "repository_commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06",
+    "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
+    "timestamp_utc": "2026-08-31T17:15:42.432433+00:00",
+    "tool": "tools/source-audit/generate_supplemental_manifests.py"
+  },
+  "normalized_content_groups": [],
+  "policy": "No duplicate artifacts were deleted. Same-name variants may be platform variants, generated references, fixtures, or historical variants.",
+  "same_filename_groups": [
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BUILD-INFRASTRUCTURE",
+        "RED-COGNITION",
+        "RFC",
+        "SPECIFICATION"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": ".gitkeep",
+      "paths": [
+        "cognition/.gitkeep",
+        "compiler/.gitkeep",
+        "dialects/.gitkeep",
+        "examples/.gitkeep",
+        "rfcs/.gitkeep",
+        "specs/.gitkeep"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-COGNITION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "__init__.py",
+      "paths": [
+        "tools/impl_controller/__init__.py",
+        "tools/impl_controller/tests/__init__.py"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-FIXTURE"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "all-tests.txt",
+      "paths": [
+        "system/tests/all-tests.txt",
+        "tests/source/units/all-tests.txt"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "android.reds",
+      "paths": [
+        "runtime/platform/android.reds",
+        "system/runtime/android.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "build-arm-tests.r",
+      "paths": [
+        "system/tests/build-arm-tests.r",
+        "tests/build-arm-tests.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE",
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "build.r",
+      "paths": [
+        "bridges/android/build.r",
+        "build/build.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "camera.reds",
+      "paths": [
+        "modules/view/backends/gtk3/camera.reds",
+        "modules/view/backends/macOS/camera.reds",
+        "modules/view/backends/windows/camera.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "classes.reds",
+      "paths": [
+        "modules/view/backends/macOS/classes.reds",
+        "modules/view/backends/windows/classes.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "clickevent.java",
+      "paths": [
+        "bridges/android/src/org/redlang/eval/ClickEvent.java",
+        "bridges/android/src/redroid/ClickEvent.java"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "comdlgs.reds",
+      "paths": [
+        "modules/view/backends/gtk3/comdlgs.reds",
+        "modules/view/backends/macOS/comdlgs.reds",
+        "modules/view/backends/windows/comdlgs.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "common.reds",
+      "paths": [
+        "runtime/datatypes/common.reds",
+        "system/runtime/common.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-COMPILER"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "compiler.r",
+      "paths": [
+        "compiler.r",
+        "system/compiler.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "darwin.reds",
+      "paths": [
+        "runtime/platform/darwin.reds",
+        "system/runtime/darwin.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "dimens.xml",
+      "paths": [
+        "bridges/android/samples/eval/res/values-sw600dp/dimens.xml",
+        "bridges/android/samples/eval/res/values-sw720dp-land/dimens.xml",
+        "bridges/android/samples/eval/res/values/dimens.xml"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE",
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "draw.red",
+      "paths": [
+        "modules/view/draw.red",
+        "tests/draw.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "draw.reds",
+      "paths": [
+        "modules/view/backends/gtk3/draw.reds",
+        "modules/view/backends/macOS/draw.reds",
+        "modules/view/backends/test/draw.reds",
+        "modules/view/backends/windows/draw.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "empty.reds",
+      "paths": [
+        "system/tests/empty.reds",
+        "system/tests/source/compiler/empty.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "events.reds",
+      "paths": [
+        "modules/view/backends/gtk3/events.reds",
+        "modules/view/backends/macOS/events.reds",
+        "modules/view/backends/test/events.reds",
+        "modules/view/backends/windows/events.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "font.reds",
+      "paths": [
+        "modules/view/backends/gtk3/font.reds",
+        "modules/view/backends/macOS/font.reds",
+        "modules/view/backends/windows/font.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "freebsd.reds",
+      "paths": [
+        "runtime/platform/freebsd.reds",
+        "system/runtime/freebsd.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "gui-console.red",
+      "paths": [
+        "environment/console/GUI/gui-console.red",
+        "environment/console/GUI/old/gui-console.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "gui.red",
+      "paths": [
+        "modules/view/backends/android/gui.red",
+        "modules/view/backends/test/gui.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "gui.reds",
+      "paths": [
+        "modules/view/backends/gtk3/gui.reds",
+        "modules/view/backends/macOS/gui.reds",
+        "modules/view/backends/test/gui.reds",
+        "modules/view/backends/windows/gui.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE",
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "hello.red",
+      "paths": [
+        "bridges/java/hello.red",
+        "tests/hello.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "hello.reds",
+      "paths": [
+        "system/tests/hello.reds",
+        "system/tests/source/compiler/hello.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "ic_launcher.png",
+      "paths": [
+        "bridges/android/samples/eval/res/drawable-hdpi/ic_launcher.png",
+        "bridges/android/samples/eval/res/drawable-mdpi/ic_launcher.png",
+        "bridges/android/samples/eval/res/drawable-xhdpi/ic_launcher.png",
+        "bridges/android/samples/eval/res/drawable-xxhdpi/ic_launcher.png"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "linux.reds",
+      "paths": [
+        "runtime/platform/linux.reds",
+        "system/runtime/linux.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "longclickevent.java",
+      "paths": [
+        "bridges/android/src/org/redlang/eval/LongClickEvent.java",
+        "bridges/android/src/redroid/LongClickEvent.java"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "mainactivity.java",
+      "paths": [
+        "bridges/android/src/org/redlang/eval/MainActivity.java",
+        "bridges/android/src/redroid/MainActivity.java"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "make-float-auto-test.r",
+      "paths": [
+        "system/tests/source/units/make-float-auto-test.r",
+        "tests/source/units/make-float-auto-test.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "menu.reds",
+      "paths": [
+        "modules/view/backends/gtk3/menu.reds",
+        "modules/view/backends/macOS/menu.reds",
+        "modules/view/backends/windows/menu.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "netbsd.reds",
+      "paths": [
+        "runtime/platform/netbsd.reds",
+        "system/runtime/netbsd.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "para.reds",
+      "paths": [
+        "modules/view/backends/gtk3/para.reds",
+        "modules/view/backends/macOS/para.reds",
+        "modules/view/backends/windows/para.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "posix.reds",
+      "paths": [
+        "environment/console/CLI/POSIX.reds",
+        "runtime/platform/POSIX.reds",
+        "system/runtime/POSIX.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "preprocessor-test.red",
+      "paths": [
+        "tests/source/runtime/preprocessor-test.red",
+        "tests/source/units/preprocessor-test.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "print-test.r",
+      "paths": [
+        "system/tests/source/compiler/print-test.r",
+        "tests/source/compiler/print-test.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION",
+        "RED-FIXTURE",
+        "RED-TOOLING",
+        "SPECIFICATION"
+      ],
+      "distinct_sha256_count": 9,
+      "filename": "readme.md",
+      "paths": [
+        "README.md",
+        "bridges/java/README.md",
+        "build/README.md",
+        "docs/README.md",
+        "docs/traceability/rfc-0075/README.md",
+        "knowledge-base/README.md",
+        "libRed/README.md",
+        "system/bridges/java/README.md",
+        "tests/libRed/README.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-FIXTURE",
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "readme.txt",
+      "paths": [
+        "system/library/readme.txt",
+        "system/tests/readme.txt"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "red-3d.ico",
+      "paths": [
+        "system/assets/red-3D.ico",
+        "tests/red-3D.ico"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "red-mono.ico",
+      "paths": [
+        "system/assets/red-mono.ico",
+        "tests/red-mono.ico"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "red.ico",
+      "paths": [
+        "system/assets/red.ico",
+        "tests/red.ico"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RFC"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "rfc-0059-ratification-record.md",
+      "paths": [
+        "docs/specifications/red-deep-technical-spec/RFC-0059-Ratification-Record.md",
+        "rfcs/RFC-0059-ratification-record.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RFC"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "rfc-index.md",
+      "paths": [
+        "docs/RFC-INDEX.md",
+        "knowledge-base/wiki/RFC-Index.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "rules.red",
+      "paths": [
+        "modules/view/backends/gtk3/rules.red",
+        "modules/view/backends/macOS/rules.red",
+        "modules/view/backends/windows/rules.red",
+        "modules/view/rules.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-COMPILER",
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "run-all.r",
+      "paths": [
+        "run-all.r",
+        "system/tests/run-all.r",
+        "tests/run-all.r"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-FIXTURE"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "run-all.sh",
+      "paths": [
+        "system/tests/run-all.sh",
+        "tests/run-all.sh"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "settings.red",
+      "paths": [
+        "environment/console/CLI/settings.red",
+        "environment/console/GUI/settings.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "syllable.reds",
+      "paths": [
+        "runtime/platform/syllable.reds",
+        "system/runtime/syllable.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "tab-panel.reds",
+      "paths": [
+        "modules/view/backends/gtk3/tab-panel.reds",
+        "modules/view/backends/macOS/tab-panel.reds",
+        "modules/view/backends/windows/tab-panel.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "text-box.reds",
+      "paths": [
+        "modules/view/backends/gtk3/text-box.reds",
+        "modules/view/backends/macOS/text-box.reds",
+        "modules/view/backends/test/text-box.reds",
+        "modules/view/backends/windows/text-box.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "text-list.reds",
+      "paths": [
+        "modules/view/backends/gtk3/text-list.reds",
+        "modules/view/backends/windows/text-list.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-TOOLING"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "touchevent.java",
+      "paths": [
+        "bridges/android/src/org/redlang/eval/TouchEvent.java",
+        "bridges/android/src/redroid/TouchEvent.java"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "utils.reds",
+      "paths": [
+        "runtime/utils.reds",
+        "system/runtime/utils.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-SOURCE",
+        "RED-TEST"
+      ],
+      "distinct_sha256_count": 3,
+      "filename": "vid.red",
+      "paths": [
+        "modules/view/VID.red",
+        "tests/android/vid.red",
+        "tests/vid.red"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "RED-RUNTIME",
+        "RED-SYSTEM-SOURCE"
+      ],
+      "distinct_sha256_count": 4,
+      "filename": "win32.reds",
+      "paths": [
+        "environment/console/CLI/win32.reds",
+        "modules/view/backends/windows/win32.reds",
+        "runtime/platform/win32.reds",
+        "system/runtime/win32.reds"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "exact_sha256_groups": 5,
+    "normalized_content_groups": 0,
+    "owner_review_required_groups": 50,
+    "same_filename_groups": 55
+  }
+}
