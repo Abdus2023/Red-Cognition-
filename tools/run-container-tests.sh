@@ -80,7 +80,7 @@ run_suite() {
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
-      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
+      --tmpfs "/red/quick-test/runnable:exec,mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       -e "DISPLAY=$DISPLAY_VALUE" \
@@ -97,7 +97,7 @@ run_suite() {
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
-      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
+      --tmpfs "/red/quick-test/runnable:exec,mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       --entrypoint "$REBOL" "$IMAGE" \
