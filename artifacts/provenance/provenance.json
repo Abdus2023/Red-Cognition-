@@ -329,6 +329,27 @@
       "target": "custom REBOL End User License (unfree)",
       "evidence": "AUR PKGBUILD license=custom:REBOL End User License; nixpkgs meta.license=unfree (rebol.com/license.html) \u2014 redistribution restricted; NOT covered by Red's BSD/BSL",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "Oldes-Rebol3-3.22.1.tar.gz",
+      "target": "pinned commit 7fe158a9a9b0\u2026 (release 3.22.1)",
+      "evidence": "git blob SHA-1 of all 898 archive members == git ls-tree of the release commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "release->source-tree",
+      "source": "Oldes/Rebol3 release 3.22.1 (29-release registry)",
+      "target": "Oldes-Rebol3-3.22.1.tar.gz",
+      "evidence": "tag 3.22.1 -> commit 7fe158a9a9b0be8826c35a27596cb3c207b5ed6c; archive whole-tree verified against that commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "availability-finding",
+      "source": "Rebol 2.x interpreter source",
+      "target": "NOT acquirable from GitHub channels",
+      "evidence": "documented finding from recorded searches + org listings + ecosystem recipes (manifests/rebol2-source-finding.json)",
+      "status": "BLOCKED"
     }
   ]
 }

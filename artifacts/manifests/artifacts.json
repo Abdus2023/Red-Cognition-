@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 87,
+  "record_count": 92,
   "artifacts": [
     {
       "project": "RED",
@@ -1699,6 +1699,86 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "durable history-existence evidence; re-auditable against GitHub"
+    },
+    {
+      "project": "REBOL",
+      "version": "3.22.1",
+      "classification": "ARCHIVE",
+      "origin": "https://github.com/Oldes/Rebol3 (codeload tag archive)",
+      "url": "https://github.com/Oldes/Rebol3/tree/3.22.1",
+      "repository": "https://github.com/Oldes/Rebol3",
+      "commit": "7fe158a9a9b0be8826c35a27596cb3c207b5ed6c",
+      "tag": "3.22.1",
+      "filename": "Oldes-Rebol3-3.22.1.tar.gz",
+      "path": "artifacts/rebol/source/Oldes-Rebol3-3.22.1.tar.gz",
+      "sha256": "9063516b0448e456efe9800d24ff063cf661a35b0f215231829c5f3fd9bd4f2a",
+      "size": 4324902,
+      "retrieved_at": "2026-08-31T18:07:23Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASH_MATCHED",
+      "license_status": "CONFIRMED",
+      "license_evidence": "Apache-2.0 LICENSE in tree",
+      "notes": "the exact release commit whose 30 assets are registered; release-tree tie established"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 13 whole-tree verification",
+      "filename": "oldes-release-3221-verification.json",
+      "path": "artifacts/manifests/oldes-release-3221-verification.json",
+      "sha256": "1275957f4e3febcc699e0422bc6608856531f3b5c63a2e5e526d46b7be6aa29e",
+      "size": 485,
+      "retrieved_at": "2026-08-31T18:07:23Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 13 documented finding (strictly from collected evidence)",
+      "filename": "rebol2-source-finding.json",
+      "path": "artifacts/manifests/rebol2-source-finding.json",
+      "sha256": "44d1c8e9d7db5def5358d44fd1fd3ab36bea8f6f3eccf6a9810b5dfc45e92fd2",
+      "size": 1439,
+      "retrieved_at": "2026-08-31T18:07:23Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "REBOL_2_SOURCE_NOT_FOUND_ON_GITHUB; ecosystem builds R2 from prebuilt rebol.com tarballs"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "BUILD_SCRIPT",
+      "origin": "stage 13 one-shot re-derivation script (22 archives, 10 clones)",
+      "filename": "reproduce_acquisition.sh",
+      "path": "acquisition-tools/reproduce_acquisition.sh",
+      "sha256": "47529188f70ffc17bb319647890c4cf802bf7a96ad1d8fc52c08bca055c5da20",
+      "size": 2494,
+      "retrieved_at": "2026-08-31T18:07:23Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "full acquisition re-derivation + whole-tree verification from GitHub"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "DOCUMENTATION",
+      "origin": "stage 13 refreshed collection index",
+      "filename": "collection-index",
+      "path": "artifacts/README.md",
+      "sha256": "0d9f9328071223b12005a5fe672598a3c0baaf9791d207d8da6050602b65e867",
+      "size": 3612,
+      "retrieved_at": "2026-08-31T18:07:23Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "87 records accounted"
     }
   ]
 }
