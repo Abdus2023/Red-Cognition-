@@ -1,0 +1,465 @@
+# repo=https://github.com/rebolsource/rebol-test.git
+# head=409ef5c2270a766a6262d883e6fc5ea9d1ec6234
+# count=460
+# generated=2026-08-31T18:04:19Z
+# format: <commit-sha> <author-date-iso> <subject>
+409ef5c2270a766a6262d883e6fc5ea9d1ec6234 2026-02-23T07:35:41+01:00 Add set and get path tests
+3b6bb88f62422e325aabf30b925d9b707f0ec3bf 2026-02-04T16:17:07+01:00 add e-notation tests
+98ace00c20ae1fa751bd9bcbc9c5c4fef4dd57c7 2026-01-28T09:38:53+01:00 Add a body-of selfless test.
+308ea2f040e78096e1225ae39a044d9fc221ee98 2026-01-18T12:33:13+01:00 add a make object! test add a set-path evaluation test
+7c6d6b94526f695fde545e71c25c24168bbf5775 2026-01-16T16:06:48+01:00 Update LF tests, update decimal tests.
+4fbc14891894b3483e7445d4a08a6ae8d591f7c8 2026-01-10T15:19:44+01:00 Add find/same tests
+1bf9650d173ff70ff48f6a4b811bc94aac31412c 2025-11-09T15:22:10+01:00 Add find/same test.
+cafc433d23050ebaaa8371a6e5fcc69904d48943 2025-10-05T17:37:34+02:00 Update func tests.
+b84e8f529dcd5c9e50f7558fe53e283e48a47f6d 2025-09-27T07:47:55+02:00 Add FUNCL tests.
+02aa5f0e3783f7ef8190de6335c7a78a0791c772 2025-09-23T14:26:52+02:00 Improve a function test
+f908b7ba22b91ed983f85a7f14df8a5f15348238 2025-09-23T07:45:13+02:00 Check callback nesting behaviour.
+6c2e819e060e3fd4785f2f62cad4ba83fefaa778 2025-09-22T08:55:05+02:00 Update function tests
+dd0ce082192861fd5355bbd46dce07a3b6411685 2025-09-22T08:47:00+02:00 Update function tests
+55cf93e1d9a99ed6efba369aa7a2d8c4e75e2410 2025-06-02T08:40:19+02:00 update tangent tests add pair arithmetic tests add tuple arithmetic tests
+16ba9fac1b9baeffa67e156813cb25dcf8f9934e 2025-05-27T08:59:24+02:00 Add tuple arithmetic tests
+5e4e371fd51e044b5e9637281982e4ed80c71a77 2025-05-24T14:46:47+02:00 Add IEEE-754 rounding mode test
+ae872d54083b92213dd8eeb5389b666d1bb09db9 2025-05-01T10:05:22+02:00 test whether argument evaluation is interleaved with type checking
+7c2c5a9a41d3b5a682d187538c1f921c401a6184 2025-01-28T09:34:55+01:00 update money equality tests
+7b5bf47960125d020c092fe25df4fcc20161d9c4 2025-01-06T15:19:54+01:00 update integer tests
+096b999678e15a0961db69bdad6d83497187eb74 2024-12-18T09:47:31+01:00 add native and action comparison tests
+0e5ce69f601246f8d78c3bc714380333e7f78df4 2024-12-17T18:09:03+01:00 Add not-equal?, lesser? and greater? tests for functions
+1ada00906cda1a6cea39894384c5c92c723ad9aa 2024-12-15T13:12:41+01:00 Correct a function equality test.
+5fa36654c725a094bf9089729458d5f85fcec57e 2024-12-15T07:22:53+01:00 Update block and paren load tests to test blocks and parens containing the < word.
+c9aef0942bfcaaaf1d568326817c76b8ff5aec2d 2024-10-01T11:20:18+02:00 also log system/build
+b4a4eebdecbc76989797615c83ba3dd29e37532d 2024-09-18T09:42:02+02:00 update some tests to make them more precise using OEIS
+624251bbe20e475b13eef5383ede9cf44c36a30e 2024-09-14T11:38:44+02:00 Correct typo
+12736df2f8ea1350c56bc54aa365c1f3fa7440d7 2024-09-14T10:56:38+02:00 add exp, sine and cosine tests
+ecd46ffa2fe58cecdacc6e0bbfad35bef59b2f6c 2024-09-05T19:16:23+02:00 update log-2 tests
+f83a0b860f1a0c34e07e7e55f78ebb4af9361513 2024-09-05T18:59:48+02:00 update trigonometric tests
+c7abc263a1759b28dc0514e9005ac48676e91dad 2024-09-04T01:23:37+02:00 update trigonometric tests
+e9cb015e247c209ea916755360e091e0176af0ad 2024-09-03T19:06:05+02:00 update EXP tests
+40419ca52cbacdd1a743e25ed0642e9870b501c4 2024-08-15T14:37:21+02:00 add TO DECIMAL! BLOCK tests
+0e806f6de8d90b81c2d350650c6ea5c5a7e8dfc3 2024-08-02T12:08:09+02:00 Add infinite cycle TO DECIMAL! BLOCK tests.
+d5ddfc29ac331619dbc7d0e9d5853ab05c45245c 2024-06-11T15:24:08+02:00 Add section separators to core-tests.r Update action evaluation tests. Update section names.
+eeb679c3accad24c287234c59d3dc4ea40acdc8f 2024-05-17T13:31:59+02:00 add a unary - test
+9556ad545eb76453f7d7dc04ab94543dd3bf340d 2024-05-11T01:21:14+02:00 Add find/match tests, add swap tests.
+5b0a88b0c699e8734d44d0af6d4e500c5717f567 2024-05-07T16:39:20+02:00 update tests
+2e3388a04c19be0a514b0f7dec9eb691e9fbc477 2024-05-07T16:18:18+02:00 update tests
+531d73bd129a9c8f8acb9f23e34d64ea6e52e96a 2024-05-05T14:26:58+02:00 Add a poke test
+ba9533d96b781b510abd81257e81e3222149c33f 2024-05-01T12:14:17+02:00 update argument passing test
+3e9e1c469128c739a28410f19abfce90382cfeb8 2024-04-20T09:54:44+02:00 Andreas added copy/part tests
+b43c085176b83c6fc395f93dd32682956b8a4ec8 2024-04-19T10:48:20+02:00 update documentation of the test framework
+b5306d0e5a62793e254334177c03d695e2b1bbfc 2024-04-18T13:55:12+02:00 Update the documentation
+c1e79790aaf43f3dcd284f1d105ceaca8cb2df33 2023-04-17T16:12:48+02:00 Add approximate equality/inequality tests.
+a1b0dbfa508f4a233fc87a361f0dbd03959ef3ac 2023-03-17T11:29:02+01:00 add to-c-array tests
+36963142dd2d80843ae43518017534a82d7ad3ae 2023-02-23T11:03:49+01:00 Add an object/self test.
+3de901603a8e7254cc038e71192f85d782356f9c 2023-02-02T13:24:03+01:00 add return handling tests for operators update argument passing tests test that binary operators are interpreted as infix test that - operator is treated as negation when appropriate update the set-path evaluation test
+40499982df3254b8fa48fc4255ba2e13499bf1df 2023-01-29T14:17:59+01:00 argreturn test update
+c36ea021062145fe10494ff4d15d3b8715c1c139 2023-01-28T23:15:49+01:00 add argreturn from prefix test
+0af0e1d1d739ab3a476c32ff584c4cfb9403bdc1 2023-01-28T10:13:15+01:00 add an argreturn test
+e089693465de9c8dfc313c11e461bfe0a1441ecd 2023-01-25T11:52:26+01:00 generalize a decompress test
+8fef32c76ec3a990f1d62aa8ee26ca426d301882 2023-01-24T10:58:42+01:00 Mark an #r3only value test. Make LAST tests universal.
+443abbb2e41fc3604ecc708ef87a47029ced5943 2023-01-18T17:46:47+01:00 Update argument passing tests.
+b71000b8b2e2a685a779629ff22d256db8442b32 2023-01-18T12:02:51+01:00 Add a quote test.
+a657d860d2f0b3c2b77d4832fe150362c63ef00f 2023-01-17T15:43:00+01:00 Remove a FOR decimal test.
+13d31db01bda7f4eff50d830600e6e8b1e9e9e0c 2023-01-17T15:29:27+01:00 Add a script to run the tests marked as #long.
+5d3f6aa38af821d313de9600e88a23ddb80c1cba 2023-01-17T15:05:21+01:00 update the test of argument passing from one function frame to another; update the [make symbol!] test, making it workable also for r3; mark a couple of tests as #long
+921b43d6ecc2cb71994ffda525f8d7b12d2c4464 2023-01-16T06:48:45+01:00 update tests
+df193e1f179f6b3187e010f6949e9029bcf764fe 2022-12-28T19:04:15+01:00 Add argument passing tests.
+27c787dba02bb8b553e5e6a66b7b290d19d30f36 2022-12-15T14:34:21+01:00 correct an ARCSINE/RADIANS test
+6bc43393a1440ac7b1d0b6d26dee12a6b3cb6f09 2022-12-07T13:20:41+01:00 Make some round tests stricter.
+88a3021e11a977d7216427cdebfc5feacfd38daa 2022-11-06T08:51:23+01:00 update approximate tests to use ULP-DIST add ULP-DIST and ULP-DIF tests
+e63c8800562b98c0197e332475e6ce265874ec46 2022-10-28T16:56:23+02:00 add decimal "roundtrip" tests
+2c149005708553e78e028bcca8e2306c910e8c7a 2022-10-26T12:21:53+02:00 update integer! to binary! and decimal! to binary! tests
+6f9ad44bbf4b79af06ff073b0512be1212d78001 2022-10-25T01:45:58+02:00 update COPY tests
+0cefe6db65c7e589386c228033dc96a7839d609c 2022-10-23T19:36:58+02:00 add binary! to decimal! tests
+bae913ee24558f37c77caa11f1b99fe5c508451c 2022-10-23T00:56:48+02:00 correct a couple of shift tests
+c2a5b0f5f1664b42e7596a0790d598f4dd854967 2022-10-22T12:11:11+02:00 Add SHIFT tests, correct SHIFT tests, add binary! to integer! overflow tests, add binary! to decimal! overflow tests
+f2e2dd485db8d844b6375f7b94ff0dc4571a381b 2022-09-27T12:27:39+02:00 Add POWER tests
+920da247c268e65b6d3555909bb2f912abf25873 2022-09-26T00:04:48+02:00 Add a decimal boundary for test.
+1a9b4da628f4aeeb81b94c6cf929c00a2c6dee2b 2022-09-25T09:04:50+02:00 Update boundary decimal! to integer! conversion tests
+6f38c085ccc0629c768297c5b705ce3b6e17a312 2022-09-23T16:05:25+02:00 Use FOUND? with ALL and ANY where appropriate. Accept decimal to binary and binary to decimal tests from R3 also for R2.
+70a805558003a4df6d58f315d8db52a43e6e04fe 2022-09-23T09:24:09+02:00 update conversion tests, update FOR locality test
+e7d785795ebfde98e5b62153c8b2ac4fc07ef3b9 2022-09-22T08:20:03+02:00 update conversion tests
+4612c2931c4aa25b2c831a702a96a157373ffece 2022-09-20T17:16:32+02:00 Adjust conversion tests.
+e80961311f848d6e6352ee1ae418aed304a12c70 2022-09-20T16:14:44+02:00 update boundary decimal to integer tests
+f440065ab794a56fb9045fee6f96787ad2d63337 2022-09-20T10:15:56+02:00 Add time tests.
+4353ff11ccdc320a2dda5fcb01576afd977b80be 2022-09-19T12:41:13+02:00 add FOR tests
+8193dc6b98b1038ad9df12af971a44827e866f87 2022-08-10T23:49:17+02:00 correct test comment, use strict equality
+f25fb58f5313e830520a0b1e5476deccd074585d 2022-07-20T08:54:30+02:00 add FOR tests
+30f62fa908268a3f385e457a4c9229a5c05f1748 2022-07-19T06:48:28+02:00 update FOR tests
+e66fb3c1eca0d7237d77594d6e1710c92e4a0db3 2022-07-17T15:42:55+02:00 Update SUBTRACT tests
+c3b19b15f63de42308bbd4f51b67f10e2f698569 2022-07-15T20:23:52+02:00 Add decimal tests for EVEN? and ODD?
+bddc1ce4b66aad31ffb115333c16dd8fed9079b8 2022-07-15T13:17:30+02:00 Add ABS tests
+2231ab3462c9ebf4b241ffbace7ff01c0d87cdab 2016-05-12T09:44:36+02:00 update doc
+448a7d527b2d66f95bd90625e5dc2def0c0c2bca 2016-05-06T18:06:34+02:00 update documentation
+f676905fd3ad88ccc08e02f714c04ddaaf106507 2016-04-21T07:58:53+02:00 correct spacing
+19d7cb1a73c6ebf279586c4805f79b92befe9bf9 2016-04-21T07:47:16+02:00 move tidying code to the corresponding tests update the test for bug#1894
+05968a636a639d2cd352b144a9762b70f6862214 2016-04-21T07:07:50+02:00 Merge pull request #16 from PeterWAWood/master
+762bebcb6ad4a8607fe866b47a7a67bb101d1a16 2016-04-20T12:43:44+02:00 remove duplicity
+22bef7f7d3c27936e3f5645aee9e9b2b90a59a93 2016-04-15T11:57:11+02:00 mark more two's complement integer tests
+abad0d103f218b5b56df24524e724209fcd4a10c 2016-03-03T18:56:40+01:00 comment two's complement integer tests
+fe9f78a340831f53b0bddde37a07a868fbd2504d 2016-02-25T07:45:00+01:00 add recursive closure test
+79e96dc7cf33da1f496e80854638ebf7e2e9620b 2016-02-05T10:13:47+01:00 add bug#2256 test
+6abe5585b56e15731ff6508483a78647e7dd1d35 2016-01-13T07:04:46+01:00 remove include dependency
+c3bde96c263a3ed2e78c0aa5bc8a1ac67b7f41cf 2016-01-12T19:10:46+08:00 corrected error in map test and added test to delete temporary files created during the test
+2fda6b5cd0b1f88a853c72451f738bea27ab1f2c 2016-01-12T14:29:59+08:00 Added test of modifying map keys
+0bd98b4a9cf45a09890cbf81f5b18912914fb62f 2016-01-10T20:51:41+01:00 add URL tests
+1136e7d2e882ae4f8cd3d4bbce28090a27b59046 2016-01-07T14:57:50+01:00 evaluation tests
+e3906c9439ce27a23b727bc45473e057a2206476 2015-12-22T12:21:35+01:00 correct comments, update test markup
+4056095f83df0f26bebf41852a47c7f210edc7ad 2015-12-18T12:29:12+01:00 add transitivity test
+d19468dc54dcea75dbd41168ed1204f0b6963352 2015-12-17T17:39:51+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+cac2a406768550d0aff87d78382f5a3e8a9686c7 2015-12-17T17:39:27+01:00 make vector! tests #r3only add new use tests improve log-diff.r to be runnable without arguments
+be5d7564884e29db7546e11bc367972f3e7be457 2015-12-15T03:43:44+01:00 Remove DO + plain QUIT test in light of CC#2250
+e02f62c902e85dc3e689b044f731834d77f802b5 2015-12-15T01:00:10+01:00 Add three very basic function-call-via-path tests
+39486f59fee6377583ae189b9a5a7194b00ffbba 2015-09-07T15:37:51+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+83ebb70a87b9a1d971f1586409dc76ef25af0be2 2015-09-07T15:37:05+02:00 improve the wording add an alternative suppressing security dialog
+71f33a0cb0c7056607974e08f8dc41cdafd61369 2015-08-12T16:10:03+02:00 Add tests for QUIT catching in DO string!
+c7cbab66f613e84f8635e7827eedeee84051b5af 2015-08-12T16:06:32+02:00 Add two ultra-basic tests for DO string!
+1a418a5332122393a45218e3b48833672bc83675 2015-08-12T15:46:49+02:00 Test QUIT/return value passing for DO of a script
+d86b414b47134795f149d6d025ce61122de4fc9f 2015-08-10T23:55:43+02:00 Add tests for bug#2242
+12a1626c0a0be574202b4a7d5ece23b48da0fa6a 2015-08-05T11:37:49+02:00 assume that %include.r and %run-tests.r are in the same directory
+8614fd8a8da0a0008e701ff7856e6a897b3aa8b4 2015-07-27T15:51:21+02:00 add a click-and-run run-tests.r script update test-framework.r to support click-and-run testing update doc files
+2bf91a0133b3d1d6ff37294bed9a0c86dc7af241 2015-07-13T12:59:54+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+22fa26e6a46a85d2d4a5f03673ba54d194977375 2015-07-13T12:59:35+02:00 Enhance function help
+76340c6b8c9bfc0ccecfe80eab34d7d181553fcc 2015-06-06T17:48:37+02:00 Accessing a foreign escaped function-local word should fail
+968a605b944347fb9f356aac5e23d0b199d5afa1 2015-06-06T17:43:44+02:00 Add basic function-local word escape test
+a317cbb53c706435004dabc0d805eb58d867d7c2 2015-06-05T14:03:52+02:00 add the TEST-CODE function
+cd74bea0a1120c6fee5c99626ccc49aa76d9570e 2015-06-05T13:19:26+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+188cb7df25d818df4772a1841d41e2d0079d3f67 2015-06-05T13:01:21+02:00 update doc source
+47f5c1e391542f06e833596e0159a0bc3e8dd5db 2015-05-03T04:30:48+02:00 Add test for self-modifying PARSE rule (CC#2214)
+70e355d94172335068d84750bca7580ffdc8d5dc 2015-05-03T04:30:20+02:00 Add basic function self-recursion tests
+c8c35695d43e55f942134852cf1cb6f7ea618590 2015-04-17T05:03:59+02:00 Fix & extend tests for CC#2190
+1bc6820a1e432ed3a0efdf0b75ffdb18410f3cab 2015-01-26T01:20:40+01:00 Add tests for bug#2190
+4106fc2a29ad7ca2b44d34b0261b132aad6709fa 2015-01-26T01:20:07+01:00 Add test for bug#2169
+763dba4a665e7da8980abea35600ff197cc50e11 2015-01-20T01:38:37+01:00 Add basic vector! tests
+d7f5b0ab7cea388aff407af3d2714249df4b5312 2015-01-20T01:36:31+01:00 Add missing annotation for cc#2191
+f57cea6f4d57c861bedb92913104b01f7b6042c1 2015-01-20T00:42:24+01:00 Add basic DELINE/ENLINE tests
+8e20d61428441db1fda33e6a472adee16f0f42a2 2015-01-19T23:53:58+01:00 Add tests for UCS4 LE/BE decoding (cc#2186)
+154121f289aa136738bf60c37b498f391591c5d8 2014-10-31T00:39:57+01:00 Fix typo in README
+e9df70ebdcd014ede366110ffc21fe6de7b677bd 2014-10-31T00:38:27+01:00 Fix link to test framework documentation
+4c27644250b025d577efa64394423e4818c61bf2 2014-10-29T19:23:58+01:00 Add tests for "lit-args" and "get-args" argument passing modes
+b38611e98ffb57bb54a9791273847cc2bcf16085 2014-10-29T16:36:14+01:00 Combine tests for cc#1776 and cc#2072 into one
+2cd1f9776f1f77108cecafef156a8d2df4cc4970 2014-05-12T11:25:51+02:00 Add MD5/SHA1 tests with slightly longer input strings
+9b03e83da285d5880f4092f8c3b714d30621c301 2014-04-11T16:37:37+02:00 Add DEHEX tests, including tests for bug#1986
+686d590870961e696e3ffad620db18579f74367b 2014-04-05T23:16:38+02:00 Add tests for REPEAT pair! (cc#1995)
+962c8443d9ef0024681afd811e6a546d29a49b7b 2014-04-05T23:12:31+02:00 Add tests for REPEAT decimal!
+c2fd9582b1ef00ae604e841bb68bdf605e2125d3 2014-03-23T23:47:14+01:00 Fix test for bug#1516
+669d257d2d75b9478a1ad5a82a1dcd885ed485cb 2014-03-23T21:19:35+01:00 Add test for bug#1756
+8e55c3a8cf184c9ecae88b57850f93d5d6dfc3a2 2014-03-23T16:52:40+01:00 Add test for bug#1977
+3d833484ad27395a32af0276596ad45723776f28 2014-03-23T16:50:25+01:00 PROTECT/deep is in R3 only
+319ac958d6649d414e1ddd501cd0e7899ffa3944 2014-03-23T16:40:57+01:00 Formatting
+5c7271380561b9c2d36e6942912770a4213069a3 2014-03-23T16:40:43+01:00 Add test for bug#1764
+247152cd9d5a9a1f0416a2d86aaa9e6bd6ed8dbb 2014-03-23T16:08:44+01:00 Add tests for bug#1516
+40ff936cfb58f586615b54185ed709e299ec6757 2014-03-23T15:44:22+01:00 More consistently make the bug#1675 test crash
+653a02187a88d4d648cf185852793553b11338a1 2014-03-23T15:40:02+01:00 Whitespace police: remove trailing whitespace
+111d59dcb9ae3c383698a05a4db47c8ee44302f3 2014-03-23T14:57:33+01:00 Add test for bug#1514
+873d149c2325941531d424bd2b92444822e38fdf 2014-03-23T11:59:52+01:00 Add test for bug#1675
+fe8df534a6b101158dcd50a897184486d43f034d 2014-03-08T13:01:27+01:00 Add PARSE tests for input position saving (set-word!) and bug#2130
+0ac2f887fb727d3732e9e30437d9d2292ec28038 2014-03-06T13:10:05+01:00 Merge pull request #15 from earl/codec-tests-with-fixtures
+bb2d2c75a43f0b5d8f3f6cb52924ef9af778582a 2014-03-04T18:00:08+01:00 append object 'self tests
+37cca46466454d74b3f187099ddc804dff6527db 2014-03-04T17:19:19+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+77e582411e59101f45991d9ff8e8dbfbf7884b25 2014-03-04T00:24:25+01:00 The else-gone error is now gone
+fb25b18c773a7e8e7c412eeb572162fd6135d5fd 2014-03-02T02:04:54+01:00 Improve .gitattributes config & comment to be explicit about the effects
+ebf38ea8bf1a04502dcacc10ea50d7eba29b32aa 2014-03-02T01:01:10+01:00 Add more codec tests (from Cyphre)
+b3585f32ffb963087b19fd6a9a752e92aa4a780c 2014-02-28T13:09:50+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+10c0160c21951ead624df3e4af381d52388206d4 2014-02-26T23:15:09+01:00 Add test for DECODE regression from PR#156
+c205044cdac0549056d1eaab04c61484c4248e22 2014-02-24T16:44:40+01:00 bug#2072 correct the do binary test
+9d2a811ff032766f40584d7cb8455f765cb71c46 2014-02-17T02:50:47+01:00 Incorporate changes from CC#2055
+a898e051ec983ee9615ead8e09b348160fe8642e 2014-02-13T00:20:38+01:00 Add tests for bug#1457
+cfe6ba97c06d2059e1c85494b217e80fd12ad05b 2014-01-17T18:11:34+01:00 update to integer! tests
+87073d4b2ed4a37aa76f08f6cafa4ad0229f02b4 2014-01-04T23:15:30+01:00 Add more unwind passing tests
+502075cc3a4116c1785081e602eb8e28efd3247f 2013-12-20T15:51:05+01:00 Correct bug#100
+de9148654a0192449591e260aba0501735115a81 2013-11-18T12:20:20+01:00 fake header for SciTe
+98fa51f72ee5b28c2e3e4f6589ce21314d97808f 2013-11-17T03:43:00+01:00 bug#2086
+810cc1c1f5b9f30f1308ea6d53ea65a22b15545f 2013-11-12T09:23:46+01:00 bound? test added
+de4785d61b2de9741b873df04807f0f48c86186c 2013-11-10T00:18:33+01:00 Test file format documented.
+9b4967a27350a5e309be5186a3de11f3f9eb271e 2013-11-10T00:04:42+01:00 adjusting text attribute to eol=lf
+b1b47dec73fa12fccdb858da8a1d8d8d5af6cebf 2013-11-09T23:44:24+01:00 bug#96 test subdivided to two
+3d1717d182879f47c287b886ed6e3168158f553f 2013-11-09T23:38:02+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+046abdf8ff1c9a39059724140864de908347ee48 2013-11-09T23:37:40+01:00 minor update
+ae944b9a589e1cf8fb9412801a5c0da8784aa29e 2013-11-09T14:34:19-08:00 Merge pull request #12 from johnk-/master
+ebad3b17c9c3aa4388c3b8e1efe4aa5db64551e0 2013-11-09T23:25:11+01:00 'guard variable made local
+e91f56dac893579ed5769c30c6cb1325ef8dc244 2013-11-09T23:25:44+11:00 Add new tests from CC in range #1-#100
+ea387a78e5ca62369dd947934e49a7147aa8b6c0 2013-11-09T00:07:03+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+0fb3c6bf692e457bcffbaa7cb534572da3def709 2013-11-09T00:06:06+01:00 bug#1748 - adjust #r3only attributes
+266ee5438c7b05be81f22186e9689fcfba2d7f14 2013-11-08T15:37:29+01:00 typo corr.
+40ecbac80ed9e8a3fc220bbb353cbf5878ce66e6 2013-11-08T01:07:30+01:00 bug#43 - test moved
+706cb38a2d20b79f944d725dd785da2ffcb3b062 2013-11-07T15:17:34-08:00 Merge pull request #11 from johnk-/cc43
+a0eddc09074716334f025da63bbfac15872271a6 2013-11-08T07:53:59+11:00 Test for CC #43
+cdded68e89d22918dacf0e876b7f7cf35474f632 2013-11-07T16:41:36+01:00 bug #1748 adjustments
+eb6bd2f344835920616d388ba0b3e0a6601adc84 2013-10-12T07:47:11-07:00 Merge pull request #9 from hostilefork/cc-1748
+9c86df5c3d0b721a8c136f61be669db15f221d2a 2013-10-11T17:43:40-04:00 bug #1748
+f6458105fef5ebb1293ddd22e452d9108535b5c4 2013-10-06T10:19:37+02:00 Doc format
+d2e7ed5af884beb81f746f76b0597d83cf78829d 2013-10-06T10:10:13+02:00 Doc contribs
+8f62eda628ff05d5d022b360cad407eaec3695ea 2013-10-06T01:24:36+02:00 bug#2076
+daf55ec819424c03ff51b3f0e6f9b0f9f7075aa0 2013-10-06T01:14:10+02:00 bug#2076
+68098b1b79bd2ccd9b4fe207f26e289b52bde58d 2013-10-04T13:50:11+02:00 Organization of tests
+ca45a00e5bd2c311a324beb684389bf0a5faf092 2013-10-04T13:39:04+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+0240a5cec56495c7e2a4b7ed03909bbcdead34c8 2013-10-04T13:38:22+02:00 How to contribute
+f327e531596ba1f3ec324d31b21173e68dcff6a0 2013-09-30T21:17:28+02:00 Flag bug#2040 tests as r3only
+778c1c72f47d46f482168e06cfb0a85c5eb36b08 2013-09-30T18:34:41+02:00 Bug#2040: PNG encoding crash
+50602bcf538b642f2d96a2e8cc29a577f57c3bbe 2013-09-27T14:32:44-07:00 Merge pull request #8 from BrianHawley/bug_1979
+b77129ff8e01c2079d74486caea61b4d0446dc95 2013-09-27T14:28:30-07:00 More tests for bug#1979
+15571a645ab67fcce2221d40402f459481679822 2013-09-26T23:13:35+02:00 bug#1979
+214010537404c5c92da4cb777c6d839ae21d2f0c 2013-09-26T12:17:50+02:00 bug#853
+33a44b10465b702f842ed46ad424280cd7b5ac7b 2013-09-26T08:59:52+02:00 Amend copy/part tests
+7b8ae022c8bc33c53b838e84c5b840984f5948b1 2013-09-25T14:53:37+02:00 Amend bug#1049 tests
+3b568748af32b8c27820b1480afbc1cf8d4fc4ad 2013-09-25T14:12:15+02:00 bug#1068 bug#1066
+53a97f2f5e8ae4feb83010dc72d782c67a2647d0 2013-09-25T09:45:07+02:00 bug#1459
+526a19a8c9e010e5f6a62c73b29e9035a0eb027c 2013-09-24T03:35:49+02:00 Insert missing flags
+2a12419da14d0dce575b331eebd9df669b4ab44a 2013-09-24T02:16:43+02:00 Shift tests
+0e9400b92d4bbc1efa524b644ca1dc87c640edc9 2013-09-20T15:20:37+02:00 Update %bench.r3
+f88fcef5e9b87f7661c803d39f0744df60424fe3 2013-09-19T21:30:28+02:00 Use more reliable time-block in bench.r3
+15d918605262255f20d6284d1fd3e9ecd5e80268 2013-09-19T15:00:58+02:00 Bug#2011
+4e5f304bd0fd080401e49c0a3d9a85a5c1a3cea5 2013-09-19T14:48:55+02:00 Bug#718
+c6b6c90a89ed2a3e59835124e735336c47a98106 2013-09-17T21:36:13+02:00 Add bench.r3, speed benchmark.
+7377d0549434e22d4eacc078df413a8c3058cb86 2013-09-16T09:45:27+02:00 Modify test redefining 'q
+b9c074c129c0475d4dab4dc6647e8fa23e6319fb 2013-09-15T19:44:38+02:00 add lesser? tests
+2a2c19d2791b86b9750875d552dfa82493a59f4b 2013-09-13T01:08:09+02:00 Move RECYCLE closer to the PROCESS-VECTOR body tail.
+dbecaa2733ebe51e79144c93362f70dccae3d1d4 2013-09-13T00:52:13+02:00 Recycle after processing every vector.
+9a4f361d0d47c1901f0906a42f87bf5d88cdfcd0 2013-09-13T00:07:16+02:00 Moving log [source] closer to the start of vector processing.
+de7698810d5a0e5f7b8def18bb1abd821ec25862 2013-09-12T23:17:15+02:00 Rule formatting
+d72eacb243af6e159c804792570b97c6d5986c66 2013-09-12T18:16:07+02:00 Add licence
+c7df0ba63a8e556a0c6b4d8ed00495c7386d49de 2013-09-12T16:42:04+02:00 Fix typo causing test dialect failure
+8eedae8f121ecf014cf78535dcb463278a5a57a9 2013-09-12T16:30:51+02:00 Update boilerplates.
+c16538caf1331bf7dfca079007ec444c703c2fb0 2013-09-12T15:05:04+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+825fddbe835cc4ee149fabb3617e6f603b5d202c 2013-09-12T15:03:57+02:00 Boilerplate added
+d6a9287dd0276d04b09b8d6c4294fef61b3c535d 2013-09-12T09:53:31+02:00 Add bound? test Sort tests
+fe8407538445827fb370e81113bf07cd08b85f42 2013-09-11T23:04:16+02:00 bug#86
+c968927bddc52eaa98ddae8c249fee87accdbce3 2013-09-11T22:41:27+02:00 Remove 'test-mode (variable not used) Add bug#84 test
+0f3595431fa1ee41257d10ea5fa4f78c7821e93b 2013-09-02T20:02:31+02:00 Tests have been incorporated into the core-tests.r file.
+9ee4b8a7e387e7d3dd308555202dfa1a1b966cdb 2013-09-02T19:27:41+02:00 Correct LOAD decimal accuracy tests
+b371e35f32d8d596a030a63512d7831b6de5c625 2013-09-02T18:13:21+02:00 Add LOAD decimal accuracy tests.
+d0285306742c45220ca5ab6d98e3c733ad8dab1d 2013-08-30T14:31:14+02:00 "new log" print
+48016806a8b65396422771bc83aef6144792ca3e 2013-08-23T22:17:20+02:00 Flag SPLIT tests with #r3, as SPLIT may be added to R2/Forward
+57b03798b498b97e028795a1dbfd42a0204040d3 2013-08-20T23:33:36+02:00 Add Gregg Irwin's SPLIT tests
+6dab2529d4275e4ae14b03d56909548f8c072072 2013-08-19T20:48:01+02:00 Update test for cc#2049
+3090163cd98b4ddf44a6a0480ee8a9762dc403e0 2013-08-18T11:56:53+02:00 bug#932
+90b4ceb23047b406f611d98ed98f033ef125dfe0 2013-08-16T13:39:46+02:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+ed2f958d3672e727a438b65e7a02c0fa204a2dc2 2013-08-16T13:39:04+02:00 bug#2049
+b753939f063fd0bacff939cc2a7abcabc3ccc0ac 2013-08-16T02:56:34+02:00 bug#2050
+0a03da0ccac53873d3cb0106c6cfa53772e83a9e 2013-08-15T19:31:33+02:00 Additional test case for bug#1152 ("SORT not stable")
+9b940507919ff9a3cb13a4456fc1df77439e3b91 2013-08-15T15:08:35+02:00 bug#1863
+71b8a308dc613781101a639f1c7b6f6eea1705b8 2013-08-15T13:58:26+02:00 bug#2048
+70968a21abe4654ec99433753f7dc6d4e1b8bca6 2013-08-09T14:58:06+02:00 Object cloning, bug#2045
+74a113a040bcefc56f3c2a0e763ab3b97970a969 2013-08-05T16:45:29+02:00 bug#2044
+1bdd04f4e1d080f8427763c924734b8771dbc45b 2013-08-05T11:26:43+02:00 bug#2043
+ebbfb68d49a676379440e03ccd8bd97cb5973550 2013-08-01T20:44:39+02:00 Correct test for bug#1914
+61f83ee46fcf1d0a626fab380c493fbe17ccfdfa 2013-07-30T09:51:16+02:00 Bugs #447, #216, #1914, #1893, #2025
+0af4381217e246b41b6194cafe196479a2d40574 2013-06-21T14:30:27+02:00 Fix missing closing bracket in TS crash test
+a5d0c12b88c05a9d3c7e21fe305944fec1ded84d 2013-06-20T13:05:25+02:00 TS crash added
+509193725932345dcc55fb7a461174ba792f70af 2013-06-17T15:42:46+02:00 more flexible log file prefix handling
+c8c33886e5b7734f9e86c2c031744dcf17a00c7f 2013-05-09T16:08:15+02:00 CRASH-FLAGS variable removed
+c869ff69d9a6f5774475c9d8372729613da4c235 2013-05-09T15:07:37+02:00 Do not calculate code checksum The DO-RECOVER function now takes CODE-CHECKSUM as argument
+f4ed19e847996579b511db99337e099adb712c20 2013-04-08T18:31:48+02:00 Image! changes, bug#2022
+ae28aa500a731929769046c0c329af90b1a04a55 2013-04-07T04:45:06+02:00 Bug#2017: RESOLVE/extend/only crash
+56a3f65756a54bf4279c714d6be768f1cd3aa7cd 2013-03-26T21:26:10+01:00 GOB GC test update
+347a18551e6035efe2b8219dcda85dbd058fefdd 2013-03-26T19:22:11+01:00 GOB GC test updated
+401ba03802ac71486164d8695e6247d261517c4a 2013-03-26T12:02:21+01:00 New GOB GC test
+8bea95865c20ef0a6ee39b51953e61309a150db5 2013-03-23T00:41:31+01:00 Test for another instance of bug#851
+30ce3d44b938e66c46d645b8913e322b4b9a6aaf 2013-03-18T19:36:31+01:00 FOR tests
+c4d38f6c28335d859008c7fa1e1b0fab2659e4f5 2013-03-18T19:29:18+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+966d21cb25b0185a9c6a613d1f92e7bc6fa13944 2013-03-18T19:29:07+01:00 bug#1993 and bug#1994 tests added
+e77dae643d86e30f4623f55779fec583055e7448 2013-03-14T01:17:27+01:00 Bug#1974: DIVIDE broken with TUPLE
+446f194794e8850c0b19a2ea67194ce2cb888f86 2013-03-13T17:46:19+01:00 bug#1994
+f161dff3765b01b0aefcec0156c26a6a879b1c44 2013-03-13T16:39:43+01:00 bug#1989
+8e6b313534849b622bef73c093305ea0589ee4aa 2013-03-07T14:22:10+01:00 bug#1969 modified
+9c5f06a0df83ce54e0eea5296cdd8bfcce7d5d9a 2013-03-04T12:05:46+01:00 Documentation source added.
+4d53914d6f9723f18781e117412cdd425cc33d1d 2013-02-28T09:25:32+01:00 bug#83
+c204a7c6e00944baf9598fcd3164ad0cf18ea260 2013-02-27T16:52:49+01:00 "chapter names" turned to comments
+de66004299f83acc7a666ecf26264ae4e5c3f1b5 2013-02-27T15:41:14+01:00 bug#1679 tests amended
+9dbb89998ccafa6839552e5811af80bf735150f4 2013-02-26T17:16:36+01:00 bug#1969
+e9d4c3c8eb581ec1902d1f9c47c37b6fc56146f5 2013-02-26T14:32:30+01:00 Dialect failure handling corrected.
+71410ab06e84117ec2dc36443f931854997e144e 2013-02-22T19:19:09+01:00 Add PARSE tests for TO/THRU integer!
+6d95f8a65349a14ffdea558054249e67baf786ce 2013-02-22T03:56:20+01:00 Add minimal tests for MD5 and SHA1
+eb2d8913ac99553e852785a301542d9ef48c3c88 2013-02-22T18:22:50+01:00 bugs to #81
+782209e930c4c00c614a575cb6a983521742624e 2013-02-21T20:18:08+01:00 deleting the summaries.txt file
+30e8478b78e436e2e79868ec402c52630a6a0c48 2013-02-21T19:57:32+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+209804b92765487f85879da94a1ecc787da64705 2013-02-21T16:34:11+01:00 log-filter implemented
+8bef611a8a68dc0ce7fdd2c0a8697a123bff6877 2013-02-21T15:20:26+01:00 Simplify & slightly extend bug#1959 tests
+dba0c6003fa648f7e444c0a9ddb1f38fa21dbdd5 2013-02-21T14:15:21+01:00 date field removed from the header of the log-diff.r file
+0d43a4ca77cd049ed68b661b3df528b2d10af707 2013-02-21T14:13:00+01:00 * Date fields removed from file headers (causing just editing conflicts) * #*crash flags removed from core-tests.r * #*crash flags removed from flags.r (flags aren't used from now on) ** the problem with flags was that they had to be readjusted manually after interpreter changes
+5a949e878b37fe66bfa1f82c93465774dccdfc93 2013-02-21T13:55:53+01:00 * Date field removed from the header of all files (just a source of editing conflicts) * interpreter checksum calculated from SYSTEM/BUILD if the interpreter executable isn't available to the test framework script
+e97801a1ee8a1f23804033600d612049f902222d 2013-02-21T13:30:40+01:00 bug#77
+299f4aaa099c43a58112f982bd66867382d472de 2013-02-21T13:19:57+01:00 bug#76
+7c2db7c6f88329dc30e15de277edb0400f19ef39 2013-02-20T19:47:08+01:00 the remaining tests ordered (forgot them at the end of the file)
+f1fd28d1eedb40c7097a1dd1e2eb4cfcd010529a 2013-02-20T19:04:59+01:00 Added a THROW test, a "dummy" HALT test (to not have an empty section), a couple of comments and ordered tests (some sections weren't contiquous)
+8bf571a642662d9a5f8b6f8b7814ff8633390870 2013-02-20T17:10:39+01:00 bug#75 test is #r3only
+43fafc36d59fce79343e59d6300855bdd327c493 2013-02-20T17:05:47+01:00 bug#75
+ecf05bed854e7c9d48acdbf9013bd767247dfc3b 2013-02-20T01:41:46+01:00 Bug#1959: PARSE THRU properly positions to END
+6e27a46bc57d6c6349994c522c984a5ffaabe308 2013-02-15T01:13:32+01:00 some exit, return and throw tests corrected (bug#1509)
+9a3b46ff76303145b9d4d6eebebe80fe95fa7385 2013-02-15T00:56:38+01:00 CATCH-ANY now properly classifies RETURN/REDO even when it causes errors, etc.
+feeec35921319fe8a878d06b5743827e99284894 2013-02-14T22:09:05+01:00 DO-BLOCK wrapped into paren! now comments enhanced
+3fd5c878758c0bf310cd303b2517c12d0fedb2d9 2013-02-14T21:51:46+01:00 catch-any now RETURN/REDO -proof
+d76a7054bfa4adcdf12873d011e68d7248264166 2013-02-14T11:44:51+01:00 optimization, clarification
+9f3fdd56f00e430c48d7cc82a494f02bb18442d2 2013-02-13T20:22:05+01:00 core-tests.r - path constructions readded
+eebcf7c11d93e3a03f510bb9bf774f643a48fe79 2013-02-13T18:26:53+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+df4c585930cbb7d379c9750bc94712c6ea57c50c 2013-02-13T18:16:14+01:00 Apply tests
+06a270be5891c2984cb0c5d708cbcaee473654ce 2013-02-11T06:20:26-08:00 Merge pull request #7 from BrianHawley/advanced-set-2
+cdbb78b552d568527870468d8f39e33dc384c86f 2013-02-11T00:04:18-06:00 More detailed SET tests
+482622be9091e252d556c55b2cbb18c0a034b5e3 2013-02-10T12:59:48+01:00 Bug#1949: RETURN/redo can break APPLY security
+8b721efd22e14057a79034add33ee414fb158958 2013-02-09T13:29:40-08:00 Merge pull request #6 from BrianHawley/advanced-set
+444bbf5dddb6d272be91c90463fbb0f2b6cdccee 2013-02-09T00:38:31-06:00 Tests for obscure SET bugs and features
+c7223a059ad89923ab8a83553a3a3e570fad6cc7 2013-02-08T19:33:35+01:00 log-diff: convert args to file!, for CLI convenience
+30adc43f420800ab01eaa2fe3d5646376775ae91 2013-02-07T15:17:46+01:00 - correction to %log-diff.r - removing duplicate tests
+b29dc21a151158a43a9458a6c37f6d79da3bfdc9 2013-02-07T12:02:08+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+890b72d2a5fc1307ef6f603d4f63097f0c6e85f3 2013-02-07T12:00:43+01:00 test framework update:
+385dd519d7ca5f80deadbd90f887611bdcf229c3 2013-02-07T00:46:36+01:00 Bug#1760: add test for REDUCE/no-set
+4d5e94e40fc39d5479ef7bbffb92a8e950e25794 2013-02-06T16:35:49+01:00 unneeded flags removed; minor corr.
+b441223b1c037f4751abd0e85fe9bc9bbbccf9e0 2013-02-05T19:05:36+01:00 removed unnecessary #r2only flag
+3550503353014323db1348a62f80ee21ef889214 2013-02-05T18:04:21+01:00 Bug#1948: TRIM
+73567de7fc29b3a48a5b52fef9daec499fc804e3 2013-02-01T17:57:37+01:00 test parsing
+d408f73b84647b2266ad877a934175ee782ad5e0 2013-02-01T17:34:15+01:00 excessive #r2only flags removed from #1947
+ee4ca8afa8b5ff9ce2ed2871c99c82968b5ff79a 2013-02-01T17:13:10+01:00 minimal time corrected
+e7d554a2756a0b7c49e5773f7f9a38bd5fa7c082 2013-02-01T16:13:32+01:00 Bug#1947
+fbcd6791882b8e4d024fafe4475ba620dc72208c 2013-02-01T14:20:19+01:00 comment removed, the test does what it is intended to do
+c13fa6568d33f1712832150e54cee4029dd6b83f 2013-02-01T14:07:22+01:00 system/options/decimal-digits test marked as #r3only
+c39f3f8e4fecd13f28a509051bdc5b614db55129 2013-02-01T13:32:35+01:00 #1945 and #1535 tests added
+82f63cabdbcfcac1a2756759b8ae1120e791eff9 2013-01-30T18:38:01+01:00 bug#1945
+f13bfee3638e1ebff6c4684bd85d56ecd64072af 2013-01-29T16:06:37+01:00 up to bug#71
+619a1bbae2d081b49c2836b312586d2718182ad8 2013-01-29T15:07:19+01:00 HALT test removed
+71ab49dc76ada202916b1fe57f5169f54eeb79ba 2013-01-28T19:53:02+01:00 bugs to #64
+90d540486225ed732481b6f3befa1d2fb8f60354 2013-01-28T18:54:53+01:00 bug#50
+f62b38ec8539302a031a4d22e028a75bce6c867f 2013-01-28T18:38:14+01:00 bug#42
+c7d7f347f7daeacca385bca289253418ba327905 2013-01-26T22:02:20+01:00 Merge branch 'unwind-propagation'
+75d00018bd25cdd0b7f66d7884af588d7b6ba399 2013-01-26T21:40:37+01:00 Remove tests not terminating
+4958f1964c56dd0503f11143cc82f4e9d9677095 2013-01-25T13:54:58-06:00 Organized and fixed unwind tests
+6f5437990e66ad4848579c4bb87950785c0b51e0 2013-01-24T22:14:55+01:00 Crash resolved by Andreas
+9a165de19b0de64a866da52e6b7127bacb161400 2013-01-24T17:41:09+01:00 duplicate removed
+badb7ba87c47c7081c3e11d5274315a8b3f48e6b 2013-01-24T15:09:02+01:00 Load test results
+0b8f63c092f0c6f962d8ff2dfe5ba9501146c91c 2013-01-23T20:19:45-06:00 Extended REDUCE and WHILE unwind tests
+b680c556ccc2a1e721fd4b3307435c5c85993fb0 2013-01-23T13:18:02-08:00 Merge pull request #4 from BrianHawley/error-assignment
+18fdf15475a8a364945862d89b6826c7711b4d83 2013-01-23T14:54:32-06:00 Bad unwind tests and missing break/return tests
+5332192e2ecf99cbd7322c6a32e65be609057534 2013-01-23T14:03:26-06:00 Error evaluation tests
+75aa116fe0d075e3ef73fd175a261538f472a74c 2013-01-23T14:29:05+01:00 more max denorm corrections
+e6c9351dba6a6b5e128821262e764521c0025711 2013-01-23T14:08:33+01:00 more max.pos.denorm. modified
+991931ecdb34ffee123ce19b6513740b363bd136 2013-01-23T14:07:02+01:00 max pos. denormalized modified
+0af87c4ce3f1114c6d24ca7cdd70a03242d153eb 2013-01-23T03:34:55+01:00 Duplicate tests removed
+f35d969fc3c05aa86d4276234b8f03ad01089218 2013-01-23T03:12:17+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+16fd4d513e3f7cc20051dad62016b130e160f3e0 2013-01-23T00:24:22+01:00 Mark symbol! creation testcase as crashing R2
+7bbdcde90eb2774d5ac329a6505ae8c029cc7c7d 2013-01-23T00:20:09+01:00 Renormalise all files to Unix LF-only line endings
+31e3ef45fa309a226e6155e3a6919edae04c59c7 2013-01-22T15:00:19-06:00 #r3 tests should work in R3 too
+1d42b23c9d0e290ea37e63f05ef6515011694f8d 2013-01-22T11:08:11-06:00 Minimum acceptable .gitattributes
+1240c2ba83c661790778b01d5887ff4e51b0c58a 2013-01-22T10:33:57-06:00 Compatibility fixes
+8f1f330e687f47dc40bdd7769becf64cf7db79d2 2013-01-22T08:28:04-08:00 Line ending normalization
+a0966239fe6daa2bdf85c00d2d983e9eb583f1b8 2013-01-22T04:17:14+01:00 Add two basic INDEX? tests and test for INDEX? of NONE (bug#1611)
+813836b41e9fe5cda839a701829879dc85416093 2013-01-21T03:49:10+01:00 MOLD, MOLD/ALL and LOAD tests for the decimal! datatype
+da3bc9f8ee604dc3a1365ef61fbf6f383a6a1f0a 2013-01-21T00:36:13+01:00 correcting the bug caused when system/options/boot is none (R3/Droid), revealed by Cyphre
+bf407d7b3f1c35a855fb0bb34f5509d139c334d4 2013-01-20T03:18:41+01:00 bug#1936: select returns incorrect value with block argument
+5b1f6b66f63128bc5f7cf7e0686246e2256906ca 2013-01-19T23:43:16+01:00 commenting out some "failing decimal tests"
+3d7716f3fc60cce5fcd296f7ac11a4a05caf7335 2013-01-18T21:21:03+01:00 - LOAD tests for decimal! added - accuracy tests for MOLD/ALL decimal! updated
+65b9a707ff9634a6efbff78cb02739d2e914f0a8 2013-01-17T14:26:07-08:00 Merge pull request #1 from BrianHawley/patch-1
+4c762f3684c7a27f7b5b1214738ea562a3133426 2013-01-16T23:58:42-06:00 Better test for #44.
+929e5a1cff66cab624deec5cfdc2fce682c912d9 2013-01-17T00:02:37+01:00 bugs #32,33,37,38,35,1934,41,48,44
+d0395475c3770135f40035806a11216435bfd489 2013-01-15T20:31:48+01:00 bug#27 test added
+5d6b34909507fdef5921d2a42a9d60039bd61649 2013-01-15T18:26:27+01:00 - run-recover.r added to recover from crash
+3e7d6111c786586d2dfbcff1a470c9cd4bccd6aa 2013-01-15T10:28:06+01:00 test parsing update
+df7d91f23866a4b4e2aab17049da1528f94b4ca8 2013-01-13T11:08:04+01:00 parsing simplified
+94e3f7c908355c5ddb2951619cd8c63b856b7c49 2013-01-12T04:05:57+01:00 interpreter finding: 1) system/options/boot is absolute path 2) system/script/args is a string 3) using none
+cb0c149fd7d73d57c243f201915db52192c5ab23 2013-01-11T20:47:23+01:00 HALT removed, Date refreshed, README.mkd corr.
+22ef36b01fab2da8594d7f28a42e1eb9dd0439b2 2013-01-11T19:43:44+01:00 - test summaries now contain -- interpreter-checksum and -- test-checksum - log file name also contains parts of checksums - for maintainability summary generated only in the test-framework.r file now
+a87413e8024cca750ff72c4e9256e5e9557bfba4 2013-01-11T00:20:28+01:00 removing the header-test again
+3e85cc7c747257f93f80f7d344514d43391396cd 2013-01-10T23:51:08+01:00 header test added
+3d35a974244277d5a4b81278e0d5c856e62d0ea3 2013-01-10T03:02:52+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+ddfb2a497e4fa525e6d63de27962201b87010bfe 2013-01-10T03:02:13+01:00 #r3 described
+24b7fe00493cb9faf735c6dbd06cdd7a45dac4b2 2013-01-10T00:27:58+01:00 Basic tests for R3 map! datatype and bug#1930
+625744598a42518145ef4dbbd9bfeb7330a4c052 2013-01-10T00:25:34+01:00 bug#682: parse thru tag!
+4b749d51e3f9bb40583d3a447a2dad6cbbb12e37 2012-12-31T23:10:41+01:00 bug#26
+e1e4be7dd4659301146ca45f35500554e3217947 2012-12-25T12:13:12+01:00 #16 removed
+21f6b6d8c3d9ca644c2bbde32c1c8bce3a63d66a 2012-12-24T22:05:06+01:00 minor edit
+241d4726663eb0ad8dc9b02ddc3e570e9763b587 2012-12-24T21:56:40+01:00 Bugs up to #24
+f553bb1485b4e3a28ef67c8f23b1f661a9203ec0 2012-12-24T14:15:25+01:00 bug#8,9
+3813035979a6ced70125d4c88a13126931047935 2012-12-24T10:25:46+01:00 bug#1875 - test restored
+31af5721287efdfcc0eb528eb034378b2a85fb8b 2012-12-20T22:13:57+01:00 bugs to #6, console summary and file summary unified
+f1bface3b7f0e30ba1b619b0f91d6e6544cf2442 2012-12-20T12:00:29+01:00 bug#2
+081e01186a1f02bcd5b5b92d8a3c91435cd0d0e4 2012-12-20T04:25:33+01:00 bug #1
+ae4328ef6af6ef108ebcc9da98d957541a7271af 2012-12-19T17:57:39+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+c6eece372cb53ba36abdcbfa292475f080bfd098 2012-12-19T17:39:51+01:00 functions/comparison (shuffling tests) bug#28 (comment) bug#49 (test added)
+d6c452cda16c7b0bde9e2b3ab947e2ffcda97ddf 2012-12-18T17:12:38+01:00 Test RANDOM/only with series not at head (#1875)
+b3f7d28bcf9714b1b42ef587c09dc49a3b9408bc 2012-12-18T01:24:06+01:00 Fix incorrect total calculation in run.r
+1827019238b41dfc86182a1eb160f5aea8c60a9a 2012-12-17T17:16:42+01:00 pair + none, pair + string tests added
+23e5284266061eca15f330295b92680d084224a0 2012-03-15T16:29:49+01:00 COMPOSE crash
+dab52eb415e3de920b1853eb706b180703534d85 2012-01-18T14:39:34+01:00 Flags description added
+9899f410dec1601bc8874216b2ce8e9c22ea00c7 2012-01-18T14:18:41+01:00 APPLY test added
+4e5b650076d4f9b00c15be0d8bf3fdb831607eee 2011-10-25T13:28:20+02:00 #1896 and #1894 crashes added, #1049 mentioned for EQUIV?
+e8755e75e134d66a4f3d3e30688b76c6ec2324ee 2011-09-19T17:08:27+02:00 map-each return test
+0981672cb5bc8c8cedeba2567c621148440f716f 2011-07-11T08:22:00+02:00 Summaries refreshed
+45788e36b6cdf624927b3b71adff9927aa5b96b0 2011-05-01T07:19:30+02:00 empty string PARSE rule test added
+7329829e893a77074074f88e956c357bdef89c62 2011-03-15T14:27:40+01:00 Fix syntax error typo in testcase
+1b2f73e6e21c871b6ca6efb47c3bac097fbb7584 2011-02-23T16:37:18+01:00 Add result for 2.7.8 4.2
+31489383b799fb2922e3156d6bf92f9e598c694f 2011-02-23T16:36:31+01:00 Add result for A111 4.4
+8e2053f0f5330b148d4949e9ca55a2909a48f002 2011-02-23T16:34:22+01:00 bug#1822: DIFFERENCE on date!s problem
+d62f57a53062e78107a1dee4c0d895af160f2450 2011-02-23T16:34:09+01:00 bug#1820: Word USER can't be selected with path syntax
+7c2ba0f4548368fc36d6d5287db41241f68ef24f 2011-02-23T16:33:32+01:00 bug#1810: REVERSE/part does not work for tuple!
+51ae729de8d1bd4522d1fc82b5e32a1d25ab4975 2011-02-22T02:25:28+01:00 new summary
+e042682b31ab91de667d61ee23a1a9aecaf3b75d 2011-01-11T12:17:18+01:00 bug#1817
+e502b06a5b4c588a836a747fa6df6f5a7c54ed68 2011-01-03T00:40:05+01:00 A duplicate crash removed
+1ae68e1e461a814b94c23231b4de8176a83322ce 2011-01-02T08:47:49+01:00 two r3 only tests marked
+876000892313fe39815c590f1591178db183d0e2 2010-12-15T10:52:39+01:00 datatypes/gob.r section added
+9b7470ea59c73133613a3397a29f05140d43999b 2010-12-11T20:38:56+01:00 Add tests for bug#1152
+fdc57e62e1ae6e4b42ed3f0c298839df5078cb4b 2010-11-24T15:47:17+01:00 #1674 corrected
+1c7b0844e565e61c2689b08f2e7a6ae0d9997c0c 2010-11-24T11:19:19+01:00 1776 test update
+b84c3f48c8e94565ef0916e2887c253391da8644 2010-11-23T19:23:37+01:00 #860, #858, #857, #876, #1776, #849, #848, #847, #846, #845, #836, #833, #799, #747, #719
+a703a9e1d23e529cbcdd1dd473c417b27bf2f303 2010-11-23T15:55:41+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+8dd6a6fae148704da5dee2b974dc1d80162b52ea 2010-11-23T15:55:21+01:00 #1775
+2799c091cde0c8a9320f01bbc98d9a5c406a4efa 2010-11-23T00:58:44+01:00 #852, #822
+847746e31d188cb5c587c2b48ca0e228922b4281 2010-11-22T19:44:46+01:00 #921, #1084, #1135, #1049, #876, #859, #855
+6565d8b887fb69d58422afae8ffa2667f3b20ed9 2010-11-21T16:24:39+01:00 #1753 update
+3c7c5b13a4467b339a59909450b77483afb33e69 2010-11-21T16:05:09+01:00 Add summaries for OSX PPC, Linux, and FreeBSD
+3fced0f4c638ff92079dc5c7215671e057dc0e50 2010-11-21T16:10:43+01:00 Add some missing locals
+63bd88174d098a53a2579e12dfa189e24a4b13c1 2010-11-21T16:08:54+01:00 Terminate summary line by newline
+3736dcde4d30e539a5e0080b11590c9b7e4a01a6 2010-11-21T16:08:56+01:00 #1753
+01d9b26c960177d005a401d852bc261aeab95965 2010-11-21T15:43:49+01:00 Kubuntu summary
+fb3606412605f39daa72f45efceaa3b567428057 2010-11-19T15:10:56+01:00 Summaries added
+c0031b5f0bf144985414d29bfa8d20d391715b31 2010-11-18T16:56:15+01:00 #1240
+363f0b80349512386dd4ff3bbc3d332a3b815ce7 2010-11-18T16:29:59+01:00 #1268, #1267, #1246
+324ce58feb34e930eafbc5e75fbf4518fc78f302 2010-11-18T15:31:15+01:00 #1116, #892, #1268
+d1fdb86a6e9a7335112b283416532a96bf58c01b 2010-11-18T11:56:18+01:00 Crash statistic added to the summary.
+269d9d1923209f7760eaee9e7d3c313efc406aa3 2010-11-18T10:07:07+01:00 #1122
+e4ff734aacbc62650b97c705ee02aa7c45f41e71 2010-11-18T08:48:27+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+fa7d49fbc8568df8e50dc9e810d34390ab769464 2010-11-18T08:45:19+01:00 #1633, #897, #729
+0b3e43c52988e36c1c7f43c6e7886b33c7e69a52 2010-11-15T19:45:51+01:00 #1760
+4145fcb6bbb2e33901213056c639a6d3de9f3d25 2010-11-05T08:51:28+01:00 #1118
+f37c320c52fded0e3d4f6c2544a534cc8848e0c8 2010-11-05T01:04:17+01:00 Add test for bug#1745 and issue!
+5cc1adba324389f677cd6d4f4c86b064bc99831e 2010-11-04T23:30:58+01:00 Rename runners
+18788a0769895cc03b79342946136ee92b3bc467 2010-11-04T23:10:39+01:00 Move most console output from framework to runners
+400052351f65bc32a803887a5a475d5c5cdbd9ad 2010-11-04T19:13:34+01:00 #1066
+33ab769264b33e2bf8a5888229eaf975cb35e9a7 2010-11-04T19:06:50+01:00 #1241
+d94c1c0863ee9892e3bdc9ae3e5beb418047bbd3 2010-11-04T17:49:25+01:00 #1280
+effadc0a9b4f6b1b6dee0ea59a2fca1df318668a 2010-11-04T17:22:18+01:00 #1342
+7577793388730fe847eae2a8f1913053e3201d05 2010-11-04T17:14:24+01:00 #1470
+bb653ce86647f0a6b3ad490ae14e1598f21a237e 2010-11-04T16:53:53+01:00 #1529
+061b0804f78f78d77f8b80ff5697c22fbda51aa5 2010-11-04T15:29:25+01:00 Merge branch 'master' of https://github.com/rebolsource/rebol-test
+41700ec4e3858e8a510e9bc245ef83ffe240ed59 2010-11-04T15:29:10+01:00 #1745
+1b065a1a8a1af70c392a73ea43643ddf7d4ef43a 2010-11-04T02:22:17+01:00 #1742
+e927aaf4d16cd109747cfae3e6df133bfc80d4a2 2010-11-03T18:43:28+01:00 #1624
+a48db69dd6c1fa94d525cc547d248e72d66c4fc3 2010-11-03T11:04:07+01:00 R2 tests revised
+b248f40317c34e2724305d6bb7bdf4fd1d8548ff 2010-11-03T08:07:32+01:00 CONTINUE, throw-error tests, CATCH-ANY - comments, COMPLEMENT bitset, NEGATE bitset, 1136, 539, 1475, 1133, 1134, 854, 60
+fc79bd4f5f9cfaf4f1745cd91afd11a0cae1857f 2010-11-02T13:36:42+01:00 #1650
+8253ecaab6188daa908f66377dca10a451c376b7 2010-11-02T12:31:28+01:00 #1515
+8ccea0bd79cc9025f6a3a85399293d7ff2c2a90d 2010-11-02T12:17:49+01:00 #1509
+39b78eaa06ff208f8e4ee9af46b00d1020619429 2010-11-02T12:01:25+01:00 #1519
+4d42f5cdcaa69a8332556619b76f4ff7d73bccac 2010-11-02T11:49:17+01:00 test-framework simplified
+c978001fecf0a6b3a4336c6e2d143a2a24ce161d 2010-11-02T07:57:05+01:00 CATCH-ANY corrected TEST-FRAMEWORK using CATCH-ANY now
+1481f12f91e910b282ac51306dc12868a0ba5dc5 2010-11-02T06:14:52+01:00 CATCH-ANY can stand on its own
+b9bad373e210b666c669bf412f66b4e8c4f38478 2010-11-02T03:23:41+01:00 Add test for bug#1651
+5d04ab37090c5f749d787f98d9181dd2d321337e 2010-11-02T03:23:21+01:00 Add tests for bug#1626, bug#1688 and "empty? none"
+e774168a177f73275d5bacaf70e60049ca197b9b 2010-11-02T03:22:47+01:00 Add/annotate tests for bug#539
+bb80da26a380adffa08564def3e91816dfd3ebf7 2010-11-02T03:22:25+01:00 Annotate bug#1706
+819b663a8ea182349ec2b4982af2e2e054b3274a 2010-11-02T03:20:26+01:00 Replace INCLUDE by DO in runners and framework
+b5cc3adbe7665709bcc09142a53586c59c877a67 2010-11-02T00:20:09+01:00 #851
+5fe18933f280f7fd3e3228229708960206cc45dc 2010-11-01T18:07:45+01:00 file access failure handling improved
+98e58a9849a21a11196ed0a47cbd7d6b25963803 2010-11-01T17:30:41+01:00 closure tests added
+16fef66b1b04c71c3765d4a0ac2764b0c528091c 2010-11-01T15:59:38+01:00 #1549
+8894ee5745407c9fd33bdb2d8cd8ec1884f07f98 2010-11-01T15:37:13+01:00 #1613
+95bfff282f6cabf29f52f7f7482f24d96b975503 2010-11-01T15:10:47+01:00 #1471
+417d92f59e51e25bb2d040c2a54d309030f4d0ca 2010-11-01T14:40:53+01:00 test dialect parsing updated summary updated
+80067743e52fbdc4b0c7816c850c3731c9f3f098 2010-10-31T01:32:08+02:00 #1659
+093362f2bb7147e4ac4a6a1ca1bf5eb14e12fa23 2010-10-31T01:23:40+02:00 #1674
+08790d1f96e77d5debb91da911f7128eed1a6bda 2010-10-31T01:00:14+02:00 #1666
+ac5e15961fd89101abe527d4d65a77b397607716 2010-10-31T00:54:13+02:00 #1672
+424fe01097f607caff92666542e88f21191b24ae 2010-10-31T00:26:16+02:00 #1665 #877 #1711 #1655
+354a7d0bd2ebf77e3066b7e3d0aa3633560c6efe 2010-10-30T19:51:33+02:00 Add tests for bug#1679
+0c9a745c26e81028e0c086905dd3e9385a4441b7 2010-10-30T19:50:58+02:00 Add tests for bug#1678
+1232e9bf2536f910db204267ac4bd7f98496ea8d 2010-10-30T19:49:52+02:00 Add tests for bug#1422
+e95d42be079966736bb8bfd402ec87cd9e20030f 2010-10-30T10:24:40+02:00 inline function test, try/except test
+0b83c28c5e5e46d3f202a74b9af03e6adf804e55 2010-10-29T23:49:08+02:00 Add a minimal README
+9333aa66b6a24666dbeed9c9d888932483efe26d 2010-10-29T17:38:30+02:00 Import from the rebol.org script library as of 2010-10-29
+c82609e30c8ad2bff9e0593653ae944c4e1fb06e 2010-10-20T15:44:33+02:00 Initial commit

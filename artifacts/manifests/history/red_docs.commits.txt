@@ -1,0 +1,1276 @@
+# repo=https://github.com/red/docs
+# head=e62721663f34dc020b2601db89420d755f14f865
+# count=1271
+# generated=2026-08-31T18:04:19Z
+# format: <commit-sha> <author-date-iso> <subject>
+e62721663f34dc020b2601db89420d755f14f865 2026-07-13T00:40:00+02:00 FEAT: adds Redbin compact format specification.
+adc264a45a8cc9748efcd87a0a746c97efaf802a 2025-12-19T13:15:27-07:00 Merge pull request #285 from anlaco/master
+7d8fcb58933229978f3fdd3355a9aaafd5f535aa 2025-12-16T20:37:51+01:00 docs(es): Add Spanish translation - Initial setup
+0a2e24d41949bf18a1f78e6e37dc032a48aa540b 2025-12-07T16:49:27+01:00 FEAT: adds description for Shape's `close` command.
+e2fb4f09685ee7c61ceef96f2d6e70c4bb60a0d3 2025-12-07T16:35:53+01:00 FEAT: removes the description of some deprecated Shape commands.
+8c275e36440025bbd8893c7f923519bf1a452c5f 2025-12-03T23:08:35+01:00 FEAT: adds note about rounding effect priority (cf. #5383).
+e8a49daf3f575ffac80d5ac9b67759bf2489215a 2025-11-27T18:10:26+01:00 FEAT: adds description for Draw's `shadow` command.
+5a1b1b201dc3bb127c262a8be110f75c80cda6ff 2024-10-12T11:52:53-06:00 Update map.adoc
+a45d0e2584927fd666242aa09f1bcb6b0950a191 2024-10-09T10:04:44-06:00 Merge pull request #282 from bgrossot/patch-2
+0c5f1a2305c68bff89053930099dbe69d118875b 2024-10-09T10:04:25-06:00 Merge pull request #281 from bgrossot/patch-1
+0699c84c90ed59545c934ee3034f0fe0d84a1d66 2024-10-08T23:24:42+02:00 Update object.adoc
+7f6e02d8cfbe4c268b166673911dee813cb8b10d 2024-10-08T23:19:22+02:00 Update object.adoc
+9191f41c543d14a49b25d83348c003bf1fb965b7 2024-10-01T15:54:07+02:00 FEAT: expands date! dynamic creation formats.
+ed91ca85232d83de7cd1d5f98a5e867f3a3a4e1f 2024-05-03T12:56:13-06:00 Update bitset.adoc improve wording.
+c70fdaa5ae1f2a61dbf307ebcc23d8cffbab19f3 2024-05-03T12:54:54-06:00 Update bitset.adoc to note required ascending order in charsets.
+70a7198af72cd7af1a66460182e39136685326d1 2024-03-16T18:43:12-06:00 Merge pull request #279 from bgrossot/master
+82290e69d18f3b1d5b3bf77c38f264c661d9ae82 2024-03-17T01:03:47+01:00 issue #265 Error in map documentation
+246700acc254a07ebf59e37f74157edeeac3eaf7 2024-03-17T00:33:11+01:00 Merge pull request #278 from bgrossot/master
+5fb6eeae5387785e997b2fee697ddadcd35a2963 2024-03-17T00:23:04+01:00 Small fixes and better visualisation
+b1c30b86f62b34ed798f1d5b2ae268d89c57d4f2 2024-02-11T15:53:41+01:00 Merge pull request #277 from hiiamboris/syntax-switch
+17b23b5a3a304fcfba4778469894b5e22fb6b606 2024-02-10T19:30:39+03:00 FEAT: switch map and construction syntax
+286ae10ee729989b1478de38ef34e793718e115d 2024-02-07T20:02:32+01:00 FEAT: provides an exhaustive list of datatypes concerned by lexer's OPEN/CLOSE events.
+16f61b9ff8b532d267b98241d30611afb3e1c8eb 2024-01-18T17:11:37+01:00 FEAT: improves lexer events returned value description (relates to red#5444)
+7ccbe61d1a8ac391fb11604af434e6c8af173fd8 2023-11-08T13:57:14+01:00 FEAT: renames `is` to `relate`.
+b7bbd1c72ce4034424ca8c6924326221aaf47dff 2023-09-29T00:06:19+02:00 Merge pull request #275 from hiiamboris/rawstrings
+24914c31a36c2e98a29a70e9472fe47062abd16d 2023-09-28T18:40:56+03:00 FEAT: moved string lexical form from the lexer into datatypes
+5f501af7dc98c14e0cddfc5e6e666359a086954a 2023-09-23T16:11:30+02:00 FIX: removes numbering from the TOC.
+3d5579a39ee1ae6e4d0de70e770de83aa114497f 2023-09-23T16:09:51+02:00 FIX: attempt to fix broken auto-generated anchor links.
+f5f79127236e3508498a576cd027a0980374ff34 2023-09-23T15:53:05+02:00 FEAT: adds points datatypes to Redbin.
+b9502c91fcfde3ea1cff9727c948c4e7b43aad17 2023-07-25T11:15:23-06:00 Update view.adoc
+e49c13eac1339b11eef76d7619758dfe893ba989 2023-07-25T11:13:25-06:00 Update view.adoc
+be574b94c503fcde93273689a9d8e6add054c381 2023-07-25T11:10:25-06:00 Update view.adoc
+21c77c03df075293ae3fa242a6a75305b79f1c06 2023-07-13T11:22:19+02:00 FIX: minor formatting improvement.
+492f1a2a5a8879b72ce77a79720a9ccbacedbf8d 2023-07-13T11:21:24+02:00 FIX: Date! literal syntax rule correction.
+35dbcb99f7a60c214afb0f3019a18db7836f4321 2023-07-12T13:56:49+02:00 FEAT: corrects the rules for year identification in date! literals.
+51da0f40a0daf300a3a22e8704174abf803e2f3f 2023-04-25T09:59:37-06:00 Fix View link
+6ad20eb13f356059d07287bb26c9a97bb5e5a130 2023-04-16T13:37:14-06:00 Fix typo
+cf0f3d742adbad95e46be3132cfc403c07185f15 2023-04-16T12:15:08-06:00 New intro desc.
+bab4e0722230f99df4343115b7d83369dbf058a2 2023-02-10T19:55:27+01:00 FEAT: extends the description of /options facet in View.
+3ff6e280e5fe2be537c143587320d7408c36fffa 2023-01-18T19:43:01+01:00 Revert "FIX: missing `none!` type in `selected` facet description."
+89e2b5e0203afa73fae205c6a71aee0fa2673a5c 2023-01-18T19:40:30+01:00 FIX: missing `none!` type in `selected` facet description.
+d0ccda534cbafec540eb4a2804efa32f5fbe1840 2022-10-24T15:31:57+02:00 FEAT: updates COLLECT INTO index processing description.
+c98c38677f49e52fa5ebce0ab595c98468a88fb8 2022-10-24T15:23:47+02:00 FEAT: updates the definition of COLLECT AFTER following #5232 fixes.
+703a04efa4a81228de2d6d1d01a3fbfdbc5f65f6 2022-10-16T08:14:31+08:00 Add transformation order for transform command
+21350012774532c6e16b6bc3da57ec3ab53bf049 2022-09-28T23:32:00+02:00 FIX: wrong argument reference in `is` description.
+df71ab05a4f95684663bcf77c08803ccd69fa1ad 2022-08-22T15:21:01+02:00 FEAT: adds mention of `make-face`.
+d532685df2bac3b23a15503918c284635d9ebbf6 2022-08-18T23:31:42+02:00 FEAT: describes the dragging bounding box options.
+159a6a16f5e3899b1ed69b0d208fb281f18b377d 2022-08-09T16:01:30+02:00 FEAT: updates the list of named keys returned by `event/key`.
+a5380ed1fe2fe1ffb957703c214db2b1688e998f 2022-08-08T14:27:19+02:00 FIX: prepends rich-text context name to avoid confusion.
+6534f91b6c4e405f60ec77fb56e448ac16e0010c 2022-08-07T22:24:03+02:00 FIX: removes the mention of dialect in the preprocessor intro.
+f055515caac05433a133c10e1f4739c53e419d7f 2022-08-07T12:49:27+02:00 FEAT: adds description for options/sync.
+464713b188f164c261f71cff95e4c729200638d2 2022-08-05T18:23:26+02:00 FEAT: adds new definition for KEEP PICK on paren! expressions.
+350df3bfd1a667d70f73224f2207030ee87fa406 2022-05-19T14:58:08-06:00 Merge pull request #273 from Tovim/master
+b701623cb46987176e8695f830ca4f459883c099 2022-04-23T21:23:01+02:00 docs/cs/ 17 modified + 1 new file (interp-events.adoc)
+e930c62bd5c762bde19eb64955285fcd64f40249 2022-04-23T21:11:43+02:00 docs/cs/datatype/ modified 33 files
+64fa256311c6346b454f3d50f1f8456bb4cf43ca 2022-02-15T13:02:39-07:00 Add note about redbin size.
+239b8b44b23cbd8f99f6c0b105edf145bf23673c 2022-01-24T17:32:03+01:00 FEAT: inserts mention of ISO-8601 for date/weekday output.
+58309d1a4af591c28f095152f39de6236dafcbba 2022-01-24T17:30:22+01:00 FEAT: adds skeleton for interpreter events implementation notes.
+7a9ed93eb2ac3079f70172427cbef4f7dbfabf3b 2022-01-22T13:56:30-07:00 Merge pull request #252 from Tovim/master
+2ea7a4a7fc1c33618cd4b6ae79f83bccef025b27 2021-12-28T14:38:00+01:00 FEAT: inserts interpreter events doc in top index page.
+c55f18597221c8ac14c99ab15c20fca0845d0fb1 2021-12-28T14:34:54+01:00 FIX: minor corrections in debugger commands description.
+c6953671adf6aa199323211063c2c1fccc0bb676 2021-12-28T13:52:46+01:00 FEAT: expands the debugger description.
+b6ef94b9892162b99c35c38f6c34e0ad5f9c1478 2021-12-28T02:19:06+01:00 FIX: a few fixes.
+3dd1b88074d34804c742aac19ca200cbe12c1ed4 2021-12-28T02:17:07+01:00 FEAT: minor improvement.
+3fa4425c588026fb0c7942e7c7aa82c8bd99c043 2021-12-28T02:15:06+01:00 FEAT: minor addition.
+3ff0185c233f796f87e030e421e3b72c7d8f7c65 2021-12-28T02:13:56+01:00 FEAT: adds `EXPR` event description.
+5181fae558a8aab07fd19caa271711e6bfea8327 2021-12-28T01:32:29+01:00 FEAT: preliminary `debug` documentation.
+950931a8abeda06cda5034da19dc057264045280 2021-12-28T01:20:06+01:00 FEAT: adds description for `trace` and `tracing?` functions.
+5bed721b06e1b976230ff1c69b0179377bb79664 2021-12-27T12:04:58-07:00 Fix "attributs" typo.
+849601fdf54f89677eabf31875da42c836fe9dec 2021-12-20T20:52:02+01:00 FIX: minor improvements.
+9cffcd80425d46d134789b397b1439f2bf3d49d8 2021-12-20T20:45:56+01:00 FEAT: documents the built-in profiler.
+0e200e0a2ade19caff4a94f2d80c4c302904bae3 2021-12-17T15:41:31+01:00 FIX: minor formatting issues.
+4bfbb638268bd8b5f564edc10843e51eae9a2713 2021-12-17T15:23:04+01:00 FEAT: adds "Tracing control" section.
+68465adf4ea6989a8c83fd435e8ac68111f1adde 2021-12-16T15:02:38+01:00 FEAT: updates interpreter handler specification.
+905348a2cef4328c3bac2e50d88abb1d0cb9ed54 2021-12-15T16:58:18+01:00 FEAT: adds titles for function attributs.
+15c371b5d45781ce7e2a00232fd97564a6185a8d 2021-12-10T17:58:55+01:00 FEAT: adds `help` command to debugger.
+203fd57cf331dc2dc6acd0f26d101eacb63b1a03 2021-12-07T15:27:47+01:00 FEAT: improves first interpreter event handler example.
+636c4e2243786e8dcbd9f2e7b8c40e3e8dd969e1 2021-12-01T13:47:42+01:00 FEAT: a few minor improvements.
+de685b307e964c8697ad17ffe3388a5f68c7ad86 2021-12-01T01:14:42+01:00 FEAT: completes description of interpreter event handler.
+e907be88da131ce4c5bf493b0ccaaf900ae1a27b 2021-11-30T18:56:20+01:00 FEAT: adds content to interpreter events documentation.
+e2bb290551e3e40cbd33d1226d9075501ce98e47 2021-11-28T17:11:54+01:00 last changes 28-11-2021
+c481a9017d1c04532e984f0546911fbc950e5770 2021-11-28T01:17:08+01:00 FEAT: adds IPv6! datatype encoding to Redbin.
+39ec7905a7ee326c1cd19a1f71c1d6c42016576a 2021-11-18T20:03:04+01:00 FEAT: describes new `offset` argument to interpreter handlers.
+1e5a2243364d481317fef875629b656153e9d7d9 2021-11-09T17:36:40+01:00 FEAT: expands on interpreter events description.
+795395f575c62059ed5d4f3f0f75021f330f30cd 2021-11-08T19:11:06+01:00 FIX: normalizes debugger shortcuts descriptions.
+80ed3ac4405c35d5827dcf34e05eca7883874c5f 2021-10-30T20:13:36+02:00 FEAT: preliminary filling of interpreter events table.
+01c23d0e4a2e0e098852f08e8dcb08139b91cddb 2021-10-29T18:35:59+02:00 FEAT: added partial content to interp-events.adoc
+20a5aa5dec344ad45118eeed9de66fa80269b155 2021-10-26T20:20:40+02:00 FEAT: initiates interpreter events documentation.
+68b9a930d9dd953999ac66004568b04e176930b4 2021-02-25T10:05:44-07:00 Merge pull request #262 from 9214/patch-6
+8b03ddea7b34dc3e30b41141c04e5477d2c70d22 2021-02-25T15:46:22+01:00 FIX: malformed MAP! literals.
+866ad49f66cbddc975620dc8f94b313e1d98da85 2021-01-16T15:05:11+01:00 docs-cs: cs/ completed and translated
+23b4b66e6ce576b3db039b3db073205bbc81ed74 2021-01-16T15:02:20+01:00 docs-cs: cs/ and en/ completed and translated
+2f2544f27389720bda6d46fba621be73a2dbe636 2021-01-16T14:54:45+01:00 docs-cs: book, README, LANGS actualised
+0e093e4f19a40b2ac5adfb2a6c5ffd25e62f0468 2021-01-09T14:34:23-07:00 Merge pull request #259 from gltewalt/master
+1aa64f1c9eed9388ad7d763ed42efb76cef838f2 2021-01-08T14:24:40-07:00 Created initial natives.adoc
+82239a2c738e22fc44816ee54ced6429b9f9f9b7 2021-01-08T11:27:12-07:00 Merge pull request #258 from gltewalt/master
+f3057d851193f36aba9717dc4b8074d696d65ede 2021-01-07T20:45:55-07:00 Created initial actions.adoc
+a4a4a8e4be09b1e0ad27f437a29e4e33fa149455 2020-12-30T12:38:25-07:00 Pull content from blog
+90dedf15815a2edee5775d3b041158ea226e3370 2020-12-15T13:38:18-07:00 Merge pull request #255 from loziniak/view-links
+2913e1f94c5a07c6be33b2c04f6a7aa7bc364b97 2020-12-15T14:49:38+01:00 FIX: links to view documentation
+8d80cce6be0a1f95e40762ae765a6ca276ca0b20 2020-10-16T22:16:30+02:00 Merge branch 'master' of https://github.com/Tovim/docs-1
+16da4ad826950939b03346234e7b192e6b38dffd 2020-10-16T22:09:14+02:00 Docs-cs - trying to be abrest with last changes
+ded989f5de5d89df2c4c18e4de7944a89ea15a40 2020-10-16T22:09:14+02:00 Merge branch 'master' of https://github.com/Tovim/docs-1
+5269b52ae3bc39a25d1145d365dccd34a14f443f 2020-10-16T17:22:12+02:00 Docs-cs - trying to be abrest with last changes
+a3d28319349267d28f56cf31c58ec0e3fcfb3221 2020-10-12T11:13:47-06:00 Merge pull request #251 from 9214/parse-issues
+55eace0bbc981b97d088402fdeff48ea3608cc5e 2020-10-12T13:45:58+02:00 FIX: remove resolved Parse issues.
+6e6b52a2a4fe598edfb621bc65a91539ff39eb17 2020-10-09T14:15:10-06:00 Merge pull request #247 from 225559/patch-1
+a9bcf0dd1bc80e46685b2a6e3fae0d7da470472a 2020-10-09T14:14:04-06:00 Merge pull request #249 from 225559/patch-1
+11084c80c73cc48765c70774834f33107655858b 2020-10-06T11:04:10-06:00 Merge pull request #250 from 9214/patch-5
+03718ba33a1ff8c2cb3cb4857ca3d323ab799831 2020-10-03T01:50:08+05:00 FIX: minor typo.
+2cf9e24567f398e2dba26c5967cc8baa79569105 2020-09-21T17:35:24-06:00 Merge pull request #246 from Tovim/master
+888f667fc86b8fa1f6c5490379c3677592d9379a 2020-09-21T17:34:50-06:00 Merge pull request #245 from 9214/patch-4
+f640f7a23475bbaf4fbf29096b7846e0bd493281 2020-09-21T17:32:56-06:00 Merge pull request #241 from 9214/parse-insert
+de512f772cd105d761e314579cf1a17651f50048 2020-08-28T22:03:21+02:00 FIX: a typo
+cbb42f8138f8fb896f61817b86634c66a38f75a4 2020-08-27T20:39:09+02:00 Minor grammar improvements
+f4b47bec37e576d365b23033cb9920dd74e4ccb6 2020-08-27T10:52:16+02:00 Minor grammar improvements
+d4cdff454d1e010e01a5641a4e9fd360d0afde73 2020-08-24T21:19:36+02:00 docs/cs: {summary, datatypes, draw, lexer, parse, redbin}. adoc files completed and translated
+fcf656d4486baaeabb9bdfda2faddc0eab356c2b 2020-08-24T20:43:58+02:00 docs-cs: cs/{summary, datatypes, draw, lexer, parse, redbin}.adoc          cs/datatypes/ref.adoc  files completed translations
+d3799156cac7133f94245c1365a126cb775cae83 2020-08-24T15:58:09+02:00 FIX: elaborate on CASE keyword.
+cd7d36e3e1c28881c57af6bffa7006a06840569b 2020-08-12T20:09:49+02:00 Merge branch 'master' of https://github.com/red/docs
+e0ffa9eca13684449dd150d9be6b24374f49814c 2020-08-10T13:39:14-06:00 Merge pull request #242 from loziniak/money
+c9f9502a3d7ac121f77c028650bc97dbfe628248 2020-08-10T13:38:15-06:00 Merge pull request #240 from qtxie/matrix-order
+9426e2dc8ea0cd0f3264d5b54789a8fc998e137f 2020-08-10T13:37:40-06:00 Merge pull request #239 from 9214/redbin
+17181e2791c6634a6ede7e7dab20823c1c1cfc00 2020-08-10T13:36:05-06:00 Merge pull request #244 from 9214/patch-3
+29a21d9e1bb17ad9e4d1a81568b414c92e1fd24e 2020-08-08T21:50:51+02:00 FIX: minor amendments to Parse documentation.
+3e0a5200de44a77eb25ff05d2549148096418108 2020-08-06T13:57:21+02:00 FIX: formatting
+8ef82d57941316967199d25453109fd0d9cb2d56 2020-08-06T13:56:41+02:00 FIX: add ref! to types list
+c2c3056f7fa322908dbcc23fb9657b68ee2adc64 2020-08-06T12:54:02+02:00 FEAT: add money! to types list
+3a5ae2d5bc243af544ebb73ca26d60fca646a3de 2020-08-05T13:43:01+02:00 FEAT: minor clarification on modifying rules.
+f4e38802245e11c444fbf08b28a3a224401be5f3 2020-08-05T13:42:29+02:00 FEAT: describe positional mode for INSERT rule.
+47d7ae8b5e1b0e30f373ab31a0da99993196dd8d 2020-08-01T10:15:20+08:00 FEAT: remove `matrix-order` command.
+fb0a0286c0741d122ebd0faa9e7d106e781212fa 2020-07-29T15:37:09+02:00 Merge branch 'master' of github.com:red/docs
+ac217a5b2ec49bf94ee0f9017ebe12de5ce6f500 2020-07-21T10:46:51-06:00 FEAT: removes path types from inaccurate `scan/fast` table.
+d8376c111265f318603fd0cda85c0d34a6778e43 2020-07-24T10:38:24+02:00 docs-cs: cs/dt/ref.adoc a cs/lexer.adoc doplněné překlady
+a6716ae0223b9513d593ec78cdbecc4ad2b6406e 2020-07-23T22:02:04+02:00 docs-cs: cs, en/draw.adoc, parse.adoc modified
+ff5f378bde5d22a22a56fcfca466c3cf2fcb8a43 2020-07-23T21:19:43+02:00 Merge branch 'master' of https://github.com/red/docs
+329f53da0b5da1d1967ccf561fb1a229357ca749 2020-07-21T20:06:25+02:00 FEAT: mention additional limitations of runtime codec.
+83fee5e21dd093d3d4de9cb865c4a75d6ec5ba70 2020-07-21T10:46:51-06:00 Merge pull request #238 from wallysilva/patch-1
+80ed4cba0e7b742097aeac9cf2270aa0bab4d0f8 2020-07-21T09:19:09-07:00 Update draw.adoc
+e44e0c7aad1c270ca6f0e33e208257e02845b609 2020-07-20T17:07:09+02:00 FEAT: a note on signed integers.
+bd891dd18096918b65f65ff26cb4780af5c491b7 2020-07-17T14:28:22-06:00 Merge pull request #237 from 9214/patch-2
+2c62e5ec1bb645693603674ea560cb1eefd58770 2020-07-17T17:48:27+02:00 FEAT: correct various misspellings and typos.
+6a5ddf890e5c1aa452ecc8fc97c8b29a5279de95 2020-07-17T17:47:58+02:00 FEAT: move Redbin codec section up.
+e6048a8fbbb9b9df70c563ead4d8f5c94ca32021 2020-07-17T17:28:03+02:00 FEAT: document Redbin codec and Redbin use-cases.
+ebb2d42849882d034bddbc6cf5a3de8fa319a487 2020-07-17T15:47:30+02:00 FEAT: minor corrections on the new parsing mode.
+c5cc9fd70eb1cd2fa06d323ecd56821b1dc13fc3 2020-07-16T18:28:38+02:00 FEAT: document unsupported datatypes.
+df2c7cde04bd635eda3691ad28d90070f60db147 2020-07-16T17:43:03+02:00 FEAT: finish documenting reference targets.
+f4bf61a86f3eaece4ce84e5650f134bee5438822 2020-07-16T17:31:13+02:00 FEAT: describe lexical conventions.
+b7406409297019b5d982a1d6830906b767ed7e32 2020-07-16T16:32:30+02:00 FEAT: finish documenting Redbin value records.
+edf9a1db12c5b8ecf39a3e22f939801b3817f258 2020-07-15T19:59:49+02:00 FEAT: document more of the Redbin value records.
+58fa6d440be9f9951e2dff8ed95e4d6126e43017 2020-07-14T19:30:03+02:00 FEAT: minor amendments and section drafts.
+f17e50a9176ea98e82cb11065d7ba6e79825150d 2020-07-14T19:29:29+02:00 FEAT: document some of the Red value records.
+6e44cc10da93ef2c182ecf0123affbe21b45158c 2020-07-14T19:28:25+02:00 FEAT: describe reference records.
+1a8c869708638a12a5912151db3203855a2021cf 2020-07-14T19:27:46+02:00 FEAT: refine description of the Redbin header.
+7b50ba2ab3b267cbc47ef1e91fdd7cac824ee85c 2020-07-14T10:40:36+02:00 Merge branch 'master' of https://github.com/red/docs
+dbea95b4636ece102ae16c6eb8eaae76e047fe9e 2020-07-14T10:32:48+02:00 docs-cs: cs/datatypes/ref.adoc, cs/lexer.adoc modified
+1e653c951c8aece7d3cbc35250425801bce03ff4 2020-07-13T12:40:41-06:00 Merge pull request #236 from 9214/keep-copy
+77ea6ae2bfe685cdc9a36af71b97e5d28f703897 2020-07-13T19:43:49+02:00 FEAT: mention KEEP COPY Parse idiom.
+8a3376240418abbe7fdd1c4ae9ff0acb65466c81 2020-07-13T17:44:48+02:00 FEAT: describe the layout of Redbin record header.
+40d09fd4a115f121d9d8a859f740a3f7408bb865 2020-07-13T17:44:20+02:00 FEAT: preliminary work on new version of Redbin documentation.
+9423801a27ff410a2d1ea5a3cec78fdea1043992 2020-06-29T16:40:43+02:00 docs-cs: Add first, dupe!
+eb2bd4a3f5ac75f7f2516313a2800c374c44b973 2020-06-29T16:36:04+02:00 docs-cs: Remember, add (+) first!
+c21820bef3ac019d5a0db3f1b488bdff96260aa5 2020-06-27T19:34:42+02:00 doc-cs: typo (§) in ref.adoc corrected
+f0abd84cf42382e727ad4133fd0f30534f56f921 2020-06-27T15:44:13+02:00 doc-cs: one wee ant more
+c1f636d080ea3a53ab5fcb9a58891a6f8059bbf2 2020-06-27T15:27:55+02:00 doc-cs: cs/dt/issue.adoc slightly modified
+86c3f8820c19a08b621fbd54518bc761ee995351 2020-06-27T14:58:39+02:00 Nezbytné úpravy
+feac626f981541807b17c5519b79fa38a346b20d 2020-06-27T14:43:25+02:00 docs-cs: lost file lexer.adoc
+6214d6cef010a03840af5e25d4ee9dc01302add8 2020-06-27T11:53:51+02:00 menší úpravy cs/DT/ bitset.adoc a issue.adoc
+ddba54a4babebc691ed2d40fcc4d956420167155 2020-06-25T20:35:37+02:00 FIX: more accurate lexer pipeline description.
+c07a8838035694c8aab3e92f6adbdb1191b1d404 2020-06-25T20:27:20+02:00 FEAT: minor rewording.
+fb4e9749dd932ac99281fe845117b70a933aacd8 2020-06-25T20:20:07+02:00 FEAT: multiple improvements and updates to lexer doc.
+0882d29a1c600d80e6cfd120871caaa7c5c4f601 2020-06-10T12:34:14+02:00 Set theme jekyll-theme-minimal
+ea7c7dbae27d3ea459f7011cc7f67ac4ae61bc7c 2020-06-08T11:43:07-06:00 Merge pull request #232 from Tovim/master
+557131c5b4683033c282e9360b0c466e5ea74b3f 2020-06-07T19:10:30+02:00 docs-cs: last but not least - money.adoc
+8e4b29211fad504b66c2fe86e9b4b1e37d972943 2020-06-07T17:20:35+02:00 docs-cs: one forgotten cs/datatapes/money.adoc
+31aa77f12c6b004efa2641c08737fb67451641e2 2020-06-06T20:04:00+02:00 docs-cs: General control and some translations.
+6cfb978503a4f70ce3da9acf328089cfe297be08 2020-06-06T20:00:53+02:00 Last touch.
+44bedad37b8d2c19687ff464c4bcd0f045775176 2020-06-06T19:37:06+02:00 Snad to je všechno.
+0bd197de1b4ea82067ee37512e1e34d21cb7258e 2020-06-04T11:50:25+02:00 cs/ and en/ á 7 files.adoc commited
+c2bcdfbe7d78adb76926bdfc17a845206db7d011 2020-06-04T11:45:16+02:00 cs/7_files.adoc commited
+8f8c653b65190ab9547dc22fca99b540d6c90c75 2020-06-03T19:15:35+02:00 FEAT: links Lexer page to main page.
+001bbf31f1d3d35eeb7dd906d3bc1b08bbecb95d 2020-05-27T19:23:20+02:00 Merge branch 'master' into 0.6.5
+9f4c6106529d0e7adfb41d3ff5c5f3d7b046ece8 2020-05-26T12:40:03-06:00 Merge pull request #230 from 9214/parse
+8cf85fb2dcd2134546a961942a63b968bfce0c8c 2020-05-26T17:59:27+02:00 FEAT: mention matching by datatype in BINARY!.
+816ca79e7b1a0f4c54c44531af2f6e11b2c7ba27 2020-05-25T19:39:35+02:00 FEAT: fills in the missing sections of the lexer reference doc.
+09b2f348fedc7cf1041605b0955e4d80c3bfa294 2020-04-28T17:45:10+02:00 FIX: exclude backslash from REF! literals.
+55579dae4a5600c822a663dc96349d6b642577a8 2020-05-19T19:18:25+02:00 FEAT: update section on MONEY! comparison.
+576fe3aab81a3c39b749da0bb4a40ab30945d309 2020-04-22T22:06:51+02:00 FEAT: more examples of literal forms.
+9149b25d5f8f426361598ad5cae6c694b6f37e2e 2020-04-22T22:05:40+02:00 FIX: a typo.
+8e6d4671a01c268862771e2159283ee915a12224 2020-04-21T13:08:24+02:00 FEAT: REF! datatype documentation.
+3feb83c7246ec679fb96aaa3e245886d0a885c19 2020-04-20T17:16:14+02:00 FEAT: add REF! entry in Redbin format spec.
+9e5f3532d1ff4e7f2be8886ac25f6931b9e043aa 2020-04-17T16:34:18+02:00 FEAT: reflect the latest changes in MONEY! datatype.
+8ff6655f0ec13425db5218d069f7b90aa6851bbc 2020-04-15T18:29:03+02:00 FEAT: update section on comparison.
+95c35796f8d8136a8c765f9ed76ad6b22b003f5f 2020-04-15T18:26:59+02:00 FEAT: extend section on arithmetic operations.
+4b90bc90b5f03772186cae0b935ed737a680ba39 2020-04-15T18:23:53+02:00 FEAT: add examples of ordinal accessors.
+b4d5b88db1ba038be345700e1a70ceab6fed1b51 2020-04-15T18:23:29+02:00 FEAT: update section on currency list.
+38dc669c01e3a037d3e780b118f4877c09010927 2020-04-08T16:36:20+02:00 FEAT: MONEY! datatype documentation.
+f06edc8841b6c9900459502ca17aae146863ea37 2020-04-01T17:17:58+02:00 FEAT: money! format in Redbin updated to use an index for currencies.
+0f98d1d246717cc71f08fc8f023602b22e5245bd 2020-03-28T20:13:25+01:00 FEAT: updates redbin money! encoding.
+5af85903e570892ff0605929e7ef0af55e700426 2020-03-28T18:25:05+01:00 FIX: redbin money record ID incorrect.
+5d8682c4f97ac4dd78ba62ecb1524145693275d0 2020-03-16T19:56:58+01:00 FEAT: adds money! entry in Redbin.
+b0f6e9327714c8cd6bda3b2aee6bf893eaaa45ed 2020-03-05T13:58:26+01:00 FEAT: adds description of raw string format.
+6863bee4223a50ffc06ab076d5807749c3a8002e 2020-02-25T21:28:50+01:00 FIX: minor formatting typo.
+2065e7dd596f7ef694f06e0bc93f048641f74d36 2020-02-25T21:25:43+01:00 FEAT: describes SCAN function, new `prescan` event and other minor features.
+0df477c13006a3245ce1983b817d39d7004889fa 2020-02-05T15:44:46+01:00 FEAT: document TOGGLE face
+3e022629d65e334cc9e30a104f4135c92f20b011 2020-01-16T18:26:51+01:00 FEAT: adds extra description for `type` field in lexer callbacks.
+69174a6d9363a5faa27d3ee935a7ff7b0fc9a079 2020-01-15T19:41:04+01:00 FIX: missing multiline string! mention in open/close events description.
+33b0cc0dcd534c9e66bef247a9fd083666653338 2020-01-13T19:33:57+01:00 FEAT: adding a page for documenting lexer's API and capabilities.
+77f5ddf9ab87d7abbc80f79ed88f2ea1afab2a03 2020-05-25T19:39:35+02:00 FEAT: fills in the missing sections of the lexer reference doc.
+afc440c7d2c17e18ad6d2c81911161f5d85ff2a2 2020-05-21T15:13:47+02:00 Merge pull request #226 from 9214/ref
+71292134d779b212c6c3e626dc83a34aed349368 2020-05-20T19:48:37-06:00 Merge pull request #227 from 9214/money
+e735211caeb5d613126a2a0680bd74dfee40497f 2020-05-19T19:18:25+02:00 FEAT: update section on MONEY! comparison.
+f402f64ef8e5028659860b6a65245462f19da884 2020-04-28T17:45:10+02:00 FIX: exclude backslash from REF! literals.
+b1fe65b9ea383d58d123f12eeef32c61752f2df8 2020-04-22T14:13:22-06:00 Merge pull request #225 from 9214/ref
+6f93daec9e7540c5807948f1ff674e83912b1cff 2020-04-22T22:06:51+02:00 FEAT: more examples of literal forms.
+2fa3b59f111af387acb691251e0f47e294692ac0 2020-04-22T22:05:40+02:00 FIX: a typo.
+21bac7aea2bca77bfe78882c2a33c8a07f8daeba 2020-04-21T13:08:24+02:00 FEAT: REF! datatype documentation.
+05ff1491a373f12542432eae15b8675985657282 2020-04-20T17:16:14+02:00 FEAT: add REF! entry in Redbin format spec.
+c46f3561ce167e505e2996654f4edf5c22b1193d 2020-04-17T14:39:29-06:00 Merge pull request #224 from 9214/0.6.5
+7c87ef3085a52be0a58c50aa94471ad74b48c838 2020-04-17T16:34:18+02:00 FEAT: reflect the latest changes in MONEY! datatype.
+f8f4fa174e61b9f5cf34c0982c4dce8265ad1315 2020-04-15T18:29:03+02:00 FEAT: update section on comparison.
+52b61b82c42be6184071cd92c0f7c1f4e29ff964 2020-04-15T18:26:59+02:00 FEAT: extend section on arithmetic operations.
+9fa0b9bd46420379bb75a897838a7f5142375e2b 2020-04-15T18:23:53+02:00 FEAT: add examples of ordinal accessors.
+7f13ceebe6dbfe3925e68ae3e1e9be55ade1d36e 2020-04-15T18:23:29+02:00 FEAT: update section on currency list.
+eccd08cf156f3e6d44d91d77ac6c7e374ac11446 2020-04-09T14:52:58-06:00 Merge pull request #223 from 9214/money
+f75222bb182e0c8fd9a4ea0cf50c4947bc26577d 2020-04-08T16:36:20+02:00 FEAT: MONEY! datatype documentation.
+8ace008ad204cbfea5db76e71cd28314bf9d86a8 2020-04-01T17:17:58+02:00 FEAT: money! format in Redbin updated to use an index for currencies.
+780052397476ff34d66894790448dadcb462b335 2020-03-28T20:13:25+01:00 FEAT: updates redbin money! encoding.
+20af7feb77aff289955dd85a29bd51ae20340e35 2020-03-28T18:25:05+01:00 FIX: redbin money record ID incorrect.
+383a60769a3c66809fb3d835a9bca043e1a94d87 2020-03-16T19:56:58+01:00 FEAT: adds money! entry in Redbin.
+bfe48950dda457ffaaa4d3c03b5f51f9fe36fcd1 2020-03-08T12:45:26-06:00 Merge pull request #221 from Tovim/master
+21c77f72e1d364f258a596674049739cdf8cef31 2020-03-08T11:53:14+01:00 docs-cs: Parse.adoc added and translated, SUMMARY.adoc modified
+04bdb487195e0dde96d425606a21b62c60bb20a1 2020-03-08T11:42:42+01:00 Malé doplnění a konec!
+7ea335da190758a1759726e1a3eb7d3c86b4c722 2020-03-08T11:03:41+01:00 Nevím, co činím
+ae727942392f44712a13a2ec9cc749baeeb40772 2020-03-08T10:57:21+01:00 Možná finále!
+38f0868a2d5278b58b96ce258a5879860bb596d9 2020-03-07T18:13:10+01:00 Předfinální?
+8f36751311e48b37c41abf065bc1958fe9c7df14 2020-03-06T10:31:48+01:00 Postupné doplňování
+c35ecae9b9eff8fde41aa17eafd9ac60dca47425 2020-03-05T13:58:26+01:00 FEAT: adds description of raw string format.
+e147d481d830d8129b591afe2d5938ddf7c9dec1 2020-03-04T16:30:34+01:00 Doplněné SUMMARY.adoc
+e36f21670df9ed4e4b038d1d13e659e637c4d9b3 2020-03-04T16:17:50+01:00 Přidal cs,en/parse.adoc první nástřel překladu
+85b3a5c6b247e16668e9e9ca7de27a6acf50c57e 2020-02-25T21:28:50+01:00 FIX: minor formatting typo.
+ef33dbbc3b7a6dbaa041c1c00ae1715f9bc4d20e 2020-02-25T21:25:43+01:00 FEAT: describes SCAN function, new `prescan` event and other minor features.
+5f9598e34e8d9ad9ed3bbefdb2f31ef32c3ab2e0 2020-02-24T09:20:38-07:00 Merge pull request #217 from 9214/toggle
+f7ba2dcac8897d915f4a9118f391e6b3ff698b6c 2020-02-08T14:11:46-07:00 Add Parse link.
+84256b8833b6011beb62c7c75784725d4053e0aa 2020-02-08T14:07:47-07:00 Merge pull request #204 from 9214/parse
+2aa95ee14ec255d9d2827b8339d1ae454a03957a 2020-02-05T15:44:46+01:00 FEAT: document TOGGLE face
+da09229e9797b71452d6ea372c2b2e1fce6c608b 2020-01-28T12:04:23-07:00 Merge pull request #215 from Palaing/master
+d1e7acd7ece08a42668aa8972c2278260eed363e 2020-01-27T21:29:03+01:00 Merge branch 'master' of https://github.com/red/docs
+3a4531d9444da98e8e1699a91d9e434f8e9670f8 2020-01-26T17:48:53+01:00 typos
+696ce69e748872766da768b845b3988825e30a12 2020-01-26T17:10:27+01:00 last changes of view.adoc in other languages
+631d8d03b2bf7c6657e80c108f8783cfb955763d 2020-01-26T17:02:53+01:00 recent update reflected on fr/reactivity, vid, view
+25155ba0458e554a6967594396a79786c739f9fa 2020-01-26T16:43:31+01:00 last cs version
+09a30ec7a853dd03d90542a082bc63d0f2990c0b 2020-01-25T14:25:35+01:00 updated fr/preprocessor, reactivity, vid, view
+a5e9987609ba71d388b0e16c75c5d8bd3cd9f8ba 2020-01-24T11:02:41-07:00 Merge pull request #214 from Tovim/master
+6cc75fbcbb022bc5c8f6ef2bac653d86686b324c 2020-01-24T15:46:45+01:00 docs-cs: cs, en/{reactivity, vid, view}.adoc
+23e2bce021bcfd967b6362a844cd91e04c0b65f9 2020-01-24T15:41:40+01:00 docs-cs: cs/{reactivity, vid, view}.adoc translated
+7a2c8caff3b2425e29b4db97f5f5739ae703659d 2020-01-23T11:45:26-07:00 Merge pull request #213 from 9214/tri-state
+9cf3dc630985a0e4889c3b6b27b2d8bb981a9322 2020-01-23T19:17:03+01:00 FIX: missing info on default check box state
+b6726da513db8a2ee30e6ed968f731197b639313 2020-01-23T10:48:14-07:00 Merge pull request #212 from 9214/reactivity
+5e44a1fd4a755e9d0dd7fa06a46688c97cddb800 2020-01-23T14:11:56+01:00 FEAT: mention REACTOR and DEEP-REACTOR functions
+d7db463de557d1fc490fe8b7a7900c64d5c2654a 2020-01-22T11:31:43-07:00 Merge pull request #211 from 9214/tri-state
+47ca3ee87ff25e675258ddbe16beba786d4da913 2020-01-22T18:03:47+01:00 FEAT: document the usage of DATE! datatype
+a40acc7b52713aa62d76ba13a5700c238a8602b7 2020-01-22T18:03:13+01:00 FEAT: document PASSWORD keyword
+89285efe7716797ceea54693cd45b790a8778df3 2020-01-22T18:02:50+01:00 FEAT: document TRI-STATE keyword
+78f8f1188a782307f662636950ba2af609eea006 2020-01-22T18:00:56+01:00 FEAT: document tri-state check box
+c15b7115622a6ad2a2a508f8612b73677d6601fa 2020-01-22T16:35:21+01:00 completed update of /fr/datatypes/*
+36a947b8b4257732591e13e628ad17d48016ddf2 2020-01-21T19:57:41+01:00 updated a bench of datatypes - alphabetically up to native.adoc
+858df3c2d5ec1cddcefdaa90bff39f4c30f349bb 2020-01-20T21:03:18+01:00 updated email, error, float in fr/datatypes
+cff63317b25e2def62cd96eca9923e6d52f323c7 2020-01-20T19:20:23+01:00 updated block, char, datatype and date in fr/datatypes
+4ee45344471e960210abab1f14596032b27d4294 2020-01-16T18:26:51+01:00 FEAT: adds extra description for `type` field in lexer callbacks.
+9ab9469523027d5b2b07a1bab35bb3f6ab59c344 2020-01-15T19:41:04+01:00 FIX: missing multiline string! mention in open/close events description.
+44a0b93e66a5bc628f32ed48eee26db66095957a 2020-01-14T21:27:10+01:00 updated fr/datatypes/binary.adoc and fr/datatypes/bitset.adoc
+59d26597c9ca8f6328c5208df7ac8ff5886f082b 2020-01-14T20:56:13+01:00 update of changes to CS language
+6c63f35b92d433841cb3981dddfec88136206c01 2020-01-14T12:48:22+01:00 FIX: refine terminology
+9a6b509dbdde2e3e56afdb13db264565de31ee58 2020-01-13T20:12:17+01:00 FIX: clarifications based on feedback
+4a5e38b002e5ee3046d07d9808e0c4d902688be4 2020-01-13T19:33:57+01:00 FEAT: adding a page for documenting lexer's API and capabilities.
+0be2c29ee3e322d76313488a15e8b8a86f97486b 2020-01-10T02:27:04+01:00 FIX: minor corrections
+33bf5fc94180ec0c3e4d3061a0e1dddce4f4623b 2020-01-07T14:17:13-07:00 Merge pull request #207 from Tovim/master
+f179bb3216af990c3cb24450d1c397f406e82d6c 2020-01-07T21:03:22+01:00 en,cs/view.adoc modified
+74637637c2c9b3018d0d689508b3f00501a4bbe8 2020-01-07T21:00:49+01:00 cs/view adoc modified
+612395810cf0caf6bb73d8e7318abfebf7a95f97 2020-01-07T10:46:23-07:00 Merge pull request #205 from 9214/calendar
+11ed159c0d25f80b1e7849a8cba585066b0ee5b6 2020-01-07T16:28:50+01:00 FIX: reflect changes in calendar widget
+0a27f7024cf2e73b24792191b293274eaed97440 2020-01-06T14:43:31+01:00 FIX: minor formatting corrections
+5c4d8120fc6403f09000634ccf561e54c54f5ce2 2020-01-06T14:43:09+01:00 FEAT: add entry on calendar face
+ba325f51247dc82f62750ee26c04114441b07ff0 2019-12-23T16:52:02+01:00 FEAT: Parse documentation
+339ab44d00e2f6977afe4420af0933f05295a318 2019-12-21T11:26:50-07:00 Merge pull request #203 from Tovim/master
+2aa5c31faf048feb256ddfbef0884f24c966f745 2019-12-21T10:39:29+01:00 cs/, en/view.adoc modified
+8b9ece04e892a2e8a3594f3bff3ef8086fb6ba87 2019-12-21T10:28:14+01:00 cs/view.adoc modified
+101d310236930dcbe4e5bf80d4aa896af5ae6926 2019-12-17T15:00:33-07:00 Merge pull request #202 from loziniak/master
+42a78314aff7fcf21653a07a32acb98669511f38 2019-12-17T13:01:33+01:00 More details in  facet
+f3d6ee82d9b430e572d827c8982389d8c7c7a07a 2019-12-13T21:05:35+01:00 cs, en/view.adoc a hyphen
+1c8dc0b5c71013358061cdb1c44adfbb1d72d0b9 2019-12-11T12:08:19-07:00 Merge pull request #201 from loziniak/master
+da7f2e97dc4f81cbd237aefd6b61f347eb5dea11 2019-12-11T12:40:14+01:00 FIX: replace non-breaking hyphens with normal 'minus' hyphens
+0d630cfb4dfc979254eb60fff10d16c9529f88e5 2019-11-01T16:28:43-06:00 Merge pull request #199 from Tovim/master
+c2d3cf2b0c5b799bec5a0c21095dddc5718b245e 2019-11-01T18:31:56+01:00 Ještě cosi
+a1f2810e35487021cccd1e0a05b7decc07f516d1 2019-11-01T18:28:23+01:00 docs-cs: filio
+6c52453b39ea239060d77ff73ee1ab4f0b2cc32c 2019-11-01T18:23:45+01:00 malý paleček
+0afe6c609b432958c370098a0da1d15b1c58d79d 2019-11-01T17:40:47+01:00 docs-cs: Repairs and missing translations
+8b93df41e471388129cac43e7511df078a8d0a68 2019-11-01T16:49:56+01:00 Opravy a nedodělky
+986023aec65ca3ebef20314723da20d1be07551c 2019-09-17T16:14:24-06:00 Merge pull request #192 from Tovim/master
+c14015553c43a948c0f46bcd91d990ed9a85ebf9 2019-09-15T20:24:34+02:00 datatypes/map.adoc modified
+a3be368f2923f96abb474d52dc338af48656527b 2019-09-15T20:18:36+02:00 docs-cs:  cs\datatypes\map.adoc modified
+073da762a9b87b3d46438c5f3638ac4e5634fd71 2019-09-15T20:09:01+02:00 Merge branch 'master' of https://github.com/red/docs
+3ebb63ee412437118e7ef207e25a00dcf6165a00 2019-09-08T20:16:39-06:00 Merge pull request #193 from gltewalt/master
+b1b264f23f5eea12dfda7fc64576c3e95807ad21 2019-09-08T15:38:24-06:00 Changed wording in Iteration section from 'two values' to 'two words'
+196cd26e562e70c35847748f3635b97e17fa1c9f 2019-09-07T15:10:33-06:00 Added iteration section for map.adoc
+d31c50d23a31a6601e8a52dc5ec2f7e439243c4b 2019-09-06T21:31:04+02:00 přeložené poslední změny složky en
+e38a8febcf5da55837eab1c4e62a34e8be7d044d 2019-09-06T21:28:10+02:00 docs-cs: recent changes (image.adoc, pair.adoc) translated
+da14778855d63629495dbce91f4c24716c5681d0 2019-09-06T21:18:04+02:00 docs-cs: recent changes translated (dt/image.adoc, dt/pair.adoc)
+192ce9533412d24f561309ca0a2836f086307be8 2019-09-05T16:35:18-06:00 Merge pull request #190 from 9214/patch-1
+48290dbfd98cba6d3f2abb5f10d39ca280c3c282 2019-09-06T03:31:07+05:00 FIX: issue #189 (VID documentation formatting issues)
+412aedeae752a27ef1b7df9c5b73d84659d1d52d 2019-09-03T11:13:42-06:00 Merge pull request #187 from nedzadarek/patch-1
+89037a6eb960698e4d41dc1bb9872ffc25abc754 2019-09-03T11:13:16-06:00 Merge pull request #188 from loziniak/master
+5fd6f1e69402dfc5778cd5a5cb9042dbbd8e951e 2019-09-03T12:07:01+02:00 formatting
+2f829bddcefbcc6cf8adbb766c189a1a67c774fe 2019-09-03T12:05:49+02:00 some details about image 1D and 2D manipulation, copy/part
+c125f192221f5d80c6ad7fff5779b8a323e505b1 2019-09-03T11:25:19+02:00 Merge branch 'master' of github.com:loziniak/docs
+a1d890a240ed6fb28db35e59b85339715cc7a0be 2019-06-20T10:53:49+02:00 one more pair! comparison example
+0cd7fddbaac78bf455c6d692f683c64d8d105bc5 2019-08-25T15:58:25+02:00 Missing a grave accent on the line 42
+6ff4eacd2489c10420f8e2e76cb5fe2e0c19656a 2019-08-13T20:31:34+02:00 float, reactivity, vid modified
+bc9da17d324d5aaf7a3e69a608f80d7e27693bde 2019-08-11T13:32:09-06:00 Merge pull request #186 from Tovim/master
+6058a50a2814f2b1cd1610de4d8872d1aa0cc62c 2019-08-11T10:56:00+02:00 docs-cs: cs/(float, reactivity, vid) files modified A note for Greg T: in en/DT/float.adoc - lines 62-67 contain the same as lines 55-60.
+441d8b53e94ccf163c778fd09df9aeacf5ab7e19 2019-08-11T09:34:28+02:00 Merge branch 'master' of https://github.com/red/docs
+c4866e854f0090f44eafed280127b3d79dbb2685 2019-08-11T09:33:28+02:00 cs/DT/float.adoc modified
+df368110e1c459638669dc2d89b62b3cdc3dc892 2019-08-07T17:51:49+02:00 FEAT: describes more explicitly VID keywords accepting Red expression arguments.
+4a5fb8fc183b6022458dfe5c717416750bc9a5f3 2019-08-07T17:19:38+02:00 FEAT: adds the default value block description to IS operator.
+1aa46ff23d04498fe2f3ee1d963d4877787d3c64 2019-07-21T16:19:57+02:00 updated fr/datatypes/action.adoc
+d8255111ec5caefb3092ae7962065c9e3c4c4526 2019-07-21T15:59:31+02:00 updated SUMMARY.adoc and datatypes.adoc in /fr
+e30ec58011cc8987738d5d16db738c4872875c2f 2019-07-21T14:33:32+02:00 update 2 of cs docs on local repo
+f31150ef45e2292b0a15021999439b862547d4a1 2019-07-21T14:25:47+02:00 updated cs lang on local repo
+9ad2dff51650e7b9e78f46d6f9a66e0a30377677 2019-07-19T16:36:48-06:00 Merge pull request #183 from Tovim/master
+a77a470ed7386d3a035e7999e54c217ca7c256a5 2019-07-15T12:01:32-06:00 Merge pull request #184 from gltewalt/master
+61d965e71a4ebf3efe2269c20d880e26a6708d8b 2019-07-14T22:32:08-06:00 Some cleanup of float.adoc
+b3305f35b9b5e50bea113909e3946d94c2145164 2019-07-14T22:05:04-06:00 Fixed typo in line 7
+c7b9fe267c2fe76e8ef16eb9ca66cb07e9b230bd 2019-06-20T10:53:49+02:00 one more pair! comparison example
+9daa234500177236acfbdaae93c60abc1ffd5f3f 2019-06-18T11:22:22+02:00 docs-cs: README.adoc, (cs,en)/DT/pair.adoc
+2799984c103241f20ba6b406ee52f1adc6d7cba4 2019-06-18T11:18:25+02:00 docs-cs: DT/pair.adoc
+a4563dcca61970d6031caff8a04c530980a9a159 2019-06-16T12:05:23-06:00 Merge pull request #182 from endo64/endo64-readme
+578df3afcbee0b6cbfd9bd67c71377f751f01b17 2019-06-16T17:07:35+03:00 Created README file
+e86095123c63643dd26ea9d76bd5167a45356582 2019-06-14T11:12:31-06:00 Merge pull request #181 from loziniak/master
+01229d0c89723e4663b64b3cadf36a327d0937f4 2019-06-14T12:26:55+02:00 pair! comparison
+d733287a6042fb9968fbcaab8de90a54f4dfc17b 2019-06-11T21:44:25-06:00 Merge pull request #180 from Tovim/master
+b54c501afd18cdfdf3f20d0fcd72bb0469a2d30b 2019-06-11T20:36:29+02:00 docs-cs: cs & en/dt/email.adoc
+2a9f2340d360e7bd06eb1ab848d07430930cdee5 2019-06-11T20:31:25+02:00 docs-cs: dt/email.adoc
+8b1bd58887eac9905ced08b3b3fcd640fb2cd0e9 2019-06-11T20:12:36+02:00 cs/(view, dt/map,tag).adoc + en/(view, dt/map).adoc
+3e8ebfe30be8c6de4c02073df190d862564f2534 2019-06-10T12:49:39-06:00 Merge pull request #178 from gltewalt/master
+36dda633e998b7f1867a987f46c7fba71c4a1f3e 2019-06-10T12:36:12-06:00 Added path accessor section to email.adoc
+3a2578bfdc06e252ca5974ea8e91f217e89f54d2 2019-06-09T13:23:17-06:00 Merge pull request #177 from Tovim/master
+624f6886ec9bdb2a166c9027ffd55e72462ca739 2019-06-09T20:51:44+02:00 docs-cs: view.adoc
+4bdc4c166464844ac7a651f4ce89c6c7110d6807 2019-06-09T20:31:46+02:00 Merge branch 'master' of https://github.com/red/docs
+2467d9105440fd7ad4b7ff90336c21fed38dcdaa 2019-06-09T20:31:05+02:00 doc-cs: dt/tag.adoc
+2113d1b8e821b02d5c1a2d569ddae4023d492bcf 2019-06-07T09:44:06-06:00 Merge pull request #176 from loziniak/master
+17ad955eddda4b7b9a9bec7c1410cbd7af63ba20 2019-06-07T12:30:56+02:00 field's password flag
+aabee8f85e43f59fb262a460e9b7171feec7cb02 2019-05-30T09:42:03-06:00 Merge pull request #175 from Tovim/master
+567cbbb1c49bb10343882c01c901920ffee8cbc3 2019-05-30T15:01:00+02:00 docs-cs: DT/map.adoc - changes translated
+443f086aaec52f323b05e98471b896dea5209a38 2019-05-28T13:03:54-06:00 Merge pull request #174 from gltewalt/master
+2c1f96e0a257c8554578991b4c9a4ab00fee66a7 2019-05-27T17:15:12-06:00 Fixed output for examples: lines  221, 240, 243, 246 in map.adoc
+7f20c268d60cf388eeddff4d04e22f5ff085c019 2019-05-27T14:59:10-06:00 Merge pull request #173 from Tovim/master
+9beb48d205881c4504e4f64baa5eaad8bbf1cc94 2019-05-27T15:41:53+02:00 docs: datatypes.adoc plus DT/(map.adoc, typesets.adoc) translated
+be2fdfd1435f9b475e6ec846b954f18bd696801f 2019-05-27T15:39:07+02:00 docs-cs: datatypes.adoc plus DT/(map.adoc, typesets.adoc) translated
+79eca0537f509cf31a75898469ac3a4389e9765c 2019-05-27T15:32:05+02:00 docs-cs: typesets.adoc and DT/(datatypes.adoc, map.adoc) translated
+11065e0c4776cf090aff6ffc988610141131591c 2019-05-26T15:34:28+02:00 Merge branch 'master' of https://github.com/red/docs
+cfc40337d43eceb32eff4d3f54698f860dbca8c2 2019-05-25T14:57:00-06:00 Merge pull request #172 from gltewalt/master
+415df24a6ee1c4760b233f13eda09ce8b8b849cb 2019-05-25T14:16:46-06:00 Fix to number! and scalar! in typesets.adoc
+03d92d60e93e196c9aee4b6f9b7241f7a2a73ebe 2019-05-25T12:27:22-06:00 Merge pull request #171 from gltewalt/master
+22dbff5bd6c90d054246037e69a51504caa8f362 2019-05-24T15:11:44-06:00 Edits to descriptions in Description Collumn for typesets.adoc
+79a2ecd5b64a156f599767055719f5ee9ed43fbf 2019-05-24T14:37:14-06:00 Merge pull request #170 from gltewalt/master
+3325d40c0f00e7815c574ad86ab6856708b86ee3 2019-05-24T13:27:22-06:00 Edit to desctiption. Added number! to typesets.adoc
+ff3c8b204c27eeb6be14d5e0fdd8b0cfceb7ae45 2019-05-24T13:26:35-06:00 Created datatypes table with links and examples. Removed general list of links and examples.
+14230f64346a6f90106b11301ada8c63a2125c8a 2019-05-23T11:11:52-06:00 Merge pull request #169 from gltewalt/master
+193ccdf574d3d1749737aa7069e642dd321dd49b 2019-05-23T16:32:41+02:00 FEAT: updates map page to reflect the set of changes for accepting NONE values.
+917f30b0b24c46750676a35985077876fbf2fb05 2019-05-22T13:05:22-06:00 Expanded the description of datatypes with Gregg Irwins contribution. Added list of datatypes that have a Literal Form to typesets.adoc
+d6c15ffb94a9fe3ea1bd8b678352d096de8e9b09 2019-05-22T13:03:27-06:00 Expanded description per Greg Irwin for typesets.adoc
+4d1b93983d7a54d9349a9ed6e512aef020990939 2019-05-19T11:39:10+02:00 docs: 2 folders with 5 files modified
+1c561f85373e4e247b1c880eaf02eb2ac315b57b 2019-05-19T11:36:08+02:00 docs-cs: datatypes.adoc, typesets.adoc and DT/action.adoc (typo) modified
+a16708177b3fa433cd14c6aecf402c175f6c5fc3 2019-05-17T13:53:25-06:00 Merge pull request #168 from gltewalt/master
+52d33d70ddb4f098e7e4b36b2f98e96c38a32699 2019-05-17T13:27:55-06:00 Added numbered TOC to typesets.adoc
+a2088d986a4b8e9f76988fac3098cb6900d0cd45 2019-05-17T13:22:26-06:00 Slight edit to final line.
+c5b28574cf4ee8f34509a8fcec077c6bd1823404 2019-05-17T13:17:16-06:00 Added description for series! typeset to typesets.adoc
+ff63c6adbb2463664e014588f3d004578064fc17 2019-05-16T21:21:50-06:00 Merge pull request #167 from gltewalt/master
+0bdbfb19e4206878aacbb6d2f2d6b3411cc73906 2019-05-16T20:40:09-06:00 Added link for string! to datatypes.adoc
+59a4ac42ff744e022131c8bf64797a4aad5a6a64 2019-05-10T13:12:31-06:00 Merge pull request #164 from Tovim/master
+d01c593969219f0e479f632024ad459e44f00bfc 2019-05-10T11:35:25+02:00 docs-cs: cs, en/view.adoc slightly modified
+07186c914e2edc6a10eec58cdd0bc8690180546f 2019-05-10T11:32:59+02:00 docs-cs: view.adoc slightly modified
+7deed77df66980c625be16d7be5fab8f34d48514 2019-05-09T17:48:53-06:00 Merge pull request #163 from gltewalt/master
+cc862587334bbf59d047b11456e022de09fdb3d0 2019-05-09T17:07:22-06:00 Merge https://github.com/red/docs
+a92754fe90a345a1987801492ad7bebc2e582e3d 2019-05-09T17:06:05-06:00 Added 'Not Yet Implemented' note for drop-list and drop-down scrollable flag. View.adoc
+a8d3c61c92aacae02bee4b9da7b788f27fb88ad5 2019-05-09T11:15:29-06:00 Merge pull request #162 from Tovim/master
+3f70b11746812f145a61c41e202563aaa4ab736a 2019-05-09T18:13:22+02:00 docs-cs: typesets.adoc added and summary and datytypes modified
+98457e62f3a37c0d1c2e89d760ec9485ed7bc54b 2019-05-09T15:55:29+02:00 docs-cs: new typesets.adoc plus "odvolávám co jsem odvolal"
+a5cf82249a3be84f400285a6361f1b02f21c2216 2019-05-08T22:07:39-06:00 Merge pull request #161 from gltewalt/master
+efd3abddc156cc888b6100a061afb3eaaba21fa5 2019-05-08T22:05:50-06:00 Fixed integer! link in datatypes.adoc
+ddb40b556d7f3a693d1c532a7950ef8ffbe67856 2019-05-08T21:42:54-06:00 Merge pull request #160 from gltewalt/master
+c7aee9e8f6577e8946bfe261180bcd8d978de60f 2019-05-08T20:35:12-06:00 Created a Datatype Listing header and moved sidebar links to the bottom
+3af56bc930552201d296fe20a3b3c357ff624d49 2019-05-08T20:34:18-06:00 Changed bullets to links for datatypes.adoc
+70d2750c5331a990222bc32fbe017a0a75ef0e50 2019-05-08T17:30:22-06:00 Merge pull request #159 from Tovim/master
+7c5a21ff9f59e95422526f28246291936df46124 2019-05-08T15:24:09+02:00 docs-cs: structural changes i documentation
+f8ef095ec43ac2dc901b1553cd3abe5836615a60 2019-05-08T15:17:12+02:00 docs-cs: structural changes in documentation
+47fed7736d56e927f9b2e545a75e1e09ad598c04 2019-05-07T17:53:38-06:00 Merge pull request #158 from gltewalt/master
+af07897a9de4116ca2965fd1f5aebbe6e41a72d9 2019-05-07T17:23:20-06:00 Merge https://github.com/red/docs
+7dbc576f58dbf97af219cc1f4a61f4241496d87f 2019-05-07T17:22:53-06:00 Added links to each datatype back to SUMMARY.adoc
+722010d0fa0ac701be5bb4787957c103a7e83920 2019-05-07T17:21:23-06:00 Edits to typesets.adoc
+c3e5ec12715f16b7e19d0ef2ce62490f7c9b353a 2019-05-07T17:20:48-06:00 Removed list of links and added list of bullet points for datatypes.adoc
+71e7f4c3aa4201f0a9ebe86bd64a625d9ab639bd 2019-05-07T13:36:48-06:00 Merge pull request #155 from gltewalt/master
+fe472770e3d2ea79cbd765be7a1d6a4d83b1a668 2019-05-07T13:35:29-06:00 Merge pull request #156 from Tovim/master
+c17ef4f2a792dfa395e89c68077c0cdf63d25399 2019-05-07T15:31:49+02:00 Merge branch 'master' of https://github.com/red/docs
+f825c3fc425d3a07c6675305e65c7e65e0c8c440 2019-05-07T15:29:13+02:00 docs-cs: renamed rtd.adoc to rich-text.adoc (rtd.adoc deleted)          repaired SUMMARY.adoc
+036fd694e2e0c249d97e53753541bb525fa74adb 2019-05-07T15:24:28+02:00 docs-cs: renamed rtd.adoc to rich-text.adoc (rtd.adoc deleted)          corrected SUMMARY.adoc
+74692efbdc1a4abf0e1c650d4fef00d376ff489a 2019-05-06T17:59:32-06:00 Edits. Changed layout for initial Typeset reference.
+d45b2c97cffded156bb1957a7210caf69d8a1180 2019-05-06T17:51:10-06:00 Added link for typesets to SUMMARY.adoc
+fa235b375a73a76b7e03f3c2a3cfbbf692509f33 2019-05-06T17:48:18-06:00 Initial reference for typesets
+324a8fa451da3791a2539ffbac4a8390f43bb052 2019-05-06T16:54:31-06:00 Merge https://github.com/red/docs
+0b905239407a545ac8e89e72646a9f0b6dbf0555 2019-05-06T16:53:43-06:00 Edits to TRANSLATIONS.adoc
+bfc40d68e5783f8b78bf729b72e017b4c2f53b45 2019-05-06T20:30:01+02:00 docs: cs i en
+f1a3f2bccd1a55922d3ae2c9e560df218057d01d 2019-05-06T10:08:22-06:00 Merge pull request #154 from Tovim/master
+13dd880e44c0c74b8cadd517aef625287ca1aa68 2019-05-06T17:36:31+02:00 docs-cs: rich-text renamed from rtd; bitset, block, char, email, error translated; 11 files slightly modified
+3d4f0eca2c9137a3ec69394ffc23b95639ed97a9 2019-05-06T10:17:57+02:00 Merge branch 'master' of https://github.com/red/docs
+49994029ece8493f7d9cbb7c56e388449e07597c 2019-05-06T10:17:15+02:00 docs-cs: DT/issue.adoc modified a puny typo
+562aa7304500afeea865240cf1923c3cc79a127e 2019-05-05T20:57:40-06:00 Merge pull request #153 from gltewalt/master
+0d7a48fd5ad751a3f37c3feb0a30cdad53bf5ed4 2019-05-05T14:36:27-06:00 Added Complements explanation back in as a Note for bitset.adoc
+3de9bf0bded3f3735f2381469e2a05dc657ed2be 2019-05-05T10:36:29-06:00 Edits to formatting in Runtime Creation for error.adoc
+6445dd68e216b1582c4131bf5b029f661ad7f027 2019-05-05T10:35:42-06:00 Added Creation section, and edits to formatting for Runtime Creation section for email.adoc
+b6cd66339938a3c212276e3c085f3bf79a90aff7 2019-05-05T10:34:23-06:00 Edits to block.adoc
+9e49e965c3ed461526e821847091b465ebe6f898 2019-05-05T10:33:45-06:00 Edit to Complements section and edits to formatting in Runtime Creation section for bitset.adoc
+a5710e83f8c2081e87488839913a115530ecb404 2019-05-04T16:25:17-06:00 Merge pull request #152 from gltewalt/master
+81a7134381650776d5c94ef530b251630f058df1 2019-05-04T16:20:49-06:00 Merge https://github.com/red/docs
+0e16ebd45eb739d85433d5f54c37b4a404e8b4cc 2019-05-04T16:20:24-06:00 Added not about first arg in char! arithmetic for char.adoc. Added Predefined words section.
+7645e0a8fc5d218bee4c049ae78b483c73996ccb 2019-05-04T11:38:19+02:00 hafo šmoulů
+b795444ab3e300d6594805701272e9e39f58522c 2019-05-04T11:24:25+02:00 docs-cs: cs/ (README, SUMMARY, datatypes).adoc modified
+1d16bde6f7c2434a94fef6799fb6870e8a2cd69a 2019-05-04T10:56:52+02:00 docs-cs: maybe a typo in cs/DT/action.adoc
+c53f9f954f25d814c52b329b3e167d54800dfc96 2019-05-03T21:01:38-06:00 Merge pull request #151 from gltewalt/master
+164b263d5ff09f229bcb10606d1475725b817ec4 2019-05-03T19:30:31-06:00 Added links for all datatypes to datatypes.adoc
+24d1f531def4f2fa94cd83f9ea4d9d3993433573 2019-05-03T19:29:48-06:00 Removed sub-links under the Datatypes link in SUMMARY.adoc
+796b89507ff06d95953b4aa9b153ae36fe2f4c4d 2019-05-03T19:08:29-06:00 Created top-level document: How-to for translators.
+6f61295f87d459b26fbb9de4413561a28634dfc7 2019-05-03T19:07:41-06:00 Removed how-to for translators.
+931d0b1bfc19448319ba53c94b2c1dfcb7308377 2019-04-27T10:35:05-06:00 Merge pull request #150 from Tovim/master
+663d5816b0bc70bb5a4239715f0a9f14752dc863 2019-04-27T15:09:35+02:00 hafo files from 25.4.2019
+a41b9f1f2ceaaec88dbb13faca501ba652905444 2019-04-27T14:58:20+02:00 docs-cs: added and modified cs/DT/(action, native).adoc, modified cs/DT/(datatype, typeset).adoc and cs/(README, SUMMARY).adoc
+6f3351f060556ed79ab017a7079d6e0954d00557 2019-04-24T13:32:05-06:00 Merge pull request #149 from gltewalt/master
+161ef27f493cfc9627a1a5c5cbe18720ee1076f6 2019-04-24T13:15:27-06:00 Merge https://github.com/red/docs
+1401ab3d54989bb76dbf6a94c7c62040d0fc16d9 2019-04-24T13:15:01-06:00 Added links for action! and native! to SUMMARY.adoc
+27ae2003ca6d23b8102cda1af5a319183d8068c7 2019-04-24T13:14:21-06:00 Edit to Abstract section in action.adoc"
+d1e189451cdac83b4c7259b89781e73237601353 2019-04-24T13:13:42-06:00 Added a hoto for docs translators to README.adoc
+422793033696770aa623c11ac519694eb0a26a0d 2019-04-24T10:39:40-06:00 Merge pull request #148 from gltewalt/master
+399ddf9f7d9e43effcb2c5d657ba3ffea7a736cb 2019-04-23T18:10:36-06:00 Merge https://github.com/red/docs
+76c6a6c0ef7bcdd3acbbc0255f9f003cf0ca5f1b 2019-04-23T18:10:00-06:00 Changed pre-defined to predefined.
+a53592ded9105a83a89628f2727bcc49797b7e5f 2019-04-23T18:09:45-06:00 Changed pre-defined to predefined.
+5d301d9d553358c3a17e1e7fdc48c573b0c7e569 2019-04-23T18:08:52-06:00 Native! version 1
+c398073bcedb674b47adfe72a4cd81cce73eef79 2019-04-23T18:08:34-06:00 Action! version 1
+50ee50f783350cab8fdfe25533d8e2ea40d2949e 2019-04-21T11:45:57-06:00 Merge pull request #147 from Tovim/master
+5b9266617d1ea560f56ca3c93b9d1aa677381803 2019-04-21T15:42:51+02:00 cs/DT/ function.adoc, op.adoc and cs/SUMMARY.adoc en/DT/ function.adoc, op.adoc and en/SUMMARY.adoc
+f014ceec14b92075f1f1be824586d0ff393d1395 2019-04-21T15:30:54+02:00 docs-cs: cs/DT/function.adoc, op.adoc and SUMMARY.adoc added, modified
+97e7ab4b923bd5dbf43dfd4e53a381694bc4328b 2019-04-21T11:21:19+02:00 Merge branch 'master' of https://github.com/red/docs
+7e930b5f9d70cf8a08fc2796690105dfdb91bfe2 2019-04-21T11:20:33+02:00 cs/DT/binary.adoc and cs/preprocessor.adoc modified
+38f7ce40be7a2785f2d3b9b6d3a9a376450a1dc8 2019-04-21T11:17:02+02:00 docs-cs: cs/dt/binary.adoc and cs/preprocessor.adoc modified
+034dd24f266ffeace16bc1368f0b21aac98e0077 2019-04-18T19:00:37-06:00 Merge pull request #146 from gltewalt/master
+012372a48549411555697b9e1ca6cf08feca712a 2019-04-18T17:32:37-06:00 Merge https://github.com/red/docs
+a8238c4616299c2f82a2a4376d85736208c824b1 2019-04-18T17:32:10-06:00 Edited comparison section and deleted the evaluation section.
+e758bb310ecbac967314604d711c1980c94015e4 2019-04-18T17:31:51-06:00 Edited comparison section and deleted the evaluation section.
+2ddea9792259a28b37bf3e3aa9ca0ad97ef2db5a 2019-04-18T11:47:33-06:00 Merge pull request #145 from gltewalt/master
+e2cca1ea14e50fb2f504dd80598fddf6ee47ceab 2019-04-17T21:34:40-06:00 Added anchor to Evalution Steps in function.adoc for cross referencing.
+368a5b419038ee34135557a4b989a687380c5269 2019-04-17T21:33:54-06:00 Op! Version 1
+8ad8d260d60b15bd9c6f2ba8fb0e73de39752b08 2019-04-17T21:32:49-06:00 Added link for op! to SUMMARY.adoc
+29a23506e78d38e69e7cd8b6aee2e9901f455784 2019-04-16T17:45:53-06:00 Merge https://github.com/red/docs
+c6734dd10580856898129e164d8653449e8e4826 2019-04-16T17:45:13-06:00 Function! doc V1
+6151aea3f870a2da64c394669605e3ff5437ba22 2019-04-16T17:44:38-06:00 Added link for function! to SUMMARY.adoc
+52e64b708e58161cbcaab1e30c9f4a4bf12c6f7a 2019-04-15T14:51:01-06:00 Merge pull request #144 from Tovim/master
+b14123aaaf69ebf2faad7ffb0dadd7961ef6d603 2019-04-15T20:49:18+02:00 hafo cs/ en/ files (8) modified
+5e29af8d578f7f52a422a79cd8a32f05fa17e6a7 2019-04-15T20:44:41+02:00 docs-cs: cs/(path, preprocessor).adoc modified
+afd6b155133ea54e8d81b58ceae43a372ae06119 2019-04-11T16:37:01-06:00 Merge pull request #143 from loziniak/master
+df5aa0f629b1bf4208d2b09c86f9f3b20f7aaf7b 2019-04-11T14:33:25+02:00 preprocessor / include: not preserving context
+a59ee30d8aa1029feb66a5c21a94ada7c898f90a 2019-04-07T14:07:57-06:00 Merge pull request #142 from gltewalt/master
+d52ff61de990b0b620610041d452913827d5d285 2019-04-06T18:33:09-06:00 Changed pre-defined to predefined.
+c6562a4d5528c6e75e0424521d65c10a4a55c63d 2019-04-05T13:53:21-06:00 Merge pull request #141 from Tovim/master
+85dbd024d4ffb4bfda68f5ee6cd5c7b12470e25b 2019-04-05T20:55:38+02:00 docs-cs: DT/ datatype, typeset added, summary modified
+28c97298217ead9a0760197606eb8b2a730b6b03 2019-04-05T20:53:37+02:00 en/DT/datatype, typeset added, cs/summary modified
+d5cda183210066270ee10f741ea706c0d14d8ccf 2019-04-05T20:44:38+02:00 summary.adoc modified, DT/ datatype, typest added
+2bce07b24904b25efa48975e355c8c604ddffd87 2019-04-03T17:16:09-06:00 Merge pull request #140 from gltewalt/master
+804da775195b154fbe986b279cbd7119a67c83de 2019-04-03T16:38:09-06:00 Added note about op! values not being evaluated.
+51df665f9ff45f7e531d60e404a9ea7dfcba4a4e 2019-04-01T16:13:54-06:00 Added note about path! being an active type and evaluating stored functions.
+5ccb59253d1e45df772f1ef0f32dec10609b21d5 2019-03-31T16:49:00-06:00 Merge pull request #139 from gltewalt/master
+0d6a7100d8c8b18878355393730a8d5b8f3cc19d 2019-03-31T14:59:54-06:00 Updated links in SUMMARY.adoc
+25aedd7f557c1980f993758265f5256a84aa2087 2019-03-31T14:56:47-06:00 V1 datatype! and typeset! docs.
+8843fdd33cd44d6b3efbd6c8a2b6faadbe4079f0 2019-03-31T11:01:01+02:00 (cs, en)/dt/date.adoc
+695c1a72d44d03e69f41957c2dbd8b8484a3e3e8 2019-03-30T13:19:25-06:00 Merge pull request #138 from Tovim/master
+8b31a44c33e4f2d71d6617efcac1c9ebc91fc44a 2019-03-30T20:05:34+01:00 docs-cs: DT/date.adoc modified
+f2e6b021ff4ea1b802362f15d6cc21d6242e0f6f 2019-03-30T14:58:25+01:00 Merge branch 'master' of https://github.com/red/docs
+5990eabd446599bbf9430195c524a850a9e49334 2019-03-30T14:57:36+01:00 docs-cs: DT/(bitset, map).adoc slightly modified
+129577cb65a19541a8820443a0154fdd4205e382 2019-03-29T18:19:21-06:00 Merge pull request #137 from gltewalt/master
+415cbbb97470a6d25c1fbf8a2671a2899e3d7156 2019-03-29T18:10:22-06:00 Fixed wording in note.
+03e993d2b92daa8611fe84ae41900393d30adff6 2019-03-29T16:57:04-06:00 Added Note to /zone section for default value in date.adoc
+c85cb3be817a9fdf65c253bc97ab462a5e3cdd6a 2019-03-24T11:45:59+01:00 Přenos z docs-copy do docs-cs
+175c0ebeedfef42d5eee44967af51300377f0154 2019-03-21T13:59:57-06:00 Merge pull request #136 from Tovim/master
+366ba3ec082975cfe73b4cd4b9721a21275d2259 2019-03-21T20:42:10+01:00 docs-cs: one puny ant limping yet
+622ef2361a9b1209b786c116bd7f591ea2a05cf2 2019-03-21T20:24:54+01:00 docs-cs: slight modificaton of 9 files
+6847fc23659a04ef84f0016391f316f93111654f 2019-03-21T16:44:49+01:00 Merge branch 'master' of https://github.com/red/docs
+965527620ca5070fc1a2fb0f2a73c838837d788f 2019-03-21T16:44:13+01:00 docs-cs: paren.adoc translation modification
+7fe25233225a901a8e4776433958ad0f9e491d68 2019-03-18T14:28:12-06:00 Merge pull request #135 from gltewalt/master
+d8c60b8d839a00cdf256a4c7cfead0d2d80b23f2 2019-03-18T14:27:07-06:00 Merge pull request #134 from Tovim/master
+c375f6255ce92f4fc5c958178af60527fc302c35 2019-03-17T16:48:04-06:00 Slight edits to docs for consistent look and wording.
+715702ae997b656c9651f669eea7b6fc0e75e90d 2019-03-17T15:16:37+01:00 docs-cs: nine files modified
+d68527ef9ff3fc5590e9c21c92cc034e52df57c0 2019-03-17T15:06:58+01:00 docs: cs/SUMMARY.adoc modified
+ee829033106f372a1c3852fa2a3ef66aab01b26a 2019-03-17T11:57:44+01:00 docs-cs: (summary, logic, paren).adoc modified
+6973f7d6b4020d727360b65246b5ab480c6e4375 2019-03-17T10:54:12+01:00 Merge branch 'master' of https://github.com/red/docs
+98ab24fc0fba3966ad146f1a5611f4f9e71b4473 2019-03-17T10:53:15+01:00 docs-cs: (bitset, block, draw).adoc modified
+88f645914f2d814e0223f4e850c0a91ffaef2281 2019-03-16T10:14:37-06:00 Merge pull request #133 from gltewalt/master
+c523a3935254af6c8db405b072a8461c66826104 2019-03-15T16:53:41-06:00 Added note about using make for boolean logic support.
+b698915ca2eb13149d02b655bf6980a73d31c510 2019-02-26T13:44:57-07:00 Merge pull request #132 from Palaing/master
+ef265e10bbda53bd013085d7deda65f26135c659 2019-02-26T13:43:56-07:00 Merge pull request #131 from gltewalt/master
+9c874d8ec511786ed0100fb56afc9f2597c26611 2019-02-26T19:29:42+01:00 reverting changes made by mistake on cs/ files
+876e8296ca1afd85e234eb2bd4e682e2845ce760 2019-02-26T19:16:37+01:00 Merge branch 'red-master'
+060fe712799c61746651eee05a0ce1e1aca7bab2 2019-02-26T19:15:39+01:00 update of cs summary, binary, handle and object
+e00c8f9d32c556e7c910e740ce2e3731befcd9db 2019-02-24T17:24:54+01:00 updated fr/datatypes, fr/draw.adoc, fr/view.adoc
+2abe9c63664737aa604acd89e70b26b1731ebe38 2019-02-23T18:45:19+01:00 added fr/rtd.adoc
+c40c65c807177d8c3660c6ec3c9caf6bd472c37f 2019-02-10T16:03:52+01:00 updated French datatypes and summary
+a93a130e0d3c6ef75da3db658b2f33357ff63f34 2019-02-08T17:33:21+01:00 updated cs language with red master
+919192a993697920e3c1296874ae7a1ab53e5168 2019-02-23T13:39:20-07:00 Added paren to SUMMARY.adoc
+609e7c8bfdd949c36d7ede947aa1eab6d86cd1f6 2019-02-23T13:35:03-07:00 Small edits to paren.adoc
+59d6df8eacf4acc65a1e1340489d7bd8ebac1b73 2019-02-16T20:48:42+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+111ff85d4f72c16144052a0a4351a43b6ca8fe18 2019-02-16T20:47:48+01:00 nová várka
+88f463f616c17f9da298661abd3ba4377ed92ca0 2019-02-10T14:56:13-07:00 Merge pull request #130 from Tovim/master
+d5e6d3721ee24ef3fdc39e0a9c91603c04741be4 2019-02-09T20:33:55+01:00 Merge branch 'master' of https://github.com/red/docs
+950faf598d197110ec081be12ec292d1af9570ab 2019-02-09T20:32:27+01:00 docs-cs: rtd,adoc, datatypes/bitset, event, hash, vector .adoc added          summary, datatypes/binary, char, handle .adoc modified
+39484b232619a9d40bc35ddfd2bce35efcd63c8c 2019-02-04T11:34:58-07:00 Merge pull request #129 from Palaing/master
+331fd63adb57251e8cd8919c626cd1c56191b994 2019-02-04T17:36:25+01:00 updated LANGS.adoc to include French translation
+49623adf11c620d4c01937a377c3d375c91ade35 2019-02-03T18:34:00-07:00 Merge pull request #128 from Palaing/master
+94c6658bf96d5729302f26157a92e1ed98d66064 2019-02-03T17:47:14+01:00 docs - fr translations, updated README
+8655afed9f6d15b9420f8bd571709368c6281732 2019-02-03T17:12:32+01:00 initial commit of French version
+92fdb6d6b533d9489d9caf5b09bad85791b3c886 2019-02-03T16:47:59+01:00 Merge branch 'master' of https://github.com/red/docs
+3c1142b997e2fd3e8f13f08f4b0dd627bd4775e9 2019-02-03T16:46:19+01:00 docs-cs: partly translated dt/binary.adoc and dt/char.adoc
+cfb197f9f3d3983f82c052a2f4cc2c44ec8f2230 2019-01-29T17:10:03-07:00 Merge pull request #127 from gltewalt/master
+3b3cbae9fd371457ce10b9c7718b4b153c841af9 2019-01-29T16:08:53-07:00 Added overview text to Overview section in rtd.adoc
+43446d4269c3bd6dcee1abf12b00718a0b851bf6 2019-01-28T17:48:26-07:00 Merge pull request #126 from gltewalt/master
+bd140eeee0fe502c168685294e3f5f08b04dcedf 2019-01-28T17:37:44-07:00 Merge https://github.com/red/docs
+38dd385a314c6be650d2d1da764644de12ad18c2 2019-01-28T17:36:17-07:00 Edits to event.adoc
+e86002cf95b0e0d5e3f3a2e244f1677c59450172 2019-01-28T17:08:28-07:00 Merge pull request #125 from gltewalt/master
+96f0bd091ee0afda53f2c9e476944b131f0b9948 2019-01-28T17:05:52-07:00 Added link for event! to SUMMARY.adoc
+4ff894e380737895380ee93b005d38e8c4920141 2019-01-28T17:02:24-07:00 Edit to handle.adoc
+0ff3fc7444e9bcd8c858e2b9d9da5ae9c8fbbd18 2019-01-28T17:01:56-07:00 Initial event! doc.
+3ddeb22688379865d43b51ec4d37ea0d7bb13934 2019-01-28T15:31:49-07:00 Added hash and vector links to SUMMARY.adoc
+bb38a33c036f438513aa48e27b304718a899306e 2019-01-28T15:27:05-07:00 Initial vector! doc.
+c9d8ab62adc38e20ca5f968e8c3cec0536f32e21 2019-01-28T15:26:25-07:00 Initial hash! doc.
+3cbd4612e89f18c3d62c22031542ebf72a3ce1dc 2019-01-19T20:21:36+01:00 Merge branch 'master' of https://github.com/red/docs
+4fd57a4d85f7601fa6430466b1ee74641bc1800a 2019-01-19T20:20:46+01:00 kosmetické úpravy cs/datatypes/object.adoc a string.adoc              plus cs/view.adoc
+e5aaa188b89cab112c70fdea5b82767a97963d23 2019-01-19T20:18:53+01:00 cosmetic modifications of cs/datatypes/object.adoc and string.adoc                           cs/view.adoc
+3ae9cb2f55e5f141d7b2e8e8a8ab8b5a9be9d45e 2019-01-17T17:17:47-07:00 Merge pull request #124 from gltewalt/master
+c448d8d48dbabdb98dfccb5beb5f3bca02c665e9 2019-01-17T17:15:29-07:00 Fixed link for bitset in SUMMARY.adoc
+d44c23dd47c7d7dc365be8b2693345e2b282ae7f 2019-01-17T12:18:09-07:00 Merge pull request #123 from toomasv/master
+c76008661698ac07bd42f11986752a109611f1b5 2019-01-17T12:17:43-07:00 Merge pull request #122 from gltewalt/master
+7ea14c3de5f03629b89460672bf0315b2b3738ad 2019-01-17T14:28:23+02:00 FEAT: Add link to Rich-Text Dialect doc
+d1afe356db5525848f49b3d57b85d320987e3556 2019-01-17T14:25:47+02:00 Add files via upload
+d6e5f6eea3461a5b1e3ee7835a400ef228d943bc 2019-01-17T01:17:35-07:00 Edits to categories. Added sub-categories Make, To, Charset, and category Complements.
+c616740c51f5582738d32457867b59fb837ecfb9 2019-01-16T17:28:01-07:00 Put BNF into Creation syntax section. Removed Literal syntax section.
+a9f9087b2f720590a7bec6becc19c64524303104 2019-01-16T16:51:46-07:00 Added link for bitset to SUMMARY.adoc
+b7b04438c7ee46d6a9cb5741552b9447e42d600d 2019-01-16T16:51:12-07:00 Initial bitset! doc.
+8d970c8c6eb40bd204d73ae676f7e854c710c343 2019-01-14T23:21:57-07:00 Merge pull request #121 from Tovim/master
+92978bd5fe13c4e899dfabef14b55012499b2d85 2019-01-14T19:36:15+00:00 Updates book.json
+4d073431ddd85f76cbd9b876cdf0e259c9193ff1 2019-01-14T19:23:02+00:00 Updates book.json
+28d178e0dab600cb7279d19cc0b46fd337aca054 2019-01-14T20:10:41+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+2ff647d0d33605edbc7d2f879039cf7e33a44f65 2019-01-14T20:08:33+01:00 trailing comma removed
+07ff050f4e84344d875f44a9ccd8566e427a1607 2019-01-14T19:02:03+00:00 Updates book.json
+c1a9053e44a0dd75359d45d5a33a683ff2f1d0bb 2019-01-14T12:09:52+01:00 cs, en/dt/ (date, float, refinement).adoc modified
+5c50ae76891afc1bfab0307ca66f9bd11e4e97c2 2019-01-14T11:48:25+01:00 docs-cs: cs/datatypes/ date.adoc and refinement.adoc modified
+2c24967e9d75c1ea4c8fbd7823a1d1123826ec96 2019-01-14T10:51:52+01:00 Merge branch 'master' of https://github.com/red/docs
+a59d3c0769f6b72dc7551f7a6b4be967c64e87ec 2019-01-14T10:51:22+01:00 cs/dt/object.adoc modified
+1687f137c01a051f96dce6aedfd40434bc800f50 2019-01-14T10:47:38+01:00 docs-cs: cs/dt/object.adoc modified
+21848e0f5327713d650e2da051c1ef07b8ff0695 2019-01-12T13:38:35-07:00 Merge pull request #120 from gltewalt/master
+14631f93915c3b5edf4b5433c8bb35ca58ea4a4e 2019-01-12T01:59:09-07:00 Edit to Note in Runtime creation section for date.adoc
+74f51f18f3543554908623b821b56189d2c04183 2019-01-12T01:58:15-07:00 Edit to Abstract section for refinement.adoc
+219c6c50bef412aab9dc56e519351d5f77eb95b6 2019-01-09T17:57:33-07:00 Merge https://github.com/red/docs
+d4d8d2f32cb561b35c207606622577b6470cd601 2019-01-09T17:55:43-07:00 Edited 'Note' in Runtime creation section of date.adoc
+c3db5cd0fd747ed536dd3d523dd51621d84c1aad 2019-01-06T20:41:28-07:00 Merge pull request #119 from gltewalt/master
+9a55626cc04b9bff9e3fb0ca1a507c9918db71bf 2019-01-06T20:40:41-07:00 Merge pull request #118 from Tovim/master
+655d801f2077e9cf27bda8d6a5d9e754973052c5 2019-01-06T11:49:03+01:00 Hafo files modified.
+8f7e599b87d7fe733778815400a1a577d20709d8 2019-01-06T11:29:40+01:00 docs-cs: puny modifications
+519af805f8bd7f306c90bbfcff37316c8d8138b8 2019-01-05T16:48:40-07:00 Fix to to string! in Conversion section for float.adoc
+21a5a8581da6181d698a1c04280d132c1682b403 2019-01-05T20:00:11+01:00 docs-cs: cs/datatype/tag.adoc changes translated
+b70af64ce6fc4ab95efb0acf35ff697d2a212ad5 2019-01-05T11:38:07+01:00 Merge branch 'master' of https://github.com/red/docs
+e7be7c0b31a393a93085ab264162d09ae47c84c2 2019-01-05T11:37:11+01:00 docs-cs: translated changes in en/DT/float.adoc
+e878a41aaf71474153a586ccfbe340dbc8eb4b32 2019-01-04T21:32:36-07:00 Merge pull request #117 from gltewalt/master
+307464d320c9efd5235a0cb4b2e8642f0bb0ffd3 2019-01-04T21:10:04-07:00 Edited Literal Syntax section to mention that < is allowed inside of tag!, and added Note about make for tag.adoc
+b64a6cc5c7a72d6140382d707f0a6d59ba083a7d 2019-01-04T21:43:08+01:00 Merge branch 'master' of https://github.com/red/docs
+bb8df7b5a1a846530aaee10b79876f274d90ec89 2019-01-04T11:44:30+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+8fc7f9ab0544fd45ca52c6248bdc1d03b4e59e95 2019-01-04T11:31:48+01:00 tápaje
+c1cb1a2fb1f7abd3de69d82862b326be0b80cb53 2019-01-04T10:13:49+00:00 Updates book.json
+0ad1811529dc7cdd2b77cb6bc136e4fde9ed70ca 2019-01-03T15:33:55-07:00 Merge pull request #116 from gltewalt/master
+eb1ecef86688919453acadb3f0dad0536b9b7635 2019-01-03T15:03:23-07:00 Added Runtime Creation section. Expanded Conversion section. Edits to Abstract section.
+d44f135ea701a3773f45dbcaf224b78780951dea 2019-01-02T21:37:14+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+148dbe258fef61aa0f4f462829a97a89764ced92 2019-01-02T18:14:48+01:00 docs-cs: draw.adoc
+9b400f1045de2894e337575c89ec78e896c888fe 2019-01-02T18:11:31+01:00 docs-cs: draw.adoc
+55ca843b05ec5cf27ecee8c16ef75cfd9a9170dc 2019-01-02T17:54:56+01:00 Merge branch 'master' of https://github.com/red/docs
+5baf7dc4cf76209979f66ac5f7e7a4547f4fb3b7 2019-01-02T17:53:08+01:00 docs-cs: cs/SUMMARY and draw.adoc
+8741eadf75e8eaca7fe889e2ba9b4aea52780fe8 2019-01-02T14:36:25+01:00 Create README.adoc
+7c8ff4064ca617c5e4d82b24b987c1229d890d68 2019-01-02T10:47:43+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+72c55cf5ddb19120224a3085ed31ef0a7ff3f710 2019-01-02T09:40:19+00:00 Updates LANGS.adoc
+b0c4d95d2e2c21e46f85dac9fed84f7e3cfe77d4 2019-01-02T10:38:06+01:00 Updates LANGS.adoc
+70a92b5127b0d3a895f1d70c39faa8fe2ca22499 2019-01-02T10:33:57+01:00 Updates LANGS.adoc
+2c69a2e84b804a1b25f9848b88cf76488cd22371 2019-01-02T10:21:24+01:00 Updates book.json
+ee3fe392fe984bc3a41fd5c7352f34e1284e6b56 2019-01-01T17:09:18+01:00 Úprava podle docs/
+32d47cda367bea0bd04666f243bc7040de68ceb3 2019-01-01T14:53:50+00:00 Updates cs/datatypes.adoc
+524b8fe1d18c9654c2e898109deced0c593ef511 2018-12-31T14:10:05-07:00 Merge pull request #115 from gltewalt/master
+b658d784193b0ddb782c2e25c2ba3e15c68339dc 2018-12-31T13:00:01-07:00 Merge pull request #114 from Tovim/master
+9594e8af0926429cb98f2633cced5ab7cbdac734 2018-12-31T12:58:09-07:00 Changed text in Section 3.3.Arc to 'rotation angle of the underlying ellipse in degrees (integer! float!)' per issue #69
+6e123713226db23e4f45e1fd08c954107f76aedc 2018-12-31T11:54:14+01:00 lehce upravil datatypes.adoc
+f80096a465f36e9160199c201826b4c7fe22f09e 2018-12-31T11:53:10+01:00 docs-cs: dutifully updated the czech translation: error.adoc, draw.adoc and view.adoc
+3b302c4457dae5c5aebee27f8af28f282bae0caf 2018-12-30T22:13:53-07:00 Merge pull request #113 from gltewalt/master
+16a37ef0ab40b3dcf91ab6c1b2306156ff9e2b5d 2018-12-29T18:56:38-07:00 Removed final example at the end of Section 2, per issue #91.
+1e5de6fce2339ce75eaafeb79b3e10ae705aa661 2018-12-29T18:43:29-07:00 Merge pull request #112 from gltewalt/master
+49d4182f12f7428421ffac9483aaa3ee9892e4d4 2018-12-29T18:31:38-07:00 Added set-focus to Extra Functions section in view.adoc
+c7f44839ed77ef4f6c01b405054b6b6666bb0031 2018-12-29T15:08:12-07:00 Merge pull request #109 from Tovim/master
+9705ced2399f01e54c1ff9cb4b52ad26ccdab783 2018-12-28T15:05:17+01:00 added binary.adoc, modified draw.adoc
+b40e7040800e367541fa43ed383868e5a2908840 2018-12-28T11:40:08+01:00 docs-cs: binary.adoc added, datatypes.adoc modified
+c42bc6c97520cf04d8b8b59ab11d2f1909e4892b 2018-12-27T20:29:07+01:00 Aktualizace s en/docs
+f0deb7648b5c635f03fa2559ce0f0c2160861b57 2018-12-21T23:32:18-07:00 Merge pull request #108 from gltewalt/master
+5f5315b5afbc39eec23bc33e7fc985761b19332d 2018-12-21T19:47:39-07:00 Added 'to' conversion note to Runtime Creation for date.adoc
+f193c224788c73ba60bf123a973b46a1b008d612 2018-12-21T19:13:45-07:00 Merge pull request #107 from greggirwin/master
+43ae2c04b71c18194c77aa83c877a27e956f4bae 2018-12-21T19:12:34-07:00 Add back unintentionally deleted JA and ZH files from Tovim's #99 PR.
+596fb16c26133db7631d61f1254f11aae7eb70c1 2018-12-20T10:39:33-07:00 Merge pull request #106 from Tovim/master
+c623eb455ed539a84502bec213233e28dc5e49e3 2018-12-20T10:39:01-07:00 Merge pull request #105 from gltewalt/master
+9a638fca746987867b1b8f6e015b3bbf6041321b 2018-12-20T10:35:46-07:00 Add note about image not supporting paths.
+314da0594c729b87eed572b0f5fde0078fc2c634 2018-12-20T12:17:56+01:00 Merge branch 'master' of https://github.com/red/docs
+90b56b5c18b0eb10463ef4cf192544d550513868 2018-12-19T22:12:39-07:00 Added link for binary! to SUMMARY.adoc
+8a316f1bd2f7c814f8a945beb152c5f7eea10c26 2018-12-19T22:03:53-07:00 Initial binary! doc.
+9628025139dac5dac9061d3109c052c41e4c6bf4 2018-12-19T21:10:19-07:00 Merge pull request #104 from gltewalt/master
+03550c29df352181203f539a9d95f3cef6d267aa 2018-12-19T15:46:00-07:00 Edit to Runtime Creation section to describe how integer!, float!, and logic! are not translated to Red/System equivalent.
+a60aa12f97f0a187da90171e9f68733227c0dc50 2018-12-19T14:17:50+01:00 docs-cs: routine and summary added and modified
+c12a3ecf64dfbed83598b18c419a8c7718a212b7 2018-12-19T00:45:47-07:00 Merge pull request #103 from gltewalt/master
+930f7122e4b939d162603ff74287665e955a5777 2018-12-18T23:52:03-07:00 Added link for routine! to SUMMARY.adoc
+81cf769ff4855600ef4f4bf1f1af15e7d70a4c25 2018-12-18T23:51:31-07:00 Initial routine! doc.
+96743b85559979aec5a6413dd9a7971b4b03c94a 2018-12-17T21:16:05-07:00 Merge pull request #102 from Tovim/master
+c44301808421709cdcd24f0e3bc8f5e72ac463e2 2018-12-17T10:40:06+01:00 Zmatlaný překlad View uveden do pořádku
+8efe5f0429a398904a5650e259fe76ecd9f3934c 2018-12-17T10:27:23+01:00 Merge branch 'master' of https://github.com/red/docs
+4decce56c66aab38bff184045dfeb6936435d8de 2018-12-16T21:48:28+01:00 docs-cs: better translation of View
+538382436a31627e0cf8b41281cacdd7cfecd180 2018-12-16T10:33:37-07:00 Merge pull request #101 from Tovim/master
+9d126e23ba110aabda1c31fb107eb306eb5ec029 2018-12-16T15:54:09+01:00 Puny bunny
+00259853a9dd5987094b71fae78e6ffb060b23f9 2018-12-16T15:45:27+01:00 docs-cs: puny bunny
+25af3e4b97c33286e72b363a958080576d79330e 2018-12-16T14:55:42+01:00 Aktualizujíc 4 soubory
+6ff87f3570994071bcb3041aaa8da03dc56c436e 2018-12-16T14:41:48+01:00 copy of /docs
+ddd03c6df3265549a8a197ae59c5b40b13e3ee1f 2018-12-16T11:52:00+01:00 copy docs/ to docs-cs
+93546f978eec6e5eac75d93b952468ae13a41bf8 2018-12-16T11:28:30+01:00 Modified vid, view; deleted ja/ zh-hans/
+06611b4e208b18702dfbc866402f7263fe59bc68 2018-12-13T17:37:28-07:00 Merge pull request #100 from gltewalt/master
+eeb9f08bd13c727a1b685c69450796bc2d074fb7 2018-12-13T17:00:02-07:00 Added horizontal rule, and commented out point! datatype.
+d76ca6ea769d26fe749903d738493161557c8cdc 2018-12-13T16:59:29-07:00 Edits to template, namely Predefined vs Pre-defined.
+bc19a1057fab6bdbbf67eb140cae679b022413be 2018-12-13T16:57:04-07:00 Added version 0.6.4 tag to book.json
+bc10619a7fcfc7be19ee64076c67c6169a751163 2018-12-13T13:07:11-07:00 Merge pull request #99 from Tovim/master
+fa08b39c788225199f345bcc4b895031f4d923fb 2018-12-13T20:44:48+01:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+6af00f7e8677775b7b44cc35b5eb0a69dbd12192 2018-12-13T17:09:14+01:00 image.adoc added
+57541b71ee64c672cb6e99cf0fdd6729dcf4a0df 2018-12-13T16:44:48+01:00 Merge branch 'master' of https://github.com/Tovim/docs
+8a1c88533a6f12868454d7d68c023069e901059e 2018-12-13T15:04:17+01:00 docs-cs: one small ante missing
+fe4677831da2a4f7fc838569b377cfb41de2628a 2018-12-13T14:47:04+01:00 kopie složky docs (bez ja a zh-hans)
+c273a1240611b63c2198ded3e7cb86476e610d22 2018-12-13T11:46:05+01:00 docs-cs: map.adoc translated, current translations of many files revisioned
+bfe5016aad5dd3f015537b32378743957cae91e3 2018-12-09T16:57:20+01:00 Translation and improved translation
+aa751bad12a94734c86daa2b97281534cd566b71 2018-12-04T16:58:27-07:00 Merge pull request #97 from gltewalt/master
+84896ecfe7c88a851aec1c79229c9a5dc2c3729f 2018-12-04T16:21:45-07:00 Fixed typo in datatypes.adoc
+fb7c1d878b58cab2af3dcac4fb71f16320aaf153 2018-12-04T16:21:00-07:00 Added Image! to SUMMARY.adoc
+c80a38599e576faff1ff029db10c7c5fbe444629 2018-12-03T12:07:28-07:00 Merge pull request #96 from gltewalt/master
+77b9b1bea7d800e303a6336ebca567fc8e44bd84 2018-12-02T23:34:17-07:00 Changed BNF for image spec to <image-spec> ::= <pair> | [<pair> <tuple>] | [<pair> <binary> <binary>°].  Removed <pair> <tuple> <binary> examples, as it is not supported.
+91037083fb32992cb15a097eaad623140180b8c9 2018-12-02T18:16:12-07:00 Changed 'Pre-defined words' to 'Predefined words'.
+e3ec9e7a5646eab5dd58dacf88c5ec59ec1c4532 2018-12-02T17:59:30-07:00 Edited image.adoc to reflect 0 as being fully opaque. Added predefined words and examples to Predefined words section.
+037231be2b20d0197976ed54067a52e83cd66a8d 2018-12-01T11:19:36-07:00 Merge pull request #94 from gltewalt/master
+4b6569ff4e6533df2f228d38cc965d7a8db206ad 2018-11-30T21:21:27-07:00 Removed BNF label from 'Literal Syntax' section.
+28634ed7b5b6e70c0e6d9b63f367b79a2f3ecfaa 2018-11-30T21:20:08-07:00 Removed literal syntax section. Changed 'Creation' to 'Runtime creation', Moved BNF into 'Runtime creation'.
+a2b03372bd9a270c7f3029bddb7f20701eaf4809 2018-11-30T16:26:30-07:00 Merge pull request #93 from gltewalt/master
+0a17a9f79b8b3faf8349b0af81724dd7035c012f 2018-11-30T16:20:03-07:00 Edited 'creation' section to reflect only 'make' and 'to', moved BNF grammar into the Runtime creation section.
+049e647ae8fdd07bce2764672920d949c58e662b 2018-11-29T17:23:45-07:00 Added explanation of binary values and image size to Runtime Creation section in image.adoc
+a51128cbbf3b84ad0861d1ce7a889104688064af 2018-11-28T12:52:05-07:00 Changes to examples. Changed image sizes.
+14332303f5522493266b58ce933a9be5f1e87c6b 2018-11-27T12:19:55-07:00 Edited Conversion section of image.adoc, comment out [binary!] spec example in Runtime Creation until examples are done.
+c3c8a76198fd87e73acbab063cf8ff3dc79756f1 2018-11-27T12:08:45-07:00 Added Supported Flags: scrollable to Drop-down and Drop-list.
+7062f1111db7400bcd9d579446049d7a1e1f6a24 2018-11-26T22:19:46-07:00 Moved 'decay into word!' statement from Abstract to Creation.
+1bacfbfcf83e7ffee784c35d9a7fe67fd922fd5f 2018-11-26T22:19:05-07:00 Moved 'decay into path!' statement from Abstract to Creation.
+a5c103e3ae08d8064f04f42cecac07d6a7e26f3c 2018-11-26T22:17:12-07:00 Modified Abstract section for get-path.adoc
+f8c6a5c6e11842c44085990749fd830fe0790392 2018-11-26T22:16:25-07:00 Initial image! doc
+7302aef3dd5a44c5096de90444f52c84795319a6 2018-11-23T15:46:03+07:00 FIX: syntax error
+2ea05dd33aa9206f94cf09d2c88a2be1044aa7c9 2018-10-06T12:49:57-06:00 Merge pull request #92 from 9214/patch-1
+1eba2e38eb4367ea4695cbde5646676cd57ef3c7 2018-09-25T20:55:11+05:00 FIX: tweak poor wording
+aba1578adc3b0f1c87708e98504279c134e67d51 2018-09-25T08:59:25+05:00 FIX: rephrasing section 4
+93d405667f890cd71d3e23861a29293d2e9d4873 2018-09-20T15:53:33+02:00 odebral 2 languages
+89a5e65134ec706064f0b68b27e1886318fe6888 2018-09-19T10:27:09-06:00 Merge pull request #89 from Tovim/master
+2f518036878f82cd6e2f8cd5c2d08c76540c69ca 2018-09-19T17:40:53+02:00 pushing to tovim/docs-cs
+8d60c09b19270aedcf92c930d27304c8f3e44b8b 2018-09-19T16:24:33+02:00 docs-cs translations
+61961f3a395c72c4bf4cfc242482da3b3175093a 2018-09-19T16:17:09+02:00 docs-cs translations
+e2acfa8b7e9682232770438758d065bbbcfe69af 2018-09-18T17:12:56+02:00 Merge branch 'master' of https://github.com/red/docs
+60dc40bb52b7b7e637700c329f8edc6899981ce0 2018-09-16T18:30:42-06:00 Merge pull request #88 from gltewalt/master
+8fa07f6d486afc923e2edde531db078510f6bc6e 2018-09-16T17:08:44-06:00 Update datatypes.adoc
+7a7e488ae8f10d5040d5d540d3d51fc9975b01c9 2018-09-16T17:04:32-06:00 Changed datatype names to links for the datatypes docs that have already been written.
+e1db1f15fb9fe989466c5ae2808fb9c929b315fc 2018-09-16T21:39:23+02:00 Merge https://github.com/red/docs
+e3c311909baa067ffd9c320e40fc59cebf8946c4 2018-09-16T21:32:19+02:00 docs-cs: reactivity.adoc
+57b6c0f439c4a0c818bf64e36c7fffc05f2ada1b 2018-09-11T15:09:48-06:00 Merge pull request #87 from loziniak/patch-1
+d707eb5cdba20ace876ce94d8e1fcaf412a91e9d 2018-09-11T21:45:33+02:00 accessing values
+838790e4d93b716d39081d0a7c47ac78bf9426a6 2018-09-03T19:51:14-06:00 Merge pull request #86 from gltewalt/master
+09a525505880ae4aadc2436dc87d04573309bdd7 2018-09-03T19:20:30-06:00 Added link for percent! to SUMMARY.adoc
+f938c86e6d8249d44cddd63042e811b6f6625a91 2018-09-03T17:30:41-06:00 Merge pull request #85 from gltewalt/master
+daf4e8620b480b0b7da1859c209c63dcb52d1210 2018-09-03T16:44:25-06:00 Merge branch 'master' of https://github.com/red/docs
+a00b7e5d6cde1898bf9786514e220b6b9e7fa223 2018-09-03T16:43:55-06:00 Created v1 percent! doc.
+3092097f6b83b416d937279de99be4391a08a0eb 2018-09-03T16:42:50-06:00 Added Creation section with simple examples. Added Pre-defined words section.
+96593df618dd2ce97acdc9a6abddf73acd5e94f2 2018-08-28T10:01:18-06:00 Merge pull request #84 from gltewalt/master
+74e94196ca43c53c853e1c3ddd175d97113a7722 2018-08-27T22:11:19-06:00 Merge branch 'master' of https://github.com/red/docs
+5d0c54fa8957c584b5405b734f9f6889cec29538 2018-08-27T22:10:56-06:00 Deleted quote from Literal Synttax section and changed 'selection-expression' to 'selector' in path.adoc, get-path.adoc, lit-path.adoc, and set-path.adoc
+e6ce21ccd299168d950a85bbe6ba5d0297d3f37a 2018-08-27T22:08:44-06:00 Added to time! to the Runtime Creation section of time.adoc
+9951e47f78c17988b04e8c7b32992fa791be3f4a 2018-08-27T00:07:33-06:00 Merge pull request #83 from gltewalt/master
+e9c0ad627472e55eadf4406f86bc79aeb3d08446 2018-08-26T23:34:05-06:00 Added spec to beginning of 'Runtime Creation'  section.
+740f136fd935338d8a20e893f09e71dbb03cedec 2018-08-26T23:12:57-06:00 Added link for time! to SUMMARY.adoc.
+bd7512b54f9d7894015d7776b7a742deb7f52d10 2018-08-26T21:05:54-06:00 Created v1 of time! doc.
+fd82880791ab33e18eb02660b6d82b0da95cccc3 2018-08-26T10:58:58-06:00 Merge pull request #82 from gltewalt/master
+83ae08e224ea9ebe784e100b475929ab00ed1cb4 2018-08-26T10:48:32-06:00 Merge branch 'master' of https://github.com/red/docs
+ecd8a7e37fa3ee24ee716711297899a57d8a6c22 2018-08-26T10:48:07-06:00 Changed wording to match stacked images in 'Cross-Platform GUI Metrics', in vid.adoc
+9a8fea1936bac7c80a1541e4b56c55e2a628488c 2018-08-26T10:17:21-06:00 Merge pull request #81 from gltewalt/master
+efa5fbfe5394db5eafb0458525c09e795ebb884f 2018-08-26T00:11:15-06:00 Merge branch 'master' of https://github.com/red/docs
+5e4edc00203b5b6bdb391eab0ba68aebd4a12381 2018-08-26T00:09:33-06:00 Added mac-OS-buttons.png and win-OS-buttons.png to images directory.
+82f664628876a6babc7d4cab4462d1903d6e8769 2018-08-26T00:08:22-06:00 Added 'Cross-Platform GUI Metrics' section.
+f6f20cacbf1d32d633e56c1886b850800db617b0 2018-08-25T16:17:07-06:00 Merge pull request #80 from endo64/master
+bf34ce4b4f9a9fbc2865d88a3893ffc3226f64d9 2018-08-25T23:20:25+03:00 FIX: Example
+6f05167575ebd74fab06ffcd0d69f52e33712d45 2018-08-25T14:08:42-06:00 Merge pull request #79 from gltewalt/master
+704843b816cb0a92eeba1a7ecd656981e17dfc50 2018-08-25T13:09:37-06:00 Removed Irwin style = from parse rules. One more time for get-path :-(
+00c7641b5c1f5b6d4f11d792a239f9794f36bb79 2018-08-25T13:07:55-06:00 Removed Irwin style = from parse rules. Again...
+de5e943669796f97ff9441206719614f430aabde 2018-08-25T13:06:08-06:00 Removed Irwin style = from parse rules.
+12cfa7a5a54a4a1d951b7f33148cc4e47073f1fd 2018-08-25T12:14:50-06:00 Merge pull request #76 from gltewalt/master
+b0af36f4776d8684573f9c7d81d3b434009725aa 2018-08-25T12:14:13-06:00 Merge pull request #78 from Tovim/master
+f5c5cb670f68b6f1f6816a8d4e92efbc708ebdde 2018-08-25T20:12:55+02:00 modified SUMMARY.adoc
+debffc6ec5abccf2a4d1ce681dc892116193d841 2018-08-25T12:02:52-06:00 Added Sassenrath quote
+719c17d7c983f4f608c941f6e7b8814222f1d4c1 2018-08-25T11:57:23-06:00 Added parse rules for set-path
+b329dece3cd04c8f0bd9fb15583e6cf8606d8d56 2018-08-25T11:57:11-06:00 Added parse rules for lit-path
+16849a9a36e33e645fed5cc5a640265b9bcc6342 2018-08-25T11:56:59-06:00 Added parse rules for get-path
+f3821409fc844665f48fa9331e48954a42e157e0 2018-08-25T11:21:09-06:00 Modified Literal Syntax section. Added quote by Carl Sassenrath. Added Parse rules. Changed selector to selection-expression.
+a1d1119848683390ade7e0f7b150eb829e7c7e44 2018-08-25T10:54:06-06:00 Cleanup git lines.
+dfc6f1782e5b098caddfb4912437e51c771ed02c 2018-08-25T18:01:34+02:00 some files were missing in SUMMARY.adoc
+f2e784097e0581e006bbd1933ad0e213aba91f21 2018-08-24T15:01:24-06:00 Re push SUMMARY
+da255843b646f03367cc2c3364680273653c8efd 2018-08-24T14:59:03-06:00 Added words to Actions section.
+11bf5213adc8738ca9a865ca24ab2530fd23c7fe 2018-08-24T14:52:18-06:00 Added additional info to Abstract section in error.adoc
+7b7a5d458919071132eb54d81822b6c233bca790 2018-08-24T13:58:23-06:00 DOCS: Merge pull request #77 from Tovim/master
+e2bdb0993f5dcefdab7e66ba3a5de5777381f069 2018-08-24T21:12:16+02:00 Merge branch 'master' of https://github.com/red/docs
+b20e503d3f3fc15aa0b4915620176c6cd980c495 2018-08-24T14:24:49+02:00 copied from /docs
+2ed812a122bf2f8aa55616db8b431206b890dafc 2018-08-24T14:18:09+02:00 copy from docs
+9698c1aa6e67a5427c2d5951b6c97953d142adc9 2018-08-23T22:23:13-06:00 Added error! link to SUMMARY.adoc. Minor edit to object.adoc.
+63a70ecbb4d00b73e8a7d1b6f74ebf4e8f99e81d 2018-08-23T22:22:08-06:00 Created v1 error! doc.
+91229440fffb5ed6aeb77e7bdaa37500faeb0059 2018-08-23T16:47:42-06:00 Merge pull request #75 from gltewalt/master
+404ff8136f08c482e687648a80e40b0b52c2a0ac 2018-08-23T16:34:25-06:00 Update SUMMARY.adoc
+37d0de5a207b83dfc7730597164d186dabcb7cef 2018-08-23T16:02:54-06:00 Slight formatting change to cseky summary.adoc
+358795296217549caee37bea141308f67a6d78d0 2018-08-23T16:16:43+02:00 Merge https://github.com/red/docs
+b22ebf1ba90ea75e9a718ed63631b738bf6e3444 2018-08-23T16:09:07+02:00 Merge https://github.com/red/docs
+0151c6a22227aadff246e215e4dc0c3dae8696f8 2018-08-23T15:52:38+02:00 some addition
+9a939eabd8d97bd54d66812f511bf6a285c6fc19 2018-08-22T07:42:35-06:00 Merge pull request #74 from Tovim/master
+531f5a4cd35b59228fef9403d40b14f9df78a10e 2018-08-22T11:52:29+02:00 cs/map.adoc
+c99c14373d767d70731573aaf7e758b2b2cb53b1 2018-08-22T11:18:13+02:00 Additionally included fie
+7dd002d620b9b0dc1d3f230026d35685987eb5af 2018-08-22T10:58:28+02:00 docs-cs: cs/datatypes{all}.adoc and cs{all}.adoc
+4ede610f116d481cefcd147a8921e9cdc91e5836 2018-08-22T10:52:42+02:00 Removing cs/{block,char,date,float,integer,issue,logic,map,none,pair,tuple,unset}.adoc
+2a12918428ba255b6e7e546520dd45725f6c09a7 2018-08-17T16:13:46-06:00 Merge pull request #73 from gltewalt/master
+7f2c19982e862bc8d1a371b4850a3eeaec7fc431 2018-08-17T13:45:52-06:00 Merge branch 'master' of https://github.com/red/docs
+d770f3f0950ea1b75055c0ac245ea9274271c577 2018-08-17T13:45:19-06:00 Added a link in SUMMARY.adoc for object.adoc
+c1f96a07d82375037f09adcdaf3a04a94cf2820e 2018-08-17T13:44:11-06:00 Initial v1 doc for object!
+29e553a4757fb1bda844ed7678ccb4842b005d18 2018-08-16T14:04:16-06:00 Merge pull request #72 from gltewalt/master
+336b59469d4bee416754c0c7318409a20a59e82d 2018-08-16T13:55:29-06:00 Added missing binary! map! percent! and tuple! to datatypes.adoc.
+a5e049e5cc1c5089763fad5d19f58698af99c257 2018-08-15T16:42:13+02:00 per two files modified/added
+55b4466e6a541c28dfea3fa9c547a2c91a04093e 2018-08-15T16:26:08+02:00 Merge branch 'master' of https://github.com/red/docs
+2a0822a811a332dcca1dfd6c2c2e48b3f3aeef63 2018-08-15T16:20:13+02:00 cs/four-files.adoc added
+dfce6bf5bb7424ea826fd08a10ad422677e31a18 2018-08-14T16:20:24-06:00 Merge pull request #71 from gltewalt/master
+4e003d32445cd840c0c6369a276a184c1430a12d 2018-08-14T15:17:56-06:00 Added link to SUMMARY for handle.adoc
+302ef32bf717e42b6ae69ebf7d27b37c3f0cb186 2018-08-14T15:16:35-06:00 Initial handle! doc.
+0f14f82d1ca97d75a20a613f7903600509b39f57 2018-08-14T14:16:37-06:00 Edited examples in 'Creation' section of file.adoc.
+678411c78274c94df1bcdc1c0bb6d4c62fccfb5e 2018-08-14T14:14:28-06:00 Edited examples in 'Literal Syntax' section.
+cb01f0eb5116732c52e6c8ba7437144e022b93f1 2018-08-14T14:10:35-06:00 Added link in SUMMARY for file.adoc
+0a91d2922e9e63fdc75ff3804909dccff095ad8c 2018-08-14T14:08:28-06:00 Initial file! doc.
+cdfaaaf8e6200eb9f021486790310a4487671d4f 2018-08-09T15:04:38-06:00 Merge pull request #70 from gltewalt/master
+5dfb99c5826dad4acc7cdf715e5de5f37d8ed81d 2018-08-09T12:41:05-06:00 Changed same? to =? for comparison examples
+1882950277e7219085b50875e87dc05afdb9f5f4 2018-08-09T01:36:46-06:00 Added get-path, set-path and lit-path links to SUMMARY.adoc
+92a4cad9e10a4242a26eb74886bf17ad532e23d5 2018-08-09T01:32:25-06:00 minor edits
+5bf4e31d7bb20c1e1cc47fe0c9f3fa97562740b7 2018-08-09T01:28:49-06:00 Created initial versions of lit-path and set-path
+66e863a78a086f26b819ee11dcbebfc43dc68262 2018-08-09T01:26:04-06:00 Edited path.adoc to include links in table and added wording for making an empty path
+f6a31c3dd9907dd2ca6e85ce74754813d9a77c59 2018-08-08T16:42:11-06:00 Merge pull request #68 from gltewalt/master
+34880ed6fc5f1ea58d696c0daf7b864078943b70 2018-08-08T16:32:03-06:00 Added get-path! link to SUMMARY
+0990071119ea2e43abdac41823c2ec14a0c7bb72 2018-08-08T16:27:29-06:00 Finished initial version git-path! doc
+0dec64e05e0b3d77194d19bf435db10d5cc8d7b6 2018-08-02T20:34:41-06:00 Added path! link to SUMMARY.adoc
+2f75a1108601dd62305b6d95404ec9f60c8bfe58 2018-08-02T20:31:38-06:00 Removed parse rules from Literal Syntax in path.adoc
+fe6cb2bc0f603a532cc1b9d64cac00697e822788 2018-08-01T16:04:58-06:00 Modified Literal Syntax section to include BNF and Parse rules.
+34b4c9edbe68c1e561204341b2268e0068ce25d7 2018-08-01T15:41:24-06:00 Initial path! doc
+02f65a6afcdde132e61b0a3dcbae472472dcfec8 2018-07-21T18:00:39-06:00 Updated code fence for 'Literal Syntax' in logic.adoc
+d0f0fa84e8c001d6daa2d92d53d846d2366309ff 2018-07-21T17:59:18-06:00 Added table for Path Variations.
+02301790d74df0dac90293add399820a176e4caa 2018-07-09T14:00:31-06:00 DOCS: Merge pull request #67 from gltewalt/master
+8f7cda30972abdf544f535b82c8206302310caed 2018-07-09T13:32:57-06:00 Restructured SUMMARY.adoc
+61a509bd728424e7225aec544472e182c928f262 2018-07-09T13:29:30-06:00 Restructured SUMMARY.adoc
+b274c37dfe6fd12515d9618b060efd57eef53edf 2018-07-07T15:15:32-06:00 Merge pull request #66 from gltewalt/master
+7c1cdd03d11eecf84bede5328c91ad366bde459e 2018-07-06T17:24:27-06:00 Added ' separator information in float.adoc and integer.adoc
+69aa6d82327c7d2b77e469e03ecca6117b1b5ca0 2018-07-06T17:12:01-06:00 edited integer.adoc
+7e65ff3d1c18bb5f09d2e654830c6630a67c2cce 2018-07-06T17:11:45-06:00 edited float.adoc
+8068950153353827e935185e78411f1d9a63fd18 2018-07-06T12:10:32-06:00 DOCS: Merge pull request #65 from gltewalt/master
+b80236c2eac1bd0fa71c17c2dc80a56379881eaf 2018-07-06T02:52:11-06:00 Fixed spelling of separator in float.adoc and integer.adoc
+e5f90e576bca24bfdeb8ead419af3990a31fb529 2018-07-06T02:48:30-06:00 Fixed typo in float.adoc
+570bef0bd07224d1e74cac1ceab2eebd59a338c1 2018-07-06T02:43:43-06:00 Edit to datatype-template.adoc and url.adoc
+36eb787b6e76c2d2b8183e3ad98e3d313517edc3 2018-07-06T02:41:56-06:00 General writing edits.
+50828db2fa46ee3247500cb20dd0dced059a3a73 2018-07-05T22:57:30-06:00 Merge pull request #64 from gltewalt/master
+06cd2b6d1331a2f90fa3ca70ee06dde6f1db5b80 2018-07-05T18:15:54-06:00 Fix typo in Comparisons section in url.adoc
+f989431658edd5136cccb109a72d87888afadf86 2018-07-05T12:39:45-06:00 Added url! link to SUMMARY.adoc
+43ffdf92df6f9ba1ddf9a68e2f5137a6614090f4 2018-07-05T12:39:14-06:00 Created url.adoc v1
+1e36fb0654850131f9cbe730bdd33018a3b285f8 2018-07-04T18:07:08-06:00 Update abstract section
+9666378dcc5bd9497b13df6b6008894a2c142773 2018-07-04T18:04:53-06:00 Merge pull request #63 from gltewalt/master
+d5e6c2ae9e808e60f9ff097a4b08ac753a890706 2018-07-04T14:45:19-06:00 Edited Creation and Literal Syntax sections in string.adoc
+4aefde40e2af0d17b26683812b09428534f4f5af 2018-07-04T14:20:37-06:00 Added parse-func-spec to Functions section and added Natives section.
+648442242ace7d01238e2a76d3e2caaf9f60ce17 2018-07-04T14:15:59-06:00 Added refinement! link to SUMMARY.adoc
+6dfa8d5819687cc87849c0ec41e1ed2543413bd5 2018-07-04T14:15:25-06:00 Edited Abstract section in refinement.adoc
+928fbfe3638c3042503169cd7baee519fcdb753b 2018-07-03T18:52:03-06:00 Merge pull request #62 from gltewalt/master
+e35ab6694e75127c53dddef1b03b8ba021b14349 2018-07-03T16:29:29-06:00 Added string! link to SUMMARY.adoc
+62c0f3168da643ac6e76e1a6a4fba750b38ac7b0 2018-07-03T16:23:45-06:00 Merge https://github.com/red/docs
+7018c9b9412db78370dbb88a5bd87f8593486d64 2018-07-03T16:21:42-06:00 Created string.adoc v1
+f8a1324511b9c4c11c7fc14b6e7e36277e1a97fa 2018-07-03T16:20:55-06:00 Added note to Creation section in word.adoc
+8dce5a0b8949d996a403ec1b84c9f414ac889aee 2018-07-02T18:59:04-06:00 Merge pull request #61 from gltewalt/master
+195a1bf9902cefe192606634d15fe91a9dc98055 2018-07-02T16:49:14-06:00 added immediate! typeset to float, get-word, integer, issue, lit-word, pair, refinement, set-word, tuple, word
+63127ef9e7bfa7097be572f3e447286353d60b1b 2018-07-02T16:47:48-06:00 Edited Abstract section
+274fb2526a13e4449edcfeb7ba0ded296ea7cece 2018-07-02T16:46:14-06:00 Edited datatype-template.adoc
+00a98155d9d3e0300ecb1495cd22d68ed21dcd99 2018-07-02T16:30:57-06:00 Fixed Gett-word! typo
+d62985aff8f459cc0990c304c9cdb9a3b49add51 2018-07-02T15:59:30-06:00 Merge pull request #60 from gltewalt/master
+ebb4fae6dad7fb229147cfe64c0e36097ab2f68b 2018-07-02T15:36:37-06:00 Added clarification of whitespace in the Literal Syntax section of tag.adoc
+20da02f0bb0435a68c87eb94d50870803a3218d9 2018-07-02T15:26:17-06:00 Added e.g. to Abstract section in email.adoc
+473161550c9259903f1da3a86dc06b4fdb597a5c 2018-07-02T15:24:29-06:00 Removed refinement.adoc link from SUMMARY until a better Abstract section is formulated.
+227c14fe614accd070a78379474fa5da797014c3 2018-07-02T15:22:57-06:00 Edited templated - changed typsets to typesets.
+df3607deadfdb4f057d07565188127785f62d39c 2018-07-02T15:22:09-06:00 Fixed typo. typsets to typesets
+efcc540f4ab48f883aa182eb8214ec3d9de7293e 2018-07-02T15:15:45-06:00 Fixed typos
+fe3132148346c5921bf80b5c5044132a2e819636 2018-07-02T10:44:42-06:00 Merge pull request #59 from gltewalt/master
+eef110305922517f7160849e040ded64dccfba0a 2018-06-29T16:19:37-06:00 Updated SUMMARY with links to email.adoc and refinement.adoc
+e1278e37a1aa3e6d0a2e2efdc9fa2de299dd7c27 2018-06-29T16:16:55-06:00 Added local link to refinement.adoc
+82661f6c7e289aea550c1a6145eb7b31ce8ca45e 2018-06-29T16:15:57-06:00 Created v1 refinement.adoc
+cfb02527848bd20a683f87b1749a0bcdddb1f55a 2018-06-29T16:15:10-06:00 Edited datatype-template.adoc
+519f3207584cae53ebaef75fd51289a87f5ed4c0 2018-06-29T14:46:44-06:00 Added links between word.adoc to set-word, get-word and lit-word. Changed Note in 'Literal Syntax' to [Note, caption=Note].
+1d716cc1ce3faaa008d26943bf56ffd32ce69126 2018-06-29T14:32:52-06:00 Removed anchor links from date.adoc and map.adoc
+fb854ed644992c0865f32b258b076164679acb71 2018-06-29T14:26:37-06:00 Removed TOC anchor links from char.adoc
+ce27e88ea5fb0eede60e9e2eb96864bc17b4da3c 2018-06-28T19:14:32-06:00 Added Literal Syntax note about whitespace in tag.adoc
+0af810235e60d3413dab9bbce15a9840eb7baeba 2018-06-28T19:12:50-06:00 Created email.adoc
+e0c249979bca157145f131bdbbc725773fd25964 2018-06-28T14:19:44-06:00 Added typeset info to Abstract section in block.adoc
+afbb6996963a22623e76924c5ec89e798153be3e 2018-06-28T14:14:55-06:00 Added tag! link to SUMMARY.
+d5224eeb66a46703ca248b3355f2115007345c87 2018-06-28T14:12:29-06:00 Edited Creation section in tag.adoc
+c20b2607716f1833596495d0030eadf1f3139072 2018-06-28T14:07:56-06:00 Created tag.adoc
+3fc44b2df9eac56c2b858ccf372d2c469f505304 2018-06-27T22:24:38-06:00 Removed git entry for en/set-word.adoc
+f25296c1e981d5390ecc86f50ed56cd56b2d3c93 2018-06-27T22:19:58-06:00 Revised 'Literal Syntax' section in get-word.adoc
+85c98002e1066e27febf935cd7e43e6c5216b495 2018-06-27T22:18:05-06:00 Fixed typo in 'Comparisons' section.
+2d1bfbebf9a8737cbb47e1deaa4ce18e100f3631 2018-06-27T21:15:56-06:00 Merge pull request #58 from gltewalt/master
+d7353380e460f68e985480db4341ecf917ad1680 2018-06-27T14:49:39-06:00 Added set-word.adoc to SUMMARY.
+712774e5aab03e7488870cde2fbbea763785eb83 2018-06-27T14:47:00-06:00 Moved set-word.adoc into datatypes directory.
+b4004a5e27960fd53f9432ae485ab02703d47fe6 2018-06-27T14:38:21-06:00 Created set-word.adoc
+2b428967d1a15dca387e6071e228e1799ef096b9 2018-06-27T14:37:48-06:00 Edited datatype-template.adoc
+e526e6087c604288c115c313856eb13c4d3b3583 2018-06-27T14:37:04-06:00 Edited the 'Literal Syntax' section in lit-word.adoc
+34bb1899c28198535bf4e3aeba0140a3cd0e5d0d 2018-06-27T13:38:41-06:00 Edited 'Literal Syntax' section.
+f264dd41ccd51a5060d2bf4042df4ad4664edf00 2018-06-26T13:54:21-06:00 Merge pull request #57 from gltewalt/master
+a40be532365c98be49f969dd7b898f76e9684b05 2018-06-26T13:28:05-06:00 Merge pull request #56 from gltewalt/master
+d59faedf19ae12685e877b5415df11822e725013 2018-06-26T13:27:41-06:00 removed redundant datatype words from summary links
+405b95638469d73b5ec2db680d71992b3aeed07e 2018-06-26T12:51:04-06:00 Merge branch 'master' of https://github.com/red/docs
+b28ce9c5b9d55836fdfc5103c4b5658a0b652ea1 2018-06-26T12:50:04-06:00 Added datatypes.adoc as a summary of datatypes, and to fix navigation in gitbook.
+3237a055ccd5dac6237dad4653ea646f19660cc0 2018-06-26T11:47:59-06:00 Merge pull request #55 from gltewalt/master
+f457acfcc49d277b075b5256bd8419c7d54b5d40 2018-06-26T00:22:09-06:00 Delete settings.json
+fec2d8a03aa820ad7d1e99798cfc907e14f52b16 2018-06-26T00:18:01-06:00 Fixed spelling in the Abstract section.
+b6c8fe4a60557cbe255803e8c66f23f4e9aa06c4 2018-06-25T23:44:44-06:00 Fixed SUMMARY links. Deleted dataypes.adoc. Not needed.
+7eb225c0bfbf0943589cb78f38d0d1940bf6a59c 2018-06-25T22:57:51-06:00 Moved datatype .adoc files into the datatypes directory.
+8807a5ab5220c9840e6aa985ebd1ab3a4097fda7 2018-06-25T22:57:04-06:00 Modified SUMMARY
+e52d173c8a0222cb2d8df5e4e58d2527b0dc1ee5 2018-06-25T22:53:54-06:00 Created datatypes.adoc page to house links for each datatype.
+f8a98ea13da964ee11c3b3128221cd0b509912a6 2018-06-25T22:52:41-06:00 Created a datatypes directory to hold datatype .adoc files
+7c714eb65bfdc750bb39129d3ccd7162e703a291 2018-06-24T16:40:05-06:00 Merge pull request #54 from gltewalt/master
+4bb0b87fbc626dde982919036b552e0827e9a1f8 2018-06-24T16:05:15-06:00 Changed code blocks to use ```red
+c1b2c3d7dbd0bc9021a9b3bc7d4c5d0b9a57c757 2018-06-24T16:04:51-06:00 Changed code blocks to use ```red
+50c7028f509297eec25da9855cf0dfefafa041c4 2018-06-24T16:04:05-06:00 Edited template for datatype docs
+f155e267121de62ab4571ee3018ba13316747623 2018-06-24T16:02:53-06:00 Created v1 doc for word!
+b1905c24ca6d4513b52c43d21fa1008ab3d9cf91 2018-06-20T16:30:59-06:00 Merge pull request #53 from gltewalt/master
+6d3917b5b0e0e9718b0d8b7ac1274cc9e92e4fa7 2018-06-19T21:33:40-06:00 Removed block! from SUMMARY for further work.
+8d79c2ceed9f085e5884960768bbbbab5252c05b 2018-06-19T21:31:45-06:00 Created first draft of paren! doc.
+ece42867908bad5c37cd8b23a8534a14f2568ce2 2018-05-31T13:31:09-06:00 Merge pull request #52 from greggirwin/master
+1ac9604c07ad74aa72a6a69b37cd10d80c448a60 2018-05-31T13:28:04-06:00 Fix Summary heading for GUI System
+2dda3f007edf6b00102c5cca03e3d36f3c317338 2018-05-31T12:57:21-06:00 Merge pull request #51 from Tovim/master
+47ebc386066a61e9a44a60776d0fbb702991bed6 2018-05-31T17:18:59+02:00 Completed and translated everything till 27.5.2018. Hosana!
+08ff523c91b12ee693a7ae6bb4185dca6b6b5af2 2018-05-29T21:38:26-06:00 Merge pull request #49 from gltewalt/master
+933f5611808448904c636f8f1aa97be906bf2936 2018-05-29T16:31:15-06:00 Update SUMMARY.adoc
+778d6dc68d76b573ca326eb3fd98669b054c3b8a 2018-05-29T16:30:27-06:00 Update SUMMARY.adoc
+023ace1cd32b57bc484c36b6e462d5a401c9cd2a 2018-05-29T16:28:59-06:00 Update SUMMARY.adoc
+0f86451059dd62113cfee0e1600292adf820a8f4 2018-05-29T16:27:37-06:00 Update SUMMARY.adoc
+6f85cdc1dd9c84130b4dd1cbd9cdbc862d1a061b 2018-05-29T16:20:45-06:00 Deleted datatypes.adoc. Fixed SUMMARY links.
+4ecb0f4e2e77a7d14e5c35ef7a16a3ac23ee46c1 2018-05-29T13:43:40-06:00 Merge pull request #48 from gltewalt/master
+fa598e84d107088cd81073586fb078fdbbd035d1 2018-05-29T12:02:49-06:00 Merge branch 'master' of https://github.com/gltewalt/docs
+c578a5c0bf139f1401052fa70789b2fe4aaa1646 2018-05-29T12:02:24-06:00 Created datatypes page. Edited summary table.
+64308b728a2f0b48683f214c541ac65ea2ca3545 2018-05-29T11:57:36-06:00 Merge pull request #47 from gltewalt/master
+70958174928e737a41bda7d451dc0d4d15c1bdd9 2018-05-29T11:55:28-06:00 Update block.adoc
+21802af91cd18f514c6fdebfeec937a6ad42f10c 2018-05-29T11:23:20-06:00 Update block.adoc
+37e3a66d2df74ac7c1955e812749d3fb1ba54cb0 2018-05-28T23:44:30-06:00 Updated block, unset and SUMMARY
+b779be6ed9e645b32254c30366f406745664295a 2018-05-28T15:47:13-06:00 Merge pull request #46 from gltewalt/master
+1b3f4d13a1310b56096a79614745fef1c73b8c38 2018-05-28T15:37:05-06:00 Updated SUMMARY.adoc
+9e779cd84c02c154d23cc5767bdb4bf38cd47f50 2018-05-28T15:12:09-06:00 Merge pull request #45 from gltewalt/master
+7c363bffa4637b51973acc26dceebffda81f8f04 2018-05-28T14:59:51-06:00 Merge branch 'master' of https://github.com/gltewalt/docs
+e56c1e307533ba9916961abdc638b13910e48907 2018-05-28T14:58:27-06:00 Created logic, none and unset. Small edits to text of previous commits.
+65c22b3c53c508513f1f85c4502a67cbee437e0f 2018-05-28T13:15:27-06:00 Merge pull request #44 from gltewalt/master
+435cdb4c0df3789d8be6bc74a0ef6c033421b2ba 2018-05-28T13:15:16-06:00 Merge branch 'master' into master
+2572194853e3d06efd8332aeabe5873657f5fb90 2018-05-27T16:41:27-06:00 swapper out same? for =?, Fixed capitalization.
+a4e8097df3f5e7af1bfec071134240f6c2a25944 2018-05-27T11:43:15-06:00 Merge pull request #43 from greggirwin/master
+00eb534aedce745f01f5229c48c42660a30a88d6 2018-05-27T11:41:01-06:00 Fix location of typeset note.
+73caeac0e490bf401afcd4195c2ea7ccf219eb95 2018-05-27T11:38:36-06:00 Merge pull request #42 from greggirwin/master
+b26ebdda9290293f17212bd98fb170da24a1d307 2018-05-27T11:37:27-06:00 Add all-word! typeset note.
+7d8cb2bb9dc06ecdfea59b891f153b6a28cf55da 2018-05-27T10:57:23-06:00 Changed abstract
+ae4e057dfcbbe90f5156b05a8552def809762cbe 2018-05-27T10:37:09-06:00 Merge pull request #41 from gltewalt/master
+8bcf5239d815107ad056dd09360bf27214379d93 2018-05-27T00:02:05-06:00 Created issue! doc. Updated Summary.
+9cdea2b284811b1a87a3d5415c13185f5b5e044f 2018-05-26T21:52:03-06:00 Updated SUMMARY.adoc
+ee8845432da8f2d6e294bc3ba10c8e741b18a1e3 2018-05-26T15:23:53-06:00 Merge pull request #40 from gltewalt/master
+3ee6c1575ba55d6a0d1e25dfb6f274671c134f45 2018-05-26T14:04:08-06:00 Modified char.adoc, date.adoc, and map.adoc  to use anchors for navigation
+b5a3c251f7d8a56a3615db9aed53c9e24bd433af 2018-04-16T16:15:54+08:00 FEAT: adds #include-binary directive.
+303f6f17b75d4a3167fe7de21355ae8dd8fc2c45 2018-03-21T16:34:42+08:00 FIX: minor layout improvements for last commit changes.
+b642badd3aa18e468cff838c34c6a95df2cae6f8 2018-03-21T16:33:57+08:00 FIX: minor layout reformatting for last commit changes.
+7cf94e6c955e55174ee35231914a4c0d6e14dee4 2018-03-21T16:27:17+08:00 FEAT: adds description of `selected` face usage for field/aread widgets.
+fe26a94a263a3ccac7e338db855f7f142e3fd3d9 2018-03-15T12:07:15-06:00 Merge pull request #39 from 9214/3230
+6637599ae433312967e12e7d29bb805d2fb886d6 2018-03-15T20:38:04+05:00 FIX: change CLOSED to LARGE
+e3ae4846844fc0976143b8eb77815c60b40e6aea 2018-02-11T11:47:53-07:00 Merge pull request #34 from Xdminsy/patch-1
+aa7ec28a6857004220868eec2757ef3d7ca297ea 2018-02-11T11:43:43-07:00 Merge pull request #29 from AT-Aoi/master
+e32dd4af593c1f85cf6f5c9afbe1ab0a86a94c11 2018-02-11T11:37:15-07:00 FIX: https://github.com/red/red/issues/3222
+ea98fc786f07e8dcd43011db66a792fa8b454a8c 2018-02-07T20:42:38+08:00 Merge pull request #38 from red-china/master
+1cd96f63e2cf5f2c4655e5af640efa90597f484c 2018-02-07T17:57:03+08:00 Merge branch 'master' of https://github.com/red-china/docs
+52f73fb57790cbaaf827690706468142fc9f69cc 2018-02-07T17:51:59+08:00 FIX: Change zh-CN to zh-hans
+86a062b1553b73f7162f0b33390ab02f540cb9c6 2018-02-07T17:07:13+08:00 Merge pull request #37 from red-china/master
+95139a61135171547c3b3553315160de318382b6 2018-02-06T22:15:54+08:00 FEAT: Add Chinese(Simplified) translation.
+add82788253919519fa71c3563461d0f3a0851b5 2018-02-06T23:12:38+08:00 FIX: Add separate lines #30. Minor improvements.
+dafa5fed1716eb32a987b59865a65c5f6d2c2c30 2018-02-06T22:51:26+08:00 FIX: Remove redundant English annotation.
+9a15fe8ee90289346c4193bb9440b716aa711639 2018-02-06T22:46:04+08:00 FIX: Correct quotes agian.
+b0db11d8628365c09b846a0a82968b4857f24a3f 2018-02-06T22:43:25+08:00 FIX: Correct quotes. Remove extra space.
+9042980ee3e31ec5d2ff539c577ba23bb11ed20c 2018-02-06T22:35:19+08:00 FIX: Correct vid to view links.
+1037dbf201c71bc53cdbb23291c0240dc4c15b8b 2018-02-06T22:28:59+08:00 FIX: Improve view.adoc formatting
+61ba07c97e17ed6641234dc1187a149fb8971e49 2018-02-06T22:22:27+08:00 FIX: Add missing space in epoch time section
+b0dd7d23fae9d27837c92f90145be23a013e7e72 2018-02-06T22:15:54+08:00 FEAT: Add Chinese(Simplified) translation.
+f66bd2cf832ea3e4411136d08e8200d5dbb7b62c 2018-02-06T03:08:12+08:00 FIX: Update syntax of date! refinement /timezone
+33ad734428f6b6d5db14da6fa98171bd1d4da3da 2018-01-29T22:07:55+08:00 FIX: Make "datatypes definition" link work.
+34dc2ed5dd4dabe637bd1b61fa24dd700d747777 2018-01-29T22:03:44+08:00 FIX: Make ASCIIDoc NOTE format correct.
+07b125fc85905ceca84b9f94b82f334493c2dee4 2018-01-29T17:27:20+08:00 FIX: Possible typos.
+91ad26e7f97bbb99da8b18ec441b878cebc32017 2017-10-14T19:02:29+08:00 FEAT: minor section title improvement.
+e723223b5bda23d1e29c174b3db375a4eb41d246 2017-10-14T18:59:10+08:00 FEAT: adds mention of container's actors definition in VID.
+ac521ef0c461a8896ab9df65d04e8366803c1202 2017-10-12T18:41:12+08:00 FEAT: adds event/picked returned value for down event on text-list.
+9f4cb3b993fe4047a51c3fb7711ce1095bd4cff3 2017-09-26T17:41:04+08:00 FEAT: adds `with` keywords and minor updates to a few other VID keywords.
+81addd7050e36cab6477724321828a024bafb3f8 2017-09-12T17:07:14+08:00 FIX: `MacOSX` replaced by `macOS` in `#switch` directive usage example.
+a821221625089442938d80b88ec9ec377649ed61 2017-08-26T11:45:06+08:00 Merge pull request #26 from koba-yu/master
+2fa86c2412bbb22d720812a43e77662e02628130 2017-08-26T00:00:37+09:00 FIX: update to avoid TOC corruption in Japanese documents
+71c4b2f475e586fa21eec71c8edb321d51e410cc 2017-08-22T18:50:54+08:00 FIX: update mezzanine glossary entry
+8e3ba0b1fa5ebb5c7ed763793064878b1b016c4c 2017-08-21T20:47:15+08:00 Merge pull request #24 from Tovim/master
+ee067f191fd1b6af70b5a0188061fb72e3960765 2017-08-21T14:17:32+02:00 keep smiling
+6ae520c1d3b52f1e4a671009cf2507172f7ad6f5 2017-08-21T14:15:20+02:00 never ending story
+3c5f07c8721b563d92d3fb6558be97c1b2ec8b1f 2017-08-21T11:05:34+02:00 typo and others
+fa94f4b2e65b0a825695c7ec377f9b568fef54b0 2017-08-21T10:53:39+02:00 char! included in summary
+d9729f7525f8d48a5c99d62b828e8c1e7afda4b4 2017-08-21T10:37:54+02:00 little typo
+6d9b9d27f05512faafe558850057fc25a1907f4e 2017-08-21T10:36:07+02:00 little typo
+afb11a4095c4554493e702f3146a9549feb5fd03 2017-08-20T22:14:07+02:00 glossary and char translated, the rest revisioned
+ba3c2e7f70a9ee34bb48b3faf7a27056900a735b 2017-08-20T21:59:35+02:00 nové soubory char.adoc a glossary.adoc
+3c7b723344421142e6a9d01077a42c3bfd5ca79a 2017-08-18T10:21:06-06:00 Added dialect and DSL definitions.
+f37f6f1c2035601d988ce217402e00a899c1a447 2017-08-18T10:17:15-06:00 Added dialect and DSL slots.
+c51b2c15b0fc0c7fcd4979f171cfcee87d4a1417 2017-08-16T00:37:26+08:00 Merge pull request #21 from 9214/en-tweaking
+52c8fe5c2907aaa25f6990fe3deadf9fad827d55 2017-08-15T21:21:42+05:00 GIT: 2 conflicts resolved
+7cfe50b405dfcd7cdb03912f252bd08c8b981790 2017-08-15T21:18:52+05:00 GIT: even up with red/master
+80940340fd9f6c397119d90bdcd2994265c3ed7b 2017-08-15T09:38:42-06:00 Added a few entries.
+78f141d8adec95426d05e972ca789a96aa9bf1d6 2017-08-14T18:59:04+08:00 FEAT: add glossary skeleton
+670397d474df5923729948065c409bb120be891c 2017-08-14T12:55:42+08:00 Merge pull request #23 from koba-yu/master
+d3cbf3ec701b9b77d3f29cfcbd6309de60a5f39a 2017-08-14T08:29:50+08:00 FIX: corrections to char! datatype
+6cb5aeda3700f103f28188ee9352f4362e33f1d5 2017-08-14T00:11:41+09:00 Add Japanese documents
+837d9edffce14d981af408740b388a6ec229437b 2017-08-11T10:19:16+08:00 FEAT: added more detail to char! reference
+70311354fa9ada0a98e7677fd311e328e5eca4fd 2017-08-10T11:53:24+08:00 FIX: add char! to contents
+590733000659b4f1d858652e07bb656fdf9be3c8 2017-08-10T11:45:21+08:00 FEAT: first draft of char! reference
+0f50e1530a8ba8b022b3d496a08c383eee44285a 2017-08-05T22:37:55+08:00 FIX: issue #22 (In description of check face, there is a typo)
+b0805cdea663effb8e1522db14aaac544a7775ab 2017-08-05T22:33:28+08:00 FIX: minor formatting typo.
+96fc65920060fffb0ba887825a6835e5f14209ae 2017-08-02T12:54:28+05:00 FIX: misspelling
+8b70800303137d10e6d082b13d6514d2bcc179f9 2017-08-01T15:06:13+05:00 FIX: Runtime creation cross-reference
+56b51ca52e5768f0f6175e06e1858023f1f397f9 2017-08-01T14:37:39+05:00 FEAT: corrected typos and formatting
+4f0bb25f0e3d1591e1b1ef864c4aae6df26f53e2 2017-08-01T14:24:51+05:00 FEAT: corrected typos, spelling, formatting
+dd3df70446acc0c6a2eac1df025b2032b835b2b2 2017-08-01T14:06:17+05:00 FEAT: mostly typos correction
+57f38e99d6eb6b7bdac1386cb54ef06a8469ab68 2017-08-01T13:46:31+05:00 FEAT: mostly formatting, couple of typos corrected
+222d0165c37f849b09dc5c40469db73d852af777 2017-08-01T12:20:58+05:00 FEAT: corrected spelling, typos and formatting
+e778c8dbad311ccf1c061f4c8c75653c34d36c40 2017-08-01T11:31:29+05:00 FIX: tweaked weirdly formatted table
+78e682631237caa1b06dafd345d0c448a20baff6 2017-08-01T11:24:45+05:00 FEAT: minor spelling correction
+245c7f76e9e8f4a1201b6e9af24c0182cec4f5ad 2017-07-31T23:14:56+05:00 FIX: fixed Draw documentation link badly converted from Markdown
+d01b9ba7e95cec019cd5e5e76161784275cbd197 2017-07-31T23:12:20+05:00 FEAT: as usual, typos, spelling and formatting
+2de89773bb1df5b1c9290c46b2fe8a08f3b44d04 2017-07-31T22:37:08+05:00 FEAT: corrected typos, spelling and (excessive?) formatting
+b2c78b15701a5445f89383cecf00daa592d30c9d 2017-07-31T20:52:14+05:00 FEAT: corrected spelling
+754e2021e935ce11d644f2541f51adc603237c81 2017-07-31T20:45:27+05:00 FEAT: corrected typos, spelling and formatting
+1c9d4923fc641f6c989e5c1a8e30c57bd7f75027 2017-07-31T20:34:01+05:00 FEAT: corrected typos and added a cross-reference
+9cc8e80898a0b26dd465dea4d30c73bb36a79011 2017-07-29T01:31:45+08:00 FIX: issue #2777 (In 'Draw block in a Face, "Set-word" used as a position mark is updated.)
+64708670f6fad25cedaaa516f42fa3128ac0a038 2017-07-28T20:38:03+08:00 FIX: issue #19 (time! value is allowed as key in map)
+d044d4a8a2f6d25a05a806b2a6d2bb08e15054e7 2017-07-24T20:49:04+02:00 První změny 0.6.3
+6f5cec72f14b07cc709231a26fe15aaa5b4538be 2017-07-23T10:18:16-06:00 Revert pane/panel reference in radio widget.
+5c66b6b9a3d5524d3ec3509c2f19466f9675ebc8 2017-07-23T09:54:08-06:00 Fix date/year assignment example
+56ba6e159414790f5676ccfa4b006422f5894d54 2017-07-23T09:46:39-06:00 Merge pull request #18 from Tovim/master
+b04bdcabc8efe8f10c828799444ba1e408cc091d 2017-07-23T17:07:29+02:00 except LibRed.adoc, all is translated
+b81115147f6726388a45b8ed7817769a7afe3910 2017-07-22T13:25:27+08:00 FEAT: minor code example improvement.
+ca6a499c1f4b0b3ac52b76482752eda83c8a70ab 2017-07-21T16:13:18-06:00 Update two-way binding example
+79e335e2b31fbf434d9ac46cf701eac6e80ffbd5 2017-07-21T14:42:22-06:00 Change `pane` to `panel` for radio style.
+9ae4bc1be1d672e9375f3afa7b749f05e77da49c 2017-07-20T17:27:52+08:00 FEAT: adds logic! values support mention in VID.
+7fbc18b72a159e1785826bbc44b367e8a56bd7f4 2017-07-19T20:11:05+02:00 Merge branch 'master' of https://github.com/red/docs
+bf2f6bab1dbbbe1a69a13a6cae36d741da5d9501 2017-07-19T20:08:12+02:00 last changes before Red 0.6.3
+2e56424969ddcad7c6fa34b7ca00d3f2b258d701 2017-07-19T17:21:17+02:00 Reflects red-0.6.2 texts
+c84892d90f816f08c8e47f06ba9f09d07bd2e64d 2017-07-13T00:46:09+08:00 FEAT: renames enable? facet to enabled?.
+c53bc843a74030be9807e3bfae8c56f59ce1ddd7 2017-07-11T21:55:23+08:00 FIX: issue #12 (Draw reference - Image)
+9b9d4527d627096aacad64e87242763ccb8d0cc9 2017-07-11T21:47:18+08:00 FIX: improved example for dates PICK access.
+d2551ae4286ad671f7f2362eff02c3f9c1fc93b2 2017-07-11T21:33:25+08:00 FIX: minor improvement on date.adoc
+26022848a224fa4864858cb2f2fd113b659f1e24 2017-07-11T21:30:32+08:00 FIX: minor improvements on date.adoc
+3a1f72e25ebc42a1c29c982cb20c13a1e591f581 2017-07-11T20:50:36+08:00 FEAT: minor improvement.
+ed2f8af7732b0ca1aafbb5dc6a4bf3aa6211cc93 2017-07-11T20:14:12+08:00 FEAT: mentions that a time value can add/subtracted with dates.
+c35b170276b9fe8cc2df63a68b7d50ce7a99f48f 2017-07-11T20:01:24+08:00 FEAT: none! support for /time, and reduced years maximal range in dates.
+f370a36a2b7e526d75973205d3c7c78ad94cfb1c 2017-07-11T15:49:49+08:00 FIX: removes pair! mentions for setting a timezone.
+372588cafec6440d532f7859df397efe8bf5f331 2017-07-11T15:29:34+08:00 FEAT: adds /date description.
+44168e3a7b540b96048bf37b389e3f3749c46b81 2017-07-10T23:53:08-06:00 Remove >> prompt from examples.
+2eb9c5964b86031eb028d610da9bb3911bc124c8 2017-07-10T23:51:00-06:00 Fix Example formatting.
+52dbc723598f72904eb98909103737becb65e671 2017-07-10T23:43:44-06:00 Wordsmithing and adding examples.
+17af04d5c25c13bb823ef41237096cce36625a48 2017-07-11T08:37:06+08:00 Fix: minor copy eidt in Date
+d07177b2fe27430d7e9de0009da603e0e22cee17 2017-07-10T22:53:56+08:00 FIX: minor value fix.
+c18e42bfc1f6388360335100f91fbd7719f15adc 2017-07-10T15:26:27+08:00 FIX: removes the mention for using `/timezone: 0` before converting to epoch time.
+3c1191229b9fb1cea98ab30e9a675ab45d5a16f4 2017-07-10T13:24:26+08:00 FEAT: minor rewordings.
+6a434f2230db4514449a1b6eb47f8d5f449e80bd 2017-07-10T12:19:32+08:00 FEAT: removes the compiler limitation mention for dates.
+c29581eb4d72c04b6ab8d1a322098e48bd14c094 2017-07-10T11:46:54+08:00 FEAT: adds now/precise description.
+b606a86425635a736b9e77956e172f9b2a646a17 2017-07-10T01:11:35+08:00 FEAT: removes mention of compiler's limitation on timezones (implemented now).
+d7b55f6bba0fb457ccd23d9874a6a11508af1511 2017-07-09T22:15:01+08:00 FEAT: allow 3 digit years for non-ISO literal dates.
+b55776135353347f74fa1becfb5e422f23365a13 2017-07-09T19:08:58+08:00 FEAT: minor addition.
+73f253dc587beaba64f5569c675546c6b4c60c78 2017-07-09T19:07:25+08:00 FIX: minor improvement in date output formats description.
+1573e10b50df7dad141a352b615ed2812a0190b2 2017-07-09T19:03:05+08:00 FIX: few fixes for date format description.
+eac9f31f8a2e6793aecff3b0d481051a58c84581 2017-07-09T18:57:20+08:00 FEAT: document supported ISO date formats.
+01278cb0f7778f6f33cb09d96cecc82b501a71de 2017-07-09T15:06:12+08:00 FEAT: adds RANDOM description for dates.
+e64ae26e2d33672840b70ae5696d6b6ca7d53d7d 2017-07-09T01:33:17+08:00 FIX: display format for dates is in wrong order.
+417058520fa5545863fe6d70c38aa06240d84d0a 2017-07-09T00:32:46+08:00 FEAT: adds PICK description for dates.
+e1e68c1d156940fcb71a9aa0bb93ff90d35dacaa 2017-07-08T22:07:00+08:00 FIX: minor improvement.
+4a95ffe8b132f0cf56aea77f4c2fae7ddd6bb776 2017-07-08T22:02:38+08:00 FIX: various minor improvements.
+a484a76afac4ac62b548f5e5f6c4ba71e41c1630 2017-07-08T21:53:46+08:00 FEAT: adds date! datatype documentation.
+7da69d4e37bf670d052dfb2544dc8ff26fd3a7bd 2017-07-03T11:36:42+08:00 FIX: changed type ID for date! in Redbin.
+5729e74f4040132dd29ca38970249e7b2324efa2 2017-07-02T12:47:59+08:00 FEAT: adds date! to Redbin.
+87e9246d19366253b7e9820bf8b5b8eb57f5919c 2017-06-25T14:55:23+08:00 FEAT: adds description of redGetField() and redSetField in libRed.
+39b5917c86ae40245f97cca57f9c692764a43345 2017-06-13T23:10:58+08:00 FEAT: adds description for redImage() function.
+67c50b8dd8e305ad01e50f46073fd7d8f8da5500 2017-06-08T15:19:48+08:00 FEAT: adds redBinary() description in libRed API.
+5c3bc4f45a62808296b3d0f91efb000c58b04758 2017-06-08T15:09:46+08:00 FEAT: adds `later` option to REACT keyword and mention get-word! for referencing an actor function.
+ab455fff91aa2d68e71479d358573b39cfec187c 2017-05-31T16:59:57+08:00 Merge pull request #17 from eranws/patch-2
+45d2d716bb2814591114245c41b21137c76f54b5 2017-05-31T01:06:18-04:00 Update vid.adoc
+21a0549c8e0e6e181f33124fdc55254397e5ae16 2017-05-25T12:22:50+08:00 FEAT: adds "Face types" link.
+96ba43c5e0d33b831a8d17cd69104a306aebf995 2017-05-25T12:18:43+08:00 FIX: minor typo.
+a7ac85d0380e0cc7409e4ded93b0b343095ede84 2017-05-25T12:16:00+08:00 FIX: wrong anchor name.
+b4ce92af7e6c008c3ed05d0ed20b40b363505e43 2017-05-25T12:14:26+08:00 FIX: wrong links format.
+2667cc6ab52d12eb4645d48fd226b0e2c1e537d3 2017-05-25T12:04:44+08:00 FIX: updates obsolete links.
+8c79574680829966d01a4b2db3b9aa12190158cf 2017-05-19T00:41:22+08:00 FEAT: adds layout alignment options description.
+048852ef07bce1a9e253790e89452698ac8f5278 2017-04-23T10:49:52+02:00 vojtěch
+90b333075403a858e1449cf3e16c8dc06858f243 2017-04-16T17:44:57+08:00 FIX: update matrix commands in DRAW
+c96e2543d193f5239c39db6ed3209b29cc878dc8 2017-04-14T20:11:16+02:00 .gitattributes added
+2bca15fe4f8965a1576f068a5d18aa9fb000c70d 2017-04-14T18:02:11+02:00 uvedení verze 3.2.2
+b68bd3680f9a2c8719ffd12d559ebf7774366b32 2017-04-14T17:46:35+02:00 upravil avizo pro image
+423d2dfcaaffa2ec388463aad8da3aa67765f781 2017-04-14T17:12:07+02:00 Nechodilo, zpět.
+5a7dadf6dbbd7b93d710218cf26b6de48296dd98 2017-04-14T16:56:01+02:00 Ověření cesty HD/H to GH to GB
+611654756d683086a1d2e5690de87fd8a03b9696 2017-04-14T19:25:14+08:00 FIX: change any-number! to number!
+8b105393b171838a6acdefb9f6231e1fbdaad10c 2017-04-13T16:33:01+02:00 ../images/ go out
+0b9134fdd39dd0cf17fefe6a681fff221128a8d1 2017-04-13T16:07:14+02:00 schválně zpět
+4b93bfe7c9543f7b81df1c7691e08cc790f06081 2017-04-13T16:03:51+02:00 naschvál tam
+fb68e3e1fa3fd7e854f1d95272d8c8a9bae07331 2017-04-13T17:56:10+08:00 FIX: keys are deep copied in map
+46a9567012827febb9b79136d09cb97e76da079a 2017-04-13T10:56:34+02:00 post-true edit
+4cb988b3be906284bdb951c542a1d8be2b2d4ec4 2017-04-13T15:33:59+08:00 FIX: replace unsupported underline by bold style.
+80e286b8f8dc7a7b519b0c97b713ae3f8a9fe17a 2017-04-13T15:31:16+08:00 FIX: replaced <u> tags with proper asciidoc syntax for underlined text.
+7e6052624694247746adada48cdefc49c526a1d8 2017-04-11T11:15:45+02:00 Merge branch 'master' of https://github.com/Tovim/docs-cs
+f47d19928eb4d7744528bf0397f6942f2023a673 2017-04-11T11:10:09+02:00 Drobné opravy (typos)
+a01b61844d7e790939da8491b628564b1cc21abf 2017-04-10T21:11:26+02:00 Create README.adoc
+76b324234488b6781703380e8808b5f6c88f0ef8 2017-04-10T14:54:09+02:00 Merge branch 'master' of https://github.com/red/docs
+227126d14fbea9d97ebdd71b5df965650a621e08 2017-04-09T20:27:53+02:00 styes/website.css
+c977f38e5c1a0bfffb4125fa6c01b79a31bffdba 2017-04-09T20:17:25+02:00 upraven soubor map.adoc (zejména)
+ac769a4581d91cef56fdf2e6cd56f46485934ebf 2017-03-31T12:05:55+08:00 Merge pull request #16 from Tovim/master
+9dc25198e24ce19c9c158ca2564eae85de20756f 2017-03-30T19:19:19+08:00 FEAT: adds v0.6.2 to selection list.
+301ff246201942c51f292ebde2bcef6088bf0dec 2017-03-29T20:58:24+02:00 cs-docs: after 0.6.2 changes reflected
+909c00d507ff9015d012e55977929f235f32a702 2017-03-29T19:36:47+08:00 FIX: minor code formatting improvement.
+8e13dbd30a60a13acefc7a64e384cf7049f38de5 2017-03-25T18:36:04+08:00 FIX: minor fix in redOpen() description.
+2e78d52edd3bd2ebcc333f1b6202a01881f1fd4a 2017-03-23T18:00:50+08:00 FEAT: adds wheel event description.
+b837f95debc0a248b5ae2aacd982547652883946 2017-03-23T16:20:05+08:00 FEAT: adds description for `hint` option.
+0089787c6d6b5776751e6c28f3c543ac166f73a7 2017-03-23T16:14:42+08:00 FIX: minor typo.
+4ba1c05920d083eeb479d50a4cb48c72f8f8eb0e 2017-03-23T16:13:52+08:00 FIX: extends toc levels in VID doc.
+93af548a2675b24537c99f839c831de0a7abe12b 2017-03-23T16:10:20+08:00 FEAT: adds description for `h1-5`, `image` and `box` styles.
+a3770c60898684595e2d40213c1530908dd4ee18 2017-03-23T16:09:41+08:00 FIX: incorrect header nesting level in View doc.
+6d70fe562af620e4a03f2bb60eaea880f208e78d 2017-03-23T13:55:44+08:00 FIX: bad link and incorrect headers nesting level.
+db9985e73b0e356bf4e90ca925816ff7f7f87e20 2017-03-23T13:48:03+08:00 FEAT: extends the toc levels for Draw and View docs.
+e8360ed23083594e242ef0cdf5ec6735a358979e 2017-03-23T13:35:58+08:00 FIX: reverts all changes on fonts.
+916e78546206e696dcb4a385f00653a43879e53d 2017-03-22T23:42:20+08:00 FIX: new attempt at changing the font family.
+50c371a98e2d8615c85c28bf2fe5f6af4cee21af 2017-03-22T23:14:18+08:00 FIX: font family was not applied to the right class.
+830f3f7a1aecf47e2bb77c33d04feab103d47ebf 2017-03-22T23:09:25+08:00 FIX: reduces font size a little, and fix the class name for notes.
+e74aa01edb3b7b1d94bab58c93933d08a22f1301 2017-03-22T23:04:33+08:00 FIX: sets book's font to same family as github does for .adoc files.
+b6ff67c8529cfbb10fb2f7099076c9b686d4a8b3 2017-03-22T21:47:31+08:00 FIX: attempt at fixing font kerning issue on Chrome/Windows.
+61ad0be867b3f8e5f9846321b67259ee87808ed1 2017-03-22T17:45:51+08:00 FEAT: reduces font size of normal text a little.
+a1caebf43064c645f3719cd876902ffe3462230a 2017-03-22T17:42:06+08:00 FIX: reduces the font size for code snippets a little.
+c88d3b870f7224f56427010c66bcdb1d7dd34eff 2017-03-22T17:38:31+08:00 FEAT: minor wording improvement.
+bea5b793f12ecaf49a52837792b5a3f4fcddab03 2017-03-22T17:37:21+08:00 FEAT: adds description for pen/fill-pen geometric transformations.
+cfac3cd4946b940cdcc17121d075e98e3d1f15e3 2017-03-22T17:25:32+08:00 FEAT: adds descriptions for complex pen modes.
+1d39250aa576a406897af560b3e7069187f5105f 2017-03-21T23:50:00+08:00 FEAT: some improvements to fill-pen descriptions.
+e0d8e7ba0d6509561ddc3957911cc5128757a6c9 2017-03-21T20:48:46+08:00 FEAT: upgrades fill-pen description.
+a43082616a4c5c48c74da5af1215794b3de934f4 2017-03-20T23:58:08+08:00 FEAT: adds description for optional tail block in matrix transformation commands.
+623a692242379a133d8443d3f51cb305e1896446 2017-03-20T22:35:37+08:00 FIX: wrong syntax description for hline and vline.
+d1a1677a0455030fb402e36424af4d807d8ae384 2017-03-20T20:31:18+08:00 FEAT: adds matrix-order and clip commands description, plus various improvements.
+c4ba4d9dc47e149396beb4c0b244f94524612f7e 2017-03-20T16:36:19+08:00 FEAT: completes the description of Shape dialect.
+569c6fed7a76d236069bb8f76cf6cc99450f9d1a 2017-03-20T14:37:42+08:00 FEAT: minor improvement for Shape dialect description.
+dae022e00aa1ef49b056b4d991f9e5dd7a2d768a 2017-03-19T19:21:37+08:00 FEAT: additional Shape dialect descriptions.
+429577b7524f01640b5178cdc396f074003d0299 2017-03-18T19:24:43+08:00 FEAT: preliminary work on documenting Shape dialect.
+1c5d4818f535a26062a759e60dd61eedff17456b 2017-03-16T13:32:21+08:00 Merge branch 'master' of github.com:red/docs
+d871877d8fea82196355430933638fc5fdc81769 2017-03-16T13:31:59+08:00 FIX: minor typo.
+5f869e6a8c26aa43d2b9dc4592b12b085b39fbbf 2017-02-27T12:59:07+08:00 Merge pull request #15 from Tovim/master
+d01411429a39173bc2c19bef8bbdeff6831c27b7 2017-02-20T21:01:14+01:00 comi
+a59113cac7e50423dd9cf52217b23c4fbe8b87c2 2017-02-20T20:45:42+01:00 Merge branch 'master' of https://github.com/red/docs
+2289112e1edf323403270bbab3818fc585445fa1 2017-02-14T17:37:43+08:00 Merge remote-tracking branch 'remotes/origin/master'
+f425c496d613e815f8bf73c3856736caca996761 2017-02-14T17:35:30+08:00 FIX: expand-directives description was outdated.
+abea2ce5c615922a56ff9e382deefd2da02ae7e8 2017-02-14T15:10:01+08:00 FIX: minor improvement.
+5c7ecb2249d4521111739f26f1b0254a7de46126 2017-02-14T15:06:05+08:00 Merge branch 'master' of github.com:red/docs
+15802f589cb6966b3ce334e647cab9c9ab1d8d40 2017-02-14T15:05:48+08:00 FIX: pattern-matching macros descriptions were outdated (issue #2411 in red/red)
+795ae17ccf43eb3b179bb97f19aafe6da35b59b7 2017-02-13T16:27:11+08:00 FIX: additional description for previous commit.
+70ec30736d95be8bd6c08564d818348b4a9ab359 2017-02-13T16:24:01+08:00 FIX: extra | character was hiding extra information for tab-panel widget.
+75f8028c816fa647957f801f63c6b74d5cd7c677 2017-02-12T19:22:55+08:00 FIX: minor fix, removing extra * characters.
+d79b5bfd5e0bf8a08d4b3f8329856525823c2674 2017-02-09T18:01:36+08:00 FIX: multiple fixes to LibRed doc.
+6096226c52541918dd369797f31ddfcb4900c4f7 2017-02-09T17:17:03+08:00 FIX: reverting navigation menu to simple bullet points.
+b5478c5241e0027a0e88d67e6989d8cebc97e896 2017-02-09T17:11:09+08:00 FIX: trying switching bullet points to headers.
+a14989daec24e9500dd604d641065fcd68010025 2017-02-09T17:06:02+08:00 FIX: new navigation improvement test.
+9ea0438e46a8af93882f77e7767fb10c7726d813 2017-02-09T16:58:18+08:00 FIX: improved navigation menu.
+1c95a2e384255236dd350b847a85481484a68107 2017-02-09T16:35:32+08:00 FIX: various minor improvements.
+a10af9fbcee713dad8d2ed7a69eb5329218782d7 2017-01-25T16:41:39+01:00 docs-cs: still, still modifying
+235f5df349a59f65c3c5981513cd7f7b1ac70c94 2017-01-25T15:20:05+01:00 docs-cs: still modifying
+e703edaf19a040fd6b26f89d8f741ae2f12a9643 2017-01-25T10:21:12+01:00 docs-cs:two files removed
+c3293de9226798a16a4cab318dd98a7324ce5513 2017-01-24T21:15:46+01:00 docs-cs: modified and added files
+d0f0999ac7806c83c5ac0d88cdb03c789948a5f5 2017-01-23T08:14:44+08:00 FIX: a few copy edits of LibRed docs
+7841a2d733e73bcd5bc67bf5a2635e7ebbe4d3de 2017-01-21T19:48:19+08:00 FIX: minor improvements.
+b70eca5ef1b866cd331a42375944533ad1742a3b 2017-01-21T19:33:27+08:00 FEAT: completes the VB API description.
+c53b3e00e4f95204a9c2c5e8ca873e78e3565345 2017-01-20T16:27:08+08:00 FEAT: preliminary work on VB API description.
+4ec5187dcb100bdc139b5193e0ed40765c6bb417 2017-01-18T20:09:43+08:00 FEAT: adds redDoFile() function description.
+84ed3d94bfa2574f4e3b7e6f2a5c941092fa2808 2017-01-18T17:39:48+08:00 FEAT: adds description for redDatatype(), redTuple() and redTuple4() functions.
+56b1ace60b3ee10910d35080749b584530f430ec 2017-01-18T16:54:15+08:00 FEAT: add descriptions for functions header sections and missing debugging functions.
+ac1a92fd812df5aaa1a6ff740e1bb71804dd53e3 2017-01-18T14:52:42+08:00 FIX: minor fixes.
+9b9d45f1d6dabdf47b7da7943a0c2abf5ff130d4 2017-01-17T21:01:20+08:00 FEAT: fills in the first sections of the libRed doc.
+455831c8dcfeb4f3c3d0bdb26fda1506581ba1a9 2017-01-17T14:30:18+08:00 Merge branch 'master' of github.com:red/docs
+7778e665c1d0e2f87b4cce5bb99f969e2db90d71 2017-01-17T14:30:02+08:00 FEAT: completes the functions description.
+3940feb6bf5f9a60092726672e1170904d3e2d3d 2017-01-16T17:31:32+08:00 FIX: corrected typo in gui.adoc
+f4eb24b57c51d3a61d2ba26730585331027c34a7 2017-01-16T16:22:13+08:00 FIX: removing duplicate file and some minor fixes.
+bdcf0d9020fb510771c8c1b5614830fa87658777 2017-01-16T13:54:30+08:00 FIX: edited GUI Architecture Overview
+aa4f652d362f5136232010b0cd0d8986f3354d1d 2017-01-15T19:04:50+08:00 FEAT: better formatting of named arguments in descriptions.
+6371991742130c9584629a2cbaba707ecc21fb74 2017-01-15T17:14:42+08:00 FEAT: adds descriptions for libRed action! wrappers.
+017232688dd13b2df16f1c4e64e8298b74e9ee4e 2017-01-14T17:24:59+08:00 FEAT: adds more descriptions for conversions functions.
+72bae193fc8ce94711dfa47d3efd0859c8c6116e 2017-01-14T16:51:23+08:00 FIX: new try at fixing gitbook's build error.
+b8487a2b2635a663508568fcdab4cacac99200ac 2017-01-14T16:36:15+08:00 FIX: attempts avoiding the gitbook build error on {%s} pattern.
+4a0f07e1d4291a6052cbf5ef5c0cad3752ed4958 2017-01-14T16:35:17+08:00 FEAT: adds redCInt32() description.
+f1768b2c4f7af86cc175eed2da1e1b535479aa19 2017-01-14T16:02:31+08:00 FEAT: adds more functions definition.
+9ccb73b5b80bb13090e0e0cea36c09f6226023ad 2017-01-14T15:04:05+08:00 FIX: minor typo in reactivity.adoc
+c32dd07483d56c64634a9cc64a5232cdf11e9533 2017-01-14T11:23:47+08:00 FIX: wrong list formatting and minor typo fixed.
+4ecaf9d519a8545c3ce75d12d9bae0f28093bb44 2017-01-14T09:15:56+08:00 FEAT: adds more API functions description.
+7664c9025f775db3898a5890b81ff47c117e7995 2017-01-13T18:25:34+08:00 FEAT: adding some functions descriptions.
+f6bbda8d66cf128fac5c4838f27340963873ac56 2017-01-12T20:12:56+08:00 FIX: adds missing `void` to prototypes.
+b4d7d34c7b4fc23e6d9260960d896d29fbb7509e 2017-01-12T19:56:40+08:00 FEAT: adds function prototypes.
+628d86dba4953de7058f9499d3cf986afa03c9b0 2017-01-11T23:03:53+08:00 FEAT: preliminary draft for libRed documentation.
+aa4e673372a97c74fbf8d6daf5edda5b89eadb69 2017-01-08T16:04:42+08:00 FIX: restored book.json file after failed attempt at fixing issue #14.
+0074494c55e79ca7e825ef3b75597a12f49786c3 2017-01-08T16:00:26+08:00 FIX: removed `selected` line in JS code.
+64ffb0c95db2d1488def08a49fa83c6fffa1286a 2017-01-08T15:56:21+08:00 FIX: typo in JS code.
+ea0f5d1bbe94ded5f0059230823bda39e7d1db30 2017-01-08T15:52:49+08:00 FIX: attempt at improving the version selection behavior (issue #14).
+2e3360df3aacfa2969b94ea7d70cd230328604fd 2017-01-07T21:17:53+08:00 FIX: removed nn/ folder (not needed anymore).
+c9500a6339623764d6828469704b745ccf5cee71 2017-01-07T21:06:43+08:00 Revert "FEAT: moves the styles/ folder up, out of the language-specific folders."
+47085e6a41c1da2d2e466391efa98fc33aa67732 2017-01-07T21:00:36+08:00 FEAT: moves the styles/ folder up, out of the language-specific folders.
+4e9d051fdbf3dc4168e8b746203b82c1a39801fe 2017-01-07T20:50:52+08:00 FEAT: switch all docs from Markdown to Asciidoc format.
+59d348d7400089ebf7eda06e319e2d690b8fef2c 2016-11-24T19:01:35+08:00 FEAT: adds description for new manual mode to pattern-matching macros.
+468a204e67099415da3db206132de676adab5951 2016-11-09T16:36:47+08:00 FEAT: adds /keep refinement description to expand-directives.
+b2f03dba8b8023f6004fe0d098b35bf0c4c26cd2 2016-11-07T13:15:29+08:00 FEAT: adds #trace directive description.
+547f1c799bc7dad2ea68866e5de685bf86a35af8 2016-11-05T19:49:57+08:00 FEAT: adds more macros examples.
+cbb090f2b9a0e4134f025069d6d2e51ae787f2a5 2016-11-05T19:27:34+08:00 FEAT: adds #local and expand-directives descriptions.
+cf85b48c73ad87d386b9504a6c0832cd7df63310 2016-11-05T14:53:13+08:00 Merge pull request #13 from dander/patch-1
+e113aad8f1cd2934623f4de51586818d56ac0145 2016-11-04T17:52:28-06:00 Fix typos and apply minor wordsmithing.
+a525a87fc4290bebd0bb129f02f7a053e2a963f0 2016-11-04T12:19:32-07:00 fix table of contents directives links
+74dce857249804d18bc16e886f02ea6f71b7c3ee 2016-11-05T01:36:34+08:00 FIX: more typos fixing.
+40490ea61e022d3a8d8db21fb2665206edda578c 2016-11-05T01:33:06+08:00 FIX: quoted code indentation typo.
+999fdb0338939693135ece13bd5d368277d42457 2016-11-05T01:05:01+08:00 FIX: testing deeper quoting.
+bb220d419b08a9570f7cd5586d8753e15deab6ea 2016-11-05T01:01:50+08:00 FIX: new attempt at fixing wrong MD interpretation.
+d16228b3ab3ff5270fd49bfb5bc262b7887112bc 2016-11-05T00:59:50+08:00 FIX: sticky code parts causing wrong MD interpretation.
+cf707209c6bda20f465b8a746c22fb03d970ba2a 2016-11-05T00:57:34+08:00 FIX: typos fixes.
+31e0e4988a3f45e3768cb38ac59fb3907e6b9057 2016-11-05T00:45:12+08:00 Merge branch 'master' of github.com:red/docs
+8c49800b523bf025a9a154bce3db7b65d3de8de6 2016-11-05T00:44:48+08:00 FEAT: preliminary version of Preprocessor documentation.
+7c6b4d67e56232b87ff72f83e7f7b0ff7a0c731b 2016-10-26T10:45:52+08:00 Merge pull request #11 from geekyi/patch-1
+a8117b5167efb758e53af1d79a7259684c50c8fc 2016-10-24T14:57:11+05:00 Fix link issues reported on red/red#2287
+07a01c8574aa2f9fabcce245d3de209d168e81aa 2016-08-26T15:16:59+08:00 Update Draw.md
+8210d6a622fef067780e06b7aab397a21591db38 2016-07-19T17:01:09+08:00 FEAT: adds `no-border` flag description for area and field faces.
+7325290fe5a94d1058c75a5686fa3ba3de03bf39 2016-07-19T15:12:15+08:00 Merge branch 'master' of github.com:red/docs
+207f90ad667f7a1c1efe4b9d10692902b6ded5d9 2016-07-19T15:07:58+08:00 FEAT: adds system/view/silent? description.
+15aaf2d753ffd55a93851918aaf73fdeb7e05663 2016-07-19T15:05:11+08:00 FEAT: adds description of NOW option for RATE.
+21fd6aed292fba688d3de999c3f1422e7c174964 2016-07-17T10:18:02+08:00 FEAT: adds mentions of issue! as an alternative way to specify colors in VID.
+64a998c4ae9ac4849127beb8051c29d247e839b3 2016-07-16T13:16:44+08:00 FEAT: adds email! definition to Redbin.
+6f0a4a7a21c4fa3c2fdfda46868681bcc858c8a7 2016-07-15T00:10:27+08:00 FEAT: adds tag! definition in Redbin spec.
+fa8e98615b4fef290f9937042dc790c175b01058 2016-07-09T13:37:25+08:00 Merge branch 'master' of github.com:red/docs
+61de5fdcd51c684d8175b313827336a89971d18c 2016-07-09T13:37:06+08:00 FEAT: mentions that `react` can be used globally in VID.
+37c4e267d77cd1246cee00dc50b8dc9eb16617e7 2016-07-03T01:52:56+08:00 Merge pull request #10 from greggirwin/master
+adbc3ad2a1febe7f123d5c3b57e2910098f6f82b 2016-07-02T11:50:29-06:00 React? target fixed in TOC
+cd21cf6c138782f40ee87d33fc51022de5546631 2016-07-02T11:42:43-06:00 Typo fix: targetting
+9742390f2bf1524e14fb3074ee849f481dfbe0a1 2016-07-02T20:24:14+08:00 FEAT: replaces /TYPE by /TARGET in REACT?.
+76f6efc442d8c37fd5ebc8454d55bcba18c8cae1 2016-07-02T13:14:00+08:00 Merge branch 'master' of github.com:red/docs
+bf011d7b1fdbe444c7cfbf51f24836b9463b821f 2016-07-02T13:13:44+08:00 FEAT: documents react?/type.
+4a1c7f8b4776f2da4116bf5bdda6ea780bf8d17d 2016-07-01T23:05:02+08:00 Merge pull request #9 from gunnarahlberg/master
+61c9d02218aa5305d8e8d5c10e5cb0b0faf5fe1e 2016-07-01T16:28:43+02:00 Changing -ing to active tense
+462762dab9253f0116eb41bb803e1469f6be8038 2016-06-30T23:31:38+08:00 FIX: minor fix in the preselected book version.
+f489834d71ef0a2325d3a5a1aa744ec7e69be4e0 2016-06-30T23:25:49+08:00 REL: 0.6.1
+1c4b751aadb4025ab9a4188be940725bdf90c327 2016-06-30T18:43:19+08:00 Merge pull request #8 from qtxie/matrix
+9d581f58fd5a85d83784e6223dcd7b3b55cd9dde 2016-06-30T18:29:36+08:00 FEAT: adds matrix draw commands
+d87f67c182efb8df63bc9991898d08209d4bf9fc 2016-06-30T04:12:46+08:00 Merge pull request #7 from greggirwin/master
+31ec74de16b1f24059cd59cda71c3bfd0b7488a8 2016-06-29T13:48:50-06:00 A little more wordsmithing.
+5cb78d4894481793ec767b05cac1cbb24283adfe 2016-06-30T01:57:29+08:00 Merge branch 'master' of github.com:red/docs
+cf529f75c3ce632a53c62a99adb13c58038aa2cf 2016-06-30T01:57:13+08:00 FEAT: minor improvement.
+d8470d8d95bc8c8083b1e09c191cb0d3d697bf8c 2016-06-29T10:00:04+08:00 FIX: minor edits to reactivity docs
+bf22dd395cff1412dc934935eb5b112ebf22d6c8 2016-06-28T14:19:17-06:00 - Wordsmithing pass 1 on reactivity.md - Deep-reactor! example should be reviewed for correctness and clarity
+4fd6c3792f6cef621fb44b9dff12b519c007f821 2016-06-28T12:44:41-06:00 Merge pull request #6 from asampal/patch-1
+f3121a54ce60105fbcd699e42383dad4b7c9b2e8 2016-06-28T13:18:16-04:00 A few wording changes to clarify things.
+9136cd9bf1ecead4b88e200102591ff1849a0112 2016-06-29T00:01:52+08:00 FEAT: some minor fixes and additions.
+ce4b9d00fd728477805e18cf88367739caf34546 2016-06-28T09:40:37-06:00 Half way through reactivity wordsmithing.
+257f1ad57e0e1f99a9d568ba218b8f14f822a38c 2016-06-28T20:25:40+08:00 FEAT: minor improvement.
+ca84684fcfa2650b25689ac10f086eaae7f61c06 2016-06-28T19:12:15+08:00 FEAT: minor improvement of `react` syntax presentation.
+68cbe757a02226373f41c5fd00ab3ad7e788ea75 2016-06-28T19:09:28+08:00 FIX: minor grammar fixes.
+6dc33703b5921c2dd98d2ffc66f5ac8d2347a5b6 2016-06-28T18:46:43+08:00 FIX: grammar fix (thanks to @nc-x).
+dbe21e89391a7489dd22191ebd147d9e0e8a3c31 2016-06-28T17:43:06+08:00 FIX: some arrows were green instead of red in react-graphs.png
+898bdac2f2b7f968ca0bb0fed0b447267d48a25c 2016-06-28T17:40:39+08:00 FIX: new attempt at centering images.
+6b7fb7ce656a30ab54a6b66ad800ae45875230ae 2016-06-28T17:38:11+08:00 FIX: minor fixes.
+1a430ae6396fe0354d7e4cd37dc1ede9feba4467 2016-06-28T17:35:54+08:00 FIX: attempt at centering images.
+de82bbce409ae8416aefb147c4c5d8abee6657f6 2016-06-28T17:33:02+08:00 FIX: minor fix after merge.
+bebe48bffb30cad9963a84a57287a602745c9a5f 2016-06-28T17:32:11+08:00 Merge branch 'master' of github.com:red/docs
+79fe83988546b0dc0b89dcc782d7a856636dc153 2016-06-28T17:31:53+08:00 FEAT: adds images to reactivity.md
+90c5d858b0fbff02f7460f25e5913b8862d3c760 2016-06-28T15:40:42+08:00 Merge pull request #5 from pekr/patch-1
+e220560798dc4f918e898d43686dd116ce5c913b 2016-06-28T15:39:50+08:00 Merge pull request #4 from qtxie/master
+68c4d2076bcfc592cb9ac9aaf03e35855dfa5528 2016-06-28T08:04:23+02:00 Fix slider typo ... 'sld vs 's
+64277d84a6a7d7474e38ac9cc612a9eefd7728da 2016-06-28T13:33:30+08:00 FIX: missing line breaks.
+a498fb191b04cae7a73fd6e227e460eda2de8de7 2016-06-28T13:30:26+08:00 FEAT: adds description for different kinds of relations.
+b82415f788aaf60c0dd4a28a97dfd8fbb0856b22 2016-06-27T21:20:17+08:00 FEAT: preliminary description of relation types.
+ec4c7047e017d31ad76049e49375116896fb719c 2016-06-27T16:49:23+08:00 FEAT: rearranges some sections.
+fb44b83a877a9b2a74c322b3b40cc14819cd0233 2016-06-27T13:35:01+08:00 FIX: leftover in the TOC.
+3f4f07d96a3f8f0adb9a7a7fd8e5f3491d60f943 2016-06-27T13:31:10+08:00 FIX: lowercases API functions.
+dd5ccf554df9f8db996961e65fbed9f10cc7da21 2016-06-27T13:27:39+08:00 FEAT: minor addition to reactivity.md
+2ff31a7332857b68a5ea586a77524dd91278d9ff 2016-06-27T13:22:52+08:00 FIX: minor improvements to reactivity.md
+a9d70e13d95573a1367842196887cd6b4efddfad 2016-06-27T13:16:20+08:00 Merge branch 'master' of github.com:red/docs
+ad17d003abc408f623757a232ec9837e4c44e5ad 2016-06-27T13:16:07+08:00 FEAT: adds preliminary draft for reactive programming.
+ab34c31bda7aff5c3bc062e134e46179f08f6917 2016-06-25T17:36:40+08:00 FEAT: adds float! as possible type for circle's radius(es).
+77e16d2d728a35521fed74a4df773b3a36c11e79 2016-06-22T17:00:12+08:00 FEAT: adds `rate` VID keyword description.
+18f7a3b8425d6049a2e173cbfcc340d35980f2b5 2016-06-22T15:48:15+08:00 FEAT: adds get-words usage description in VID.
+bbeb4f59e18dc44d592a34520815ccc76afe22c2 2016-06-21T22:26:46+08:00 Merge branch 'master' of github.com:red/docs
+dd66384b7d1ee14b9326f0eafe60629fae570ec4 2016-06-21T20:21:23+08:00 FEAT: adds mention for `pen off` syntax.
+60d418d1ef2378502e45497e501197ce3a4c7429 2016-06-21T20:12:32+08:00 FEAT: adds `self` mention to VID `do` command.
+0533f567aec173860fa5d6b775f37a284e62bc4e 2016-06-21T20:11:14+08:00 FEAT: adds `event/window` description.
+540f9f111a1a7f5e17a129f100207426507c4e5e 2016-06-21T19:54:43+08:00 FEAT: adds `rate` facet description.
+07354a28f1e287c45ec65bc8d68ec7586f948fbc 2016-06-21T18:27:10+08:00 FEAT: adds `time` event.
+b1a5b4fcdc112e2f34837355953d4570c9832a5f 2016-06-21T18:25:12+08:00 FEAT: adds focus/unfocus events.
+05cbdf5dad6071c1f0d514d6c86df609e7576b16 2016-06-21T18:20:39+08:00 FEAT: adds VID `default` keyword description.
+a6123d3b0349d039728932ba3061b8afd03eeeeb 2016-06-21T18:14:23+08:00 FIX: minor fix.
+f060a665e41dae4be07cf004feb4c130f1d452f7 2016-06-21T18:05:01+08:00 FIX: minor corrections on text and field widgets description.
+051925fd223e139e81c5b44e779d0ad467b85bd2 2016-06-21T17:53:46+08:00 FEAT: adds text/data facets syncing description for text and field widgets.
+e7c8db4adb928b1fa14f974c3d7c164b7b4aaabf 2016-06-21T17:02:07+08:00 FIX: removes extra line breaks.
+4646f590b8d21262bdac1ae9bd84103611e36cea 2016-06-21T15:44:47+08:00 Revert "FEAT: adds description of optional external words list for VID actors."
+88bf95efc07f4f83527fb41360165d1289dda70c 2016-06-18T17:54:29+08:00 FIX: add missing image file
+160ed524911ba866a8f2ff4b9f431b08c9fd45ef 2016-06-18T17:52:48+08:00 FEAT: added image for gradient
+b8f21a55f99864aa73db3b8b429b1b4645009dd4 2016-06-16T14:04:33+08:00 Merge pull request #3 from qtxie/master
+89ea6a9c3c72c822ca8be477d873344835957501 2016-06-16T12:43:52+08:00 FEAT: adds fill-pen gradient description in DRAW
+8480ed87d5d8f97808837be460d44cb6c4b9dd38 2016-06-13T23:32:18+08:00 FEAT: adds time! support to Redbin spec.
+72dc7126c1aeadcd07ec1fb5426bd1bc9e55fe29 2016-05-25T22:23:46+08:00 FIX: minor text improvement.
+736edbde8f15a64a9095e1f8beb9d9e339a9237f 2016-05-25T22:21:48+08:00 FIX: URL to MSDN web page fixed by url-encoding paren characters.
+125c7fa1b5df4e799131dfd7330794adc33f3dd9 2016-05-24T22:06:55+08:00 Merge branch 'master' of github.com:red/docs
+6fb95f72549f3387739a1ccc22531a5e3768da9b 2016-05-24T22:06:29+08:00 FEAT: adds description of optional external words list for VID actors.
+b18f40160909ea3ded4b1afcd478c5e2950ac871 2016-05-12T20:14:58+08:00 Merge pull request #2 from mark-summerfield/master
+4e25308a7439abbadbad20d2c08c58342e676660 2016-05-12T13:06:17+01:00 Update Draw.md
+12a1f19e0d19d9f767de4d85cba352c45e2c58f2 2016-05-10T19:51:11+08:00 FIX: adds missing entries in VID's TOC.
+11a337660cea3d8d6e77373fc89f7838bd49f731 2016-05-10T19:47:13+08:00 FEAT: adds `focus` option description in VID.
+578f0e43c2889a03d8a31fe9bfce0806ef31e2c4 2016-05-10T19:34:50+08:00 Merge branch 'master' of github.com:red/docs
+92c4fe04a2645cdd4d4f3284b1c5729e4dcfee7c 2016-05-10T19:34:37+08:00 FEAT: adds `select` keyword description in VID.
+9f22aa48006f73a2ef6fc33d077aab0bd219b107 2016-05-08T15:26:28+08:00 Create styles/website.css
+c4e08e36e094ad3d0213c6521246e97c09deb96d 2016-05-07T22:31:13+08:00 FIX: remove duplicate mention of the chat room.
+70a11966bcc02b58d3501bd0074e1866f7170f28 2016-05-07T22:28:46+08:00 FEAT: adds some metadata.
+bc29d066bc998762492c84d3bf74dca3fce1f8dc 2016-05-07T22:00:15+08:00 Merge pull request #1 from gitter-badger/gitter-badge
+d707549c18348ff8257c7609d241efe0a2d05002 2016-05-07T17:18:49+08:00 FIX: ensures that the default version is the latest one.
+dbc4cef4b6ad6745cb40765ba25e75790119ea54 2016-05-07T17:15:20+08:00 FIX: minor file names simplification.
+2c9a0eb3560d328b423a270e743fc7c011775639 2016-05-07T17:13:06+08:00 FIX: wrong URLs used for each version.
+6f5e9b3e3263c0802597108db3febb6417b03f2c 2016-05-07T16:59:47+08:00 FEAT: adds book.json config file.
+98c40c4ebecf66d3b76e03cdea7ca174322c1c37 2016-05-07T14:17:23+08:00 FEAT: improved README.
+ac9cfe25775f4f5e91f5c5d57d48ada84583fc32 2016-05-07T06:12:29+00:00 Add Gitter badge
+ca73f99bd888d365575ca237c3548d68bc72fda7 2016-05-07T13:28:11+08:00 FEAT: adds more titles to non-gui pages.
+cd3e7aa1e45da12b06fe2d66bda8028c874cd2d2 2016-05-07T13:25:42+08:00 FIX: removed TOC mentions.
+793343d515fd06694abced94b740647df70ad86b 2016-05-07T13:17:49+08:00 FEAT: Adds header titles to GUI documents.
+309c329b64e360a45827f710f30f4f0f09384bcc 2016-05-07T13:15:34+08:00 FIX: internal hyperlinks are now relative.
+c0d4a9600599dc8ae7013c7ba9fbedf0c956d276 2016-05-07T11:25:02+08:00 FEAT: moved all GUI-related files to gui/ folder.
+225753dd9add20e84bd1be229a3262c5e928844c 2016-05-07T00:51:52+08:00 FIX: nesting of View chapters
+1809774699e81727e4dd1d647bd1e417f895d500 2016-05-07T00:39:52+08:00 FIX: attempt at fixing missing entries in summary.
+6d9d0f7c6cbe5b01ec339be0c16f6100a7e81f02 2016-05-07T00:37:43+08:00 FIX: cleaned up README.md
+2afa2048357ab7b351cd2eba12735dc764f01209 2016-05-07T00:03:42+08:00 FIX: removing useless file.
+47dfb451490adbb3550492c4723ed522c0941fe6 2016-05-06T23:52:04+08:00 FEAT: adds SUMMARY.md
+8a829616a510213f81818a00496c2d5ab7b93cae 2016-05-06T17:02:06+08:00 FEAT: puts a TOC in README.md
+a7a4e079f934c3035280de8f9979f0561b2e4ab3 2016-05-06T16:44:06+08:00 Merge branch 'master' of github.com:red/docs
+73c3c1de278b788faeac832734412f9317002676 2016-05-06T16:43:41+08:00 FEAT: adds a root index file.
+41f49e31e628e45a9de6835a45e8ca8dd5741232 2016-05-06T16:42:32+08:00 FEAT: adds coding style document.
+e049aa8c930d8a4a141203496ef2b46ae68fd29c 2016-05-06T16:12:54+08:00 Create README.md
+0f99413161425ffd42cabda7bf571b5e5bb51d3f 2016-05-06T16:11:38+08:00 FEAT: initialize repository with reference docs from red/red/wiki.

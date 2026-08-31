@@ -127,6 +127,35 @@
       "purpose": "Rebol 2 maintained fork (lead)",
       "result": "NOT_FOUND",
       "detail": "HTTP 404; Oldes' current fork is Oldes/Rebol3"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
     }
-  ]
+  ],
+  "note": "earlier /pub/platforms/ targets came from outdated historical docs; the pattern confirmed by official red/web-red source and all distro recipes is /downloads/v278/"
 }

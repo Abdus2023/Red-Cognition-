@@ -252,6 +252,83 @@
       "target": "isolated side lines (NOT in master history)",
       "evidence": "merge-base ancestry: 0/7 tags reachable from ren-c master or from fork point d5d6908f - build markers on side lines (manifests/ren-c-tags-registry.json)",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.0.tar.gz",
+      "target": "pinned commit a3d70c1aff30\u2026",
+      "evidence": "git blob SHA-1 of all 428 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.1.tar.gz",
+      "target": "pinned commit ce219eb4c1bc\u2026",
+      "evidence": "git blob SHA-1 of all 437 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.2.tar.gz",
+      "target": "pinned commit 28e70714b59d\u2026",
+      "evidence": "git blob SHA-1 of all 470 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.5.4.tar.gz",
+      "target": "pinned commit 4b5cc5e8243b\u2026",
+      "evidence": "git blob SHA-1 of all 365 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.4.3.tar.gz",
+      "target": "pinned commit 1ddcdc66e85c\u2026",
+      "evidence": "git blob SHA-1 of all 323 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.3.3.tar.gz",
+      "target": "pinned commit 8bd2545f611f\u2026",
+      "evidence": "git blob SHA-1 of all 273 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.2.6.tar.gz",
+      "target": "pinned commit dbc36db3a817\u2026",
+      "evidence": "git blob SHA-1 of all 129 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.1.1.tar.gz",
+      "target": "pinned commit 2297f1261c4e\u2026",
+      "evidence": "git blob SHA-1 of all 20 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "cross-source-identity",
+      "source": "NixOS/nixpkgs red package",
+      "target": "red/red tag v0.6.4 commit 755eb943\u2026",
+      "evidence": "nixpkgs pins fetchFromGitHub rev=755eb943ccea9e78c2cab0f20b313a52404355cb \u2014 identical to our resolved v0.6.4 commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "reference-hash",
+      "source": "rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "target": "reference hashes (blocked acquisition)",
+      "evidence": "sha256 (nix base32-decoded) + md5 (crux) recorded; comparable once downloadable",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-evidence",
+      "source": "REBOL 2.7.8 binaries",
+      "target": "custom REBOL End User License (unfree)",
+      "evidence": "AUR PKGBUILD license=custom:REBOL End User License; nixpkgs meta.license=unfree (rebol.com/license.html) \u2014 redistribution restricted; NOT covered by Red's BSD/BSL",
+      "status": "ESTABLISHED"
     }
   ]
 }

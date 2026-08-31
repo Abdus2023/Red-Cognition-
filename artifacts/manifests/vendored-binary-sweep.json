@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-31T18:04:19Z",
+  "question": "does any GitHub repo commit a Rebol 2 interpreter binary (downloadable via api.github.com)?",
+  "repos_swept": [
+    "TryItOnline/tiosetup",
+    "exercism/red-test-runner",
+    "eranws/red-docker",
+    "TimeSeriesLord/rebol",
+    "gchiu/Rebol2",
+    "codebybrett/rebol2"
+  ],
+  "method": "git trees API recursive listing, filtered for binary/archive/rebol-named files",
+  "result": "NO vendored Rebol 2 binary found - every recipe downloads from rebol.com at build time",
+  "qemu_i386_available": false,
+  "conclusion": "execution + bootstrap reproduction remain NOT_PERFORMED (binary unobtainable in this sandbox)"
+}

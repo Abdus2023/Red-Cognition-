@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-08-31T18:04:19Z",
+  "series": [
+    {
+      "archive": "red-0.6.0.tar.gz",
+      "tag": "v0.6.0",
+      "pinned_commit": "a3d70c1aff30f3dae4eb9873d5a2f4977d5d8259",
+      "tree_entries": 428,
+      "matched": 428,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.6.1.tar.gz",
+      "tag": "v0.6.1",
+      "pinned_commit": "ce219eb4c1bc99dc344a79afbc1b1d64ea09e519",
+      "tree_entries": 437,
+      "matched": 437,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.6.2.tar.gz",
+      "tag": "v0.6.2",
+      "pinned_commit": "28e70714b59d4c5beb87a1555063d8d6c0e13a9a",
+      "tree_entries": 470,
+      "matched": 470,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.5.4.tar.gz",
+      "tag": "v0.5.4",
+      "pinned_commit": "4b5cc5e8243b3ae16955c7d9678f560351067c50",
+      "tree_entries": 365,
+      "matched": 365,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.4.3.tar.gz",
+      "tag": "v0.4.3",
+      "pinned_commit": "1ddcdc66e85c1a4b9cd80985f4469b0c688d168c",
+      "tree_entries": 323,
+      "matched": 323,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.3.3.tar.gz",
+      "tag": "v0.3.3",
+      "pinned_commit": "8bd2545f611f971675fa6055e6307611e5eb5697",
+      "tree_entries": 273,
+      "matched": 273,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.2.6.tar.gz",
+      "tag": "v0.2.6",
+      "pinned_commit": "dbc36db3a817165fbe2cf984a9aaca26d05480d2",
+      "tree_entries": 129,
+      "matched": 129,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    },
+    {
+      "archive": "red-0.1.1.tar.gz",
+      "tag": "v0.1.1",
+      "pinned_commit": "2297f1261c4e6d13d7140c004de44ff9618cc90f",
+      "tree_entries": 20,
+      "matched": 20,
+      "mismatch": 0,
+      "missing": 0,
+      "extra": 0,
+      "result": "HASH_MATCHED (whole tree)"
+    }
+  ]
+}

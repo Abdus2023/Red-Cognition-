@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-31T17:59:04Z",
+  "generated_at": "2026-08-31T18:04:22Z",
   "final_gate": "PARTIALLY_VERIFIED",
   "final_gate_rationale": "Substantial verified evidence exists (official upstream identity, immutable tag/commit resolution, pinned-hash archives, git lineage proof). Verification is incomplete because every executable-binary channel (static.red-lang.org, rebol.com, archive.org, GitHub release-asset CDN) is blocked by the sandbox egress allowlist, so no binary acquisition, execution, or bootstrap reproduction was possible.",
   "collection_summary": {
-    "rebol_artifacts_collected": 19,
-    "red_artifacts_collected": 20,
+    "rebol_artifacts_collected": 21,
+    "red_artifacts_collected": 30,
     "red_system_artifacts_collected": 3,
-    "related_metadata_records": 14,
+    "related_metadata_records": 33,
     "git_repositories_collected": 7,
     "git_working_trees_collected": 1,
-    "release_archives_collected": 4,
+    "release_archives_collected": 12,
     "source_archives_collected": 5,
     "binaries_collected": 3,
     "binaries_blocked_or_unverified": 1,
     "source_trees_collected": 6,
     "test_suites_collected": 2,
-    "documentation_collected": 3,
+    "documentation_collected": 4,
     "third_party_artifacts": 6,
     "unresolved_artifacts": 1,
     "interpreter_binaries_executed": 0,
@@ -52,7 +52,11 @@
       "https://deb.debian.org",
       "https://snapshot.debian.org",
       "https://gitlab.com",
-      "https://sourceforge.net"
+      "https://sourceforge.net",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz"
     ],
     "not_found": [
       {

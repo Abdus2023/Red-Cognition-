@@ -383,3 +383,36 @@ _Generated: 2026-08-31T17:59:01Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**. The acquisition layer is now self-describing: a third party can re-verify every claim from the repository alone.
 
+## Continuation Addendum (stage 12)
+
+_Generated: 2026-08-31T18:04:19Z_
+
+### Reference-evidence registry (recon R15)
+
+- 8 sources captured to `manifests/reference-evidence/` with hashes+quotes: **official red/web-red download page source (Tier 1)**, nixpkgs, CRUX ports (+md5sums), AUR, exercism runner, red-docker, TIO setup.
+- **Cross-source identity MATCH**: nixpkgs pins red/red to rev `755eb943…` — byte-identical to our resolved v0.6.4 commit.
+- **Reference hashes** for future download: rebol-core-278-4-2.tar.gz sha256 `b03b05fd070da8fa5186246a2febd02d7406305a65155cdaff3f1ac097b1757f` (nix, decoded) and md5 `97eb1a48…` (crux); view-278-4-2 md5 `86e33003…`.
+- **License finding**: Rebol 2.7.8 is **unfree (custom REBOL EULA)** per nixpkgs+AUR — the bootstrap binary is NOT covered by Red's BSD/BSL; redistribution restricted.
+
+### Official URL pattern corrected
+
+- The official pattern is `rebol.com/downloads/v278/…` (confirmed by official site source + every distro recipe); the earlier `/pub/platforms/` targets came from outdated docs. All corrected URLs attempted: still TLS-blocked (logged).
+
+### Vendored-binary sweep
+
+- 6 repos swept via trees API: **no GitHub-hosted Rebol 2 binary exists** in them; all build recipes download from rebol.com at build time. qemu-i386: not installed. Execution/bootstrap reproduction remain NOT_PERFORMED — now proven by sweep, not assumed.
+
+### Red tag-series completion: 8 archives collected, 8/8 whole-tree HASH_MATCHED
+
+**v0.6.0** (428/428); **v0.6.1** (437/437); **v0.6.2** (470/470); **v0.5.4** (365/365); **v0.4.3** (323/323); **v0.3.3** (273/273); **v0.2.6** (129/129); **v0.1.1** (20/20)
+
+red/red archive coverage now spans v0.1.1 → v0.6.6 (12 tag archives), every one pinned and whole-tree verified.
+
+### Commit-history manifests
+
+red.git=15921; rebol.git=308; r3.git=533; ren-c.git=10485; Rebol3.git=4675; rebol-syntax.git=45; rebol-test.git=460; REP=52; docs=1271; projects=4 — complete commit-SHA lists persisted as durable history-existence evidence.
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**; acquisition targets for the binary phase are now exact (official URLs + reference hashes), so the next environment with egress can verify-or-fail immediately.
+

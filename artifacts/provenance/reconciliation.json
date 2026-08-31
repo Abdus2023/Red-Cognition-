@@ -154,6 +154,36 @@
           "rebol.com/pub/platforms/... (URLs from page snippet)",
           "all attempts TLS-blocked from sandbox",
           "BLOCKED"
+        ],
+        [
+          "Official URL pattern",
+          "rebol.com/downloads/v278/ (per official red/web-red source + nix + crux + AUR + exercism + docker recipes)",
+          "earlier /pub/platforms/ pattern (outdated docs)",
+          "CORRECTED (v278 pattern now the recorded target; all still TLS-blocked)"
+        ],
+        [
+          "Official URL pattern",
+          "rebol.com/downloads/v278/ (per official red/web-red source + nix + crux + AUR + exercism + docker recipes)",
+          "earlier /pub/platforms/ pattern (outdated docs)",
+          "CORRECTED (v278 pattern now the recorded target; all still TLS-blocked)"
+        ],
+        [
+          "Official URL pattern",
+          "rebol.com/downloads/v278/ (per official red/web-red source + nix + crux + AUR + exercism + docker recipes)",
+          "earlier /pub/platforms/ pattern (outdated docs)",
+          "CORRECTED (v278 pattern now the recorded target; all still TLS-blocked)"
+        ],
+        [
+          "Official URL pattern",
+          "rebol.com/downloads/v278/ (per official red/web-red source + nix + crux + AUR + exercism + docker recipes)",
+          "earlier /pub/platforms/ pattern (outdated docs)",
+          "CORRECTED (v278 pattern now the recorded target; all still TLS-blocked)"
+        ],
+        [
+          "Official URL pattern",
+          "rebol.com/downloads/v278/ (per official red/web-red source + nix + crux + AUR + exercism + docker recipes)",
+          "earlier /pub/platforms/ pattern (outdated docs)",
+          "CORRECTED (v278 pattern now the recorded target; all still TLS-blocked)"
         ]
       ]
     },
@@ -394,6 +424,36 @@
           "internal src/specs/version.r = 2.102.0.0.0",
           "no matching tag or release anywhere on GitHub",
           "UNRESOLVED (no release channel to reconcile against; binaries off-GitHub, blocked)"
+        ]
+      ]
+    },
+    {
+      "id": "R15",
+      "artifact": "Rebol 2.7.8 identity cross-sources",
+      "rows": [
+        [
+          "core-278-4-2 sha256",
+          "nixpkgs fetchurl pin (base32-nix decoded: b03b05fd070da8fa5186246a2febd02d7406305a65155cdaff3f1ac097b1757f)",
+          "crux .md5sum md5 97eb1a48\u2026",
+          "BOTH RECORDED (different algos; comparable at download time)"
+        ],
+        [
+          "view-278-4-2",
+          "URL confirmed by crux Pkgfile",
+          "md5 86e33003\u2026 (crux)",
+          "RECORDED"
+        ],
+        [
+          "red/red v0.6.4 commit",
+          "our tag resolution 755eb943\u2026",
+          "nixpkgs fetchFromGitHub rev 755eb943\u2026",
+          "MATCH (independent pin, identical full SHA)"
+        ],
+        [
+          "Rebol 2 license",
+          "nixpkgs: unfree",
+          "AUR: custom:REBOL End User License",
+          "CONFLICT-free MATCH (unfree EULA; redistribution restricted)"
         ]
       ]
     }
