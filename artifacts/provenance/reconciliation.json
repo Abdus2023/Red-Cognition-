@@ -372,6 +372,30 @@
           "EVIDENCE (upstream-authored URL)"
         ]
       ]
+    },
+    {
+      "id": "R14",
+      "artifact": "ren-c release identity",
+      "rows": [
+        [
+          "GitHub releases",
+          "none exist",
+          "-",
+          "MISSING"
+        ],
+        [
+          "Version-bearing tags",
+          "atronix-3.0.90/91/99 (2014-2015)",
+          "ancestry check: 0/7 tags reachable from ren-c master; 0 from rebolsource/r3 fork point",
+          "CONFLICT (version-bearing tags are lineage-isolated build markers, not part of any main line)"
+        ],
+        [
+          "ren-c version claim",
+          "internal src/specs/version.r = 2.102.0.0.0",
+          "no matching tag or release anywhere on GitHub",
+          "UNRESOLVED (no release channel to reconcile against; binaries off-GitHub, blocked)"
+        ]
+      ]
     }
   ]
 }

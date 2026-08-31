@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-31T17:59:01Z",
+  "repo": "https://github.com/rebol/projects",
+  "head_commit": "23a251573a49ee9c457ca72bce67d30894e1967e",
+  "tree_files": 3,
+  "archive": "artifacts/rebol/source/rebol-projects-master.tar.gz",
+  "sha256": "9478eb38a8f1ba75dd2c693707ecbf5f019f986da2e82a87970bddc08c662b9d",
+  "size": 1494,
+  "description": "Rebol related sources, but not part of build (official rebol org, last pushed 2013-08-19)",
+  "license_files_seen": [
+    {
+      "path": "projects-23a251573a49ee9c457ca72bce67d30894e1967e/README.md",
+      "head": "This archive is for sources of various types: 1. Publishing source clips from Rebol 2.7.8 that could be integrated back "
+    }
+  ],
+  "license_status": "UNCLEAR"
+}

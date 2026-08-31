@@ -361,3 +361,25 @@ _Generated: 2026-08-31T17:55:41Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**. All GitHub-hostable material is collected or covered by pinned evidence; binaries/execution remain blocked.
 
+## Continuation Addendum (stage 11)
+
+_Generated: 2026-08-31T17:59:01Z_
+
+### Release-asset registries (metadata persisted; downloads blocked)
+
+- **Oldes/Rebol3**: all 29 releases + 1074 asset URLs/sizes persisted (`manifests/oldes-rebol3-releases-registry.json`) — durable acquisition targets.
+- **ren-c**: 7 tags registered; merge-base ancestry shows **0/7 tags are reachable from ren-c master** (nor from the rebolsource/r3 fork point) — the atronix-* version tags are lineage-isolated build markers. ren-c master has **no versioned release tags** (recon R14).
+
+### rebol/projects collected (official org, historical)
+
+- HEAD `23a251573a49` archived (`rebol-projects-master.tar.gz`, sha256 `9478eb38a8f1ba75…`) + tree manifest. "Rebol related sources, but not part of build" (last push 2013-08-19).
+
+### Collection index + verifier
+
+- `artifacts/README.md` — layout, key manifests, **re-verification guide**, status taxonomy.
+- `acquisition-tools/verify_tree.sh` — reusable whole-tree verifier (clone + ref + archive).
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**. The acquisition layer is now self-describing: a third party can re-verify every claim from the repository alone.
+

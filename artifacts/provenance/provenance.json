@@ -231,6 +231,27 @@
       "target": "https://github.com/red/docs",
       "evidence": "org membership via API repo listing (github-discovery.json red_org_repos); HEAD e62721663f34 archived + tree manifest",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "release-registry",
+      "source": "Oldes/Rebol3 GitHub releases (29)",
+      "target": "asset metadata registry",
+      "evidence": "1074 asset URLs+sizes persisted (manifests/oldes-rebol3-releases-registry.json); downloads blocked",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "org-collection",
+      "source": "rebol org (rebol/projects)",
+      "target": "pinned HEAD archive + tree manifest",
+      "evidence": "HEAD 23a251573a49 archived (sha256 9478eb38a8f1\u2026); official org, historical (last push 2013)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag-lineage",
+      "source": "ren-c version-bearing tags (atronix-*)",
+      "target": "isolated side lines (NOT in master history)",
+      "evidence": "merge-base ancestry: 0/7 tags reachable from ren-c master or from fork point d5d6908f - build markers on side lines (manifests/ren-c-tags-registry.json)",
+      "status": "ESTABLISHED"
     }
   ]
 }

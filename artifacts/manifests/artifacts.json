@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 53,
+  "record_count": 56,
   "artifacts": [
     {
       "project": "RED",
@@ -1145,6 +1145,55 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "tests/=172 files; quick-test/=8 files; NOT executed"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "GitHub API releases listing (persisted evidence)",
+      "filename": "oldes-rebol3-releases-registry.json",
+      "path": "artifacts/manifests/oldes-rebol3-releases-registry.json",
+      "sha256": "c0e0be03f1718b80ea5e1c71c653231b09387f68aec342b0a56aff0555def529",
+      "size": 355910,
+      "retrieved_at": "2026-08-31T17:59:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "29 releases, 1074 assets - metadata only; binaries blocked"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "git for-each-ref + merge-base ancestry analysis",
+      "filename": "ren-c-tags-registry.json",
+      "path": "artifacts/manifests/ren-c-tags-registry.json",
+      "sha256": "aaaae84eee8d3e0101b18948119883f565ebbb35cd9c34b7f0b43e321bf038c0",
+      "size": 2603,
+      "retrieved_at": "2026-08-31T17:59:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "7 tags; 0 pre-fork on shared rebolsource/r3 lineage"
+    },
+    {
+      "project": "REBOL",
+      "version": "master (2013-era)",
+      "classification": "ARCHIVE",
+      "origin": "https://github.com/rebol/projects (official rebol org, historical) - pinned HEAD archive",
+      "url": "https://github.com/rebol/projects",
+      "repository": "https://github.com/rebol/projects",
+      "commit": "23a251573a49ee9c457ca72bce67d30894e1967e",
+      "tag": null,
+      "filename": "rebol-projects-master.tar.gz",
+      "path": "artifacts/rebol/source/rebol-projects-master.tar.gz",
+      "sha256": "9478eb38a8f1ba75dd2c693707ecbf5f019f986da2e82a87970bddc08c662b9d",
+      "size": 1494,
+      "retrieved_at": "2026-08-31T17:59:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "UNCLEAR",
+      "notes": "official-org historical material ('Rebol related sources, but not part of build')"
     }
   ]
 }
