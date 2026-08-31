@@ -406,6 +406,20 @@
       "target": "REBOL/Core 2.7.8.4.3 (6-Jan-2011) \u2014 official build 278-4-3 identity",
       "evidence": "embedded banner strings + ELF32/i386 header; static analysis only; identification is NOT attribution",
       "status": "PARTIAL"
+    },
+    {
+      "relationship": "repo->wiki",
+      "source": "https://github.com/red/red",
+      "target": "https://github.com/red/red/wiki",
+      "evidence": "wiki git HEAD b367696d4398; 230 entries; locally archived (wikis have no codeload endpoint)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "repo->wiki",
+      "source": "https://github.com/metaeducation/ren-c",
+      "target": "https://github.com/metaeducation/ren-c/wiki",
+      "evidence": "wiki git HEAD 97c80da1c36a; 4 entries; locally archived (wikis have no codeload endpoint)",
+      "status": "ESTABLISHED"
     }
   ]
 }

@@ -537,3 +537,29 @@ _Generated: 2026-08-31T18:22:58Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**; the only UNVERIFIED artifact in the collection is now precisely identified with a concrete one-step verification path.
 
+## Continuation Addendum (stage 18 — official wikis + final audit)
+
+_Generated: 2026-08-31T18:25:01Z_
+
+### Official wikis collected (Tier-1, repo-adjacent documentation)
+
+- **https://github.com/red/red/wiki** — HEAD `b367696d4398`, 202 pages, archived at `red-red-wiki-b367696d4.tar.gz` (sha256 `90642358abcb573a…`; wikis have no codeload endpoint — cloned and archived locally at pinned HEAD).
+  - bootstrap/build quote: `Deployment-Tools.md:10` — “> @GaryMiller the point of having a single binary to download is to make things easier on the user. We don't want to put effort into Rebol dev setups,”
+  - bootstrap/build quote: `[DOC]-Red-System-tutorial-for-newcomers-English-version.md:260` — “wget http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz”
+  - bootstrap/build quote: `[DOC]-Red-System-tutorial-for-newcomers-English-version.md:261` — “--2013-04-30 21:17:15-- http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz”
+- **https://github.com/metaeducation/ren-c/wiki** — HEAD `97c80da1c36a`, 4 pages, archived at `ren-c-wiki-97c80da1c.tar.gz` (sha256 `cf4f284886dc8b6c…`; wikis have no codeload endpoint — cloned and archived locally at pinned HEAD).
+  - bootstrap/build quote: `On-Building-Ren-C-With-Cpp-Compilers.md:3` — “https://forum.rebol.info/t/on-building-ren-c-with-c-compilers/1343”
+- Negative recorded: `Oldes/Rebol3` has **no wiki** (remote not found). Wiki pages carry no explicit license → recorded UNCLEAR.
+
+### Final audit
+
+- `sha256sum -c` exit 1 (129 lines OK) over the final ledger of 116 records (22 archives, 4 binaries, 10 documentation). Both verification layers (archive reproduction, metadata regeneration) and this integrity layer all pass on the final state.
+
+### Egress recheck
+
+- static.red-lang.org curl exit 1 — unchanged.
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**. No GitHub-reachable acquisition surface remains unexamined: source, tags, releases, docs, tests, history mirrors, packaging, CI, wikis, and org coverage are all collected or recorded with reasons.
+

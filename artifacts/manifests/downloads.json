@@ -411,6 +411,36 @@
       "pinned_ref": "commit bcc69995c0761dff537abbf5f51e498778152783",
       "repository": "https://github.com/red/chocolatey-packages",
       "note": "official Red org packaging/distribution repo"
+    },
+    {
+      "url": "https://github.com/red/red.wiki.git (git clone; wikis have no codeload endpoint)",
+      "dest": "artifacts/red/documentation/red-red-wiki-b367696d4.tar.gz",
+      "http_status": 200,
+      "size": 629728,
+      "sha256": "90642358abcb573ad057cccd6a2ed60ff054c78555cdce5e5b0a331da7042170",
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "origin": "https://github.com/red/red/wiki (official wiki, local git-archive tarball)",
+      "project": "RED",
+      "classification": "DOCUMENTATION",
+      "version_claim": "wiki HEAD",
+      "pinned_ref": "commit b367696d4398fdbcaf4229c7c9de0812a5e57f33",
+      "repository": "https://github.com/red/red.wiki.git",
+      "note": "wiki git repo cloned and archived locally (pinned HEAD)"
+    },
+    {
+      "url": "https://github.com/metaeducation/ren-c.wiki.git (git clone; wikis have no codeload endpoint)",
+      "dest": "artifacts/red/documentation/ren-c-wiki-97c80da1c.tar.gz",
+      "http_status": 200,
+      "size": 760,
+      "sha256": "cf4f284886dc8b6cf84b6aec486c73203614d7d3433715653b4162860c5344f6",
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "origin": "https://github.com/metaeducation/ren-c/wiki (official wiki, local git-archive tarball)",
+      "project": "REBOL",
+      "classification": "DOCUMENTATION",
+      "version_claim": "wiki HEAD",
+      "pinned_ref": "commit 97c80da1c36aa43754d8ea56f993e341139e0acb",
+      "repository": "https://github.com/metaeducation/ren-c.wiki.git",
+      "note": "wiki git repo cloned and archived locally (pinned HEAD)"
     }
   ],
   "failures": []

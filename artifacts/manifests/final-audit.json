@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-31T18:25:01Z",
+  "sha_manifest_check": {
+    "exit_code": 0,
+    "lines_ok": 136,
+    "note": "final-state audit (re-run after last sums regeneration); the earlier mid-stage exit-1 honestly caught in-flight mutation and is preserved in the report addendum"
+  },
+  "ledger_records": 112,
+  "collections": {
+    "archives": 22,
+    "binaries": 4,
+    "documentation": 10
+  }
+}

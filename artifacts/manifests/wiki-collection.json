@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-08-31T18:25:01Z",
+  "wikis": {
+    "red_red-wiki": {
+      "url": "https://github.com/red/red.wiki.git",
+      "web": "https://github.com/red/red/wiki",
+      "description": "official Red language/toolchain wiki",
+      "head_commit": "b367696d4398fdbcaf4229c7c9de0812a5e57f33",
+      "tree_entries": 230,
+      "pages": [
+        "Adding-new-files-to-Red-codebase.md",
+        "Advocacy.md",
+        "Beginner's-FAQ.md",
+        "Bounties.md",
+        "CSV-codec.md",
+        "Coming-to-Red-from-Python.md",
+        "Coming-to-Red-from-another-language.md",
+        "Deployment-Tools.md",
+        "Discussion-and-Help.md",
+        "Documentation.md",
+        "Examples.md",
+        "Glossary.md",
+        "Great-Red-Optimizer-Challenge;-Permutations.md",
+        "Home.md",
+        "JSON-codec.md",
+        "Language-Spec-Notes.md",
+        "Libraries.md",
+        "Library-Bindings-and-Routines.md",
+        "Links-about-types.md",
+        "Math-function-notes.md",
+        "News-Feeds.md",
+        "Parse-Cookbook.md",
+        "Red-System-Overflow-handling.md",
+        "Red-and-AI.md",
+        "Reference.md",
+        "The-Basics.md",
+        "The-Benefits-of-Code-as-Data.md",
+        "Transcode.md",
+        "Translations-of-the-documentations.md",
+        "Visual-Studio-Code-Plugin.md",
+        "XML-codec.md",
+        "[ARCHIVE]-Grammatical-structures.md",
+        "[ARCHIVE]-Struct!-By-Value.md",
+        "[DOC]-Comparison-of-aggregate-values-(block!-vector!-object!-hash!-map!).md",
+        "[DOC]-How-Red-works,-a-brief-explanation.md",
+        "[DOC]-Parse.md",
+        "[DOC]-Red-System-tutorial-for-newcomers-English-version.md",
+        "[DOC]-Red-System;-Fran\u00e7ois-Jouens-'How-to-use-pointers,-strings,-vectors,-call'.md",
+        "[DOC]-Type-system.md",
+        "[DOC]-Using-Red-as-CGI.md",
+        "[DOC]-`to`-vs-`make`.md",
+        "[DOC]-issue!-vs.-ref!.md",
+        "[Draft]-Ports.md",
+        "[Draft]-TLS-port.md",
+        "[HOWTO]-Build-an-interpreter-for-Red-lang.md",
+        "[HOWTO]-Red-System.md",
+        "[HOWTO]-SYSTEM-CODECS,-LOAD-AS-and-SAVE-AS.md",
+        "[HOWTO]-Tracing.md",
+        "[HOWTO]-VID-and-View-(GUI)-hints-and-tips.md",
+        "[HOWTO]-Windows-Locale-Handling.md",
+        "[LINKS]-Design-questions.md",
+        "[LINKS]-Gitter-Room-Index.md",
+        "[LINKS]-JOIN-REJOIN-COMBINE-MERGE-EXTEND-CONCAT-design-ideas.md",
+        "[LINKS]-Non-English-Resources.md",
+        "[LINKS]-Red-Blog-Collection.md",
+        "[LINKS]-Unofficial-Red-images.md",
+        "[LINKS]-Unofficial-Tutorials-and-Resources.md",
+        "[NOTES]-Compiling-a-C-or-C-plus-plus-library-for-static-linking-with-Red-toolchain.md",
+        "[NOTES]-Compiling-with-console-functions---input,-ask.md",
+        "[NOTES]-Conditionals.md",
+        "[NOTES]-Design-notes-on-removing-keys-from-MAP!-values.md",
+        "[NOTES]-Discussion-of-Case-Sensitive-Map!-Keys.md",
+        "[NOTES]-Floating-point-support-todo-list-(Red-System).md",
+        "[NOTES]-Gtk-Bindings-Development.md",
+        "[NOTES]-Lexer-Notes.md",
+        "[NOTES]-Local-functions.md",
+        "[NOTES]-Logic!-Get-Word.md",
+        "[NOTES]-Notes-on-trim.md",
+        "[NOTES]-Point-design-summary.md",
+        "[NOTES]-Question-about-contributing-to-core-parts-of-Red's-toolchain.md",
+        "[NOTES]-REPL-Tips-and-Tricks.md",
+        "[NOTES]-Red-System-v2-Wish-List.md",
+        "[NOTES]-Red-compile-Error----cannot-access-argument-file.md",
+        "[NOTES]-SUM-function.md",
+        "[NOTES]-To-Be-Done.md",
+        "[NOTES]-Trig-Functions-Behavior-and-Design.md",
+        "[NOTES]-Use-1-based-Indexing-with-pair!.md",
+        "[NOTES]-Vector.md",
+        "[NOTE]-Anti-virus-false-positives.md",
+        "[NOTE]-Linux-GTK-dependencies.md",
+        "[NOTE]-Porting-C-code-to-Red-System.md",
+        "[Notes]-Error-Messages.md",
+        "[Notes]-Keyboard-Handling.md",
+        "[Notes]-OS-R&D.md",
+        "[PROPOSAL]-Provide-a-simple-way-to-initialise-repeating-characters-in-strings.md",
+        "[PROP]-Image-coordinate-systems-reboot-idea.md",
+        "[PROP]-Node!-datatype.md",
+        "[PROP]-Series-evolution.md",
+        "[TUTORIAL-EXAMPLES]-gui-styles.md",
+        "[design]-apply-function.md",
+        "[zh-hans]-\u4e2d\u6587\u624b\u518c.md",
+        "_Footer.md",
+        "_Sidebar.md",
+        "archive/[ARCHIVE]-Alternatives-to-Red-System-pre-processor-#define.md",
+        "archive/[ARCHIVE]-Original-Home.md",
+        "archive/[ARCHIVE]-Red-floating-point-support.md",
+        "archive/[ARCHIVE]-Vector-Element-by-Element-Arithmetic.md",
+        "debugview.md",
+        "docs/[DOC]-.NET.md",
+        "docs/[DOC]-Audio-R&D.md",
+        "docs/[DOC]-Blockchain-resources.md",
+        "docs/[DOC]-Coding-Style-Guide.md",
+        "docs/[DOC]-Combining-Red-and-Julia.md",
+        "docs/[DOC]-Comparadigm-(Compare-Paradigms).md",
+        "docs/[DOC]-Contributor-Guidelines.md",
+        "docs/[DOC]-Conversions-to-string.md",
+        "docs/[DOC]-Debugging.md",
+        "docs/[DOC]-Differences-between-Red-and-Rebol.md",
+        "docs/[DOC]-Error-handling.md",
+        "docs/[DOC]-FAQ.md",
+        "docs/[DOC]-File-Dir-Path-related-functions.md",
+        "docs/[DOC]-Guru-Meditations.md",
+        "docs/[DOC]-How-to-Debug-__-A-use-case-by-DocKimbel.md",
+        "docs/[DOC]-How-to-run-Red-on-Turris-Omnia.md",
+        "docs/[DOC]-Installing-Red-and-Getting-Started.md",
+        "docs/[DOC]-Modules.md",
+        "docs/[DOC]-New-line-markers-in-blocks.md",
+        "docs/[DOC]-Object-Notes.md",
+        "docs/[DOC]-Package-Management.md",
+        "docs/[DOC]-Path!-notes.md",
+        "docs/[DOC]-Primer.md",
+        "docs/[DOC]-QA-session.md",
+        "docs/[DOC]-REBOL-Core-Users-Guide-__-A-walkthrough-with-Red.md",
+        "docs/[DOC]-REP---Red-Enhancement-Proposals.md",
+        "docs/[DOC]-Reactivity.md",
+        "docs/[DOC]-Red---Rebol-Dialects-__-Selected-Articles-and-Links.md",
+        "docs/[DOC]-Red-Enhancement-Proposal-Process.md",
+        "docs/[DOC]-Red-Should...-(Feature-Wars).md",
+        "docs/[DOC]-Red-compile-process-and-build-its-runtime.md",
+        "docs/[DOC]-Red-source-tree-and-line-count-statistic.md",
+        "docs/[DOC]-Red-tutorial-for-newcomers---French-version.md",
+        "docs/[DOC]-Reference-Call.md",
+        "docs/[DOC]-Request-file-and-Request-dir.md",
+        "docs/[DOC]-Rich-Text-support.md",
+        "docs/[DOC]-Sandbox.md",
+        "docs/[DOC]-Sorting.md",
+        "docs/[DOC]-The-Handling-of-NaNs,-INFs-and-signed-zeros..md",
+        "docs/[DOC]-To-Issues.md",
+        "docs/[DOC]-To-Red-From-LoDash.md",
+        "docs/[DOC]-VID-Reference-Documentation.md",
+        "docs/[DOC]-Why-you-have-to-copy-series-values.md",
+        "docs/[DOC]-Wishlist-(Red-Features).md",
+        "docs/[DOC]-Writing-Tests-for-the-Red-and-Red-System-Test-Suites.md",
+        "docs/[DOC]-libRed.md",
+        "links/[LINKS]-Coming-from-REBOL.md",
+        "links/[LINKS]-Deep-Dives.md",
+        "links/[LINKS]-GUI-Programming.md",
+        "links/[LINKS]-JOIN-REJOIN-COMBINE-MERGE-EXTEND-CONCAT-design-ideas.md",
+        "links/[LINKS]-Projects-showcase-(links-to-remember).md",
+        "links/[LINKS]-Scripts-collection.md",
+        "links/[LINKS]-Tools-(Written-in-Red).md",
+        "mezzanines.md",
+        "non-en/zh-hans/[zh-hans]-Compile-Red-code-to-Red-System-and-learn-something.md",
+        "non-en/zh-hans/[zh-hans]-Compile-Red-to-Red-System.md",
+        "non-en/zh-hans/[zh-hans]-Red-System-Language-Specification-Chinese-Traslation.md",
+        "non-en/zh-hans/[zh-hans]-Red-System-compiler-overview-chinese-translation.md",
+        "non-en/zh-hans/[zh-hans]-Red.Hack.Add.Word.md",
+        "non-en/zh-hans/[zh-hans]-Red.Hack.Call.Library.md",
+        "non-en/zh-hans/[zh-hans]-Red.Hack.Interface.With.Red.System.md",
+        "notes/[NOTES]-AltME-Reloaded.md",
+        "notes/[NOTES]-CHANGE-function.md",
+        "notes/[NOTES]-Closures.md",
+        "notes/[NOTES]-Community-Communication-Values.md",
+        "notes/[NOTES]-Compiler-Limitations.md",
+        "notes/[NOTES]-Dates-and-Times.md",
+        "notes/[NOTES]-Design-Deliberations.md",
+        "notes/[NOTES]-Editor-Integrations.md",
+        "notes/[NOTES]-Enable-TLS-1.1-and-TLS-1.2-on-Windows-7.md",
+        "notes/[NOTES]-Hex-Notation.md",
+        "notes/[NOTES]-Macro-Notes.md",
+        "notes/[NOTES]-Namespace-constants.md",
+        "notes/[NOTES]-Notes-on-style-writing.md",
+        "notes/[NOTES]-Notes-on-trim.md",
+        "notes/[NOTES]-Parse-__-performance,-data-loading,-alternatives.md",
+        "notes/[NOTES]-Red-Custom-Styles.md",
+        "notes/[NOTES]-Red-Project-Approach.md",
+        "notes/[NOTES]-Red-System-Notes.md",
+        "notes/[NOTES]-TAKE-function-performance.md",
+        "notes/[NOTES]-Unset-Notes.md",
+        "notes/[NOTES]-WITH-function-design.md",
+        "proposals/[PROP]-Add-'FUNCTION-definition-in-addition-to-'FUNC.md",
+        "proposals/[PROP]-Expose-all-standard-numeric-types.md",
+        "proposals/[PROP]-Extend-type-declarations-to-include-initial-value.md",
+        "proposals/[PROP]-Function-overloading.md",
+        "proposals/[PROP]-GUI-table-grid-design.md",
+        "proposals/[PROP]-Hash-Table-Algorithms.md",
+        "proposals/[PROP]-Left-Recursion.md",
+        "proposals/[PROP]-Parse-should-be-consistent-in-applying-case-sensitivity-to-rules.md",
+        "proposals/[PROP]-Proposition-for-ideal-array-capabilities.md",
+        "proposals/[PROP]-REP-0101---For-loop-function.md",
+        "proposals/[PROP]-REP-XXXX-----Adding-JavaScript-compiler-target.md",
+        "proposals/[PROP]-REP-XXXX---Add-mathematical-and-time-functions.md",
+        "proposals/[PROP]-REP-XXXX---Adding-other-Red-dialects.md",
+        "proposals/[PROP]-REP-XXXX---View-Automation-Dialect.md",
+        "proposals/[PROP]-REP-XXXX---Ways-to-promote-youth-to-learn-Red.md",
+        "proposals/[PROP]-Ranges.md",
+        "proposals/[PROP]-Red-Enhancement-Proposal-Template.md",
+        "proposals/[PROP]-Room-suggestions.md",
+        "proposals/[PROP]-Unicode-Issues-with-Proposed-Resolutions.md",
+        "proposals/[PROP]-User-defined-types-(UDT)-and-dependent-types.md",
+        "proposals/[PROP]-What-Red-is-missing-__-From-Rebol-and-new-proposals.md",
+        "red-run-checklist.md"
+      ],
+      "archive": "artifacts/red/documentation/red-red-wiki-b367696d4.tar.gz",
+      "sha256": "90642358abcb573ad057cccd6a2ed60ff054c78555cdce5e5b0a331da7042170",
+      "size": 629728,
+      "build_quotes": [
+        {
+          "page": "Coming-to-Red-from-Python.md",
+          "line": 11,
+          "text": "-\t[Red/system](https://static.red-lang.org/red-system-specs.html) is a low level (think C) DSL, aimed at low-level system programming and higher performance. Where other scripting languages require you to write extension"
+        },
+        {
+          "page": "Deployment-Tools.md",
+          "line": 10,
+          "text": "> @GaryMiller the point of having a single binary to download is to make things easier on the user. We don't want to put effort into Rebol dev setups, since that is the past, and self hosting is the future. Up to date do"
+        },
+        {
+          "page": "Reference.md",
+          "line": 10,
+          "text": "* [\"Red/System Documentation\"](http://static.red-lang.org/red-system-specs-light.html)"
+        },
+        {
+          "page": "[ARCHIVE]-Struct!-By-Value.md",
+          "line": 5,
+          "text": "See https://static.red-lang.org/red-system-specs-light.html#section-4.7.2"
+        },
+        {
+          "page": "[DOC]-Red-System-tutorial-for-newcomers-English-version.md",
+          "line": 260,
+          "text": "wget http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz"
+        },
+        {
+          "page": "[DOC]-Red-System-tutorial-for-newcomers-English-version.md",
+          "line": 261,
+          "text": "--2013-04-30 21:17:15-- http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz"
+        },
+        {
+          "page": "[DOC]-Type-system.md",
+          "line": 29,
+          "text": "1. Emphasis on linguistic abstraction, which encourages the creation of embedded domain-specific languages (dialects) with their own type discipline (e.g. [Red/System](https://static.red-lang.org/red-system-specs.html)) "
+        },
+        {
+          "page": "[HOWTO]-Red-System.md",
+          "line": 5,
+          "text": "Check [Guru Meditations](https://github.com/red/red/wiki/%5BDOC%5D-Guru-Meditations) for other Red/System notes and also [Red/System Language Specification](https://static.red-lang.org/red-system-specs.html)."
+        },
+        {
+          "page": "[NOTES]-Compiling-with-console-functions---input,-ask.md",
+          "line": 4,
+          "text": "* For Windows: https://static.red-lang.org/dl/auto/win/red-latest.exe"
+        },
+        {
+          "page": "[NOTES]-Compiling-with-console-functions---input,-ask.md",
+          "line": 5,
+          "text": "* For Linux: https://static.red-lang.org/dl/auto/linux/red-latest"
+        },
+        {
+          "page": "[NOTES]-Compiling-with-console-functions---input,-ask.md",
+          "line": 6,
+          "text": "* For macOS: https://static.red-lang.org/dl/auto/mac/red-latest"
+        },
+        {
+          "page": "[NOTES]-Gtk-Bindings-Development.md",
+          "line": 8,
+          "text": "* https://static.red-lang.org/dl/branch/GTK/linux/red-latest \u2013 official dev builds for x86 architecture"
+        },
+        {
+          "page": "[NOTES]-Gtk-Bindings-Development.md",
+          "line": 9,
+          "text": "* https://rebolek.com/builds/ \u2013 community nightly builds by @rebolek, x86 and ARM (Raspberry Pi)"
+        },
+        {
+          "page": "[NOTES]-Gtk-Bindings-Development.md",
+          "line": 20,
+          "text": "1. Download *REBOL*: `wget http://www.rebol.com/downloads/v278/rebol-core-278-4-3.tar.gz && tar xzvf rebol-core-278-4-3.tar.gz && cp releases/rebol-core/rebol red/`"
+        },
+        {
+          "page": "[NOTES]-Question-about-contributing-to-core-parts-of-Red's-toolchain.md",
+          "line": 14,
+          "text": "<u>Nenad</u>: Red and Red/System toolchain (compilers/linker) are bootstrapped with Rebol2 until we can rewrite them using Red. The goal from the beginning is to reach the self-hosted stage that will enable JIT-compilati"
+        },
+        {
+          "page": "[NOTES]-Red-compile-Error----cannot-access-argument-file.md",
+          "line": 7,
+          "text": "this happens if you build an executable from source. noticeable because you won't be able to -c compile or -e encap your programs. affects both the red gui and regular console because the official doanload executable inc"
+        },
+        {
+          "page": "[NOTES]-Red-compile-Error----cannot-access-argument-file.md",
+          "line": 10,
+          "text": ">also, early 2018 Carl, the creator of Rebol which Red is based on, agreed to release the command version of Rebol 2 which should make it possible for anyone still without the SDK, which can no longer be purchased, to bu"
+        },
+        {
+          "page": "[NOTES]-Red-compile-Error----cannot-access-argument-file.md",
+          "line": 42,
+          "text": "tried anything and everything. I can build the source/test/hello.red with rebol"
+        },
+        {
+          "page": "[NOTES]-Red-compile-Error----cannot-access-argument-file.md",
+          "line": 52,
+          "text": "+ also: explains the details of building red with rebol needing SDK."
+        },
+        {
+          "page": "[NOTE]-Anti-virus-false-positives.md",
+          "line": 38,
+          "text": "1. Compilation of dynamic compression library which is then used to pack RedBin data; this happens because Red compiler depends on Rebol2 SDK during the bootstrapping phase, which can interact with native code only via `"
+        },
+        {
+          "page": "archive/[ARCHIVE]-Original-Home.md",
+          "line": 37,
+          "text": "* [Red/System Documentation](http://static.red-lang.org/red-system-specs-light.html)\uff08[Red/System\u8bed\u8a00\u89c4\u8303-\u4e2d\u6587\u7ffb\u8bd1 25%](https://github.com/red/red/wiki/Red-System-Language-Specification-Chinese-Traslation)\uff09"
+        },
+        {
+          "page": "docs/[DOC]-Contributor-Guidelines.md",
+          "line": 19,
+          "text": "4. All code submissions should include a reasonable set of tests written with [quick test](http://static.red-lang.org/red-system-quick-test.html)."
+        },
+        {
+          "page": "docs/[DOC]-Contributor-Guidelines.md",
+          "line": 71,
+          "text": "Every code-based contribution should be accompanied by a meaningful set of tests. Tests should be written using the quick-test.red or quick-test.reds frameworks. Tests requiring checking console output from your code or "
+        },
+        {
+          "page": "docs/[DOC]-Contributor-Guidelines.md",
+          "line": 128,
+          "text": "Wherever possible large volume tests should be generated to reduce the work required to maintain the tests. Currently test generators should be written in Rebol 2 and should be capable of being run under Rebol Core 2.7.8"
+        },
+        {
+          "page": "docs/[DOC]-FAQ.md",
+          "line": 25,
+          "text": "* It requires to be able to statically link with LLVM libraries from the beginning and make the right functions and structures mappings. This would have taken more time than the direct path taken using a custom lightweig"
+        },
+        {
+          "page": "docs/[DOC]-Guru-Meditations.md",
+          "line": 7,
+          "text": "1. [REBOL version during bootstrap phase](#rebol-version-during-bootstrap-phase)"
+        },
+        {
+          "page": "docs/[DOC]-Guru-Meditations.md",
+          "line": 162,
+          "text": "# REBOL version during bootstrap phase"
+        },
+        {
+          "page": "docs/[DOC]-Guru-Meditations.md",
+          "line": 444,
+          "text": "You can't use arbitrary Red code in a #call directive, e.g., `#call [make image! compose [(size) 255.255.255.255]]`. You can only call a single Red function, passing Red value pointers as arguments.See http://static.red-"
+        },
+        {
+          "page": "docs/[DOC]-Primer.md",
+          "line": 96,
+          "text": "- [Red/System Preprocessor](http://static.red-lang.org/red-system-specs.html#section-16)"
+        },
+        {
+          "page": "docs/[DOC]-Red---Rebol-Dialects-__-Selected-Articles-and-Links.md",
+          "line": 21,
+          "text": "> [\"Building evaluative dialects\"](https://forum.rebol.info/t/building-evaluative-dialects/157) (Handley 2017)"
+        }
+      ]
+    },
+    "ren-c_wiki": {
+      "url": "https://github.com/metaeducation/ren-c.wiki.git",
+      "web": "https://github.com/metaeducation/ren-c/wiki",
+      "description": "official ren-c wiki (build/boot docs likely)",
+      "head_commit": "97c80da1c36aa43754d8ea56f993e341139e0acb",
+      "tree_entries": 4,
+      "pages": [
+        "Create-Travis-s3-Deployment-Credentials.md",
+        "Home.md",
+        "On-Building-Ren-C-With-Cpp-Compilers.md",
+        "Relative-Binding-and-FRAME!-Internals.md"
+      ],
+      "archive": "artifacts/red/documentation/ren-c-wiki-97c80da1c.tar.gz",
+      "sha256": "cf4f284886dc8b6cf84b6aec486c73203614d7d3433715653b4162860c5344f6",
+      "size": 760,
+      "build_quotes": [
+        {
+          "page": "On-Building-Ren-C-With-Cpp-Compilers.md",
+          "line": 3,
+          "text": "https://forum.rebol.info/t/on-building-ren-c-with-c-compilers/1343"
+        }
+      ]
+    }
+  },
+  "negative": {
+    "Oldes/Rebol3.wiki": "not found (repo has no wiki)"
+  }
+}

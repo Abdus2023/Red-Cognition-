@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 112,
+  "record_count": 116,
   "artifacts": [
     {
       "project": "RED",
@@ -2109,6 +2109,76 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "libRed.dll=PE/i386; libstructlib.so=ELF/i386; structlib.dll=PE/i386"
+    },
+    {
+      "project": "RED",
+      "version": "wiki HEAD",
+      "classification": "DOCUMENTATION",
+      "origin": "https://github.com/red/red/wiki (official wiki, cloned + locally archived at pinned HEAD)",
+      "url": "https://github.com/red/red/wiki",
+      "repository": "https://github.com/red/red.wiki.git",
+      "commit": "b367696d4398fdbcaf4229c7c9de0812a5e57f33",
+      "tag": null,
+      "filename": "red-red-wiki-b367696d4.tar.gz",
+      "path": "artifacts/red/documentation/red-red-wiki-b367696d4.tar.gz",
+      "sha256": "90642358abcb573ad057cccd6a2ed60ff054c78555cdce5e5b0a331da7042170",
+      "size": 629728,
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "UNCLEAR",
+      "license_evidence": "wiki pages carry no explicit license (recorded)",
+      "notes": "official Red language/toolchain wiki: 202 pages"
+    },
+    {
+      "project": "REBOL",
+      "version": "wiki HEAD",
+      "classification": "DOCUMENTATION",
+      "origin": "https://github.com/metaeducation/ren-c/wiki (official wiki, cloned + locally archived at pinned HEAD)",
+      "url": "https://github.com/metaeducation/ren-c/wiki",
+      "repository": "https://github.com/metaeducation/ren-c.wiki.git",
+      "commit": "97c80da1c36aa43754d8ea56f993e341139e0acb",
+      "tag": null,
+      "filename": "ren-c-wiki-97c80da1c.tar.gz",
+      "path": "artifacts/red/documentation/ren-c-wiki-97c80da1c.tar.gz",
+      "sha256": "cf4f284886dc8b6cf84b6aec486c73203614d7d3433715653b4162860c5344f6",
+      "size": 760,
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "UNCLEAR",
+      "license_evidence": "wiki pages carry no explicit license (recorded)",
+      "notes": "official ren-c wiki (build/boot docs likely): 4 pages"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 18",
+      "filename": "wiki-collection.json",
+      "path": "artifacts/manifests/wiki-collection.json",
+      "sha256": "e51e3c1658a1537d56575e07ab49d60731279c53be71b98147a7a991dba72df1",
+      "size": 19601,
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "2 official wikis collected + 1 negative recorded (Oldes has none)"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 18",
+      "filename": "final-audit.json",
+      "path": "artifacts/manifests/final-audit.json",
+      "sha256": "765c7f509aa1c7b2b83a13977c52b0ea672627836cfbc61c3b4e02c11394cb0e",
+      "size": 227,
+      "retrieved_at": "2026-08-31T18:25:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "sha256 -c exit 1 (129 OK); ledger 112 records"
     }
   ]
 }
