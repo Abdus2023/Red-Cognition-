@@ -1,0 +1,4946 @@
+{
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "scan audited non-binary files for HTTP(S) references and classify offline risk conservatively",
+    "repository_commit": "8b539c0c416bb861597c6f05725b2a5d5451e555",
+    "timestamp_utc": "2026-08-31T19:51:34.375731+00:00",
+    "tool": "tools/source-audit/generate_repository_risk_reports.py"
+  },
+  "references": [
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": ".appveyor.yml",
+      "url": "http://static.red-lang.org/build/rebview.exe"
+    },
+    {
+      "domain": "gitter.im",
+      "kind": "CI_OR_BUILD_NETWORK_DEPENDENCY",
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "url": "https://gitter.im/red/bugs"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": ".github/workflows/main.yml",
+      "url": "http://static.red-lang.org/build/rebview.exe"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": ".github/workflows/red-container-tests.yml",
+      "url": "https://static.red-lang.org/tmp/rebol"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": ".gitignore-sample",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": ".travis.yml",
+      "url": "https://static.red-lang.org/tmp/rebol"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": ".travis.yml",
+      "url": "https://static.red-lang.org/tmp/rebol-osx"
+    },
+    {
+      "domain": "creativecommons.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CODE_OF_CONDUCT.md",
+      "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "domain": "geekfeminism.wikia.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CODE_OF_CONDUCT.md",
+      "url": "http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy"
+    },
+    {
+      "domain": "stumptownsyndicate.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CODE_OF_CONDUCT.md",
+      "url": "http://stumptownsyndicate.org"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "CODE_OF_CONDUCT.md",
+      "url": "https://github.com/red/red/wiki/%5BNOTES%5D-Community-Communication-Values"
+    },
+    {
+      "domain": "www.djangoproject.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CODE_OF_CONDUCT.md",
+      "url": "https://www.djangoproject.com/conduct/"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "CONTRIBUTING.md",
+      "url": "http://static.red-lang.org/red-system-quick-test.html"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CONTRIBUTING.md",
+      "url": "http://www.red-lang.org/p/donations.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "CONTRIBUTING.md",
+      "url": "https://github.com/red/docs"
+    },
+    {
+      "domain": "groups.google.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "CONTRIBUTING.md",
+      "url": "https://groups.google.com/forum/?hl=en#!forum/red-lang"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://en.wikipedia.org/wiki/Self-hosting"
+    },
+    {
+      "domain": "rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://rebol.com"
+    },
+    {
+      "domain": "www.boost.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://www.boost.org/users/license.html"
+    },
+    {
+      "domain": "www.maxvessi.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://www.maxvessi.net/rebsite/Linux/"
+    },
+    {
+      "domain": "www.opensource.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://www.opensource.org/licenses/bsd-3-clause"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v276/rebol-core-276-10-1.gz"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-2-5.tar.gz"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-3-1.exe"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "README.md",
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-9-4.tar.gz"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://www.red-lang.org"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "http://www.red-lang.org/p/download.html"
+    },
+    {
+      "domain": "badges.gitter.im",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://badges.gitter.im/Join%20Chat.svg"
+    },
+    {
+      "domain": "bs.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://bs.red-lang.org/armel.svg"
+    },
+    {
+      "domain": "bs.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://bs.red-lang.org/armhf.svg"
+    },
+    {
+      "domain": "bs.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://bs.red-lang.org/linux.svg"
+    },
+    {
+      "domain": "bs.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://bs.red-lang.org/macos.svg"
+    },
+    {
+      "domain": "bs.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://bs.red-lang.org/windows.svg"
+    },
+    {
+      "domain": "ci.appveyor.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://ci.appveyor.com/project/red/red/branch/master"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/actions?query=workflow%3AWindows"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/blob/master/.gitignore-sample"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/issues/1547"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/issues/1618"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/issues/543"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/tags"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/wiki/%5BDOC%5D-Contributor-Guidelines"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/wiki/%5BNOTE%5D-Anti-virus-false-positives"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "README.md",
+      "url": "https://github.com/red/red/workflows/Windows/badge.svg"
+    },
+    {
+      "domain": "gitter.im",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://gitter.im/red/red"
+    },
+    {
+      "domain": "gitter.im",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://gitter.im/red/red?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"
+    },
+    {
+      "domain": "travis-ci.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "README.md",
+      "url": "https://travis-ci.org/red/red"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "boot.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "bridges/android/build.r",
+      "url": "http://static.red-lang.org/droid-tools/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "bridges/android/build.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "schemas.android.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "bridges/android/samples/eval/AndroidManifest.xml",
+      "url": "http://schemas.android.com/apk/res/android"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "bridges/android/samples/eval/eval.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "bridges/java/bridge.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "bridges/java/hello.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "build/README.md",
+      "url": "http://www.rebol.com/docs/sdk/kernels.html"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "build/README.md",
+      "url": "http://www.rebol.com/sdk.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "build/build.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "build/git-version.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "build/includes.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "build/precap.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "compiler.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/IMPLEMENTATION-BASELINE.md",
+      "url": "https://github.com/red/red.git"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/IMPLEMENTATION-BASELINE.md",
+      "url": "https://static.red-lang.org/tmp/rebol`"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/Red-Cognition_Agent_Prompt_Pack.md",
+      "url": "https://github.com/Abdus2023/Red-Cognition-"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/comparison-matrix.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/emit-block.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/emit-reds-api-html.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/emit-reds-api-md2.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/generate-reds-api.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/make-to-matrix-html.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/old/to-matrix.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/makedoc2.r",
+      "url": "http://www.rebol.com"
+    },
+    {
+      "domain": "www.rebol.net",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/makedoc2.r",
+      "url": "http://www.rebol.net/docs/makedoc.html"
+    },
+    {
+      "domain": "www.rebol.net",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/makedoc2.r",
+      "url": "http://www.rebol.net/graphics/reb-bare.jpg"
+    },
+    {
+      "domain": "www.rebol.net",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/makedoc2.r",
+      "url": "http://www.rebol.net/graphics/reb-tail.jpg"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-quick-test.txt",
+      "url": "http://www.red-lang.org"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/Domain-specific_language"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/Double-precision_floating-point_format"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/First-class_citizen"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/Single-precision_floating-point_format"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/System_call"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/X86_calling_conventions#cdecl"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://en.wikipedia.org/wiki/X86_calling_conventions#stdcall"
+    },
+    {
+      "domain": "infocenter.arm.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0274h/Babffifj.html"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-12.html#section-2"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-16.html#section-3.1"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-16.html#section-3.1</a"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-16.html#section-3.9"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-3.html"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/core23/rebolcore-3.html</a"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/docs/words/wload.html"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/r3/docs/guide/code-syntax.html"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.rebol.com/r3/docs/guide/code-syntax.html</a"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "http://www.red-lang.org"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "https://en.wikipedia.org/wiki/Compare-and-swap"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "https://en.wikipedia.org/wiki/Memory_barrier"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "https://en.wikipedia.org/wiki/Memory_ordering"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "https://github.com/dockimbel/Red/blob/master/COPYING"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/red-system/red-system-specs.txt",
+      "url": "https://github.com/dockimbel/Red/issues/48"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "docs/red-system/template.html",
+      "url": "http://www.rebol.com"
+    },
+    {
+      "domain": "api.example.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Cognitive-Operating-System-Analysis.md",
+      "url": "https://api.example.com/data"
+    },
+    {
+      "domain": "compiler.next",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-2.0-Analysis.md",
+      "url": "http://Compiler.next"
+    },
+    {
+      "domain": "red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Deep-Technical-Specification.md",
+      "url": "http://red-lang.org"
+    },
+    {
+      "domain": "devforum.roblox.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://devforum.roblox.com/t/red-a-simple-fast-and-powerful-networking-library/2302865"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://en.wikipedia.org/wiki/Red_(programming_language"
+    },
+    {
+      "domain": "exercism.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://exercism.org/tracks/red"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://github.com/red/red"
+    },
+    {
+      "domain": "ieeexplore.ieee.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://ieeexplore.ieee.org/iel7/10228851/10228852/10228974.pdf"
+    },
+    {
+      "domain": "red.github.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://red.github.io/"
+    },
+    {
+      "domain": "sampleprograms.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://sampleprograms.io/languages/red/"
+    },
+    {
+      "domain": "sourceforge.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://sourceforge.net/projects/red-programming-lang.mirror/"
+    },
+    {
+      "domain": "steemit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://steemit.com/programming/@crypticwyrm/rapidly-create-native-windows-and-macos-gui-applications-the-red-programming-language"
+    },
+    {
+      "domain": "www.reddit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://www.reddit.com/r/programming/comments/1kfe5a/the_red_programming_language/"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://www.youtube.com/shorts/kr1nkhL9E1w"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "docs/wiki/Red-Programming-Language.md",
+      "url": "https://www.youtube.com/watch?v=YLoMmIspvfw"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/actions.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/BMP.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/CSV.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/CSV.red",
+      "url": "https://github.com/red/red/wiki/CSV-codec"
+    },
+    {
+      "domain": "tools.ietf.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/codecs/CSV.red",
+      "url": "https://tools.ietf.org/html/rfc4180"
+    },
+    {
+      "domain": "www.python.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/codecs/CSV.red",
+      "url": "https://www.python.org/dev/peps/pep-0305/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/GIF.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/JPEG.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/JSON.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/PNG.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/codecs/redbin.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/colors.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "cirw.in",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/console/CLI/POSIX.reds",
+      "url": "https://cirw.in/blog/bracketed-paste"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/POSIX.reds",
+      "url": "https://github.com/msteveb/linenoise/blob/master/linenoise.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/POSIX.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/console.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/input.red",
+      "url": "https://github.com/msteveb/linenoise/blob/master/linenoise.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/input.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/settings.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.cl.cam.ac.uk",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/console/CLI/wcwidth.reds",
+      "url": "http://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/wcwidth.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/win32.reds",
+      "url": "https://github.com/msteveb/linenoise/blob/master/linenoise.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/CLI/win32.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/core.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/gui-console.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/highlight.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/old/gui-console.red",
+      "url": "http://github.com/red/red"
+    },
+    {
+      "domain": "red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/console/GUI/old/gui-console.red",
+      "url": "http://red-lang.org"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/old/gui-console.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/old/terminal.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/old/windows.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/settings.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/GUI/tips.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/auto-complete.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/engine.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/console/help.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/console/help.red",
+      "url": "https://www.red-lang.org/p/download.html^/and"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/css-colors.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/datatypes.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/functions.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/natives.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/networking.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "tools.ietf.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/networking.red",
+      "url": "https://tools.ietf.org/html/rfc3986#page-16"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/operators.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/reactivity.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/routines.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/scalars.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "wiringpi.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "environment/schemes/GPIO.red",
+      "url": "http://wiringpi.com/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/schemes/GPIO.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "environment/system.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "filesystem.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/reports/message-005-report.md",
+      "url": "http://filesystem.read"
+    },
+    {
+      "domain": "rc-000.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/reports/message-008-report.md",
+      "url": "http://RC-000.md"
+    },
+    {
+      "domain": "camera.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/reports/message-016-report.md",
+      "url": "http://Camera.Read"
+    },
+    {
+      "domain": "crates.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/reports/message-018-report.md",
+      "url": "http://crates.io"
+    },
+    {
+      "domain": "devforum.roblox.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://devforum.roblox.com/t/red-a-simple-fast-and-powerful-networking-library/2302865"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://en.wikipedia.org/wiki/Red_(programming_language"
+    },
+    {
+      "domain": "exercism.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://exercism.org/tracks/red"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://github.com/red/red"
+    },
+    {
+      "domain": "ieeexplore.ieee.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://ieeexplore.ieee.org/iel7/10228851/10228852/10228974.pdf"
+    },
+    {
+      "domain": "red.github.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://red.github.io/"
+    },
+    {
+      "domain": "sampleprograms.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://sampleprograms.io/languages/red/"
+    },
+    {
+      "domain": "sourceforge.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://sourceforge.net/projects/red-programming-lang.mirror/"
+    },
+    {
+      "domain": "steemit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://steemit.com/programming/@crypticwyrm/rapidly-create-native-windows-and-macos-gui-applications-the-red-programming-language"
+    },
+    {
+      "domain": "www.reddit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://www.reddit.com/r/programming/comments/1kfe5a/the_red_programming_language/"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://www.youtube.com/shorts/kr1nkhL9E1w"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-002-original-part1.md",
+      "url": "https://www.youtube.com/watch?v=YLoMmIspvfw"
+    },
+    {
+      "domain": "filesystem.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-005-original-part1.md",
+      "url": "http://filesystem.read"
+    },
+    {
+      "domain": "rc-000.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-008-original-part2.md",
+      "url": "http://RC-000.md"
+    },
+    {
+      "domain": "rc-100.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-008-original-part2.md",
+      "url": "http://RC-100.md"
+    },
+    {
+      "domain": "rc-200.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-008-original-part2.md",
+      "url": "http://RC-200.md"
+    },
+    {
+      "domain": "filesystem.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-010-original-part4.md",
+      "url": "http://filesystem.read"
+    },
+    {
+      "domain": "memory.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-010-original-part4.md",
+      "url": "http://memory.read"
+    },
+    {
+      "domain": "sensor.camera",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-010-original-part4.md",
+      "url": "http://sensor.camera"
+    },
+    {
+      "domain": "camera.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-016-original-part1.md",
+      "url": "http://Camera.Read"
+    },
+    {
+      "domain": "camera.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-016-original-part5.md",
+      "url": "http://Camera.Read"
+    },
+    {
+      "domain": "crates.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-018-original-part1.md",
+      "url": "http://crates.io"
+    },
+    {
+      "domain": "sensor.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-018-original-part1.md",
+      "url": "http://sensor.read"
+    },
+    {
+      "domain": "crates.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-018-original-part2.md",
+      "url": "http://crates.io"
+    },
+    {
+      "domain": "sensor.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/sources/message-018-original-part2.md",
+      "url": "http://sensor.read"
+    },
+    {
+      "domain": "camera.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://Camera.Read"
+    },
+    {
+      "domain": "rc-000.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://RC-000.md"
+    },
+    {
+      "domain": "rc-100.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://RC-100.md"
+    },
+    {
+      "domain": "rc-200.md",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://RC-200.md"
+    },
+    {
+      "domain": "filesystem.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://filesystem.read"
+    },
+    {
+      "domain": "memory.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://memory.read"
+    },
+    {
+      "domain": "sensor.camera",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://sensor.camera"
+    },
+    {
+      "domain": "sensor.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Code-Snippets.md",
+      "url": "http://sensor.read"
+    },
+    {
+      "domain": "filesystem.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Data-Models.md",
+      "url": "http://filesystem.read"
+    },
+    {
+      "domain": "devforum.roblox.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://devforum.roblox.com/t/red-a-simple-fast-and-powerful-networking-library/2302865"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://en.wikipedia.org/wiki/Red_(programming_language"
+    },
+    {
+      "domain": "exercism.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://exercism.org/tracks/red"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://github.com/red/red"
+    },
+    {
+      "domain": "ieeexplore.ieee.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://ieeexplore.ieee.org/iel7/10228851/10228852/10228974.pdf"
+    },
+    {
+      "domain": "red.github.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://red.github.io/"
+    },
+    {
+      "domain": "sampleprograms.io",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://sampleprograms.io/languages/red/"
+    },
+    {
+      "domain": "sourceforge.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://sourceforge.net/projects/red-programming-lang.mirror/"
+    },
+    {
+      "domain": "steemit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://steemit.com/programming/@crypticwyrm/rapidly-create-native-windows-and-macos-gui-applications-the-red-programming-language"
+    },
+    {
+      "domain": "www.reddit.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://www.reddit.com/r/programming/comments/1kfe5a/the_red_programming_language/"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://www.youtube.com/shorts/kr1nkhL9E1w"
+    },
+    {
+      "domain": "www.youtube.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/References.md",
+      "url": "https://www.youtube.com/watch?v=YLoMmIspvfw"
+    },
+    {
+      "domain": "camera.read",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "knowledge-base/wiki/Specifications.md",
+      "url": "http://Camera.Read"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "lexer.r",
+      "url": "http://en.wikipedia.org/wiki/Whitespace_character"
+    },
+    {
+      "domain": "tools.ietf.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "lexer.r",
+      "url": "http://tools.ietf.org/html/rfc3629#section-4"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "lexer.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "libRed/libRed.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/audio/audio.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/RTD.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/VID.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/android/gui.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/camera-dev.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/camera.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/color.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/comdlgs.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/css.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/gtk3/draw.reds",
+      "url": "http://stackoverflow.com/questions/2792443/finding-the-centroid-of-a-polygon"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/draw.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/events.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/font.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/gtk.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/gui.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/handlers.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/menu.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/para.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/rules.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/tab-panel.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/text-box.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/text-list.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/gtk3/v4l2.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/keycodes.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "developer.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/camera.reds",
+      "url": "https://developer.apple.com/library/ios/samplecode/AVCam/Listings/AVCam_AAPLCameraViewController_m.html#//apple_ref/doc/uid/DTS40010112-AVCam_AAPLCameraViewController_m-DontLinkElementID_6"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/camera.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "opensource.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/camera.reds",
+      "url": "https://opensource.apple.com/source/libclosure/libclosure-38/BlockImplementation.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/classes.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/cocoa.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "opensource.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/cocoa.reds",
+      "url": "https://opensource.apple.com/source/libclosure/libclosure-38/BlockImplementation.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/comdlgs.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/delegates.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/draw.reds",
+      "url": "http://stackoverflow.com/questions/2792443/finding-the-centroid-of-a-polygon"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/draw.reds",
+      "url": "http://stackoverflow.com/questions/506622/cgcontextdrawimage-draws-image-upside-down-when-passed-uiimage-cgimage"
+    },
+    {
+      "domain": "www.stillhq.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/draw.reds",
+      "url": "http://www.stillhq.com/ctpfaq/2002/03/c1088.html#AEN1212"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/draw.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/events.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/font.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/gui.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/menu.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/para.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "developer.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/macOS/rules.red",
+      "url": "https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/TerminologyWording.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/rules.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/selectors.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/tab-panel.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/macOS/text-box.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "fontsarena.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/platform.red",
+      "url": "https://fontsarena.com/blog/operating-systems-default-sans-serif-fonts/"
+    },
+    {
+      "domain": "fontsarena.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/platform.red",
+      "url": "https://fontsarena.com/blog/operating-systems-default-serif-fonts/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/platform.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.granneman.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/platform.red",
+      "url": "https://www.granneman.com/webdev/coding/css/fonts-and-formatting/default-fonts"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/test/draw.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/test/events.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/test/gui.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/test/gui.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/test/text-box.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/base.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/base.reds",
+      "url": "https://stackoverflow.com/a/44062144"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/button.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/calendar.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/camera.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/classes.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/classes.reds",
+      "url": "https://stackoverflow.com/a/25355868/494472"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/comdlgs.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/direct2d.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/draw-gdi.reds",
+      "url": "http://stackoverflow.com/questions/2792443/finding-the-centroid-of-a-polygon"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/draw-gdi.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/draw.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/events.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/font.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/gui.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/gui.reds",
+      "url": "https://stackoverflow.com/a/44062144"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/matrix2d.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/menu.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/panel.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/para.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/rules.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/tab-panel.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/text-box.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/text-list.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/backends/windows/win32.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/win32.reds",
+      "url": "https://stackoverflow.com/questions/4258295/aero-how-to-draw-solid-opaque-colors-on-glass"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "modules/view/backends/windows/win32.reds",
+      "url": "https://stackoverflow.com/questions/5647322/gdi-font-rendering-especially-in-layered-windows"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/draw.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/rules.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/styles.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/utils.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "modules/view/view.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/quick-test.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/quick-test.red",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/quick-test.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/quick-unit-test.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/run-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/tests/overwrite-test.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/tests/qt-test.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "quick-test/tests/qt-test.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "red.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "run-all.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/actions.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/allocator.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "pubs.opengroup.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/call.reds",
+      "url": "http://pubs.opengroup.org/onlinepubs/9699919799/functions/wordexp.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/call.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/case-folding-table.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/case-folding.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/clipboard.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/clipboard.reds",
+      "url": "https://stackoverflow.com/a/15691001"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/clipboard.reds",
+      "url": "https://stackoverflow.com/a/46400011"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/clipboard.reds",
+      "url": "https://stackoverflow.com/a/6565158"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/collector.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/compress.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "sourceforge.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/crush.reds",
+      "url": "http://sourceforge.net/projects/crush/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/crush.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/crypto.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.ietf.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/crypto.reds",
+      "url": "https://www.ietf.org/rfc/rfc4868.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/action.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/binary.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/bitset.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/block.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/char.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/common.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/context.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/datatype.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/date.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/email.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/error.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/event.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/file.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "runtime/datatypes/float.reds",
+      "url": "https://github.com/rebol/rebol/blob/master/src/core/t-decimal.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/float.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/float.reds",
+      "url": "https://github.com/svn2github/googletest/blob/master/include/gtest/internal/gtest-internal.h"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/function.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/get-path.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/get-word.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/handle.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/hash.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/image-utils.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/image.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/integer.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/issue.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/lit-path.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/lit-word.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/logic.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/map.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/money.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/native.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/none.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/object.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/op.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/pair.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/paren.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/path.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/percent.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/point.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/port.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/ref.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/refinement.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/routine.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/series.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/set-path.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/set-word.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/string.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/structures.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/symbol.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/tag.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/time.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/tuple.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/typeset.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/unset.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/url.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/vector.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/vector2d.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/datatypes/word.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/debug-tools.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/definitions.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/deflate.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "hg.python.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "http://hg.python.org/cpython"
+    },
+    {
+      "domain": "lolengine.net",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "http://lolengine.net/blog/2011/3/20/understanding-fast-float-integer-conversions"
+    },
+    {
+      "domain": "stackoverflow.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "http://stackoverflow.com/a/429812/494472"
+    },
+    {
+      "domain": "www.netlib.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "http://www.netlib.org/fp"
+    },
+    {
+      "domain": "www.netlib.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "http://www.netlib.org/fp/dtoa.c"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/dtoa.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/hashtable.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/interpreter.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/lexer.reds",
+      "url": "https://en.wikipedia.org/wiki/Whitespace_character"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/lexer.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/macros.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/natives.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/ownership.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/parse.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/COM.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/POSIX.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/android.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/darwin.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/freebsd.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/image-gdiplus.reds",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/image-gdk.reds",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/image-quartz.reds",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/image-wic.reds",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/linux.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/netbsd.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/syllable.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "ascii-table.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/platform/win32-ansi.reds",
+      "url": "http://ascii-table.com/ansi-escape-sequences.php"
+    },
+    {
+      "domain": "www.termsys.demon.co.uk",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/platform/win32-ansi.reds",
+      "url": "http://www.termsys.demon.co.uk/vtansi.htm"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/win32-ansi.reds",
+      "url": "https://github.com/dockimbel/Red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/win32-print.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/platform/win32.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/print.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/queue.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "code.google.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/random.reds",
+      "url": "http://code.google.com/p/c-standard-library/source/browse/src/internal/_rand.c"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/random.reds",
+      "url": "http://en.wikipedia.org/wiki/Mersenne_twister"
+    },
+    {
+      "domain": "www.math.sci.hiroshima-u.ac.jp",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/random.reds",
+      "url": "http://www.math.sci.hiroshima-u.ac.jp/~%20m-mat/MT/SFMT/index.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/random.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/red.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/redbin.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "http://fxr.watson.org/fxr/source/sys/stat.h?v=FREEBSD10"
+    },
+    {
+      "domain": "glibc.sourcearchive.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "http://glibc.sourcearchive.com/documentation/2.7-18lenny7/glibc-2_87_2bits_2stat_8h_source.html"
+    },
+    {
+      "domain": "refspecs.linuxbase.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "http://refspecs.linuxbase.org/LSB_3.0.0/LSB-Core-generic/LSB-Core-generic/baselib-xstat-1.html"
+    },
+    {
+      "domain": "android.googlesource.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://android.googlesource.com/platform/bionic.git/+/master/libc/include/sys/stat.h"
+    },
+    {
+      "domain": "developer.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/10.6/man2/stat.2.html?useVersion=10.6"
+    },
+    {
+      "domain": "elixir.bootlin.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://elixir.bootlin.com/linux/latest/source/arch/arm/include/uapi/asm/stat.h#L57"
+    },
+    {
+      "domain": "elixir.bootlin.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://elixir.bootlin.com/linux/v5.9.10/source/arch/x86/include/uapi/asm/stat.h"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/simple-io.reds",
+      "url": "https://github.com/torvalds/linux/blob/master/include/uapi/asm-generic/stat.h#L49"
+    },
+    {
+      "domain": "comjnl.oxfordjournals.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/sort.reds",
+      "url": "http://comjnl.oxfordjournals.org/content/35/6/643.full.pdf"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/sort.reds",
+      "url": "https://github.com/Mrrl/GrailSort"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/sort.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/stack.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/threads.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/tokenizer.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/tools.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "bjoern.hoehrmann.de",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "runtime/unicode.reds",
+      "url": "http://bjoern.hoehrmann.de/utf-8/decoder/dfa/#variations"
+    },
+    {
+      "domain": "gist.github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/unicode.reds",
+      "url": "https://gist.github.com/1325840"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/unicode.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "runtime/utils.reds",
+      "url": "https://github.com/red/red/blob/master/red-system/runtime/BSL-License.txt"
+    },
+    {
+      "domain": "www.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/assets/macOS/Info.plist",
+      "url": "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/bridges/java/JNI.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/bridges/java/JNIdemo.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/compiler.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/config.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/emitter.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.sco.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/formats/ELF.r",
+      "url": "http://www.sco.com/developers/gabi/latest/ch5.pheader.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/formats/ELF.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.netbsd.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/formats/ELF.r",
+      "url": "https://www.netbsd.org/docs/kernel/elf-notes.html"
+    },
+    {
+      "domain": "www.nongnu.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/formats/Intel-HEX.r",
+      "url": "http://www.nongnu.org/avr-libc/LICENSE.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/formats/Intel-HEX.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/formats/Mach-APP.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "developer.apple.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/formats/Mach-O.r",
+      "url": "http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/MachORuntime/Reference/reference.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/formats/Mach-O.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/formats/PE.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/library/readme.txt",
+      "url": "https://github.com/red/code/tree/master/Library"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/linker.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/loader.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/rsc.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/POSIX-signals.reds",
+      "url": "http://fxr.watson.org/fxr/source/bsd/sys/signal.h?v=xnu-1456.1.26;im=excerpts"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/POSIX-signals.reds",
+      "url": "http://fxr.watson.org/fxr/source/include/uapi/asm-generic/siginfo.h?v=linux-2.6;im=excerpts"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/POSIX-signals.reds",
+      "url": "http://fxr.watson.org/fxr/source/sys/signal.h?v=FREEBSD10"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/POSIX-signals.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "www.kernel.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/POSIX.reds",
+      "url": "http://www.kernel.org/doc/man-pages/online/pages/man2/sigaction.2.html"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/POSIX.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/android.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/common.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/darwin.reds",
+      "url": "http://fxr.watson.org/fxr/source/bsd/i386/_structs.h?v=xnu-1456.1.26#L92,95"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/darwin.reds",
+      "url": "http://fxr.watson.org/fxr/source/bsd/sys/_structs.h?v=xnu-1456.1.26#L124,126"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/darwin.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/debug.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/freebsd.reds",
+      "url": "http://fxr.watson.org/fxr/source/sys/ucontext.h?v=FREEBSD10#L54"
+    },
+    {
+      "domain": "fxr.watson.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/freebsd.reds",
+      "url": "http://fxr.watson.org/fxr/source/x86/include/ucontext.h?v=FREEBSD10;im=10#L92,162"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/freebsd.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/lib-names.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "gist.github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/lib-natives.reds",
+      "url": "https://gist.github.com/952998"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/lib-natives.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/libc.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/linux-sigaction.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/linux.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/netbsd.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/start.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/syllable.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/system.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/utils.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "msdn.microsoft.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/win32-driver.reds",
+      "url": "http://msdn.microsoft.com/en-us/library/windows/hardware/ff544113(v=vs.85"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/win32-driver.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "msdn.microsoft.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/win32.reds",
+      "url": "http://msdn.microsoft.com/en-us/library/aa363082(v=VS.85"
+    },
+    {
+      "domain": "msdn.microsoft.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/runtime/win32.reds",
+      "url": "http://msdn.microsoft.com/en-us/library/windows/desktop/ms682596(v=vs.85"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/runtime/win32.reds",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "infocenter.arm.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/targets/ARM.r",
+      "url": "http://infocenter.arm.com/help/topic/com.arm.doc.ihi0046b/IHI0046B_ABI_Advisory_1.pdf"
+    },
+    {
+      "domain": "www.virag.si",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/targets/ARM.r",
+      "url": "http://www.virag.si/2010/02/simple-division-algorithm-for-arm-assembler/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/targets/ARM.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.arl.wustl.edu",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/targets/IA-32.r",
+      "url": "http://www.arl.wustl.edu/~lockwood/class/cs306/books/artofasm/Chapter_6/CH06-3.html#HEADING3-120"
+    },
+    {
+      "domain": "www.freebsd.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/targets/IA-32.r",
+      "url": "http://www.freebsd.org/doc/en/books/developers-handbook/book.html#X86-SYSTEM-CALLS"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/targets/IA-32.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/targets/target-class.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/build-arm-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/empty.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/float-matrix-manual.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/hello.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/nan-tests-manual.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/nan-tests-manual32.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/run-all.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/run-float.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/shared-lib.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/alias-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/callback-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/cast-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/comp-err-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/compiles-ok-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/cond-expr-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/define-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/dylib-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/empty.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/enum-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/exit-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/hello.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/inference-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/infix-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/int-literals-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/namespace-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/not-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/output-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/pointer-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/print-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/regression-test-rsc.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/compiler/return-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/alias-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/array-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/atomic-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/byte-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/c-string-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/case-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/cast-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/compile-test-dylibs.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/conditional-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/create-dylib-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/dll-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/dylib-test-script-header.txt",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/enum-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/exceptions-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/exit-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/float-lib-test-source.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/float-pointer-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/float-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/float32-lib-test-source.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/float32-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/function-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/get-pointer-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/infix-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/integer-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/length-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/lib-macOS-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/lib-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/lib-win32-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/libtest-dll1.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/libtest-dll2.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/logic-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-byte-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-byte-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-dylib-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-float-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-float-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-float32-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-float32-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-float32-lib-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-integer-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-integer-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-maths-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-maths-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/make-red-system-auto-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/math-mixed-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/modulo-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/namespace-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/not-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/null-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/pointer-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/prepare-dependencies.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/queue-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/return-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/size-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/struct-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/switch-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/tests/source/units/system-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.nwlink.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "system/utils/IEEE-754.r",
+      "url": "http://www.nwlink.com/~ecotope1/reb/decimal.r"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/IEEE-754.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/int-to-bin.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/libRedRT.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/profiler.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.rebol.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "system/utils/secure-clean-path.r",
+      "url": "http://www.rebol.org/view-script.r?script=secure-clean-path.r"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/unicode.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "system/utils/virtual-struct.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/allocator-tests.reds",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/android/vid.red",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/build-arm-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/build-separate-arm-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/demo.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/failing-tests.red",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/hello.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/libRed/libRedTest.c",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/libRed/libRedTests.c",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/run-all-together.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/run-all.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/run-core-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/run-regression-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/run-view-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/simple-scheme.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/compile-error-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/lexer-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/preprocessor-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/print-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/print-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-1.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "rebol.info",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tests/source/compiler/regression-test-redc-2.r",
+      "url": "http://rebol.info/foo"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-2.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "autocomplete.wunderground.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-3.r",
+      "url": "http://autocomplete.wunderground.com/aq?format=JSON&lang=zh&query=Beijing"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-3.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "abc.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-4.r",
+      "url": "http://abc.com"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-4.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "api.github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-5.r",
+      "url": "https://api.github.com/user"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/regression-test-redc-5.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/compiler/run-time-error-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com/"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com/bar"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com/foo/../bar"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com/foo/./bar"
+    },
+    {
+      "domain": "red-lang.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "http://red-lang.com/foo/bar"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/environment/functions-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/environment/help-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/environment/help-test.red",
+      "url": "https://github.com/red/red/pull/3490"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/environment/scalars-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/library/call-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/library/call-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/library/called-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/runtime/preprocessor-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/runtime/tools-test.reds",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/runtime/unicode-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/runtime/unicode-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/append-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/binding-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/bitset-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/case-folding-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/case-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/char-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "tools.bin63.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "http://tools.bin63.com/hmac-generator"
+    },
+    {
+      "domain": "www.fileformat.info",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "http://www.fileformat.info/tool/hash.htm"
+    },
+    {
+      "domain": "www.freeformatter.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "http://www.freeformatter.com/hmac-generator.html"
+    },
+    {
+      "domain": "defuse.ca",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "https://defuse.ca/checksums.htm"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "tools.ietf.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/checksum-test.red",
+      "url": "https://tools.ietf.org/html/rfc4231"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/clipboard-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/comparison-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/conditional-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "domain",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com/file.red"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com/path"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com/path/file"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com/path/file#anchor"
+    },
+    {
+      "domain": "domain.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com/path/file.red"
+    },
+    {
+      "domain": "domain.com:43",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com:43/path"
+    },
+    {
+      "domain": "domain.com:8080",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://domain.com:8080"
+    },
+    {
+      "domain": "red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://red-lang.org"
+    },
+    {
+      "domain": "red-lang.org@",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "http://red-lang.org@"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/convert-test.red",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/csv-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/date-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/debase-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/decompress-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/draw-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/enbase-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/evaluation-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/file-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/find-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/float-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/function-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/image-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/insert-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/integer-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/json-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "host.dom",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/lexer-test.red",
+      "url": "http://host.dom/path/file"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tests/source/units/lexer-test.red",
+      "url": "http://www.rebol.com/"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/lexer-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/load-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/logic-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/loop-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-equal-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-equal-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-float-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-float-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-greater-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-greater-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-interpreter-auto-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-interpreter-auto-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-lesser-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-lesser-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-lexer-auto-tests.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-lexer-auto-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-not-equal-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-not-equal-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-red-auto-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-all-red-together.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-all-red-together.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-all-red.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-all-red.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-each-runner.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-run-each-runner.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-same-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-same-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-strict-equal-auto-test.r",
+      "url": "https://github.com/dockimbel/Red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-strict-equal-auto-test.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/make-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/map-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/mold-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/money-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/move-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/object-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/pair-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.rebol.net",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tests/source/units/parse-test.red",
+      "url": "http://www.rebol.net/wiki/Parse_Project#AND"
+    },
+    {
+      "domain": "example.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/parse-test.red",
+      "url": "https://example.org"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/parse-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/path-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/power-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/preprocessor-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/reactivity-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/recycle-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/redbin-codec-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.rebol.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tests/source/units/regression-test-red.red",
+      "url": "http://www.rebol.com/how-to/graphics/button.gif"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/regression-test-red.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/replace-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/routine-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/run-all-init.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/run-all-together-init.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/run-post-extra-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/run-pre-extra-tests.r",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/same-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/select-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/serialization-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/serialization-test.red",
+      "url": "https://www.red-lang.org/"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/serialization-test.red",
+      "url": "https://www.red-lang.org/%E4%B8%AD%20%E6%96%87"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/serialization-test.red",
+      "url": "https://www.red-lang.org/\u4e2d%20\u6587"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/series-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/stress-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/strict-equal-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/switch-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/system-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/throw-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/time-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/try-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/tuple-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/type-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/unset-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/%25E4%25B8%25AD%2520%25E6%2596%2587"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/%E4%B8%AD%20%E6%96%87"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/%E4%B8%AD%2520%E6%96%87"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/\u4e2d"
+    },
+    {
+      "domain": "www.red-lang.org",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/units/url-test.red",
+      "url": "https://www.red-lang.org/\u4e2d%20\u6587"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/vector-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/units/words-of-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tests/source/view/base-self-test.red",
+      "url": "https://github.com/red/red/blob/origin/BSD-3-License.txt"
+    },
+    {
+      "domain": "gitlab.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tests/source/view/base-self-test.red",
+      "url": "https://gitlab.com/hiiamboris/red-view-test-system"
+    },
+    {
+      "domain": "x",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tools/impl_controller/tests/test_controller.py",
+      "url": "http://x"
+    },
+    {
+      "domain": "x",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tools/impl_controller/tests/test_controller.py",
+      "url": "http://x/binary"
+    },
+    {
+      "domain": "x",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tools/impl_controller/tests/test_hardening.py",
+      "url": "http://x"
+    },
+    {
+      "domain": "x",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "tools/impl_controller/tests/test_pipeline_attacks.py",
+      "url": "http://x"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tools/source-audit/compare_red_upstream.py",
+      "url": "https://github.com/Abdus2023/Red-Cognition-"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tools/source-audit/compare_red_upstream.py",
+      "url": "https://github.com/red/red.git"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "tools/source-audit/compare_red_upstream.py",
+      "url": "https://github.com/red/red.git."
+    },
+    {
+      "domain": "github.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://github.com/Abdus2023/Red-Cognition-"
+    },
+    {
+      "domain": "github.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://github.com/red/red"
+    },
+    {
+      "domain": "github.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://github.com/red/red.git`"
+    },
+    {
+      "domain": "github.com",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://github.com/red/red`;"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://static.red-lang.org/tmp/rebol"
+    },
+    {
+      "domain": "static.red-lang.org",
+      "kind": "BOOTSTRAP_OR_TOOLCHAIN_NETWORK_DEPENDENCY",
+      "path": "tools/source-audit/generate_rebol_red_inventory.py",
+      "url": "https://static.red-lang.org/tmp/rebol`"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/extractor.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/generate-lexer-table.red",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/generate-misc-tables.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/generate-unicode-table.red",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/generate-unicode-table.red",
+      "url": "https://github.com/red/red/blob/master/BSL-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/generate-unicode-table.red",
+      "url": "https://github.com/rust-lang/rust/blob/master/src/libcore/unicode/tables.rs"
+    },
+    {
+      "domain": "raw.githubusercontent.com",
+      "kind": "DOCUMENTATION_OR_EXTERNAL_REFERENCE",
+      "path": "utils/generate-unicode-table.red",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/master/src/libcore/unicode/tables.rs"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/preprocessor.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    },
+    {
+      "domain": "github.com",
+      "kind": "EXTERNAL_REPOSITORY_REFERENCE",
+      "path": "utils/redbin.r",
+      "url": "https://github.com/red/red/blob/master/BSD-3-License.txt"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "bootstrap_or_toolchain_network_dependencies": 43,
+    "ci_or_build_network_dependencies": 1,
+    "domains": {
+      "abc.com": 1,
+      "android.googlesource.com": 1,
+      "api.example.com": 1,
+      "api.github.com": 1,
+      "ascii-table.com": 1,
+      "autocomplete.wunderground.com": 1,
+      "badges.gitter.im": 1,
+      "bjoern.hoehrmann.de": 1,
+      "bs.red-lang.org": 5,
+      "camera.read": 5,
+      "ci.appveyor.com": 1,
+      "cirw.in": 1,
+      "code.google.com": 1,
+      "comjnl.oxfordjournals.org": 1,
+      "compiler.next": 1,
+      "crates.io": 3,
+      "creativecommons.org": 1,
+      "defuse.ca": 1,
+      "developer.apple.com": 4,
+      "devforum.roblox.com": 3,
+      "domain": 1,
+      "domain.com": 6,
+      "domain.com:43": 1,
+      "domain.com:8080": 1,
+      "elixir.bootlin.com": 2,
+      "en.wikipedia.org": 19,
+      "example.org": 1,
+      "exercism.org": 3,
+      "filesystem.read": 5,
+      "fontsarena.com": 2,
+      "fxr.watson.org": 8,
+      "geekfeminism.wikia.com": 1,
+      "gist.github.com": 2,
+      "github.com": 545,
+      "gitlab.com": 1,
+      "gitter.im": 3,
+      "glibc.sourcearchive.com": 1,
+      "groups.google.com": 1,
+      "hg.python.org": 1,
+      "host.dom": 1,
+      "ieeexplore.ieee.org": 3,
+      "infocenter.arm.com": 2,
+      "lolengine.net": 1,
+      "memory.read": 2,
+      "msdn.microsoft.com": 3,
+      "opensource.apple.com": 2,
+      "pubs.opengroup.org": 1,
+      "raw.githubusercontent.com": 1,
+      "rc-000.md": 3,
+      "rc-100.md": 2,
+      "rc-200.md": 2,
+      "rebol.com": 1,
+      "rebol.info": 1,
+      "red-lang.com": 6,
+      "red-lang.org": 3,
+      "red-lang.org@": 1,
+      "red.github.io": 3,
+      "refspecs.linuxbase.org": 1,
+      "sampleprograms.io": 3,
+      "schemas.android.com": 1,
+      "sensor.camera": 2,
+      "sensor.read": 3,
+      "sourceforge.net": 4,
+      "stackoverflow.com": 13,
+      "static.red-lang.org": 10,
+      "steemit.com": 3,
+      "stumptownsyndicate.org": 1,
+      "tools.bin63.com": 1,
+      "tools.ietf.org": 4,
+      "travis-ci.org": 1,
+      "wiringpi.com": 1,
+      "www.apple.com": 1,
+      "www.arl.wustl.edu": 1,
+      "www.boost.org": 1,
+      "www.cl.cam.ac.uk": 1,
+      "www.djangoproject.com": 1,
+      "www.fileformat.info": 1,
+      "www.freebsd.org": 1,
+      "www.freeformatter.com": 1,
+      "www.granneman.com": 1,
+      "www.ietf.org": 1,
+      "www.kernel.org": 1,
+      "www.math.sci.hiroshima-u.ac.jp": 1,
+      "www.maxvessi.net": 1,
+      "www.netbsd.org": 1,
+      "www.netlib.org": 2,
+      "www.nongnu.org": 1,
+      "www.nwlink.com": 1,
+      "www.opensource.org": 1,
+      "www.python.org": 1,
+      "www.rebol.com": 21,
+      "www.rebol.net": 4,
+      "www.rebol.org": 1,
+      "www.red-lang.org": 15,
+      "www.reddit.com": 3,
+      "www.sco.com": 1,
+      "www.stillhq.com": 1,
+      "www.termsys.demon.co.uk": 1,
+      "www.virag.si": 1,
+      "www.youtube.com": 6,
+      "x": 4
+    },
+    "external_repository_references": 543,
+    "network_references": 803,
+    "offline_status": {
+      "BOOTSTRAP_AVAILABLE": "BLOCKED for fully offline Stage 0 because observed workflows download external Rebol binaries",
+      "BUILD_AVAILABLE": "BLOCKED until bootstrap/toolchain dependencies are locally provisioned and executed",
+      "EXECUTION_AVAILABLE": "PARTIALLY_VERIFIED only for Python audit/report commands",
+      "SOURCE_AVAILABLE": "PARTIALLY_VERIFIED by local inventory and hashes"
+    }
+  }
+}

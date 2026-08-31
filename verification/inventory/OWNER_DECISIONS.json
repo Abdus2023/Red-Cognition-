@@ -1,0 +1,59 @@
+{
+  "decisions": [
+    {
+      "blocking": true,
+      "id": "OWNER-DECISION-001",
+      "question": "Should historical Red/Rebol source remain in the upstream-like layout with overlay docs, or be physically moved into red/, rebol/, and red-cognition/ subtrees?",
+      "reason": "Physical moves require owner-approved path authority and hash-before/hash-after migration records.",
+      "topic": "Physical source migration"
+    },
+    {
+      "blocking": true,
+      "id": "OWNER-DECISION-002",
+      "question": "Is upstream Red v0.6.4 the intended baseline for provenance comparison, or should another Red commit/tag be used?",
+      "reason": "version.r contains 0.6.4 and v0.6.4 was compared, but diverged/local-only files require baseline confirmation.",
+      "topic": "Upstream Red baseline"
+    },
+    {
+      "blocking": true,
+      "id": "OWNER-DECISION-003",
+      "question": "Should the repo vendor source-buildable bootstrap materials or continue to reference external Rebol bootstrap binaries?",
+      "reason": "Offline Stage 0 bootstrap remains blocked under current evidence.",
+      "topic": "Bootstrap strategy"
+    },
+    {
+      "blocking": false,
+      "id": "OWNER-DECISION-004",
+      "question": "Which same-filename groups are intentional platform variants, historical variants, or conflicts requiring resolution?",
+      "reason": "Duplicate analysis reports 50 same-filename groups requiring review.",
+      "topic": "Duplicate groups"
+    },
+    {
+      "blocking": false,
+      "id": "OWNER-DECISION-005",
+      "question": "Should unresolved RFC-0075 critical traceability gaps block further migration phases?",
+      "reason": "Existing validator reports unresolved critical gaps and exits non-zero.",
+      "topic": "RFC-0075 critical gaps"
+    },
+    {
+      "blocking": true,
+      "id": "OWNER-DECISION-006",
+      "question": "How should files diverged from upstream Red v0.6.4 be classified after maintainer review?",
+      "reason": "Comparison currently reports 258 same-path diverged files and 616 local-only/non-upstream files.",
+      "topic": "Diverged upstream files"
+    }
+  ],
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "derive owner decision register from audit, duplicate, bootstrap, CI, and upstream comparison evidence",
+    "repository_commit": "8b539c0c416bb861597c6f05725b2a5d5451e555",
+    "timestamp_utc": "2026-08-31T19:51:34.379355+00:00",
+    "tool": "tools/source-audit/generate_repository_risk_reports.py"
+  },
+  "schema_version": 1,
+  "summary": {
+    "blocking_decisions": 4,
+    "decisions": 6
+  }
+}

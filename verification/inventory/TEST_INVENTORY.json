@@ -2347,9 +2347,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive test inventory from classifications, paths, and filenames in repository inventory",
-    "repository_commit": "de7913f4e9156a1a093e84fc33c73dfee284cc4f",
+    "repository_commit": "8b539c0c416bb861597c6f05725b2a5d5451e555",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-08-31T19:29:50.239421+00:00",
+    "timestamp_utc": "2026-08-31T19:51:33.166881+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "schema_version": 1,

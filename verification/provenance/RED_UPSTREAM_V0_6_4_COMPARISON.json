@@ -7,7 +7,7 @@
   "generated": {
     "date": "2026-08-31",
     "method": "compare SHA-256 of local HEAD tracked files against locally fetched upstream Red v0.6.4 tag; no source files modified",
-    "timestamp_utc": "2026-08-31T19:29:51.262474+00:00",
+    "timestamp_utc": "2026-08-31T19:51:34.245828+00:00",
     "tool": "tools/source-audit/compare_red_upstream.py"
   },
   "local_entries": [
@@ -631,7 +631,7 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "docs/architecture/REBOL_RED_MONOREPO.md",
-      "local_sha256": "4cdc0bdc942cd92564200002d6b7814e8b5cba30767653e49da4c0403760fb5f",
+      "local_sha256": "54df76f7d43e882712a306bfe5b0ac0fe6c8f019024d205fd35272a562f0c746",
       "local_size": 2437,
       "upstream_related_paths": []
     },
@@ -655,7 +655,7 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "docs/bootstrap/BOOTSTRAP.md",
-      "local_sha256": "0318502f58a307efd456a81427f4666d4351228fbf10eb1d1999de1cd58c7deb",
+      "local_sha256": "bb986660b370f0a2c61273c539fca7d6852c7be2f95064fff17f08b228f4f927",
       "local_size": 2613,
       "upstream_related_paths": []
     },
@@ -1135,7 +1135,7 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "docs/provenance/PROVENANCE.md",
-      "local_sha256": "50efa4726a1645500534806f0a8d6f38e52cf4b0ba1fbf55b57a74515519cdc8",
+      "local_sha256": "032002f39f811c8eaa489f64ce998d82d0811d020b612ab376dff78f7bce69ab",
       "local_size": 2240,
       "upstream_related_paths": []
     },
@@ -9876,9 +9876,17 @@
     {
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
+      "local_path": "tools/source-audit/compare_red_upstream.py",
+      "local_sha256": "553d60669a8772535f8e81c160117316427bd38305fb50227e86fff1189ba138",
+      "local_size": 10581,
+      "upstream_related_paths": []
+    },
+    {
+      "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
+      "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "tools/source-audit/generate_rebol_red_inventory.py",
-      "local_sha256": "c4b6a2e20f75419d447b0c6fd50158f4d596c46812e80ce7aa301ede97b9c591",
-      "local_size": 38530,
+      "local_sha256": "219b58ba67bcbe3c7006441236012340a698be02c9dba4737e9b59a2ab060082",
+      "local_size": 40800,
       "upstream_related_paths": []
     },
     {
@@ -10033,15 +10041,15 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/hashes/SHA256SUMS",
-      "local_sha256": "afda205bcb06a99ef3873bc76799f6818c7ee1cde389ca02c1f283e65f2ce1ec",
-      "local_size": 118672,
+      "local_sha256": "89df39aa22fa79ff01f1ba7d8ce9f7653873d63c89a7202703e0b17876f3c8b1",
+      "local_size": 118793,
       "upstream_related_paths": []
     },
     {
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/inventory/DUPLICATE_ANALYSIS.json",
-      "local_sha256": "9e39034bb8677ca12ff094c667498e7f5b85a8a765aa5f4e0a6a7ab7da95b861",
+      "local_sha256": "dc1f9e3e4b1a6450d5b5b029bdad72fe8c7bd185754a14a550b9bf86aab215ab",
       "local_size": 27834,
       "upstream_related_paths": []
     },
@@ -10049,7 +10057,7 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/inventory/MIGRATION_MANIFEST.json",
-      "local_sha256": "2e29507656c6d85ad6eb7ce9e94d9d87fabd870e03d877f79e7306b000a01da6",
+      "local_sha256": "0016e77b86b23bb06e6f3713d51c12dac609165104477a297e188a5ac113d51a",
       "local_size": 1062,
       "upstream_related_paths": []
     },
@@ -10057,23 +10065,23 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/inventory/REBOL_RED_INVENTORY.json",
-      "local_sha256": "c3e40ceeb11193c6d98c72f605ca9e6fa0faeb46f1348f5b063f732210b8e0b4",
-      "local_size": 1328771,
+      "local_sha256": "d2b1ca1112b4037dc890b34a1b31bdc08b994659512e128b9c2e5b2fcedd5afe",
+      "local_size": 1330134,
       "upstream_related_paths": []
     },
     {
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/inventory/REBOL_RED_INVENTORY.md",
-      "local_sha256": "96d015bb17c6dece2a9a61c7bc824fa21b62ca5d8a039cc250ede4548b0cb5fb",
-      "local_size": 27338,
+      "local_sha256": "7277e4e3ec16bb23dfae6a3bdbdbcf364ba93ad87927acae8a0df1d97ca44090",
+      "local_size": 27339,
       "upstream_related_paths": []
     },
     {
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/inventory/TEST_INVENTORY.json",
-      "local_sha256": "d94bde05b2aaccbb70fa2b454c6fb5821f4038e245bc0a5c66d77be3ceed91f2",
+      "local_sha256": "e44722817d6ca8cae9696fb8c6522e9aec8ef6982e4cb443c722d4c49bef4a59",
       "local_size": 102848,
       "upstream_related_paths": []
     },
@@ -10081,8 +10089,16 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/provenance/PROVENANCE_MANIFEST.json",
-      "local_sha256": "26d4b5aa82b4e0a571cac79c9108e7fa83fe5f7fb67d319bcd06cfbbee579f35",
+      "local_sha256": "6dc62e6e316852652cef24971584586d7ffcc41c1a2c95dccb4efaff24f169a4",
       "local_size": 4598,
+      "upstream_related_paths": []
+    },
+    {
+      "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
+      "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
+      "local_path": "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
+      "local_sha256": "e7caa43f3d5e10640234a32094369583e36d19bd4bb6ef2f1665c07bda7f7b5e",
+      "local_size": 533419,
       "upstream_related_paths": []
     },
     {
@@ -10105,16 +10121,24 @@
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
-      "local_sha256": "3172987be1a2dc5db60f841e4627efdf7167919dd606080ccbb2b6a8c7f6ae88",
-      "local_size": 3427,
+      "local_sha256": "12df739997e03bece97b8fc880c30ca693f8a40bd12afc56e2658eb124f4c7e2",
+      "local_size": 3821,
       "upstream_related_paths": []
     },
     {
       "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
       "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
       "local_path": "verification/reports/MONOREPO_AUDIT.md",
-      "local_sha256": "5baee2618c5063e42af135fce57b783a5e7bb74f7930410cda4f418b8ecb9914",
-      "local_size": 7134,
+      "local_sha256": "0d76599d4e7f2a676d42f250fa035cb62f1413632a589ca1a5c865eb58938c26",
+      "local_size": 8511,
+      "upstream_related_paths": []
+    },
+    {
+      "comparison_status": "LOCAL_ONLY_OR_NON_RED_UPSTREAM",
+      "evidence": "path and SHA-256 not found in upstream Red v0.6.4",
+      "local_path": "verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md",
+      "local_sha256": "46e49284d20fcb8948e64e3d643f1d5bf2cebada716461c0e6ca12dbce008ee3",
+      "local_size": 5170,
       "upstream_related_paths": []
     },
     {
@@ -10138,7 +10162,7 @@
   ],
   "repository": {
     "branch": "arena/01a058c5-red-cognition",
-    "local_commit": "de7913f4e9156a1a093e84fc33c73dfee284cc4f",
+    "local_commit": "8b539c0c416bb861597c6f05725b2a5d5451e555",
     "local_repository": "https://github.com/Abdus2023/Red-Cognition-",
     "upstream_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
     "upstream_ref": "v0.6.4",
@@ -10148,10 +10172,10 @@
   "schema_version": 1,
   "status": "PARTIALLY_VERIFIED",
   "summary": {
-    "local_files": 1135,
+    "local_files": 1138,
     "local_status_counts": {
       "LOCALLY_MODIFIED_OR_DIVERGED_AT_SAME_PATH": 258,
-      "LOCAL_ONLY_OR_NON_RED_UPSTREAM": 613,
+      "LOCAL_ONLY_OR_NON_RED_UPSTREAM": 616,
       "UNMODIFIED_AT_SAME_PATH": 251,
       "UPSTREAM_CONTENT_RELOCATED_OR_RENAMED": 13
     },

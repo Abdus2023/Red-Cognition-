@@ -57,13 +57,21 @@ def tracked_files() -> list[str]:
         "verification/inventory/MIGRATION_MANIFEST.json",
         "verification/inventory/DUPLICATE_ANALYSIS.json",
         "verification/inventory/TEST_INVENTORY.json",
+        "verification/inventory/BINARY_INVENTORY.json",
+        "verification/inventory/OWNER_DECISIONS.json",
         "verification/provenance/PROVENANCE_MANIFEST.json",
+        "verification/provenance/LICENSE_SUMMARY.json",
         "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
+        "verification/reproducibility/OFFLINE_DEPENDENCIES.json",
         "verification/reports/DUPLICATE_ANALYSIS.md",
         "verification/reports/TEST_STATUS.md",
         "verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
         "verification/reports/CI_EVIDENCE.md",
         "verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md",
+        "verification/reports/BINARY_INVENTORY.md",
+        "verification/reports/LICENSE_SUMMARY.md",
+        "verification/reports/OFFLINE_STATUS.md",
+        "verification/reports/OWNER_DECISIONS.md",
     }
     generated_prefixes = set()
 
@@ -119,7 +127,10 @@ def detect_license(sample: str, path: str) -> str:
         return "BSD-3-Clause (as stated or indicated locally)"
     if name == "bsl-license.txt" or "boost software license" in lower:
         return "Boost Software License 1.0 (as stated or indicated locally)"
-    if "license:" in lower:
+    # Treat Rebol/Red header License: fields as license metadata. Do not
+    # interpret arbitrary Markdown/YAML prose containing the word "license" as
+    # artifact licensing.
+    if "license:" in lower and header_kind(sample) in {"REBOL", "Red", "Red/System"}:
         m = re.search(r"License:\s*(?:\{)?\s*([^\n\r}]+)", sample, re.I)
         if m:
             return m.group(1).strip().strip('"')
@@ -610,10 +621,22 @@ def write_audit(data: dict[str, Any]) -> None:
         "## License Analysis",
         "License indications are recorded per file where present. Repository-level license files `BSD-3-License.txt` and `BSL-License.txt` are retained. No reconciliation or relicensing was performed.",
         "",
+        "## Binary and Archive Inventory",
+        "- Dedicated binary/archive inventory is generated in `verification/inventory/BINARY_INVENTORY.json` and summarized in `verification/reports/BINARY_INVENTORY.md`.",
+        "- Binary/archive artifacts are retained and hashed; none are promoted to source/bootstrap status without build provenance.",
+        "",
+        "## Offline Dependency Analysis",
+        "- Offline dependency scan is generated in `verification/reproducibility/OFFLINE_DEPENDENCIES.json` and summarized in `verification/reports/OFFLINE_STATUS.md`.",
+        "- BUILD-AVAILABLE and BOOTSTRAP-AVAILABLE remain blocked for fully offline operation until external toolchain/bootstrap requirements are locally provisioned and executed.",
+        "",
+        "## Owner Decision Register",
+        "- Owner decisions are generated in `verification/inventory/OWNER_DECISIONS.json` and summarized in `verification/reports/OWNER_DECISIONS.md`.",
+        "- Blocking decisions include physical migration authority, upstream Red baseline authority, bootstrap strategy, and diverged-file classification.",
+        "",
         "## Upstream Provenance Comparison",
         "- Upstream Red tag `v0.6.4` was explicitly fetched from `https://github.com/red/red.git` and compared by SHA-256 in this phase.",
         "- Peeled upstream commit: `755eb943ccea9e78c2cab0f20b313a52404355cb`.",
-        "- Result summary: 251 local files matched upstream at the same path, 13 matched upstream content at relocated/renamed paths, 258 diverged at the same path, and 613 were local-only/non-Red-upstream relative to `v0.6.4`.",
+        "- Result summary: 251 local files matched upstream at the same path, 13 matched upstream content at relocated/renamed paths, 258 diverged at the same path, and 616 were local-only/non-Red-upstream relative to `v0.6.4`.",
         "- Diverged files are not automatically classified as intentional local modifications; maintainer review is required.",
         "- Evidence: `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json` and `verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md`.",
         "",
@@ -667,9 +690,17 @@ def write_audit(data: dict[str, Any]) -> None:
         "- `verification/inventory/MIGRATION_MANIFEST.json`",
         "- `verification/inventory/DUPLICATE_ANALYSIS.json`",
         "- `verification/inventory/TEST_INVENTORY.json`",
+        "- `verification/inventory/BINARY_INVENTORY.json`",
+        "- `verification/inventory/OWNER_DECISIONS.json`",
         "- `verification/provenance/PROVENANCE_MANIFEST.json`",
+        "- `verification/provenance/LICENSE_SUMMARY.json`",
+        "- `verification/reproducibility/OFFLINE_DEPENDENCIES.json`",
         "- `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json`",
         "- `verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md`",
+        "- `verification/reports/BINARY_INVENTORY.md`",
+        "- `verification/reports/LICENSE_SUMMARY.md`",
+        "- `verification/reports/OFFLINE_STATUS.md`",
+        "- `verification/reports/OWNER_DECISIONS.md`",
         "- `verification/reports/DUPLICATE_ANALYSIS.md`",
         "- `verification/reports/TEST_STATUS.md`",
         "- `verification/reports/LOCAL_EXECUTION_EVIDENCE.md`",
