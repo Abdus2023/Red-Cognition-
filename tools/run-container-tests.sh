@@ -80,6 +80,7 @@ run_suite() {
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
+      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       -e "DISPLAY=$DISPLAY_VALUE" \
@@ -96,6 +97,7 @@ run_suite() {
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
+      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       --entrypoint "$REBOL" "$IMAGE" \
@@ -134,7 +136,6 @@ commit, image, rebol, started, finished = sys.argv[2:]
 
 def parse_file(path):
     text = path.read_text(errors="replace") if path.exists() else ""
-    # Quick-Test has used both compact and aligned forms over time.
     def last(pattern):
         values = re.findall(pattern, text, flags=re.I | re.M)
         return int(values[-1]) if values else None
