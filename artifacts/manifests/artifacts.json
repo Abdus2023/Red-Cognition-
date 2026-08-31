@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 92,
+  "record_count": 95,
   "artifacts": [
     {
       "project": "RED",
@@ -1779,6 +1779,59 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "87 records accounted"
+    },
+    {
+      "project": "RELATED",
+      "version": "master (2015-era mirrors)",
+      "classification": "ARCHIVE",
+      "origin": "https://github.com/red/RS-fossil-mirror (org-hosted fork of kealist/RS-fossil-mirror; mirrors of red.esperconsultancy.nl Fossil repos)",
+      "url": "https://github.com/red/RS-fossil-mirror",
+      "repository": "https://github.com/red/RS-fossil-mirror",
+      "commit": "d27b50eea30939fcc7121ffba0b863ecc3b1e5d8",
+      "tag": null,
+      "filename": "red-RS-fossil-mirror-master.tar.gz",
+      "path": "artifacts/rebol/source/red-RS-fossil-mirror-master.tar.gz",
+      "sha256": "2d466d1b64b92ce6e88c5d38203411c79ae1df1ba2d0627d1533bce04c37c30f",
+      "size": 244331,
+      "retrieved_at": "2026-08-31T18:11:00Z",
+      "provenance_status": "PARTIALLY_VERIFIED",
+      "provenance_status_reason": "hosted in the official red org but a fork of kealist/RS-fossil-mirror; mirrors of the Fossil repositories at red.esperconsultancy.nl (Red's pre-GitHub primary hosting, pushes ceased 2015-03-23)",
+      "tier": 2,
+      "third_party": true,
+      "integrity_status": "HASHED",
+      "license_status": "UNCLEAR",
+      "license_evidence": "GitHub license metadata null; mirrored projects' licenses not determinable at mirror level",
+      "notes": "historical Fossil-mirror exports: 6502, C-library, GLib, GTK, GTK-Champlain, GTK-WebKit, JSON, Java, OSM-GPS-Map, OpenGL, REBOL-3, SDL\u2026"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 14 blob comparison of workspace vs upstream v0.6.5/v0.6.6",
+      "filename": "fork-attribution-vs-newer-upstream.json",
+      "path": "artifacts/manifests/fork-attribution-vs-newer-upstream.json",
+      "sha256": "16d82d58ce8a8c043ff7a7288291557f0d86cf57620022cec8fdbce7475afc79",
+      "size": 835,
+      "retrieved_at": "2026-08-31T18:11:00Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "87/258 differing files exactly match a LATER upstream tree (borrowed forward-ports); 171/258 are fork-original modifications"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 14 execution of the committed re-derivation script",
+      "filename": "reproduction-run.json",
+      "path": "/home/user/Red-Cognition-/artifacts/logs/execution/reproduction-run.log",
+      "sha256": "dff61f5912797a74bbd14334d9ca39fed13a5f215cf42e8914ac619a9b9bcab3",
+      "size": 2765,
+      "retrieved_at": "2026-08-31T18:11:00Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "ACQUISITION_REPRODUCED_END_TO_END: every archive re-downloaded from codeload and whole-tree verified against its pinned ref by the committed script"
     }
   ]
 }

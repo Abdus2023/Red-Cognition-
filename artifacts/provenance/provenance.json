@@ -350,6 +350,27 @@
       "target": "NOT acquirable from GitHub channels",
       "evidence": "documented finding from recorded searches + org listings + ecosystem recipes (manifests/rebol2-source-finding.json)",
       "status": "BLOCKED"
+    },
+    {
+      "relationship": "historical-hosting",
+      "source": "red.esperconsultancy.nl Fossil repositories (Red's pre-GitHub hosting)",
+      "target": "red/RS-fossil-mirror (org-hosted fork of kealist's mirror)",
+      "evidence": "HEAD d27b50eea309; 148 entries across 17 mirrored projects; pushes ceased 2015-03-23",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "fork-attribution",
+      "source": "workspace fork's 258 differing files",
+      "target": "upstream v0.6.5/v0.6.6 trees",
+      "evidence": "87/258 differing files exactly match a LATER upstream tree (borrowed forward-ports); 171/258 are fork-original modifications (manifests/fork-attribution-vs-newer-upstream.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "execution-reproduction",
+      "source": "reproduce_acquisition.sh",
+      "target": "full corpus re-derivation",
+      "evidence": "exit 0; 22/22 archives re-downloaded + whole-tree verified (19s; logs/execution/reproduction-run.log)",
+      "status": "ESTABLISHED"
     }
   ]
 }

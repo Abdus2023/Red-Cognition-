@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-08-31T18:11:00Z",
+  "script": "acquisition-tools/reproduce_acquisition.sh",
+  "exit_code": 0,
+  "archives_ok": 22,
+  "archives_failed": 0,
+  "duration_s": 19.1,
+  "log": "artifacts/logs/execution/reproduction-run.log",
+  "claim": "ACQUISITION_REPRODUCED_END_TO_END: every archive re-downloaded from codeload and whole-tree verified against its pinned ref by the committed script"
+}

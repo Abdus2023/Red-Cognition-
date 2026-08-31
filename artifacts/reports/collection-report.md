@@ -438,3 +438,27 @@ _Generated: 2026-08-31T18:07:23Z. This section consolidates the protocol §22 fi
 
 **Remaining BLOCKED work (with exact targets prepared):** rebol.com/downloads/v278/ binaries (reference hashes ready), static.red-lang.org Red binaries + CI Rebol bootstrap, GitHub release assets (29 releases/1,074 assets registered), Internet Archive copies; then execution + bootstrap reproduction per `logs/execution/execution-evidence.json` next steps.
 
+## Continuation Addendum (stage 14)
+
+_Generated: 2026-08-31T18:11:00Z_
+
+### Reproduction: executed end-to-end (execution evidence)
+
+- `reproduce_acquisition.sh` **was executed**: 10 fresh clones, **22/22 archives re-downloaded and whole-tree verified against pinned refs**, exit 0, 19s. Log with per-archive SHA-256s: `logs/execution/reproduction-run.log`. Claim upgraded: acquisition **REPRODUCED end-to-end by the committed script** (previously only 2 samples).
+
+### Historical material: red/RS-fossil-mirror collected (Tier-2, THIRD_PARTY)
+
+- Mirrors of the **Fossil repositories at red.esperconsultancy.nl** (Red's pre-GitHub primary hosting; pushes ceased 2015-03-23). Org-hosted but a fork of `kealist/RS-fossil-mirror`; 148 entries across 17 projects (6502, C-library, GLib, GTK, GTK-Champlain, GTK-WebKit, JSON, Java…). License UNCLEAR at mirror level; marked THIRD_PARTY.
+
+### Fork attribution refined
+
+- Of the workspace fork's 258 differing files: **87 match upstream v0.6.5 exactly**, **0 match v0.6.6 exactly** (forward-ported upstream code), **171 are fork-original modifications**.
+
+### Egress recheck
+
+- rebol.com/downloads/v278/… still blocked (curl exit 52).
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**; the reproduction dimension is now execution-proven for the acquisition layer.
+
