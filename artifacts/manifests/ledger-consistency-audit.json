@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-31T18:27:51Z",
+  "artifact_records": 117,
+  "hashes_verified": 114,
+  "hash_mismatches": 0,
+  "paths_missing": 0,
+  "provenance_edges": 60,
+  "provenance_refs_missing": 0,
+  "unparseable_manifests": 0,
+  "issues": [],
+  "result": "CONSISTENT"
+}

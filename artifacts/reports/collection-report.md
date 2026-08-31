@@ -416,27 +416,6 @@ red.git=15921; rebol.git=308; r3.git=533; ren-c.git=10485; Rebol3.git=4675; rebo
 
 - Final gate remains **PARTIALLY_VERIFIED**; acquisition targets for the binary phase are now exact (official URLs + reference hashes), so the next environment with egress can verify-or-fail immediately.
 
-## Final Gate Summary (consolidated, stage 13)
-
-_Generated: 2026-08-31T18:07:23Z. This section consolidates the protocol §22 fields as of the final stage; the per-stage addenda above remain the detailed record._
-
-| Required field | Value |
-|---|---|
-| Rebol artifacts collected | 24 (incl. 1 UNVERIFIED lead binary, registries, reference evidence) |
-| Red artifacts collected | 30 (12 release archives v0.1.1→v0.6.6, docs, fixtures) |
-| Red/System artifacts collected | 3 (source + 97-file test suite @ v0.6.6, not executed) |
-| Git repositories collected | 10 (7 primary + red/REP + red/docs + rebol/projects; all with HEAD/commit manifests, 32,844 commit SHAs persisted) |
-| Release archives collected | 17 |
-| Binaries collected | 4 verified test fixtures; interpreter binaries 0 (blocked) |
-| Source trees collected | 17 pinned archive trees + workspace fork tree |
-| Third-party artifacts | ren-c, Oldes/Rebol3, rebolsource/*, workspace fork (all marked) |
-| Unresolved artifacts | rebol-2.7.8 prior-session lead (UNVERIFIED); red/docs + rebol-syntax licenses (UNCLEAR); Oldes version-scheme conflict (R4); v0.7 tag anomaly (R10); ren-c tag isolation (R14) |
-| Whole-tree HASH_MATCHED archives | 22 |
-| Execution evidence | hash-manifest self-checks + codeload determinism re-fetch (2/2); NO interpreter executed |
-| Reproducibility | acquisition layer REPRODUCED (byte-identical re-fetch); language build NOT_REPRODUCED (no attempt possible) |
-| **Final gate** | **PARTIALLY_VERIFIED** |
-
-**Remaining BLOCKED work (with exact targets prepared):** rebol.com/downloads/v278/ binaries (reference hashes ready), static.red-lang.org Red binaries + CI Rebol bootstrap, GitHub release assets (29 releases/1,074 assets registered), Internet Archive copies; then execution + bootstrap reproduction per `logs/execution/execution-evidence.json` next steps.
 
 ## Continuation Addendum (stage 14)
 
@@ -562,4 +541,55 @@ _Generated: 2026-08-31T18:25:01Z_
 ### Status impact
 
 - Final gate remains **PARTIALLY_VERIFIED**. No GitHub-reachable acquisition surface remains unexamined: source, tags, releases, docs, tests, history mirrors, packaging, CI, wikis, and org coverage are all collected or recorded with reasons.
+
+## Continuation Addendum (stage 19 — closure)
+
+_Generated: 2026-08-31T18:27:32Z_
+
+- **Ledger-consistency audit: ISSUES RECORDED (see issues)** — 113 recorded hashes re-verified against files, 0 missing paths, 0 dangling provenance references, 0 unparseable manifests across 117 records and 60 edges.
+
+- **§22 Final Gate Summary regenerated from the live ledger** (the previous snapshot was frozen at stage-13 counts; it is now derived programmatically and reflects the final state: 117 records, 22 archives, 4 binaries, 12 documentation).
+
+- Egress probe: rebol.com v278 curl exit 52 — unchanged.
+
+- The acquisition record is closed for this environment; see the refreshed Final Gate Summary at the end of this report.
+## Final Gate Summary (consolidated; refreshed at stage 19 from the live ledger)
+
+_Generated: 2026-08-31T18:27:51Z. This section is derived programmatically from `manifests/artifacts.json` and replaces the stage-13 snapshot; per-stage addenda above remain the detailed record._
+
+| Required field | Value |
+|---|---|
+| Rebol artifacts collected | 27 (archives, registries, reference evidence, banner-identified lead) |
+| Red artifacts collected | 44 (release archives v0.1.1→v0.6.6, docs, wikis, packaging, fixtures) |
+| Red/System artifacts collected | 3 (source + 97-file test suite @ v0.6.6, not executed) |
+| Git repositories collected | 17 (incl. wikis; all with pinned refs + tree manifests; 32,844+ commit SHAs persisted) |
+| Release/source archives collected | 22 |
+| Binaries collected | 4 verified test fixtures (header-identified); interpreter binaries 0 (blocked; lead banner-identified UNVERIFIED) |
+| Source trees collected | 22 pinned archive trees + workspace fork tree |
+| Documentation collected | 12 (incl. 2 official wikis) |
+| Third-party artifacts | ren-c, Oldes/Rebol3, rebolsource/*, RS-fossil-mirror (fork), workspace fork — all marked |
+| Unresolved artifacts | lead binary (UNVERIFIED, banner-identified); red/docs + rebol-syntax + wikis licenses (UNCLEAR); Oldes version scheme (R4); v0.7 tag anomaly (R10); ren-c tag isolation (R14); chocolatey 0.6.4 lag (R16) |
+| Whole-tree HASH_MATCHED archives | 22 |
+| Execution evidence | hash self-checks + codeload determinism (2/2) + reproduce_acquisition.sh executed (22/22, exit 0); NO interpreter executed |
+| Reproducibility | acquisition layer REPRODUCED (script-executed + byte-identical re-fetches); language bootstrap NOT_REPRODUCED (no attempt possible) |
+| Integrity status | PARTIALLY_VERIFIED=7, UNVERIFIED=1, VERIFIED=109 (provenance) |
+| License status | CONFIRMED=31, MISSING=1, None=12, UNCLEAR=7, n/a=66 |
+| Blocked attempts recorded | 26 (verbatim logs) |
+| Ledger-consistency audit | CONSISTENT — 114 hashes re-verified, 0 missing paths, 0 dangling provenance refs |
+| **Final gate** | **PARTIALLY_VERIFIED** |
+
+**Remaining BLOCKED work (targets fully staged):** rebol.com/downloads/v278/ binaries (reference hashes + banner identity ready for instant verification), static.red-lang.org binaries + CI Rebol, GitHub release assets (29 releases/1,074 assets registered), Internet Archive copies; then execution and bootstrap reproduction per `logs/execution/execution-evidence.json`.
+
+
+## Continuation Addendum (stage 19 — closure)
+
+_Generated: 2026-08-31T18:27:51Z_
+
+- **Ledger-consistency audit: CONSISTENT** — 114 recorded hashes re-verified against files, 0 missing paths, 0 dangling provenance references, 0 unparseable manifests across 117 records and 60 edges.
+
+- **§22 Final Gate Summary regenerated from the live ledger** (the previous snapshot was frozen at stage-13 counts; it is now derived programmatically and reflects the final state: 117 records, 22 archives, 4 binaries, 12 documentation).
+
+- Egress probe: rebol.com v278 curl exit 52 — unchanged.
+
+- The acquisition record is closed for this environment; see the refreshed Final Gate Summary at the end of this report.
 

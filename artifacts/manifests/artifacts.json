@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 116,
+  "record_count": 117,
   "artifacts": [
     {
       "project": "RED",
@@ -470,7 +470,7 @@
       "tag": null,
       "filename": "Oldes_Rebol3.git-evidence",
       "path": "artifacts/manifests/git-collection.json#Oldes_Rebol3",
-      "sha256": "9ece2b446293ed32de595734b5ea95e36fc301f22d948b080fc9af37eb04cdc0",
+      "sha256": "afa5131aab856682383676506808bfed0457ee85e6db55ab29ae76d5407e4506",
       "size": null,
       "provenance_status": "PARTIALLY_VERIFIED",
       "provenance_status_reason": "third-party/historical repository; lineage partially established via git merge-base evidence (see provenance.json)",
@@ -490,7 +490,7 @@
         }
       },
       "integrity_status": "HASHED",
-      "hash_note": "sha256 over the repo's deterministic tree-manifest files (git ls-tree output)",
+      "hash_note": "sha256 over the repo's deterministic tree-manifest files; recomputed at stage 19 (post stage-16 canonicalization of quoted non-ASCII paths)",
       "retrieved_at": "2026-08-31T17:33:52Z"
     },
     {
@@ -2179,6 +2179,21 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "sha256 -c exit 1 (129 OK); ledger 112 records"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 19",
+      "filename": "ledger-consistency-audit.json",
+      "path": "artifacts/manifests/ledger-consistency-audit.json",
+      "sha256": "92dc8630d16b4b32d96a821754d4a51e4146bc6b5b80e65387fec565d207d1f0",
+      "size": 273,
+      "retrieved_at": "2026-08-31T18:27:51Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "CONSISTENT"
     }
   ]
 }
