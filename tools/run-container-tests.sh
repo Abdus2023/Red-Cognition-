@@ -145,7 +145,7 @@ def parse_file(path):
         "assertions": last(r"(?:Number of Assertions Performed|No of asserts)\s*:?\s*(\d+)"),
         "passed": last(r"(?:Number of Assertions Passed|Passed)\s*:?\s*(\d+)"),
         "failed": last(r"(?:Number of Assertions Failed|Failed)\s*:?\s*(\d+)"),
-        "failure_marker": bool(re.search(r"TEST FAILURES|\bFailed\s*:?\s*[1-9]\d*", text, re.I)),
+        "failure_marker": bool(re.search(r"TEST FAILURES|\bFailed\s*:?\s*[1-9]\d*|\*\*\s+(?:Access|Syntax|Internal|Script|Throw|Math|User)?\s*Error\s*:|^\s*not ok\b", text, re.I | re.M)),
     }
 
 suites = [parse_file(out / "red.stdout.log"), parse_file(out / "red-system.stdout.log")]
