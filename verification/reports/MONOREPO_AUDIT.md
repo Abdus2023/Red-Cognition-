@@ -74,7 +74,11 @@ License indications are recorded per file where present. Repository-level licens
 ## CI Status
 - `.github/workflows/main.yml` discovered Windows jobs that download `rebview.exe` and run Red suites.
 - `.github/workflows/red-container-tests.yml` discovered Ubuntu container tests using a pinned Rebol SHA-256.
-- No GitHub Actions run was executed or verified by this phase, so there is no CI PASS claim.
+- GitHub Actions runs were observed after push of commit `b4c5005efcfc7810a1ff24ed508c62ad4bfeeec2`.
+- Windows workflow run `33418665175` completed with conclusion `failure`; observed jobs failed during `Set up job`.
+- Red container tests workflow run `33418665227` completed with conclusion `cancelled`; bootstrap download/verification and image build steps succeeded, but `Run Red and Red/System container tests` was cancelled.
+- There is no CI PASS claim for Red, Red/System, or Red-Cognition tests.
+- Detailed CI metadata evidence: `verification/reports/CI_EVIDENCE.md`.
 
 ## Offline Status
 SOURCE-AVAILABLE is partially established by local source presence and hashes. BUILD-AVAILABLE, BOOTSTRAP-AVAILABLE, and EXECUTION-AVAILABLE for Red/Rebol are not established locally; Stage 0 depends on external bootstrap binaries unless separately provisioned.
@@ -108,3 +112,4 @@ SOURCE-AVAILABLE is partially established by local source presence and hashes. B
 - `verification/reports/DUPLICATE_ANALYSIS.md`
 - `verification/reports/TEST_STATUS.md`
 - `verification/reports/LOCAL_EXECUTION_EVIDENCE.md`
+- `verification/reports/CI_EVIDENCE.md`
