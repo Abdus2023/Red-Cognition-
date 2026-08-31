@@ -1,0 +1,47 @@
+{
+  "question": "where do the Red bootstrap compiler/lexer live per ref?",
+  "table": {
+    "v0.6.4": {
+      "compiler.r": "527490543ec68bf73247f94ef9d0524b2049f5c6",
+      "lexer.r": "4ea759973eedf1d4edf91adf7c944f95ad54d588",
+      "boot.red": "65f4335e370024c6d8802c55e78eb57536668faa",
+      "encapper/compiler.r": null,
+      "encapper/lexer.r": null
+    },
+    "v0.6.5": {
+      "compiler.r": null,
+      "lexer.r": null,
+      "boot.red": null,
+      "encapper/compiler.r": "dfb08bcb4dcacfa73460551feba671d83250f463",
+      "encapper/lexer.r": "0c0d7c83c4f3dd22556cb27223c8cec31777773e"
+    },
+    "v0.6.6": {
+      "compiler.r": null,
+      "lexer.r": null,
+      "boot.red": null,
+      "encapper/compiler.r": "b46486e39c8238f28ea3519c0578fc39bfd3ff38",
+      "encapper/lexer.r": "ae72c727994d3768bf98290400e6e69cb7a50805"
+    },
+    "v0.7": {
+      "compiler.r": "5deb5448867322dfdaf9058ae72ce8c340b432cd",
+      "lexer.r": "0299995af4541560532961558612bfa942c9fbad",
+      "boot.red": "d2b5f719fc6f2220ea7b2b9b136f21db27cafc6c",
+      "encapper/compiler.r": null,
+      "encapper/lexer.r": null
+    },
+    "HEAD": {
+      "compiler.r": null,
+      "lexer.r": null,
+      "boot.red": null,
+      "encapper/compiler.r": "96328104a9714fcfed787b70129ae9ddb6206863",
+      "encapper/lexer.r": "30e1b617a3a840bb7cdc2f27916073a65d9bc11c"
+    }
+  },
+  "findings": [
+    "v0.6.4 (2018 tag): compiler.r/lexer.r/boot.red at repository ROOT",
+    "v0.6.5 (2024-02-10 tag, no release): root copies REMOVED; relocated to encapper/compiler.r + encapper/lexer.r; boot.red removed",
+    "v0.6.6 (2025 release): encapper/ locations continue evolving (different blob SHAs than v0.6.5)",
+    "v0.7 (2019 WIP tag): still root layout \u2014 independent 2019 line predates the relocation",
+    "content-identity: root compiler.r @ v0.6.4 (52749054\u2026) != encapper/compiler.r @ v0.6.5 (dfb08bcb\u2026) \u2014 the files were modified as part of the move (not a pure rename)"
+  ]
+}

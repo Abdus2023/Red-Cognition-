@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-31T18:07:23Z",
+  "finding": "REBOL_2_SOURCE_NOT_FOUND_ON_GITHUB",
+  "evidence": [
+    "GitHub searches performed this session (logs/search-queries.log): 'rebol 2.7.8', 'rebol 2 source', 'rebol2', 'rebol binaries', 'rebol2 interpreter', 'rebol bootstrap red' - no repository containing Rebol 2.x interpreter SOURCE was returned (code search hits reference binaries, not source)",
+    "rebol org on GitHub contains exactly 2 repos (rebol/projects, rebol/rebol) - rebol/rebol's own description: 'Source code for the Rebol interpreter' but its tree is the R3 codebase (src/boot/version.r = 2.101.0.3.1), consistent with the historically documented fact that only R3 was open-sourced (Apache-2.0)",
+    "rebolsource org (5 repos) and Oldes repos: all R3-lineage; no R2 source",
+    "Ecosystem build recipes (nixpkgs, CRUX ports + md5sums, AUR, exercism runner, red-docker - all in manifests/reference-evidence/) build Rebol 2 exclusively from rebol.com PREBUILT tarballs; none reference source",
+    "Historical fork lead Oldes/Rebol-legacy -> HTTP 404 (blocked-attempts.json)"
+  ],
+  "conclusion": "Within this environment's reachable channels, Rebol 2.x source is NOT acquirable; R2 material in this collection is and remains: prebuilt binaries (UNFREE license, blocked), tests (rebolsource/rebol-test), and documentation. Status recorded as a documented FINDING, not assumed.",
+  "status": "PROVENANCE_FINDING"
+}

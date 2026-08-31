@@ -1,0 +1,3 @@
+attempt: https://static.red-lang.org/tmp/rebol (upstream CI bootstrap URL, red/red v0.6.4 .travis.yml:89)
+date: 2026-08-31T18:22:58Z
+curl exit: 35

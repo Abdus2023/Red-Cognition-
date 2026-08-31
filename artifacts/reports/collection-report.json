@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-08-31T18:25:04Z",
+  "final_gate": "PARTIALLY_VERIFIED",
+  "final_gate_rationale": "Substantial verified evidence exists (official upstream identity, immutable tag/commit resolution, pinned-hash archives, git lineage proof). Verification is incomplete because every executable-binary channel (static.red-lang.org, rebol.com, archive.org, GitHub release-asset CDN) is blocked by the sandbox egress allowlist, so no binary acquisition, execution, or bootstrap reproduction was possible.",
+  "collection_summary": {
+    "rebol_artifacts_collected": 27,
+    "red_artifacts_collected": 44,
+    "red_system_artifacts_collected": 3,
+    "related_metadata_records": 42,
+    "git_repositories_collected": 7,
+    "git_working_trees_collected": 1,
+    "release_archives_collected": 12,
+    "source_archives_collected": 7,
+    "binaries_collected": 3,
+    "binaries_blocked_or_unverified": 1,
+    "source_trees_collected": 8,
+    "test_suites_collected": 2,
+    "documentation_collected": 12,
+    "third_party_artifacts": 7,
+    "unresolved_artifacts": 1,
+    "interpreter_binaries_executed": 0,
+    "execution_evidence_records": 0,
+    "discovered": {
+      "red_org_repositories_on_github": 33,
+      "rebol_org_repositories_on_github": 2,
+      "rebolsource_org_repositories_on_github": 5,
+      "github_search_queries_run": [
+        "rebol 2.7.8",
+        "red language compiler",
+        "red-system"
+      ]
+    }
+  },
+  "version_matrix": null,
+  "acquisition_problems": {
+    "network_blocked": [
+      "http://www.rebol.com/",
+      "http://www.rebol.com/download-core.html",
+      "https://www.rebol.com/download-core.html",
+      "https://www.rebol.com/pub/platforms/rebol-core-278-4-10.tar.gz",
+      "https://archive.org/wayback/available?url=rebol.com/pub/platforms/rebol-core-278-4-3.tar.gz",
+      "https://web.archive.org/web/2020id_/http://www.rebol.com/pub/platforms/rebol-core-278-4-3.tar.gz",
+      "https://static.red-lang.org/dl/auto/linux/red-latest",
+      "https://www.red-lang.org/p/download.html",
+      "https://github.com/Oldes/Rebol3/releases/download/3.22.1/rebol3-core-linux-x64.gz",
+      "https://raw.githubusercontent.com/red/red/master/version.r",
+      "https://media.githubusercontent.com/",
+      "https://objects.githubusercontent.com/",
+      "https://release-assets.githubusercontent.com/",
+      "https://rebolsource.net",
+      "https://www.rebol.tech",
+      "https://deb.debian.org",
+      "https://snapshot.debian.org",
+      "https://gitlab.com",
+      "https://sourceforge.net",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz",
+      "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz",
+      "https://static.red-lang.org/tmp/rebol"
+    ],
+    "not_found": [
+      {
+        "url": "https://github.com/red/red/releases (assets)",
+        "purpose": "Red release binaries",
+        "result": "NOT_FOUND",
+        "detail": "releases exist but all have 0 assets (not a network failure)"
+      },
+      {
+        "url": "https://github.com/Oldes/Rebol-legacy",
+        "purpose": "Rebol 2 maintained fork (lead)",
+        "result": "NOT_FOUND",
+        "detail": "HTTP 404; Oldes' current fork is Oldes/Rebol3"
+      }
+    ],
+    "missing_releases": [
+      "red/red: tag v0.7 exists with no GitHub release",
+      "rebol/rebol: no tags and no releases at all (official R3 distribution never mirrored on GitHub)",
+      "metaeducation/ren-c: no GitHub releases (only atronix-* test tags); binaries live off-GitHub (blocked)"
+    ],
+    "conflicting_versions": [
+      "Oldes/Rebol3 internal .version=3.22.53.5.4.3.1 vs release tag 3.22.1 (different schemes; unresolved by design)",
+      "workspace fork claims 0.6.4 but is NOT byte-identical to upstream v0.6.4 (253 differing files, 334 fork-only files)"
+    ],
+    "missing_licenses": [
+      "rebolsource/rebol-syntax: no LICENSE file (UNCLEAR)",
+      "prior-session rebol-2.7.8 binary: no license claim (MISSING)",
+      "Oldes/Rebol3: bundled third-party extensions not individually license-verified"
+    ],
+    "corrupted_archives": [],
+    "incomplete_source_trees": [
+      "red/red clones are blobless (no blob content locally); full bytes available via committed tag archives and GitHub"
+    ],
+    "inaccessible_historical_artifacts": [
+      "rebol.com official REBOL 2.7.8 binaries + docs (TLS-blocked)",
+      "Internet Archive copies of rebol.com binaries (blocked)",
+      "rebolsource.net Ren-C/R3 historical builds (blocked)",
+      "www.rebol.tech (blocked)"
+    ],
+    "execution_gaps": [
+      "No artifact executed; no bootstrap reproduction attempted (no interpreter obtainable) -> BOOTSTRAP_EXECUTED / BOOTSTRAP_REPRODUCED / any EXECUTED claim: NONE"
+    ]
+  },
+  "counts_reconciliation_note": "rebol_artifacts_collected includes 1 UNVERIFIED lead binary and 6 METADATA records; red_artifacts_collected includes 3 verified test-fixture binaries."
+}

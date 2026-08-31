@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-08-31T18:04:19Z",
+  "repos": [
+    {
+      "repo": "https://github.com/red/red.git",
+      "head": "b492f75752cc6b3abb8136825e9448ced9a357f2",
+      "commits": 15921,
+      "manifest": "artifacts/manifests/history/red.commits.txt",
+      "sha256": "bfd9b698335125cac7be3f14e42c927bac93c0353ec5f685f52cfcca75423d03"
+    },
+    {
+      "repo": "https://github.com/rebol/rebol.git",
+      "head": "25033f897b2bd466068d7663563cd3ff64740b94",
+      "commits": 308,
+      "manifest": "artifacts/manifests/history/rebol_rebol.commits.txt",
+      "sha256": "591e493721433003eb2b61a516058ab066795a88e269d1c1533c86f333375dfc"
+    },
+    {
+      "repo": "https://github.com/rebolsource/r3.git",
+      "head": "98cdfcd6e439390756868b390b0ff8aa01d84551",
+      "commits": 533,
+      "manifest": "artifacts/manifests/history/rebolsource_r3.commits.txt",
+      "sha256": "0fdc36a59fd98cb0bbba8a5c0b57c85988726bdd571bb458af39a69a0efbeca0"
+    },
+    {
+      "repo": "https://github.com/metaeducation/ren-c.git",
+      "head": "e31d5698d73678d797df319eb855b3995716d9f1",
+      "commits": 10485,
+      "manifest": "artifacts/manifests/history/metaeducation_ren-c.commits.txt",
+      "sha256": "acd698034e0e5f0a5bfb23bbc2961360234fe4e63edca557a1f69901981fa862"
+    },
+    {
+      "repo": "https://github.com/Oldes/Rebol3.git",
+      "head": "d5b237cea60d06b72c59bb6dbed0022b482f4c57",
+      "commits": 4675,
+      "manifest": "artifacts/manifests/history/Oldes_Rebol3.commits.txt",
+      "sha256": "538fa238797d97c7b41fcba4a0f6873789455020a3fabf744fb2d27b1c0be061"
+    },
+    {
+      "repo": "https://github.com/rebolsource/rebol-syntax.git",
+      "head": "4ff11396312d0ccd8490191571206f628be79e8e",
+      "commits": 45,
+      "manifest": "artifacts/manifests/history/rebolsource_rebol-syntax.commits.txt",
+      "sha256": "25a65901498e1febac9fcb0a1e86a56fa6b7b286d847192c39fc84cfcb1dfbeb"
+    },
+    {
+      "repo": "https://github.com/rebolsource/rebol-test.git",
+      "head": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234",
+      "commits": 460,
+      "manifest": "artifacts/manifests/history/rebolsource_rebol-test.commits.txt",
+      "sha256": "7afcf06988c0bb0a2d69cc0150fdbd14afc002c48d500ff4bbffdea4031cf747"
+    },
+    {
+      "repo": "https://github.com/red/REP",
+      "head": "95d96a64ab8cb2b754acb7775b9550370bfc8c69",
+      "commits": 52,
+      "manifest": "artifacts/manifests/history/red_REP.commits.txt",
+      "sha256": "8cf0372cdf2d013f80505e49cdd67893db9783025e68d003efafa9ee9dcf437f"
+    },
+    {
+      "repo": "https://github.com/red/docs",
+      "head": "e62721663f34dc020b2601db89420d755f14f865",
+      "commits": 1271,
+      "manifest": "artifacts/manifests/history/red_docs.commits.txt",
+      "sha256": "add705999dcff5d5bdf7964af0ac024109b8415731f053ee4412c72911998390"
+    },
+    {
+      "repo": "https://github.com/rebol/projects",
+      "head": "23a251573a49ee9c457ca72bce67d30894e1967e",
+      "commits": 4,
+      "manifest": "artifacts/manifests/history/rebol_projects.commits.txt",
+      "sha256": "a1310cedc3aab651df148c7622f2935017fc573f31c18f52357408c16aaa6c93"
+    }
+  ]
+}

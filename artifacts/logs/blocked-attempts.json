@@ -1,0 +1,168 @@
+{
+  "generated_at": "2026-08-31T17:33:52Z",
+  "environment": "sandbox egress allowlist: github.com, api.github.com, codeload.github.com only",
+  "attempts": [
+    {
+      "url": "http://www.rebol.com/",
+      "purpose": "official REBOL site reachability",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52 empty reply (http)"
+    },
+    {
+      "url": "http://www.rebol.com/download-core.html",
+      "purpose": "official REBOL/Core 2.7.8 download page",
+      "result": "NETWORK_BLOCKED",
+      "detail": "http_code 000 (direct + with UA retry)"
+    },
+    {
+      "url": "https://www.rebol.com/download-core.html",
+      "purpose": "official REBOL/Core 2.7.8 download page",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35 SSL_ERROR_SYSCALL"
+    },
+    {
+      "url": "https://www.rebol.com/pub/platforms/rebol-core-278-4-10.tar.gz",
+      "purpose": "official REBOL 2.7.8 Linux x86-64 binary",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35 SSL_ERROR_SYSCALL (evidence log: logs/execution/blocked-rebol-com.log)"
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=rebol.com/pub/platforms/rebol-core-278-4-3.tar.gz",
+      "purpose": "archival copy of official REBOL 2.7.8 binary",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://web.archive.org/web/2020id_/http://www.rebol.com/pub/platforms/rebol-core-278-4-3.tar.gz",
+      "purpose": "archival copy of official REBOL 2.7.8 binary",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://static.red-lang.org/dl/auto/linux/red-latest",
+      "purpose": "official Red binary (automated build)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35 SSL_ERROR_SYSCALL (evidence log: logs/execution/blocked-static-red-lang-org.log)"
+    },
+    {
+      "url": "https://www.red-lang.org/p/download.html",
+      "purpose": "official Red download page",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://github.com/Oldes/Rebol3/releases/download/3.22.1/rebol3-core-linux-x64.gz",
+      "purpose": "third-party prebuilt Rebol 3 binary (GitHub release asset)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "github.com -> 302 -> release-assets.githubusercontent.com TLS blocked (curl exit 35; evidence log: logs/execution/blocked-github-release-assets-rebol3.log)"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/red/red/master/version.r",
+      "purpose": "raw file access test",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://media.githubusercontent.com/",
+      "purpose": "LFS/asset host reachability",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://objects.githubusercontent.com/",
+      "purpose": "release asset host reachability",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://release-assets.githubusercontent.com/",
+      "purpose": "release asset host reachability",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://rebolsource.net",
+      "purpose": "historical Ren-C/R3 build host",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://www.rebol.tech",
+      "purpose": "Oldes' Rebol site",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://deb.debian.org",
+      "purpose": "distro package mirror (rebol package)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://snapshot.debian.org",
+      "purpose": "distro archive (rebol package)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://gitlab.com",
+      "purpose": "alternative host check",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://sourceforge.net",
+      "purpose": "alternative host check",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35"
+    },
+    {
+      "url": "https://github.com/red/red/releases (assets)",
+      "purpose": "Red release binaries",
+      "result": "NOT_FOUND",
+      "detail": "releases exist but all have 0 assets (not a network failure)"
+    },
+    {
+      "url": "https://github.com/Oldes/Rebol-legacy",
+      "purpose": "Rebol 2 maintained fork (lead)",
+      "result": "NOT_FOUND",
+      "detail": "HTTP 404; Oldes' current fork is Oldes/Rebol3"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz",
+      "purpose": "official REBOL 2.7.8 binary (current URL pattern per official site source + nix/crux/AUR)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 52",
+      "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "https://static.red-lang.org/tmp/rebol",
+      "purpose": "REBOL interpreter used by official Red CI (v0.6.4 .travis.yml:89)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35",
+      "attempted_at": "2026-08-31T18:22:46Z"
+    }
+  ],
+  "note": "earlier /pub/platforms/ targets came from outdated historical docs; the pattern confirmed by official red/web-red source and all distro recipes is /downloads/v278/"
+}

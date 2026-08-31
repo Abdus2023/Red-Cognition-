@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-08-31T17:53:01Z",
+  "purpose": "upstream-authored download/execution URLs for Rebol interpreters used by official Red CI (evidence for future acquisition once egress allows)",
+  "findings": [
+    {
+      "ref": "v0.6.4",
+      "file": ".travis.yml",
+      "hits": [
+        {
+          "line": 80,
+          "text": "# Linux: hook up qemu, build 32bit image including curl and rebol"
+        },
+        {
+          "line": 89,
+          "text": "curl -o /bin/rebol https://static.red-lang.org/tmp/rebol &&"
+        },
+        {
+          "line": 106,
+          "text": "sudo curl -o /usr/local/bin/rebol"
+        },
+        {
+          "line": 107,
+          "text": "https://static.red-lang.org/tmp/rebol-osx &&"
+        }
+      ]
+    },
+    {
+      "ref": "v0.6.4",
+      "file": ".appveyor.yml",
+      "hits": [
+        {
+          "line": 7,
+          "text": "## Download Rebol v276"
+        }
+      ]
+    },
+    {
+      "ref": "v0.6.6",
+      "file": ".appveyor.yml",
+      "hits": [
+        {
+          "line": 7,
+          "text": "## Download Rebol v276"
+        }
+      ]
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-32/Dockerfile",
+      "hits": [
+        {
+          "line": 3,
+          "text": "RUN apt-get update && apt-get -y install curl && curl -o /bin/rebol https://static.red-lang.org/tmp/rebol && chmod +x /bin/rebol"
+        }
+      ]
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-gtk/Dockerfile",
+      "hits": [
+        {
+          "line": 4,
+          "text": "RUN apt-get update && apt-get -y install curl libcurl4 libgtk-3-0 xvfb && curl -o /bin/rebol https://static.red-lang.org/tmp/rebol && chmod +x /bin/rebol"
+        }
+      ]
+    },
+    {
+      "ref": "v0.7",
+      "file": ".travis.yml",
+      "hits": [
+        {
+          "line": 102,
+          "text": "# Linux: hook up qemu, build 32bit image including curl and rebol"
+        },
+        {
+          "line": 111,
+          "text": "curl -o /bin/rebol https://static.red-lang.org/tmp/rebol &&"
+        },
+        {
+          "line": 137,
+          "text": "sudo curl -o /usr/local/bin/rebol"
+        },
+        {
+          "line": 138,
+          "text": "https://static.red-lang.org/tmp/rebol-osx &&"
+        }
+      ]
+    },
+    {
+      "ref": "v0.7",
+      "file": ".appveyor.yml",
+      "hits": [
+        {
+          "line": 7,
+          "text": "## Download Rebol v276"
+        }
+      ]
+    },
+    {
+      "ref": "HEAD",
+      "file": ".appveyor.yml",
+      "hits": [
+        {
+          "line": 18,
+          "text": "## Download Rebol v276"
+        }
+      ]
+    }
+  ],
+  "files_scanned": [
+    {
+      "ref": "v0.6.4",
+      "file": ".travis.yml",
+      "sha256": "70e998129e52810d49fac9bf6bf26b8cb85ad7759d55dd0cf33809d5d0f43cd4"
+    },
+    {
+      "ref": "v0.6.4",
+      "file": ".appveyor.yml",
+      "sha256": "472bf2ad5f4921bd074eb21e39e75badcb637008362c0883efb3e412ea322a57"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": ".appveyor.yml",
+      "sha256": "fa7061c71698f00c09cad5e482dd406ff01f74451b8640a47af91309eb943c52"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": ".github/workflows/RPi.yml",
+      "sha256": "5115ff4b41a079235dd7595d678f317e672ce500098003863da33c9356bc6f30"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": ".github/workflows/linux.yml",
+      "sha256": "aacaf629fa7fd75d59a96ee6e2a77696984897a7219984b82b95c84576401b68"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": ".github/workflows/main.yml",
+      "sha256": "b43b3bfddfb3cfbfb8ba9ab0207febd9c8f53c3fabe3650f6c303058b1ba4cf9"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-32/Dockerfile",
+      "sha256": "bd9625d5d553d2b89927826c59430add6d156869a3a349c220f632c98daea093"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-32/action.yml",
+      "sha256": "185435210fffab32284fb6bc080c0c5d8e17f2584eb8ad976d67775690b1eca5"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-32/entrypoint.sh",
+      "sha256": "06268a8bc2cb88559b5032aeac4b5fe8f43a938853ceab960298081956bdd246"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-gtk/Dockerfile",
+      "sha256": "d43beb8faeaf805f8bcf240f51add25ca58f6346e0eefd2e1b91934aef4a1a6c"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-gtk/action.yml",
+      "sha256": "185435210fffab32284fb6bc080c0c5d8e17f2584eb8ad976d67775690b1eca5"
+    },
+    {
+      "ref": "v0.6.6",
+      "file": "CI/Linux-gtk/entrypoint.sh",
+      "sha256": "06268a8bc2cb88559b5032aeac4b5fe8f43a938853ceab960298081956bdd246"
+    },
+    {
+      "ref": "v0.7",
+      "file": ".travis.yml",
+      "sha256": "59e38fe26f86fc06806561fea44aaa1c59188e8d647f35375a4dcd521d39b964",
+      "source": "git show (blobless lazy fetch)"
+    },
+    {
+      "ref": "v0.7",
+      "file": ".appveyor.yml",
+      "sha256": "472bf2ad5f4921bd074eb21e39e75badcb637008362c0883efb3e412ea322a57",
+      "source": "git show (blobless lazy fetch)"
+    },
+    {
+      "ref": "HEAD",
+      "file": ".github/workflows/main.yml",
+      "sha256": "927f1ff4418d125b7074884358bca664196e0421d17d0c152c15814399246834",
+      "source": "git show (blobless lazy fetch)"
+    },
+    {
+      "ref": "HEAD",
+      "file": ".github/workflows/linux.yml",
+      "sha256": "9d0ae6086a9b0ffae6981e7b27b7852b8d9d011245d6048a13b848e98cebaca8",
+      "source": "git show (blobless lazy fetch)"
+    },
+    {
+      "ref": "HEAD",
+      "file": ".appveyor.yml",
+      "sha256": "c85476d8754b64722b612920f2a4dd77d8d481337dc6ac95e1b9b6064a24189b",
+      "source": "git show (blobless lazy fetch)"
+    }
+  ]
+}

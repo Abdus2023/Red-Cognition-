@@ -1,0 +1,425 @@
+{
+  "generated_at": "2026-08-31T17:33:52Z",
+  "graph": [
+    {
+      "relationship": "release->tag",
+      "source": "GitHub release red/red v0.6.6 (published 2025-03-19)",
+      "target": "tag v0.6.6",
+      "evidence": "github-discovery.json releases[].tag_name=v0.6.6; target_commitish=master",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag->commit",
+      "source": "tag v0.6.6",
+      "target": "commit 6942c7a021253150c3e3cf90428305892340db03",
+      "evidence": "git rev-parse v0.6.6^{commit} in blobless clone (git-collection.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "commit->source-tree",
+      "source": "commit 6942c7a021253150c3e3cf90428305892340db03",
+      "target": "source tree (673 entries, red__v0.6.6.lsr)",
+      "evidence": "git ls-tree -r v0.6.6 deterministic manifest",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "source-tree->archive",
+      "source": "tree of commit 6942c7a0...",
+      "target": "artifacts/red/releases/red-0.6.6.tar.gz",
+      "evidence": "codeload.github.com/red/red/tar.gz/refs/tags/v0.6.6 (download pinned to tag->commit); version evidence encapper/version.r=0.6.6 inside",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->binary",
+      "source": "red-0.6.6.tar.gz tree (commit 6942c7a0...)",
+      "target": "artifacts/red/tests/libRed-v0.6.6/libRed.dll",
+      "evidence": "git blob SHA-1 26e21ac96ad441a6888052538f8c468b50a67105 == git hash-object of downloaded bytes (verified)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-tag->fork-tree",
+      "source": "red/red tag v0.6.4 (commit 755eb943...)",
+      "target": "workspace fork tree 742181a8...",
+      "evidence": "blob-SHA comparison: 248/530 upstream source files byte-identical; 253 differ; 334 fork-only; upstream rejects ref 742181a (not present)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-repo->historical-repo",
+      "source": "rebol/rebol master (25033f89..., 2014-03-03)",
+      "target": "rebolsource/r3 HEAD (98cdfcd6...)",
+      "evidence": "git merge-base(rebolsource_r3 HEAD, rebol/rebol master) == 25033f89... -> rebol/rebol master is ancestor of rebolsource/r3 HEAD",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "historical-repo->continuation",
+      "source": "rebolsource/r3 (98cdfcd6...)",
+      "target": "metaeducation/ren-c HEAD (e31d5698d...)",
+      "evidence": "git merge-base(ren-c HEAD, rebolsource/r3 master) == d5d6908f... (2015-04-14); 10176 ren-c commits after fork point; GitHub metadata parent=rebolsource/r3",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-repo->fork",
+      "source": "rebol/rebol master (25033f89...)",
+      "target": "Oldes/Rebol3 HEAD (d5b237ce...)",
+      "evidence": "git merge-base(Oldes_Rebol3 HEAD, rebol/rebol master) == 25033f89... -> fork of official R3 master",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-text-identity",
+      "source": "rebol/rebol LICENSE (sha256 c95bae1d...)",
+      "target": "rebolsource/r3, rebol-test, Oldes/Rebol3 LICENSE files",
+      "evidence": "identical SHA-256 of LICENSE file content in all four archives (source-inspection.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-text-divergence",
+      "source": "rebolsource/r3 (Apache-2.0)",
+      "target": "metaeducation/ren-c (LGPL-3.0)",
+      "evidence": "ren-c LICENSE sha256 1a45b1d0... = GNU LGPL v3 text; differs from lineage Apache-2.0",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bootstrap-claim",
+      "source": "red/red README (v0.6.4 line 12; v0.6.6 line 24)",
+      "target": "Rebol2 interpreter required during bootstrap phase",
+      "evidence": "verbatim: 'except for a Rebol2 interpreter, required during the bootstrap phase' (v0.6.4) / 'required during the alpha stage' (v0.6.6); red.r + build/ present in trees",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bootstrap-status",
+      "source": "Red bootstrap chain",
+      "target": "BOOTSTRAP_CLAIMED + BOOTSTRAP_SOURCE_PRESENT",
+      "evidence": "claim documented by upstream; build scripts present; NOTHING executed -> BOOTSTRAP_EXECUTED/REPRODUCED NOT established",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "no-release-assets",
+      "source": "GitHub releases of red/red (v0.6.6, v0.6.4, v0.6.3)",
+      "target": "assets=0",
+      "evidence": "github-discovery.json: all three releases have empty assets arrays; binaries are distributed via official site (blocked from this environment)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.6.tar.gz",
+      "target": "pinned commit 6942c7a02125\u2026",
+      "evidence": "git blob SHA-1 of all 673 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.4.tar.gz",
+      "target": "pinned commit 755eb943ccea\u2026",
+      "evidence": "git blob SHA-1 of all 538 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-rebol-25033f897.tar.gz",
+      "target": "pinned commit 25033f897b2b\u2026",
+      "evidence": "git blob SHA-1 of all 220 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "ren-c-e31d5698d.tar.gz",
+      "target": "pinned commit e31d5698d736\u2026",
+      "evidence": "git blob SHA-1 of all 1082 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebolsource-r3-98cdfcd6e.tar.gz",
+      "target": "pinned commit 98cdfcd6e439\u2026",
+      "evidence": "git blob SHA-1 of all 221 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-syntax-4ff113963.tar.gz",
+      "target": "pinned commit 4ff11396312d\u2026",
+      "evidence": "git blob SHA-1 of all 4 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-test-409ef5c22.tar.gz",
+      "target": "pinned commit 409ef5c2270a\u2026",
+      "evidence": "git blob SHA-1 of all 27 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "fork->upstream (file-level attribution)",
+      "source": "workspace fork 742181a",
+      "target": "red/red tag v0.6.4 (755eb943)",
+      "evidence": "251 identical / 258 differing / 609 fork-only / 29 missing; full lists in manifests/fork-vs-upstream-v0.6.4.json",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "Oldes-Rebol3-d5b237cea.tar.gz",
+      "target": "pinned commit d5b237cea60d\u2026",
+      "evidence": "git blob SHA-1 of all 900 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.5.tar.gz",
+      "target": "pinned commit 3bafef220366\u2026",
+      "evidence": "git blob SHA-1 of all 638 archive members == git ls-tree blob SHAs of pinned commit 3bafef2203661bbcaafec8b859405ba7235a5981 (HASH_MATCHED (whole tree))",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "file-relocation",
+      "source": "root compiler.r/lexer.r (v0.6.4)",
+      "target": "encapper/compiler.r + encapper/lexer.r (v0.6.5)",
+      "evidence": "blob-sha genealogy: root files absent from v0.6.5; encapper/ copies present with DIFFERENT blob SHAs (content changed during move) \u2014 manifests/red-compiler-relocation.json",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "procedure-evidence",
+      "source": "documented bootstrap/rebuild procedures",
+      "target": "Rebol2/Rebol-SDK dependency claims",
+      "evidence": "verbatim quotes with line numbers + file hashes in manifests/bootstrap-procedure-evidence.json",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.3.tar.gz",
+      "target": "pinned commit 6a43c767fa2e\u2026",
+      "evidence": "git blob SHA-1 of all 503 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "ci-evidence",
+      "source": "official red/red CI configs (pinned refs)",
+      "target": "Rebol interpreter download/bootstrap URLs",
+      "evidence": "8 CI files carry upstream URLs, e.g. v0.6.4 .travis.yml: 'curl -o /bin/rebol https://static.red-lang.org/tmp/rebol' (manifests/upstream-ci-rebol-urls.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bundled-license-evidence",
+      "source": "Oldes/Rebol3 pinned tree (d5b237ce\u2026)",
+      "target": "bundled brotli/deflate/lz4 license material",
+      "evidence": "in-tree survey: license files + source-header copyright lines recorded with hashes (manifests/oldes-bundled-license-evidence.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag-registry",
+      "source": "red/red + Oldes/Rebol3 clones",
+      "target": "complete tag registries",
+      "evidence": "30 red tags + 30 Oldes tags with commit/tree/date/subject/file-count (manifests/*-tags-registry.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "acquisition-reproducibility",
+      "source": "codeload tag archives (red-0.6.6, red-0.6.3)",
+      "target": "byte-identical re-fetch",
+      "evidence": "re-fetched copies match stored SHA-256 exactly (manifests/acquisition-determinism.json; logs/execution/acquisition-determinism.log)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "official-org->docs-repo",
+      "source": "red (GitHub organization)",
+      "target": "https://github.com/red/REP",
+      "evidence": "org membership via API repo listing (github-discovery.json red_org_repos); HEAD 95d96a64ab8c archived + tree manifest",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "official-org->docs-repo",
+      "source": "red (GitHub organization)",
+      "target": "https://github.com/red/docs",
+      "evidence": "org membership via API repo listing (github-discovery.json red_org_repos); HEAD e62721663f34 archived + tree manifest",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "release-registry",
+      "source": "Oldes/Rebol3 GitHub releases (29)",
+      "target": "asset metadata registry",
+      "evidence": "1074 asset URLs+sizes persisted (manifests/oldes-rebol3-releases-registry.json); downloads blocked",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "org-collection",
+      "source": "rebol org (rebol/projects)",
+      "target": "pinned HEAD archive + tree manifest",
+      "evidence": "HEAD 23a251573a49 archived (sha256 9478eb38a8f1\u2026); official org, historical (last push 2013)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag-lineage",
+      "source": "ren-c version-bearing tags (atronix-*)",
+      "target": "isolated side lines (NOT in master history)",
+      "evidence": "merge-base ancestry: 0/7 tags reachable from ren-c master or from fork point d5d6908f - build markers on side lines (manifests/ren-c-tags-registry.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.0.tar.gz",
+      "target": "pinned commit a3d70c1aff30\u2026",
+      "evidence": "git blob SHA-1 of all 428 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.1.tar.gz",
+      "target": "pinned commit ce219eb4c1bc\u2026",
+      "evidence": "git blob SHA-1 of all 437 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.2.tar.gz",
+      "target": "pinned commit 28e70714b59d\u2026",
+      "evidence": "git blob SHA-1 of all 470 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.5.4.tar.gz",
+      "target": "pinned commit 4b5cc5e8243b\u2026",
+      "evidence": "git blob SHA-1 of all 365 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.4.3.tar.gz",
+      "target": "pinned commit 1ddcdc66e85c\u2026",
+      "evidence": "git blob SHA-1 of all 323 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.3.3.tar.gz",
+      "target": "pinned commit 8bd2545f611f\u2026",
+      "evidence": "git blob SHA-1 of all 273 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.2.6.tar.gz",
+      "target": "pinned commit dbc36db3a817\u2026",
+      "evidence": "git blob SHA-1 of all 129 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.1.1.tar.gz",
+      "target": "pinned commit 2297f1261c4e\u2026",
+      "evidence": "git blob SHA-1 of all 20 archive members == git ls-tree of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "cross-source-identity",
+      "source": "NixOS/nixpkgs red package",
+      "target": "red/red tag v0.6.4 commit 755eb943\u2026",
+      "evidence": "nixpkgs pins fetchFromGitHub rev=755eb943ccea9e78c2cab0f20b313a52404355cb \u2014 identical to our resolved v0.6.4 commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "reference-hash",
+      "source": "rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "target": "reference hashes (blocked acquisition)",
+      "evidence": "sha256 (nix base32-decoded) + md5 (crux) recorded; comparable once downloadable",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-evidence",
+      "source": "REBOL 2.7.8 binaries",
+      "target": "custom REBOL End User License (unfree)",
+      "evidence": "AUR PKGBUILD license=custom:REBOL End User License; nixpkgs meta.license=unfree (rebol.com/license.html) \u2014 redistribution restricted; NOT covered by Red's BSD/BSL",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "Oldes-Rebol3-3.22.1.tar.gz",
+      "target": "pinned commit 7fe158a9a9b0\u2026 (release 3.22.1)",
+      "evidence": "git blob SHA-1 of all 898 archive members == git ls-tree of the release commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "release->source-tree",
+      "source": "Oldes/Rebol3 release 3.22.1 (29-release registry)",
+      "target": "Oldes-Rebol3-3.22.1.tar.gz",
+      "evidence": "tag 3.22.1 -> commit 7fe158a9a9b0be8826c35a27596cb3c207b5ed6c; archive whole-tree verified against that commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "availability-finding",
+      "source": "Rebol 2.x interpreter source",
+      "target": "NOT acquirable from GitHub channels",
+      "evidence": "documented finding from recorded searches + org listings + ecosystem recipes (manifests/rebol2-source-finding.json)",
+      "status": "BLOCKED"
+    },
+    {
+      "relationship": "historical-hosting",
+      "source": "red.esperconsultancy.nl Fossil repositories (Red's pre-GitHub hosting)",
+      "target": "red/RS-fossil-mirror (org-hosted fork of kealist's mirror)",
+      "evidence": "HEAD d27b50eea309; 148 entries across 17 mirrored projects; pushes ceased 2015-03-23",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "fork-attribution",
+      "source": "workspace fork's 258 differing files",
+      "target": "upstream v0.6.5/v0.6.6 trees",
+      "evidence": "87/258 differing files exactly match a LATER upstream tree (borrowed forward-ports); 171/258 are fork-original modifications (manifests/fork-attribution-vs-newer-upstream.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "execution-reproduction",
+      "source": "reproduce_acquisition.sh",
+      "target": "full corpus re-derivation",
+      "evidence": "exit 0; 22/22 archives re-downloaded + whole-tree verified (19s; logs/execution/reproduction-run.log)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "distribution-channel",
+      "source": "official Red org packaging repos (Homebrew/scoop/chocolatey)",
+      "target": "official binary URLs static.red-lang.org/dl/auto/{mac,win,linux}",
+      "evidence": "official-org-authored cask/manifest/nuspec pin the auto-binary URLs; hash policy :no_check / none (manifests/red-distribution-channels.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "prior-session-builds",
+      "source": "prior session (zip binaries/, commit f860bbe era)",
+      "target": "libRedRT.so + support files",
+      "evidence": "LOCAL BUILD products, UNVERIFIED; preserved with hashes; NOT upstream artifacts",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "metadata-consistency",
+      "source": "committed tree manifests (22)",
+      "target": "fresh git ls-tree regeneration",
+      "evidence": "15/19 EXACT_MATCH (pinned refs byte-identical; HEAD manifests checked against recorded acquisition commits)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "longitudinal-drift",
+      "source": "acquisition-time HEADs",
+      "target": "upstream HEADs at stage 16",
+      "evidence": "0/11 repos advanced since collection; pinned archives unaffected (manifests/upstream-drift.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "identification",
+      "source": "rebol-2.7.8 lead (1c902e0f\u2026)",
+      "target": "REBOL/Core 2.7.8.4.3 (6-Jan-2011) \u2014 official build 278-4-3 identity",
+      "evidence": "embedded banner strings + ELF32/i386 header; static analysis only; identification is NOT attribution",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "repo->wiki",
+      "source": "https://github.com/red/red",
+      "target": "https://github.com/red/red/wiki",
+      "evidence": "wiki git HEAD b367696d4398; 230 entries; locally archived (wikis have no codeload endpoint)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "repo->wiki",
+      "source": "https://github.com/metaeducation/ren-c",
+      "target": "https://github.com/metaeducation/ren-c/wiki",
+      "evidence": "wiki git HEAD 97c80da1c36a; 4 entries; locally archived (wikis have no codeload endpoint)",
+      "status": "ESTABLISHED"
+    }
+  ]
+}

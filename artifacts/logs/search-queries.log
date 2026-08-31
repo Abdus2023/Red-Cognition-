@@ -1,0 +1,48 @@
+{"ts": "2026-08-31T17:24:40Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/red/red", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:41Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/red/red/tags", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:41Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/red/red/releases", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:41Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /orgs/red/repos?per_page=100", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:42Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/metaeducation/ren-c", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:43Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/rebol/rebol", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:43Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /orgs/rebol/repos", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:44Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/Oldes/Rebol-legacy", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:44Z", "tool": "01_discover.py", "kind": "github-api", "query": "GET /repos/Oldes/Rebol3", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:44Z", "tool": "01_discover.py", "kind": "github-search", "query": "search/repositories q='rebol 2.7.8'", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:47Z", "tool": "01_discover.py", "kind": "github-search", "query": "search/repositories q='red language compiler'", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:24:49Z", "tool": "01_discover.py", "kind": "github-search", "query": "search/repositories q='red-system'", "status": "ATTEMPT", "detail": ""}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "REBOL 2.7.8 download Linux binary rebol.com archive.org", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "metaeducation ren-c Rebol 3 github releases binaries", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol2' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol 2 source' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /users/Oldes/repos?per_page=100 (locate Rebol-legacy successor)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /orgs/rebolsource/repos?per_page=100", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/Oldes/Rebol3/releases?per_page=5", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/red/red/contents/version.r?ref=v0.6.4", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:31:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "connectivity-probe", "query": "TLS reachability probes: rebol.com, archive.org, web.archive.org, static.red-lang.org, www.red-lang.org, rebolsource.net, www.rebol.tech, deb.debian.org, snapshot.debian.org, gitlab.com, sourceforge.net, raw|media|objects|release-assets.githubusercontent.com", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "REBOL 2.7.8 download Linux binary rebol.com archive.org", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "metaeducation ren-c Rebol 3 github releases binaries", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol2' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol 2 source' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /users/Oldes/repos?per_page=100 (locate Rebol-legacy successor)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /orgs/rebolsource/repos?per_page=100", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/Oldes/Rebol3/releases?per_page=5", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/red/red/contents/version.r?ref=v0.6.4", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "connectivity-probe", "query": "TLS reachability probes: rebol.com, archive.org, web.archive.org, static.red-lang.org, www.red-lang.org, rebolsource.net, www.rebol.tech, deb.debian.org, snapshot.debian.org, gitlab.com, sourceforge.net, raw|media|objects|release-assets.githubusercontent.com", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "REBOL 2.7.8 download Linux binary rebol.com archive.org", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "metaeducation ren-c Rebol 3 github releases binaries", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol2' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol 2 source' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /users/Oldes/repos?per_page=100 (locate Rebol-legacy successor)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /orgs/rebolsource/repos?per_page=100", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/Oldes/Rebol3/releases?per_page=5", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/red/red/contents/version.r?ref=v0.6.4", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:32:58Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "connectivity-probe", "query": "TLS reachability probes: rebol.com, archive.org, web.archive.org, static.red-lang.org, www.red-lang.org, rebolsource.net, www.rebol.tech, deb.debian.org, snapshot.debian.org, gitlab.com, sourceforge.net, raw|media|objects|release-assets.githubusercontent.com", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "REBOL 2.7.8 download Linux binary rebol.com archive.org", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "web-search", "query": "metaeducation ren-c Rebol 3 github releases binaries", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol2' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-search", "query": "search/repositories q='rebol 2 source' (per_page=6)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /users/Oldes/repos?per_page=100 (locate Rebol-legacy successor)", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /orgs/rebolsource/repos?per_page=100", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/Oldes/Rebol3/releases?per_page=5", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "github-api", "query": "GET /repos/red/red/contents/version.r?ref=v0.6.4", "status": "ATTEMPTED"}
+{"ts": "2026-08-31T17:33:52Z", "tool": "05_finalize.py (recorded retrospectively)", "kind": "connectivity-probe", "query": "TLS reachability probes: rebol.com, archive.org, web.archive.org, static.red-lang.org, www.red-lang.org, rebolsource.net, www.rebol.tech, deb.debian.org, snapshot.debian.org, gitlab.com, sourceforge.net, raw|media|objects|release-assets.githubusercontent.com", "status": "ATTEMPTED"}

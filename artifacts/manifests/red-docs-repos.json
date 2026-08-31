@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-08-31T17:55:41Z",
+  "repos": {
+    "red_REP": {
+      "repo": "https://github.com/red/REP",
+      "description": "RED Enhancement Process",
+      "head_commit": "95d96a64ab8cb2b754acb7775b9550370bfc8c69",
+      "describe": "95d96a6",
+      "commit_count": "52",
+      "tree_files": 8,
+      "tree_manifest": "artifacts/manifests/trees/red_REP__HEAD.lsr",
+      "archive": "artifacts/red/documentation/red_rep-95d96a64a.tar.gz",
+      "archive_sha256": "4a8fa3a1143646afa92d7f04f6d6358c7d89159fb601d28b64cff490493ce97f",
+      "archive_size": 7471,
+      "license_repo_metadata": "BSD-3-Clause (repo metadata)",
+      "license_in_tree_evidence": [
+        {
+          "file": "LICENSE",
+          "sha256": "b6ab1768905191d226a3209ed5af323600d1ce9635099df079cc9cacb8b21779",
+          "head": "BSD 3-Clause License Copyright (c) 2018, Red Programming Language All rights reserved. Redistribution and use in source and binary forms, wi"
+        }
+      ],
+      "license_readme_claims": [],
+      "license_status": "CONFIRMED"
+    },
+    "red_docs": {
+      "repo": "https://github.com/red/docs",
+      "description": "Red-related user documentation repository",
+      "head_commit": "e62721663f34dc020b2601db89420d755f14f865",
+      "describe": "v0.6.3-655-ge627216",
+      "commit_count": "1271",
+      "tree_files": 325,
+      "tree_manifest": "artifacts/manifests/trees/red_docs__HEAD.lsr",
+      "archive": "artifacts/red/documentation/red_docs-e62721663.tar.gz",
+      "archive_sha256": "21d4024101e5e341ff54fec434da962745d39351eb0305105970ec280469433a",
+      "archive_size": 864929,
+      "license_repo_metadata": "null (GitHub metadata)",
+      "license_in_tree_evidence": [],
+      "license_readme_claims": [],
+      "license_status": "UNCLEAR"
+    }
+  }
+}

@@ -1,0 +1,538 @@
+# repo=https://github.com/rebolsource/r3.git
+# head=98cdfcd6e439390756868b390b0ff8aa01d84551
+# count=533
+# generated=2026-08-31T18:04:19Z
+# format: <commit-sha> <author-date-iso> <subject>
+98cdfcd6e439390756868b390b0ff8aa01d84551 2015-07-24T18:43:02+02:00 Merge pull request rebol/rebol#209 (earl/64b-for-mainline) into community
+50d84bf59c5f8cb1699230565a1dd708e3d96dda 2015-07-24T18:26:36+02:00 Switch target id of Windows/x64 to 0.3.40
+b062bbbb0b09a0394c9a1345c6c29dd228f5de37 2015-07-24T17:39:34+02:00 Merge pull request rebol/rebol#203 (earl/platforms) into community
+d106614dc8f4a7bba92fa02ff5ee908800124e3f 2014-11-07T23:11:51+01:00 Remove the C++ flag
+d2d42a612687fcd11516b7ff86c10b9b263dbaab 2014-03-05T03:19:45+01:00 Whitespace police: consistently use hardtabs for indent & alignment
+f3dbd9079bc30df8054c3d546ef9b0883d3d0e03 2013-10-14T22:55:50+02:00 Restructure platform metadata for easier extensibility
+4ca822a457a1795b68cb0ecf395ad2fd249bfedc 2015-07-19T21:19:40+02:00 Fix comment typos in .travis.yml
+235d92369cdbf33e3d6b94a310cde2acacd562db 2015-07-17T15:34:05+02:00 Merge pull request rebol/rebol#237 (kealist/amiga) into community
+c1e02d260014255e431dacabcd271a90a02b691b 2015-07-17T15:32:24+02:00 Merge pull request rebol/rebol#207 (BrianHawley/wish-2119-wrap) into community
+f8d5414400e5fbae6ca878e141b33a308d9821d3 2015-07-17T15:29:17+02:00 Merge pull request rebol/rebol#232 (hostilefork/halt-state-not-static) into community
+fb1a116cf168f28ee9096c71693c12cdc3406526 2015-07-17T15:29:03+02:00 Merge pull request rebol/rebol#202 (BrianHawley/fix-1859-bad-reflect-error) into community
+e5afcc0e1445e77394b2c71e850f537da6fecff5 2015-07-17T15:28:42+02:00 Merge pull request rebol/rebol#231 (hostilefork/sequence-point-c-do) into community
+d5d6908f552dacb087cc97ed347718247f0663aa 2015-04-14T16:49:50-05:00 Fix: make-make.r broken for Amiga target
+95832c8c8341e619c600e7e9f747eafb722d3b0f 2015-01-25T10:10:13-05:00 Correct sequence point issue in t-object.c
+bd45d0de512ff5953e098301c3d610f6024515d6 2015-01-25T18:40:44+01:00 Merge pull request rebol/rebol#209 (earl/64b-for-mainline) into community
+ac675bb818c7bac267e44b068eabe8856d89ed78 2015-01-24T18:55:37+01:00 Run Travis CI builds through valgrind
+c24a72e6ba420fc6137acca6f90ff853d5270ce7 2014-05-12T15:08:02-04:00 Fix vector! for 64-bit systems
+ab569d9d816461cf46d428083f16eda652e4cbc2 2015-01-19T20:58:04+01:00 Naturally align Reb_Series fields
+9cf2fd505d9f8600ab92d98eb1c7e96466069c3f 2015-01-18T02:09:13+01:00 Add Travis CI configuration
+982797c5adcc3856fa972d8d7f4bed00944d6537 2014-12-30T21:04:47+01:00 Make Halt_State a proper global
+867e38d628ff2e92c32197835297dbd0f847d1f5 2014-12-29T15:15:47-05:00 Fix sequence point problem in c-do.c, resolves #230
+847252b0b6b228d271ab764e1849cf38713d4fc1 2014-11-08T00:22:31+01:00 Merge pull request rebol/rebol#209 (earl/64b-for-mainline) into community
+bf237fc7d83fa6bd35a3a72a475296c9001533c4 2014-11-07T19:10:18+01:00 Add platform 0.7.40: FreeBSD 64-bit x86-64
+65d0b181d50e568c2ba40a5a90343a8d20093743 2014-05-12T00:47:05+02:00 Fix 32-bit type used in MD5
+f0dd2dabf32343794fcfefa321fde4d1f26cf12c 2014-01-25T16:37:22+01:00 Add platform 0.2.40: OSX 64-bit x86-64
+22b126b893c651e7837a3e7382509c87d6427c86 2014-03-11T12:43:06+01:00 Fix 32-bit type used in JPEG lib
+75d6287ade9aeddb7991843f1e78934cdb5cf134 2014-03-04T15:25:34-08:00 Add WRAP function
+3e46be0dda1b551f1a22be1589ceca94c75fe2d1 2014-02-18T11:01:55-05:00 Fix a crash on 64-bit systems
+3eb683679dbe2fde4a3e26f2b789e28f5328a08f 2013-11-26T00:00:32+01:00 Amend RGB conversion
+65552f0bb8a2a0ae0c7db197f920c4553c80b80e 2013-12-12T19:20:22+01:00 Simplify conversion from REBYTE* to REBCNT
+4452d6f92004b81c8681b61dbad9f42fcd2f7717 2013-12-17T19:43:16+01:00 Adjust gob pointer handling for Win64
+e232af7773ae98e6b1675a8e37d3426dbcdf07ff 2013-11-25T23:18:36+01:00 Adjust for LLP64 systems such as 64-bit Windows
+b52b2cf89757e764abc39ce3328f6387de7066e8 2013-11-25T17:02:31+01:00 Reserve platform code 0.3.3 for win32-x64
+5e9cd521e6e844b81adf71fd3bde08f0e006cd4d 2013-12-11T16:14:58+01:00 Do not assume REBVAL to be 16 bytes long
+ff337193e15f3c89a6f00d9fc29471ba7fcd8faf 2013-11-25T19:05:12+01:00 Adjust padding
+8f9fbfb2d7daab361f95dbca883ffbb8743c3877 2013-11-25T18:33:13+01:00 Amend sizeof asserts
+fa929e5cc0ad82c944cd6b24558b7c4f489f258b 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: remove custom [u]intptr_t definitions
+25cc43db0d748960985b7ee8cd6aa0a5cb7aa091 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBUPT instead of intptr_t
+4f1a4f2c753ddbb8877f54ca3853b466ed09b23c 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBUPT instead of REBU64
+262523eac5c4abb0c938cf0bc19a23687d588bb2 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBCNT & REBUPT
+a9cf691589821b659b4f146df07cb317f9ce8447 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBIPT
+0993b000d015f1498701d006a0ec80d53b83a51a 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBUPT instead of unsigned long
+a769fe513f245226a51c06e1c9cde607a5d4eeb0 2013-11-24T15:53:31+01:00 Use REBIPT/REBUPT: use REBUPT instead of uintptr_t
+a3f761dfe958e96f9bc3af4779bafed1141a4a80 2013-11-22T13:39:14+01:00 Clear unused fields in object values
+38670fb880eaea272b66ac28bad1811a104d9b5c 2013-09-24T08:47:28-04:00 Clean the memory of a newly created node
+600d8494e9a59e6fee98463eceba9b74439849af 2013-08-11T12:28:08-04:00 Pass NULL as the pointer instead of 0
+adb9b9a73d8e40e77a10becac0c05b4e555e8649 2013-08-09T11:06:31-04:00 Change all unsigned long to SHA_LONG for 64-bit systems
+39156901305cebe3cf00332929b4aec59939420b 2013-08-09T00:04:10-04:00 Change type of handle to uintptr_t
+4f6ac61eea465090774032dde989bf60f422ef58 2013-09-01T09:12:07-04:00 Rename Bytes_To_Long to Bytes_To_REBCNT to match the implementation
+fa09bc856a68df057e24600759aa88d03cb1ceed 2013-09-01T09:34:24-04:00 Correct the type of size
+8a27b0861b059ea38982e809b7db6469fe980818 2013-08-08T23:59:35-04:00 Shut off the compiler complain
+ca3708956ba3a2f3460b96308658926eee030ec5 2013-08-08T23:55:20-04:00 Change from REBCNT to uintptr_t for the pointer
+461c54997122cac66166c7549e052a209705ecca 2013-08-08T23:54:29-04:00 Convert the address to intptr_t instead of int
+88dc585156bbba6d2352e85cc55946d711de082b 2013-08-08T23:48:47-04:00 Add a FIXME in comment
+f2cff9a414c57a0223a7772668543a2746ec6e71 2013-08-08T23:46:42-04:00 Comment correction
+0364cf265f7313fd4dc67db4c18df3c69fd99ae6 2013-08-08T23:45:35-04:00 Rearrange for better alignment
+174d484954bd4a7fd13a8c427ac395e3829f23c8 2013-08-08T23:42:40-04:00 Change type of Stack_Limit to uintptr_t
+5b2e170f757e529b1553a21dbe7a2724b64bb2ad 2013-08-31T09:30:45-04:00 Fix the size of the REBCNT
+46751dbb7dde6c69b8e479ebb7e75d5aba15b261 2013-08-31T09:30:25-04:00 Change destination type to uintptr_t for pointers
+39b19c230d6dec71f13dbb5320e29d075b2a7ef6 2013-08-08T23:38:36-04:00 Shut off the compiler complain
+9a357d4243e13a69d953113cfb1aa0e9d5f59fda 2013-08-08T23:34:16-04:00 Return uintptr_t from RL_Series
+d2f89d2166afadeb5c0b85fe83c19ef0d8e05a1a 2013-08-08T23:33:17-04:00 Use uintptr_t for int and pointer conversion in Do_Callback
+910d121d243370666989a880e489588ac62d560f 2013-07-22T16:12:34-04:00 Correct some sizeof asserts for __LP64__
+f643d1c6b4ce8131f3ded51f56a4ee9b836ef569 2013-08-08T23:31:37-04:00 Fix int types for __LP64__
+4a7c62431e150d697f4554e54d81532d1bc734df 2013-08-08T23:29:27-04:00 Define __LP64__ for linux_x64
+1ff3a86045c8dc1d36e4a0aaf61cec6fe1b48a50 2013-08-08T23:28:32-04:00 Add a new platform 0.4.40 for linux_x64
+ef900c5d38cb5095369d3b7c76355ab303463da2 2014-03-04T16:19:46-08:00 Change default REFLECT error to something more informative
+ffb1bf36251bae5228ac3d1b5478cf9b39796548 2014-03-04T11:12:57+01:00 Merge mainline into community
+25033f897b2bd466068d7663563cd3ff64740b94 2014-03-03T20:50:29-08:00 Merge pull request #186 from BrianHawley/fix-2109-function-local-not-at-end
+5d0a9b4342f60314695880294c3d92a6bfe29eb1 2014-03-03T20:45:59-08:00 Merge pull request #195 from giuliolunati/fixparsetobitset
+d9fed75a699def49e9c0dd9be5f99d80ad213fb6 2014-03-03T20:30:20-08:00 Merge pull request #198 from BrianHawley/wish-2121-no-return-redo
+b202192e50c6197d8fa3e5160dbc24116ba6e512 2014-03-03T19:50:15-08:00 Get rid of RETURN/redo
+441c82219d93259dee112a2fef5d7a80e2a92bbe 2014-03-03T19:41:50-08:00 Merge pull request #192 from cyphre/android-arm-version
+327e130eb0843c9aa064686591b1603890f3495c 2014-03-03T19:37:38-08:00 Merge pull request #191 from earl/build-android-cli
+5790b26a245e3ed7d5bdbe0342f127dee7987818 2014-03-03T19:29:10-08:00 Merge pull request #188 from cyphre/9910-port-crash-fix
+0b29e80a26e9154d64858c1ba45c769a3ba30ac4 2014-03-03T19:27:50-08:00 Merge pull request #194 from cyphre/do-codec-fix
+9535519376d682db229b0ebb57d35a68d46cc0cd 2014-03-04T00:30:19+01:00 Merge mainline into community
+a155f6adf2659961292a521e6dcf615acfa5b7f9 2014-02-20T13:41:34-08:00 Fixes FUNCTION and CLOSURE when /local not last refinement
+33a79421ce49e2599d3d3556dd4cb5dc1d529012 2014-03-03T07:52:28-08:00 Merge pull request #193 from BrianHawley/fix-2113-hash-collision
+fc518bc8350d4895df87e9b81195a0ae231faa16 2014-03-03T07:47:11-08:00 Merge pull request #185 from BrianHawley/wish-2077-no-if-else
+ecfcde7a52903cc2a74d74352ead618879cf4a74 2014-03-02T03:11:10+01:00 fix ticket1457 parse to bitset
+a5fea464679656e1e0c005379b8c866b676077fb 2014-02-27T18:12:08+01:00 -fixed zlib bug caused PNG encode operation to crash
+c917ca6976e57f827536d1684eddeca6e57e472f 2014-02-27T18:09:36+01:00 -fixed TEXT codec crash regression in DO-CODEC
+7e92920508285c8295ad3f1a9ddbbc90f66d216f 2014-02-26T21:20:48-08:00 Fix word hash collision and function parameter type mismatches
+29c032cb246b181cb81158adc4e01cac0d4a715a 2014-02-25T15:19:32+01:00 reserved version number for Android/ARM (official NDK+SDK) R3 port
+f9aad8722dd8720ca7031edb9ed9d22c16dc19f1 2014-02-24T20:27:54+01:00 Make the S_IREAD/S_WRITE comment slightly more specific
+5a6ef87ab195db99525ca992551de873fd28bab1 2014-02-21T19:30:17+01:00 Fix dev-file.c for android
+935f7da11a4a2a9d3c0bf6480109f22204ee7e56 2014-02-24T17:43:38+01:00 Add platform 0.4.21: Linux 32-bit ARM with bionic ("Android CLI")
+003ae5d46df8e183c1d2a41fcbaa497345af2d00 2014-02-20T23:27:55+01:00 -fixed the infamous #9910 crash caused by ports in pending requests being GCed -added Host_Lib->devices reference to be able access host Devices array from core dll
+2d50c6cfa4a0a4f61dd8e9b43d8e97834df88323 2014-02-20T11:48:45-08:00 Get rid of if/else
+b12513ad9c74c74acdf88f3c538e9a89cc50c344 2014-02-20T02:18:42+01:00 Merge mainline into community
+484526b480abdb2c834e7ef26a67b2aef5e7bb19 2014-02-19T09:22:19-08:00 Merge pull request #147 from ladislav/compiler-warnings
+7aac956ee0d3dfeb557fef538fddfec3f46ff998 2014-02-19T09:13:14-08:00 Merge pull request #183 from BrianHawley/wish-2005-find-all-speedup
+feb63e09ae5d4c67f9517f7c61343c4a5182bdfc 2014-02-18T20:20:04-08:00 Merge pull request #180 from earl/fix-unwind-passing
+efa45fdcc7479b8ab5f254f9773dff9e810ea282 2014-02-18T20:11:20-08:00 Merge pull request #139 from ladislav/clone#1863
+aa7f6c62df1e28b8082007d9432ab1330051e210 2014-02-18T20:08:47-08:00 Merge pull request #82 from BrianHawley/fix-1952-do-binary
+dc4edca1bc3813ad6f5e0a2444802872d0ebc693 2014-02-18T19:10:43+01:00 Suppress compiler warnings. Delete REBDCL type definition (no longer used in code). Based on mul64 since it updates reb-c.h Get rid of INT_64_MODE (the code is not consistent with its opposite anyway) Use C99 integer definitions where available Use typedef long i32 for non-C99 and non LP64 compilers
+0b8cecd4f066f473c25916d7da823a494602688d 2014-02-17T12:39:30-08:00 FIND-ALL speed optimization
+548b227ddc440f300655c99439a56c7cddd446a8 2013-02-14T20:30:17-06:00 Make DO binary treat the binary as source
+185407de9beb174da08e0d27e92ceab35a58b9f9 2014-02-17T02:46:26+01:00 Merge mainline into community
+0f85501d212e03d189a31265028e00351f895607 2014-02-17T08:54:04-08:00 Merge pull request #182 from earl/fix-pr165-parse
+e38f18ba82f273dcccfb52c638968fa0d71696b3 2014-02-17T02:07:52+01:00 Fix a regression in PARSE caused by 8db79a9
+c18f77a449530d014731f0585f76035398746ee9 2014-02-16T15:51:04-08:00 Merge pull request #181 from earl/hostilefork-cc-wish-2055
+adba8fe7eeaf4505e3d830808961caefa1c30f1a 2014-02-17T00:46:59+01:00 Style: don't use additional block scopes
+80be51d3fc8821aca25842e07fd979c8287c37e6 2014-02-16T15:37:23-08:00 Merge pull request #170 from hostilefork/cc-wish-2063
+c5e0d84deed06cbd8c6b17e709c64b9168ebe256 2014-02-16T15:17:58-08:00 Merge pull request #165 from hostilefork/cc-wish-2023
+f4e26a83a986d3e030d860049d9f321f8b557a7d 2014-02-16T09:56:29-08:00 Merge pull request #104 from 0branch/tuple-div-rounding
+4b8dc56ea2871c675ee5771db9dd666138a2f879 2014-02-16T09:51:12-08:00 Merge pull request #157 from hostilefork/streamline-boot
+f0fb494e23b0206b43e3fd24630edab03fb18188 2014-02-16T17:59:08+01:00 Merge pull request rebol/rebol#180 (earl/fix-unwind-passing) into community
+895c893268abdaf016de02717c028fe6823e8611 2014-02-16T00:05:59-05:00 Incorporate /ONLY option for suppressing conditional block evaluation.
+c63fd4bf1507dece8af03c0ce558f17a7318da26 2014-02-16T03:11:24+01:00 Merge mainline into community
+585211eda3270de548aa4544a3cd8336727fad85 2014-02-15T15:25:45-08:00 Merge pull request #173 from ladislav/OPTS_UNWORD
+6af38ba487d1ece93b79c93a7b453f43a4f9d87e 2014-02-15T15:06:07-08:00 Merge pull request #143 from ladislav/SAVE_SERIES
+fd714b3297d41e27ff0abf6bcd90ff8635cd3f10 2014-02-15T14:27:51-08:00 Merge pull request #161 from ladislav/event-gc-bugfix
+7771ce7d430755982986052ada87fd2bfbd77679 2014-02-15T14:09:52-08:00 Merge pull request #152 from ladislav/qsort
+f8c457f65d15459722f3749a82ba8374ab89e38d 2014-02-15T14:01:34-08:00 Merge pull request #172 from ladislav/bare_words
+8f5d32c14f705fb96a8ee1e937de30d68fd3b850 2014-02-15T13:42:40-08:00 Merge pull request #171 from ladislav/Collect_Obj
+545b694aa87b083b164f4d397d83299a021b1b5a 2014-02-15T13:41:23-08:00 Merge pull request #167 from earl/fix-851-try-catch-quit
+a956e1e6007186236e6784cf6731a2a5f490d1bf 2014-02-15T13:38:37-08:00 Merge pull request #149 from ladislav/shift
+2d3c4623615e0a16e7eb4c3a39cea1364d6ab1ad 2014-02-15T13:35:22-08:00 Merge pull request #145 from ladislav/mul64
+e28576122a96bdda0d7c9bab7202e4f5d372f056 2014-02-15T13:33:31-08:00 Merge pull request #144 from ladislav/STRTOD
+0fea2f789153b30f8e286ed5662c560d6f23d888 2014-02-15T12:20:00-08:00 Merge pull request #109 from BrianHawley/wish-1973-function
+0d842a48bafeef9d4b19bffacac654a7b1212258 2014-02-15T11:36:46-08:00 Merge pull request #168 from earl/fix-posix-wait-rate
+9cd51aba218bb9272ac3e449cf733c23a2adc052 2014-02-15T11:35:13-08:00 Merge pull request #160 from hostilefork/fix-cc-1748
+ac9176a0f5551e199e0f57d0602b5b0a1725d5c1 2014-02-15T11:25:31-08:00 Merge pull request #156 from hostilefork/fix-cc-2068
+d68a3266df996f1f660b814db24af781ca7a8f21 2014-02-15T11:20:11-08:00 Merge pull request #154 from Tectorum/master
+c5afc7b84ffb926a1f78bf3f9459d01b079517ce 2014-02-15T11:17:43-08:00 Merge pull request #151 from ladislav/even
+44d6da4a9a7f45209aee8b5df0e23f5805be9b2b 2014-02-15T11:12:59-08:00 Merge pull request #150 from ladislav/compare-crash
+5a246e1236cdbb7dc38d2f4bd97b76080e2c0ac3 2014-02-15T11:12:06-08:00 Merge pull request #148 from ladislav/rmi32
+4b902b9aa8151cea3619af301128ff70836eee62 2014-02-15T11:10:52-08:00 Merge pull request #146 from BrianHawley/fix-2041-load-next
+f09b99dd29f550b3ce4c04555823afb55d189c6f 2014-02-15T11:09:07-08:00 Merge pull request #137 from onetom/delete-dir
+f30de6575b30d46f73dd8d7be4ead553a58a4274 2014-02-15T11:02:39-08:00 Merge pull request #136 from earl/build-win32-console
+63cced44e816b6a9931be39355f8b4eb459cd5f5 2014-02-15T10:59:38-08:00 Merge pull request #114 from BrianHawley/fix-1998-private-module-precedence
+915ae38c15ee717d917095d809a0f081b99f9b94 2014-02-15T10:58:28-08:00 Merge pull request #103 from BrianHawley/wish-1990-reword-rework
+3a0fe5084d6b04e4fc1a7d486bf5d26146c95fa9 2013-12-19T01:02:48+01:00 Fix make-make.r for backwards compatibility up to at least R3 A111
+d7ac6c036ed3f66692231c24360b4956985106a1 2013-03-21T18:02:54-05:00 Make CLOSURE a FUNCT for closures (#2002)
+c95ebb1537a9f873e2166d33ba0b8a1b31dce7a7 2013-09-16T14:52:38-07:00 Replace FUNCT with FUNCTION
+4c32cc73b4641f8f6831b3ac549b5f5084c9e159 2013-03-21T17:19:54-05:00 Make FUNCTION a FUNCT alias (#1773)
+1f1915a2b69635b65974aed1f45494716a0f264a 2014-02-14T00:05:59+01:00 Merge mainline into community
+49618f9e3e398141dde1c8c13b1f5c1c15f1a568 2014-02-13T10:00:29-08:00 Merge pull request #102 from 0branch/browse-unset
+2a6427fabf7c1635bb58d1f6fe2af68e59cf7a91 2014-01-04T23:19:29+01:00 Fix unwind passing of functions with 2+ arguments
+b909f15c10bc63ac40880162e22f4b35ff0b28d3 2013-12-20T14:29:26+01:00 Merge branch 'r3_64' into community
+deb6694ddbf1137f746d02156166eec5316f69b8 2013-12-20T14:14:09+01:00 reserve platform 0.3.03 for win32-x64
+0e2be4c107b28d29fd5a0cf5e3790c7b2684405c 2013-12-20T13:50:17+01:00 revert RGB changes
+e936d8db0e9fef83fedfa2f5bb3361505ceb6d1b 2013-12-19T17:05:34+01:00 Merge branch 'event-gc-bugfix' into community
+3cd9e6e28f15d197efad1fbb96df8da0df629377 2013-10-02T16:57:32+02:00 This is HostileFork's "notorious TCP bug (EVM_DEVICE events allowing ports to GC)" fix minimized. It is meant as an alternative to his pull request.
+ecfd7653c48c98e0abbedd71de239b9d197052fb 2013-12-19T08:53:34+01:00 REBINT is now safe to use remove old code
+56c624294fe809fec621e739496d7f69b7038985 2013-12-19T08:36:37+01:00 REBINT is now safe to use
+f85a68b01dcb7b984e2f5ae73fab8d831e650764 2013-12-19T07:48:11+01:00 Merge branch 'community' into r3_64
+68d33e6b7a4123e73c41a2bdc46ff91d931e5198 2013-12-19T07:45:33+01:00 Merge remote-tracking branch 'remotes/origin/r3_64' into r3_64
+8a54179db4b3f3c2dca3cd3d6acdf2639ef40086 2013-12-17T19:58:00+01:00 LLP64 changes
+c18c0863a8369a689be7ef077239bd51b5e0245e 2013-12-19T01:02:48+01:00 Fix make-make.r for backwards compatibility up to at least R3 A111
+2e103fafc353843d39c655af22d1a1df60e35259 2013-12-17T19:58:00+01:00 LLP64 changes
+153d05b1302bd94aebe09949ead294bcab8439df 2013-12-17T19:43:16+01:00 LLP64 - related change
+7f015c15531cd2436944baaf47381ad94d47d70b 2013-12-17T18:29:02+01:00 Introduce the 0.3.3 platform
+fc25948da8484792d226a4f9d5459f9d6e7d20ee 2013-12-17T17:41:31+01:00 Use REBUPT
+22b8c7dbd89d1faa1e8c2bbafe1e1d3f7a648172 2013-12-12T19:20:22+01:00 update type conversion
+82d1a32cc8c67ddc16c9d7ea8e2bab1d780897ba 2013-12-12T18:56:28+01:00 Use REBUPT datatype
+57983b8a9fa5fdd78c4f6c060a2eb8cd37c9f0a5 2013-12-12T18:42:19+01:00 Use REBIPT datatype
+f88a1faa0ea059df21ebf8c50a3931c4ebc63104 2013-12-12T18:01:50+01:00 Use REBUPT and REBCNT
+6356070333241c262d5edb39652b2bfe64378ae0 2013-12-12T17:47:37+01:00 Use REBUPT
+438db3e1851ed2128237b5055e73b739b83ad40d 2013-12-12T17:24:56+01:00 Use REBUPT datatype
+900a1335bb12ba64b96a1254a689238d807187eb 2013-12-11T16:14:58+01:00 Do not assume REBVAL to be 16 bytes long
+cbd1e0f023b5dc6b38be66c459a18eb58fdeff61 2013-12-11T16:07:14+01:00 correct wrong REBIPT and REBUPT merge
+4f9dcc1afdfa4c5ca20b0293b53c69cb5e1d5e61 2013-11-26T00:04:18+01:00 use REBUPT datatype
+1906587d54501ed8c530193759c5df06b468a316 2013-11-26T00:02:16+01:00 use REBUPT datatype
+dbb5d834d85f72c188a738a9af7533380c043e95 2013-11-26T00:00:32+01:00 amend RGB conversion use REBUPT datatype
+421929802087eed8f5e7cf68d8786e4080b0438c 2013-11-25T23:41:53+01:00 use REBUPT
+24c613456da20cbcdece0d3a2ba8ad84de8e7f35 2013-11-25T23:26:07+01:00 use REBUPT datatype
+254d38a8a7dea491c32a835f57af1a07cb3fb5f8 2013-11-25T23:18:36+01:00 adjust for __LLP64__
+a516590eefaefb31f05d7d6199ed0efb177193d9 2013-11-25T19:05:12+01:00 Adjust padding adjust color
+9d53e7d6fb35b31937c5267fee85687f2e057a40 2013-11-25T18:33:13+01:00 amend sizeof asserts use REBUPT datatype
+057409103b129b37a37416b1bc9ad6767dd4dfce 2013-11-25T17:02:31+01:00 add platform 0.3.3
+ca8d430b8b4d42ea0fe22617ea0b24df617b97d9 2013-11-25T16:45:43+01:00 Merge branch 'r3_64' of https://github.com/ladislav/r3 into r3_64
+51f093b7e10e4030f33e7a2a33d8491dda1da274 2013-11-24T15:53:31+01:00 LLP64 - related update
+0136a37ea06e28fa2426cbfe009d0b783b61b716 2013-11-22T14:43:12+01:00 Revert "Fix a crash on 64-bit systems"
+bc75807cc9e0d435842ec5d8a3ae9db825b5d9c9 2013-11-22T13:39:14+01:00 clear unused fields in object values
+c87bbb8573ea96de171d6bdaa77261e85bb3a55b 2013-09-24T08:47:28-04:00 clean the memory of newly created node
+134e713cc74f442391382ac959788ca302b41faf 2013-08-15T14:24:38-04:00 Fix a crash on 64-bit systems
+764ea4fa1e1bbfc8012b7c7543cae832c90da08e 2013-08-11T12:28:08-04:00 Pass NULL as the pointer instead of 0
+6d8a351c6aeb378d67c3ed2c3f2b5ed78abb2720 2013-08-09T11:06:31-04:00 Change all unsigned long to SHA_LONG for 64-bit systems
+04e20acf624a677ec78e555e8b93606ef9e89259 2013-08-09T00:04:10-04:00 Change type of handle to uintptr_t
+108bf26381e001a54f9231198c794064b0506716 2013-09-01T09:12:07-04:00 Rename Bytes_To_Long to Bytes_To_REBCNT to match the implementation
+8004c3c4c1eee00c8ab8c50631aa727b8d8c3f6b 2013-09-01T09:34:24-04:00 Correct the type of size
+b199d2e3d06676b8425be1c84423febb99e10eeb 2013-08-08T23:59:35-04:00 Shut off the compiler complain
+cad8abce427ffc2f7785b73da94d4d50fbc5f593 2013-08-08T23:55:20-04:00 Change from REBCNT to uintptr_t for the pointer
+0cedc79b62401b8a0a17fedb6d6444e10781d940 2013-08-08T23:54:29-04:00 Convert the address to intptr_t instead of int
+a692714680230b91de98279ab362df71cee33622 2013-08-08T23:48:47-04:00 Add a FIXME in comment
+a7b71e50f5b3876c76fb97a316ce92b885594d93 2013-08-08T23:46:42-04:00 Comment correction
+11ff7c06519cccb4098c99f99a22bfd41898b8b5 2013-08-08T23:45:35-04:00 Rearrange for better alignment
+a7308e34887dddec3a2cbf9016203955e901466d 2013-08-08T23:43:31-04:00 Shut off the compiler complain about type conflict
+aba51c8275f83e258ca3e9f601774c6e5f1bca78 2013-08-08T23:42:40-04:00 Change type of Stack_Limit to uintptr_t
+22eeea9869dd5555ab685bc4b86baaae7097bfbf 2013-08-31T09:30:45-04:00 Fix the size of the REBCNT
+21e1f92c532069ce14e2b2afba226510e82e7bf4 2013-08-31T09:30:25-04:00 Change destination type to uintptr_t for pointers
+d5c88d96556df30634bee5a8dfd2f68d9f9f3444 2013-08-08T23:38:36-04:00 Shut off the compiler complain
+f3b9a53c19aa536a76fa31ce974a60cacfcea060 2013-08-08T23:34:16-04:00 Return uintptr_t from RL_Series
+d1ae0d067b4f252fe82ee941d4c5269fede501c7 2013-08-08T23:33:17-04:00 Use uintptr_t for int and pointer conversion in Do_Callback
+1d4e2dae548d7bc3a3ab98c312a134c475483092 2013-07-22T16:12:34-04:00 Correct some sizeof asserts for __LP64__
+10a614f7604ddbd4f408946ff6a705a97de08346 2013-08-08T23:31:37-04:00 Fix int types for __LP64__
+23065268b4cd99652198f097eda22c0389a14039 2013-08-08T23:29:27-04:00 Define __LP64__ for linux_x64
+1678d62aa08374ee3aca534a7cb47d5ae7aad6f6 2013-08-08T23:28:32-04:00 add a new platform 0.4.40 for linux_x64
+3ab29f3f38300c57de4f3efcd6a79635b4810bd7 2013-11-22T14:43:12+01:00 Revert "Fix a crash on 64-bit systems"
+0e7c4b386cafbd43426ae884e3f21d238e01e0a0 2013-11-22T13:39:14+01:00 clear unused fields in object values
+99b33c6526c0ecd33a9fe81b3dca185ac50c6119 2013-11-21T19:09:43+01:00 Merge branch 'clone#1863' into community
+86b3334f27bef0511e4a967f8d3eecb9448146ce 2013-11-19T17:29:44+01:00 Merge earl's fix-unwind-passing into community. Tested successfully in 0.3.1, 0.3.3, 0.4.4, 0.4.40, 0.13.1. No regressions, lots of progressions including crash fixes.
+22520b720a09f3bd21342f7ed2f1f4a76419075c 2013-11-19T17:06:35+01:00 Merge branch 'bare_words' into community
+2dce436f6c0bf4577cd563c9ac555d1368b2cc03 2013-11-19T16:47:25+01:00 Merge branch 'fix-851-try-catch-quit' into community
+be2bd4320ea7cd1c5244b5e3c5844416f98b922f 2013-11-16T14:14:50+01:00 Merge branch 'fix-cc-2068' into community
+a96d2d20aab2b2bcd3419a2dd68897d365aebbcf 2013-11-16T13:43:45+01:00 Merge branch 'event-gc-bugfix' into community
+82011e24e7c4c803bfe1cf8e7bc301fde9fb6a12 2013-11-16T13:38:51+01:00 Merge branch 'fix-cc-1748' into community
+674365cdfa228273e03ba4cbdbeafa644813175f 2013-11-15T00:12:49+01:00 Merge branch 'STRTOD' into community
+0f3e3b85cb6df60a8490df46cd52e405c24a4cb0 2013-11-14T23:48:07+01:00 Merge branch 'append-obj' into community
+72434f588e2a585fd2aa1fa6d4676b7a6ea0bc02 2013-11-14T23:31:26+01:00 Merge branch 'qsort' into community
+a8ecb9907b06fb2691e215fe8e8889081602e7c0 2013-11-14T23:26:47+01:00 Merge branch 'even' into community
+f67f94548b39703507b319e0bdb7f20e0d1e9da0 2013-11-14T23:24:50+01:00 Merge branch 'compare-crash' into community
+422eea85f3636fcd5c82a7359d4c06cd00a0643d 2013-11-14T23:18:27+01:00 Merge branch 'shift' into community
+b9f47fb193b0eadf38f3791efca86939c7f83a35 2013-11-14T23:14:08+01:00 Merged to community
+a4304437fbab1c272db61553ff1d684ac19958df 2013-11-14T23:08:20+01:00 Merge branch 'compiler-warnings' into community
+11dfffacb565eef23a5fcdae107a6b6f95ec137c 2013-10-06T10:21:28-04:00 Per @earl, don't add R_ARG4 for IF/ELSE (which we don't like anyway)
+4aa77724fa95a42bd0126e458b50c1197abecb7d 2013-10-05T20:12:54+02:00 Prevent word duplication when appending to an object Fix CC#1979 Optimize the code to not use search Fix 'self handling described in CC#2076 Rebased on Collect_Obj fix to not cause crashes in 64-bit R3
+9986b6f64c36bedd66e3e2726114f2dfd7becfb9 2013-10-05T19:56:10+02:00 Make word lists of frames bare as suggested. Based on the Collect_Obj fix.
+dd1136278c467ed41f10dff99f822cfcdc632088 2013-09-26T18:02:56+02:00 Use Bentley & McIlroy's qsort for sorting strings and blocks Currently, R3 uses platform-specific code for sorting. This may increase the effort necessary to port the interpreter to new platforms.
+4487f182b584c1554bcb77ff77b466142aec9d53 2013-10-05T20:08:53+02:00 Amend Init_Frame_Word to set OPTS_UNWORD option to the word added to the frame word list as suggested.
+4611e537a22b5a3233fa44ec92a874a290d26f11 2013-10-05T18:59:51+02:00 Fix Collect_Object to not overwrite memory BUF_WORDS does not own. Without this fix, Collect_Object was causing crashes in 64-bit R3.
+3b16661bb7fd21a9908500f94358a79f3b2722bc 2013-10-04T17:34:10-04:00 IF, EITHER, and UNLESS accept all values in then/else slots (CC #2063)
+24a9725595e6f0100fe5edca35a3e8e0f6889114 2013-09-27T23:16:25+02:00 Minor (cosmetic) adjustment
+de63b298fa133b5d5debf2248bfe9de09e9f631f 2013-09-22T01:11:23+02:00 Fix WAIT polling interval on POSIX platforms
+3844d3490859dea1cdcfb336d204524d0958823f 2013-01-31T06:58:18+01:00 Add comments to point to where unwinds are handled
+70f8e0ecf0962f3ef83ca07fda5b85c95d1d9aad 2013-01-31T06:57:24+01:00 Fix unwind passing of AJOIN
+3664d150b333cbf15a861002789b23001715a863 2013-01-31T06:12:40+01:00 Fix unwind passing of set-path!
+5505d60e0e61302fca6b5c20ca05c83a93d3b850 2013-01-31T05:44:06+01:00 Fix unwind passing of APPLY
+9cb32acb05488d23a17f2dab72701b50dd8cf156 2013-01-31T05:26:49+01:00 Fix unwind passing of functions accepting error!
+343d1f39c5c93a488d9fbb385707520a6204e943 2013-01-31T05:26:24+01:00 Fix unwind passing of set-word! and SET
+d1406d176ed010bf46deda4cdd517a7aba7fb4a0 2013-01-31T04:01:03+01:00 Fix unwind passing of WHILE
+7eb856605de8ae1feaa3daa2090f15eaf6626810 2013-01-31T03:51:04+01:00 Fix unwind passing of REDUCE
+ee6989838252f7a948b00c223b498532944f4fed 2013-03-23T02:27:50+01:00 Fix CATCH/quit interaction with TRY (cc#851)
+8db79a92145325abdf694eff3889666e5ee64cad 2013-10-03T13:06:34-04:00 Permit SET-WORD! as the argument to COPY and SET in PARSE (CC #2023)
+e73dd3512d18f390dedb526001716bac6abb3e0b 2013-10-03T12:07:00-04:00 TO LOGIC! treats all non-none non-false values as true (CC #2055)
+50a7020eb36bdcca3d4d38f6d37889213e52ff88 2013-10-02T16:57:32+02:00 This is HostileFork's "notorious TCP bug (EVM_DEVICE events allowing ports to GC)" fix minimized. It is meant as an alternative to his pull request.
+3efec9c298ba775ff4709c36fa8619d0e05c8263 2013-10-02T07:10:19-04:00 cc-1748: Guard protected blocks from /INTO target of REDUCE, COMPOSE
+6c6638635d54caef6863f0f6fb7143964955a490 2013-10-01T12:17:58-05:00 Reverted to previous systems.r file.
+b363c088998fd724a62c4121edbae3689116ea6a 2013-10-01T12:07:12-05:00 Moved DEF_UINT for Haiku to reb-config.h
+7c6a197c1c5d2b4f78e6c3d6aa28db934157a1e4 2013-09-30T14:23:33-04:00 Reduce mem/time for boot and tighten up sizes (appears to fix MSVC build)
+7ae3e7aa3559c46e74a0af0d4b12834c165f2a40 2013-09-30T11:30:13-04:00 Free intermediate buffers used by do-codec (CC #2068)
+4717964b7561b9c67e69d5b9b39b2d142def6841 2013-09-29T22:17:27-05:00 Systems that define unsigned int but not DEF_UINT can now build w/o warnings.
+9ba305de5d4f74fe4fb8edd2f28e6581f0c344d2 2013-09-29T22:15:54-05:00 Added support for ESC-O escape sequences in addition to ESC-[.
+d0fc52c74bf97a8d9508a5ac69f962b9b5cce9f7 2013-09-26T13:43:27+02:00 Fix EVEN? and ODD? to be compatible across platforms
+89eb6abf5987d457a4f68e011e8001978937d3cd 2013-09-24T01:18:24+02:00 Correct SHIFT bug#2067 Replace undefined arithmetic Detect overflow of arithmetic shift
+bd83d2b3d21778c005ab6dc55bfdb031a44df59b 2013-09-25T14:24:25+02:00 Fix circular block compare crash, CC#1049
+40cabec9e8987157b534af64a8c7ec8ea2e5ab5a 2013-09-24T08:47:28-04:00 clean the memory of newly created node
+d8fd64653db8f3e3e8c848cf1d846947c91a9640 2013-09-23T17:36:41+02:00 Remove int32 from Reb_Val_Data (not used)
+14fd5f0bc318f11aa5bd535f4b79e896e8ca5819 2013-09-23T14:01:44+02:00 Undefine strtod to suppress redefinition compiler warning.
+0573faabf7a1d96a0ba30f012d3834d8adcbf760 2013-09-18T19:33:51+02:00 Suppress compiler warnings. Delete REBDCL type definition (no longer used in code). Based on mul64 since it updates reb-c.h Get rid of INT_64_MODE (the code is not consistent with its opposite anyway) Use C99 integer definitions where available
+71abe396ea114e1d6caa10e882686284adbed98e 2013-09-17T23:38:16+02:00 Merge pull request rebol/rebol#109 (BrianHawley/wish-1973-function) into community
+1805a865d06362496edd711a34519fddca0ce228 2013-09-17T23:13:16+02:00 Merge pull request rebol/rebol#146 (BrianHawley/fix-2041-load-next) into community
+5157879cc960e097f402654a117fcd08a46d2c17 2013-09-17T23:13:13+02:00 Merge pull request rebol/rebol#145 (ladislav/mul64) into community
+1c96a7ab0a546b4c0c70632dc11d68530d894815 2013-09-17T23:13:00+02:00 Merge pull request rebol/rebol#144 (ladislav/STRTOD) into community
+7f3a1848986f3dacdf3c0d808e633d2549778096 2013-09-17T23:12:55+02:00 Merge pull request rebol/rebol#143 (ladislav/SAVE_SERIES) into community
+4e15be550528b1bde5bc1888133fdb30d23e442b 2013-09-17T23:12:40+02:00 Merge pull request rebol/rebol#136 (earl/build-win32-console) into community
+55001ab8d80591ad00ae581848d0b2bd0bf2cbd2 2013-09-17T22:50:23+02:00 Modify INTEGER! multiplication to not use division for overflow detection. Modify INTEGER! addition and subtraction to not use undefined arithmetic. Modify integer comparison to not use undefined arithmetic. Fix bug#2054 Do not use MAX_NEG_INT in t_integer.c (problematic name). Amend a comment referring to reb-config.h
+a80349f5731f50c30810285a5e390342ebb70e48 2013-09-16T15:37:45-07:00 Get rid of LOAD /next
+fc70a0dd5cb6ed7b352c0828afb99ea483717ba5 2013-03-21T18:02:54-05:00 Make CLOSURE a FUNCT for closures (#2002)
+9375b613f9609509459e4b6a2ceb7bb90643e32a 2013-09-16T14:52:38-07:00 Replace FUNCT with FUNCTION
+2a7ecdb83b3ba05ec7cb67f058fa4f923f0c5602 2013-03-21T17:19:54-05:00 Make FUNCTION a FUNCT alias (#1773)
+c1173d354b763c27f3af2df22b1f1c582e6552ff 2013-09-02T18:23:56+02:00 Use David M. Gay's STRTOD instead of system specific atof(). Add boilerplate to reb-dtoa.h This is a major change improving accuracy and compatibility of LOAD DECIMAL! across platforms. Also, improves accuracy and compatibility of MONEY! to DECIMAL! conversions across platforms.
+85d5cc32a034daae7f2f1daacb5233981b936799 2013-08-15T14:24:38-04:00 Fix a crash on 64-bit systems
+df4533621d0c6180c0a123a14b07ec6a21eeedcc 2013-08-14T20:48:29-04:00 Fix the crashing on 64-bit systems
+3a212206c1f9f52d0582837a4e6f7e31d33372f9 2013-08-11T12:28:08-04:00 Pass NULL as the pointer instead of 0
+d343b3b7928d30b547343866d66eac940020a673 2013-08-09T11:06:31-04:00 Change all unsigned long to SHA_LONG for 64-bit systems
+04d3b6d83814eafdd346b35c2abca5946ad24324 2013-08-09T00:04:10-04:00 Change type of handle to uintptr_t
+2b4b5c04b24d5b662e4e58cf13f9eb95365b021f 2013-09-01T09:12:07-04:00 Rename Bytes_To_Long to Bytes_To_REBCNT to match the implementation
+bb711b4c85d21d304b6d6c7ad10ddea5d95ac281 2013-09-01T09:34:24-04:00 Correct the type of size
+0079af6e9d0b2cf0b78688057d5b7060c3a8d0c8 2013-08-08T23:59:35-04:00 Shut off the compiler complain
+c37de1dfdc6d2a3c5e90f4a38650c2fc88f99ed0 2013-08-08T23:55:20-04:00 Change from REBCNT to uintptr_t for the pointer
+64ed549ef6b94e762307c7ef4bbe043e36e72a7c 2013-08-08T23:54:29-04:00 Convert the address to intptr_t instead of int
+55dca2dfa7bd48ee915be6976109cae7f9aa5bb5 2013-08-08T23:48:47-04:00 Add a FIXME in comment
+664f71b0f6eee81d9eb13dd6049bd04abbba3816 2013-08-08T23:46:42-04:00 Comment correction
+127a4a05c4f6a701c8f52ba721f10559908aeaab 2013-08-08T23:45:35-04:00 Rearrange for better alignment
+93598deab256866acb4c1aeaafc9ba93be7031b6 2013-08-08T23:43:31-04:00 Shut off the compiler complain about type conflict
+da3c3fce8fb15c3a968c6e18148deaed092672f4 2013-08-08T23:42:40-04:00 Change type of Stack_Limit to uintptr_t
+49f7bd9f87bdfd1fcce378a9f87b9cd7811e2877 2013-08-31T09:30:45-04:00 Fix the size of the REBCNT
+59cab683467220f9c6d487e37fe9edd0ef523140 2013-08-31T09:30:25-04:00 Change destination type to uintptr_t for pointers
+32ce267346009b484ba50c5759823131af448154 2013-08-08T23:38:36-04:00 Shut off the compiler complain
+53a59495526dec71e699e25e9d6e489a1d8f66da 2013-08-08T23:34:16-04:00 Return uintptr_t from RL_Series
+9e01163d091a2f687ea89790706900eed5529fb6 2013-08-08T23:33:17-04:00 Use uintptr_t for int and pointer conversion in Do_Callback
+fda031eb86a6deb45ed189efce24790dfad0bbfa 2013-07-22T16:12:34-04:00 Correct some sizeof asserts for __LP64__
+db85fe5acaf177b6a2fe51a5ff793be5c86bae0d 2013-08-08T23:31:37-04:00 Fix int types for __LP64__
+59f596d3a310924202b696e3846df90e0238f00b 2013-08-08T23:29:27-04:00 Define __LP64__ for linux_x64
+e5af9eb93524ddf324b297fd6a6f7b41d7f31c54 2013-08-08T23:28:32-04:00 add a new platform 0.4.40 for linux_x64
+c82e4ae1498da0c836b4aaf6ecaaa2dbe4f78475 2013-08-31T18:34:08+02:00 Remove SAVE_SERIES/UNSAVE_SERIES around code not calling Recycle.
+27a4fd2ff791c5f382157eaa54b38a8f6ab9c51f 2013-08-30T12:38:38+02:00 Correct multiple inheritance, CC#1863 Deep clone child values Rebind child values Optimize Merge_Frames to use rebinding table Add a new REBIND_TABLE mode to Rebind_Block
+7f691b06c555e346737ed7472ab9eaf8e59a0d12 2013-08-22T11:40:34+02:00 Deep copy functions when cloning objects. Fixes CC#2050 No need to save the block in COPY_DEEP_VALUES since the function does not call Recycle
+24fe03b439fc0d35bfbd52c0a2ae379a530f1e79 2013-08-25T23:32:46+08:00 Copied DELETE-DIR from Rebol 2 (cc#1545)
+821535016af4e10b95b09dbbd6017f750cb04176 2013-05-31T14:28:47+02:00 Build Win32 /Core binaries as console mode applications
+8f82fade255eaa2d267604bdc3aa5d5fab8c1281 2013-08-22T09:30:45+02:00 Improve and speed up object cloning using rebinding Fixes CC#2045 Adjust Rebind_Block to be more compatible with Bind_Block Define rebind modes Adjust Clone_Function to use rebinding
+7fef89dce673c3a58d640b1c69418e782dc697d9 2013-08-19T19:38:46+02:00 Correct object cloning bug#2049 by cloning closures.
+837b9704b288f8a3960082e3a45bf51735642e6e 2013-08-15T14:06:19+02:00 Bind closure body to args (pseudo) frame and rebind the body to a real frame when the closure is called. Corrects #2048 Tested in Linux X86
+d7d7ff49484bc7f6b04b1cfcbd0c89fd2d01df3f 2013-08-14T21:38:47+02:00 Let BIND bind out-of scope function words.
+71da84e5545abffa2349c87638570591d23357df 2013-08-14T21:35:01+02:00 Correct function copy crash#2043 handling correctly args = 0
+3561c166ad6921b950083259d95be9675860e7f2 2013-08-05T17:14:33+02:00 Use function args as frame reference of function variables instead of function body. Function body was unsuitable (unsafe) for the purpose since in R3 it is possible to define distinct functions sharing the same body. Corrects bug#2025
+7f26269f4eb8ad2777079bfb4d91a27fbe818322 2013-08-20T00:29:19+02:00 Reintegrate mainline into community
+4d9840f8e661e7067472e828ee6ad8dd3008b247 2013-08-18T20:51:32-07:00 Merge pull request #130 from johnk-/master
+9fe6ef81e7f9502d15177062c2f262a33290fbf4 2013-08-19T10:35:31+10:00 Added Greggs updated split from http://issue.cc/r3/1886
+f7a42a31e1744821ae304458af5448ec10764720 2013-08-18T15:32:54-07:00 Merge pull request #129 from earl/fix-2027-read-utf8-http
+1acddad803a6de4e11cf310fd6430eafdad94f47 2013-08-18T15:26:41-07:00 Replace the debug makefile I accidentally commited on prior push.
+424ab9290783f8004e0bf0206103f60496b3ad02 2013-08-18T15:21:10-07:00 Add back debug build option for series labels and fix low level dump functions. With series labels enabled, using STATS will print a nice list of all series and identify some of the key series, or give you a clue about where they originated.
+b68ddee5cf77b8d35bb9ac32692fba26f42eb9e1 2013-05-12T17:10:09+02:00 HTTP: remove auto-decoding of UTF-8 content
+dcb5ce0d289a9ca4567e6b80c4833205c68e8e17 2013-08-18T10:23:07+02:00 Merge pull request rebol/rebol#127 (ladislav/sys-sys) into community
+42a40195db77e367a6e2901c9f54276e5600082a 2013-08-18T10:22:42+02:00 Merge pull request rebol/rebol#126 (ladislav/READMEpl) into community
+bc2c3798900eb1577d0eb12d2f358e18d88afa0e 2013-08-18T10:22:38+02:00 Merge pull request rebol/rebol#121 (ladislav/valueq) into community
+b7da213211fa6dd8002b9dd221f64f448e84b035 2013-08-18T10:22:33+02:00 Merge pull request rebol/rebol#120 (ladislav/load#2041) into community
+7b97abb5f8a68afe7f1ca983989b0a7b6d60a7b8 2013-08-18T10:22:28+02:00 Merge pull request rebol/rebol#118 (earl/build-host-init) into community
+99c2b0de621be190e66c18e18e393dbc1ca3387a 2013-08-18T10:22:24+02:00 Merge pull request rebol/rebol#117 (earl/fix-2030-boot-flags) into community
+602483e64ce1ea5191da00842da84768303c487c 2013-08-18T10:18:11+02:00 Merge pull request rebol/rebol#76 (CCX/patch-1) into community
+264bb4e3353327afde4d76cfdbe1ba8454252cc7 2013-08-18T00:36:03-07:00 Simplify value? change (pull 121, cc 1914) by using existing function.
+a99d2d6800207292e9590d8b1ea3d3c2c31bb8e2 2013-08-17T20:23:06-07:00 Provide more info if make fails due to no local Rebol build tool.
+7aba1676fd8f313c5aab42fd7c49a14c6b1eefaa 2013-08-17T18:54:30-07:00 Merge pull request #98 from cyphre/decompress-crc32-fix
+67df64f8a5826196c6fae8ae10b061495e10ab07 2013-08-17T18:46:38-07:00 Merge pull request #127 from ladislav/sys-sys
+7a4d115698d3ca27baa3e6b4f40c32a2473d2ce4 2013-08-17T18:45:10-07:00 Merge pull request #126 from ladislav/READMEpl
+30585cb7da45a96202bbe0110ecf1d15cc055e6e 2013-08-17T18:41:10-07:00 Merge pull request #121 from ladislav/valueq
+954903cb572c03e91fe441494aa0b5a0e9666947 2013-08-17T18:39:48-07:00 Merge pull request #120 from ladislav/load#2041
+314f52811dbf02fdc0d236ef10a2e128a7856a8a 2013-08-17T18:38:00-07:00 Merge pull request #118 from earl/build-host-init
+df39655f1753cac2dbce466766e61b139075c400 2013-08-17T18:36:01-07:00 Merge pull request #117 from earl/fix-2030-boot-flags
+b6bb010288e925baccec455201a72fd218863161 2013-08-17T18:33:54-07:00 Merge pull request #115 from earl/fix-2017-resolve
+45b346fe8304f9100b7f369a507d3ed8853388cd 2013-08-17T18:27:56-07:00 Merge pull request #113 from gchiu/patch-2
+8baf6ca7eeb01cd1ec281d48c67ebf44a9667679 2013-08-17T18:25:52-07:00 Merge pull request #110 from ladislav/bug#1989
+733e19b784d85a6ec2a706d5a71eb3a5b4a3106a 2013-08-17T18:23:38-07:00 Merge pull request #106 from 0branch/block-to-binary
+105c6a03e8acb403a1dabd6266bf4e6be03f1f82 2013-08-17T18:18:51-07:00 Merge pull request #101 from 0branch/browse-macosx
+19d1111c94a064bf7ec59e6ab00add4f29e6c27d 2013-08-17T18:16:36-07:00 Merge pull request #100 from ladislav/bug#1969
+ceca249fb8d63f0533a6828f18a04a513570e49f 2013-08-17T18:14:40-07:00 Merge pull request #99 from cyphre/event-fix
+bf2ec8dd84abc2af50cc9bda5cc1548f0ce00ce8 2013-08-17T18:12:25-07:00 Merge pull request #97 from earl/fix-parse-thru-integer
+bd810ee98beb50c31919c831bea3d3e0aeaff06e 2013-08-17T18:09:26-07:00 Merge pull request #94 from ladislav/clipboard
+7424f219f5ec0555b260c540b3313a108953bf8a 2013-08-17T18:08:46-07:00 Merge pull request #93 from ladislav/platforms
+831316cbeb0d3333c52f515d3fc570b9de6d0d83 2013-08-17T18:05:09-07:00 Merge pull request #92 from earl/fix-parse-thru-end
+2b520145b5abb5284445c8d43109769842bb0fdf 2013-08-17T18:03:33-07:00 Merge pull request #91 from ladislav/bug#1958
+2b2ee737053f80d0f354e31f22b54b6d78f710dd 2013-08-17T18:02:16-07:00 Merge pull request #90 from ladislav/bug#1957
+d82b061019071763c5992c4f3e87d8bb5c69c1a3 2013-08-17T18:01:21-07:00 Merge pull request #89 from ladislav/bug#1491
+02094e3ce05a2b74477b7f65b8a80a9d6c88e9fe 2013-08-17T16:34:26-07:00 Merge pull request #88 from ladislav/f
+9676966c670b5f1a55a8d4d1f29ac774ac325c61 2013-08-17T16:33:17-07:00 Merge pull request #87 from ladislav/e
+22ffa742aeb80d9f4fc2c120c8013087e2c55430 2013-08-17T16:30:04-07:00 Merge pull request #84 from ladislav/b
+02ee07ffb462233ba82a7518f7fe964ff5818b7e 2013-08-17T16:28:23-07:00 Merge pull request #83 from ladislav/typo
+7603e09fdde10733ade289709ad6e6c409b133ed 2013-08-17T16:25:07-07:00 Merge pull request #81 from BrianHawley/fix-1763-set-assumes-any
+04adf4127c8660711281036c47d4140e6d5a6744 2013-08-17T16:20:40-07:00 Merge pull request #78 from earl/fix-empty-hashed-map-lookup
+b1d614710ff55b0921a36fc3f76910b243cb9dc1 2013-08-17T16:18:21-07:00 Merge pull request #77 from earl/fix-recursive-make
+4d16b140dc22ac5b8421741c3999f5c3da52e38d 2013-08-17T16:16:20-07:00 Merge pull request #76 from CCX/patch-1
+f20043184296360aa1db5ae84c03ebd8d581a1e4 2013-02-05T03:26:11+01:00 Fix recursive make calls
+2fa81b5a1ff61d7f628f814f0f2db8c0eda28099 2013-08-17T16:06:24-07:00 Merge pull request #74 from earl/fix-select-series
+8c39f13f8928762a232fe113f3da8f24128f46be 2013-08-17T16:01:36-07:00 Merge pull request #73 from ladislav/dtoa
+52a04651b0d494d0a9e6343657ecc1b87c16e4f0 2013-08-14T18:30:42+02:00 Delete unused header file
+692eba311237099e9dee9f9f6f03cb453777672d 2013-08-12T14:12:21+02:00 Add an example of platform ID Add an example of make clean "make r3" can be used Rename REBOL to Rebol
+93b05f7bc16862e4ec97b2a7cf0b3aee4283cb6d 2013-08-05T17:05:48+02:00 Remove message print when LOAD/NEXT is used. bug#2041
+0fe7266ec9c88e90e96bc3c2760f6fbf5ee984b0 2013-08-05T16:56:57+02:00 Let the VAUE? function yield #[false] for out-of-scope function variables, which is what the documentation describes. bug#1914
+b979fa4bd7276cdf8da6610644886b8907736145 2013-07-26T17:03:36-07:00 Update s-trim.c
+aa65a0b129db99e80146b2275e8f9f61d7777a87 2013-07-26T16:57:36-07:00 Update s-trim.c
+d779ea906720adb9972383e8fa005aaf37272c35 2013-07-26T16:55:05-07:00 Update s-trim.c
+f83e5e3034333be031a6a3d353f70021a401eaa5 2013-06-09T23:04:37+02:00 Remove and ignore generated file src/boot/host-init.r
+a1c9842bdbac6036e5e4d44ae595e37a4fb56636 2013-02-16T18:54:39+01:00 Fix incorrect boot flags order
+e3ffcaffd06042d2c3a945876f41fa7461837448 2013-06-08T23:49:19+02:00 Merge pull request rebol/r3#115 (earl/fix-2017-resolve) into community
+9961f25595b01e7aa6302f7b0f9e004715e01012 2013-06-08T23:49:15+02:00 Merge pull request rebol/r3#114 (BrianHawley/fix-1998-private-module-precedence) into community
+7534d27fdc5b8f09e419b16eed9e5138217ab512 2013-05-31T23:11:12+02:00 Merge pull request rebol/r3#113 (gchiu/patch-2) into community
+24836e69918cc2ec20e235338c603ec57912d6c3 2013-05-31T23:10:03+02:00 Merge pull request rebol/r3#110 (ladislav/bug#1989) into community
+888b45d6833e3bcaf40d07817dc857f74f84c844 2013-05-31T23:09:51+02:00 Merge pull request rebol/r3#106 (0branch/block-to-binary) into community
+f44bbb3eed6e0710d569abc864b5be0f541e3934 2013-05-30T22:57:00+02:00 Merge pull request rebol/r3#103 (BrianHawley/wish-1990-reword-rework) into community
+a24665e7d5aed744dd08df07e893a22d520bdf96 2013-05-30T22:56:35+02:00 Merge pull request rebol/r3#101 (0branch/browse-macosx) into community
+25da52d46bc38781d0ac9bd756d2228f42ae446f 2013-04-07T04:28:30+02:00 Fix crash in RESOLVE/extend/only
+b0c01f052464a478246e6c5da35c2a7b98cc59cc 2013-04-06T20:59:15-05:00 Private module imports take precedence
+451ed8e8861c8d64ba4187d0d03209129cd18253 2013-04-02T22:57:00+02:00 Merge pull request rebol/r3#98 (cyphre/decompress-crc32-fix) into community
+663bfe8159191e90391f1927b410c1fe0ae9591a 2013-04-02T17:58:38+13:00 do-redirect expects an absolute url so create one
+a543e2666306d3bade3b8ca9ce9fac0885256727 2013-04-01T16:42:52-03:00 Minor tweaks
+645f5e00d2334a16d15e8e4e3c897194a1e492a9 2013-03-30T19:27:36+01:00 Regenerate default makefile, to include dtoa
+6dfc5abce626f7b8b739b2e3e684e924ba67e593 2013-02-27T14:29:19+01:00 Fix CRC32 calculation & verification in DECOMPRESS/gzip
+9765d7826838457ef986631460694d8192d85044 2013-02-27T14:29:19+01:00 Fix handling of /limit refinement in DECOMPRESS
+d5667115cd216f2970b5b99fb509ea10dc223b59 2013-03-29T15:32:16+01:00 Merge branch 'bug#1969' of https://github.com/ladislav/r3 into community
+09490e7506eac1a0739cab9060d190c7152d6e4a 2013-03-29T15:29:35+01:00 Merge branch 'event-fix' of https://github.com/cyphre/r3 into community
+a4c4fccd242b55ee23a0a4318995a75856de9857 2013-03-29T15:13:16+01:00 Merge branch 'fix-parse-thru-integer' of https://github.com/earl/r3 into community
+f3a43213d9dec9897de9ac61975c5c8c6e0ab0fa 2013-03-29T15:08:58+01:00 Merge branch 'clipboard' of https://github.com/ladislav/r3 into community
+da2dd0049fe7bf7a7898e61a7240f87d0d743b07 2013-03-29T15:02:44+01:00 Merge branch 'platforms' of https://github.com/ladislav/r3 into community
+c956413f873d55a9e35f3bbda23f824ef1247f3e 2013-03-29T14:58:50+01:00 Merge branch 'fix-parse-thru-end' of https://github.com/earl/r3 into community
+0ea6b086dd75a92a0319512983f79995784ae0dc 2013-03-29T14:55:04+01:00 Merge branch 'bug#1958' of https://github.com/ladislav/r3 into community
+32a6be556b20344aacdbc53180f7a8c243700d0b 2013-03-29T14:52:46+01:00 Merge branch 'bug#1957' of https://github.com/ladislav/r3 into community
+740a8c141d6606d012cb3d6e92af56be48b3aaf5 2013-03-29T14:48:40+01:00 Merge branch 'bug#1491' of https://github.com/ladislav/r3 into community
+6b8c7beb9a5c71e53e31af32bd4b7193f79b09ab 2013-03-29T14:45:10+01:00 Merge branch 'f' of https://github.com/ladislav/r3 into community
+27a92832a1acbc7767a13df6944622954cab99df 2013-03-29T14:38:33+01:00 Merge branch 'e' of https://github.com/ladislav/r3 into community
+a473f852a96e828344fa84e798e875e092c9ea1a 2013-03-29T14:34:13+01:00 Merge branch 'b' of https://github.com/ladislav/r3 into community
+019a936bfa2aaf71119c7ad8ad5187732502799f 2013-03-29T14:28:24+01:00 Merge branch 'typo' of https://github.com/ladislav/r3 into community
+df877d09d465930267cdd395d212c2bacd40ac1b 2013-03-29T14:25:53+01:00 Merge branch 'fix-1763-set-assumes-any' of https://github.com/BrianHawley/r3-bh into community
+b9ebb5f316647881a86a6e2276d81dfa18e47551 2013-03-29T14:19:40+01:00 Merge branch 'fix-1949-apply-return-redo' of https://github.com/BrianHawley/r3-bh into community
+8c1b87eac8a0b449c0d32d6f6fdbcf5bc3f19028 2013-03-29T14:10:09+01:00 Merge branch 'fix-empty-hashed-map-lookup' of https://github.com/earl/r3 into community
+45a1ad7289e4b9fbeb72b4352b3a27c73994d2e1 2013-03-29T14:06:50+01:00 Merge branch 'fix-recursive-make' of https://github.com/earl/r3 into community
+367f4d41056e16e6c63a27837c0a44eed3fa1629 2013-03-29T14:01:07+01:00 Merge branch 'fix-select-series' of https://github.com/earl/r3 into community
+004a38740ec80667fac20e8abacc7f3abbf1ff05 2013-03-29T13:51:24+01:00 Merge branch 'dtoa' of https://github.com/ladislav/r3 into community
+42653da64ce29a2f2f15fc9438faa241323e44d5 2013-03-07T14:33:18+01:00 Collect unused GOBs Resolving bug#1989. Define new GOB_MARK and GOB_USED GC flags. Use the resv field to store GC flags.
+d10c06ba1c5489da91d03e8e9b3006f37f076c31 2013-02-19T10:35:40+01:00 comment typo corrections
+a191249d2e6954769db08087e6855645fb791314 2013-03-20T01:05:10-03:00 Update s-trim.c
+6a51fede070d461456c3561e44ed91d286d33311 2013-03-19T07:41:18+00:00 Ensure that binary series constructed from blocks are distinct
+3424fa2236be709d8178b7f8cb4a11f64c0710e5 2013-03-13T20:36:37+00:00 Use R3's rounding implementation instead of round(3).
+7b4e8529e683c92d406e89b287092507c5876924 2013-03-13T07:49:27+00:00 Round decimal division of tuple elements.
+4618eda99d8dbba8e3e18b6e3dc07fa159f7e2aa 2013-03-10T23:35:59-05:00 REWORD API Revamp (See http://issue.cc/r3/1990)
+1183113731661cb354b4d5696732cb6f433ce579 2013-03-10T23:10:50+00:00 Clean up browser calls for POSIX platforms.
+cbc747db844e291e80e1d206b7200408cd81342a 2013-03-10T23:09:50+00:00 Implement BROWSE on Mac OS X.
+95e3481ffba473f9191b918dd2eb890e764ff32a 2013-03-10T21:21:04+00:00 BROWSE: Return R_UNSET rather than R_NONE.
+f5097f16565fea5cf85d5cb86f5d0d314b8d88b3 2013-03-07T14:33:18+01:00 Fix GC crash with gob/parent handling
+6ff7d989c700f318680e4e324bd11079557b14bb 2013-03-06T15:38:05+01:00 enhanced EVENT! datatype for event/window and event/gob set-actions
+ff1f48244814f37ddeb8fb4f619d51a8db8b28e8 2013-02-26T00:51:25+01:00 Fix PARSE `THRU integer` operation
+fc51038c012ee8a8abe848decbc1af792065d5e2 2013-02-26T10:05:14-08:00 Merge pull request #70 from hostilefork/paren-new-line
+91a93a490fcb000487bf268f92a5bd77cc6c52e3 2013-02-24T19:00:19+01:00 Fix clipboard device code so it works identically under non-wide-char platforms
+fd1a806b7593e31f957f047cf7e0af41e5f7f5b5 2013-02-24T18:39:47+01:00 Make build platform handling more robust
+dac74550dcd7eab395d7e0f3449c0c0e15ab6f08 2013-02-21T18:44:05-06:00 Fix SET object/block block assuming /any (#1763)
+026c0fb055b5c88ad359c3d1073bd733e2bc07aa 2013-02-21T18:44:59+01:00 Improve consistency of NOT_FOUND/THRU handling in Parse_To
+eaf0d94bca2408f4adbf9993c77b388521d7a939 2013-02-21T18:27:47+01:00 Fix PARSE regression: THRU not matching at the end
+824aab65ddf22386dc549d4050ee431cce25d7bc 2013-02-19T22:56:31+01:00 bug#1957 corr, FIRST+ help strings updated
+4ac3424af37d7188ba31a0096564fab217b1f092 2013-02-19T22:40:58+01:00 bug#1958, BIND and UNBIND can work on blocks not containing (just) words
+5ff66278cbd06ea5b011fa20c8fa4224a6f7885f 2013-02-19T11:41:37+01:00 bug#1844, modification properties
+b824697373b6fb26d1786fe45f1afe3cb127c1ea 2013-02-19T10:11:53+01:00 help strings of ASSERT and TRANSCODE
+276eed39239e5f726f95cbe1a698e23bbc7e7b87 2013-02-19T09:51:08+01:00 bug#1955, updates of malconstruct error and mold help string
+0d68c29ed9a4d1d5eaaa5a6369ebdcedf927aeb5 2013-02-19T09:33:22+01:00 bug#1956
+b37261e75160ae1254d949ea4858ebd014da31a7 2013-02-09T19:27:13-06:00 Make APPLY secure against RETURN/redo (#1949)
+3eba05d01609dc88864cb83800f3908e25bc82eb 2013-01-19T04:28:36+01:00 Fix crash when accessing an empty but hashed map
+43487b9274d31ded4243ae2c94ed12b6fc8f3acb 2013-02-05T03:26:11+01:00 Fix recursive make calls
+7ee9528f21be5ae4c3f0bc00d1d41837aa92f749 2013-02-04T04:13:38-04:00 Update src/core/s-trim.c
+822e2b4779659ef691d05b8073603671c55d467f 2013-02-04T03:45:21-04:00 Trim that Bug! (minor tweaks)
+db1f0919b620432426a2563100f3723f46a274a8 2013-02-02T19:38:47-04:00 Update src/core/s-trim.c
+1dc999f4f8527bf98c455c01b22104fab1ce0661 2013-01-20T03:14:03+01:00 Fix value returned by SELECT with a series argument
+f4ce48ede6100a8600fc1e51d084326fc2d6eac6 2013-01-18T19:06:04+01:00 Use David M. Gay's dtoa for molding decimals
+631e69848fc75379ac1f891dc8d37a7aa8b4d099 2013-01-22T12:56:22-06:00 Allow NEW-LINE and NEW-LINE? to accept PAREN! series
+6a79a7b3763cee2162cfacc9443e3ac8f315595d 2013-01-21T18:42:42-08:00 Merge pull request #69 from ladislav/c1
+5486998625a5c7d6b990b2ab17ad55d803606f7e 2013-01-21T18:40:12-08:00 Merge pull request #67 from earl/allow-index-of-none
+dde1ee6ef6cf4a134e2f45f2ea86267afa1e0935 2013-01-21T18:02:06-08:00 Merge pull request #66 from earl/fix-empty-dns
+ef26dfbd3ae3222b9fef4002b4d9fa4c0cea7764 2013-01-21T18:00:36-08:00 Merge pull request #64 from earl/fix-op-eval
+9f39818a2605867994fd5ab6db089ef669fc8535 2013-01-21T17:56:30-08:00 Merge pull request #55 from hostilefork/set-env-updates
+6292a2f61b1fe37edbdc17cf61904290cf0a0c3b 2013-01-21T17:54:24-08:00 Merge pull request #63 from hostilefork/parse-bitset-casing
+374dedff950ac872508df1087abb9531220888c0 2013-01-21T17:51:32-08:00 Merge pull request #61 from hostilefork/fix-mem-errors
+90c2fe8ea9f83557fcd1f35e7d49e6a0e88df46e 2013-01-21T17:47:06-08:00 Merge pull request #60 from earl/fix-parse-thru
+58675131a7d3a9d51966367cf7019c889ab7887d 2013-01-21T17:44:38-08:00 Merge pull request #59 from blackball/master
+89af71a9d9b2b31d6e24939c3b9d7b264c6849b0 2013-01-21T17:43:19-08:00 Merge pull request #58 from angerangel/master
+b1e845bf5c1d9402ab0c20b1080071b687aa86b0 2013-01-21T04:38:47+01:00 bug#1939
+ee6db430d72456838fda3979e387c8e9c4932c48 2013-01-21T02:23:32+01:00 parse thru fix
+02b81bc5aa8de2c595bc72709c37dcd1467fa831 2013-01-20T14:51:49+01:00 Move NONE! to end of INDEX? & LENGTH? typespecs
+80877cc270f4295fccca781d51921cdf786f12f0 2013-01-20T02:30:04+01:00 Remove redundant code
+370d9421c5f13430f35fbed2140f6b2aff8fc21f 2013-01-19T17:03:21+01:00 Allow INDEX? of NONE, returning NONE
+d2dce76702dcf28db7bea9d7d477d1ea70acc457 2013-01-19T02:56:20+01:00 Fix crash when reading dns:// without a hostname
+dece03658f577dfab4a8daad58dafd0e65df7ce9 2013-01-14T03:56:24+01:00 Fix crash in evaluation of immediate operators (op! values)
+70be71d98897920b205443d7f16ec433b61d4146 2013-01-13T17:55:19-06:00 Match  "uncased" parse in Check_Bit by inverting HAS_CASE(parse)
+27f6200028f84fa8e0dc891c9fa414d3d6c3f246 2013-01-08T22:36:44-06:00 two memcpy to memmove changes, fix use of uninitialized err value
+fcab1585fc9042be565cb45120bffe5fc1f37968 2013-01-06T00:08:28+01:00 Fix a regression in PARSE for the THRU keyword
+ec6fe36376a87d07308ab217bea44c7c43f92f1f 2013-01-05T22:15:59+08:00 fix a typo
+45e6adb3b787dce96629803902c1965813a472df 2013-01-04T16:49:33+01:00 Update src/boot/actions.r
+a6077e890a063097a9f1140ce8e73cd9b34a3682 2012-12-31T09:55:39-08:00 Merge pull request #57 from earl/misc-fixes
+e0154e712a27697282e8420cd58cdc3f129e4036 2012-12-28T20:23:45+01:00 Fix missing /local in make-boot.r
+ce2ec52f56a66fd8a88cfca9b793758a858a5811 2012-12-31T00:44:57-06:00 Fix spaces-instead-of-tabs that slipped into /src/os/posix/host-lib.c
+b9426a58dd9dc7f801641e05b710739010ca03a1 2012-12-30T07:17:55-06:00 add SET-ENV, tweaks to host api for environment string handling
+b4e1c4de5f36fd28326d54823f9269a7ef954f34 2012-12-26T23:11:03-08:00 use parse for macro constructor
+553ccb3cb57bbacbdcaf077337a4b7c57d358252 2012-12-26T22:59:27-08:00 Merge pull request #53 from hostilefork/haiku-os-build
+22182786b76cd6aa9c164c689ca3b58579cd8ac1 2012-12-26T23:23:36-06:00 Requested consistency changes to the borrowed code from Haiku porting FAQ
+45a37e3678aefaef42ab86eabe62ab25f8b2b99a 2012-12-26T09:58:36-06:00 Minor changes to build process for HaikuOS (POSIX binding, of course)
+3a1b8475291d63fb4b5c0e5fd2190b6477c39acd 2012-12-26T12:32:22-08:00 Add make make OS_ID=0.n.m for building other platforms. See my blog.
+32752b85dff975e6e959b03a58239819099e66cd 2012-12-24T15:38:07-08:00 updated makefile for libr3.lib fix (issue 43)
+9ca502c9cecf0e4274bce9155328e2151887ae6a 2012-12-22T14:59:45-08:00 Merge pull request #50 from earl/fix-includes
+5dad60138d6f065f61d506e64b0ce57b186a7797 2012-12-22T14:57:48-08:00 Merge pull request #48 from spytheman/fix_readline_ctrl_d_home_end
+404dd93a37164826791a3a7a68a21cb8005df413 2012-12-22T14:45:25-08:00 Merge pull request #46 from DanDLee/master
+d3665587128881c1720f4c89a82f5e0817fde193 2012-12-22T14:43:46-08:00 Merge pull request #34 from cyphre/parsefix
+9044b2bb78146001a4c52d838c91079e96c8cc76 2012-12-15T02:41:30+01:00 Fix missing includes in posix/dev-stdio.c
+1ca517f00852248e413d96a36b2c5ba86bbeccf2 2012-12-20T15:31:50+02:00 Restore broken \eH and \eF handling (generated by at least gnome-terminal).
+2a0c9f8028ba9671b4a118570fe114adf5f33bef 2012-12-20T04:57:58+02:00 Bugfix: when trying to delete at EOL, do nothing, instead of corrupting the term buffer.
+b13af70c14a654fc81c587994a51a8f40dffa7f5 2012-12-20T04:58:50+02:00 Support common Ctrl-D usage as Delete.
+0eec0cd12b2cf58182606ecc93c15fbe89ca3e39 2012-12-20T04:59:28+02:00 Support Home and End keys on linux.
+af37b35ac362dbcefd484936b874b30217b3346d 2012-12-18T07:18:28-08:00 Fixed #1875 - random/only bug
+845b60a08a67990a7940bd94930e8dbcbcd79a32 2012-12-17T23:31:36-08:00 ignore this file too - although seems out of place
+4810ad0d482291dff61b6955656a23427cdaa002 2012-12-17T23:09:24-08:00 Merge pull request #41 from earl/fix-1865-resolve-extend
+3891cf53906fb9a698c760b9b7d3321f3e27b592 2012-12-17T23:04:47-08:00 Merge pull request #39 from BrianHawley/improve-transcode-docstring
+c30f173475035f3b0e61f721dcbc83f3e3f1467e 2012-12-17T23:03:58-08:00 Merge pull request #38 from BrianHawley/fix-load-comments
+e0e0fbef20970e00bd66c2be66e5c1952ec2fe10 2012-12-17T23:02:16-08:00 Merge pull request #37 from BrianHawley/fix-1891-request-file
+4b0e9ff560c78016800a1e8a6af41b8495d2a4e9 2012-12-17T23:00:03-08:00 Merge pull request #36 from BrianHawley/fix-1899-dotfiles
+8343cee05d0837d918bbb2388c631631a261e4c7 2012-12-17T22:55:12-08:00 Merge pull request #32 from cyphre/fixbranch
+00bee60707b593404fd54891b5fefc5277dbd4a0 2012-12-18T02:17:24+01:00 Fix CC#1865: resolve/extend/only crash
+ea2c1da56a496cf36f43b4b8437e23f85b04bd5c 2012-12-15T13:55:47-06:00 Prevent misunderstandings like http://issue.cc/r3/1913
+69e99a7f9f6663732f74d23e4fcb31bf04bc4e22 2012-12-14T01:18:49-06:00 Comment explaining a tricky situation in startup
+0ce38136abffdf65f383ad7bdcec579e2c76b592 2012-12-13T23:35:14-06:00 Better comments for sys/load-header
+71e80bda43d5c8f3d7d8841cc27d55b9873549a2 2012-12-13T21:34:51-06:00 REQUEST-FILE/multi returning multiple files is missing the last / in the filenames
+9172ddab381b442586481d58f1a5ec6ef4522ac3 2012-12-13T18:11:06-06:00 Files beginning with .. are skipped (http://issue.cc/r3/1899)
+44012cc1e7313f2fd3772e543f2f8b9096d90f9c 2012-12-17T20:42:24+01:00 fixed PARSE tag bug
+0054b155dada366765e6e521a3b5783ad6632ccc 2012-12-17T15:02:36+01:00 fixed pair! op/action bug
+f91bcded29fc76167b64c179cefb59b45adb1455 2012-12-16T18:34:27-08:00 Merge pull request #31 from ladislav/master
+db9ad300f60d598fa7203446f9eec9862f724f7c 2012-12-16T18:32:57-08:00 Merge pull request #30 from nicolas42/patch-1
+80aab08033ca5d2d2d77d51d4877a84b570dfa99 2012-12-17T01:21:54+01:00 Bug reporting note added.
+dcf3986d04a2985d736bbf56a78f0acdb19777fc 2012-12-17T11:20:26+11:00 Update src/core/a-lib.c
+b064f51eb180ff50e74ba815d780001fc2120694 2012-12-16T14:51:17-08:00 Merge pull request #29 from ladislav/master
+01e45d3db50c03a99da6fc5d0a567a7fce4c58b9 2012-12-16T23:08:31+01:00 #1633 corrected, Ecvt corrected, HAS_LOG10L introduced
+0e6210686a461345fbfb032ddfd2713d13e1d5cf 2012-12-16T00:42:18-08:00 Merge branch 'master' of https://github.com/rebol/r3
+6a7c655db11434c7acf053c622a05ed417d9276a 2012-12-16T00:41:36-08:00 fixed silly typo in do_callback
+b212f8c2c0023f8b383c4eb131cdfb22db678a3b 2012-12-16T00:29:15-08:00 Merge pull request #28 from earl/build-win32
+27be3e8fb4606b4b98f5b44d57b48edccb18e93a 2012-12-15T01:42:12+01:00 Temporary workaround for R3 crash on Win7 when called from make
+03eb6e8e303e9894b1f6c2d656ff3ee5ef384d1d 2012-12-15T01:38:23+01:00 Use "dir" on Win32 builds to list build results
+486d35481b973245cbb7c7560f7ec1a39851a8c8 2012-12-15T01:37:35+01:00 Build Win32 binaries with a .exe file suffix
+8dc20083a40101bf0062a69d723fd702b5f98f60 2012-12-14T18:30:07+01:00 Raise the stack size to 4MiB for Win32 binaries
+63427090358f3527ca808fc4b1a2befed7eeb249 2012-12-14T18:05:05+01:00 Build Win32 binaries with the GUI flag
+e1d38a0a8607bac6a5910ecfc55b76bbd8ece9d9 2012-12-14T17:31:59+01:00 Build OS-specific host files based on systems parameters
+ea9d2a5016cee3ff40c5420965b44c40d6f36356 2012-12-14T17:30:53+01:00 Explicitly link against wsock32 and comdlg32 for win32 builds
+7dc531cab8cfa3ff087d4570423c7c8c15f12184 2012-12-14T17:30:10+01:00 Don't explicitly link to libc
+8a248350a4a95a27dd7f6c6b7c2d56578427e577 2012-12-14T17:29:22+01:00 Default to standalone binary build, for now
+317ed6e17d7061670a3fd1c26fba2a9146b1cd81 2012-12-14T17:24:46+01:00 Don't use 'thread' declspec on MinGW
+7f1978bd7d4c6081c05db31e0b1834b921c7453e 2012-12-15T17:10:06-08:00 Merge pull request #27 from earl/fix-lvalue-required-error
+69015f5f4141e9fdaee4aeea18dcfc435eaab1d5 2012-12-15T17:01:02-08:00 updated .gitignore for R3 related non-repository files
+e51eef5c162043048b1bd9d1fe5ea8b2ca711353 2012-12-15T16:30:34-08:00 adding baseline .gitignore - still to be expanded for r3
+939915138218620941da465262b9c54b8eca51cc 2012-12-15T16:21:55-08:00 fix for APPEND_BYTES in crash messages
+5bf1bf0b7cbf5eca6ecfe68530b19646eb9ec58f 2012-12-15T15:47:23-08:00 fix for possible crash in do-callback native function
+57f3b50943c250d3c47db09a6b832ddef102c283 2012-12-15T15:09:41-08:00 Merge pull request #24 from kjk/vc-build
+1ff93f9b610c31216efe51072982278b44d0675a 2012-12-15T02:12:33-08:00 build all
+780c2f3ba678ac937992ec395184340ad31f6fac 2012-12-15T02:03:47-08:00 start on Visual Studio nmake makefile
+eeec70052e55117f85976d197003eda575ef0388 2012-12-15T00:10:26-08:00 Merge pull request #20 from spytheman/fix_segfault_on_SIGINT
+2f98d0023294b0dd8cb4a43bd99f7fbb53a00e7f 2012-12-14T18:01:42-08:00 Updated system object license reference
+1640215956abf4e5f00af39a4f9a6e154564cc24 2012-12-14T17:45:53-08:00 Merge pull request #13 from spytheman/fix_m32_linker_flags
+221d10cc33f70e4d3109e3af909f084cee69c368 2012-12-14T14:13:59+02:00 Fix for a segfault, caused by writing to static memory in a signal handler.
+e67d0c7150007085fd80e3f7037907b36868723c 2012-12-14T12:50:33+01:00 fixed GCC compiler error: "lvalue required as increment operand"
+20b9cd59c6c6a1a2bccfb2ddb9af68c083a28698 2012-12-14T11:36:42+02:00 Add the -m32 option for the Linux x64 target to the linker-flags.
+b12dc8b9388dc0a2ae34563426043a612d296195 2012-12-13T23:19:35-08:00 Fix a couple typos.
+0ffda62e088b1d3cfc383a0475c7cab459fd7184 2012-12-13T23:16:49-08:00 Add -m32 to Linux 4.4 build options
+62ec41f0165bdb6afdbd502f29994d10257476c7 2012-12-13T14:35:33-08:00 Fix for existing objs dir
+6e9ef4300c1713c3b59c7c5d0da451a8693aac02 2012-12-13T10:55:10-08:00 Merge pull request #3 from juhagman/b-osx-build-fix
+de948dca9a6f45c4b7e060f849ffb7fbb0fa6625 2012-12-13T10:50:54-08:00 Merge pull request #1 from BrianHawley/master
+ab4ff08a52dc4092c831f121973b8268587dfa93 2012-12-13T09:02:03-08:00 Merge pull request #1 from rebol/master
+61c58cc3be753331f0c1fba573e62f723d7ec42d 2012-12-13T18:27:16+02:00 Fixed whitespace.
+306ebbe0a6c204a3e90086c91fca994e44980c8f 2012-12-13T18:18:29+02:00 Fix clean - clean should remove objs directory, otherwise subsequent builds will fail. - use -f to suppress warning for missing libr3.so
+177e47aa05a6b1be5f7fca33dbd3f9ea5eb13789 2012-12-13T17:59:18+02:00 At least on a current OS X,  (llvm-)gcc defaults to 64-bit, which breaks Rebol struct alignment. Force 32-bit build and link.
+8657fbcff9465ac7d09a800333786d4e15343548 2012-12-13T02:18:24-08:00 Add make-make for creating new makefiles. Fix objs directory problem.
+344f81b62aab9027c4b2a1d6b86b1450ee1af4f6 2012-12-12T13:27:46-06:00 Make sure line endings are normalized to LF
+6719e8ad53052d75f275a67249520f8193534804 2012-12-12T12:41:51-06:00 Robustness fixes to SAVE
+0926d2d572350e3f14655ee82739f6ed598dfa80 2012-12-12T12:16:29-06:00 SCRIPT? string fix (http://issue.cc/r3/1885)
+963ada892217bf13a2ee623aa85b50ba2ee5afbf 2012-12-12T02:48:42-08:00 fixed a missing boilerplate
+c99039c37d7bbff8b5f901c593f5c3e4398b84c4 2012-12-12T02:32:39-08:00 remove old readme
+08eb7e84cdadf450727501bb8ec02fad45696959 2012-12-12T02:29:45-08:00 Initial source release
+8b682e57dedfcd4770883c8999f45629d10f6a7a 2012-12-12T02:20:41-08:00 R3 license
+19d4f969b4f5c1536f24b023991ec11ee6d5adfb 2012-10-15T20:42:15-07:00 Initial commit

@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-08-31T18:04:19Z",
+  "purpose": "independent reference evidence pinning Rebol 2.7.8 artifact identities (URLs + hashes) while direct acquisition from rebol.com is blocked; enables instant cross-hashing once egress allows",
+  "sources": [
+    {
+      "file": "nixpkgs-red-package.nix",
+      "origin_repo": "NixOS/nixpkgs",
+      "path": "pkgs/by-name/re/red/package.nix",
+      "tier": 3,
+      "url": "https://github.com/NixOS/nixpkgs/blob/HEAD/pkgs/by-name/re/red/package.nix",
+      "git_blob_sha1": "8cc7cdc9b4e7e20d462a5dd72b587c7cf09238c0",
+      "size": 3044,
+      "sha256": "5fcc5a13a75e4df5036c44e98a37c37e70a9792ed872a226038c2680048dcbdc",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "distro package definition pinning red/red v0.6.4 commit + rebol-core-278-4-2 tarball sha256 (nix base32); license: unfree",
+      "quotes": [
+        {
+          "line": 21,
+          "text": "url = \"http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz\";"
+        }
+      ]
+    },
+    {
+      "file": "crux-rebol-Pkgfile",
+      "origin_repo": "dram/crux",
+      "path": "rebol/Pkgfile",
+      "tier": 3,
+      "url": "https://github.com/dram/crux/blob/HEAD/rebol/Pkgfile",
+      "git_blob_sha1": "9e2460aba455a7c6ce187cee4dc4f0145a9caf7e",
+      "size": 491,
+      "sha256": "97e0782d76a839a4cad58f3e05267a7d877204f727660813eef94d4c9803c2ff",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "CRUX ports recipe: rebol 2.7.8.4.2 core+view tarball URLs",
+      "quotes": [
+        {
+          "line": 9,
+          "text": "source=(http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz"
+        },
+        {
+          "line": 10,
+          "text": "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz)"
+        }
+      ]
+    },
+    {
+      "file": "crux-rebol-md5sum",
+      "origin_repo": "dram/crux",
+      "path": "rebol/.md5sum",
+      "tier": 3,
+      "url": "https://github.com/dram/crux/blob/HEAD/rebol/.md5sum",
+      "git_blob_sha1": "dced09eff36cfce4eba2f98b6d807d46df3620a3",
+      "size": 120,
+      "sha256": "a9d3009a2a83b351209ddd902078681ca67c51aa90bc35254cb617e44b1e8aee",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "CRUX MD5 reference hashes for rebol-core-278-4-2.tar.gz and rebol-view-278-4-2.tar.gz",
+      "quotes": [
+        {
+          "line": 1,
+          "text": "97eb1a48251f2bac11de917eef15763e  rebol-core-278-4-2.tar.gz"
+        },
+        {
+          "line": 2,
+          "text": "86e330032b19832a6fd521fa3b12afe5  rebol-view-278-4-2.tar.gz"
+        }
+      ]
+    },
+    {
+      "file": "aur3-rebol-PKGBUILD",
+      "origin_repo": "felixonmars/aur3-mirror",
+      "path": "rebol/PKGBUILD",
+      "tier": 3,
+      "url": "https://github.com/felixonmars/aur3-mirror/blob/HEAD/rebol/PKGBUILD",
+      "git_blob_sha1": "d70cc90e33be7724870a7e5f5433138ad0a65712",
+      "size": 920,
+      "sha256": "1c6e316754a58fc088bc14212b3cdfefd0738afeee17a4353f2fb3fc2f289243",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "AUR package build: rebol-core-278-4-2 URL; license 'custom:REBOL End User License'",
+      "quotes": [
+        {
+          "line": 14,
+          "text": "_source=\"http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz\""
+        }
+      ]
+    },
+    {
+      "file": "exercism-red-test-runner-Dockerfile",
+      "origin_repo": "exercism/red-test-runner",
+      "path": "Dockerfile",
+      "tier": 3,
+      "url": "https://github.com/exercism/red-test-runner/blob/HEAD/Dockerfile",
+      "git_blob_sha1": "a8a9408fa9cf39d3a07c01cab473b2683a11176b",
+      "size": 1049,
+      "sha256": "b3259c9158bddc87f145e33aaff7dd0e83f868e0db799bc1f1c513b06849fbcb",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "official exercism red test runner: fetches rebol-core-278-4-10.tar.gz (x86-64 eglibc build) with i386 libs",
+      "quotes": [
+        {
+          "line": 16,
+          "text": "RUN curl -L -O http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz && \\"
+        },
+        {
+          "line": 17,
+          "text": "tar -xzf rebol-core-278-4-10.tar.gz && \\"
+        },
+        {
+          "line": 20,
+          "text": "rm -rf /tmp/rebol-core /tmp/rebol-core-278-4-10.tar.gz"
+        }
+      ]
+    },
+    {
+      "file": "red-docker-rebol2-alpine-Dockerfile",
+      "origin_repo": "eranws/red-docker",
+      "path": "rebol2-alpine/Dockerfile",
+      "tier": 3,
+      "url": "https://github.com/eranws/red-docker/blob/HEAD/rebol2-alpine/Dockerfile",
+      "git_blob_sha1": "2158020c2cb83ee1112773acc3f532bdc9cbaf61",
+      "size": 242,
+      "sha256": "277c864073b2c0f4696ae7762bb1712741d40b77d9d5d37b12b563950144dd4d",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "community docker bootstrap: i386/alpine + rebol-core-278-4-2.tar.gz",
+      "quotes": [
+        {
+          "line": 5,
+          "text": "wget http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz && \\"
+        },
+        {
+          "line": 6,
+          "text": "tar -xvf rebol-core-278-4-2.tar.gz && \\"
+        }
+      ]
+    },
+    {
+      "file": "red-web-red-download-page.md",
+      "origin_repo": "red/web-red",
+      "path": "content/en/download/_index.md",
+      "tier": 1,
+      "url": "https://github.com/red/web-red/blob/HEAD/content/en/download/_index.md",
+      "git_blob_sha1": "2b675a8240b661d7d9f0f40518415a696629d3b3",
+      "size": 1934,
+      "sha256": "87b15b9c1af524362dae98b98f0fc2dd44e738ef698a42a1835091a7de27b4f0",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "OFFICIAL Red website download page source (Tier 1): links rebol-core-278-7-2.tar.gz on rebol.com for FreeBSD",
+      "quotes": [
+        {
+          "line": 31,
+          "text": "For FreeBSD, no prebuilt binaries yet, you need to cross-compile, or get the Red sources, a Rebol interpreter <a href=\"http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz\">here</a> and a couple packages: <b>libcrypto.so.8</b>, whi"
+        }
+      ]
+    },
+    {
+      "file": "tio-languages-rebol",
+      "origin_repo": "TryItOnline/tiosetup",
+      "path": "languages/rebol",
+      "tier": 3,
+      "url": "https://github.com/TryItOnline/tiosetup/blob/HEAD/languages/rebol",
+      "git_blob_sha1": "94767496b1566e4354716429e126c27aa5ba05bd",
+      "size": 191,
+      "sha256": "febb775fbc58e9d13c76af87b2cbab7905224bb5205dcaa710e7b0d96d008e07",
+      "retrieved_at": "2026-08-31T18:04:19Z",
+      "description": "TryItOnline Rebol language setup file",
+      "quotes": [
+        {
+          "line": 9,
+          "text": "curl -fsSL http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz \\"
+        }
+      ]
+    }
+  ],
+  "reference_hashes": [
+    {
+      "artifact": "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "hash": "b03b05fd070da8fa5186246a2febd02d7406305a65155cdaff3f1ac097b1757f",
+      "algo": "sha256",
+      "declared_by": "NixOS/nixpkgs pkgs/by-name/re/red/package.nix (fetchurl, base32-nix decoded)",
+      "comparable_with": "sha256 of the tarball itself once downloadable"
+    },
+    {
+      "artifact": "red/red source tree @ 755eb943ccea9e78c2cab0f20b313a52404355cb (unpacked)",
+      "hash": "10b9cbd2631becfbf3cf7bcfa477f6fe4a0807a2896077e47862b90bbe646067",
+      "algo": "sha256 (nix fetchFromGitHub tree hash)",
+      "declared_by": "NixOS/nixpkgs (same file)",
+      "comparable_with": "NOT directly comparable with archive sha256; nix tree-hash semantics"
+    },
+    {
+      "artifact": "http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz",
+      "hash": "97eb1a48251f2bac11de917eef15763e",
+      "algo": "md5",
+      "declared_by": "dram/crux rebol/.md5sum"
+    },
+    {
+      "artifact": "http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz",
+      "hash": "86e330032b19832a6fd521fa3b12afe5",
+      "algo": "md5",
+      "declared_by": "dram/crux rebol/.md5sum"
+    }
+  ]
+}

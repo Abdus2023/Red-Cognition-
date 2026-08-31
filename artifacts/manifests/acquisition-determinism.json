@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-08-31T17:55:41Z",
+  "purpose": "verify GitHub codeload tag archives are byte-identical across fetches (acquisition reproducibility)",
+  "samples": [
+    {
+      "archive": "red-0.6.6.tar.gz",
+      "stored_sha256": "23a02a53e0dcbf8da24c639014685de935d74c19a0b5b70a4ecade7b917bb63b",
+      "note": "re-fetched at stage-10 start; byte-identical (sha256 23a02a53e0dcbf8da24c639014685de935d74c19a0b5b70a4ecade7b917bb63b)"
+    },
+    {
+      "archive": "red-0.6.3.tar.gz",
+      "stored_sha256": "2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c",
+      "refetched_sha256": "2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c",
+      "byte_identical": true
+    }
+  ],
+  "conclusion": "REPRODUCED for tested samples: codeload tag archives are byte-deterministic across fetches; recorded hashes are independently re-verifiable by anyone with GitHub access."
+}

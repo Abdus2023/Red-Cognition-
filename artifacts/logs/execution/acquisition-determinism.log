@@ -1,0 +1,6 @@
+determinism re-fetch test
+stamp: 2026-08-31T17:55:41Z
+red-0.6.6.tar.gz: identical (prior probe)
+red-0.6.3.tar.gz stored: 2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c
+red-0.6.3.tar.gz refetched: 2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c
+byte_identical: True

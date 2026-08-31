@@ -1,0 +1,9 @@
+# repo=https://github.com/rebol/projects
+# head=23a251573a49ee9c457ca72bce67d30894e1967e
+# count=4
+# generated=2026-08-31T18:04:19Z
+# format: <commit-sha> <author-date-iso> <subject>
+23a251573a49ee9c457ca72bce67d30894e1967e 2013-08-19T07:54:50-07:00 Update README.md
+3a7b9d358d71bad34563c22fd655745dda7c4022 2013-08-18T21:37:11-07:00 Fix spacing.
+80fb5cfa1afa5b12fff3dba8c5f4ea01986e1737 2013-08-18T21:09:22-07:00 Scripts for testing basic TCP
+f4c1db16d8225d4e6b5eb0ec1f53c0fbc559ab56 2013-08-18T20:55:35-07:00 Initial commit

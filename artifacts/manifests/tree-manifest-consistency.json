@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-31T18:20:12Z",
+  "checks": [
+    {
+      "manifest": "Oldes_Rebol3__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": true,
+      "stored_entries": 900,
+      "regenerated_entries": 900
+    },
+    {
+      "manifest": "metaeducation_ren-c__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 1082,
+      "regenerated_entries": 1082
+    },
+    {
+      "manifest": "rebol_projects__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 3,
+      "regenerated_entries": 3
+    },
+    {
+      "manifest": "rebol_rebol__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 220,
+      "regenerated_entries": 220
+    },
+    {
+      "manifest": "rebolsource_r3__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 221,
+      "regenerated_entries": 221
+    },
+    {
+      "manifest": "rebolsource_rebol-syntax__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 4,
+      "regenerated_entries": 4
+    },
+    {
+      "manifest": "rebolsource_rebol-test__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 27,
+      "regenerated_entries": 27
+    },
+    {
+      "manifest": "red_Homebrew-red__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 2,
+      "regenerated_entries": 2
+    },
+    {
+      "manifest": "red_REP__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 8,
+      "regenerated_entries": 8
+    },
+    {
+      "manifest": "red_RS-fossil-mirror__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 148,
+      "regenerated_entries": 148
+    },
+    {
+      "manifest": "red__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 826,
+      "regenerated_entries": 826
+    },
+    {
+      "manifest": "red__v0.6.3.lsr",
+      "kind": "pinned-ref",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 503,
+      "regenerated_entries": 503
+    },
+    {
+      "manifest": "red__v0.6.4.lsr",
+      "kind": "pinned-ref",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 538,
+      "regenerated_entries": 538
+    },
+    {
+      "manifest": "red__v0.6.6.lsr",
+      "kind": "pinned-ref",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 673,
+      "regenerated_entries": 673
+    },
+    {
+      "manifest": "red__v0.7.lsr",
+      "kind": "pinned-ref",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 581,
+      "regenerated_entries": 581
+    },
+    {
+      "manifest": "red_chocolatey-packages__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 7,
+      "regenerated_entries": 7
+    },
+    {
+      "manifest": "red_docs__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 325,
+      "regenerated_entries": 325
+    },
+    {
+      "manifest": "red_scoop-bucket__HEAD.lsr",
+      "kind": "recorded-acquisition-commit",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 2,
+      "regenerated_entries": 2
+    },
+    {
+      "manifest": "workspace-fork__HEAD.lsr",
+      "kind": "pinned-commit (local fork)",
+      "result": "EXACT_MATCH",
+      "canonicalized": false,
+      "stored_entries": 1118,
+      "regenerated_entries": 1118
+    }
+  ],
+  "note": "pinned-ref manifests must match exactly (they do unless noted); HEAD-anchored manifests were re-verified against the recorded acquisition commits, so upstream drift does not affect them"
+}

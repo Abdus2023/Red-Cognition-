@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-08-31T18:20:12Z",
+  "ref": "red/red tag v0.6.6 (commit 6942c7a0\u2026)",
+  "version.r_at_root": null,
+  "encapper/version.r": "0.6.6",
+  "build/git-version.r": "REBOL [\n\tTitle:   \"Get git version data\"\n\tAuthor:  \"Will Arp\"\n\tFile: \t %git-version.r\n\tTabs:\t 4\n\tRights:  \"Copyright (C)",
+  "license_copyright_line": "2011-2019",
+  "release_claim": "0.6.6: Memory Management Improvements (GitHub release)",
+  "result": "CONSISTENT (root version file absent by design in this layout; encapper/version.r + release name agree on 0.6.6)"
+}

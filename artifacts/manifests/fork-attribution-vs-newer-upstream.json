@@ -1,0 +1,24 @@
+{
+  "borrowed_v065": 87,
+  "borrowed_v066": 0,
+  "fork_original": 171,
+  "examples_fork_original": [
+    ".github/ISSUE_TEMPLATE/bug_report.md",
+    ".travis.yml",
+    "CONTRIBUTING.md",
+    "README.md",
+    "boot.red",
+    "build/git-version.r",
+    "build/includes.r",
+    "compiler.r",
+    "environment/actions.red",
+    "environment/console/CLI/POSIX.reds",
+    "environment/console/CLI/console.red",
+    "environment/console/CLI/input.red",
+    "environment/console/CLI/win32.reds",
+    "environment/console/GUI/core.red",
+    "environment/console/GUI/gui-console.red"
+  ],
+  "method": "workspace blob SHA vs upstream v0.6.5/v0.6.6 ls-tree blob SHAs over the 258 fork-differing paths",
+  "conclusion": "87/258 differing files exactly match a LATER upstream tree (borrowed forward-ports); 171/258 are fork-original modifications"
+}

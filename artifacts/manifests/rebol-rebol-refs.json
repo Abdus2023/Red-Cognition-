@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-08-31T18:04:19Z",
+  "repo": "https://github.com/rebol/rebol",
+  "method": "git ls-remote (authoritative remote refs)",
+  "heads": {
+    "refs/heads/master": "25033f897b2bd466068d7663563cd3ff64740b94",
+    "refs/heads/stable": "fc51038c012ee8a8abe848decbc1af792065d5e2"
+  },
+  "tags": {},
+  "finding": "2 branches, 0 tags (confirms zero-tag status)"
+}
