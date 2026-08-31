@@ -44,6 +44,8 @@ GENERATED_AUDIT_PATHS = {
     "verification/reports/DUPLICATE_ANALYSIS.md",
     "verification/reports/LICENSE_SUMMARY.md",
     "verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
+    "verification/reports/MANIFEST_VALIDATION.json",
+    "verification/reports/MANIFEST_VALIDATION.md",
     "verification/reports/MONOREPO_AUDIT.md",
     "verification/reports/OFFLINE_STATUS.md",
     "verification/reports/OWNER_DECISIONS.md",

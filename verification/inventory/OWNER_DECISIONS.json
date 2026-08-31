@@ -47,8 +47,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive owner decision register from audit, duplicate, bootstrap, CI, and upstream comparison evidence",
-    "repository_commit": "2aa461571fe3f6e1853cabed2c163c1d06a05349",
-    "timestamp_utc": "2026-08-31T19:57:53.006676+00:00",
+    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
+    "timestamp_utc": "2026-08-31T20:09:05.900673+00:00",
     "tool": "tools/source-audit/generate_repository_risk_reports.py"
   },
   "schema_version": 1,

@@ -6,29 +6,29 @@ Repository: `https://github.com/Abdus2023/Red-Cognition-`
 Branch: `arena/01a058c5-red-cognition`  
 Latest observed pushed commit at time of this report: `2aa461571fe3f6e1853cabed2c163c1d06a05349`
 
-This file records GitHub Actions evidence separately from local execution evidence. It does not claim CI success unless a workflow/run completed successfully.
+This file records GitHub Actions evidence separately from local execution evidence. It does not claim successful CI unless a workflow/run completed successfully.
 
 ## Workflow Runs Observed
 
 | Workflow | Run ID | URL | Head SHA | Status | Conclusion | Material evidence |
 |---|---:|---|---|---|---|---|
 | Windows | 33432879521 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33432879521 | `2aa461571fe3f6e1853cabed2c163c1d06a05349` | completed | failure | Latest observed Windows run failed quickly during setup. No Windows Red test success is claimed. |
-| Red container tests | 33432879526 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33432879526 | `2aa461571fe3f6e1853cabed2c163c1d06a05349` | in_progress at last observation | not concluded | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` were observed successful. Step `Run Red and Red/System container tests` was in progress. No container test pass is claimed. |
+| Red container tests | 33432879526 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33432879526 | `2aa461571fe3f6e1853cabed2c163c1d06a05349` | in_progress at last observation | not concluded | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` were observed successful. Step `Run Red and Red/System container tests` was in progress. No container test success is claimed. |
 | Windows | 33430899065 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33430899065 | `8b539c0c416bb861597c6f05725b2a5d5451e555` | completed | failure | Windows setup failed. No Windows Red test success is claimed. |
-| Red container tests | 33430899101 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33430899101 | `8b539c0c416bb861597c6f05725b2a5d5451e555` | completed | cancelled | Container workflow was cancelled during Red/Red-System test execution. No container test pass is claimed. |
+| Red container tests | 33430899101 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33430899101 | `8b539c0c416bb861597c6f05725b2a5d5451e555` | completed | cancelled | Container workflow was cancelled during Red/Red-System test execution. No container test success is claimed. |
 | Windows | 33428373251 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33428373251 | `de7913f4e9156a1a093e84fc33c73dfee284cc4f` | completed | failure | All observed jobs failed at `Set up job`: Core, Core-Release, Core-Debug, View, Regression, Each-Mode, Each-Mode-Debug, Red-System-Test. No Windows Red test success is claimed. |
-| Red container tests | 33428373183 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33428373183 | `de7913f4e9156a1a093e84fc33c73dfee284cc4f` | completed | cancelled | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` completed successfully. Step `Run Red and Red/System container tests` was cancelled. No container test pass is claimed. |
+| Red container tests | 33428373183 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33428373183 | `de7913f4e9156a1a093e84fc33c73dfee284cc4f` | completed | cancelled | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` completed successfully. Step `Run Red and Red/System container tests` was cancelled. No container test success is claimed. |
 | Windows | 33418665175 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33418665175 | `b4c5005efcfc7810a1ff24ed508c62ad4bfeeec2` | completed | failure | All observed jobs failed at `Set up job`. No Windows Red test success is claimed. |
-| Red container tests | 33418665227 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33418665227 | `b4c5005efcfc7810a1ff24ed508c62ad4bfeeec2` | completed | cancelled | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` completed successfully. Step `Run Red and Red/System container tests` was cancelled. No container test pass is claimed. |
+| Red container tests | 33418665227 | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33418665227 | `b4c5005efcfc7810a1ff24ed508c62ad4bfeeec2` | completed | cancelled | Steps `Download and verify Rebol 2.7.8 bootstrap` and `Build 32-bit Rebol test image` completed successfully. Step `Run Red and Red/System container tests` was cancelled. No container test success is claimed. |
 
 ## CI Status Summary
 
 - CI executed: yes, GitHub Actions runs were triggered by push.
-- CI passed: no complete CI pass observed or claimed.
+- Successful complete CI result: none observed or claimed.
 - CI failed: Windows workflow failed during job setup in observed runs.
 - CI cancelled/incomplete: observed Red container test workflows were cancelled during Red/Red-System test execution or still in progress at last observation.
 - CI evidence for Rebol bootstrap binary verification: partial; observed container workflows reported successful `Download and verify Rebol 2.7.8 bootstrap` steps.
-- CI evidence for Red/Rebol test-suite pass: none.
+- CI evidence for Red/Rebol test-suite success: none.
 
 ## Log Retrieval Notes
 

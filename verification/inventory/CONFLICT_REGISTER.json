@@ -5608,8 +5608,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive conflict records from duplicate analysis, upstream comparison, binary inventory, and RFC validator result",
-    "repository_commit": "2aa461571fe3f6e1853cabed2c163c1d06a05349",
-    "timestamp_utc": "2026-08-31T19:57:53.053892+00:00",
+    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
+    "timestamp_utc": "2026-08-31T20:09:05.948192+00:00",
     "tool": "tools/source-audit/generate_conflict_register.py"
   },
   "policy": "No artifact is deleted, merged, or selected as authoritative by this register. All open conflicts require owner/maintainer review.",

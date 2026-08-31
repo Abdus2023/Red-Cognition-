@@ -1,0 +1,103 @@
+{
+  "checks": [
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/REBOL_RED_INVENTORY.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/MIGRATION_MANIFEST.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/DUPLICATE_ANALYSIS.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/TEST_INVENTORY.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/BINARY_INVENTORY.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/OWNER_DECISIONS.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/inventory/CONFLICT_REGISTER.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/provenance/PROVENANCE_MANIFEST.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/provenance/LICENSE_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
+      "path": "verification/reproducibility/OFFLINE_DEPENDENCIES.json",
+      "status": "PASS"
+    },
+    {
+      "check": "inventory_cardinality_and_hashes",
+      "files_checked": 1124,
+      "status": "PASS"
+    },
+    {
+      "check": "sha256sums",
+      "entries": 1124,
+      "status": "PASS"
+    },
+    {
+      "check": "migration_no_move_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "conflict_register",
+      "conflicts": 350,
+      "status": "PASS"
+    },
+    {
+      "check": "duplicate_analysis_counts",
+      "status": "PASS"
+    },
+    {
+      "check": "upstream_comparison_counts",
+      "local_entries": 1118,
+      "status": "PASS"
+    },
+    {
+      "check": "epistemic_overclaim_scan",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "validate generated monorepo audit manifests and checksum records; no Red/Rebol build or test execution",
+    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
+    "timestamp_utc": "2026-08-31T20:09:25.933376+00:00",
+    "tool": "tools/source-audit/validate_monorepo_audit.py"
+  },
+  "result": "PASS",
+  "schema_version": 1,
+  "warnings": []
+}
