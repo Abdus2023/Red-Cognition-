@@ -1,17 +1,17 @@
 # Rebol + Red Inventory
 
-Generated: 2026-08-31T17:15:42.354515+00:00
+Generated: 2026-08-31T19:29:50.160593+00:00
 Tool: `tools/source-audit/generate_rebol_red_inventory.py`
 Repository: `https://github.com/Abdus2023/Red-Cognition-`
 Branch: `arena/01a058c5-red-cognition`
-Commit: `742181a8b868309b9fbebbf94e8355b8ac1eac06`
+Commit: `de7913f4e9156a1a093e84fc33c73dfee284cc4f`
 
 ## Scope and Method
 git ls-files enumeration; local byte-size and SHA-256 hashing; conservative rule-based classification from path, extension, and source headers.
 No upstream source was moved or rewritten by this inventory phase.
 
 ## Summary
-- Total tracked files inventoried: 1120
+- Total tracked files inventoried: 1121
 - Binary files: 28
 - Files with `REBOL [` headers: 113
 - Files with `Red [` headers: 166
@@ -28,7 +28,7 @@ No upstream source was moved or rewritten by this inventory phase.
 | GOVERNANCE | 6 |
 | REBOL-BOOTSTRAP | 1 |
 | REBOL-SOURCE | 4 |
-| RED-COGNITION | 88 |
+| RED-COGNITION | 89 |
 | RED-COMPILER | 28 |
 | RED-FIXTURE | 16 |
 | RED-RUNTIME | 163 |
@@ -355,7 +355,7 @@ No upstream source was moved or rewritten by this inventory phase.
 - `tests/run-all.sh`
 - `tests/source/units/all-tests.txt`
 
-### RED-COGNITION (88)
+### RED-COGNITION (89)
 - `cognition/.gitkeep`
 - `dialects/.gitkeep`
 - `docs/implementation/concurrency-model.md`
@@ -434,9 +434,9 @@ No upstream source was moved or rewritten by this inventory phase.
 - `tools/impl_controller/tests/test_state_machine.py`
 - `tools/run-full-pipeline.py`
 - `tools/run-implementation-pipeline.py`
+- `tools/source-audit/compare_red_upstream.py`
 - `tools/source-audit/generate_rebol_red_inventory.py`
-- `tools/source-audit/generate_supplemental_manifests.py`
-- ... 8 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+- ... 9 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
 
 ### SPECIFICATION (90)
 - `docs/red-system/dark.css`

@@ -3,14 +3,14 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "summarize per-file provenance records from inventory",
-    "repository_commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06",
+    "repository_commit": "de7913f4e9156a1a093e84fc33c73dfee284cc4f",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-08-31T17:15:42.442656+00:00",
+    "timestamp_utc": "2026-08-31T19:29:50.243106+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "groups": {
     "Red Programming Language": {
-      "count": 532,
+      "count": 533,
       "paths_sample": [
         ".gitignore-sample",
         "CODE_OF_CONDUCT.md",
@@ -103,11 +103,11 @@
   "per_file_manifest_location": "verification/inventory/REBOL_RED_INVENTORY.json",
   "schema_version": 1,
   "summary": {
-    "files": 1120,
+    "files": 1121,
     "policy": "Do not upgrade provenance confidence without external evidence or reproducible comparison.",
-    "unknown_modification_status_files": 1120,
+    "unknown_modification_status_files": 1121,
     "upstream_project_groups": {
-      "Red Programming Language": 532,
+      "Red Programming Language": 533,
       "Red-Cognition": 393,
       "UNKNOWN": 195
     }

@@ -47,22 +47,38 @@ def git(*args: str) -> str:
 
 
 def tracked_files() -> list[str]:
-    """Return audited files: tracked files plus non-generated untracked tooling.
+    """Return audited source/control files, excluding generated reports.
 
-    Generated report outputs are excluded to avoid self-referential checksums.
+    Generated report outputs are excluded even after they become tracked, so the
+    inventory and SHA256SUMS manifests remain stable and non-self-referential.
+    Source-audit tools themselves are included.
     """
-    tracked = set(git("ls-files").splitlines())
+    generated = set(OUTPUTS.values()) | {
+        "verification/inventory/MIGRATION_MANIFEST.json",
+        "verification/inventory/DUPLICATE_ANALYSIS.json",
+        "verification/inventory/TEST_INVENTORY.json",
+        "verification/provenance/PROVENANCE_MANIFEST.json",
+        "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
+        "verification/reports/DUPLICATE_ANALYSIS.md",
+        "verification/reports/TEST_STATUS.md",
+        "verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
+        "verification/reports/CI_EVIDENCE.md",
+        "verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md",
+    }
+    generated_prefixes = set()
+
+    def include(rel: str) -> bool:
+        return rel not in generated and not any(rel.startswith(prefix) for prefix in generated_prefixes)
+
+    files = {rel for rel in git("ls-files").splitlines() if include(rel)}
     try:
         untracked = set(git("ls-files", "--others", "--exclude-standard").splitlines())
     except subprocess.CalledProcessError:
         untracked = set()
-    generated = set(OUTPUTS.values())
-    generated_prefixes = {"verification/", "docs/architecture/", "docs/provenance/", "docs/bootstrap/"}
     for rel in untracked:
-        if rel in generated or any(rel.startswith(prefix) for prefix in generated_prefixes):
-            continue
-        tracked.add(rel)
-    return sorted(tracked)
+        if include(rel):
+            files.add(rel)
+    return sorted(files)
 
 
 def sha256(path: Path) -> str:
@@ -495,15 +511,15 @@ def write_provenance(data: dict[str, Any]) -> None:
         "## Evidence Boundaries",
         "",
         "- SHA-256 values were calculated locally from repository file bytes.",
-        "- Upstream exact commits, tags, versions, and modification status remain `UNKNOWN` unless explicitly present in local source headers or repository configuration.",
-        "- The apparent Red lineage is supported by source headers, README content, and local paths, but that is not evidence of pristine upstream state.",
+        "- Upstream exact commits, tags, versions, and modification status remain `UNKNOWN` unless explicitly present in local source headers, repository configuration, or separately generated comparison evidence.",
+        "- A supplemental comparison against upstream Red `v0.6.4` is recorded in `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json`; it verifies byte identity for matching files only and does not prove pristine state for diverged files.",
         "- Red-Cognition artifacts are retained from this repository checkout; external origins are not inferred.",
         "",
         "## Known Origins",
         "",
         "| Area | Origin evidence | Confidence | Unknowns |",
         "|---|---|---|---|",
-        "| Red compiler/runtime/tooling | Headers reference Red Foundation and `https://github.com/red/red`; README describes Red toolchain | Medium lineage confidence | Exact upstream commit, local modifications |",
+        "| Red compiler/runtime/tooling | Headers reference Red Foundation and `https://github.com/red/red`; README describes Red toolchain; supplemental SHA-256 comparison against Red `v0.6.4` peeled commit `755eb943ccea9e78c2cab0f20b313a52404355cb` | High for byte-identical files matched to `v0.6.4`; medium lineage confidence otherwise | Intentionality of diverged files, history after/before `v0.6.4` |",                
         "| Rebol bootstrap | README and CI require Rebol2 interpreter; container workflow downloads `https://static.red-lang.org/tmp/rebol` with SHA-256 | Medium for bootstrap dependency | Source provenance for the binary, local execution status |",
         "| Red-Cognition RFC/spec/governance docs | Present in this checkout under `rfcs/`, `docs/`, `knowledge-base/`, `specs/` | Medium for local retention | External origin/history |",
         "| Binary/library artifacts | Present as tracked bytes and hashed in inventory | Medium for local bytes | Build provenance and reproducibility |",
@@ -511,6 +527,7 @@ def write_provenance(data: dict[str, Any]) -> None:
         "## Machine-Readable Provenance",
         "",
         f"Per-file provenance fields are recorded in `{OUTPUTS['inventory_json']}`. Unknown fields are explicitly represented as `UNKNOWN` rather than inferred.",
+        "Supplemental upstream comparison evidence is recorded in `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json` and summarized in `verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md`.",
         "",
     ]
     out.write_text("\n".join(lines))
@@ -528,19 +545,19 @@ def write_bootstrap(data: dict[str, Any]) -> None:
         "",
         "| Stage | Required tool | Input artifacts | Output artifacts | Execution status | Reproducibility status |",
         "|---|---|---|---|---|---|",
-        "| Stage 0 | Host OS plus external Rebol 2 interpreter | External `rebol`/`rebview` binary; CI references `https://static.red-lang.org/tmp/rebol` SHA-256 `1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6` | Runnable bootstrap interpreter | NOT-RUN locally; CI workflow discovered | PROVISIONAL/BLOCKED for offline use because binary source is not vendored |",
+        "| Stage 0 | Host OS plus external Rebol 2 interpreter | External `rebol`/`rebview` binary; CI references `https://static.red-lang.org/tmp/rebol` SHA-256 `1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6` | Runnable bootstrap interpreter | NOT-RUN locally; CI metadata in `verification/reports/CI_EVIDENCE.md` records successful bootstrap download/verification steps in observed container workflows | PROVISIONAL/BLOCKED for offline use because binary source is not vendored |"
         "| Rebol bootstrap | Rebol 2.x interpreter | `.r` scripts, `compiler.r`, `system/*.r`, tests runners | Red/System and Red compilation steps | NOT-RUN locally in this phase | PROVISIONAL |",
         "| Red compiler bootstrap | Rebol-implemented Red compiler | `red.r`, `compiler.r`, `system/compiler.r`, `lexer.r`, `utils/`, `runtime/` | Red executables/libraries when build is run | NOT-RUN locally in this phase | PROVISIONAL |",
         "| Red/System | Red/System compiler and `.reds` sources | `runtime/*.reds`, `system/runtime/*.reds`, modules/bridges `.reds` | Low-level runtime/library artifacts | NOT-RUN locally in this phase | PROVISIONAL |",
         "| Red runtime/compiler | Red compiler/runtime sources | `boot.red`, `environment/`, `runtime/`, `libRed/` | Red runtime/libRed products | NOT-RUN locally in this phase | PROVISIONAL |",
-        "| Red-Cognition tooling | Python control-plane tools and RFC/spec docs | `tools/impl_controller/`, `docs/implementation/`, `rfcs/`, `specs/` | Generated reports/status documents | Only inventory generator executed in this phase | PARTIALLY_VERIFIED for generated inventory only |",
+        "| Red-Cognition tooling | Python control-plane tools and RFC/spec docs | `tools/impl_controller/`, `tools/source-audit/`, `docs/implementation/`, `rfcs/`, `specs/` | Generated reports/status documents | Source-audit generators and existing repository/RFC validators executed; see `verification/reports/LOCAL_EXECUTION_EVIDENCE.md` | PARTIALLY_VERIFIED for source-audit outputs; RFC-0075 validator currently FAILS with known critical gaps |"
         "",
         "## Offline Status",
         "",
         "- SOURCE-AVAILABLE: Red and Red-Cognition source/documentation in this checkout are available offline.",
         "- BUILD-AVAILABLE: BLOCKED until required Rebol bootstrap interpreter/container availability is demonstrated offline.",
         "- BOOTSTRAP-AVAILABLE: BLOCKED for Stage 0 because the Rebol binary is an external network dependency in CI.",
-        "- EXECUTION-AVAILABLE: PARTIALLY_VERIFIED only for Python inventory generation; Red/Rebol tests were not executed by this phase.",
+        "- EXECUTION-AVAILABLE: PARTIALLY_VERIFIED only for Python source-audit/report validation commands listed in `verification/reports/LOCAL_EXECUTION_EVIDENCE.md`; Red/Rebol tests were not executed locally by this phase.",
         "",
     ]
     out.write_text("\n".join(lines))
@@ -562,7 +579,7 @@ def write_audit(data: dict[str, Any]) -> None:
         f"- Primary development branch stated by user: `audio`",
         f"- Current commit at reconnaissance: `{data['repository']['commit']}`",
         f"- Initial reconnaissance working tree status: `{data['repository']['initial_reconnaissance_status']}`",
-        f"- Working tree status at report generation: `{data['repository']['working_tree_status_at_generation']}`",
+        "- Working tree status at report generation: recorded in `verification/inventory/REBOL_RED_INVENTORY.json`; generated-file updates may appear dirty during generation.",
         "",
         "## Result",
         "PROVISIONAL: repository inventory, hashing, conservative classification, and documentation baseline were established. Red/Rebol bootstrap and test execution remain blocked/not-run locally in this phase.",
@@ -593,6 +610,13 @@ def write_audit(data: dict[str, Any]) -> None:
         "## License Analysis",
         "License indications are recorded per file where present. Repository-level license files `BSD-3-License.txt` and `BSL-License.txt` are retained. No reconciliation or relicensing was performed.",
         "",
+        "## Upstream Provenance Comparison",
+        "- Upstream Red tag `v0.6.4` was explicitly fetched from `https://github.com/red/red.git` and compared by SHA-256 in this phase.",
+        "- Peeled upstream commit: `755eb943ccea9e78c2cab0f20b313a52404355cb`.",
+        "- Result summary: 251 local files matched upstream at the same path, 13 matched upstream content at relocated/renamed paths, 258 diverged at the same path, and 613 were local-only/non-Red-upstream relative to `v0.6.4`.",
+        "- Diverged files are not automatically classified as intentional local modifications; maintainer review is required.",
+        "- Evidence: `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json` and `verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md`.",
+        "",
         "## Test Status",
         f"- Discovery: {tests['discovery_status']}",
         f"- Red-family test files discovered: {len(tests['red_family_test_files'])}",
@@ -608,14 +632,19 @@ def write_audit(data: dict[str, Any]) -> None:
         "## CI Status",
         "- `.github/workflows/main.yml` discovered Windows jobs that download `rebview.exe` and run Red suites.",
         "- `.github/workflows/red-container-tests.yml` discovered Ubuntu container tests using a pinned Rebol SHA-256.",
-        "- No GitHub Actions run was executed or verified by this phase, so there is no CI PASS claim.",
+        "- GitHub Actions runs were observed after pushes to `arena/01a058c5-red-cognition`.",
+        "- Windows workflow run `33428373251` for commit `de7913f4e9156a1a093e84fc33c73dfee284cc4f` completed with conclusion `failure`; observed jobs failed during `Set up job`.",
+        "- Red container tests workflow run `33428373183` for commit `de7913f4e9156a1a093e84fc33c73dfee284cc4f` completed with conclusion `cancelled`; bootstrap download/verification and image build steps succeeded, while `Run Red and Red/System container tests` was cancelled.",
+        "- Earlier Red container tests run `33418665227` for commit `b4c5005efcfc7810a1ff24ed508c62ad4bfeeec2` completed with conclusion `cancelled` during the Red/Red-System test step.",
+        "- There is no CI PASS claim for Red, Red/System, or Red-Cognition tests.",
+        "- Detailed CI metadata evidence: `verification/reports/CI_EVIDENCE.md`.",
         "",
         "## Offline Status",
         "SOURCE-AVAILABLE is partially established by local source presence and hashes. BUILD-AVAILABLE, BOOTSTRAP-AVAILABLE, and EXECUTION-AVAILABLE for Red/Rebol are not established locally; Stage 0 depends on external bootstrap binaries unless separately provisioned.",
         "",
         "## Blocked Items",
-        "- Exact upstream Red commit/tag for retained source tree: UNKNOWN/BLOCKED pending provenance research.",
-        "- Verification of local modifications relative to upstream Red: UNKNOWN/BLOCKED pending upstream comparison.",
+        "- Exact upstream Red `v0.6.4` tag comparison was performed, but exact provenance for files not matching that tag remains UNKNOWN/BLOCKED pending additional upstream research.",
+        "- Intentional local modification status for files diverged from upstream Red `v0.6.4` remains UNKNOWN/BLOCKED pending maintainer review.",
         "- Offline Stage 0 Rebol bootstrap: BLOCKED; CI downloads external binary.",
         "- Red/Rebol tests: BLOCKED locally without runnable Rebol/Red toolchain or verified container execution.",
         "",
@@ -639,9 +668,12 @@ def write_audit(data: dict[str, Any]) -> None:
         "- `verification/inventory/DUPLICATE_ANALYSIS.json`",
         "- `verification/inventory/TEST_INVENTORY.json`",
         "- `verification/provenance/PROVENANCE_MANIFEST.json`",
+        "- `verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json`",
+        "- `verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md`",
         "- `verification/reports/DUPLICATE_ANALYSIS.md`",
         "- `verification/reports/TEST_STATUS.md`",
         "- `verification/reports/LOCAL_EXECUTION_EVIDENCE.md`",
+        "- `verification/reports/CI_EVIDENCE.md`", 
         "",
     ]
     out.write_text("\n".join(lines))
