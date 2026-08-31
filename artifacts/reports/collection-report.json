@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-31T18:15:12Z",
+  "generated_at": "2026-08-31T18:20:19Z",
   "final_gate": "PARTIALLY_VERIFIED",
   "final_gate_rationale": "Substantial verified evidence exists (official upstream identity, immutable tag/commit resolution, pinned-hash archives, git lineage proof). Verification is incomplete because every executable-binary channel (static.red-lang.org, rebol.com, archive.org, GitHub release-asset CDN) is blocked by the sandbox egress allowlist, so no binary acquisition, execution, or bootstrap reproduction was possible.",
   "collection_summary": {
-    "rebol_artifacts_collected": 24,
-    "red_artifacts_collected": 41,
+    "rebol_artifacts_collected": 25,
+    "red_artifacts_collected": 42,
     "red_system_artifacts_collected": 3,
-    "related_metadata_records": 38,
+    "related_metadata_records": 40,
     "git_repositories_collected": 7,
     "git_working_trees_collected": 1,
     "release_archives_collected": 12,

@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 106,
+  "record_count": 110,
   "artifacts": [
     {
       "project": "RED",
@@ -664,11 +664,12 @@
       "tag": null,
       "filename": "Oldes_Rebol3__HEAD.lsr",
       "path": "artifacts/manifests/trees/Oldes_Rebol3__HEAD.lsr",
-      "sha256": "9ece2b446293ed32de595734b5ea95e36fc301f22d948b080fc9af37eb04cdc0",
+      "sha256": "afa5131aab856682383676506808bfed0457ee85e6db55ab29ae76d5407e4506",
       "size": 73703,
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
-      "retrieved_at": "2026-08-31T17:33:52Z"
+      "retrieved_at": "2026-08-31T17:33:52Z",
+      "notes": " [canonicalized stage 16: git quoted-path rendering normalized to raw UTF-8; same 900 entries]"
     },
     {
       "project": "RELATED",
@@ -2009,6 +2010,66 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "33 org repos: 8 collected, 25 documented out-of-scope"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 16 fetch comparison",
+      "filename": "upstream-drift.json",
+      "path": "artifacts/manifests/upstream-drift.json",
+      "sha256": "cbc36a6d809e5fbe4cd0c87bfa88d039662a9ca7598c3a5313982e95c2cc5b6a",
+      "size": 2454,
+      "retrieved_at": "2026-08-31T18:20:12Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "0/14 repos moved since acquisition (longitudinal evidence)"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 16 metadata-layer re-derivation",
+      "filename": "tree-manifest-consistency.json",
+      "path": "artifacts/manifests/tree-manifest-consistency.json",
+      "sha256": "bcab1f77b6942136098a2f82eacfb5e1dd075d73b9cda2c3ab64670de4717cbd",
+      "size": 4457,
+      "retrieved_at": "2026-08-31T18:20:12Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "19/19 committed tree manifests regenerate EXACT_MATCH from clones"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 16 internal consistency check",
+      "filename": "red-0.6.6-version-consistency.json",
+      "path": "artifacts/manifests/red-0.6.6-version-consistency.json",
+      "sha256": "91bb7c8b7abdec2eea5d7b5ebeab6cb9d5ffe4c8fd7b80d06b98297d35998163",
+      "size": 573,
+      "retrieved_at": "2026-08-31T18:20:12Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "CONSISTENT (root version file absent by design in this layout; encapper/version.r + release name agree on 0.6.6)"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 16 scope statement",
+      "filename": "rebolsource-org-coverage.json",
+      "path": "artifacts/manifests/rebolsource-org-coverage.json",
+      "sha256": "abd177d12c0b06d810ceb76d8d54f47763feeef44acfe74cd572f430da732f8e",
+      "size": 704,
+      "retrieved_at": "2026-08-31T18:20:12Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "3 collected / 2 not-collected with reasons"
     }
   ]
 }

@@ -385,6 +385,20 @@
       "target": "libRedRT.so + support files",
       "evidence": "LOCAL BUILD products, UNVERIFIED; preserved with hashes; NOT upstream artifacts",
       "status": "PARTIAL"
+    },
+    {
+      "relationship": "metadata-consistency",
+      "source": "committed tree manifests (22)",
+      "target": "fresh git ls-tree regeneration",
+      "evidence": "15/19 EXACT_MATCH (pinned refs byte-identical; HEAD manifests checked against recorded acquisition commits)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "longitudinal-drift",
+      "source": "acquisition-time HEADs",
+      "target": "upstream HEADs at stage 16",
+      "evidence": "0/11 repos advanced since collection; pinned archives unaffected (manifests/upstream-drift.json)",
+      "status": "ESTABLISHED"
     }
   ]
 }

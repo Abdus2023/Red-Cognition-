@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-31T18:20:12Z",
+  "repos": [
+    {
+      "repo": "Oldes_Rebol3",
+      "head_at_acquisition": "d5b237cea60d",
+      "head_now": "d5b237cea60d",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "metaeducation_ren-c",
+      "head_at_acquisition": "e31d5698d736",
+      "head_now": "e31d5698d736",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "rebol_projects",
+      "head_at_acquisition": "23a251573a49",
+      "head_now": "23a251573a49",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "rebol_rebol",
+      "head_at_acquisition": "25033f897b2b",
+      "head_now": "25033f897b2b",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "rebolsource_r3",
+      "head_at_acquisition": "98cdfcd6e439",
+      "head_now": "98cdfcd6e439",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "rebolsource_rebol-syntax",
+      "head_at_acquisition": "4ff11396312d",
+      "head_now": "4ff11396312d",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "rebolsource_rebol-test",
+      "head_at_acquisition": "409ef5c2270a",
+      "head_now": "409ef5c2270a",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red",
+      "head_at_acquisition": "b492f75752cc",
+      "head_now": "b492f75752cc",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_Homebrew-red",
+      "head_at_acquisition": "e0b29b4228ce",
+      "head_now": "e0b29b4228ce",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_REP",
+      "head_at_acquisition": "95d96a64ab8c",
+      "head_now": "95d96a64ab8c",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_RS-fossil-mirror",
+      "head_at_acquisition": "d27b50eea309",
+      "head_now": "d27b50eea309",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_chocolatey-packages",
+      "head_at_acquisition": "bcc69995c076",
+      "head_now": "bcc69995c076",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_docs",
+      "head_at_acquisition": "e62721663f34",
+      "head_now": "e62721663f34",
+      "new_commits": 0,
+      "drift": "NONE"
+    },
+    {
+      "repo": "red_scoop-bucket",
+      "head_at_acquisition": "689288281fda",
+      "head_now": "689288281fda",
+      "new_commits": 0,
+      "drift": "NONE"
+    }
+  ]
+}

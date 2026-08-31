@@ -488,3 +488,32 @@ _Generated: 2026-08-31T18:15:08Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**. The distribution-channel layer of the Red ecosystem is now fully documented with pinned evidence.
 
+## Continuation Addendum (stage 16 — closing consistency sweep)
+
+_Generated: 2026-08-31T18:20:12Z_
+
+### Metadata-layer verification (mirrors the stage-14 archive verification)
+
+- All **19 committed tree manifests** were re-generated from fresh clones: **19 EXACT_MATCH**. Pinned-ref manifests are byte-identical to upstream git state; HEAD-anchored manifests were re-checked against the *recorded acquisition commits* (so later upstream movement cannot silently invalidate them).
+
+### Upstream drift since acquisition (longitudinal evidence)
+
+- **0/14** repositories advanced since collection — none; the corpus is a stable snapshot.
+- Pinned archives and manifests are unaffected by drift by construction (refs are immutable); drift is recorded for future re-acquisition.
+
+### Internal version consistency (red-0.6.6 tree)
+
+- CONSISTENT (root version file absent by design in this layout; encapper/version.r + release name agree on 0.6.6). encapper/version.r = 0.6.6; release name agrees; v0.6.6 license copyright year line: 2011-2019.
+
+### Scope completion
+
+- rebolsource org fully accounted: 3 collected, 2 not-collected with reasons (issue-tracker; self-marked obsolete). Combined with the stage-15 red-org statement, **both project organizations now have complete coverage records**.
+
+### Egress recheck
+
+`www.rebol.com` exit 52; `static.red-lang.org` exit 35 — unchanged.
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**. Both verification dimensions available to this environment — archive layer (stage 14, executed reproduction) and metadata layer (this stage, exact regeneration) — are now proven consistent with upstream.
+
