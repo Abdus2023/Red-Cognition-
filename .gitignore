@@ -2,3 +2,10 @@
 # preserved acquisition originals and manifests ARE committed
 artifacts/derived/
 artifacts/tmp/
+
+# python bytecode\ __pycache__/
+*.pyc
+
+# python bytecode
+__pycache__/
+*.pyc
