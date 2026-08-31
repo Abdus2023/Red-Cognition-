@@ -37,6 +37,50 @@ rs = [a for a in arts if a["project"] == "RED_SYSTEM"]
 third_party = [a for a in arts if a.get("official") is False or a.get("provenance_status_reason", "").startswith("third-party") or "fork" in (a.get("provenance_status_reason") or "")]
 unresolved = [a for a in arts if a.get("provenance_status") in ("UNVERIFIED", "BLOCKED", "CONFLICTING")]
 
+
+# ---- dynamic version matrix from the artifact manifest ----
+BIN_NOTE = {
+ "RED": "NONE (official binaries via static.red-lang.org - blocked; GitHub releases carry 0 assets)",
+ "REBOL": "NONE (no GitHub release binaries; rebol.com/rebolsource.net blocked)",
+}
+D6 = None
+for a in arts:
+    if a.get("filename") == "red-0.6.6.tar.gz":
+        D6 = a
+vm = []
+for a in arts:
+    if a.get("classification") == "ARCHIVE":
+        vm.append({
+          "project": a.get("project"), "version": a.get("version") or "n/a",
+          "source": "pinned archive (%s)" % os.path.basename(a.get("path", "")),
+          "binary": BIN_NOTE.get(a.get("project"), "NONE"),
+          "commit": a.get("commit") or "n/a",
+          "hash": ("sha256 " + a["sha256"]) if a.get("sha256") else "n/a",
+          "provenance": a.get("provenance_status", "n/a"),
+          "status": ("COLLECTED + whole-tree HASH_MATCHED" if str(a.get("integrity_status", "")).startswith("HASH_MATCHED")
+                     else "COLLECTED (integrity: %s)" % a.get("integrity_status", "n/a"))})
+vm += [
+ {"project": "RED", "version": "0.7 (tag, no release)", "source": "tag resolution only", "binary": "NONE",
+  "commit": "abfa7affa32cc908893545aabff7953a02de6009", "hash": "n/a", "provenance": "VERIFIED (identity)",
+  "status": "RECORDED (2019 WIP line, predates v0.6.5/v0.6.6 - recon R10)"},
+ {"project": "RED", "version": "master HEAD at acquisition", "source": "blobless clone evidence", "binary": "NONE",
+  "commit": "b492f75752cc6b3abb8136825e9448ced9a357f2", "hash": "n/a", "provenance": "VERIFIED (identity)", "status": "RECORDED"},
+ {"project": "RED", "version": "0.6.4-modified (workspace fork)", "source": "repository working tree", "binary": "NONE",
+  "commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06", "hash": "n/a (tree manifest committed)",
+  "provenance": "PARTIALLY_VERIFIED",
+  "status": "THIRD_PARTY fork; modified subset of v0.6.4 (251 identical / 258 differing / 609 fork-only / 29 missing)"},
+ {"project": "RED_SYSTEM", "version": "0.6.6 (within red/red tree)", "source": "system/ + system/tests/ in v0.6.6 tree (97 test files)",
+  "binary": "NONE", "commit": "6942c7a021253150c3e3cf90428305892340db03",
+  "hash": ("sha256 " + D6["sha256"]) if D6 else "same archive as red-0.6.6",
+  "provenance": "VERIFIED", "status": "COLLECTED (source + tests, not executed)"},
+ {"project": "REBOL", "version": "2.7.8 (official binaries)", "source": "rebol.com (Tier 1)", "binary": "NOT ACQUIRED - BLOCKED (TLS)",
+  "commit": "n/a", "hash": "n/a", "provenance": "BLOCKED", "status": "NOT COLLECTED"},
+ {"project": "REBOL", "version": "2.7.8 (prior-session lead)", "source": "repo-internal zip, origin unrecorded",
+  "binary": "ELF32 binary held in derived/", "commit": "n/a",
+  "hash": "sha256 1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6",
+  "provenance": "UNVERIFIED", "status": "LEAD ONLY (not executed; ELF32 vs x86_64 host)"},
+]
+
 report = {
  "generated_at": NOW, "final_gate": "PARTIALLY_VERIFIED",
  "final_gate_rationale": ("Substantial verified evidence exists (official upstream identity, immutable tag/commit resolution, "
@@ -62,20 +106,7 @@ report = {
   "interpreter_binaries_executed": 0,
   "execution_evidence_records": 0,
  },
- "version_matrix": [
-  {"project": "RED", "version": "0.6.6 (latest GitHub release)", "source": "tag archive (codeload, pinned)", "binary": "NONE (blocked: static.red-lang.org; GitHub release has 0 assets)", "commit": "6942c7a021253150c3e3cf90428305892340db03", "hash": "sha256 6c9f8dbf25e8bfb0eeb8d06a41e13ecab8ba2a5460cfb1425a53f7ee1a4a29c0", "provenance": "VERIFIED", "status": "COLLECTED (source only)"},
-  {"project": "RED", "version": "0.6.4", "source": "tag archive (codeload, pinned)", "binary": "NONE (blocked)", "commit": "755eb943ccea9e78c2cab0f20b313a52404355cb", "hash": "sha256 2b5f3de16f14e273dc4d9062367bd86e87b4ecdb49bde62a09b52ebf7de7cee2", "provenance": "VERIFIED", "status": "COLLECTED (source only)"},
-  {"project": "RED", "version": "0.7 (tag, no release)", "source": "tag resolution only", "binary": "NONE", "commit": "abfa7affa32cc908893545aabff7953a02de6009", "hash": "n/a", "provenance": "VERIFIED (identity)", "status": "RECORDED (not archived)"},
-  {"project": "RED", "version": "master HEAD at acquisition", "source": "blobless clone evidence", "binary": "NONE", "commit": "b492f75752cc6b3abb8136825e9448ced9a357f2", "hash": "n/a", "provenance": "VERIFIED (identity)", "status": "RECORDED"},
-  {"project": "RED", "version": "0.6.4-modified (workspace fork)", "source": "repository working tree", "binary": "NONE", "commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06", "hash": "n/a (tree manifest committed)", "provenance": "PARTIALLY_VERIFIED", "status": "THIRD_PARTY fork; modified subset of v0.6.4 (248/530 files identical)"},
-  {"project": "RED_SYSTEM", "version": "0.6.6 (within red/red tree)", "source": "system/ + system/tests/ in v0.6.6 tree (97 test files)", "binary": "NONE", "commit": "6942c7a021253150c3e3cf90428305892340db03", "hash": "same archive hash", "provenance": "VERIFIED", "status": "COLLECTED (source + tests, not executed)"},
-  {"project": "REBOL", "version": "R3 2.101.0.3.1 (official source master)", "source": "rebol/rebol archive (pinned commit)", "binary": "NONE (no GitHub releases exist; rebol.com blocked)", "commit": "25033f897b2bd466068d7663563cd3ff64740b94", "hash": "sha256 2fc66ae8e3e6db08765c047192aa0819f4103b6b7d0f7b9e6a11c1f7ba5836bd", "provenance": "VERIFIED", "status": "COLLECTED (source only)"},
-  {"project": "REBOL", "version": "R3 (rebolsource historical)", "source": "rebolsource/r3 archive (pinned commit)", "binary": "NONE (rebolsource.net blocked)", "commit": "98cdfcd6e439390756868b390b0ff8aa01d84551", "hash": "sha256 c1a5ad24b08e78e0de3bc4bfb40bea3ca8dc2dbd24eefea3e0f7fbe3ac91a590", "provenance": "PARTIALLY_VERIFIED", "status": "TIER-2 historical; lineage to rebol/rebol proven by merge-base"},
-  {"project": "REBOL", "version": "ren-c 2.102.0.0.0 (internal)", "source": "ren-c archive (pinned commit)", "binary": "NONE (no GitHub releases; rebolsource.net blocked)", "commit": "e31d5698d73678d797df319eb855b3995716d9f1", "hash": "sha256 c682eb8646c62c1fda5f4e5561d9f7c8ea76eb9ee10f8bef1c67a1e5b8b1a9b9", "provenance": "PARTIALLY_VERIFIED", "status": "THIRD_PARTY continuation; lineage proven by merge-base; LGPL-3.0 relicensing recorded"},
-  {"project": "REBOL", "version": "3.22.1 (Oldes fork release; internal 3.22.53.5.4.3.1)", "source": "Oldes/Rebol3 archive (pinned commit)", "binary": "NONE (release assets CDN blocked)", "commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57", "hash": "sha256 4b8465c4b52e0a1de3ff9c1ca86b7f7ba98b6efae41a68a3ba10a3cb78d99c06", "provenance": "PROVISIONAL", "status": "THIRD_PARTY fork; version-scheme conflict recorded"},
-  {"project": "REBOL", "version": "2.7.8 (official binaries)", "source": "rebol.com (Tier 1)", "binary": "NOT ACQUIRED - BLOCKED (TLS)", "commit": "n/a", "hash": "n/a", "provenance": "BLOCKED", "status": "NOT COLLECTED"},
-  {"project": "REBOL", "version": "2.7.8 (prior-session lead)", "source": "repo-internal zip, origin unrecorded", "binary": "ELF32 binary held in derived/", "commit": "n/a", "hash": "sha256 1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6", "provenance": "UNVERIFIED", "status": "LEAD ONLY (not executed; ELF32 vs x86_64 host)"},
- ],
+ "version_matrix": None,  # built dynamically below
  "acquisition_problems": {
   "network_blocked": [a["url"] for a in blocked["attempts"] if a["result"] == "NETWORK_BLOCKED"],
   "not_found": [a for a in blocked["attempts"] if a["result"] == "NOT_FOUND"],
@@ -122,15 +153,6 @@ report["collection_summary"]["discovered"] = {
     "rebolsource_org_repositories_on_github": 5,
     "github_search_queries_run": list(disc2.get("searches", {}).keys()),
 }
-# fix version matrix hashes from the real manifest, by explicit row order
-hashmap = {a["filename"]: a["sha256"] for a in arts if a.get("sha256")}
-ROW_ARCHIVE = {0: "red-0.6.6.tar.gz", 1: "red-0.6.4.tar.gz",
-               6: "rebol-rebol-25033f897.tar.gz", 7: "rebolsource-r3-98cdfcd6e.tar.gz",
-               8: "ren-c-e31d5698d.tar.gz", 9: "Oldes-Rebol3-d5b237cea.tar.gz"}
-for i, fn in ROW_ARCHIVE.items():
-    if fn in hashmap:
-        report["version_matrix"][i]["hash"] = "sha256 " + hashmap[fn]
-report["version_matrix"][4]["hash"] = "n/a (tree manifest committed)"  # workspace fork
 
 with open(os.path.join(REP, "collection-report.json"), "w") as f:
     json.dump(report, f, indent=2)

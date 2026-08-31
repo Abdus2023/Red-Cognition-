@@ -335,3 +335,29 @@ These are **upstream-authored** URLs inside pinned official trees — stronger a
 
 - Final gate remains **PARTIALLY_VERIFIED**. Source-side verification now covers the complete collected series with whole-tree blob proof, complete tag registries, and upstream CI URL evidence for future binary acquisition.
 
+## Continuation Addendum (stage 10)
+
+_Generated: 2026-08-31T17:55:41Z_
+
+### Acquisition reproducibility: REPRODUCED (codeload determinism)
+
+- `red-0.6.6.tar.gz` and `red-0.6.3.tar.gz` were **re-fetched from codeload and are byte-identical** to the stored copies (SHA-256 match). Anyone with GitHub access can re-verify every recorded archive hash independently. Evidence: `manifests/acquisition-determinism.json`, `logs/execution/acquisition-determinism.log`.
+
+### Official documentation repositories collected (Tier 1)
+
+- **https://github.com/red/REP** — RED Enhancement Process; HEAD `95d96a64ab8c` (52 commits, 8 files); archive `red_rep-95d96a64a.tar.gz` (sha256 `4a8fa3a1143646af…`); license: **CONFIRMED** (metadata: BSD-3-Clause (repo metadata); in-tree: ['LICENSE'])
+- **https://github.com/red/docs** — Red-related user documentation repository; HEAD `e62721663f34` (1271 commits, 325 files); archive `red_docs-e62721663.tar.gz` (sha256 `21d4024101e5e341…`); license: **UNCLEAR** (metadata: null (GitHub metadata); in-tree: no LICENSE file)
+
+### Red test corpus inventory @ v0.6.6 (not executed)
+
+- `tests/`: **172** files across 59 subdirs; largest: `tests/source` (105), `tests/libRed` (6), `tests/TUI` (5), `tests/align-test.red` (1)
+- `quick-test/`: **8** files
+
+### Report maintenance
+
+- The base report's Version Matrix is now **derived dynamically from the artifact manifest** (8 archive rows), so it stays authoritative as the collection grows (0.6.3/0.6.5 rows no longer live only in addenda).
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**. All GitHub-hostable material is collected or covered by pinned evidence; binaries/execution remain blocked.
+

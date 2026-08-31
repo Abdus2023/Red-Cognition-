@@ -210,6 +210,27 @@
       "target": "complete tag registries",
       "evidence": "30 red tags + 30 Oldes tags with commit/tree/date/subject/file-count (manifests/*-tags-registry.json)",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "acquisition-reproducibility",
+      "source": "codeload tag archives (red-0.6.6, red-0.6.3)",
+      "target": "byte-identical re-fetch",
+      "evidence": "re-fetched copies match stored SHA-256 exactly (manifests/acquisition-determinism.json; logs/execution/acquisition-determinism.log)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "official-org->docs-repo",
+      "source": "red (GitHub organization)",
+      "target": "https://github.com/red/REP",
+      "evidence": "org membership via API repo listing (github-discovery.json red_org_repos); HEAD 95d96a64ab8c archived + tree manifest",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "official-org->docs-repo",
+      "source": "red (GitHub organization)",
+      "target": "https://github.com/red/docs",
+      "evidence": "org membership via API repo listing (github-discovery.json red_org_repos); HEAD e62721663f34 archived + tree manifest",
+      "status": "ESTABLISHED"
     }
   ]
 }

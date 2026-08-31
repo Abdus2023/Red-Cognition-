@@ -216,6 +216,36 @@
       "pinned_ref": "tag v0.6.3 -> commit 6a43c767fa2e85d668b83f749158a18e62c30f70",
       "repository": "https://github.com/red/red",
       "note": "tag v0.6.3 (2017-07-18 'macOS GUI backend') HAS a GitHub release object but it carries no assets"
+    },
+    {
+      "url": "https://codeload.github.com/red/REP/tar.gz/95d96a64ab8cb2b754acb7775b9550370bfc8c69",
+      "dest": "artifacts/red/documentation/red_rep-95d96a64a.tar.gz",
+      "http_status": 200,
+      "size": 7471,
+      "sha256": "4a8fa3a1143646afa92d7f04f6d6358c7d89159fb601d28b64cff490493ce97f",
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "origin": "https://github.com/red/REP (pinned HEAD archive via codeload)",
+      "project": "RED",
+      "classification": "DOCUMENTATION",
+      "version_claim": "master",
+      "pinned_ref": "commit 95d96a64ab8cb2b754acb7775b9550370bfc8c69",
+      "repository": "https://github.com/red/REP",
+      "note": "official Red organization documentation repository"
+    },
+    {
+      "url": "https://codeload.github.com/red/docs/tar.gz/e62721663f34dc020b2601db89420d755f14f865",
+      "dest": "artifacts/red/documentation/red_docs-e62721663.tar.gz",
+      "http_status": 200,
+      "size": 864929,
+      "sha256": "21d4024101e5e341ff54fec434da962745d39351eb0305105970ec280469433a",
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "origin": "https://github.com/red/docs (pinned HEAD archive via codeload)",
+      "project": "RED",
+      "classification": "DOCUMENTATION",
+      "version_claim": "master",
+      "pinned_ref": "commit e62721663f34dc020b2601db89420d755f14f865",
+      "repository": "https://github.com/red/docs",
+      "note": "official Red organization documentation repository"
     }
   ],
   "failures": []

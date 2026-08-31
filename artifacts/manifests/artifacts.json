@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 47,
+  "record_count": 53,
   "artifacts": [
     {
       "project": "RED",
@@ -1039,6 +1039,112 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "fork file-level attribution"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 10 re-fetch test (codeload)",
+      "filename": "acquisition-determinism.json",
+      "path": "artifacts/manifests/acquisition-determinism.json",
+      "sha256": "7f6074d5aa2b4f1c08178abe8f2163475939bf3f6265fc3889e9f5a96ecbd163",
+      "size": 908,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "REPRODUCED for tested samples: codeload tag archives are byte-deterministic across fetches; recorded hashes are independently re-verifiable by anyone with GitHub access."
+    },
+    {
+      "project": "RED",
+      "version": "master",
+      "classification": "DOCUMENTATION",
+      "origin": "https://github.com/red/REP (official Red organization, pinned HEAD archive)",
+      "url": "https://github.com/red/REP",
+      "repository": "https://github.com/red/REP",
+      "commit": "95d96a64ab8cb2b754acb7775b9550370bfc8c69",
+      "tag": null,
+      "filename": "red_rep-95d96a64a.tar.gz",
+      "path": "artifacts/red/documentation/red_rep-95d96a64a.tar.gz",
+      "sha256": "4a8fa3a1143646afa92d7f04f6d6358c7d89159fb601d28b64cff490493ce97f",
+      "size": 7471,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "CONFIRMED",
+      "license_evidence": [
+        {
+          "file": "LICENSE",
+          "sha256": "b6ab1768905191d226a3209ed5af323600d1ce9635099df079cc9cacb8b21779",
+          "head": "BSD 3-Clause License Copyright (c) 2018, Red Programming Language All rights reserved. Redistribution and use in source and binary forms, wi"
+        }
+      ],
+      "notes": "official docs repo: RED Enhancement Process; 8 files at HEAD"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "git clone evidence for https://github.com/red/REP (HEAD 95d96a64ab8c, 52 commits, tree manifest artifacts/manifests/trees/red_REP__HEAD.lsr)",
+      "filename": "red_rep-95d96a64a.tar.gz.git-evidence",
+      "path": "artifacts/red/documentation/red_rep-95d96a64a.tar.gz",
+      "sha256": "4a8fa3a1143646afa92d7f04f6d6358c7d89159fb601d28b64cff490493ce97f",
+      "size": 7471,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "official Red org documentation repository"
+    },
+    {
+      "project": "RED",
+      "version": "master",
+      "classification": "DOCUMENTATION",
+      "origin": "https://github.com/red/docs (official Red organization, pinned HEAD archive)",
+      "url": "https://github.com/red/docs",
+      "repository": "https://github.com/red/docs",
+      "commit": "e62721663f34dc020b2601db89420d755f14f865",
+      "tag": null,
+      "filename": "red_docs-e62721663.tar.gz",
+      "path": "artifacts/red/documentation/red_docs-e62721663.tar.gz",
+      "sha256": "21d4024101e5e341ff54fec434da962745d39351eb0305105970ec280469433a",
+      "size": 864929,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "UNCLEAR",
+      "license_evidence": "null (GitHub metadata)",
+      "notes": "official docs repo: Red-related user documentation repository; 325 files at HEAD"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "git clone evidence for https://github.com/red/docs (HEAD e62721663f34, 1271 commits, tree manifest artifacts/manifests/trees/red_docs__HEAD.lsr)",
+      "filename": "red_docs-e62721663.tar.gz.git-evidence",
+      "path": "artifacts/red/documentation/red_docs-e62721663.tar.gz",
+      "sha256": "21d4024101e5e341ff54fec434da962745d39351eb0305105970ec280469433a",
+      "size": 864929,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "official Red org documentation repository"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 10 inventory from committed red__v0.6.6.lsr",
+      "filename": "red-test-corpus-inventory.json",
+      "path": "artifacts/manifests/red-test-corpus-inventory.json",
+      "sha256": "c0d51760a4faa52459b24700a7243a5615effc3ab9f685ec74fc830b0f98ece5",
+      "size": 2335,
+      "retrieved_at": "2026-08-31T17:55:41Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "tests/=172 files; quick-test/=8 files; NOT executed"
     }
   ]
 }
