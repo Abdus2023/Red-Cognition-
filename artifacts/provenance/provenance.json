@@ -161,6 +161,27 @@
       "target": "pinned commit d5b237cea60d\u2026",
       "evidence": "git blob SHA-1 of all 900 archive members == git ls-tree blob SHAs of pinned commit",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.5.tar.gz",
+      "target": "pinned commit 3bafef220366\u2026",
+      "evidence": "git blob SHA-1 of all 638 archive members == git ls-tree blob SHAs of pinned commit 3bafef2203661bbcaafec8b859405ba7235a5981 (HASH_MATCHED (whole tree))",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "file-relocation",
+      "source": "root compiler.r/lexer.r (v0.6.4)",
+      "target": "encapper/compiler.r + encapper/lexer.r (v0.6.5)",
+      "evidence": "blob-sha genealogy: root files absent from v0.6.5; encapper/ copies present with DIFFERENT blob SHAs (content changed during move) \u2014 manifests/red-compiler-relocation.json",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "procedure-evidence",
+      "source": "documented bootstrap/rebuild procedures",
+      "target": "Rebol2/Rebol-SDK dependency claims",
+      "evidence": "verbatim quotes with line numbers + file hashes in manifests/bootstrap-procedure-evidence.json",
+      "status": "ESTABLISHED"
     }
   ]
 }

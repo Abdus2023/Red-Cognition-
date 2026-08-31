@@ -176,6 +176,54 @@
       ]
     },
     {
+      "id": "R11",
+      "artifact": "Red compiler relocation genealogy",
+      "rows": [
+        [
+          "v0.6.4 (2018)",
+          "root compiler.r 52749054\u2026, root lexer.r 4ea75997\u2026, root boot.red",
+          "-",
+          "BASELINE"
+        ],
+        [
+          "v0.6.5 (2024 tag, no release)",
+          "root copies absent",
+          "encapper/compiler.r dfb08bcb\u2026 + encapper/lexer.r 0c0d7c83\u2026 (different SHAs => content changed in move)",
+          "RELOCATION + MODIFICATION"
+        ],
+        [
+          "v0.6.6 (2025 release)",
+          "-",
+          "encapper/ copies b46486e3\u2026/ae72c727\u2026 (further evolved)",
+          "CONTINUED"
+        ],
+        [
+          "v0.7 (2019 WIP tag)",
+          "root compiler.r 5deb5448\u2026, root lexer.r 0299995a\u2026",
+          "-",
+          "OLD LINE (predates relocation)"
+        ]
+      ]
+    },
+    {
+      "id": "R12",
+      "artifact": "Fork modification magnitude (workspace vs upstream v0.6.4)",
+      "rows": [
+        [
+          "Differing files analyzed",
+          "258 of 258",
+          "{'light(<=10)': 67, 'moderate(<=100)': 99, 'heavy(>100)': 84, 'binary': 8}",
+          "RECORDED"
+        ],
+        [
+          "Heaviest changes",
+          "modules/view/backends/windows/draw.reds (+2233/-3035); runtime/redbin.reds (+1985/-349); modules/view/backends/windows/base.reds (+993/-824)",
+          "full list in manifests/fork-diff-magnitudes.json",
+          "RECORDED"
+        ]
+      ]
+    },
+    {
       "id": "R8",
       "artifact": "Continuation integrity verification (whole-tree)",
       "rows": [
@@ -189,6 +237,12 @@
           "red-0.6.4.tar.gz",
           "archive files=538",
           "tree entries=538",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "red-0.6.5.tar.gz",
+          "archive files=638",
+          "tree entries=638",
           "HASH_MATCHED (whole tree)"
         ],
         [

@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 36,
+  "record_count": 41,
   "artifacts": [
     {
       "project": "RED",
@@ -856,6 +856,88 @@
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "retrieved_at": "2026-08-31T17:33:52Z"
+    },
+    {
+      "project": "RED",
+      "version": "0.6.5",
+      "classification": "ARCHIVE",
+      "origin": "https://github.com/red/red (GitHub auto-generated tag archive, codeload)",
+      "url": "https://codeload.github.com/red/red/tar.gz/refs/tags/v0.6.5",
+      "repository": "https://github.com/red/red",
+      "commit": "3bafef2203661bbcaafec8b859405ba7235a5981",
+      "tag": "v0.6.5",
+      "filename": "red-0.6.5.tar.gz",
+      "path": "artifacts/red/releases/red-0.6.5.tar.gz",
+      "sha256": "fdd330557b88406124ccb4c5191c27701b5650549f436fd941c56467fcea27cb",
+      "size": 2386934,
+      "retrieved_at": "2026-08-31T17:44:35Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASH_MATCHED",
+      "license_status": "CONFIRMED",
+      "license_evidence": "BSD-3-License.txt + BSL-License.txt in archive tree (v0.6.5)",
+      "notes": "tag v0.6.5 (2024-02-10) has NO GitHub release; collected to complete the 0.6.x series; relocation of compiler.r/lexer.r to encapper/ happens at this tag",
+      "tree_verification": {
+        "tree_entries": 638,
+        "archive_files": 638,
+        "matched": 638,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "3bafef2203661bbcaafec8b859405ba7235a5981"
+      }
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 08 blob-sha genealogy across pinned refs (red/red clone)",
+      "filename": "red-compiler-relocation.json",
+      "path": "artifacts/manifests/red-compiler-relocation.json",
+      "sha256": "39ce6f846a23abcec801da324f65e0cd7ad9767089249f6f39c3a1036c23c549",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "compiler.r/lexer.r relocated root->encapper/ at tag v0.6.5; v0.7 (2019) retains root layout"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 08 verbatim quotes with line numbers + file hashes from committed archive trees",
+      "filename": "bootstrap-procedure-evidence.json",
+      "path": "artifacts/manifests/bootstrap-procedure-evidence.json",
+      "sha256": "88c5467799de85756a552a3c67e65e2cdb3a08ef64e3c75783a50e123d0cd906",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "documented build/bootstrap/distribution procedures (v0.6.4, v0.6.6, rebol/rebol README)"
+    },
+    {
+      "project": "RED_SYSTEM",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 08 inventory from committed red__v0.6.6.lsr tree manifest",
+      "filename": "red-system-inventory.json",
+      "path": "artifacts/manifests/red-system-inventory.json",
+      "sha256": "1f903aa9f3b50e3e58fffab0d5db7b01c918dad89b8c732bf251bc6a9f56390c",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "97 Red/System test files in 13 subdirectories under system/tests/"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 08 git diff --numstat between upstream v0.6.4 and fork 742181a (detached clone)",
+      "filename": "fork-diff-magnitudes.json",
+      "path": "artifacts/manifests/fork-diff-magnitudes.json",
+      "sha256": "128fbdb0039c3d5bb12d2234a9f44193527fa3bbf67c60abc85e690efe844b7e",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "content-diff magnitudes for 258/258 differing files; buckets={'light(<=10)': 67, 'moderate(<=100)': 99, 'heavy(>100)': 84, 'binary': 8}"
     },
     {
       "project": "RELATED",

@@ -14,6 +14,10 @@ Updates artifacts.json / provenance.json / reconciliation.json, re-runs 06,
 appends a continuation addendum to the md report, regenerates sha256sums.
 """
 import hashlib, json, os, subprocess, tarfile, time
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import common
+common.ensure_deps()
 
 ROOT = "/home/user/Red-Cognition-"
 A = os.path.join(ROOT, "artifacts")
@@ -63,6 +67,7 @@ print("A. network recheck:", [(r["url"][:40], r["result"][:22]) for r in recheck
 TREE_VERIF = [
     ("red-0.6.6.tar.gz",  "artifacts/red/releases/red-0.6.6.tar.gz",  "red",               "6942c7a021253150c3e3cf90428305892340db03"),
     ("red-0.6.4.tar.gz",  "artifacts/red/releases/red-0.6.4.tar.gz",  "red",               "755eb943ccea9e78c2cab0f20b313a52404355cb"),
+    ("red-0.6.5.tar.gz",  "artifacts/red/releases/red-0.6.5.tar.gz",  "red",               "3bafef2203661bbcaafec8b859405ba7235a5981"),
     ("rebol-rebol-25033f897.tar.gz", "artifacts/rebol/source/rebol-rebol-25033f897.tar.gz", "rebol_rebol", "25033f897b2bd466068d7663563cd3ff64740b94"),
     ("ren-c-e31d5698d.tar.gz",       "artifacts/rebol/source/ren-c-e31d5698d.tar.gz",       "metaeducation_ren-c", "e31d5698d73678d797df319eb855b3995716d9f1"),
     ("rebolsource-r3-98cdfcd6e.tar.gz", "artifacts/rebol/source/rebolsource-r3-98cdfcd6e.tar.gz", "rebolsource_r3", "98cdfcd6e439390756868b390b0ff8aa01d84551"),
@@ -123,13 +128,13 @@ def tree_map(clone, ref):
     return ls_tree(clone, ref)
 r3 = tree_map("rebol_rebol", "25033f897b2bd466068d7663563cd3ff64740b94")
 rs3 = tree_map("rebolsource_r3", "98cdfcd6e439390756868b390b0ff8aa01d84551")
-common = set(r3) & set(rs3)
-diff_paths = sorted(p for p in common if r3[p] != rs3[p])
+common_paths = set(r3) & set(rs3)
+diff_paths = sorted(p for p in common_paths if r3[p] != rs3[p])
 only_r3 = sorted(set(r3) - set(rs3)); only_rs3 = sorted(set(rs3) - set(r3))
 results["rebol_rebol_vs_rebolsource_r3"] = {
     "rebol_rebol_pinned": "25033f897b2bd466068d7663563cd3ff64740b94 (official master)",
     "rebolsource_r3_pinned": "98cdfcd6e439390756868b390b0ff8aa01d84551 (historical host HEAD)",
-    "files_common_identical": sum(1 for p in common if r3[p] == rs3[p]),
+    "files_common_identical": sum(1 for p in common_paths if r3[p] == rs3[p]),
     "files_common_differing": len(diff_paths), "differing_examples": diff_paths[:25],
     "only_in_rebol_rebol": len(only_r3), "only_in_rebolsource_r3": len(only_rs3),
     "only_in_rebolsource_examples": only_rs3[:25],
@@ -165,9 +170,7 @@ results["fork_deep_diff_summary"] = {k: fork_diff[k] for k in ("identical", "dif
 print("E. fork diff:", json.dumps(results["fork_deep_diff_summary"])[:260])
 
 # ---------- F. Oldes/Rebol3 license survey ----------
-_base = os.path.join(A, "derived", "extracted", "Oldes-Rebol3-d5b237cea")
-_tops = [d for d in os.listdir(_base)] if os.path.isdir(_base) else []
-oldes_dir = os.path.join(_base, _tops[0]) if _tops else _base
+oldes_dir = common.top_dir("Oldes-Rebol3-d5b237cea")
 survey = []
 if os.path.isdir(oldes_dir):
     for dirpath, dirnames, filenames in os.walk(oldes_dir):

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T17:41:06Z",
+  "generated_at": "2026-08-31T17:49:41Z",
   "network_recheck": {
-    "checked_at": "2026-08-31T17:41:06Z",
+    "checked_at": "2026-08-31T17:49:41Z",
     "attempts": [
       {
         "url": "http://www.rebol.com/download-core.html",
@@ -40,6 +40,18 @@
       "tree_entries": 538,
       "archive_files": 538,
       "matched": 538,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "red-0.6.5.tar.gz",
+      "pinned_commit": "3bafef2203661bbcaafec8b859405ba7235a5981",
+      "clone": "red",
+      "tree_entries": 638,
+      "archive_files": 638,
+      "matched": 638,
       "mismatched": [],
       "missing_from_archive": [],
       "result": "HASH_MATCHED (whole tree)",

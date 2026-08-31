@@ -1,6 +1,6 @@
 # Rebol & Red Collection Report
 
-_Generated: 2026-08-31T17:41:07Z — acquisition per `Rebol & Red Collection Agent — GitHub + Web Acquisition Protocol`_
+_Generated: 2026-08-31T17:49:42Z — acquisition per `Rebol & Red Collection Agent — GitHub + Web Acquisition Protocol`_
 
 ## Final Gate: **PARTIALLY_VERIFIED**
 
@@ -13,11 +13,11 @@ _Generated: 2026-08-31T17:41:07Z — acquisition per `Rebol & Red Collection Age
 | Rebol artifacts discovered (GitHub, evidence-backed) | rebol org: 2 repos; rebolsource org: 5 repos; 'rebol2' search: 6 repos (none is an official R2 source tree) |
 | Red artifacts discovered (GitHub, evidence-backed) | red org: 33 repos (incl. official red/red) |
 | Rebol artifacts collected | 13 |
-| Red artifacts collected | 8 |
-| Red/System artifacts collected | 2 |
+| Red artifacts collected | 12 |
+| Red/System artifacts collected | 3 |
 | Related metadata records (tree manifests) | 13 |
 | Git repositories collected | 7 upstream + 1 fork working tree |
-| Release archives collected | 2 |
+| Release archives collected | 3 |
 | Source archives collected | 4 |
 | Binaries collected (verified) | 3 |
 | Binaries blocked/unverified | 1 |
@@ -87,6 +87,11 @@ Sandbox egress allows only `github.com`, `api.github.com`, `codeload.github.com`
 | RELATED | METADATA | red__v0.6.6.lsr | n/a | n/a | b462d6b017f396d0b6b8… | VERIFIED | n/a |
 | RELATED | METADATA | red__v0.7.lsr | n/a | n/a | 8f0f53d11d419e0b8058… | VERIFIED | n/a |
 | RELATED | METADATA | workspace-fork__HEAD.lsr | n/a | n/a | 91303caf2789843e2958… | VERIFIED | n/a |
+| RED | ARCHIVE | red-0.6.5.tar.gz | 0.6.5 | 3bafef220366 | fdd330557b88406124cc… | VERIFIED | CONFIRMED |
+| RED | METADATA | red-compiler-relocation.json | n/a | n/a | 39ce6f846a23abcec801… | VERIFIED | n/a |
+| RED | METADATA | bootstrap-procedure-evidence.json | n/a | n/a | 88c5467799de85756a55… | VERIFIED | n/a |
+| RED_SYSTEM | METADATA | red-system-inventory.json | n/a | n/a | 1f903aa9f3b50e3e58ff… | VERIFIED | n/a |
+| RED | METADATA | fork-diff-magnitudes.json | n/a | n/a | 128fbdb0039c3d5bb12d… | VERIFIED | n/a |
 | RELATED | METADATA | continuation-verification.json | n/a | n/a | n/a | VERIFIED | n/a |
 | RED | METADATA | fork-vs-upstream-v0.6.4.json | n/a | n/a | n/a | VERIFIED | n/a |
 
@@ -115,6 +120,9 @@ Sandbox egress allows only `github.com`, `api.github.com`, `codeload.github.com`
 - **archive->git-tree (whole-tree verification)**: `rebol-test-409ef5c22.tar.gz` → `pinned commit 409ef5c2270a…` — git blob SHA-1 of all 27 archive members == git ls-tree blob SHAs of pinned commit
 - **fork->upstream (file-level attribution)**: `workspace fork 742181a` → `red/red tag v0.6.4 (755eb943)` — 251 identical / 258 differing / 609 fork-only / 29 missing; full lists in manifests/fork-vs-upstream-v0.6.4.json
 - **archive->git-tree (whole-tree verification)**: `Oldes-Rebol3-d5b237cea.tar.gz` → `pinned commit d5b237cea60d…` — git blob SHA-1 of all 900 archive members == git ls-tree blob SHAs of pinned commit
+- **archive->git-tree (whole-tree verification)**: `red-0.6.5.tar.gz` → `pinned commit 3bafef220366…` — git blob SHA-1 of all 638 archive members == git ls-tree blob SHAs of pinned commit 3bafef2203661bbcaafec8b859405ba7235a5981 (HASH_MATCHED (whole tree))
+- **file-relocation**: `root compiler.r/lexer.r (v0.6.4)` → `encapper/compiler.r + encapper/lexer.r (v0.6.5)` — blob-sha genealogy: root files absent from v0.6.5; encapper/ copies present with DIFFERENT blob SHAs (content changed during move) — manifests/red-compiler-relocation.json
+- **procedure-evidence**: `documented bootstrap/rebuild procedures` → `Rebol2/Rebol-SDK dependency claims` — verbatim quotes with line numbers + file hashes in manifests/bootstrap-procedure-evidence.json
 
 ## Bootstrap Status (never collapsed)
 
@@ -187,12 +195,29 @@ Verbatim upstream claim (v0.6.4 README line 12): _"…not depending on any third
 | GitHub release assets | v0.6.6/v0.6.4/v0.6.3 assets=0 | official binaries hosted on static.red-lang.org | CONFLICT (expectation: release binaries on GitHub; reality: off-GitHub hosting) |
 | static.red-lang.org | official download host | TLS-blocked from sandbox | BLOCKED |
 
+### R11 — Red compiler relocation genealogy
+
+| Field | Source A | Source B | Result |
+|---|---|---|---|
+| v0.6.4 (2018) | root compiler.r 52749054…, root lexer.r 4ea75997…, root boot.red | - | BASELINE |
+| v0.6.5 (2024 tag, no release) | root copies absent | encapper/compiler.r dfb08bcb… + encapper/lexer.r 0c0d7c83… (different SHAs => content changed in move) | RELOCATION + MODIFICATION |
+| v0.6.6 (2025 release) | - | encapper/ copies b46486e3…/ae72c727… (further evolved) | CONTINUED |
+| v0.7 (2019 WIP tag) | root compiler.r 5deb5448…, root lexer.r 0299995a… | - | OLD LINE (predates relocation) |
+
+### R12 — Fork modification magnitude (workspace vs upstream v0.6.4)
+
+| Field | Source A | Source B | Result |
+|---|---|---|---|
+| Differing files analyzed | 258 of 258 | {'light(<=10)': 67, 'moderate(<=100)': 99, 'heavy(>100)': 84, 'binary': 8} | RECORDED |
+| Heaviest changes | modules/view/backends/windows/draw.reds (+2233/-3035); runtime/redbin.reds (+1985/-349); modules/view/backends/windows/base.reds (+993/-824) | full list in manifests/fork-diff-magnitudes.json | RECORDED |
+
 ### R8 — Continuation integrity verification (whole-tree)
 
 | Field | Source A | Source B | Result |
 |---|---|---|---|
 | red-0.6.6.tar.gz | archive files=673 | tree entries=673 | HASH_MATCHED (whole tree) |
 | red-0.6.4.tar.gz | archive files=538 | tree entries=538 | HASH_MATCHED (whole tree) |
+| red-0.6.5.tar.gz | archive files=638 | tree entries=638 | HASH_MATCHED (whole tree) |
 | rebol-rebol-25033f897.tar.gz | archive files=220 | tree entries=220 | HASH_MATCHED (whole tree) |
 | ren-c-e31d5698d.tar.gz | archive files=1082 | tree entries=1082 | HASH_MATCHED (whole tree) |
 | rebolsource-r3-98cdfcd6e.tar.gz | archive files=221 | tree entries=221 | HASH_MATCHED (whole tree) |
@@ -230,10 +255,10 @@ Verbatim upstream claim (v0.6.4 README line 12): _"…not depending on any third
 
 | Status | Count |
 |---|---|
-| HASHED (all preserved artifacts) | 24 |
-| HASH_MATCHED (git blob verification) | 11 |
+| HASHED (all preserved artifacts) | 28 |
+| HASH_MATCHED (git blob verification) | 12 |
 | NO_REFERENCE_HASH | 1 |
-| License CONFIRMED | 19 |
+| License CONFIRMED | 20 |
 | License UNCLEAR | 2 |
 | License MISSING | 1 |
 
@@ -248,7 +273,7 @@ Verbatim upstream claim (v0.6.4 README line 12): _"…not depending on any third
 
 ## Continuation Addendum (stage 07)
 
-_Generated: 2026-08-31T17:41:06Z_
+_Generated: 2026-08-31T17:49:41Z_
 
 ### Whole-tree integrity verification (archive ↔ pinned git tree)
 
@@ -256,6 +281,7 @@ _Generated: 2026-08-31T17:41:06Z_
 |---|---|---|---|---|
 | red-0.6.6.tar.gz | 673 | 673 | 673 | HASH_MATCHED (whole tree) |
 | red-0.6.4.tar.gz | 538 | 538 | 538 | HASH_MATCHED (whole tree) |
+| red-0.6.5.tar.gz | 638 | 638 | 638 | HASH_MATCHED (whole tree) |
 | rebol-rebol-25033f897.tar.gz | 220 | 220 | 220 | HASH_MATCHED (whole tree) |
 | ren-c-e31d5698d.tar.gz | 1082 | 1082 | 1082 | HASH_MATCHED (whole tree) |
 | rebolsource-r3-98cdfcd6e.tar.gz | 221 | 221 | 221 | HASH_MATCHED (whole tree) |
@@ -309,3 +335,47 @@ Every archive member's `git blob SHA-1` was recomputed and compared against `git
 2. (Unchanged, blocked) Execution + bootstrap reproduction — still impossible without binaries.
 3. DONE: whole-tree archive verification, fork file-level attribution, Oldes license survey, rebol/rebol↔rebolsource/r3 tree comparison.
 4. Optional follow-up: diff the 258 differing fork files content-level to attribute each fork modification; verify remaining Oldes bundled dirs (e.g. src/core/brotli vendored without a LICENSE file) against their upstream licenses.
+
+## Continuation Addendum (stage 08)
+
+_Generated: 2026-08-31T17:49:41Z_
+
+### Release-series completion: v0.6.5 collected
+
+- `artifacts/red/releases/red-0.6.5.tar.gz` (2,386,934 bytes, sha256 `fdd330557b88406124ccb4c5191c27701b5650549f436fd941c56467fcea27cb`) pinned to tag v0.6.5 → commit `3bafef2203…` (2024-02-10, "FEAT: swaps map! and construction syntax delimiters."). This tag has **no GitHub release** — tag-only archive. Whole-tree verification: **HASH_MATCHED (whole tree)** (638/638 members).
+### Compiler relocation genealogy (recon R11)
+
+| Ref | root compiler.r | root lexer.r | encapper/compiler.r | encapper/lexer.r |
+|---|---|---|---|---|
+| v0.6.4 | 527490543ec6 | 4ea759973eed | — | — |
+| v0.6.5 | — | — | dfb08bcb4dca | 0c0d7c83c4f3 |
+| v0.6.6 | — | — | b46486e39c82 | ae72c727994d |
+| v0.7 | 5deb54488673 | 0299995af454 | — | — |
+| HEAD | — | — | 96328104a971 | 30e1b617a3a8 |
+
+Relocation root→`encapper/` happens at **v0.6.5**; blob SHAs differ across every step, so the move also changed content. The 2019 `v0.7` WIP line still has the root layout.
+
+### Bootstrap & distribution procedure evidence (verbatim, line-numbered)
+
+- **Red build requires Rebol2 during alpha/bootstrap phase (v0.6.6 README)** — `README.md` line 24 (sha256 `d329c0334f6783fd…`): “ ⏎ Red has its own complete cross-platform toolchain, featuring an encapper, a native compiler, an interpreter, and a linker, not depending on any third-party library, except for a Rebol2 interpreter, required during the…”
+- **Red binary rebuild requires licensed Rebol SDK encapper (v0.6.6 build/README.md)** — `build/README.md` line 8 (sha256 `0b44d43d52a8c4c2…`): “ ⏎ _You need a [Rebol SDK](http://www.rebol.com/sdk.html) copy with a valid license file in order to rebuild the Red binary, this is a constraint from using Rebol2 for the bootstrapping. Once selfhosted, Red will not hav…”
+- **Running Red from the sources (v0.6.6 README contributor procedure)** — `README.md` line 234 (sha256 `d329c0334f6783fd…`): “# Running Red from the sources (for contributors) ⏎  ⏎ The compiler and linker are currently written in Rebol. Please follow the instructions for installing the compiler toolchain in order to run it from sources: ⏎  ⏎ 1.…”
+- **Bootstrap-phase claim, v0.6.4 wording** — `README.md` line 12 (sha256 `67e5e00b0be69534…`): “ ⏎ Red has its own complete cross-platform toolchain, featuring two compilers, an interpreter and a linker, not depending on any third-party library, except for a Rebol2 interpreter, required during the bootstrap phase. …”
+
+### Red/System test inventory (v0.6.6)
+
+- 97 test files under `system/tests/` in 13 subdirectories; largest: `system/tests/source` (85), `system/tests/all-tests.txt` (1), `system/tests/build-arm-tests.r` (1), `system/tests/empty.reds` (1), `system/tests/float-matrix-manual.reds` (1). NOT executed (no interpreter obtainable).
+
+### Fork modification magnitudes (recon R12)
+
+- 258 differing files analyzed by `git diff --numstat`: {'light(<=10)': 67, 'moderate(<=100)': 99, 'heavy(>100)': 84, 'binary': 8}
+- Heaviest: `modules/view/backends/windows/draw.reds` (+2233/-3035); `runtime/redbin.reds` (+1985/-349); `modules/view/backends/windows/base.reds` (+993/-824); `modules/view/backends/windows/direct2d.reds` (+1425/-198); `system/tests/source/units/float-test.reds` (+1162/-2)
+
+### Hash-manifest self-verification
+
+- `sha256sum -c artifacts/manifests/sha256sums.txt` → exit 0, 48 lines OK (validates the current worktree against the manifest as it existed at stage start, before this stage wrote files; log: `logs/execution/hash-verification-run.log`). This is the only execution performed: a hash-verification of the acquisition layer itself.
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED** (binaries/execution still blocked). Verification depth for source provenance is now: pinned SHA + whole-tree blob match for the entire 0.6.x series (v0.6.4, v0.6.5, v0.6.6), official R3, ren-c, rebolsource/r3, Oldes/Rebol3, rebol-syntax, rebol-test.
+
