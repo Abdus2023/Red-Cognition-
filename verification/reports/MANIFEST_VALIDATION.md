@@ -16,14 +16,16 @@ This validates generated audit manifests and local SHA-256 records only. It does
 | json_manifest_schema | PASS | path=verification/inventory/BINARY_INVENTORY.json |
 | json_manifest_schema | PASS | path=verification/inventory/OWNER_DECISIONS.json |
 | json_manifest_schema | PASS | path=verification/inventory/CONFLICT_REGISTER.json |
+| json_manifest_schema | PASS | path=verification/inventory/MONOREPO_PATH_MAP.json |
 | json_manifest_schema | PASS | path=verification/provenance/PROVENANCE_MANIFEST.json |
 | json_manifest_schema | PASS | path=verification/provenance/LICENSE_SUMMARY.json |
 | json_manifest_schema | PASS | path=verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json |
 | json_manifest_schema | PASS | path=verification/reproducibility/OFFLINE_DEPENDENCIES.json |
-| inventory_cardinality_and_hashes | PASS | files_checked=1124 |
-| sha256sums | PASS | entries=1124 |
+| inventory_cardinality_and_hashes | PASS | files_checked=1125 |
+| sha256sums | PASS | entries=1125 |
 | migration_no_move_baseline | PASS |  |
 | conflict_register | PASS | conflicts=350 |
+| monorepo_path_map | PASS | mapped_entries=1125 |
 | duplicate_analysis_counts | PASS |  |
 | upstream_comparison_counts | PASS | local_entries=1118 |
 | epistemic_overclaim_scan | PASS |  |

@@ -78,9 +78,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive duplicate groups from SHA-256, filename, and normalized-content groups in inventory",
-    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
+    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-08-31T20:09:04.774124+00:00",
+    "timestamp_utc": "2026-08-31T20:31:50.220752+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "normalized_content_groups": [],

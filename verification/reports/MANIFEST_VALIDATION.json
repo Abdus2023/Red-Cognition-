@@ -37,6 +37,11 @@
     },
     {
       "check": "json_manifest_schema",
+      "path": "verification/inventory/MONOREPO_PATH_MAP.json",
+      "status": "PASS"
+    },
+    {
+      "check": "json_manifest_schema",
       "path": "verification/provenance/PROVENANCE_MANIFEST.json",
       "status": "PASS"
     },
@@ -57,12 +62,12 @@
     },
     {
       "check": "inventory_cardinality_and_hashes",
-      "files_checked": 1124,
+      "files_checked": 1125,
       "status": "PASS"
     },
     {
       "check": "sha256sums",
-      "entries": 1124,
+      "entries": 1125,
       "status": "PASS"
     },
     {
@@ -72,6 +77,11 @@
     {
       "check": "conflict_register",
       "conflicts": 350,
+      "status": "PASS"
+    },
+    {
+      "check": "monorepo_path_map",
+      "mapped_entries": 1125,
       "status": "PASS"
     },
     {
@@ -93,8 +103,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "validate generated monorepo audit manifests and checksum records; no Red/Rebol build or test execution",
-    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
-    "timestamp_utc": "2026-08-31T20:09:25.933376+00:00",
+    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
+    "timestamp_utc": "2026-08-31T20:32:19.749906+00:00",
     "tool": "tools/source-audit/validate_monorepo_audit.py"
   },
   "result": "PASS",

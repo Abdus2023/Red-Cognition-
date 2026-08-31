@@ -10,4 +10,4 @@ No legal interpretation or relicensing was performed.
 | 'BSD | 1 |
 | BSD-3-Clause (as stated or indicated locally) | 250 |
 | Boost Software License 1.0 (as stated or indicated locally) | 246 |
-| UNKNOWN | 627 |
+| UNKNOWN | 628 |

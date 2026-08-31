@@ -3,8 +3,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "summarize license fields captured in repository inventory; no legal interpretation performed",
-    "repository_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
-    "timestamp_utc": "2026-08-31T20:09:05.859216+00:00",
+    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
+    "timestamp_utc": "2026-08-31T20:31:51.345782+00:00",
     "tool": "tools/source-audit/generate_repository_risk_reports.py"
   },
   "groups": {
@@ -125,7 +125,7 @@
       ]
     },
     "UNKNOWN": {
-      "count": 627,
+      "count": 628,
       "sample_paths": [
         ".appveyor.yml",
         ".dockerignore",
@@ -182,14 +182,14 @@
   },
   "schema_version": 1,
   "summary": {
-    "files": 1124,
+    "files": 1125,
     "license_groups": {
       "'BSD": 1,
       "BSD-3-Clause (as stated or indicated locally)": 250,
       "Boost Software License 1.0 (as stated or indicated locally)": 246,
-      "UNKNOWN": 627
+      "UNKNOWN": 628
     },
     "policy": "Preserve existing license headers/files; unknown is not inferred.",
-    "unknown_license_files": 627
+    "unknown_license_files": 628
   }
 }

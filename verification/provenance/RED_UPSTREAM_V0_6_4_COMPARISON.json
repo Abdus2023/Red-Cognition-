@@ -7,7 +7,7 @@
   "generated": {
     "date": "2026-08-31",
     "method": "compare SHA-256 of local HEAD tracked files, excluding generated audit artifacts, against locally fetched upstream Red v0.6.4 tag; no source files modified",
-    "timestamp_utc": "2026-08-31T20:09:05.793107+00:00",
+    "timestamp_utc": "2026-08-31T20:31:51.277396+00:00",
     "tool": "tools/source-audit/compare_red_upstream.py"
   },
   "local_entries": [
@@ -10002,7 +10002,7 @@
   ],
   "repository": {
     "branch": "arena/01a058c5-red-cognition",
-    "local_commit": "80da8d0156ce3fbe049b45d5e5b8670cff2714e0",
+    "local_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
     "local_repository": "https://github.com/Abdus2023/Red-Cognition-",
     "upstream_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
     "upstream_ref": "v0.6.4",

@@ -29,6 +29,7 @@ JSON_MANIFESTS = [
     "verification/inventory/BINARY_INVENTORY.json",
     "verification/inventory/OWNER_DECISIONS.json",
     "verification/inventory/CONFLICT_REGISTER.json",
+    "verification/inventory/MONOREPO_PATH_MAP.json",
     "verification/provenance/PROVENANCE_MANIFEST.json",
     "verification/provenance/LICENSE_SUMMARY.json",
     "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
@@ -132,6 +133,17 @@ def main() -> None:
         if conflict.get("summary", {}).get("destructive_actions_performed") != 0:
             errors.append("conflict register reports destructive actions")
         checks.append({"check": "conflict_register", "status": "PASS" if conflict.get("summary", {}).get("open_conflicts") == count and conflict.get("summary", {}).get("destructive_actions_performed") == 0 else "FAIL", "conflicts": count})
+
+    path_map = manifests.get("verification/inventory/MONOREPO_PATH_MAP.json", {})
+    if path_map:
+        mapped = path_map.get("entries", [])
+        if path_map.get("summary", {}).get("mapped_entries") != len(mapped):
+            errors.append("monorepo path map summary does not match entry length")
+        if path_map.get("summary", {}).get("moves_performed") != 0:
+            errors.append("monorepo path map reports performed moves")
+        if any(e.get("status") != "PROPOSED_NOT_EXECUTED" for e in mapped):
+            errors.append("monorepo path map contains non-proposed entry status")
+        checks.append({"check": "monorepo_path_map", "status": "PASS" if not [e for e in errors if "path map" in e] else "FAIL", "mapped_entries": len(mapped)})
 
     dup = manifests.get("verification/inventory/DUPLICATE_ANALYSIS.json", {})
     if dup:
