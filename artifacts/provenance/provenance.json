@@ -98,6 +98,69 @@
       "target": "assets=0",
       "evidence": "github-discovery.json: all three releases have empty assets arrays; binaries are distributed via official site (blocked from this environment)",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.6.tar.gz",
+      "target": "pinned commit 6942c7a02125\u2026",
+      "evidence": "git blob SHA-1 of all 673 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.4.tar.gz",
+      "target": "pinned commit 755eb943ccea\u2026",
+      "evidence": "git blob SHA-1 of all 538 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-rebol-25033f897.tar.gz",
+      "target": "pinned commit 25033f897b2b\u2026",
+      "evidence": "git blob SHA-1 of all 220 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "ren-c-e31d5698d.tar.gz",
+      "target": "pinned commit e31d5698d736\u2026",
+      "evidence": "git blob SHA-1 of all 1082 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebolsource-r3-98cdfcd6e.tar.gz",
+      "target": "pinned commit 98cdfcd6e439\u2026",
+      "evidence": "git blob SHA-1 of all 221 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-syntax-4ff113963.tar.gz",
+      "target": "pinned commit 4ff11396312d\u2026",
+      "evidence": "git blob SHA-1 of all 4 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "rebol-test-409ef5c22.tar.gz",
+      "target": "pinned commit 409ef5c2270a\u2026",
+      "evidence": "git blob SHA-1 of all 27 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "fork->upstream (file-level attribution)",
+      "source": "workspace fork 742181a",
+      "target": "red/red tag v0.6.4 (755eb943)",
+      "evidence": "251 identical / 258 differing / 609 fork-only / 29 missing; full lists in manifests/fork-vs-upstream-v0.6.4.json",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "Oldes-Rebol3-d5b237cea.tar.gz",
+      "target": "pinned commit d5b237cea60d\u2026",
+      "evidence": "git blob SHA-1 of all 900 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
     }
   ]
 }

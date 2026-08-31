@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 34,
+  "record_count": 36,
   "artifacts": [
     {
       "project": "RED",
@@ -20,8 +20,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "BSD-3-License.txt + BSL-License.txt inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 673,
+        "archive_files": 673,
+        "matched": 673,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "6942c7a021253150c3e3cf90428305892340db03"
+      }
     },
     {
       "project": "RED",
@@ -40,8 +50,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "BSD-3-License.txt + BSL-License.txt inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 538,
+        "archive_files": 538,
+        "matched": 538,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb"
+      }
     },
     {
       "project": "REBOL",
@@ -60,8 +80,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 220,
+        "archive_files": 220,
+        "matched": 220,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "25033f897b2bd466068d7663563cd3ff64740b94"
+      }
     },
     {
       "project": "REBOL",
@@ -80,8 +110,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 1082,
+        "archive_files": 1082,
+        "matched": 1082,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "e31d5698d73678d797df319eb855b3995716d9f1"
+      }
     },
     {
       "project": "REBOL",
@@ -100,8 +140,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 221,
+        "archive_files": 221,
+        "matched": 221,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "98cdfcd6e439390756868b390b0ff8aa01d84551"
+      }
     },
     {
       "project": "REBOL",
@@ -120,8 +170,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 900,
+        "archive_files": 900,
+        "matched": 900,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57"
+      }
     },
     {
       "project": "REBOL",
@@ -140,8 +200,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "UNCLEAR",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 4,
+        "archive_files": 4,
+        "matched": 4,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "4ff11396312d0ccd8490191571206f628be79e8e"
+      }
     },
     {
       "project": "REBOL",
@@ -160,8 +230,18 @@
       "provenance_status": "VERIFIED",
       "license_status": "CONFIRMED",
       "license_evidence": "LICENSE file inside archive (hashed in source-inspection.json)",
-      "integrity_status": "HASHED",
-      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)"
+      "integrity_status": "HASH_MATCHED",
+      "notes": "GitHub auto-generated archive of pinned ref; bytes not authored by GitHub (tree contents of the commit)",
+      "tree_verification": {
+        "tree_entries": 27,
+        "archive_files": 27,
+        "matched": 27,
+        "mismatched": [],
+        "missing_from_archive": [],
+        "result": "HASH_MATCHED (whole tree)",
+        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
+        "pinned_commit": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234"
+      }
     },
     {
       "project": "RED",
@@ -776,6 +856,32 @@
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "retrieved_at": "2026-08-31T17:33:52Z"
+    },
+    {
+      "project": "RELATED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "continuation stage 07 (this session)",
+      "filename": "continuation-verification.json",
+      "path": "artifacts/manifests/continuation-verification.json",
+      "sha256": null,
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "network recheck + archive/tree verification + lineage facts + fork deep-diff + license survey + bootstrap presence"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 07 fork deep-diff (git blob SHA comparison)",
+      "filename": "fork-vs-upstream-v0.6.4.json",
+      "path": "artifacts/manifests/fork-vs-upstream-v0.6.4.json",
+      "sha256": null,
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "251 identical / 258 differing / 609 fork-only / 29 missing vs upstream v0.6.4"
     }
   ]
 }

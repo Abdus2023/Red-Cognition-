@@ -130,6 +130,12 @@
           "no LICENSE file in repo",
           "-",
           "UNCLEAR"
+        ],
+        [
+          "Oldes bundled extension licenses (survey)",
+          "4 LICENSE-type files found in committed tree (root LICENSE + NOTICE + more)",
+          "dirs with bundled third-party code but no LICENSE file remain UNCLEAR",
+          "PARTIAL (recorded)"
         ]
       ]
     },
@@ -166,6 +172,90 @@
           "official download host",
           "TLS-blocked from sandbox",
           "BLOCKED"
+        ]
+      ]
+    },
+    {
+      "id": "R8",
+      "artifact": "Continuation integrity verification (whole-tree)",
+      "rows": [
+        [
+          "red-0.6.6.tar.gz",
+          "archive files=673",
+          "tree entries=673",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "red-0.6.4.tar.gz",
+          "archive files=538",
+          "tree entries=538",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "rebol-rebol-25033f897.tar.gz",
+          "archive files=220",
+          "tree entries=220",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "ren-c-e31d5698d.tar.gz",
+          "archive files=1082",
+          "tree entries=1082",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "rebolsource-r3-98cdfcd6e.tar.gz",
+          "archive files=221",
+          "tree entries=221",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "Oldes-Rebol3-d5b237cea.tar.gz",
+          "archive files=900",
+          "tree entries=900",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "rebol-syntax-4ff113963.tar.gz",
+          "archive files=4",
+          "tree entries=4",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
+          "rebol-test-409ef5c22.tar.gz",
+          "archive files=27",
+          "tree entries=27",
+          "HASH_MATCHED (whole tree)"
+        ]
+      ]
+    },
+    {
+      "id": "R9",
+      "artifact": "rebol/rebol vs rebolsource/r3 (both pinned)",
+      "rows": [
+        [
+          "Tree content",
+          "identical=183",
+          "differing=37; only-in-rebolsource=1",
+          "MATCH (lineage: rebolsource/r3 HEAD is descendant; mostly identical)"
+        ]
+      ]
+    },
+    {
+      "id": "R10",
+      "artifact": "red/red tag v0.7 anomaly",
+      "rows": [
+        [
+          "Tag date",
+          "v0.7 -> commit abfa7aff dated 2019-09-11 (WIP: Win: Implementing TLS by Schannel.)",
+          "v0.6.6 released 2025-03-19",
+          "CONFLICT (v0.7 tag predates v0.6.5/v0.6.6 in time; it is NOT a newer release line)"
+        ],
+        [
+          "Commit deltas",
+          "v0.6.6..v0.7 = 23 commits; v0.7..v0.6.6 = 4939 commits",
+          "v0.7 is a diverged 2019 WIP line",
+          "RECORDED (facts only; no resolution asserted)"
         ]
       ]
     }
