@@ -1,0 +1,14 @@
+attempt: official REBOL 2.7.8 binary rebol.com/pub/platforms/rebol-core-278-4-10.tar.gz
+date: 2026-08-31T17:30:37Z
+*   Trying 147.182.239.151:443...
+* Connected to www.rebol.com (147.182.239.151) port 443 (#0)
+* ALPN: offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.rebol.com:443 
+* Closing connection 0
+curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.rebol.com:443 
+curl_exit=35

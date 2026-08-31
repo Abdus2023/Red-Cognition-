@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-08-31T17:33:52Z",
+  "tables": [
+    {
+      "id": "R1",
+      "artifact": "Red v0.6.6 (latest release)",
+      "rows": [
+        [
+          "Version (release name)",
+          "0.6.6: Memory Management Improvements",
+          "tag v0.6.6",
+          "MATCH"
+        ],
+        [
+          "Version (embedded)",
+          "encapper/version.r = 0.6.6 (in tarball)",
+          "release name 0.6.6",
+          "MATCH"
+        ],
+        [
+          "Commit",
+          "release target_commitish=master",
+          "tag v0.6.6 -> 6942c7a0...",
+          "MATCH (tag is on master line)"
+        ],
+        [
+          "Source",
+          "github.com/red/red (official)",
+          "codeload archive of tag",
+          "MATCH"
+        ],
+        [
+          "License",
+          "repo metadata BSL-1.0",
+          "BSD-3-License.txt + BSL-License.txt in tree",
+          "PARTIAL (both files present; SPDX metadata captures BSL only)"
+        ]
+      ]
+    },
+    {
+      "id": "R2",
+      "artifact": "Red v0.6.4 vs workspace fork",
+      "rows": [
+        [
+          "Version claim",
+          "upstream version.r = 0.6.4",
+          "fork version.r = 0.6.4",
+          "MATCH"
+        ],
+        [
+          "Tree content",
+          "upstream 530 source files",
+          "248 byte-identical / 253 differing / 334 fork-only",
+          "CONFLICT (fork is NOT byte-identical to v0.6.4; it is a modified subset)"
+        ],
+        [
+          "Commit",
+          "755eb943... (upstream v0.6.4)",
+          "742181a8... (fork-only; rejected by upstream)",
+          "CONFLICT (fork commit not in upstream history)"
+        ],
+        [
+          "License",
+          "BSD-3 (c) 2011 Nenad Rakocevic",
+          "same files carried in fork",
+          "MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "R3",
+      "artifact": "Red license text across versions",
+      "rows": [
+        [
+          "BSD-3 text v0.6.4",
+          "sha256 09b59353... (c) 2011 Nenad Rakocevic",
+          "-",
+          "NOTED"
+        ],
+        [
+          "BSD-3 text v0.6.6",
+          "sha256 e64d2571... (c) 2011-2019 Red Foundation",
+          "-",
+          "NOTED (text changed between versions; per-artifact license is CONFIRMED by its own tree)"
+        ]
+      ]
+    },
+    {
+      "id": "R4",
+      "artifact": "R3 lineage versions",
+      "rows": [
+        [
+          "rebol/rebol (official R3)",
+          "src/boot/version.r = 2.101.0.3.1",
+          "no tags, no releases on GitHub",
+          "NOTED"
+        ],
+        [
+          "rebolsource/r3",
+          "src/boot/version.r = 2.101.0.3.1",
+          "same as rebol/rebol",
+          "MATCH"
+        ],
+        [
+          "metaeducation/ren-c",
+          "src/specs/version.r = 2.102.0.0.0",
+          "no releases; atronix tags only",
+          "NOTED"
+        ],
+        [
+          "Oldes/Rebol3",
+          "internal .version = 3.22.53.5.4.3.1",
+          "GitHub release/tag 3.22.1",
+          "CONFLICT (different version schemes: internal 3.22.53.x vs tag 3.22.1 - recorded, not resolved)"
+        ]
+      ]
+    },
+    {
+      "id": "R5",
+      "artifact": "R3 lineage licenses",
+      "rows": [
+        [
+          "LICENSE text hash",
+          "rebol/rebol / rebolsource/r3 / rebol-test / Oldes-Rebol3 all sha256 c95bae1d... (Apache-2.0)",
+          "ren-c sha256 1a45b1d0... (LGPL-3.0)",
+          "CONFLICT (ren-c relicensed vs lineage; recorded with evidence)"
+        ],
+        [
+          "rebolsource/rebol-syntax",
+          "no LICENSE file in repo",
+          "-",
+          "UNCLEAR"
+        ]
+      ]
+    },
+    {
+      "id": "R6",
+      "artifact": "REBOL 2.7.8 official distribution",
+      "rows": [
+        [
+          "Version claims",
+          "rebol.com download pages (via search-index snapshot): Core 2.7.8.3.1 / .4.2 / .4.3 / .4.10, View 2.7.8.x",
+          "direct fetch from rebol.com: BLOCKED (TLS)",
+          "UNVERIFIED (second-hand page content only; acquisition BLOCKED)"
+        ],
+        [
+          "Binary availability",
+          "rebol.com/pub/platforms/... (URLs from page snippet)",
+          "all attempts TLS-blocked from sandbox",
+          "BLOCKED"
+        ]
+      ]
+    },
+    {
+      "id": "R7",
+      "artifact": "Red binary distribution",
+      "rows": [
+        [
+          "GitHub release assets",
+          "v0.6.6/v0.6.4/v0.6.3 assets=0",
+          "official binaries hosted on static.red-lang.org",
+          "CONFLICT (expectation: release binaries on GitHub; reality: off-GitHub hosting)"
+        ],
+        [
+          "static.red-lang.org",
+          "official download host",
+          "TLS-blocked from sandbox",
+          "BLOCKED"
+        ]
+      ]
+    }
+  ]
+}

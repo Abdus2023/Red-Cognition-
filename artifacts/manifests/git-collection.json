@@ -1,0 +1,757 @@
+{
+  "collected_at": "2026-08-31T17:27:52Z",
+  "clone_protocol": "git clone --filter=blob:none --no-checkout (blobless; full commit history, no blob content)",
+  "repos": {
+    "red": {
+      "local_clone_path": "/tmp/acq/red",
+      "upstream_url": "https://github.com/red/red.git",
+      "remotes": "origin\thttps://github.com/red/red.git (fetch) [blob:none]\norigin\thttps://github.com/red/red.git (push)",
+      "head_commit": "b492f75752cc6b3abb8136825e9448ced9a357f2",
+      "status_short": "D  .appveyor.yml\nD  .github/.editorconfig\nD  .github/.gitattributes-sample\nD  .github/.gitignore-sample\nD  .github/ISSUE_TEMPLATE/bug_report.md\nD  .github/scripts/codex-fix-review-issues.ps1\nD  .github/scripts/codex-review-push.ps1\nD  .github/scripts/send-telegram-review.ps1\nD  .github/telegram-webhook/README.md\nD  .github/telegram-webhook/cloudflare-worker.js\nD  .github/telegram-webhook/wrangler.toml\nD  .github/workflows/RPi.yml\nD  .github/workflows/ai-review-telegram-command.yml\nD  .github/workflows/ai-review.yml\nD  .github/workflows/linux.yml\nD  .github/workflows/main.yml\nD  BSD-3-License.txt\nD  BSL-License.txt\nD  CI/Linux-32/Dockerfile\nD  CI/Linux-32/action.yml\nD  CI/Linux-32/entrypoint.sh\nD  CI/Linux-gtk/Dockerfile\nD  CI/Linux-gtk/action.yml\nD  CI/Linux-gtk/entrypoint.sh\nD  CODE_OF_CONDUCT.md\nD  CONTRIBUTING.md\nD  README.md\nD  bridges/android/build.r\nD  bridges/android/dex/classes.dex\nD  bridges/android/samples/eval/AndroidManifest.xml\nD  bridges/android/samples/eval/eval.red\nD  bridges/android/samples/eval/res/drawable-hdpi/ic_launcher.png\nD  bridges/android/samples/eval/res/drawable-mdpi/ic_launcher.png\nD  bridges/android/samples/eval/res/drawable-xhdpi/ic_launcher.png\nD  bridges/android/samples/eval/res/drawable-xxhdpi/ic_launcher.png\nD  bridges/android/samples/eval/res/values-sw600dp/dimens.xml\nD  bridges/android/samples/eval/res/values-sw720dp-land/dimens.xml\nD  bridges/android/samples/eval/res/values/dimens.xml\nD  bridges/android/samples/eval/res/values/strings.xml\nD  bridges/android/samples/eval/res/values/styles.xml\nD  bridges/android/src/org/redlang/eval/ClickEvent.java\nD  bridges/android/src/org/redlang/eval/LongClickEvent.java\nD  bridges/android/src/org/redlang/eval/MainActivity.java\nD  bridges/android/src/org/redlang/eval/TouchEvent.java\nD  bridges/android/src/redroid/ClickEvent.java\nD  bridges/android/src/redroid/LongClickEvent.java\nD  bridges/android/src/redroid/MainActivity.java\nD  bridges/android/src/redroid/TouchEvent.java\nD  bridges/java/README.md\nD  bridges/java/bridge.java\nD  bridges/java/bridge.red\nD  bridges/java/hello.red\nD  build/README.md\nD  build/build.r\nD  build/encap-paths.r.sample\nD  build/git-version.r\nD  build/includes.r\nD  build/precap.r\nD  docs/comparison-matrix.xlsx\nD  docs/conversion-matrix.xlsx\nD  docs/date/date-creation-FSM.txt\nD  docs/date/date-creation-FSM.xlsx\nD  docs/lexer/lexer-FSM.csv\nD  docs/lexer/lexer-FSM.xlsx\nD  docs/lexer/lexer-states.txt\nD  docs/math-ops-matrix.xlsx\nD  docs/old/comparison-matrix.red\nD  docs/old/emit-block.r\nD  docs/old/emit-reds-api-html.r\nD  docs/old/emit-reds-api-md2.r\nD  docs/old/generate-reds-api.r\nD  docs/old/make-to-matrix-html.r\nD  docs/old/to-matrix-template.html\nD  docs/old/to-matrix.html\nD  docs/old/to-matrix.red\nD  docs/red-system/dark.css\nD  docs/red-system/light.css\nD  docs/red-system/makedoc2.r\nD  docs/red-system/red-system-quick-test.txt\nD  docs/red-system/red-system-specs.txt\nD  docs/red-system/template.html\nD  encapper/boot.red\nD  encapper/compiler.r\nD  encapper/lexer.r\nD  encapper/modules.r\nD  encapper/usage.txt\nD  encapper/version.r\nD  environment/actions.red\nD  environment/codecs/BMP.red\nD  environment/codecs/CSV.red\nD  environment/codecs/GIF.red\nD  environment/codecs/JPEG.red\nD  environment/codecs/JSON.red\nD  environment/codecs/PNG.red\nD  environment/codecs/redbin.red\nD  environment/colors.red\nD  environment/console/CLI/POSIX.reds\nD  environment/console/CLI/console.red\nD  environment/console/CLI/input.red\nD  environment/console/CLI/settings.red\nD  environment/console/CLI/win32.reds\nD  environment/console/GUI/app.ico\nD  environment/console/GUI/core.red\nD  environment/console/GUI/gui-console.red\nD  environment/console/GUI/highlight.red\nD  environment/console/GUI/old/gui-console.red\nD  environment/console/GUI/old/terminal.reds\nD  environment/console/GUI/old/windows.reds\nD  environment/console/GUI/settings.red\nD  environment/console/GUI/tips.red\nD  environment/console/auto-complete.red\nD  environment/console/engine.red\nD  environment/console/help.red\nD  environment/css-colors.red\nD  environment/datatypes.red\nD  environment/functions.red\nD  environment/natives.red\nD  environment/networking.red\nD  environment/operators.red\nD  environment/reactivity.red\nD  environment/routines.red\nD  environment/scalars.red\nD  environment/schemes/GPIO.red\nD  environment/system.red\nD  environment/tools.red\nD  libRed/README.md\nD  libRed/libRed.bas\nD  libRed/libRed.def\nD  libRed/libRed.lib\nD  libRed/libRed.red\nD  libRed/red.h\nD  modules/view/RTD.red\nD  modules/view/VID.red\nD  modules/view/backends/android/gui.red\nD  modules/view/backends/gtk3/camera-dev.reds\nD  modules/view/backends/gtk3/camera.reds\nD  modules/view/backends/gtk3/color.reds\nD  modules/view/backends/gtk3/comdlgs.reds\nD  modules/view/backends/gtk3/css.reds\nD  modules/view/backends/gtk3/draw.reds\nD  modules/view/backends/gtk3/events.reds\nD  modules/view/backends/gtk3/font.reds\nD  modules/view/backends/gtk3/gtk.reds\nD  modules/view/backends/gtk3/gui.reds\nD  modules/view/backends/gtk3/handlers.reds\nD  modules/view/backends/gtk3/menu.reds\nD  modules/view/backends/gtk3/para.reds\nD  modules/view/backends/gtk3/rules.red\nD  modules/view/backends/gtk3/styles.red\nD  modules/view/backends/gtk3/tab-panel.reds\nD  modules/view/backends/gtk3/text-box.reds\nD  modules/view/backends/gtk3/text-list.reds\nD  modules/view/backends/gtk3/v4l2.reds\nD  modules/view/backends/keycodes.reds\nD  modules/view/backends/macOS/camera.reds\nD  modules/view/backends/macOS/classes.reds\nD  modules/view/backends/macOS/cocoa.reds\nD  modules/view/backends/macOS/comdlgs.reds\nD  modules/view/backends/macOS/delegates.reds\nD  modules/view/backends/macOS/draw.reds\nD  modules/view/backends/macOS/events.reds\nD  modules/view/backends/macOS/font.reds\nD  modules/view/backends/macOS/gui.reds\nD  modules/view/backends/macOS/menu.reds\nD  modules/view/backends/macOS/para.reds\nD  modules/view/backends/macOS/rules.red\nD  modules/view/backends/macOS/selectors.reds\nD  modules/view/backends/macOS/styles.red\nD  modules/view/backends/macOS/tab-panel.reds\nD  modules/view/backends/macOS/text-box.reds\nD  modules/view/backends/platform.red\nD  modules/view/backends/terminal/ansi-parser.reds\nD  modules/view/backends/terminal/definitions.reds\nD  modules/view/backends/terminal/draw.reds\nD  modules/view/backends/terminal/events.reds\nD  modules/view/backends/terminal/font.reds\nD  modules/view/backends/terminal/gui.reds\nD  modules/view/backends/terminal/make-ui.red\nD  modules/view/backends/terminal/para.reds\nD  modules/view/backends/terminal/screen.reds\nD  modules/view/backends/terminal/styles.red\nD  modules/view/backends/terminal/text-box.reds\nD  modules/view/backends/terminal/timer.reds\nD  modules/view/backends/terminal/tty.reds\nD  modules/view/backends/terminal/utils.reds\nD  modules/view/backends/terminal/widget.reds\nD  modules/view/backends/terminal/widgets/base.reds\nD  modules/view/backends/terminal/widgets/button.reds\nD  modules/view/backends/terminal/widgets/checkbox.reds\nD  modules/view/backends/terminal/widgets/field.reds\nD  modules/view/backends/terminal/widgets/group-box.reds\nD  modules/view/backends/terminal/widgets/progress.reds\nD  modules/view/backends/terminal/widgets/radio.reds\nD  modules/view/backends/terminal/widgets/rich-text.reds\nD  modules/view/backends/terminal/widgets/text-list.reds\nD  modules/view/backends/test/draw.reds\nD  modules/view/backends/test/events.reds\nD  modules/view/backends/test/gui.red\nD  modules/view/backends/test/gui.reds\nD  modules/view/backends/test/styles.red\nD  modules/view/backends/test/text-box.reds\nD  modules/view/backends/windows/base.reds\nD  modules/view/backends/windows/button.reds\nD  modules/view/backends/windows/calendar.reds\nD  modules/view/backends/windows/camera.reds\nD  modules/view/backends/windows/classes.reds\nD  modules/view/backends/windows/comdlgs.reds\nD  modules/view/backends/windows/direct2d.reds\nD  modules/view/backends/windows/draw-gdi.reds\nD  modules/view/backends/windows/draw.reds\nD  modules/view/backends/windows/events.reds\nD  modules/view/backends/windows/font.reds\nD  modules/view/backends/windows/gui.reds\nD  modules/view/backends/windows/matrix2d.reds\nD  modules/view/backends/windows/menu.reds\nD  modules/view/backends/windows/panel.reds\nD  modules/view/backends/windows/para.reds\nD  modules/view/backends/windows/rules.red\nD  modules/view/backends/windows/styles.red\nD  modules/view/backends/windows/tab-panel.reds\nD  modules/view/backends/windows/text-box.reds\nD  modules/view/backends/windows/text-list.reds\nD  modules/view/backends/windows/win32.reds\nD  modules/view/draw.red\nD  modules/view/rules.red\nD  modules/view/styles.red\nD  modules/view/utils.red\nD  modules/view/view.red\nD  quick-test/quick-test.r\nD  quick-test/quick-test.red\nD  quick-test/quick-test.reds\nD  quick-test/quick-unit-test.r\nD  quick-test/run-test.r\nD  quick-test/tests/overwrite-test.reds\nD  quick-test/tests/qt-test.r\nD  quick-test/tests/qt-test.reds\nD  red.r\nD  run-all-tests.r\nD  runtime/actions.reds\nD  runtime/allocator.reds\nD  runtime/call.reds\nD  runtime/case-folding-table.reds\nD  runtime/case-folding.reds\nD  runtime/clipboard.reds\nD  runtime/collector.reds\nD  runtime/common.reds\nD  runtime/compress.reds\nD  runtime/crush.reds\nD  runtime/crypto.reds\nD  runtime/datatypes/action.reds\nD  runtime/datatypes/binary.reds\nD  runtime/datatypes/bitset.reds\nD  runtime/datatypes/block.reds\nD  runtime/datatypes/char.reds\nD  runtime/datatypes/context.reds\nD  runtime/datatypes/datatype.reds\nD  runtime/datatypes/date.reds\nD  runtime/datatypes/email.reds\nD  runtime/datatypes/error.reds\nD  runtime/datatypes/event.reds\nD  runtime/datatypes/file.reds\nD  runtime/datatypes/float.reds\nD  runtime/datatypes/function.reds\nD  runtime/datatypes/get-path.reds\nD  runtime/datatypes/get-word.reds\nD  runtime/datatypes/handle.reds\nD  runtime/datatypes/hash.reds\nD  runtime/datatypes/image.reds\nD  runtime/datatypes/integer.reds\nD  runtime/datatypes/issue.reds\nD  runtime/datatypes/lit-path.reds\nD  runtime/datatypes/lit-word.reds\nD  runtime/datatypes/logic.reds\nD  runtime/datatypes/map.reds\nD  runtime/datatypes/money.reds\nD  runtime/datatypes/native.reds\nD  runtime/datatypes/none.reds\nD  runtime/datatypes/object.reds\nD  runtime/datatypes/op.reds\nD  runtime/datatypes/pair.reds\nD  runtime/datatypes/paren.reds\nD  runtime/datatypes/path.reds\nD  runtime/datatypes/percent.reds\nD  runtime/datatypes/point2D.reds\nD  runtime/datatypes/point3D.reds\nD  runtime/datatypes/port.reds\nD  runtime/datatypes/ref.reds\nD  runtime/datatypes/refinement.reds\nD  runtime/datatypes/routine.reds\nD  runtime/datatypes/series.reds\nD  runtime/datatypes/set-path.reds\nD  runtime/datatypes/set-word.reds\nD  runtime/datatypes/string.reds\nD  runtime/datatypes/symbol.reds\nD  runtime/datatypes/tag.reds\nD  runtime/datatypes/time.reds\nD  runtime/datatypes/triple.reds\nD  runtime/datatypes/tuple.reds\nD  runtime/datatypes/typeset.reds\nD  runtime/datatypes/unset.reds\nD  runtime/datatypes/url.reds\nD  runtime/datatypes/vector.reds\nD  runtime/datatypes/word.reds\nD  runtime/debug-tools.reds\nD  runtime/definitions.reds\nD  runtime/deflate.reds\nD  runtime/dtoa.reds\nD  runtime/externals.reds\nD  runtime/hashtable.reds\nD  runtime/image-utils.reds\nD  runtime/interpreter.reds\nD  runtime/lexer-transitions.reds\nD  runtime/lexer.reds\nD  runtime/macros.reds\nD  runtime/natives.reds\nD  runtime/ownership.reds\nD  runtime/parse.reds\nD  runtime/platform/COM.reds\nD  runtime/platform/POSIX.reds\nD  runtime/platform/android.reds\nD  runtime/platform/darwin.reds\nD  runtime/platform/freebsd.reds\nD  runtime/platform/image-gdiplus.reds\nD  runtime/platform/image-gdk.reds\nD  runtime/platform/image-quartz.reds\nD  runtime/platform/image-stub.reds\nD  runtime/platform/image-wic.reds\nD  runtime/platform/linux.reds\nD  runtime/platform/netbsd.reds\nD  runtime/platform/syllable.reds\nD  runtime/platform/win32-ansi.reds\nD  runtime/platform/win32-print.reds\nD  runtime/platform/win32.reds\nD  runtime/print.reds\nD  runtime/queue.reds\nD  runtime/random.reds\nD  runtime/red.reds\nD  runtime/redbin.reds\nD  runtime/references.reds\nD  runtime/simple-io.reds\nD  runtime/sort.reds\nD  runtime/stack.reds\nD  runtime/structures.reds\nD  runtime/threads.reds\nD  runtime/tokenizer.reds\nD  runtime/tools.reds\nD  runtime/unicode.reds\nD  runtime/utils.reds\nD  runtime/vector2d.reds\nD  runtime/wcwidth.reds\nD  system/assets/macOS/Info.plist\nD  system/assets/macOS/Resources/AppIcon.icns\nD  system/assets/red-3D.ico\nD  system/assets/red-mono.ico\nD  system/assets/red.ico\nD  system/bridges/java/JNI.reds\nD  system/bridges/java/JNIdemo.java\nD  system/bridges/java/JNIdemo.reds\nD  system/bridges/java/README.md\nD  system/compiler.r\nD  system/config.r\nD  system/emitter.r\nD  system/formats/COFF.r\nD  system/formats/ELF-obj.r\nD  system/formats/ELF.r\nD  system/formats/Intel-HEX.r\nD  system/formats/Mach-APP.r\nD  system/formats/Mach-O-obj.r\nD  system/formats/Mach-O.r\nD  system/formats/PE.r\nD  system/formats/crt-helpers.r\nD  system/formats/crt-helpers.s\nD  system/formats/guid-exports.r\nD  system/formats/lib-exports.r\nD  system/formats/libc-exports.r\nD  system/formats/mac-cxx-exports.r\nD  system/formats/mac-libsystem.r\nD  system/formats/win32-exports.r\nD  system/library/readme.txt\nD  system/linker-static.r\nD  system/linker.r\nD  system/loader.r\nD  system/rsc.r\nD  system/runtime/POSIX-signals.reds\nD  system/runtime/POSIX.reds\nD  system/runtime/android.reds\nD  system/runtime/common.reds\nD  system/runtime/darwin.reds\nD  system/runtime/debug.reds\nD  system/runtime/freebsd.reds\nD  system/runtime/heap.reds\nD  system/runtime/lib-names.reds\nD  system/runtime/lib-natives.reds\nD  system/runtime/libc.reds\nD  system/runtime/linux-sigaction.reds\nD  system/runtime/linux.reds\nD  system/runtime/netbsd.reds\nD  system/runtime/start.reds\nD  system/runtime/syllable.reds\nD  system/runtime/system.reds\nD  system/runtime/utils.reds\nD  system/runtime/win32-driver.reds\nD  system/runtime/win32.reds\nD  system/targets/ARM.r\nD  system/targets/IA-32.r\nD  system/targets/target-class.r\nD  system/tests/all-tests.txt\nD  system/tests/build-arm-tests.r\nD  system/tests/empty.reds\nD  system/tests/float-matrix-manual.reds\nD  system/tests/hello.reds\nD  system/tests/nan-tests-manual.reds\nD  system/tests/nan-tests-manual32.reds\nD  system/tests/readme.txt\nD  system/tests/run-all.r\nD  system/tests/run-all.sh\nD  system/tests/run-float.r\nD  system/tests/shared-lib.reds\nD  system/tests/source/compiler/alias-test.r\nD  system/tests/source/compiler/callback-test.r\nD  system/tests/source/compiler/cast-test.r\nD  system/tests/source/compiler/comp-err-test.r\nD  system/tests/source/compiler/compiles-ok-test.r\nD  system/tests/source/compiler/cond-expr-test.r\nD  system/tests/source/compiler/define-test.reds\nD  system/tests/source/compiler/dylib-test.r\nD  system/tests/source/compiler/empty.reds\nD  system/tests/source/compiler/enum-test.r\nD  system/tests/source/compiler/exit-test.r\nD  system/tests/source/compiler/hello.reds\nD  system/tests/source/compiler/inference-test.r\nD  system/tests/source/compiler/infix-test.r\nD  system/tests/source/compiler/int-literals-test.r\nD  system/tests/source/compiler/namespace-test.r\nD  system/tests/source/compiler/not-test.r\nD  system/tests/source/compiler/output-test.r\nD  system/tests/source/compiler/pointer-test.r\nD  system/tests/source/compiler/print-test.r\nD  system/tests/source/compiler/regression-test-rsc.r\nD  system/tests/source/compiler/return-test.r\nD  system/tests/source/units/alias-test.reds\nD  system/tests/source/units/array-test.reds\nD  system/tests/source/units/atomic-test.reds\nD  system/tests/source/units/byte-test.reds\nD  system/tests/source/units/c-string-test.reds\nD  system/tests/source/units/case-test.reds\nD  system/tests/source/units/cast-test.reds\nD  system/tests/source/units/compile-test-dylibs.r\nD  system/tests/source/units/conditional-test.reds\nD  system/tests/source/units/create-dylib-auto-test.r\nD  system/tests/source/units/dll-test.r\nD  system/tests/source/units/dylib-libs.txt\nD  system/tests/source/units/dylib-test-script-footer.txt\nD  system/tests/source/units/dylib-test-script-header.txt\nD  system/tests/source/units/dylib-tests.txt\nD  system/tests/source/units/enum-test.reds\nD  system/tests/source/units/exceptions-test.reds\nD  system/tests/source/units/exit-test.reds\nD  system/tests/source/units/float-lib-test-source.reds\nD  system/tests/source/units/float-pointer-test.reds\nD  system/tests/source/units/float-test.reds\nD  system/tests/source/units/float32-lib-test-source.reds\nD  system/tests/source/units/float32-test.reds\nD  system/tests/source/units/function-test.reds\nD  system/tests/source/units/get-pointer-test.reds\nD  system/tests/source/units/infix-test.reds\nD  system/tests/source/units/integer-test.reds\nD  system/tests/source/units/length-test.reds\nD  system/tests/source/units/lib-macOS-test.reds\nD  system/tests/source/units/lib-test.reds\nD  system/tests/source/units/lib-win32-test.reds\nD  system/tests/source/units/libs/libstruct-BSD.so\nD  system/tests/source/units/libs/libstructlib-armhf.so\nD  system/tests/source/units/libs/libstructlib-armsf.so\nD  system/tests/source/units/libs/libstructlib.dylib\nD  system/tests/source/units/libs/libstructlib.so\nD  system/tests/source/units/libs/structlib.c\nD  system/tests/source/units/libs/structlib.dll\nD  system/tests/source/units/libtest-dll1.reds\nD  system/tests/source/units/libtest-dll2.reds\nD  system/tests/source/units/logic-test.reds\nD  system/tests/source/units/make-byte-auto-test.r\nD  system/tests/source/units/make-dylib-auto-test.r\nD  system/tests/source/units/make-float-auto-test.r\nD  system/tests/source/units/make-float32-auto-test.r\nD  system/tests/source/units/make-float32-lib-auto-test.r\nD  system/tests/source/units/make-integer-auto-test.r\nD  system/tests/source/units/make-maths-auto-test.r\nD  system/tests/source/units/make-red-system-auto-tests.r\nD  system/tests/source/units/math-mixed-test.reds\nD  system/tests/source/units/modulo-test.reds\nD  system/tests/source/units/namespace-test-include.reds\nD  system/tests/source/units/namespace-test.reds\nD  system/tests/source/units/not-test.reds\nD  system/tests/source/units/null-test.reds\nD  system/tests/source/units/overflow-test.reds\nD  system/tests/source/units/pointer-test.reds\nD  system/tests/source/units/prepare-dependencies.r\nD  system/tests/source/units/protect-test.reds\nD  system/tests/source/units/push-pop-test.reds\nD  system/tests/source/units/queue-test.reds\nD  system/tests/source/units/return-test.reds\nD  system/tests/source/units/size-test.reds\nD  system/tests/source/units/struct-test.reds\nD  system/tests/source/units/subroutine-test.reds\nD  system/tests/source/units/switch-test.reds\nD  system/tests/source/units/system-test.reds\nD  system/tests/source/units/use-test.reds\nD  system/tests/source/units/vararg-test.reds\nD  system/tests/static-link/aligntest.o\nD  system/tests/static-link/aligntest.obj\nD  system/tests/static-link/altname_test.c\nD  system/tests/static-link/altname_test.obj\nD  system/tests/static-link/arm/aligntest-thumb.o\nD  system/tests/static-link/arm/aligntest.o\nD  system/tests/static-link/arm/dataimport_test.o\nD  system/tests/static-link/arm/memcpy_test-thumb.o\nD  system/tests/static-link/arm/memcpy_test.o\nD  system/tests/static-link/arm/test-align.reds\nD  system/tests/static-link/arm/test-dataimport.reds\nD  system/tests/static-link/arm/test-memcpy.reds\nD  system/tests/static-link/arm/test-thm-align.reds\nD  system/tests/static-link/arm/test-thm-memcpy.reds\nD  system/tests/static-link/arm/test-thm-trivial.reds\nD  system/tests/static-link/arm/test-trivial.reds\nD  system/tests/static-link/arm/trivial-thumb.o\nD  system/tests/static-link/arm/trivial.o\nD  system/tests/static-link/bigobj_test.c\nD  system/tests/static-link/bigobj_test.obj\nD  system/tests/static-link/cfold_a.c\nD  system/tests/static-link/cfold_b.c\nD  system/tests/static-link/cfold_test.lib\nD  system/tests/static-link/comdatinit.hpp\nD  system/tests/static-link/comdatinit_a.cpp\nD  system/tests/static-link/comdatinit_a.obj\nD  system/tests/static-link/comdatinit_b.cpp\nD  system/tests/static-link/comdatinit_b.obj\nD  system/tests/static-link/crtinit_a.c\nD  system/tests/static-link/crtinit_a.obj\nD  system/tests/static-link/crtinit_b.c\nD  system/tests/static-link/crtinit_bc.lib\nD  system/tests/static-link/crtinit_c.c\nD  system/tests/static-link/cwtest.a\nD  system/tests/static-link/dataimport_test.o\nD  system/tests/static-link/fptreloc_test.c\nD  system/tests/static-link/fptreloc_test.obj\nD  system/tests/static-link/groupdup.hpp\nD  system/tests/static-link/groupdup_a.cpp\nD  system/tests/static-link/groupdup_b.cpp\nD  system/tests/static-link/libgroupdup.a\nD  system/tests/static-link/libminiz.a\nD  system/tests/static-link/macho/aligntest.o\nD  system/tests/static-link/macho/commons_a.c\nD  system/tests/static-link/macho/commons_a.o\nD  system/tests/static-link/macho/commons_b.c\nD  system/tests/static-link/macho/commons_b.o\nD  system/tests/static-link/macho/memcpy_test.o\nD  system/tests/static-link/macho/test-align.reds\nD  system/tests/static-link/macho/test-commons.reds\nD  system/tests/static-link/macho/test-eh.reds\nD  system/tests/static-link/macho/test-memcpy.reds\nD  system/tests/static-link/macho/test-trivial.reds\nD  system/tests/static-link/macho/trivial.o\nD  system/tests/static-link/macho/tryeh_test.cpp\nD  system/tests/static-link/macho/tryeh_test.o\nD  system/tests/static-link/memcpy_test.o\nD  system/tests/static-link/memcpy_test.obj\nD  system/tests/static-link/miniz.lib\nD  system/tests/static-link/randtest.obj\nD  system/tests/static-link/rdatasec_test.c\nD  system/tests/static-link/rdatasec_test.obj\nD  system/tests/static-link/sectsplit_test.c\nD  system/tests/static-link/sectsplit_test.obj\nD  system/tests/static-link/seltest.a\nD  system/tests/static-link/stdcall_test.lib\nD  system/tests/static-link/stdcall_test.obj\nD  system/tests/static-link/test-align.reds\nD  system/tests/static-link/test-alternatename.reds\nD  system/tests/static-link/test-bigobj.reds\nD  system/tests/static-link/test-cafter-reloc.reds\nD  system/tests/static-link/test-comdat-fold.reds\nD  system/tests/static-link/test-comdat-init.reds\nD  system/tests/static-link/test-crt-init.reds\nD  system/tests/static-link/test-elf-align.reds\nD  system/tests/static-link/test-elf-comdat.reds\nD  system/tests/static-link/test-elf-dataimport.reds\nD  system/tests/static-link/test-elf-empty-archive.reds\nD  system/tests/static-link/test-elf-group-lsda.reds\nD  system/tests/static-link/test-elf-memcpy.reds\nD  system/tests/static-link/test-elf-miniz.reds\nD  system/tests/static-link/test-elf-seltest.reds\nD  system/tests/static-link/test-elf-trivial.reds\nD  system/tests/static-link/test-exports.reds\nD  system/tests/static-link/test-memcpy.reds\nD  system/tests/static-link/test-miniz-lib.reds\nD  system/tests/static-link/test-rdata-sec.reds\nD  system/tests/static-link/test-section-split.reds\nD  system/tests/static-link/test-static-flag.reds\nD  system/tests/static-link/test-stdcall-lib.reds\nD  system/tests/static-link/test-stdcall.reds\nD  system/tests/static-link/test-tls-comdat.reds\nD  system/tests/static-link/test-tls.reds\nD  system/tests/static-link/test-trivial.reds\nD  system/tests/static-link/test-weak-default.reds\nD  system/tests/static-link/tls_test.cpp\nD  system/tests/static-link/tls_test.obj\nD  system/tests/static-link/tlsdup.hpp\nD  system/tests/static-link/tlsdup_a.cpp\nD  system/tests/static-link/tlsdup_a.obj\nD  system/tests/static-link/tlsdup_b.cpp\nD  system/tests/static-link/tlsdup_b.obj\nD  system/tests/static-link/trivial.o\nD  system/tests/static-link/trivial.obj\nD  system/tests/static-link/weakdtor_test.cpp\nD  system/tests/static-link/weakdtor_test.obj\nD  system/utils/IEEE-754.r\nD  system/utils/int-to-bin.r\nD  system/utils/libRedRT-exports.r\nD  system/utils/libRedRT.r\nD  system/utils/profiler.r\nD  system/utils/r2-forward.r\nD  system/utils/secure-clean-path.r\nD  system/utils/unicode.r\nD  system/utils/virtual-struct.r\nD  tests/TUI/draw.red\nD  tests/TUI/mouse.red\nD  tests/TUI/rich-text.red\nD  tests/TUI/spinners.red\nD  tests/TUI/tui.red\nD  tests/align-test.red\nD  tests/allocator-tests.reds\nD  tests/android/vid.red\nD  tests/build-arm-tests.r\nD  tests/build-separate-arm-tests.r\nD  tests/camera-resize.red\nD  tests/clip-point-test.red\nD  tests/clip-test.red\nD  tests/complexpen-point-test.red\nD  tests/complexpen-test.red\nD  tests/cursor.red\nD  tests/demo.red\nD  tests/displays-geometry.red\nD  tests/draw-point.red\nD  tests/draw-windows.png\nD  tests/draw.red\nD  tests/dyn-gui.red\nD  tests/events-flow.red\nD  tests/failing-tests.red\nD  tests/fixtures/chinese-characters.txt\nD  tests/gtk3/README.gtk3\nD  tests/hello.red\nD  tests/libRed/README.md\nD  tests/libRed/libRed.dll\nD  tests/libRed/libRedTest.c\nD  tests/libRed/libRedTests.c\nD  tests/libRed/test.c\nD  tests/libRed/test.xlsm\nD  tests/matrix-point-test.red\nD  tests/matrix-test.red\nD  tests/modal.red\nD  tests/react-test.red\nD  tests/react-test2.red\nD  tests/react-test3.red\nD  tests/react-test4.red\nD  tests/react-test5.red\nD  tests/react-test6.red\nD  tests/red-3D.ico\nD  tests/red-mono.ico\nD  tests/red.ico\nD  tests/run-all-simple-gc.red\nD  tests/run-all-together.r\nD  tests/run-all.r\nD  tests/run-all.sh\nD  tests/run-core-tests.r\nD  tests/run-regression-tests.r\nD  tests/run-view-headless-tests.r\nD  tests/run-view-tests.r\nD  tests/scroller-test.red\nD  tests/select-text.red\nD  tests/send-event-demo.red\nD  tests/shape-point-test.red\nD  tests/shape-test.red\nD  tests/shield-point.red\nD  tests/shield.red\nD  tests/simple-scheme.red\nD  tests/source/compiler/compile-error-test.r\nD  tests/source/compiler/lexer-test.r\nD  tests/source/compiler/preprocessor-test.r\nD  tests/source/compiler/print-test.r\nD  tests/source/compiler/print-test.red\nD  tests/source/compiler/regression-test-redc-1.r\nD  tests/source/compiler/regression-test-redc-2.r\nD  tests/source/compiler/regression-test-redc-3.r\nD  tests/source/compiler/regression-test-redc-4.r\nD  tests/source/compiler/regression-test-redc-5.r\nD  tests/source/compiler/run-time-error-test.r\nD  tests/source/environment/functions-test.red\nD  tests/source/environment/help-test.red\nD  tests/source/environment/scalars-test.red\nD  tests/source/library/call-test.r\nD  tests/source/library/call-test.red\nD  tests/source/library/called-test.red\nD  tests/source/runtime/preprocessor-test.red\nD  tests/source/runtime/tools-test.reds\nD  tests/source/runtime/unicode-test.r\nD  tests/source/runtime/unicode-test.red\nD  tests/source/units/all-tests.txt\nD  tests/source/units/append-test.red\nD  tests/source/units/binding-test.red\nD  tests/source/units/bitset-test.red\nD  tests/source/units/case-folding-test.red\nD  tests/source/units/case-test.red\nD  tests/source/units/change-test.red\nD  tests/source/units/char-test.red\nD  tests/source/units/checksum-test.red\nD  tests/source/units/clipboard-test.red\nD  tests/source/units/comparison-test.red\nD  tests/source/units/conditional-test.red\nD  tests/source/units/convert-test.red\nD  tests/source/units/csv-test.red\nD  tests/source/units/date-test.red\nD  tests/source/units/debase-test.red\nD  tests/source/units/decompress-test.red\nD  tests/source/units/draw-test.red\nD  tests/source/units/enbase-test.red\nD  tests/source/units/evaluation-test.red\nD  tests/source/units/file-test.red\nD  tests/source/units/find-test.red\nD  tests/source/units/float-test.red\nD  tests/source/units/function-test.red\nD  tests/source/units/image-test.red\nD  tests/source/units/insert-test.red\nD  tests/source/units/integer-test.red\nD  tests/source/units/json-test.red\nD  tests/source/units/lexer-test.red\nD  tests/source/units/lexer.tests\nD  tests/source/units/load-test.red\nD  tests/source/units/logic-test.red\nD  tests/source/units/loop-test.red\nD  tests/source/units/make-equal-auto-test.r\nD  tests/source/units/make-float-auto-test.r\nD  tests/source/units/make-greater-auto-test.r\nD  tests/source/units/make-interpreter-auto-tests.r\nD  tests/source/units/make-lesser-auto-test.r\nD  tests/source/units/make-lexer-auto-tests.r\nD  tests/source/units/make-not-equal-auto-test.r\nD  tests/source/units/make-red-auto-tests.r\nD  tests/source/units/make-run-all-red-together.r\nD  tests/source/units/make-run-all-red.r\nD  tests/source/units/make-run-each-runner.r\nD  tests/source/units/make-same-auto-test.r\nD  tests/source/units/make-strict-equal-auto-test.r\nD  tests/source/units/make-test.red\nD  tests/source/units/map-test.red\nD  tests/source/units/mold-test.red\nD  tests/source/units/money-test.red\nD  tests/source/units/move-test.red\nD  tests/source/units/object-test.red\nD  tests/source/units/pair-test.red\nD  tests/source/units/parse-test.red\nD  tests/source/units/path-test.red\nD  tests/source/units/points-test.red\nD  tests/source/units/power-test.red\nD  tests/source/units/preprocessor-test.red\nD  tests/source/units/reactivity-test.red\nD  tests/source/units/recycle-test.red\nD  tests/source/units/redbin-codec-test.red\nD  tests/source/units/regression-test-red.red\nD  tests/source/units/replace-test.red\nD  tests/source/units/routine-test.red\nD  tests/source/units/run-all-init.r\nD  tests/source/units/run-all-together-init.r\nD  tests/source/units/run-post-extra-tests.r\nD  tests/source/units/run-pre-extra-tests.r\nD  tests/source/units/same-test.red\nD  tests/source/units/select-test.red\nD  tests/source/units/serialization-test.red\nD  tests/source/units/series-test.red\nD  tests/source/units/strict-equal-test.red\nD  tests/source/units/switch-test.red\nD  tests/source/units/system-test.red\nD  tests/source/units/throw-test.red\nD  tests/source/units/time-test.red\nD  tests/source/units/try-test.red\nD  tests/source/units/tuple-test.red\nD  tests/source/units/type-test.red\nD  tests/source/units/unset-test.red\nD  tests/source/units/url-test.red\nD  tests/source/units/vector-test.red\nD  tests/source/units/words-of-test.red\nD  tests/source/view/base-self-test.red\nD  tests/source/view/draw-parse-test.red\nD  tests/source/view/events-actors-test.red\nD  tests/source/view/face-facets-test.red\nD  tests/source/view/face-tree-test.red\nD  tests/source/view/face-types-test.red\nD  tests/source/view/input-test.red\nD  tests/source/view/make-face-test.red\nD  tests/source/view/reactivity-test.red\nD  tests/source/view/show-sync-test.red\nD  tests/source/view/vid-actors-test.red\nD  tests/source/view/vid-containers-test.red\nD  tests/source/view/vid-errors-test.red\nD  tests/source/view/vid-facets-test.red\nD  tests/source/view/vid-positioning-test.red\nD  tests/source/view/vid-styles-test.red\nD  tests/source/view/vid-window-test.red\nD  tests/tabbing.red\nD  tests/test-backend.red\nD  tests/vid.red\nD  tests/vid2.red\nD  tests/vid3.red\nD  tests/vid4.red\nD  tests/vid5.red\nD  tests/vid6.red\nD  tests/view-headless-interpreter.red\nD  tests/view-test.red\nD  utils/call.r\nD  utils/encap-fs.r\nD  utils/extractor.r\nD  utils/generate-lexer-table.red\nD  utils/generate-misc-tables.red\nD  utils/generate-unicode-table.red\nD  utils/migration/map-conv.red\nD  utils/preprocessor.r\nD  utils/redbin.r",
+      "describe": "v0.6.6-532-gb492f7575",
+      "commit_count": "15921",
+      "head_commit_detail": {
+        "sha": "b492f75752cc6b3abb8136825e9448ced9a357f2",
+        "author": "Nenad Rakocevic <nr@red-lang.org>",
+        "date": "2026-08-16T21:03:48+02:00",
+        "subject": "FIX: too aggressive matching for OK-Cancel VID rewriting rule."
+      },
+      "tag_count": 30,
+      "tags": [
+        "v0.1.0",
+        "v0.1.1",
+        "v0.2.0",
+        "v0.2.1",
+        "v0.2.2",
+        "v0.2.3",
+        "v0.2.4",
+        "v0.2.5",
+        "v0.2.6",
+        "v0.3.0",
+        "v0.3.1",
+        "v0.3.2",
+        "v0.3.3",
+        "v0.4.0",
+        "v0.4.1",
+        "v0.4.2",
+        "v0.4.3",
+        "v0.5.0",
+        "v0.5.1",
+        "v0.5.2",
+        "v0.5.3",
+        "v0.5.4",
+        "v0.6.0",
+        "v0.6.1",
+        "v0.6.2",
+        "v0.6.3",
+        "v0.6.4",
+        "v0.6.5",
+        "v0.6.6",
+        "v0.7"
+      ],
+      "tag_resolutions": {
+        "v0.1.0": {
+          "commit": "b252367f46df6a8889e824012db7a5a299d39313",
+          "tree": "d6d062836c85d1bc1f796463ef307428c6fb12c4"
+        },
+        "v0.1.1": {
+          "commit": "2297f1261c4e6d13d7140c004de44ff9618cc90f",
+          "tree": "c1332375983e70ad42bb72006e988f3ada9697f3"
+        },
+        "v0.2.0": {
+          "commit": "3bb185ec9b180ebf2c5ddde16bf09d9d973b316c",
+          "tree": "210a28adda058342fe739aa1d90e88e94da66cab"
+        },
+        "v0.2.1": {
+          "commit": "b6a9e083cad42d1dfa01e2bc4891ebe4efd625f0",
+          "tree": "4d55796816b4f1453ff972c6bdb78b584ff5fe93"
+        },
+        "v0.2.2": {
+          "commit": "cf81376d0efc9d9aaba19dc67e955a30329e6bfa",
+          "tree": "daaa85d4e828045a1277bb6e3ee51f2dff1819ff"
+        },
+        "v0.2.3": {
+          "commit": "7efe0db16301b4c8754b658ecbf4641f5575c1f4",
+          "tree": "0a5697f35f6974e9f83908a08601d15e91c77ee9"
+        },
+        "v0.2.4": {
+          "commit": "e3a5e8ceb95789608a5c80aa3a8ce9487a4acc13",
+          "tree": "db5784c74ca5d2ba744091f0bd823039f33578ff"
+        },
+        "v0.2.5": {
+          "commit": "7520e8fea6354a05dde6050aa3d1cb0ccc878a58",
+          "tree": "f8e6d81bf6b29f06f8d687063e84cbec667f4b6b"
+        },
+        "v0.2.6": {
+          "commit": "dbc36db3a817165fbe2cf984a9aaca26d05480d2",
+          "tree": "3d26501c72a225bc407b06fd70ff47c290d4ed3f"
+        },
+        "v0.3.0": {
+          "commit": "402a3583433066dfaebf8d5f589905d06ba86d84",
+          "tree": "1f7db0a95ec42b40c9105f4844d00831f9423338"
+        },
+        "v0.3.1": {
+          "commit": "2931dc30fd0305822dd47e56a5c41e685826e4ef",
+          "tree": "6dfd603b690aea26335a6629994771d30631b8ca"
+        },
+        "v0.3.2": {
+          "commit": "58ce5216626685c4339957fa3024d6e6dc26388d",
+          "tree": "0e58baeb6706b0ccab5bab31dcc216c8af2a6f90"
+        },
+        "v0.3.3": {
+          "commit": "8bd2545f611f971675fa6055e6307611e5eb5697",
+          "tree": "8954be0c1be98d3fdb498975792644421ab48dab"
+        },
+        "v0.4.0": {
+          "commit": "1e749cb844e7bf9426429403ed4bba583950edb5",
+          "tree": "4ee96162f2f5ec30fb5a9e997cc444b55f55f124"
+        },
+        "v0.4.1": {
+          "commit": "0e83138bad2c707c8f7e16bb86d42892e43c6691",
+          "tree": "80e5195b096f4f28e68a34c8f1ef1cfbd5e3ffd7"
+        },
+        "v0.4.2": {
+          "commit": "3628ff6fa8591c67ba1e80dd96e7f96d1fac0d0c",
+          "tree": "cd83bc27ac3db67c18056fb68534392ac08337fe"
+        },
+        "v0.4.3": {
+          "commit": "1ddcdc66e85c1a4b9cd80985f4469b0c688d168c",
+          "tree": "8fbcd82fc45fcfe6909831d6248161e770cd2b63"
+        },
+        "v0.5.0": {
+          "commit": "e1c44842852045653fb36641e7bc4327282d26b8",
+          "tree": "a12f2ee1c2df0b64f988cca6d75e1215e27cda87"
+        },
+        "v0.5.1": {
+          "commit": "6c51011ef5a0be8531d1436524c939ae37b89385",
+          "tree": "a7dc7a3abf6c892c78bf1b3c1e3c54281df3cccb"
+        },
+        "v0.5.2": {
+          "commit": "e195a35ba736ef148dceb267ef0132e33341c840",
+          "tree": "2dabdf81d0dd47d695fb5b7824217d936f594604"
+        },
+        "v0.5.3": {
+          "commit": "d92e5477d797d45e92db659e1aab372186737f5b",
+          "tree": "260e0df093ca47f696f18c239a362f2246d0dd45"
+        },
+        "v0.5.4": {
+          "commit": "4b5cc5e8243b3ae16955c7d9678f560351067c50",
+          "tree": "aaed0f0970b3ec742e4b91ffd8cd108c9f4686aa"
+        },
+        "v0.6.0": {
+          "commit": "a3d70c1aff30f3dae4eb9873d5a2f4977d5d8259",
+          "tree": "77c8f38401d93b95a2e2153f5a0a19306216e371"
+        },
+        "v0.6.1": {
+          "commit": "ce219eb4c1bc99dc344a79afbc1b1d64ea09e519",
+          "tree": "2aa5d15384c3e2ce93bb09dab65342e54a5020e3"
+        },
+        "v0.6.2": {
+          "commit": "28e70714b59d4c5beb87a1555063d8d6c0e13a9a",
+          "tree": "8b63c4c347da65f16ee73c57acf81dba210b8a50"
+        },
+        "v0.6.3": {
+          "commit": "6a43c767fa2e85d668b83f749158a18e62c30f70",
+          "tree": "f78633ea9336390f86e07fae977c61506ddac589"
+        },
+        "v0.6.4": {
+          "commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
+          "tree": "d5297982615280dc7120e30062fe603abfbe1d9b"
+        },
+        "v0.6.5": {
+          "commit": "3bafef2203661bbcaafec8b859405ba7235a5981",
+          "tree": "f91cfae687c0f58304f951d720781c27b42cc936"
+        },
+        "v0.6.6": {
+          "commit": "6942c7a021253150c3e3cf90428305892340db03",
+          "tree": "717f8de396d48c55623543f601cd11f638a562cb"
+        },
+        "v0.7": {
+          "commit": "abfa7affa32cc908893545aabff7953a02de6009",
+          "tree": "7ba99a22feb1d62087a24ffd5c208f186d413e38"
+        }
+      },
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/red__HEAD.lsr",
+          "entries": 826,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        },
+        "v0.6.6": {
+          "path": "artifacts/manifests/trees/red__v0.6.6.lsr",
+          "entries": 673,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        },
+        "v0.6.4": {
+          "path": "artifacts/manifests/trees/red__v0.6.4.lsr",
+          "entries": 538,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        },
+        "v0.7": {
+          "path": "artifacts/manifests/trees/red__v0.7.lsr",
+          "entries": 581,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        },
+        "v0.6.3": {
+          "path": "artifacts/manifests/trees/red__v0.6.3.lsr",
+          "entries": 503,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "b492f75752cc6b3abb8136825e9448ced9a357f2"
+        },
+        "v0.6.6": {
+          "commit": "6942c7a021253150c3e3cf90428305892340db03"
+        },
+        "v0.6.4": {
+          "commit": "755eb943ccea9e78c2cab0f20b313a52404355cb"
+        },
+        "v0.7": {
+          "commit": "abfa7affa32cc908893545aabff7953a02de6009"
+        },
+        "v0.6.3": {
+          "commit": "6a43c767fa2e85d668b83f749158a18e62c30f70"
+        }
+      }
+    },
+    "rebol_rebol": {
+      "local_clone_path": "/tmp/acq/rebol_rebol",
+      "upstream_url": "https://github.com/rebol/rebol.git",
+      "remotes": "origin\thttps://github.com/rebol/rebol.git (fetch) [blob:none]\norigin\thttps://github.com/rebol/rebol.git (push)",
+      "head_commit": "25033f897b2bd466068d7663563cd3ff64740b94",
+      "status_short": "D  .gitattributes\nD  .gitignore\nD  LICENSE\nD  NOTICE\nD  README\nD  make/makefile\nD  make/makefile.vc\nD  make/vcbuild.bat\nD  src/boot/actions.r\nD  src/boot/booters.r\nD  src/boot/draw.r\nD  src/boot/errors.r\nD  src/boot/graphics.r\nD  src/boot/modes.r\nD  src/boot/natives.r\nD  src/boot/ops.r\nD  src/boot/platforms.r\nD  src/boot/root.r\nD  src/boot/shape.r\nD  src/boot/strings.r\nD  src/boot/sysobj.r\nD  src/boot/task.r\nD  src/boot/text.r\nD  src/boot/types-ext.r\nD  src/boot/types.r\nD  src/boot/typespec.r\nD  src/boot/version.r\nD  src/boot/words.r\nD  src/core/a-constants.c\nD  src/core/a-globals.c\nD  src/core/a-lib.c\nD  src/core/a-lib2.c\nD  src/core/a-stubs.c\nD  src/core/b-init.c\nD  src/core/b-main.c\nD  src/core/c-do.c\nD  src/core/c-error.c\nD  src/core/c-frame.c\nD  src/core/c-function.c\nD  src/core/c-port.c\nD  src/core/c-task.c\nD  src/core/c-word.c\nD  src/core/d-crash.c\nD  src/core/d-dump.c\nD  src/core/d-print.c\nD  src/core/f-blocks.c\nD  src/core/f-deci.c\nD  src/core/f-dtoa.c\nD  src/core/f-enbase.c\nD  src/core/f-extension.c\nD  src/core/f-math.c\nD  src/core/f-modify.c\nD  src/core/f-qsort.c\nD  src/core/f-random.c\nD  src/core/f-round.c\nD  src/core/f-series.c\nD  src/core/f-stubs.c\nD  src/core/l-scan.c\nD  src/core/l-types.c\nD  src/core/m-gc.c\nD  src/core/m-pools.c\nD  src/core/m-series.c\nD  src/core/n-control.c\nD  src/core/n-data.c\nD  src/core/n-graphics.c\nD  src/core/n-io.c\nD  src/core/n-loop.c\nD  src/core/n-math.c\nD  src/core/n-sets.c\nD  src/core/n-strings.c\nD  src/core/n-system.c\nD  src/core/p-clipboard.c\nD  src/core/p-console.c\nD  src/core/p-dir.c\nD  src/core/p-dns.c\nD  src/core/p-event.c\nD  src/core/p-file.c\nD  src/core/p-net.c\nD  src/core/p-timer.c\nD  src/core/s-cases.c\nD  src/core/s-crc.c\nD  src/core/s-file.c\nD  src/core/s-find.c\nD  src/core/s-make.c\nD  src/core/s-mold.c\nD  src/core/s-ops.c\nD  src/core/s-trim.c\nD  src/core/s-unicode.c\nD  src/core/t-bitset.c\nD  src/core/t-block.c\nD  src/core/t-char.c\nD  src/core/t-datatype.c\nD  src/core/t-date.c\nD  src/core/t-decimal.c\nD  src/core/t-event.c\nD  src/core/t-function.c\nD  src/core/t-gob.c\nD  src/core/t-image.c\nD  src/core/t-integer.c\nD  src/core/t-logic.c\nD  src/core/t-map.c\nD  src/core/t-money.c\nD  src/core/t-none.c\nD  src/core/t-object.c\nD  src/core/t-pair.c\nD  src/core/t-port.c\nD  src/core/t-string.c\nD  src/core/t-time.c\nD  src/core/t-tuple.c\nD  src/core/t-typeset.c\nD  src/core/t-utype.c\nD  src/core/t-vector.c\nD  src/core/t-word.c\nD  src/core/u-bmp.c\nD  src/core/u-compress.c\nD  src/core/u-dialect.c\nD  src/core/u-gif.c\nD  src/core/u-jpg.c\nD  src/core/u-md5.c\nD  src/core/u-parse.c\nD  src/core/u-png.c\nD  src/core/u-sha1.c\nD  src/core/u-zlib.c\nD  src/include/reb-args.h\nD  src/include/reb-c.h\nD  src/include/reb-codec.h\nD  src/include/reb-config.h\nD  src/include/reb-defs.h\nD  src/include/reb-device.h\nD  src/include/reb-dtoa.h\nD  src/include/reb-event.h\nD  src/include/reb-ext.h\nD  src/include/reb-file.h\nD  src/include/reb-filereq.h\nD  src/include/reb-gob.h\nD  src/include/reb-host.h\nD  src/include/reb-math.h\nD  src/include/reb-net.h\nD  src/include/reb-series.h\nD  src/include/reb-value.h\nD  src/include/sys-core.h\nD  src/include/sys-dec-to-char.h\nD  src/include/sys-deci-funcs.h\nD  src/include/sys-deci.h\nD  src/include/sys-globals.h\nD  src/include/sys-jpg.h\nD  src/include/sys-mem.h\nD  src/include/sys-net.h\nD  src/include/sys-panics.h\nD  src/include/sys-scan.h\nD  src/include/sys-stack.h\nD  src/include/sys-state.h\nD  src/include/sys-value.h\nD  src/include/sys-zlib.h\nD  src/mezz/base-constants.r\nD  src/mezz/base-debug.r\nD  src/mezz/base-defs.r\nD  src/mezz/base-files.r\nD  src/mezz/base-funcs.r\nD  src/mezz/base-series.r\nD  src/mezz/boot-files.r\nD  src/mezz/dial-draw.r\nD  src/mezz/dial-effect.r\nD  src/mezz/dial-text.r\nD  src/mezz/mezz-banner.r\nD  src/mezz/mezz-colors.r\nD  src/mezz/mezz-control.r\nD  src/mezz/mezz-debug.r\nD  src/mezz/mezz-files.r\nD  src/mezz/mezz-func.r\nD  src/mezz/mezz-help.r\nD  src/mezz/mezz-math.r\nD  src/mezz/mezz-save.r\nD  src/mezz/mezz-secure.r\nD  src/mezz/mezz-series.r\nD  src/mezz/mezz-shell.r\nD  src/mezz/mezz-tail.r\nD  src/mezz/mezz-types.r\nD  src/mezz/prot-http.r\nD  src/mezz/sys-base.r\nD  src/mezz/sys-codec.r\nD  src/mezz/sys-load.r\nD  src/mezz/sys-ports.r\nD  src/mezz/sys-start.r\nD  src/mezz/view-funcs.r\nD  src/os/dev-dns.c\nD  src/os/dev-net.c\nD  src/os/host-args.c\nD  src/os/host-device.c\nD  src/os/host-ext-test.c\nD  src/os/host-main.c\nD  src/os/host-stdio.c\nD  src/os/posix/dev-event.c\nD  src/os/posix/dev-file.c\nD  src/os/posix/dev-stdio.c\nD  src/os/posix/host-lib.c\nD  src/os/posix/host-readline.c\nD  src/os/posix/host-window.c\nD  src/os/win32/dev-clipboard.c\nD  src/os/win32/dev-event.c\nD  src/os/win32/dev-file.c\nD  src/os/win32/dev-stdio.c\nD  src/os/win32/host-draw.c\nD  src/os/win32/host-effect.c\nD  src/os/win32/host-event.c\nD  src/os/win32/host-graphics.c\nD  src/os/win32/host-lib.c\nD  src/os/win32/host-text.c\nD  src/os/win32/host-window.c\nD  src/os/win32/rpic-test.c\nD  src/tools/file-base.r\nD  src/tools/form-header.r\nD  src/tools/make-boot.r\nD  src/tools/make-headers.r\nD  src/tools/make-host-ext.r\nD  src/tools/make-host-init.r\nD  src/tools/make-make.r\nD  src/tools/make-os-ext.r\nD  src/tools/make-reb-lib.r\nD  src/tools/systems.r",
+      "describe": "25033f8",
+      "commit_count": "308",
+      "head_commit_detail": {
+        "sha": "25033f897b2bd466068d7663563cd3ff64740b94",
+        "author": "Carl Sassenrath <cs2@rebol.com>",
+        "date": "2014-03-03T20:50:29-08:00",
+        "subject": "Merge pull request #186 from BrianHawley/fix-2109-function-local-not-at-end"
+      },
+      "tag_count": 0,
+      "tags": [],
+      "tag_resolutions": {},
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/rebol_rebol__HEAD.lsr",
+          "entries": 220,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "25033f897b2bd466068d7663563cd3ff64740b94"
+        }
+      }
+    },
+    "rebolsource_r3": {
+      "local_clone_path": "/tmp/acq/rebolsource_r3",
+      "upstream_url": "https://github.com/rebolsource/r3.git",
+      "remotes": "origin\thttps://github.com/rebolsource/r3.git (fetch) [blob:none]\norigin\thttps://github.com/rebolsource/r3.git (push)",
+      "head_commit": "98cdfcd6e439390756868b390b0ff8aa01d84551",
+      "status_short": "D  .gitattributes\nD  .gitignore\nD  .travis.yml\nD  LICENSE\nD  NOTICE\nD  README\nD  make/makefile\nD  make/makefile.vc\nD  make/vcbuild.bat\nD  src/boot/actions.r\nD  src/boot/booters.r\nD  src/boot/draw.r\nD  src/boot/errors.r\nD  src/boot/graphics.r\nD  src/boot/modes.r\nD  src/boot/natives.r\nD  src/boot/ops.r\nD  src/boot/platforms.r\nD  src/boot/root.r\nD  src/boot/shape.r\nD  src/boot/strings.r\nD  src/boot/sysobj.r\nD  src/boot/task.r\nD  src/boot/text.r\nD  src/boot/types-ext.r\nD  src/boot/types.r\nD  src/boot/typespec.r\nD  src/boot/version.r\nD  src/boot/words.r\nD  src/core/a-constants.c\nD  src/core/a-globals.c\nD  src/core/a-lib.c\nD  src/core/a-lib2.c\nD  src/core/a-stubs.c\nD  src/core/b-init.c\nD  src/core/b-main.c\nD  src/core/c-do.c\nD  src/core/c-error.c\nD  src/core/c-frame.c\nD  src/core/c-function.c\nD  src/core/c-port.c\nD  src/core/c-task.c\nD  src/core/c-word.c\nD  src/core/d-crash.c\nD  src/core/d-dump.c\nD  src/core/d-print.c\nD  src/core/f-blocks.c\nD  src/core/f-deci.c\nD  src/core/f-dtoa.c\nD  src/core/f-enbase.c\nD  src/core/f-extension.c\nD  src/core/f-math.c\nD  src/core/f-modify.c\nD  src/core/f-qsort.c\nD  src/core/f-random.c\nD  src/core/f-round.c\nD  src/core/f-series.c\nD  src/core/f-stubs.c\nD  src/core/l-scan.c\nD  src/core/l-types.c\nD  src/core/m-gc.c\nD  src/core/m-pools.c\nD  src/core/m-series.c\nD  src/core/n-control.c\nD  src/core/n-data.c\nD  src/core/n-graphics.c\nD  src/core/n-io.c\nD  src/core/n-loop.c\nD  src/core/n-math.c\nD  src/core/n-sets.c\nD  src/core/n-strings.c\nD  src/core/n-system.c\nD  src/core/p-clipboard.c\nD  src/core/p-console.c\nD  src/core/p-dir.c\nD  src/core/p-dns.c\nD  src/core/p-event.c\nD  src/core/p-file.c\nD  src/core/p-net.c\nD  src/core/p-timer.c\nD  src/core/s-cases.c\nD  src/core/s-crc.c\nD  src/core/s-file.c\nD  src/core/s-find.c\nD  src/core/s-make.c\nD  src/core/s-mold.c\nD  src/core/s-ops.c\nD  src/core/s-trim.c\nD  src/core/s-unicode.c\nD  src/core/t-bitset.c\nD  src/core/t-block.c\nD  src/core/t-char.c\nD  src/core/t-datatype.c\nD  src/core/t-date.c\nD  src/core/t-decimal.c\nD  src/core/t-event.c\nD  src/core/t-function.c\nD  src/core/t-gob.c\nD  src/core/t-image.c\nD  src/core/t-integer.c\nD  src/core/t-logic.c\nD  src/core/t-map.c\nD  src/core/t-money.c\nD  src/core/t-none.c\nD  src/core/t-object.c\nD  src/core/t-pair.c\nD  src/core/t-port.c\nD  src/core/t-string.c\nD  src/core/t-time.c\nD  src/core/t-tuple.c\nD  src/core/t-typeset.c\nD  src/core/t-utype.c\nD  src/core/t-vector.c\nD  src/core/t-word.c\nD  src/core/u-bmp.c\nD  src/core/u-compress.c\nD  src/core/u-dialect.c\nD  src/core/u-gif.c\nD  src/core/u-jpg.c\nD  src/core/u-md5.c\nD  src/core/u-parse.c\nD  src/core/u-png.c\nD  src/core/u-sha1.c\nD  src/core/u-zlib.c\nD  src/include/reb-args.h\nD  src/include/reb-c.h\nD  src/include/reb-codec.h\nD  src/include/reb-config.h\nD  src/include/reb-defs.h\nD  src/include/reb-device.h\nD  src/include/reb-dtoa.h\nD  src/include/reb-event.h\nD  src/include/reb-ext.h\nD  src/include/reb-file.h\nD  src/include/reb-filereq.h\nD  src/include/reb-gob.h\nD  src/include/reb-host.h\nD  src/include/reb-math.h\nD  src/include/reb-net.h\nD  src/include/reb-series.h\nD  src/include/reb-value.h\nD  src/include/sys-core.h\nD  src/include/sys-dec-to-char.h\nD  src/include/sys-deci-funcs.h\nD  src/include/sys-deci.h\nD  src/include/sys-globals.h\nD  src/include/sys-jpg.h\nD  src/include/sys-mem.h\nD  src/include/sys-net.h\nD  src/include/sys-panics.h\nD  src/include/sys-scan.h\nD  src/include/sys-stack.h\nD  src/include/sys-state.h\nD  src/include/sys-value.h\nD  src/include/sys-zlib.h\nD  src/mezz/base-constants.r\nD  src/mezz/base-debug.r\nD  src/mezz/base-defs.r\nD  src/mezz/base-files.r\nD  src/mezz/base-funcs.r\nD  src/mezz/base-series.r\nD  src/mezz/boot-files.r\nD  src/mezz/dial-draw.r\nD  src/mezz/dial-effect.r\nD  src/mezz/dial-text.r\nD  src/mezz/mezz-banner.r\nD  src/mezz/mezz-colors.r\nD  src/mezz/mezz-control.r\nD  src/mezz/mezz-debug.r\nD  src/mezz/mezz-files.r\nD  src/mezz/mezz-func.r\nD  src/mezz/mezz-help.r\nD  src/mezz/mezz-math.r\nD  src/mezz/mezz-save.r\nD  src/mezz/mezz-secure.r\nD  src/mezz/mezz-series.r\nD  src/mezz/mezz-shell.r\nD  src/mezz/mezz-tail.r\nD  src/mezz/mezz-types.r\nD  src/mezz/prot-http.r\nD  src/mezz/sys-base.r\nD  src/mezz/sys-codec.r\nD  src/mezz/sys-load.r\nD  src/mezz/sys-ports.r\nD  src/mezz/sys-start.r\nD  src/mezz/view-funcs.r\nD  src/os/dev-dns.c\nD  src/os/dev-net.c\nD  src/os/host-args.c\nD  src/os/host-device.c\nD  src/os/host-ext-test.c\nD  src/os/host-main.c\nD  src/os/host-stdio.c\nD  src/os/posix/dev-event.c\nD  src/os/posix/dev-file.c\nD  src/os/posix/dev-stdio.c\nD  src/os/posix/host-lib.c\nD  src/os/posix/host-readline.c\nD  src/os/posix/host-window.c\nD  src/os/win32/dev-clipboard.c\nD  src/os/win32/dev-event.c\nD  src/os/win32/dev-file.c\nD  src/os/win32/dev-stdio.c\nD  src/os/win32/host-draw.c\nD  src/os/win32/host-effect.c\nD  src/os/win32/host-event.c\nD  src/os/win32/host-graphics.c\nD  src/os/win32/host-lib.c\nD  src/os/win32/host-text.c\nD  src/os/win32/host-window.c\nD  src/os/win32/rpic-test.c\nD  src/tools/file-base.r\nD  src/tools/form-header.r\nD  src/tools/make-boot.r\nD  src/tools/make-headers.r\nD  src/tools/make-host-ext.r\nD  src/tools/make-host-init.r\nD  src/tools/make-make.r\nD  src/tools/make-os-ext.r\nD  src/tools/make-reb-lib.r\nD  src/tools/systems.r",
+      "describe": "98cdfcd",
+      "commit_count": "533",
+      "head_commit_detail": {
+        "sha": "98cdfcd6e439390756868b390b0ff8aa01d84551",
+        "author": "Andreas Bolka <a@bolka.at>",
+        "date": "2015-07-24T18:43:02+02:00",
+        "subject": "Merge pull request rebol/rebol#209 (earl/64b-for-mainline) into community"
+      },
+      "tag_count": 0,
+      "tags": [],
+      "tag_resolutions": {},
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/rebolsource_r3__HEAD.lsr",
+          "entries": 221,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "98cdfcd6e439390756868b390b0ff8aa01d84551"
+        }
+      }
+    },
+    "metaeducation_ren-c": {
+      "local_clone_path": "/tmp/acq/metaeducation_ren-c",
+      "upstream_url": "https://github.com/metaeducation/ren-c.git",
+      "remotes": "origin\thttps://github.com/metaeducation/ren-c.git (fetch) [blob:none]\norigin\thttps://github.com/metaeducation/ren-c.git (push)",
+      "head_commit": "e31d5698d73678d797df319eb855b3995716d9f1",
+      "status_short": "D  .gitattributes\nD  .github/actions/capture-git-hashes/action.yml\nD  .github/actions/clone-extension-repos/action.yml\nD  .github/actions/divert-mandb/action.yml\nD  .github/workflows/README.md\nD  .github/workflows/android-build.yml\nD  .github/workflows/linux-gcc-build.yml\nD  .github/workflows/linux-tcc-build.yml\nD  .github/workflows/macos-build.yml\nD  .github/workflows/wasi-build.yml\nD  .github/workflows/web-build.yml\nD  .github/workflows/windows-mingw-build.yml\nD  .github/workflows/windows-msvc-build.yml\nD  .gitignore\nD  .gitmodules\nD  CREDITS.md\nD  LICENSE\nD  README.md\nD  configs/README.md\nD  configs/android-build-on-arm.r\nD  configs/android-common.r\nD  configs/android-cross-compiled.r\nD  configs/bootstrap.r\nD  configs/default-config.r\nD  configs/emscripten.r\nD  configs/generic.r\nD  configs/llvm-bc.r\nD  configs/mingw-x64-c++.r\nD  configs/mingw-x64.r\nD  configs/mingw-x86.r\nD  configs/vs2019-x64.r\nD  configs/vs2019-x86.r\nD  configs/wasi.r\nD  extensions/README.md\nD  extensions/clipboard/README.md\nD  extensions/clipboard/ext-clipboard-init.r\nD  extensions/clipboard/make-spec.r\nD  extensions/clipboard/mod-clipboard.c\nD  extensions/clipboard/tests/clipboard.test.r\nD  extensions/console/README.md\nD  extensions/console/ext-console-init.r\nD  extensions/console/make-spec.r\nD  extensions/console/mod-console.c\nD  extensions/crypt/README.md\nD  extensions/crypt/ext-crypt-init.r\nD  extensions/crypt/make-spec.r\nD  extensions/crypt/mbedtls-rebol-config.h\nD  extensions/crypt/mbedtls/include/mbedtls/aes.h\nD  extensions/crypt/mbedtls/include/mbedtls/asn1.h\nD  extensions/crypt/mbedtls/include/mbedtls/asn1write.h\nD  extensions/crypt/mbedtls/include/mbedtls/bignum.h\nD  extensions/crypt/mbedtls/include/mbedtls/build_info.h\nD  extensions/crypt/mbedtls/include/mbedtls/chacha20.h\nD  extensions/crypt/mbedtls/include/mbedtls/chachapoly.h\nD  extensions/crypt/mbedtls/include/mbedtls/check_config.h\nD  extensions/crypt/mbedtls/include/mbedtls/cipher.h\nD  extensions/crypt/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h\nD  extensions/crypt/mbedtls/include/mbedtls/config_adjust_ssl.h\nD  extensions/crypt/mbedtls/include/mbedtls/config_adjust_x509.h\nD  extensions/crypt/mbedtls/include/mbedtls/constant_time.h\nD  extensions/crypt/mbedtls/include/mbedtls/dhm.h\nD  extensions/crypt/mbedtls/include/mbedtls/ecdh.h\nD  extensions/crypt/mbedtls/include/mbedtls/ecp.h\nD  extensions/crypt/mbedtls/include/mbedtls/error.h\nD  extensions/crypt/mbedtls/include/mbedtls/gcm.h\nD  extensions/crypt/mbedtls/include/mbedtls/hmac_drbg.h\nD  extensions/crypt/mbedtls/include/mbedtls/md.h\nD  extensions/crypt/mbedtls/include/mbedtls/md5.h\nD  extensions/crypt/mbedtls/include/mbedtls/oid.h\nD  extensions/crypt/mbedtls/include/mbedtls/pk.h\nD  extensions/crypt/mbedtls/include/mbedtls/platform.h\nD  extensions/crypt/mbedtls/include/mbedtls/platform_time.h\nD  extensions/crypt/mbedtls/include/mbedtls/platform_util.h\nD  extensions/crypt/mbedtls/include/mbedtls/poly1305.h\nD  extensions/crypt/mbedtls/include/mbedtls/private_access.h\nD  extensions/crypt/mbedtls/include/mbedtls/ripemd160.h\nD  extensions/crypt/mbedtls/include/mbedtls/rsa.h\nD  extensions/crypt/mbedtls/include/mbedtls/sha1.h\nD  extensions/crypt/mbedtls/include/mbedtls/sha256.h\nD  extensions/crypt/mbedtls/include/mbedtls/sha3.h\nD  extensions/crypt/mbedtls/include/mbedtls/sha512.h\nD  extensions/crypt/mbedtls/include/mbedtls/threading.h\nD  extensions/crypt/mbedtls/library/aes.c\nD  extensions/crypt/mbedtls/library/alignment.h\nD  extensions/crypt/mbedtls/library/asn1parse.c\nD  extensions/crypt/mbedtls/library/asn1write.c\nD  extensions/crypt/mbedtls/library/bignum.c\nD  extensions/crypt/mbedtls/library/bignum_core.c\nD  extensions/crypt/mbedtls/library/bignum_core.h\nD  extensions/crypt/mbedtls/library/bignum_internal.h\nD  extensions/crypt/mbedtls/library/bignum_mod.h\nD  extensions/crypt/mbedtls/library/bn_mul.h\nD  extensions/crypt/mbedtls/library/chacha20.c\nD  extensions/crypt/mbedtls/library/chachapoly.c\nD  extensions/crypt/mbedtls/library/cipher.c\nD  extensions/crypt/mbedtls/library/cipher_invasive.h\nD  extensions/crypt/mbedtls/library/cipher_wrap.c\nD  extensions/crypt/mbedtls/library/cipher_wrap.h\nD  extensions/crypt/mbedtls/library/common.h\nD  extensions/crypt/mbedtls/library/constant_time.c\nD  extensions/crypt/mbedtls/library/constant_time_impl.h\nD  extensions/crypt/mbedtls/library/constant_time_internal.h\nD  extensions/crypt/mbedtls/library/ctr.h\nD  extensions/crypt/mbedtls/library/dhm.c\nD  extensions/crypt/mbedtls/library/ecdh.c\nD  extensions/crypt/mbedtls/library/ecp.c\nD  extensions/crypt/mbedtls/library/ecp_curves.c\nD  extensions/crypt/mbedtls/library/ecp_internal_alt.h\nD  extensions/crypt/mbedtls/library/ecp_invasive.h\nD  extensions/crypt/mbedtls/library/gcm.c\nD  extensions/crypt/mbedtls/library/hmac_drbg.c\nD  extensions/crypt/mbedtls/library/md.c\nD  extensions/crypt/mbedtls/library/md5.c\nD  extensions/crypt/mbedtls/library/md_wrap.h\nD  extensions/crypt/mbedtls/library/oid.c\nD  extensions/crypt/mbedtls/library/platform.c\nD  extensions/crypt/mbedtls/library/platform_util.c\nD  extensions/crypt/mbedtls/library/poly1305.c\nD  extensions/crypt/mbedtls/library/ripemd160.c\nD  extensions/crypt/mbedtls/library/rsa.c\nD  extensions/crypt/mbedtls/library/rsa_alt_helpers.c\nD  extensions/crypt/mbedtls/library/rsa_alt_helpers.h\nD  extensions/crypt/mbedtls/library/rsa_internal.h\nD  extensions/crypt/mbedtls/library/sha1.c\nD  extensions/crypt/mbedtls/library/sha256.c\nD  extensions/crypt/mbedtls/library/sha512.c\nD  extensions/crypt/mod-crypt.c\nD  extensions/crypt/tests/adler32.test.r\nD  extensions/crypt/tests/aes.test.r\nD  extensions/crypt/tests/crc32.test.r\nD  extensions/crypt/tests/dh.test.r\nD  extensions/crypt/tests/ecc.test.r\nD  extensions/crypt/tests/md5.test.r\nD  extensions/crypt/tests/rsa.test.r\nD  extensions/crypt/tests/sha1.test.r\nD  extensions/crypt/tests/sha256.test.r\nD  extensions/crypt/tf_snprintf.c\nD  extensions/debugger/README.md\nD  extensions/debugger/ext-debugger-init.r\nD  extensions/debugger/make-spec.r\nD  extensions/debugger/mod-debugger.c\nD  extensions/dns/README.md\nD  extensions/dns/ext-dns-init.r\nD  extensions/dns/make-spec.r\nD  extensions/dns/mod-dns.c\nD  extensions/dns/tests/dns.test.r\nD  extensions/environment/README.md\nD  extensions/environment/env-posix.c\nD  extensions/environment/env-windows.c\nD  extensions/environment/environment.h\nD  extensions/environment/ext-environment-init.r\nD  extensions/environment/make-spec.r\nD  extensions/environment/mod-environment.c\nD  extensions/filesystem/README.md\nD  extensions/filesystem/ext-filesystem-init.r\nD  extensions/filesystem/fcntl-patch.c\nD  extensions/filesystem/file-posix.c\nD  extensions/filesystem/file-req.h\nD  extensions/filesystem/libuv/include/uv.h\nD  extensions/filesystem/libuv/include/uv/aix.h\nD  extensions/filesystem/libuv/include/uv/bsd.h\nD  extensions/filesystem/libuv/include/uv/darwin.h\nD  extensions/filesystem/libuv/include/uv/errno.h\nD  extensions/filesystem/libuv/include/uv/linux.h\nD  extensions/filesystem/libuv/include/uv/os390.h\nD  extensions/filesystem/libuv/include/uv/posix.h\nD  extensions/filesystem/libuv/include/uv/sunos.h\nD  extensions/filesystem/libuv/include/uv/threadpool.h\nD  extensions/filesystem/libuv/include/uv/tree.h\nD  extensions/filesystem/libuv/include/uv/unix.h\nD  extensions/filesystem/libuv/include/uv/version.h\nD  extensions/filesystem/libuv/include/uv/win.h\nD  extensions/filesystem/libuv/src/fs-poll.c\nD  extensions/filesystem/libuv/src/heap-inl.h\nD  extensions/filesystem/libuv/src/idna.c\nD  extensions/filesystem/libuv/src/idna.h\nD  extensions/filesystem/libuv/src/inet.c\nD  extensions/filesystem/libuv/src/queue.h\nD  extensions/filesystem/libuv/src/random.c\nD  extensions/filesystem/libuv/src/strscpy.c\nD  extensions/filesystem/libuv/src/strscpy.h\nD  extensions/filesystem/libuv/src/strtok.c\nD  extensions/filesystem/libuv/src/strtok.h\nD  extensions/filesystem/libuv/src/thread-common.c\nD  extensions/filesystem/libuv/src/threadpool.c\nD  extensions/filesystem/libuv/src/timer.c\nD  extensions/filesystem/libuv/src/unix/aix-common.c\nD  extensions/filesystem/libuv/src/unix/aix.c\nD  extensions/filesystem/libuv/src/unix/async.c\nD  extensions/filesystem/libuv/src/unix/bsd-ifaddrs.c\nD  extensions/filesystem/libuv/src/unix/bsd-proctitle.c\nD  extensions/filesystem/libuv/src/unix/core.c\nD  extensions/filesystem/libuv/src/unix/cygwin.c\nD  extensions/filesystem/libuv/src/unix/darwin-proctitle.c\nD  extensions/filesystem/libuv/src/unix/darwin-stub.h\nD  extensions/filesystem/libuv/src/unix/darwin-syscalls.h\nD  extensions/filesystem/libuv/src/unix/darwin.c\nD  extensions/filesystem/libuv/src/unix/dl.c\nD  extensions/filesystem/libuv/src/unix/freebsd.c\nD  extensions/filesystem/libuv/src/unix/fs.c\nD  extensions/filesystem/libuv/src/unix/fsevents.c\nD  extensions/filesystem/libuv/src/unix/getaddrinfo.c\nD  extensions/filesystem/libuv/src/unix/getnameinfo.c\nD  extensions/filesystem/libuv/src/unix/haiku.c\nD  extensions/filesystem/libuv/src/unix/hurd.c\nD  extensions/filesystem/libuv/src/unix/ibmi.c\nD  extensions/filesystem/libuv/src/unix/internal.h\nD  extensions/filesystem/libuv/src/unix/kqueue.c\nD  extensions/filesystem/libuv/src/unix/linux.c\nD  extensions/filesystem/libuv/src/unix/loop-watcher.c\nD  extensions/filesystem/libuv/src/unix/loop.c\nD  extensions/filesystem/libuv/src/unix/netbsd.c\nD  extensions/filesystem/libuv/src/unix/no-fsevents.c\nD  extensions/filesystem/libuv/src/unix/no-proctitle.c\nD  extensions/filesystem/libuv/src/unix/openbsd.c\nD  extensions/filesystem/libuv/src/unix/os390-proctitle.c\nD  extensions/filesystem/libuv/src/unix/os390-syscalls.c\nD  extensions/filesystem/libuv/src/unix/os390-syscalls.h\nD  extensions/filesystem/libuv/src/unix/os390.c\nD  extensions/filesystem/libuv/src/unix/pipe.c\nD  extensions/filesystem/libuv/src/unix/poll.c\nD  extensions/filesystem/libuv/src/unix/posix-hrtime.c\nD  extensions/filesystem/libuv/src/unix/posix-poll.c\nD  extensions/filesystem/libuv/src/unix/process.c\nD  extensions/filesystem/libuv/src/unix/procfs-exepath.c\nD  extensions/filesystem/libuv/src/unix/proctitle.c\nD  extensions/filesystem/libuv/src/unix/qnx.c\nD  extensions/filesystem/libuv/src/unix/random-devurandom.c\nD  extensions/filesystem/libuv/src/unix/random-getentropy.c\nD  extensions/filesystem/libuv/src/unix/random-getrandom.c\nD  extensions/filesystem/libuv/src/unix/random-sysctl-linux.c\nD  extensions/filesystem/libuv/src/unix/signal.c\nD  extensions/filesystem/libuv/src/unix/stream.c\nD  extensions/filesystem/libuv/src/unix/sunos.c\nD  extensions/filesystem/libuv/src/unix/sysinfo-loadavg.c\nD  extensions/filesystem/libuv/src/unix/sysinfo-memory.c\nD  extensions/filesystem/libuv/src/unix/tcp.c\nD  extensions/filesystem/libuv/src/unix/thread.c\nD  extensions/filesystem/libuv/src/unix/tty.c\nD  extensions/filesystem/libuv/src/unix/udp.c\nD  extensions/filesystem/libuv/src/uv-common.c\nD  extensions/filesystem/libuv/src/uv-common.h\nD  extensions/filesystem/libuv/src/uv-data-getter-setters.c\nD  extensions/filesystem/libuv/src/version.c\nD  extensions/filesystem/libuv/src/win/async.c\nD  extensions/filesystem/libuv/src/win/atomicops-inl.h\nD  extensions/filesystem/libuv/src/win/core.c\nD  extensions/filesystem/libuv/src/win/detect-wakeup.c\nD  extensions/filesystem/libuv/src/win/dl.c\nD  extensions/filesystem/libuv/src/win/error.c\nD  extensions/filesystem/libuv/src/win/fs-event.c\nD  extensions/filesystem/libuv/src/win/fs-fd-hash-inl.h\nD  extensions/filesystem/libuv/src/win/fs.c\nD  extensions/filesystem/libuv/src/win/getaddrinfo.c\nD  extensions/filesystem/libuv/src/win/getnameinfo.c\nD  extensions/filesystem/libuv/src/win/handle-inl.h\nD  extensions/filesystem/libuv/src/win/handle.c\nD  extensions/filesystem/libuv/src/win/internal.h\nD  extensions/filesystem/libuv/src/win/loop-watcher.c\nD  extensions/filesystem/libuv/src/win/pipe.c\nD  extensions/filesystem/libuv/src/win/poll.c\nD  extensions/filesystem/libuv/src/win/process-stdio.c\nD  extensions/filesystem/libuv/src/win/process.c\nD  extensions/filesystem/libuv/src/win/req-inl.h\nD  extensions/filesystem/libuv/src/win/signal.c\nD  extensions/filesystem/libuv/src/win/snprintf.c\nD  extensions/filesystem/libuv/src/win/stream-inl.h\nD  extensions/filesystem/libuv/src/win/stream.c\nD  extensions/filesystem/libuv/src/win/tcp.c\nD  extensions/filesystem/libuv/src/win/thread.c\nD  extensions/filesystem/libuv/src/win/tty.c\nD  extensions/filesystem/libuv/src/win/udp.c\nD  extensions/filesystem/libuv/src/win/util.c\nD  extensions/filesystem/libuv/src/win/winapi.c\nD  extensions/filesystem/libuv/src/win/winapi.h\nD  extensions/filesystem/libuv/src/win/winsock.c\nD  extensions/filesystem/libuv/src/win/winsock.h\nD  extensions/filesystem/libuv/uv_win_longpath.manifest\nD  extensions/filesystem/make-spec.r\nD  extensions/filesystem/mod-filesystem.c\nD  extensions/filesystem/p-dir.c\nD  extensions/filesystem/p-file.c\nD  extensions/javascript/LICENSE.txt\nD  extensions/javascript/README.md\nD  extensions/javascript/asyncify-blacklist.r\nD  extensions/javascript/docs/template.html\nD  extensions/javascript/ext-javascript-init.r\nD  extensions/javascript/load-r3.js\nD  extensions/javascript/make-spec.r\nD  extensions/javascript/mod-javascript.c\nD  extensions/javascript/tests/toplevel.test.js\nD  extensions/javascript/tools/prep-libr3-js.r\nD  extensions/locale/ISO-639-2_utf-8.txt\nD  extensions/locale/ext-locale-init.r\nD  extensions/locale/iso3166.r\nD  extensions/locale/iso3166.txt\nD  extensions/locale/iso639.r\nD  extensions/locale/make-spec.r\nD  extensions/locale/mod-locale.c\nD  extensions/network/README.md\nD  extensions/network/ext-network-init.r\nD  extensions/network/make-spec.r\nD  extensions/network/mod-network.c\nD  extensions/network/reb-net.h\nD  extensions/process/README.md\nD  extensions/process/call-posix.c\nD  extensions/process/call-windows.c\nD  extensions/process/ext-process-init.r\nD  extensions/process/make-spec.r\nD  extensions/process/mod-process.c\nD  extensions/process/process-posix.c\nD  extensions/process/reb-process.h\nD  extensions/process/tests/call.test.r\nD  extensions/process/tests/print.r\nD  extensions/stdio/README.md\nD  extensions/stdio/ext-stdio-init.r\nD  extensions/stdio/make-spec.r\nD  extensions/stdio/mod-stdio.c\nD  extensions/stdio/p-stdio.c\nD  extensions/stdio/readline-posix.c\nD  extensions/stdio/readline-windows.c\nD  extensions/stdio/readline.h\nD  extensions/stdio/stdio-posix.c\nD  extensions/stdio/stdio-windows.c\nD  extensions/tcc/README.md\nD  extensions/tcc/ext-tcc-init.r\nD  extensions/tcc/make-spec.r\nD  extensions/tcc/mod-tcc.c\nD  extensions/tcc/tests/call-librebol.r\nD  extensions/tcc/tests/fib.r\nD  extensions/tcc/tests/tcc-to-disk.r\nD  extensions/tcc/tools/build-libtcc-helper.sh\nD  extensions/tcc/tools/encap-tcc-resources.r\nD  extensions/tcc/tools/prep-libr3-tcc.r\nD  extensions/time/README.md\nD  extensions/time/ext-time-init.r\nD  extensions/time/make-spec.r\nD  extensions/time/mod-time.c\nD  extensions/time/time-posix.c\nD  extensions/time/time-windows.c\nD  extensions/utf/README.md\nD  extensions/utf/ext-utf-init.r\nD  extensions/utf/make-spec.r\nD  extensions/utf/mod-utf.c\nD  extensions/uuid/ext-uuid-init.r\nD  extensions/uuid/libuuid/config.h\nD  extensions/uuid/libuuid/gen_uuid.c\nD  extensions/uuid/libuuid/nls.h\nD  extensions/uuid/libuuid/pack.c\nD  extensions/uuid/libuuid/randutils.c\nD  extensions/uuid/libuuid/randutils.h\nD  extensions/uuid/libuuid/unpack.c\nD  extensions/uuid/libuuid/uuid.h\nD  extensions/uuid/libuuid/uuidP.h\nD  extensions/uuid/libuuid/uuidd.h\nD  extensions/uuid/make-libuuid.r\nD  extensions/uuid/make-spec.r\nD  extensions/uuid/mod-uuid.c\nD  extensions/view/README.md\nD  extensions/view/ext-view-init.r\nD  extensions/view/make-spec.r\nD  extensions/view/mod-view.c\nD  make.r\nD  make.sh\nD  prebuilt/README.md\nD  ren-c-logo.png\nD  scripts/encap.r\nD  scripts/latest-of.r\nD  scripts/prot-http.r\nD  scripts/prot-tls.r\nD  scripts/unzip.r\nD  src/core/api/a-constants.c\nD  src/core/api/a-globals.c\nD  src/core/api/a-lib.c\nD  src/core/boot/b-init.c\nD  src/core/c-bind.c\nD  src/core/c-context.c\nD  src/core/c-do.c\nD  src/core/c-error.c\nD  src/core/c-function.c\nD  src/core/c-path.c\nD  src/core/c-signal.c\nD  src/core/c-state.c\nD  src/core/c-value.c\nD  src/core/c-word.c\nD  src/core/diagnostics/d-backtrace.c\nD  src/core/diagnostics/d-crash.c\nD  src/core/diagnostics/d-dump.c\nD  src/core/diagnostics/d-eval.c\nD  src/core/diagnostics/d-gc.c\nD  src/core/diagnostics/d-print.c\nD  src/core/diagnostics/d-stack.c\nD  src/core/diagnostics/d-stats.c\nD  src/core/diagnostics/d-test.c\nD  src/core/diagnostics/d-trace.c\nD  src/core/diagnostics/d-validate.c\nD  src/core/evaluator/c-action.c\nD  src/core/evaluator/c-eval.c\nD  src/core/evaluator/c-step.c\nD  src/core/evaluator/c-trampoline.c\nD  src/core/f-blocks.c\nD  src/core/f-dtoa.c\nD  src/core/f-enbase.c\nD  src/core/f-extension.c\nD  src/core/f-int.c\nD  src/core/f-math.c\nD  src/core/f-modify.c\nD  src/core/f-qsort.c\nD  src/core/f-random.c\nD  src/core/f-round.c\nD  src/core/f-series.c\nD  src/core/f-stubs.c\nD  src/core/functionals/README.md\nD  src/core/functionals/c-adapt.c\nD  src/core/functionals/c-arrow.c\nD  src/core/functionals/c-augment.c\nD  src/core/functionals/c-chain.c\nD  src/core/functionals/c-does.c\nD  src/core/functionals/c-enclose.c\nD  src/core/functionals/c-hijack.c\nD  src/core/functionals/c-lambda.c\nD  src/core/functionals/c-macro.c\nD  src/core/functionals/c-native.c\nD  src/core/functionals/c-oneshot.c\nD  src/core/functionals/c-reframer.c\nD  src/core/functionals/c-reorder.c\nD  src/core/functionals/c-specialize.c\nD  src/core/functionals/c-typechecker.c\nD  src/core/functionals/c-yielder.c\nD  src/core/functionals/n-function.c\nD  src/core/lexer/l-scan.c\nD  src/core/lexer/l-types.c\nD  src/core/memory/m-gc.c\nD  src/core/memory/m-pools.c\nD  src/core/memory/m-series.c\nD  src/core/memory/m-stacks.c\nD  src/core/natives/n-bitwise.c\nD  src/core/natives/n-collections.c\nD  src/core/natives/n-compose.c\nD  src/core/natives/n-control.c\nD  src/core/natives/n-data.c\nD  src/core/natives/n-do.c\nD  src/core/natives/n-error.c\nD  src/core/natives/n-get.c\nD  src/core/natives/n-ghost.c\nD  src/core/natives/n-io.c\nD  src/core/natives/n-loop.c\nD  src/core/natives/n-make.c\nD  src/core/natives/n-math.c\nD  src/core/natives/n-port.c\nD  src/core/natives/n-protect.c\nD  src/core/natives/n-reduce.c\nD  src/core/natives/n-series.c\nD  src/core/natives/n-set.c\nD  src/core/natives/n-strings.c\nD  src/core/natives/n-system.c\nD  src/core/natives/n-transcode.c\nD  src/core/natives/n-tweak.c\nD  src/core/parse/c-combinator.c\nD  src/core/parse/n-parse3.c\nD  src/core/s-cases.c\nD  src/core/s-crc.c\nD  src/core/s-find.c\nD  src/core/s-make.c\nD  src/core/s-mold.c\nD  src/core/s-ops.c\nD  src/core/types/t-binary.c\nD  src/core/types/t-bitset.c\nD  src/core/types/t-blank.c\nD  src/core/types/t-block.c\nD  src/core/types/t-char.c\nD  src/core/types/t-comma.c\nD  src/core/types/t-datatype.c\nD  src/core/types/t-date.c\nD  src/core/types/t-decimal.c\nD  src/core/types/t-integer.c\nD  src/core/types/t-logic.c\nD  src/core/types/t-map.c\nD  src/core/types/t-object.c\nD  src/core/types/t-pair.c\nD  src/core/types/t-port.c\nD  src/core/types/t-quoted.c\nD  src/core/types/t-string.c\nD  src/core/types/t-time.c\nD  src/core/types/t-tuple.c\nD  src/core/types/t-typeset.c\nD  src/core/types/t-varargs.c\nD  src/core/types/t-word.c\nD  src/core/u-compress.c\nD  src/core/u-zlib.c\nD  src/include/README.md\nD  src/include/assert-fix.h\nD  src/include/bsd-qsort_r.h\nD  src/include/c-extras.h\nD  src/include/casts/README.md\nD  src/include/casts/cast-base.hpp\nD  src/include/casts/cast-cells.hpp\nD  src/include/casts/cast-misc.hpp\nD  src/include/casts/cast-stubs.hpp\nD  src/include/cells/cell-bitset.h\nD  src/include/cells/cell-blank.h\nD  src/include/cells/cell-blob.h\nD  src/include/cells/cell-context.h\nD  src/include/cells/cell-datatype.h\nD  src/include/cells/cell-decimal.h\nD  src/include/cells/cell-dual.h\nD  src/include/cells/cell-error.h\nD  src/include/cells/cell-frame.h\nD  src/include/cells/cell-handle.h\nD  src/include/cells/cell-integer.h\nD  src/include/cells/cell-list.h\nD  src/include/cells/cell-logic.h\nD  src/include/cells/cell-map.h\nD  src/include/cells/cell-pair.h\nD  src/include/cells/cell-parameter.h\nD  src/include/cells/cell-quoted.h\nD  src/include/cells/cell-rune.h\nD  src/include/cells/cell-sequence.h\nD  src/include/cells/cell-series.h\nD  src/include/cells/cell-sigil.h\nD  src/include/cells/cell-string.h\nD  src/include/cells/cell-time.h\nD  src/include/cells/cell-varargs.h\nD  src/include/cells/cell-word.h\nD  src/include/debugbreak.h\nD  src/include/enums/README.md\nD  src/include/enums/enum-flavor.h\nD  src/include/enums/enum-symid.h\nD  src/include/enums/enum-types.h\nD  src/include/enums/enum-typesets.h\nD  src/include/executors/exec-action.h\nD  src/include/executors/exec-eval.h\nD  src/include/executors/exec-scan.h\nD  src/include/mem-pools.h\nD  src/include/needful.h\nD  src/include/reb-config.h\nD  src/include/reb-defs.h\nD  src/include/reb-dtoa.h\nD  src/include/structs/README.md\nD  src/include/structs/struct-array.h\nD  src/include/structs/struct-base.h\nD  src/include/structs/struct-binary.h\nD  src/include/structs/struct-bounce.h\nD  src/include/structs/struct-cell.h\nD  src/include/structs/struct-char.h\nD  src/include/structs/struct-context.h\nD  src/include/structs/struct-details.h\nD  src/include/structs/struct-feed.h\nD  src/include/structs/struct-flex.h\nD  src/include/structs/struct-level.h\nD  src/include/structs/struct-map.h\nD  src/include/structs/struct-mold.h\nD  src/include/structs/struct-pairing.h\nD  src/include/structs/struct-patch.h\nD  src/include/structs/struct-sea.h\nD  src/include/structs/struct-source.h\nD  src/include/structs/struct-state.h\nD  src/include/structs/struct-string.h\nD  src/include/structs/struct-stub.h\nD  src/include/structs/struct-value.h\nD  src/include/structs/struct-varlist.h\nD  src/include/stubs/stub-action.h\nD  src/include/stubs/stub-api.h\nD  src/include/stubs/stub-array.h\nD  src/include/stubs/stub-binary.h\nD  src/include/stubs/stub-context.h\nD  src/include/stubs/stub-flex.h\nD  src/include/stubs/stub-map.h\nD  src/include/stubs/stub-sea.h\nD  src/include/stubs/stub-source.h\nD  src/include/stubs/stub-strand.h\nD  src/include/stubs/stub-symbol.h\nD  src/include/stubs/stub-use.h\nD  src/include/stubs/stub-varlist.h\nD  src/include/sys-arg.h\nD  src/include/sys-base.h\nD  src/include/sys-bind.h\nD  src/include/sys-bounce.h\nD  src/include/sys-cell.h\nD  src/include/sys-continuation.h\nD  src/include/sys-core.h\nD  src/include/sys-crash.h\nD  src/include/sys-datastack.h\nD  src/include/sys-dec-to-char.h\nD  src/include/sys-eval.h\nD  src/include/sys-ext.h\nD  src/include/sys-feed.h\nD  src/include/sys-flags.h\nD  src/include/sys-gc.h\nD  src/include/sys-globals.h\nD  src/include/sys-hooks.h\nD  src/include/sys-int-funcs.h\nD  src/include/sys-isotope.h\nD  src/include/sys-level.h\nD  src/include/sys-lib.h\nD  src/include/sys-mold.h\nD  src/include/sys-pick.h\nD  src/include/sys-probe.h\nD  src/include/sys-protect.h\nD  src/include/sys-recover.h\nD  src/include/sys-scan.h\nD  src/include/sys-stub.h\nD  src/include/sys-throw.h\nD  src/include/sys-tick.h\nD  src/include/sys-track.h\nD  src/include/sys-trampoline.h\nD  src/include/sys-utf8.h\nD  src/include/sys-zlib.h\nD  src/main/README.md\nD  src/main/main-startup.r\nD  src/main/main.c\nD  src/main/prep-main.r\nD  src/mezz/base-constants.r\nD  src/mezz/base-defs.r\nD  src/mezz/base-files.r\nD  src/mezz/base-funcs.r\nD  src/mezz/base-series.r\nD  src/mezz/boot-files.r\nD  src/mezz/mezz-colors.r\nD  src/mezz/mezz-control.r\nD  src/mezz/mezz-debug.r\nD  src/mezz/mezz-dump.r\nD  src/mezz/mezz-files.r\nD  src/mezz/mezz-help.r\nD  src/mezz/mezz-legacy.r\nD  src/mezz/mezz-math.r\nD  src/mezz/mezz-save.r\nD  src/mezz/mezz-series.r\nD  src/mezz/mezz-shell.r\nD  src/mezz/mezz-types.r\nD  src/mezz/sys-base.r\nD  src/mezz/sys-codec.r\nD  src/mezz/sys-load.r\nD  src/mezz/sys-ports.r\nD  src/mezz/uparse-extras.r\nD  src/mezz/uparse.r\nD  src/specs/README.md\nD  src/specs/errors.r\nD  src/specs/ext-words.r\nD  src/specs/generics.r\nD  src/specs/lib-words.r\nD  src/specs/symbols.r\nD  src/specs/sysobj.r\nD  src/specs/task.r\nD  src/specs/types.r\nD  src/specs/version.r\nD  tests/LICENSE\nD  tests/README.md\nD  tests/api/librebol.test.r\nD  tests/comparison/equalq.test.r\nD  tests/comparison/lesserq.test.r\nD  tests/comparison/maximum-of.test.r\nD  tests/comparison/sameq.test.r\nD  tests/comparison/strict-equalq.test.r\nD  tests/comparison/strict-not-equalq.test.r\nD  tests/context/alias.test.r\nD  tests/context/bind.test.r\nD  tests/context/bindq.test.r\nD  tests/context/boundq.test.r\nD  tests/context/collect-words.test.r\nD  tests/context/construct.test.r\nD  tests/context/let.test.r\nD  tests/context/resolve.test.r\nD  tests/context/set.test.r\nD  tests/context/unset.test.r\nD  tests/context/use.test.r\nD  tests/context/valueq.test.r\nD  tests/context/virtual-bind.test.r\nD  tests/context/wrap.test.r\nD  tests/control/all.test.r\nD  tests/control/any.test.r\nD  tests/control/case.test.r\nD  tests/control/catch.test.r\nD  tests/control/compose.test.r\nD  tests/control/conditional.test.r\nD  tests/control/default.test.r\nD  tests/control/destructure.test.r\nD  tests/control/do.test.r\nD  tests/control/either.test.r\nD  tests/control/else.test.r\nD  tests/control/examples/switch2.control.test.r\nD  tests/control/halt.test.r\nD  tests/control/if.test.r\nD  tests/control/match.test.r\nD  tests/control/maybe.test.r\nD  tests/control/quit.test.r\nD  tests/control/reduce.test.r\nD  tests/control/reeval.test.r\nD  tests/control/static.test.r\nD  tests/control/switch.test.r\nD  tests/control/typecheck.test.r\nD  tests/control/unless.test.r\nD  tests/control/wait.test.r\nD  tests/convert/as-binary.test.r\nD  tests/convert/as-string.test.r\nD  tests/convert/enbin.test.r\nD  tests/convert/encode.test.r\nD  tests/convert/mold.test.r\nD  tests/convert/to-hex.test.r\nD  tests/convert/to.test.r\nD  tests/core-tests.r\nD  tests/cypress/README.md\nD  tests/cypress/cypress.config.js\nD  tests/cypress/e2e/README.md\nD  tests/cypress/fixtures/example.json\nD  tests/cypress/package.json\nD  tests/cypress/support/commands.js\nD  tests/cypress/support/e2e.js\nD  tests/datatypes/action.test.r\nD  tests/datatypes/binary.test.r\nD  tests/datatypes/bitset.test.r\nD  tests/datatypes/blank.test.r\nD  tests/datatypes/block.test.r\nD  tests/datatypes/chain.test.r\nD  tests/datatypes/char.test.r\nD  tests/datatypes/comma.test.r\nD  tests/datatypes/datatype.test.r\nD  tests/datatypes/date.test.r\nD  tests/datatypes/decimal.test.r\nD  tests/datatypes/dictionary.test.r\nD  tests/datatypes/drain.test.r\nD  tests/datatypes/email.test.r\nD  tests/datatypes/error.test.r\nD  tests/datatypes/fence.test.r\nD  tests/datatypes/file.test.r\nD  tests/datatypes/frame.test.r\nD  tests/datatypes/get-block.test.r\nD  tests/datatypes/get-group.test.r\nD  tests/datatypes/get-path.test.r\nD  tests/datatypes/get-word.test.r\nD  tests/datatypes/hash.test.r\nD  tests/datatypes/integer.test.r\nD  tests/datatypes/lit-path.test.r\nD  tests/datatypes/lit-word.test.r\nD  tests/datatypes/logic.test.r\nD  tests/datatypes/meta-block.test.r\nD  tests/datatypes/meta-group.test.r\nD  tests/datatypes/meta-path.test.r\nD  tests/datatypes/meta-word.test.r\nD  tests/datatypes/meta.test.r\nD  tests/datatypes/module.test.r\nD  tests/datatypes/null.test.r\nD  tests/datatypes/object.test.r\nD  tests/datatypes/pair.test.r\nD  tests/datatypes/parameter.test.r\nD  tests/datatypes/paren.test.r\nD  tests/datatypes/path.test.r\nD  tests/datatypes/percent.test.r\nD  tests/datatypes/port.test.r\nD  tests/datatypes/quasi.test.r\nD  tests/datatypes/quoted.test.r\nD  tests/datatypes/refinement.test.r\nD  tests/datatypes/rune.test.r\nD  tests/datatypes/set-block.test.r\nD  tests/datatypes/set-group.test.r\nD  tests/datatypes/set-path.test.r\nD  tests/datatypes/set-word.test.r\nD  tests/datatypes/sigil.test.r\nD  tests/datatypes/string.test.r\nD  tests/datatypes/tag.test.r\nD  tests/datatypes/the.test.r\nD  tests/datatypes/time.test.r\nD  tests/datatypes/trash.test.r\nD  tests/datatypes/tuple.test.r\nD  tests/datatypes/url.test.r\nD  tests/datatypes/varargs.test.r\nD  tests/datatypes/word.test.r\nD  tests/define/func.test.r\nD  tests/errors/disarm.test.r\nD  tests/errors/except.test.r\nD  tests/errors/require.test.r\nD  tests/errors/rescue.test.r\nD  tests/errors/trap.test.r\nD  tests/examples/circled.test.r\nD  tests/examples/flatten.test.r\nD  tests/examples/flow.test.r\nD  tests/examples/giulio-generate.test.r\nD  tests/examples/giulio-read-lines.test.r\nD  tests/examples/n-queens.test.r\nD  tests/examples/prime-factors.test.r\nD  tests/examples/sudoku-solver.test.r\nD  tests/file/clean-path.test.r\nD  tests/file/existsq.test.r\nD  tests/file/file-port.test.r\nD  tests/file/file-typeq.test.r\nD  tests/file/make-dir.test.r\nD  tests/file/open.test.r\nD  tests/file/split-path.test.r\nD  tests/fixtures/corrupt-zdeflated.bin\nD  tests/fixtures/rebol-logo.bmp\nD  tests/fixtures/rebol-logo.gif\nD  tests/fixtures/rebol-logo.jpg\nD  tests/fixtures/rebol-logo.png\nD  tests/fixtures/test.docx\nD  tests/fixtures/umlauts-utf16be.txt\nD  tests/fixtures/umlauts-utf16le.txt\nD  tests/fixtures/umlauts-utf32be.txt\nD  tests/fixtures/umlauts-utf32le.txt\nD  tests/fixtures/umlauts-utf8.txt\nD  tests/fixtures/umlauts-utf8bom.txt\nD  tests/fixtures/utf8-plain-text.txt\nD  tests/flags.r\nD  tests/functions/accessor.test.r\nD  tests/functions/adapt.test.r\nD  tests/functions/apply.test.r\nD  tests/functions/arrow.test.r\nD  tests/functions/augment.test.r\nD  tests/functions/cascade.test.r\nD  tests/functions/does.test.r\nD  tests/functions/enclose.test.r\nD  tests/functions/examples/onlify.function.test.r\nD  tests/functions/frame.test.r\nD  tests/functions/function.test.r\nD  tests/functions/generator.test.r\nD  tests/functions/hijack.test.r\nD  tests/functions/infix.test.r\nD  tests/functions/lambda.test.r\nD  tests/functions/let.test.r\nD  tests/functions/literal.test.r\nD  tests/functions/macro.test.r\nD  tests/functions/multi.test.r\nD  tests/functions/native.test.r\nD  tests/functions/oneshot.test.r\nD  tests/functions/pointfree.test.r\nD  tests/functions/predicate.test.r\nD  tests/functions/procedure.test.r\nD  tests/functions/reframer.test.r\nD  tests/functions/reorder.test.r\nD  tests/functions/return.test.r\nD  tests/functions/shove.test.r\nD  tests/functions/specialize.test.r\nD  tests/functions/typechecker.test.r\nD  tests/functions/unwind.test.r\nD  tests/functions/yielder.test.r\nD  tests/invisibles/bar-bar-bar.test.r\nD  tests/invisibles/bar-bar.test.r\nD  tests/invisibles/comment.test.r\nD  tests/invisibles/elide.test.r\nD  tests/invisibles/invisible.test.r\nD  tests/invisibles/once-bar.test.r\nD  tests/invisibles/star-star.test.r\nD  tests/log-diff.r\nD  tests/log-filter.r\nD  tests/loops/attempt.test.r\nD  tests/loops/break.test.r\nD  tests/loops/cfor.test.r\nD  tests/loops/continue.test.r\nD  tests/loops/count-up.test.r\nD  tests/loops/cycle.test.r\nD  tests/loops/every.test.r\nD  tests/loops/examples/for-both.loops.test.r\nD  tests/loops/examples/for-parallel.loops.test.r\nD  tests/loops/for-next.test.r\nD  tests/loops/for.test.r\nD  tests/loops/insist.test.r\nD  tests/loops/iterate-skip.test.r\nD  tests/loops/iterate.test.r\nD  tests/loops/map.test.r\nD  tests/loops/remove-each.test.r\nD  tests/loops/repeat.test.r\nD  tests/loops/while.test.r\nD  tests/math/absolute.test.r\nD  tests/math/add.test.r\nD  tests/math/and.test.r\nD  tests/math/arcsine.test.r\nD  tests/math/arctangent.test.r\nD  tests/math/complement.test.r\nD  tests/math/cosine.test.r\nD  tests/math/difference.test.r\nD  tests/math/divide.test.r\nD  tests/math/evenq.test.r\nD  tests/math/exp.test.r\nD  tests/math/log-10.test.r\nD  tests/math/log-2.test.r\nD  tests/math/log-e.test.r\nD  tests/math/math.test.r\nD  tests/math/mod.test.r\nD  tests/math/multiply.test.r\nD  tests/math/negate.test.r\nD  tests/math/negativeq.test.r\nD  tests/math/not.test.r\nD  tests/math/positiveq.test.r\nD  tests/math/power.test.r\nD  tests/math/random.test.r\nD  tests/math/remainder.test.r\nD  tests/math/round.test.r\nD  tests/math/shift.test.r\nD  tests/math/signq.test.r\nD  tests/math/sine.test.r\nD  tests/math/square-root.test.r\nD  tests/math/subtract.test.r\nD  tests/math/tangent.test.r\nD  tests/math/zeroq.test.r\nD  tests/misc/assert.test.r\nD  tests/misc/help.test.r\nD  tests/misc/identity.test.r\nD  tests/misc/pack-old.test.r\nD  tests/misc/panic-script.r\nD  tests/misc/panic.test.r\nD  tests/misc/quit-script.r\nD  tests/network/http.test.r\nD  tests/parse/README.md\nD  tests/parse/examples/argtest.parse.test.r\nD  tests/parse/examples/breaker.parse.test.r\nD  tests/parse/examples/bridge-notation.parse.test.r\nD  tests/parse/examples/countify.parse.test.r\nD  tests/parse/examples/evaluate.parse.test.r\nD  tests/parse/examples/expression.parse.test.r\nD  tests/parse/examples/function3.parse.test.r\nD  tests/parse/examples/html-parser.parse.test.r\nD  tests/parse/examples/maxmatch.parse.test.r\nD  tests/parse/examples/nanbnc.parse.test.r\nD  tests/parse/examples/red-replace.parse.test.r\nD  tests/parse/examples/reword.parse.test.r\nD  tests/parse/examples/split.parse.test.r\nD  tests/parse/examples/topaz-expression.parse.test.r\nD  tests/parse/examples/tracked-word.parse.test.r\nD  tests/parse/examples/trim.parse.test.r\nD  tests/parse/examples/ugly-parse.parse.test.r\nD  tests/parse/examples/validate-enclosure.parse.test.r\nD  tests/parse/parse-match.test.r\nD  tests/parse/parse-thru.test.r\nD  tests/parse/parse.accept.test.r\nD  tests/parse/parse.accumulate.test.r\nD  tests/parse/parse.across.test.r\nD  tests/parse/parse.action.test.r\nD  tests/parse/parse.ahead.test.r\nD  tests/parse/parse.any.test.r\nD  tests/parse/parse.between.test.r\nD  tests/parse/parse.binary.test.r\nD  tests/parse/parse.bitset.test.r\nD  tests/parse/parse.blank.test.r\nD  tests/parse/parse.block.test.r\nD  tests/parse/parse.break.test.r\nD  tests/parse/parse.change.test.r\nD  tests/parse/parse.collect.test.r\nD  tests/parse/parse.cond.test.r\nD  tests/parse/parse.datatype.test.r\nD  tests/parse/parse.elide.test.r\nD  tests/parse/parse.ellipsis.test.r\nD  tests/parse/parse.further.test.r\nD  tests/parse/parse.furthest.test.r\nD  tests/parse/parse.gather.test.r\nD  tests/parse/parse.get-group.test.r\nD  tests/parse/parse.group.test.r\nD  tests/parse/parse.insert.test.r\nD  tests/parse/parse.into.test.r\nD  tests/parse/parse.just.test.r\nD  tests/parse/parse.let.test.r\nD  tests/parse/parse.literal.test.r\nD  tests/parse/parse.match.test.r\nD  tests/parse/parse.maybe.test.r\nD  tests/parse/parse.measure.test.r\nD  tests/parse/parse.meta-xxx.test.r\nD  tests/parse/parse.not.test.r\nD  tests/parse/parse.one.test.r\nD  tests/parse/parse.optional.test.r\nD  tests/parse/parse.path.test.r\nD  tests/parse/parse.phase.test.r\nD  tests/parse/parse.quasi.test.r\nD  tests/parse/parse.quoted.test.r\nD  tests/parse/parse.remove.test.r\nD  tests/parse/parse.repeat.test.r\nD  tests/parse/parse.rune.test.r\nD  tests/parse/parse.seek.test.r\nD  tests/parse/parse.set-group.test.r\nD  tests/parse/parse.set-word.test.r\nD  tests/parse/parse.skip.test.r\nD  tests/parse/parse.some.test.r\nD  tests/parse/parse.splice.test.r\nD  tests/parse/parse.stop.test.r\nD  tests/parse/parse.subparse.test.r\nD  tests/parse/parse.tag-end.test.r\nD  tests/parse/parse.tag-here.test.r\nD  tests/parse/parse.tag-index.test.r\nD  tests/parse/parse.tally.test.r\nD  tests/parse/parse.test.r\nD  tests/parse/parse.text.test.r\nD  tests/parse/parse.the-xxx.test.r\nD  tests/parse/parse.thru.test.r\nD  tests/parse/parse.to.test.r\nD  tests/parse/parse.validate.test.r\nD  tests/parse/parse.veto.test.r\nD  tests/parse/parse.void.test.r\nD  tests/parse/parse.while.test.r\nD  tests/parse/parse.word.test.r\nD  tests/parse/parse3.test.r\nD  tests/reflectors/body-of.test.r\nD  tests/reflectors/decoration-of.test.r\nD  tests/run-tests.r\nD  tests/scanner/load.test.r\nD  tests/scanner/sequence.scan.test.r\nD  tests/scanner/source-comment.test.r\nD  tests/secure/const.test.r\nD  tests/secure/protect.test.r\nD  tests/secure/pure.test.r\nD  tests/secure/unprotect.test.r\nD  tests/series/append.test.r\nD  tests/series/as.test.r\nD  tests/series/at.test.r\nD  tests/series/back.test.r\nD  tests/series/change.test.r\nD  tests/series/charset.test.r\nD  tests/series/clear.test.r\nD  tests/series/collect.test.r\nD  tests/series/copy.test.r\nD  tests/series/delimit.test.r\nD  tests/series/emptyq.test.r\nD  tests/series/envelop.test.r\nD  tests/series/exclude.test.r\nD  tests/series/extract.test.r\nD  tests/series/find.test.r\nD  tests/series/free.test.r\nD  tests/series/glom.test.r\nD  tests/series/indexq.test.r\nD  tests/series/insert.test.r\nD  tests/series/intersect.test.r\nD  tests/series/join.test.r\nD  tests/series/last.test.r\nD  tests/series/lengthq.test.r\nD  tests/series/next.test.r\nD  tests/series/ordinals.test.r\nD  tests/series/pick.test.r\nD  tests/series/poke.test.r\nD  tests/series/remove.test.r\nD  tests/series/replace.test.r\nD  tests/series/reverse.test.r\nD  tests/series/reword.test.r\nD  tests/series/select.test.r\nD  tests/series/skip.test.r\nD  tests/series/sort.test.r\nD  tests/series/split.test.r\nD  tests/series/tailq.test.r\nD  tests/series/trim.test.r\nD  tests/series/union.test.r\nD  tests/series/unique.test.r\nD  tests/source/analysis.test.r\nD  tests/source/source-tools.r\nD  tests/source/text-lines.test.r\nD  tests/string/codepoint.test.r\nD  tests/string/compress.test.r\nD  tests/string/decode.test.r\nD  tests/string/decompress.test.r\nD  tests/string/dehex.test.r\nD  tests/string/deline.test.r\nD  tests/string/encode.test.r\nD  tests/string/interpolate.test.r\nD  tests/string/transcode.test.r\nD  tests/string/utf8.test.r\nD  tests/system/file.test.r\nD  tests/system/gc.test.r\nD  tests/system/system.test.r\nD  tests/test-framework.r\nD  tests/test-parsing.r\nD  tools/README.md\nD  tools/bash/README.md\nD  tools/bash/download.sh\nD  tools/bash/fetch-prebuilt.sh\nD  tools/bash/identify-os.sh\nD  tools/bash/log.sh\nD  tools/bootstrap-shim.r\nD  tools/c-lexicals.r\nD  tools/cflags-map.r\nD  tools/common-emitter.r\nD  tools/common-parsers.r\nD  tools/common.r\nD  tools/file-base.r\nD  tools/import-shim.r\nD  tools/make-boot.r\nD  tools/make-extensions-table.r\nD  tools/make-headers.r\nD  tools/make-librebol.r\nD  tools/make-natives.r\nD  tools/make-types.r\nD  tools/make-zlib.r\nD  tools/native-emitters.r\nD  tools/parsing-tools.r\nD  tools/platforms.r\nD  tools/prep-extension.r\nD  tools/read-deep.r\nD  tools/rebmake.r\nD  tools/text-lines.r",
+      "describe": "e31d5698d",
+      "commit_count": "10485",
+      "head_commit_detail": {
+        "sha": "e31d5698d73678d797df319eb855b3995716d9f1",
+        "author": "Brian Dickens <brian@hostilefork.com>",
+        "date": "2026-07-16T18:01:34-04:00",
+        "subject": "Remove stdbool dependency for needful"
+      },
+      "tag_count": 7,
+      "tags": [
+        "atronix-3.0.90",
+        "atronix-3.0.91",
+        "atronix-3.0.99",
+        "untagged-007b071e967d916c2a62",
+        "user-native-test-3",
+        "user-native-test-4",
+        "user-native-test-5"
+      ],
+      "tag_resolutions": {
+        "atronix-3.0.90": {
+          "commit": "fc317df95aa57b6d67fc4eb4086267c9e4569952",
+          "tree": "61bbea3fad469fe277e5e5593488e609f077e419"
+        },
+        "atronix-3.0.91": {
+          "commit": "56b3215751ef98ab9609668c06ed42d00858d8cd",
+          "tree": "319972278e4200c115d61ce263d49f0875c2ce1b"
+        },
+        "atronix-3.0.99": {
+          "commit": "2000bd589775f286221a08a02026a5c0cd2a87e1",
+          "tree": "3caa3bd3582f20ad7656543555d41833edd5ad24"
+        },
+        "untagged-007b071e967d916c2a62": {
+          "commit": "e95a54cb5eb7a5fc38054547879e15eddfb27bbb",
+          "tree": "514f622d8262680d9317069ce7c5a527198e0b12"
+        },
+        "user-native-test-3": {
+          "commit": "d24d32d04027a05cda1e2c9f4c5f1e56d1c01006",
+          "tree": "907ae1181c01947fb7e7e6d237fe3bbafbb241f5"
+        },
+        "user-native-test-4": {
+          "commit": "1a9d0e9a658967af752a1f414910d4d0b50cc070",
+          "tree": "b32d835f686f7f2b2b205092ed601b771470f4f8"
+        },
+        "user-native-test-5": {
+          "commit": "2b2950ed2dab41ce21655331bb855de88304eaee",
+          "tree": "008d014b7cc4ad32159c40d802b4ebdbaff6bc7a"
+        }
+      },
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/metaeducation_ren-c__HEAD.lsr",
+          "entries": 1082,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "e31d5698d73678d797df319eb855b3995716d9f1"
+        }
+      }
+    },
+    "Oldes_Rebol3": {
+      "local_clone_path": "/tmp/acq/Oldes_Rebol3",
+      "upstream_url": "https://github.com/Oldes/Rebol3.git",
+      "remotes": "origin\thttps://github.com/Oldes/Rebol3.git (fetch) [blob:none]\norigin\thttps://github.com/Oldes/Rebol3.git (push)",
+      "head_commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57",
+      "status_short": "D  .cirrus.yml.disabled\nD  .editorconfig\nD  .gitattributes\nD  .github/FUNDING.yml\nD  .github/diagram.svg\nD  .github/workflows/alpine/build-all-alpine.sh\nD  .github/workflows/arm-windows.yml\nD  .github/workflows/bootstrap.yml\nD  .github/workflows/build-all.yml\nD  .github/workflows/build-arm64.yml\nD  .github/workflows/diagram.yml\nD  .github/workflows/main.yml\nD  .gitignore\nD  .version\nD  CHANGES.md\nD  LICENSE\nD  NOTICE\nD  README-Carl\nD  README.md\nD  make/Entitlements.plist\nD  make/README.md\nD  make/icon/make-ico.r3\nD  make/icon/r3.ico\nD  make/icon/r3_128.png\nD  make/icon/r3_16.png\nD  make/icon/r3_24.png\nD  make/icon/r3_256.png\nD  make/icon/r3_32.png\nD  make/icon/r3_48.png\nD  make/old-makefiles/makefile\nD  make/old-makefiles/makefile.vc\nD  make/old-makefiles/makefile_0.4.40.mk\nD  make/pre-make.r3\nD  make/r3-view.manifest\nD  make/r3-view.rc\nD  make/r3.manifest\nD  make/r3.rc\nD  make/rebol3.nest\nD  make/tools/amalgamate-ext.r3\nD  make/tools/c-lexicals.reb\nD  make/tools/form-header.reb\nD  make/tools/make-boot.reb\nD  make/tools/make-headers.reb\nD  make/tools/make-host-ext.reb\nD  make/tools/make-host-init.reb\nD  make/tools/make-os-ext.reb\nD  make/tools/make-reb-lib.reb\nD  make/tools/map-conv.reb\nD  make/tools/utils.reb\nD  rosetta/README.md\nD  src/boot/actions.reb\nD  src/boot/booters.reb\nD  src/boot/draw.reb\nD  src/boot/errors.reb\nD  src/boot/graphics.reb\nD  src/boot/modes.reb\nD  src/boot/natives.reb\nD  src/boot/ops.reb\nD  src/boot/platforms.reb\nD  src/boot/root.reb\nD  src/boot/shape.reb\nD  src/boot/strings.reb\nD  src/boot/sysobj.reb\nD  src/boot/task.reb\nD  src/boot/text.reb\nD  src/boot/types-ext.reb\nD  src/boot/types.reb\nD  src/boot/typespec.reb\nD  src/boot/version.reb\nD  src/boot/window.reb\nD  src/boot/words.reb\nD  src/core/a-constants.c\nD  src/core/a-globals.c\nD  src/core/a-lib.c\nD  src/core/a-lib2.c\nD  src/core/a-stubs.c\nD  src/core/b-init.c\nD  src/core/b-main.c\nD  src/core/brotli/common/constants.c\nD  src/core/brotli/common/constants.h\nD  src/core/brotli/common/context.c\nD  src/core/brotli/common/context.h\nD  src/core/brotli/common/dictionary.bin\nD  src/core/brotli/common/dictionary.bin.br\nD  src/core/brotli/common/dictionary.c\nD  src/core/brotli/common/dictionary.h\nD  src/core/brotli/common/dictionary_inc.h\nD  src/core/brotli/common/platform.c\nD  src/core/brotli/common/platform.h\nD  src/core/brotli/common/shared_dictionary.c\nD  src/core/brotli/common/shared_dictionary_internal.h\nD  src/core/brotli/common/static_init.h\nD  src/core/brotli/common/transform.c\nD  src/core/brotli/common/transform.h\nD  src/core/brotli/common/version.h\nD  src/core/brotli/dec/bit_reader.c\nD  src/core/brotli/dec/bit_reader.h\nD  src/core/brotli/dec/decode.c\nD  src/core/brotli/dec/huffman.c\nD  src/core/brotli/dec/huffman.h\nD  src/core/brotli/dec/prefix.c\nD  src/core/brotli/dec/prefix.h\nD  src/core/brotli/dec/prefix_inc.h\nD  src/core/brotli/dec/state.c\nD  src/core/brotli/dec/state.h\nD  src/core/brotli/dec/static_init.h\nD  src/core/brotli/dec/static_init_dec.c\nD  src/core/brotli/enc/backward_references.c\nD  src/core/brotli/enc/backward_references.h\nD  src/core/brotli/enc/backward_references_hq.c\nD  src/core/brotli/enc/backward_references_hq.h\nD  src/core/brotli/enc/backward_references_inc.h\nD  src/core/brotli/enc/bit_cost.c\nD  src/core/brotli/enc/bit_cost.h\nD  src/core/brotli/enc/bit_cost_inc.h\nD  src/core/brotli/enc/block_encoder_inc.h\nD  src/core/brotli/enc/block_splitter.c\nD  src/core/brotli/enc/block_splitter.h\nD  src/core/brotli/enc/block_splitter_inc.h\nD  src/core/brotli/enc/brotli_bit_stream.c\nD  src/core/brotli/enc/brotli_bit_stream.h\nD  src/core/brotli/enc/cluster.c\nD  src/core/brotli/enc/cluster.h\nD  src/core/brotli/enc/cluster_inc.h\nD  src/core/brotli/enc/command.c\nD  src/core/brotli/enc/command.h\nD  src/core/brotli/enc/compound_dictionary.c\nD  src/core/brotli/enc/compound_dictionary.h\nD  src/core/brotli/enc/compress_fragment.c\nD  src/core/brotli/enc/compress_fragment.h\nD  src/core/brotli/enc/compress_fragment_two_pass.c\nD  src/core/brotli/enc/compress_fragment_two_pass.h\nD  src/core/brotli/enc/dictionary_hash.c\nD  src/core/brotli/enc/dictionary_hash.h\nD  src/core/brotli/enc/dictionary_hash_inc.h\nD  src/core/brotli/enc/encode.c\nD  src/core/brotli/enc/encoder_dict.c\nD  src/core/brotli/enc/encoder_dict.h\nD  src/core/brotli/enc/entropy_encode.c\nD  src/core/brotli/enc/entropy_encode.h\nD  src/core/brotli/enc/entropy_encode_static.h\nD  src/core/brotli/enc/fast_log.c\nD  src/core/brotli/enc/fast_log.h\nD  src/core/brotli/enc/find_match_length.h\nD  src/core/brotli/enc/hash.h\nD  src/core/brotli/enc/hash_base.h\nD  src/core/brotli/enc/hash_composite_inc.h\nD  src/core/brotli/enc/hash_forgetful_chain_inc.h\nD  src/core/brotli/enc/hash_longest_match64_inc.h\nD  src/core/brotli/enc/hash_longest_match64_simd_inc.h\nD  src/core/brotli/enc/hash_longest_match_inc.h\nD  src/core/brotli/enc/hash_longest_match_quickly_inc.h\nD  src/core/brotli/enc/hash_longest_match_simd_inc.h\nD  src/core/brotli/enc/hash_rolling_inc.h\nD  src/core/brotli/enc/hash_to_binary_tree_inc.h\nD  src/core/brotli/enc/histogram.c\nD  src/core/brotli/enc/histogram.h\nD  src/core/brotli/enc/histogram_inc.h\nD  src/core/brotli/enc/literal_cost.c\nD  src/core/brotli/enc/literal_cost.h\nD  src/core/brotli/enc/matching_tag_mask.h\nD  src/core/brotli/enc/memory.c\nD  src/core/brotli/enc/memory.h\nD  src/core/brotli/enc/metablock.c\nD  src/core/brotli/enc/metablock.h\nD  src/core/brotli/enc/metablock_inc.h\nD  src/core/brotli/enc/params.h\nD  src/core/brotli/enc/prefix.h\nD  src/core/brotli/enc/quality.h\nD  src/core/brotli/enc/ringbuffer.h\nD  src/core/brotli/enc/state.h\nD  src/core/brotli/enc/static_dict.c\nD  src/core/brotli/enc/static_dict.h\nD  src/core/brotli/enc/static_dict_lut.c\nD  src/core/brotli/enc/static_dict_lut.h\nD  src/core/brotli/enc/static_dict_lut_inc.h\nD  src/core/brotli/enc/static_init.c\nD  src/core/brotli/enc/static_init.h\nD  src/core/brotli/enc/static_init_lazy.cc\nD  src/core/brotli/enc/utf8_util.c\nD  src/core/brotli/enc/utf8_util.h\nD  src/core/brotli/enc/write_bits.h\nD  src/core/c-do.c\nD  src/core/c-error.c\nD  src/core/c-frame.c\nD  src/core/c-function.c\nD  src/core/c-handle.c\nD  src/core/c-port.c\nD  src/core/c-task.c\nD  src/core/c-word.c\nD  src/core/d-crash.c\nD  src/core/d-dump.c\nD  src/core/d-print.c\nD  src/core/deflate/COPYING\nD  src/core/deflate/common_defs.h\nD  src/core/deflate/lib/adler32.c\nD  src/core/deflate/lib/arm/adler32_impl.h\nD  src/core/deflate/lib/arm/cpu_features.h\nD  src/core/deflate/lib/arm/cpu_features_arm.c\nD  src/core/deflate/lib/arm/crc32_impl.h\nD  src/core/deflate/lib/arm/crc32_pmull_helpers.h\nD  src/core/deflate/lib/arm/crc32_pmull_wide.h\nD  src/core/deflate/lib/arm/matchfinder_impl.h\nD  src/core/deflate/lib/bt_matchfinder.h\nD  src/core/deflate/lib/cpu_features_common.h\nD  src/core/deflate/lib/crc32.c\nD  src/core/deflate/lib/crc32_multipliers.h\nD  src/core/deflate/lib/crc32_tables.h\nD  src/core/deflate/lib/decompress_template.h\nD  src/core/deflate/lib/deflate_compress.c\nD  src/core/deflate/lib/deflate_compress.h\nD  src/core/deflate/lib/deflate_constants.h\nD  src/core/deflate/lib/deflate_decompress.c\nD  src/core/deflate/lib/gzip_compress.c\nD  src/core/deflate/lib/gzip_constants.h\nD  src/core/deflate/lib/gzip_decompress.c\nD  src/core/deflate/lib/hc_matchfinder.h\nD  src/core/deflate/lib/ht_matchfinder.h\nD  src/core/deflate/lib/lib_common.h\nD  src/core/deflate/lib/matchfinder_common.h\nD  src/core/deflate/lib/riscv/matchfinder_impl.h\nD  src/core/deflate/lib/utils.c\nD  src/core/deflate/lib/x86/adler32_impl.h\nD  src/core/deflate/lib/x86/adler32_template.h\nD  src/core/deflate/lib/x86/cpu_features.c\nD  src/core/deflate/lib/x86/cpu_features.h\nD  src/core/deflate/lib/x86/crc32_impl.h\nD  src/core/deflate/lib/x86/crc32_pclmul_template.h\nD  src/core/deflate/lib/x86/decompress_impl.h\nD  src/core/deflate/lib/x86/matchfinder_impl.h\nD  src/core/deflate/lib/zlib_compress.c\nD  src/core/deflate/lib/zlib_constants.h\nD  src/core/deflate/lib/zlib_decompress.c\nD  src/core/deflate/libdeflate.h\nD  src/core/deprecated/n-crypt-aes.c\nD  src/core/deprecated/n-crypt-chacha.c\nD  src/core/deprecated/n-crypt.c\nD  src/core/deprecated/u-aes.c\nD  src/core/deprecated/u-bigint.c\nD  src/core/deprecated/u-chacha20.c\nD  src/core/deprecated/u-dh.c\nD  src/core/deprecated/u-md5.c\nD  src/core/deprecated/u-poly1305.c\nD  src/core/deprecated/u-rsa.c\nD  src/core/deprecated/u-sha1.c\nD  src/core/deprecated/u-sha2.c\nD  src/core/deprecated/u-uECC.c\nD  src/core/f-adp-symmetry-psort.c\nD  src/core/f-blocks.c\nD  src/core/f-deci.c\nD  src/core/f-dtoa.c\nD  src/core/f-enbase.c\nD  src/core/f-extension.c\nD  src/core/f-int.c\nD  src/core/f-math.c\nD  src/core/f-modify.c\nD  src/core/f-qsort.c\nD  src/core/f-random.c\nD  src/core/f-round.c\nD  src/core/f-series.c\nD  src/core/f-stablemerge-sort.c\nD  src/core/f-stubs.c\nD  src/core/l-scan.c\nD  src/core/l-types.c\nD  src/core/lz4/LICENSE\nD  src/core/lz4/lz4.c\nD  src/core/lz4/lz4.h\nD  src/core/lz4/lz4hc.c\nD  src/core/lz4/lz4hc.h\nD  src/core/m-gc.c\nD  src/core/m-pools.c\nD  src/core/m-series.c\nD  src/core/mbedtls/README.md\nD  src/core/mbedtls/aes.c\nD  src/core/mbedtls/aesni.c\nD  src/core/mbedtls/aesni.h\nD  src/core/mbedtls/alignment.h\nD  src/core/mbedtls/aria.c\nD  src/core/mbedtls/asn1parse.c\nD  src/core/mbedtls/asn1write.c\nD  src/core/mbedtls/bignum.c\nD  src/core/mbedtls/bignum_core.c\nD  src/core/mbedtls/bignum_core.h\nD  src/core/mbedtls/bignum_internal.h\nD  src/core/mbedtls/bignum_mod.h\nD  src/core/mbedtls/bn_mul.h\nD  src/core/mbedtls/camellia.c\nD  src/core/mbedtls/ccm.c\nD  src/core/mbedtls/chacha20.c\nD  src/core/mbedtls/chachapoly.c\nD  src/core/mbedtls/cipher.c\nD  src/core/mbedtls/cipher_invasive.h\nD  src/core/mbedtls/cipher_wrap.c\nD  src/core/mbedtls/cipher_wrap.h\nD  src/core/mbedtls/common.h\nD  src/core/mbedtls/constant_time.c\nD  src/core/mbedtls/constant_time_impl.h\nD  src/core/mbedtls/constant_time_internal.h\nD  src/core/mbedtls/ctr.h\nD  src/core/mbedtls/ctr_drbg.c\nD  src/core/mbedtls/des.c\nD  src/core/mbedtls/dhm.c\nD  src/core/mbedtls/ecdh.c\nD  src/core/mbedtls/ecdh_misc.h\nD  src/core/mbedtls/ecdsa.c\nD  src/core/mbedtls/ecp.c\nD  src/core/mbedtls/ecp_curves.c\nD  src/core/mbedtls/ecp_internal_alt.h\nD  src/core/mbedtls/ecp_invasive.h\nD  src/core/mbedtls/entropy.c\nD  src/core/mbedtls/entropy_poll.c\nD  src/core/mbedtls/entropy_poll.h\nD  src/core/mbedtls/gcm.c\nD  src/core/mbedtls/md.c\nD  src/core/mbedtls/md4.c\nD  src/core/mbedtls/md5.c\nD  src/core/mbedtls/md_psa.h\nD  src/core/mbedtls/md_wrap.h\nD  src/core/mbedtls/oid.c\nD  src/core/mbedtls/platform.c\nD  src/core/mbedtls/platform_util.c\nD  src/core/mbedtls/poly1305.c\nD  src/core/mbedtls/ripemd160.c\nD  src/core/mbedtls/rsa.c\nD  src/core/mbedtls/rsa_alt_helpers.c\nD  src/core/mbedtls/rsa_alt_helpers.h\nD  src/core/mbedtls/rsa_internal.h\nD  src/core/mbedtls/sha1.c\nD  src/core/mbedtls/sha256.c\nD  src/core/mbedtls/sha3.c\nD  src/core/mbedtls/sha512.c\nD  src/core/n-control.c\nD  src/core/n-crypt.c\nD  src/core/n-data.c\nD  src/core/n-graphics.c\nD  src/core/n-hash.c\nD  src/core/n-image.c\nD  src/core/n-io.c\nD  src/core/n-loop.c\nD  src/core/n-math.c\nD  src/core/n-oid.c\nD  src/core/n-request-color.c\nD  src/core/n-sets.c\nD  src/core/n-strings.c\nD  src/core/n-system.c\nD  src/core/p-audio.c\nD  src/core/p-checksum.c\nD  src/core/p-clipboard.c\nD  src/core/p-console.c\nD  src/core/p-crypt.c\nD  src/core/p-dir.c\nD  src/core/p-dns.c\nD  src/core/p-event.c\nD  src/core/p-file.c\nD  src/core/p-midi.c\nD  src/core/p-net.c\nD  src/core/p-serial.c\nD  src/core/p-timer.c\nD  src/core/s-cases.c\nD  src/core/s-crc.c\nD  src/core/s-file.c\nD  src/core/s-find.c\nD  src/core/s-make.c\nD  src/core/s-mold.c\nD  src/core/s-ops.c\nD  src/core/s-trim.c\nD  src/core/s-unicode.c\nD  src/core/t-bitset.c\nD  src/core/t-block.c\nD  src/core/t-char.c\nD  src/core/t-datatype.c\nD  src/core/t-date.c\nD  src/core/t-decimal.c\nD  src/core/t-event.c\nD  src/core/t-function.c\nD  src/core/t-gob.c\nD  src/core/t-handle.c\nD  src/core/t-image.c\nD  src/core/t-integer.c\nD  src/core/t-logic.c\nD  src/core/t-map.c\nD  src/core/t-money.c\nD  src/core/t-none.c\nD  src/core/t-object.c\nD  src/core/t-pair.c\nD  src/core/t-port.c\nD  src/core/t-string.c\nD  src/core/t-struct.c\nD  src/core/t-time.c\nD  src/core/t-tuple.c\nD  src/core/t-typeset.c\nD  src/core/t-utype.c\nD  src/core/t-vector.c\nD  src/core/t-word.c\nD  src/core/u-bincode.c\nD  src/core/u-bmp.c\nD  src/core/u-compress.c\nD  src/core/u-crush.c\nD  src/core/u-dialect.c\nD  src/core/u-gif.c\nD  src/core/u-iconv.c\nD  src/core/u-image-blur.c\nD  src/core/u-image-resize.c\nD  src/core/u-jpg.c\nD  src/core/u-lzma.c\nD  src/core/u-lzw.c\nD  src/core/u-mbedtls.c\nD  src/core/u-parse.c\nD  src/core/u-png-filter.c\nD  src/core/u-png.c\nD  src/core/u-qoi.c\nD  src/core/u-rc4.c\nD  src/core/u-wav.c\nD  src/core/u-xxhash.c\nD  src/core/u-zlib.c\nD  src/include/brotli/decode.h\nD  src/include/brotli/encode.h\nD  src/include/brotli/port.h\nD  src/include/brotli/shared_dictionary.h\nD  src/include/brotli/types.h\nD  src/include/deprecated/bigint.h\nD  src/include/deprecated/bigint_config.h\nD  src/include/deprecated/bigint_impl.h\nD  src/include/deprecated/poly1305/poly1305-donna-32.h\nD  src/include/deprecated/poly1305/poly1305-donna-64.h\nD  src/include/deprecated/poly1305/poly1305-donna.h\nD  src/include/deprecated/sys-aes.h\nD  src/include/deprecated/sys-chacha20.h\nD  src/include/deprecated/sys-dh.h\nD  src/include/deprecated/sys-md5.h\nD  src/include/deprecated/sys-poly1305.h\nD  src/include/deprecated/sys-rsa.h\nD  src/include/deprecated/sys-sha1.h\nD  src/include/deprecated/sys-sha2.h\nD  src/include/deprecated/uECC-curve-specific.inc\nD  src/include/deprecated/uECC-platform-specific.inc\nD  src/include/deprecated/uECC-types.h\nD  src/include/deprecated/uECC.h\nD  src/include/deprecated/uECC_vli.h\nD  src/include/mbedtls/aes.h\nD  src/include/mbedtls/aria.h\nD  src/include/mbedtls/asn1.h\nD  src/include/mbedtls/asn1write.h\nD  src/include/mbedtls/bignum.h\nD  src/include/mbedtls/build_info.h\nD  src/include/mbedtls/camellia.h\nD  src/include/mbedtls/ccm.h\nD  src/include/mbedtls/chacha20.h\nD  src/include/mbedtls/chachapoly.h\nD  src/include/mbedtls/check_config.h\nD  src/include/mbedtls/cipher.h\nD  src/include/mbedtls/cmac.h\nD  src/include/mbedtls/config.h\nD  src/include/mbedtls/config_adjust_legacy_crypto.h\nD  src/include/mbedtls/config_adjust_ssl.h\nD  src/include/mbedtls/config_adjust_x509.h\nD  src/include/mbedtls/config_psa.h\nD  src/include/mbedtls/constant_time.h\nD  src/include/mbedtls/ctr_drbg.h\nD  src/include/mbedtls/des.h\nD  src/include/mbedtls/dhm.h\nD  src/include/mbedtls/ecdh.h\nD  src/include/mbedtls/ecdsa.h\nD  src/include/mbedtls/ecjpake.h\nD  src/include/mbedtls/ecp.h\nD  src/include/mbedtls/entropy.h\nD  src/include/mbedtls/error.h\nD  src/include/mbedtls/gcm.h\nD  src/include/mbedtls/legacy_or_psa.h\nD  src/include/mbedtls/mbedtls_config.h\nD  src/include/mbedtls/md.h\nD  src/include/mbedtls/md4.h\nD  src/include/mbedtls/md5.h\nD  src/include/mbedtls/oid.h\nD  src/include/mbedtls/pk.h\nD  src/include/mbedtls/platform.h\nD  src/include/mbedtls/platform_time.h\nD  src/include/mbedtls/platform_util.h\nD  src/include/mbedtls/poly1305.h\nD  src/include/mbedtls/private_access.h\nD  src/include/mbedtls/ripemd160.h\nD  src/include/mbedtls/rsa.h\nD  src/include/mbedtls/sha1.h\nD  src/include/mbedtls/sha256.h\nD  src/include/mbedtls/sha3.h\nD  src/include/mbedtls/sha512.h\nD  src/include/mbedtls/threading.h\nD  src/include/opt-config.h\nD  src/include/opt-dependencies.h\nD  src/include/psa/build_info.h\nD  src/include/psa/crypto.h\nD  src/include/psa/crypto_builtin_composites.h\nD  src/include/psa/crypto_builtin_key_derivation.h\nD  src/include/psa/crypto_builtin_primitives.h\nD  src/include/psa/crypto_compat.h\nD  src/include/psa/crypto_config.h\nD  src/include/psa/crypto_driver_common.h\nD  src/include/psa/crypto_driver_contexts_composites.h\nD  src/include/psa/crypto_driver_contexts_key_derivation.h\nD  src/include/psa/crypto_driver_contexts_primitives.h\nD  src/include/psa/crypto_extra.h\nD  src/include/psa/crypto_legacy.h\nD  src/include/psa/crypto_platform.h\nD  src/include/psa/crypto_se_driver.h\nD  src/include/psa/crypto_sizes.h\nD  src/include/psa/crypto_struct.h\nD  src/include/psa/crypto_types.h\nD  src/include/psa/crypto_values.h\nD  src/include/reb-args.h\nD  src/include/reb-c.h\nD  src/include/reb-codec.h\nD  src/include/reb-compositor.h\nD  src/include/reb-config.h\nD  src/include/reb-defs.h\nD  src/include/reb-device.h\nD  src/include/reb-dtoa.h\nD  src/include/reb-event.h\nD  src/include/reb-ext-handler.h\nD  src/include/reb-ext.h\nD  src/include/reb-file.h\nD  src/include/reb-filereq.h\nD  src/include/reb-gob.h\nD  src/include/reb-host.h\nD  src/include/reb-math.h\nD  src/include/reb-net.h\nD  src/include/reb-series.h\nD  src/include/reb-struct.h\nD  src/include/reb-value.h\nD  src/include/reb-view.h\nD  src/include/sys-blur.h\nD  src/include/sys-checksum.h\nD  src/include/sys-core.h\nD  src/include/sys-crypt.h\nD  src/include/sys-dec-to-char.h\nD  src/include/sys-deci-funcs.h\nD  src/include/sys-deci.h\nD  src/include/sys-globals.h\nD  src/include/sys-hash.h\nD  src/include/sys-int-funcs.h\nD  src/include/sys-jpg.h\nD  src/include/sys-lzav.h\nD  src/include/sys-lzma.h\nD  src/include/sys-magick.h\nD  src/include/sys-mem.h\nD  src/include/sys-net.h\nD  src/include/sys-panics.h\nD  src/include/sys-qoi.h\nD  src/include/sys-rc4.h\nD  src/include/sys-scan.h\nD  src/include/sys-stack.h\nD  src/include/sys-state.h\nD  src/include/sys-value.h\nD  src/include/sys-xxhash.h\nD  src/include/sys-zlib.h\nD  src/mezz/base-ansi-dark.reb\nD  src/mezz/base-ansi-light.reb\nD  src/mezz/base-constants.reb\nD  src/mezz/base-debug.reb\nD  src/mezz/base-defs.reb\nD  src/mezz/base-files.reb\nD  src/mezz/base-funcs.reb\nD  src/mezz/base-series.reb\nD  src/mezz/boot-files.reb\nD  src/mezz/codec-ar.reb\nD  src/mezz/codec-bbcode.reb\nD  src/mezz/codec-braille.reb\nD  src/mezz/codec-crt.reb\nD  src/mezz/codec-css.reb\nD  src/mezz/codec-csv.reb\nD  src/mezz/codec-der.reb\nD  src/mezz/codec-gzip.reb\nD  src/mezz/codec-html-entities.reb\nD  src/mezz/codec-ico.reb\nD  src/mezz/codec-image-ext.reb\nD  src/mezz/codec-image.reb\nD  src/mezz/codec-json.reb\nD  src/mezz/codec-mime-field.reb\nD  src/mezz/codec-mime-types.reb\nD  src/mezz/codec-pdb.reb\nD  src/mezz/codec-pdf.reb\nD  src/mezz/codec-pkix.reb\nD  src/mezz/codec-plist.reb\nD  src/mezz/codec-ppk.reb\nD  src/mezz/codec-quoted-printable.reb\nD  src/mezz/codec-safe.reb\nD  src/mezz/codec-srt.reb\nD  src/mezz/codec-ssh-key.reb\nD  src/mezz/codec-swf.reb\nD  src/mezz/codec-tar.reb\nD  src/mezz/codec-unixtime.reb\nD  src/mezz/codec-utc-time.reb\nD  src/mezz/codec-wav.reb\nD  src/mezz/codec-xml.reb\nD  src/mezz/codec-zip.reb\nD  src/mezz/dial-draw.reb\nD  src/mezz/dial-effect.reb\nD  src/mezz/dial-text.reb\nD  src/mezz/mezz-ansi.reb\nD  src/mezz/mezz-banner.reb\nD  src/mezz/mezz-colors.reb\nD  src/mezz/mezz-control.reb\nD  src/mezz/mezz-date.reb\nD  src/mezz/mezz-debug.reb\nD  src/mezz/mezz-files.reb\nD  src/mezz/mezz-func.reb\nD  src/mezz/mezz-help.reb\nD  src/mezz/mezz-logger.reb\nD  src/mezz/mezz-math.reb\nD  src/mezz/mezz-osx-dialogs.reb\nD  src/mezz/mezz-save.reb\nD  src/mezz/mezz-secure.reb\nD  src/mezz/mezz-series.reb\nD  src/mezz/mezz-shell.reb\nD  src/mezz/mezz-tag.reb\nD  src/mezz/mezz-tail.reb\nD  src/mezz/mezz-types.reb\nD  src/mezz/prot-daytime.reb\nD  src/mezz/prot-http.reb\nD  src/mezz/prot-mail.reb\nD  src/mezz/prot-mysql.reb\nD  src/mezz/prot-pop3.reb\nD  src/mezz/prot-rdap.reb\nD  src/mezz/prot-smtp.reb\nD  src/mezz/prot-tls.reb\nD  src/mezz/prot-whois.reb\nD  src/mezz/repl-completion.reb\nD  src/mezz/repl-line-editor.reb\nD  src/mezz/repl-rebol-console.reb\nD  src/mezz/sys-base.reb\nD  src/mezz/sys-codec.reb\nD  src/mezz/sys-load.reb\nD  src/mezz/sys-ports-audio.reb\nD  src/mezz/sys-ports-midi.reb\nD  src/mezz/sys-ports.reb\nD  src/mezz/sys-start.reb\nD  src/mezz/view-funcs.reb\nD  src/modules/c64-color-palettes.reb\nD  src/modules/github.reb\nD  src/modules/httpd.reb\nD  src/modules/identify.reb\nD  src/modules/munge3.reb\nD  src/modules/port-scanner.reb\nD  src/modules/prebol.reb\nD  src/modules/scheduler.reb\nD  src/modules/soundex.reb\nD  src/modules/spotify.reb\nD  src/modules/thru-cache.reb\nD  src/modules/to-ascii.reb\nD  src/modules/unicode-utils.reb\nD  src/modules/upgrade.reb\nD  src/modules/webdriver.reb\nD  src/modules/websocket.reb\nD  src/os/dev-dns.c\nD  src/os/dev-net.c\nD  src/os/host-args.c\nD  src/os/host-device.c\nD  src/os/host-ext-test.c\nD  src/os/host-main.c\nD  src/os/host-stdio.c\nD  src/os/osx/dev-clipboard.c\nD  src/os/osx/dev-midi.c\nD  src/os/osx/host-image.c\nD  src/os/osx/sys-clipboard.m\nD  src/os/osx/sys-codecs.h\nD  src/os/osx/sys-codecs.m\nD  src/os/osx/sys-utils.h\nD  src/os/osx/sys-utils.m\nD  src/os/posix/dev-event.c\nD  src/os/posix/dev-file.c\nD  src/os/posix/dev-serial.c\nD  src/os/posix/dev-stdio.c\nD  src/os/posix/host-compositor.c\nD  src/os/posix/host-event.c\nD  src/os/posix/host-lib.c\nD  src/os/posix/host-readline.c\nD  src/os/posix/host-window.c\nD  src/os/win32/dev-audio.c\nD  src/os/win32/dev-clipboard.c\nD  src/os/win32/dev-event.c\nD  src/os/win32/dev-file.c\nD  src/os/win32/dev-midi.c\nD  src/os/win32/dev-serial.c\nD  src/os/win32/dev-stdio.c\nD  src/os/win32/host-compositor.c\nD  src/os/win32/host-draw.c\nD  src/os/win32/host-effect.c\nD  src/os/win32/host-event.c\nD  src/os/win32/host-graphics.c\nD  src/os/win32/host-image.c\nD  src/os/win32/host-lib.c\nD  src/os/win32/host-text.c\nD  src/os/win32/host-window.c\nD  src/os/win32/rpic-test.c\nD  src/os/win32/sys-codecs.cpp\nD  src/os/win32/sys-codecs.h\nD  src/os/win32/sys-d2d.cpp\nD  src/os/win32/sys-d2d.h\nD  src/os/win32/sys-utils.c\nD  src/os/win32/sys-utils.h\nD  src/test-app.c\nD  src/tests/extension/test.c\nD  src/tests/httpd-root/favicon.ico\nD  src/tests/httpd-root/form.html\nD  src/tests/httpd-root/robots.txt\nD  src/tests/httpd-root/websocket.html\nD  src/tests/quick-test-module.r3\nD  src/tests/run-tests.r3\nD  src/tests/test-audio.r3\nD  src/tests/test-checksums.r3\nD  src/tests/test-compression.r3\nD  src/tests/test-crypt.r3\nD  src/tests/test-ecdh.r3\nD  src/tests/test-extension-blend2d.r3\nD  src/tests/test-extension-sqlite.r3\nD  src/tests/test-extension-triangulate.r3\nD  src/tests/test-halt.r3\nD  src/tests/test-http.r3\nD  src/tests/test-httpd.r3\nD  src/tests/test-issue-2282.r3\nD  src/tests/test-map.r3\nD  src/tests/test-midi.r3\nD  src/tests/test-pingpong-client.r3\nD  src/tests/test-pingpong-server.r3\nD  src/tests/test-port-scanner.r3\nD  src/tests/test-raw-tcp-read.r3\nD  src/tests/test-safe.r3\nD  src/tests/test-soundex.r3\nD  src/tests/test-spotify.r3\nD  src/tests/test-sync-console.r3\nD  src/tests/test-tls-client.r3\nD  src/tests/test-tls-server.r3\nD  src/tests/test-udp-client.r3\nD  src/tests/test-udp-server.r3\nD  src/tests/test-unicode.r3\nD  src/tests/test-user-console.r3\nD  src/tests/test-view.r3\nD  src/tests/test-wait-for-key.r3\nD  src/tests/units/_known-issues_.r3\nD  src/tests/units/aes-test.r3\nD  src/tests/units/bbcode-test.r3\nD  src/tests/units/bincode-test.r3\nD  src/tests/units/bitset-test.r3\nD  src/tests/units/call-test.r3\nD  src/tests/units/chacha20-test.r3\nD  src/tests/units/char-test.r3\nD  src/tests/units/checksum-test.r3\nD  src/tests/units/codecs-test-pdf.r3\nD  src/tests/units/codecs-test.r3\nD  src/tests/units/compare-test.r3\nD  src/tests/units/compress-test.r3\nD  src/tests/units/conditional-test.r3\nD  src/tests/units/copy-test.r3\nD  src/tests/units/crash-test.r3\nD  src/tests/units/crypt-port-camelia-test.r3\nD  src/tests/units/crypt-port-ccm-test.r3\nD  src/tests/units/crypt-port-gcm-test.r3\nD  src/tests/units/crypt-port-test.r3\nD  src/tests/units/crypt-test.r3\nD  src/tests/units/csv-test.r3\nD  src/tests/units/datatype-test.r3\nD  src/tests/units/date-test.r3\nD  src/tests/units/decimal-test.r3\nD  src/tests/units/delect-test.r3\nD  src/tests/units/dh-test.r3\nD  src/tests/units/enbase-test.r3\nD  src/tests/units/enum-test.r3\nD  src/tests/units/error-test.r3\nD  src/tests/units/evaluation-test.r3\nD  src/tests/units/event-test.r3\nD  src/tests/units/extension-test.r3\nD  src/tests/units/file-test.r3\nD  src/tests/units/files/MyCertificate.crt\nD  src/tests/units/files/MyKey.key\nD  src/tests/units/files/Some.mobileprovision\nD  src/tests/units/files/Some.plist\nD  src/tests/units/files/alice29.txt.gz\nD  src/tests/units/files/animation.gif\nD  src/tests/units/files/apiserver.crt\nD  src/tests/units/files/bug-load-null.r3\nD  src/tests/units/files/dhparam2048.key\nD  src/tests/units/files/dhparam2048.pem\nD  src/tests/units/files/drumloop.wav\nD  src/tests/units/files/error.r3\nD  src/tests/units/files/flower-from-photoshop.jpg\nD  src/tests/units/files/flower-from-photoshop.pdf\nD  src/tests/units/files/flower-from-xnview.pdf\nD  src/tests/units/files/flower-tiny.jpg\nD  src/tests/units/files/flower.bmp\nD  src/tests/units/files/flower.dds\nD  src/tests/units/files/flower.gif\nD  src/tests/units/files/flower.jpg\nD  src/tests/units/files/flower.png\nD  src/tests/units/files/google.crt\nD  src/tests/units/files/hello-1.pdf\nD  src/tests/units/files/hello-2.pdf\nD  src/tests/units/files/hello-linearized.pdf\nD  src/tests/units/files/ico/icon_128.png\nD  src/tests/units/files/ico/icon_16.png\nD  src/tests/units/files/ico/icon_20.png\nD  src/tests/units/files/ico/icon_24.png\nD  src/tests/units/files/ico/icon_30.png\nD  src/tests/units/files/ico/icon_32.png\nD  src/tests/units/files/ico/icon_36.png\nD  src/tests/units/files/ico/icon_40.png\nD  src/tests/units/files/ico/icon_48.png\nD  src/tests/units/files/ico/icon_60.png\nD  src/tests/units/files/ico/icon_64.png\nD  src/tests/units/files/ico/icon_72.png\nD  src/tests/units/files/ico/icon_80.png\nD  src/tests/units/files/ico/icon_96.png\nD  src/tests/units/files/invalid-decimal.r\nD  src/tests/units/files/issue-1677.txt\nD  src/tests/units/files/issue-1794.txt\nD  src/tests/units/files/issue-2186-UTF16-BE.txt\nD  src/tests/units/files/issue-2186-UTF16-LE.txt\nD  src/tests/units/files/issue-2186-UTF32-BE.txt\nD  src/tests/units/files/issue-2186-UTF32-LE.txt\nD  src/tests/units/files/issue-2587.jpg\nD  src/tests/units/files/launch-wait.r3\nD  src/tests/units/files/launch.r3\nD  src/tests/units/files/launched.r3\nD  src/tests/units/files/pdf-maker-doc.pdf\nD  src/tests/units/files/png-from-photoshop.png\nD  src/tests/units/files/print-args.r3\nD  src/tests/units/files/quickbrown.bin\nD  src/tests/units/files/quit-return.r3\nD  src/tests/units/files/quit.r3\nD  src/tests/units/files/r3.png\nD  src/tests/units/files/rbgw.gif\nD  src/tests/units/files/rbgw.png\nD  src/tests/units/files/rebol-private-no-pass.key\nD  src/tests/units/files/rebol-private-no-pass.ppk\nD  src/tests/units/files/rebol-private.ppk\nD  src/tests/units/files/rebol-public.ppk\nD  src/tests/units/files/test-1203.reb\nD  src/tests/units/files/test-deflate.zip\nD  src/tests/units/files/test-lzma.zip\nD  src/tests/units/files/test-needs-file-value.reb\nD  src/tests/units/files/test-needs-file.reb\nD  src/tests/units/files/test-needs-name-value.reb\nD  src/tests/units/files/test-needs-name.reb\nD  src/tests/units/files/test-needs-url-value.reb\nD  src/tests/units/files/test-needs-url.reb\nD  src/tests/units/files/test-stored.zip\nD  src/tests/units/files/test.aar\nD  src/tests/units/files/test.ico\nD  src/tests/units/files/test.pfx\nD  src/tests/units/files/test.tar\nD  src/tests/units/files/test1-deflate.swf\nD  src/tests/units/files/test1.xml\nD  src/tests/units/files/test2-lzma.swf\nD  src/tests/units/files/test2.xml\nD  src/tests/units/files/test3.swf\nD  src/tests/units/files/test4-as2btn.swf\nD  src/tests/units/files/unset.r3\nD  src/tests/units/files/zblunk_02.wav\nD  \"src/tests/units/files/\\304\\215e\\305\\241tina.txt\"\nD  src/tests/units/format-test.r3\nD  src/tests/units/func-test.r3\nD  src/tests/units/gob-test.r3\nD  src/tests/units/handle-test.r3\nD  src/tests/units/image-test.r3\nD  src/tests/units/integer-test.r3\nD  src/tests/units/integer-test_.r3\nD  src/tests/units/issue-test.r3\nD  src/tests/units/lexer-test.r3\nD  src/tests/units/load-test.r3\nD  src/tests/units/make-test.r3\nD  src/tests/units/map-test.r3\nD  src/tests/units/module-test.r3\nD  src/tests/units/mold-test.r3\nD  src/tests/units/money-test.r3\nD  src/tests/units/native-test.r3\nD  src/tests/units/object-test.r3\nD  src/tests/units/os-test.r3\nD  src/tests/units/pair-test.r3\nD  src/tests/units/parse-test.r3\nD  src/tests/units/percent-test.r3\nD  src/tests/units/poly1305-test.r3\nD  src/tests/units/port-clipboard-test.r3\nD  src/tests/units/port-console-test.r3\nD  src/tests/units/port-http-test.r3\nD  src/tests/units/port-net-test.r3\nD  src/tests/units/port-test.r3\nD  src/tests/units/power-test.r3\nD  src/tests/units/protect-test.r3\nD  src/tests/units/rc4-test.r3\nD  src/tests/units/rsa-test.r3\nD  src/tests/units/series-test.r3\nD  src/tests/units/struct-test.r3\nD  src/tests/units/task-test.r3\nD  src/tests/units/thru-cache-test.r3\nD  src/tests/units/time-test.r3\nD  src/tests/units/tuple-test.r3\nD  src/tests/units/typeset-test.r3\nD  src/tests/units/unicode-test.r3\nD  src/tests/units/url-test.r3\nD  src/tests/units/vector-test.r3\nD  src/tests/units/word-test.r3\nD  src/tools/systems.reb",
+      "describe": "3.22.1-44-gd5b237ce",
+      "commit_count": "4675",
+      "head_commit_detail": {
+        "sha": "d5b237cea60d06b72c59bb6dbed0022b482f4c57",
+        "author": "Oldes <oldes.huhuman@gmail.com>",
+        "date": "2026-08-24T21:04:38+02:00",
+        "subject": "FEAT: Add a new `nth-root` function to calculate the nth root of a number"
+      },
+      "tag_count": 30,
+      "tags": [
+        "3.10.0",
+        "3.10.2",
+        "3.10.3",
+        "3.10.4",
+        "3.10.5",
+        "3.10.6",
+        "3.11.0",
+        "3.12.0",
+        "3.13.0",
+        "3.14.0",
+        "3.15.0",
+        "3.16.0",
+        "3.17.0",
+        "3.18.0",
+        "3.19.0",
+        "3.2.0",
+        "3.20.0",
+        "3.21.0",
+        "3.22.0",
+        "3.22.1",
+        "3.3.0",
+        "3.4.0",
+        "3.5.0",
+        "3.5.6",
+        "3.6.0",
+        "3.7.0",
+        "3.7.1",
+        "3.7.2",
+        "3.8.0",
+        "3.9.0"
+      ],
+      "tag_resolutions": {
+        "3.10.0": {
+          "commit": "fb90f90d4b2941f5b8ee60fd13f43c94c380145d",
+          "tree": "5379f436ea483eb3177295c3827cad876315d46b"
+        },
+        "3.10.2": {
+          "commit": "24556ad3f67762fac4e40dab3e0c58feddbb0933",
+          "tree": "7a512ddd4a36b3ffc18ffc2821709ebccb3691de"
+        },
+        "3.10.3": {
+          "commit": "d95f825a5acea2db7516f700270e93c3c568575d",
+          "tree": "0927db9f7204c20b48d71faa6b037cd88873ff59"
+        },
+        "3.10.4": {
+          "commit": "38b5137997d6ae1fb7848f8374d6021d3ce77ff1",
+          "tree": "65a9e2c38865de6586e530d619318cdb6f30e3f6"
+        },
+        "3.10.5": {
+          "commit": "a2fe77dc0e1ab128dd4dc66515fa38d2da141ac2",
+          "tree": "d013844adc3c0429add744fd1eeddfd6ff521122"
+        },
+        "3.10.6": {
+          "commit": "eef002b945738de368fae848f1f9dbb7383cc726",
+          "tree": "62641ce4c861a54a73e6235deec55dafe80fbba1"
+        },
+        "3.11.0": {
+          "commit": "63ff635febdb5346c8c83ff9fe11c6cd55528023",
+          "tree": "7bf2a8f02af0c43383205b490c9477ee213b62cc"
+        },
+        "3.12.0": {
+          "commit": "9f0cdc4a4b4bf4d69ad1fc7e15a66ffd0ea5656f",
+          "tree": "6511454ac62a7b356236f2b5c3ecdb40bca60b2c"
+        },
+        "3.13.0": {
+          "commit": "ea51540158f49434c4f11ececf5fc4e9f17d010e",
+          "tree": "bf2ba77373f47ea78f6d1663e4d126bef955912a"
+        },
+        "3.14.0": {
+          "commit": "90ee35a6f344f9edf8568a84a60db4658595040d",
+          "tree": "531326d99cb997541acd9504a55e646f7f2cc196"
+        },
+        "3.15.0": {
+          "commit": "45832b91fbf9c82907ecb6806ebeee7a42e00e17",
+          "tree": "74af2d462b8a1f0dee669bd262cce4f263a4c916"
+        },
+        "3.16.0": {
+          "commit": "bea5d79ad3e628e076cff4d0e522df471afebeba",
+          "tree": "792e0ffc9038ab0c5e1b2221bc87f1c508df8989"
+        },
+        "3.17.0": {
+          "commit": "4b4074a4984662baa16c68729924ea6a59550d61",
+          "tree": "e889e1e6f5bc5aae0ead4461752ee667dc4401c7"
+        },
+        "3.18.0": {
+          "commit": "4b1085df08ed21bf847e2cf4169a89007c79ab07",
+          "tree": "09c7b76102c07f1976f19ce499077852599398d6"
+        },
+        "3.19.0": {
+          "commit": "5ef4691510883078abe69bf53178d38846628b91",
+          "tree": "60f73e76060dc3acb83471c141b67eca511d3c89"
+        },
+        "3.2.0": {
+          "commit": "35ff54a4124f6f0866b4c7136d913ada4a661ed5",
+          "tree": "3e229a779626b65a29684fcb1993fc12a6d19a55"
+        },
+        "3.20.0": {
+          "commit": "ed20b5b9341502e790429a032258cf91d323e89b",
+          "tree": "6aced64e4f67195105f2c3d7272a77e301f3fc94"
+        },
+        "3.21.0": {
+          "commit": "90e429b4780d007e2f5309276d97e21c25ccf086",
+          "tree": "d9e4e43bc297881d99b538e7f2e0310159ae8c83"
+        },
+        "3.22.0": {
+          "commit": "661a8ec727e3f3b633a41d5fbb007699072b35d7",
+          "tree": "30729aec6894332992afb32717a40429784f8e96"
+        },
+        "3.22.1": {
+          "commit": "7fe158a9a9b0be8826c35a27596cb3c207b5ed6c",
+          "tree": "f1554d5e4c366bcf82115a1b7e1759c4d7ca4ad5"
+        },
+        "3.3.0": {
+          "commit": "c1712405d3ba34ee63408f2a7daca6537b781504",
+          "tree": "15544d93b301bc395f4b35e856a398f6807bd755"
+        },
+        "3.4.0": {
+          "commit": "6fe6a36c4bf1e4ea780ea46f168e4e42c0a9a7ed",
+          "tree": "837bdf7796c981d2c457126c98a64bed3440675b"
+        },
+        "3.5.0": {
+          "commit": "5a7f82f8308da1c0135939039a73f72b7485b8b8",
+          "tree": "cd31c934d4b50605537b67d60e3a647ec87f9927"
+        },
+        "3.5.6": {
+          "commit": "cbad7a7232eb7a72ba0b83caa69985dd91963bb7",
+          "tree": "43ece2f76bd86ade4ef661e9793898a221cf6e73"
+        },
+        "3.6.0": {
+          "commit": "c3947fa0df12f78436053e27891a5a94cd62bb7b",
+          "tree": "8cfcc77ba7ce679e77b5c2926ae662743ee30d1d"
+        },
+        "3.7.0": {
+          "commit": "dc851b7ee202e71fc0e77254d2184e668174bb15",
+          "tree": "61b98071bba4b0c5bc63dd77679d39ce123f9042"
+        },
+        "3.7.1": {
+          "commit": "3b93faa2cc4e2f903a1d96419a793fa2f14d502d",
+          "tree": "b42a448c4ead2769c962e4de20d4680618e44511"
+        },
+        "3.7.2": {
+          "commit": "44534065e4060bdfc9eaaed0b7170fe02a1fbcfd",
+          "tree": "38c1a7de1d73f0c5c83dcf4a8e13f1979cbc3026"
+        },
+        "3.8.0": {
+          "commit": "dd3f3e0debebab2a21e4d377a41d3ea3fe030ece",
+          "tree": "2e813bb85cf8be7fd85318a2f3200eeab8660fd0"
+        },
+        "3.9.0": {
+          "commit": "c91fb3293b1cc2c519cbbcf62990fc99720c36b6",
+          "tree": "da4e74c7c7d73373451d93aaeabe6bb4b67b12d8"
+        }
+      },
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/Oldes_Rebol3__HEAD.lsr",
+          "entries": 900,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57"
+        }
+      }
+    },
+    "rebolsource_rebol-syntax": {
+      "local_clone_path": "/tmp/acq/rebolsource_rebol-syntax",
+      "upstream_url": "https://github.com/rebolsource/rebol-syntax.git",
+      "remotes": "origin\thttps://github.com/rebolsource/rebol-syntax.git (fetch) [blob:none]\norigin\thttps://github.com/rebolsource/rebol-syntax.git (push)",
+      "head_commit": "4ff11396312d0ccd8490191571206f628be79e8e",
+      "status_short": "D  CONTRIBUTORS.txt\nD  LICENSE.txt\nD  README.md\nD  syntax.r",
+      "describe": "4ff1139",
+      "commit_count": "45",
+      "head_commit_detail": {
+        "sha": "4ff11396312d0ccd8490191571206f628be79e8e",
+        "author": "ladislav <lmecir@volny.cz>",
+        "date": "2012-03-07T00:24:12+01:00",
+        "subject": "minor"
+      },
+      "tag_count": 0,
+      "tags": [],
+      "tag_resolutions": {},
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/rebolsource_rebol-syntax__HEAD.lsr",
+          "entries": 4,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "4ff11396312d0ccd8490191571206f628be79e8e"
+        }
+      }
+    },
+    "rebolsource_rebol-test": {
+      "local_clone_path": "/tmp/acq/rebolsource_rebol-test",
+      "upstream_url": "https://github.com/rebolsource/rebol-test.git",
+      "remotes": "origin\thttps://github.com/rebolsource/rebol-test.git (fetch) [blob:none]\norigin\thttps://github.com/rebolsource/rebol-test.git (push)",
+      "head_commit": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234",
+      "status_short": "D  .gitattributes\nD  LICENSE\nD  README.mkd\nD  bench.r3\nD  catch-any.r\nD  core-tests.r\nD  fixtures/rebol-logo.bmp\nD  fixtures/rebol-logo.gif\nD  fixtures/rebol-logo.jpg\nD  fixtures/rebol-logo.png\nD  fixtures/umlauts-utf16be.txt\nD  fixtures/umlauts-utf16le.txt\nD  fixtures/umlauts-utf32be.txt\nD  fixtures/umlauts-utf32le.txt\nD  fixtures/umlauts-utf8.txt\nD  fixtures/umlauts-utf8bom.txt\nD  flags.r\nD  line-numberq.r\nD  log-diff.r\nD  log-filter.r\nD  run-long-recover.r\nD  run-recover.r\nD  run-tests.r\nD  test-framework.r\nD  test-parsing.r\nD  tests.html\nD  tests.mdp",
+      "describe": "409ef5c",
+      "commit_count": "460",
+      "head_commit_detail": {
+        "sha": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234",
+        "author": "Ladislav <lmecir@volny.cz>",
+        "date": "2026-02-23T07:35:41+01:00",
+        "subject": "Add set and get path tests"
+      },
+      "tag_count": 0,
+      "tags": [],
+      "tag_resolutions": {},
+      "tree_manifests": {
+        "HEAD": {
+          "path": "artifacts/manifests/trees/rebolsource_rebol-test__HEAD.lsr",
+          "entries": 27,
+          "format": "git ls-tree -r <ref> (mode SP type SP blob-sha TAB path)"
+        }
+      },
+      "ref_resolutions": {
+        "HEAD": {
+          "commit": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234"
+        }
+      }
+    },
+    "workspace-fork": {
+      "upstream_url": "https://github.com/Abdus2023/Red-Cognition-.git",
+      "head_commit": "742181a8b868309b9fbebbf94e8355b8ac1eac06",
+      "status_short": "?? .gitignore\n?? acquisition-tools/\n?? artifacts/logs/\n?? artifacts/manifests/",
+      "describe": "742181a",
+      "head_commit_detail": {
+        "sha": "742181a8b868309b9fbebbf94e8355b8ac1eac06",
+        "author": "Abdus2023 <130234450+Abdus2023@users.noreply.github.com>",
+        "date": "2026-08-31T16:01:16+01:00",
+        "subject": "Isolate Quick-Test generated runnable files in per-suite tmpfs"
+      },
+      "tree_manifest": {
+        "path": "artifacts/manifests/trees/workspace-fork__HEAD.lsr",
+        "entries": 1118
+      },
+      "comparison_to_upstream_v0.6.4": {
+        "upstream_ref": "red/red tag v0.6.4",
+        "upstream_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
+        "upstream_source_files": 530,
+        "workspace_source_files_present_in_upstream": 248,
+        "differing_content_files": 253,
+        "differing_examples": [
+          "BSD-3-License.txt",
+          "boot.red",
+          "build/README.md",
+          "build/git-version.r",
+          "build/includes.r",
+          "compiler.r",
+          "docs/conversion-matrix.xlsx",
+          "environment/actions.red",
+          "environment/console/CLI/POSIX.reds",
+          "environment/console/CLI/console.red",
+          "environment/console/CLI/input.red",
+          "environment/console/CLI/win32.reds",
+          "environment/console/GUI/core.red",
+          "environment/console/GUI/gui-console.red",
+          "environment/console/GUI/highlight.red",
+          "environment/console/GUI/old/terminal.reds",
+          "environment/console/GUI/old/windows.reds",
+          "environment/console/GUI/settings.red",
+          "environment/console/auto-complete.red",
+          "environment/console/engine.red"
+        ],
+        "in_workspace_only": 334,
+        "in_workspace_only_examples": [
+          "compiler/.gitkeep",
+          "dialects/.gitkeep",
+          "docs/ARCHITECTURE-INDEX.md",
+          "docs/DEPENDENCY-MAP.md",
+          "docs/FILE-INDEX.md",
+          "docs/IMPLEMENTATION-BASELINE.md",
+          "docs/PROJECT-INVARIANTS.md",
+          "docs/README.md",
+          "docs/REPOSITORY-NAVIGATION.md",
+          "docs/REPOSITORY-RECONSTRUCTION-REPORT.md",
+          "docs/RFC-ARTIFACT-GROUPS.md",
+          "docs/RFC-INDEX.md",
+          "docs/Red-Cognition_Agent_Prompt_Pack.md",
+          "docs/SOURCE-INDEX.md",
+          "docs/WIKI-INDEX.md",
+          "docs/audits/RED-COGNITION-DEEP-ANALYSIS-2026-08-13.md",
+          "docs/audits/REPOSITORY-INTEGRITY-RECONCILIATION-2026-08-13.md",
+          "docs/governance/ratification-registry.json",
+          "docs/governance/ratification-registry.md",
+          "docs/implementation/concurrency-model.md"
+        ],
+        "missing_from_workspace": 29,
+        "missing_examples": [
+          "bridges/dotnet/README.md",
+          "bridges/dotnet/bridge.red",
+          "bridges/dotnet/test-svg.red",
+          "bridges/dotnet/test-wpf.red",
+          "bridges/dotnet/test.svg",
+          "docs/comparison-matrix.red",
+          "docs/dark.css",
+          "docs/emit-block.r",
+          "docs/emit-reds-api-html.r",
+          "docs/emit-reds-api-md2.r",
+          "docs/generate-reds-api.r",
+          "docs/light.css",
+          "docs/make-to-matrix-html.r",
+          "docs/makedoc2.r",
+          "docs/red-system-quick-test.txt",
+          "docs/red-system-specs.txt",
+          "docs/template.html",
+          "docs/to-matrix-template.html",
+          "docs/to-matrix.html",
+          "docs/to-matrix.red"
+        ],
+        "method": "compared git blob SHA-1 per identical path between workspace HEAD tree and upstream v0.6.4 tree"
+      }
+    }
+  },
+  "workspace_vs_upstream_v0.6.4": {
+    "upstream_ref": "red/red tag v0.6.4",
+    "upstream_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
+    "upstream_source_files": 530,
+    "workspace_source_files_present_in_upstream": 248,
+    "differing_content_files": 253,
+    "differing_examples": [
+      "BSD-3-License.txt",
+      "boot.red",
+      "build/README.md",
+      "build/git-version.r",
+      "build/includes.r",
+      "compiler.r",
+      "docs/conversion-matrix.xlsx",
+      "environment/actions.red",
+      "environment/console/CLI/POSIX.reds",
+      "environment/console/CLI/console.red",
+      "environment/console/CLI/input.red",
+      "environment/console/CLI/win32.reds",
+      "environment/console/GUI/core.red",
+      "environment/console/GUI/gui-console.red",
+      "environment/console/GUI/highlight.red",
+      "environment/console/GUI/old/terminal.reds",
+      "environment/console/GUI/old/windows.reds",
+      "environment/console/GUI/settings.red",
+      "environment/console/auto-complete.red",
+      "environment/console/engine.red"
+    ],
+    "in_workspace_only": 334,
+    "in_workspace_only_examples": [
+      "compiler/.gitkeep",
+      "dialects/.gitkeep",
+      "docs/ARCHITECTURE-INDEX.md",
+      "docs/DEPENDENCY-MAP.md",
+      "docs/FILE-INDEX.md",
+      "docs/IMPLEMENTATION-BASELINE.md",
+      "docs/PROJECT-INVARIANTS.md",
+      "docs/README.md",
+      "docs/REPOSITORY-NAVIGATION.md",
+      "docs/REPOSITORY-RECONSTRUCTION-REPORT.md",
+      "docs/RFC-ARTIFACT-GROUPS.md",
+      "docs/RFC-INDEX.md",
+      "docs/Red-Cognition_Agent_Prompt_Pack.md",
+      "docs/SOURCE-INDEX.md",
+      "docs/WIKI-INDEX.md",
+      "docs/audits/RED-COGNITION-DEEP-ANALYSIS-2026-08-13.md",
+      "docs/audits/REPOSITORY-INTEGRITY-RECONCILIATION-2026-08-13.md",
+      "docs/governance/ratification-registry.json",
+      "docs/governance/ratification-registry.md",
+      "docs/implementation/concurrency-model.md"
+    ],
+    "missing_from_workspace": 29,
+    "missing_examples": [
+      "bridges/dotnet/README.md",
+      "bridges/dotnet/bridge.red",
+      "bridges/dotnet/test-svg.red",
+      "bridges/dotnet/test-wpf.red",
+      "bridges/dotnet/test.svg",
+      "docs/comparison-matrix.red",
+      "docs/dark.css",
+      "docs/emit-block.r",
+      "docs/emit-reds-api-html.r",
+      "docs/emit-reds-api-md2.r",
+      "docs/generate-reds-api.r",
+      "docs/light.css",
+      "docs/make-to-matrix-html.r",
+      "docs/makedoc2.r",
+      "docs/red-system-quick-test.txt",
+      "docs/red-system-specs.txt",
+      "docs/template.html",
+      "docs/to-matrix-template.html",
+      "docs/to-matrix.html",
+      "docs/to-matrix.red"
+    ],
+    "method": "compared git blob SHA-1 per identical path between workspace HEAD tree and upstream v0.6.4 tree"
+  }
+}

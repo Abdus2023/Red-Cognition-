@@ -1,0 +1,620 @@
+{
+  "collected_at": "2026-08-31T17:29:24Z",
+  "archives": [
+    {
+      "archive": "artifacts/red/releases/red-0.6.6.tar.gz",
+      "archive_sha256": "23a02a53e0dcbf8da24c639014685de935d74c19a0b5b70a4ecade7b917bb63b",
+      "project": "RED",
+      "extracted_to": "artifacts/derived/extracted/red-0.6.6",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "red-0.6.6"
+      ],
+      "bootstrap_build_files": {
+        "red.r": {
+          "present": true,
+          "sha256": "c49f56412728d1e88e70b12b6ff9c63fb2bd548c5d880670ba5e0b468d706819",
+          "size": 21705
+        },
+        "compiler.r": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "lexer.r": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "build/build.md": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "build/README.md": {
+          "present": true,
+          "sha256": "0b44d43d52a8c4c2c5219798aa7cce7e4d49f682b610bb372c7ed9cfc6c996f4",
+          "size": 1204
+        },
+        "quick-test/run-all.r": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "run-all.r": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        }
+      },
+      "version_evidence": [
+        {
+          "path": "encapper/version.r",
+          "content": "0.6.6",
+          "sha256": "1076e9b67dd8c5b0721effc09f34012572c0fb636999a6d43fdfd94912cd2f6d"
+        }
+      ],
+      "license_evidence": [
+        {
+          "path": "BSD-3-License.txt",
+          "sha256": "e64d257131093ad15b757d19181e02e3a48a2cccabe14aebf153e91a5a3735a8",
+          "size": 1512,
+          "head": "Copyright (c) 2011-2019 Red Foundation.\nAll rights reserved."
+        },
+        {
+          "path": "BSL-License.txt",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "size": 1338,
+          "head": "Boost Software License - Version 1.0 - August 17th, 2003\n\nPermission is hereby granted, free of charge, to any person or organization"
+        },
+        {
+          "path": "README.md",
+          "sha256": "d329c0334f6783fd35d061cd24b2ae47e6b127f2707133425bb31c2fbcc21842",
+          "size": 15956,
+          "head": "[![Join the chat at https://gitter.im/red/red](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/red/red?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![Windows build 2](https://github.com/red/red/workflows/Windows/badge.svg)](https://github.com/red/red/actions?query=workflow%3AWindows)\n[![Linux build 2](https://github.com/red/red/workflows/Linux-x86/badge."
+        },
+        {
+          "path": "bridges/java/README.md",
+          "sha256": "8169d4a432bf9f21039f5fa25e56e0634754a19aa75618c0436929684550cdba",
+          "size": 1215,
+          "head": "Red/Java Bridge\n------------------------"
+        },
+        {
+          "path": "build/README.md",
+          "sha256": "0b44d43d52a8c4c2c5219798aa7cce7e4d49f682b610bb372c7ed9cfc6c996f4",
+          "size": 1204,
+          "head": "Building Red binaries\n------------------------"
+        },
+        {
+          "path": "libRed/README.md",
+          "sha256": "84f6ec8947ed8ca945fa27a933faa93d6b571ab27c3b4dee8451b43eb5413c6b",
+          "size": 325,
+          "head": "### Generating .LIB file for Windows platform\n\n* Using Visual Studio Tools"
+        },
+        {
+          "path": "system/bridges/java/README.md",
+          "sha256": "90230ae28292234a91ed0244dbf96c0485692c90c1dbad2d11a78b682e5409ff",
+          "size": 900,
+          "head": "JNI low-level binding\n------------------------"
+        },
+        {
+          "path": "tests/libRed/README.md",
+          "sha256": "576f5187639dd74ec3305ca5b819a8e0de9695b42b0d0008370a7387aa70f59b",
+          "size": 1186,
+          "head": "### LibRed tests and demo files\n\nDownload `test.xlsm` and `libRed.dll` files and put them in a folder together, then you can run the Excel demos."
+        }
+      ],
+      "file_count": 673
+    },
+    {
+      "archive": "artifacts/red/releases/red-0.6.4.tar.gz",
+      "archive_sha256": "d69d69f332cc14886177cb3bff8650bc4220828ae90836ebcd815af3a88a5045",
+      "project": "RED",
+      "extracted_to": "artifacts/derived/extracted/red-0.6.4",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "red-0.6.4"
+      ],
+      "bootstrap_build_files": {
+        "red.r": {
+          "present": true,
+          "sha256": "e5f303bf378c7911cd13152acb5371c4215dc90fab97d5230ba271a955ea860a",
+          "size": 24551
+        },
+        "compiler.r": {
+          "present": true,
+          "sha256": "e401a8af98d67de36b0d0cdeb6150de917e228f376491a74edcbefc09236c565",
+          "size": 120880
+        },
+        "lexer.r": {
+          "present": true,
+          "sha256": "61f4de163465aeffb8ef7df08e90c87e199d9310fa71e1806b77840f2c8d89aa",
+          "size": 23966
+        },
+        "build/build.md": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "build/README.md": {
+          "present": true,
+          "sha256": "5c24aa0e4bfc30c2815c953142994c480dd9c860c50f9fc1998121dc17cc8bda",
+          "size": 1187
+        },
+        "quick-test/run-all.r": {
+          "present": false,
+          "sha256": null,
+          "size": null
+        },
+        "run-all.r": {
+          "present": true,
+          "sha256": "ffe3121730bab868a1f8d670aa06648f4996150f4279a2bf584d6372f41f2b41",
+          "size": 3013
+        }
+      },
+      "version_evidence": [
+        {
+          "path": "version.r",
+          "content": "0.6.4",
+          "sha256": "a5cb92c82d34920b485300eb64636ea6d3d906e29ac91b55c63e88d7c993429c"
+        }
+      ],
+      "license_evidence": [
+        {
+          "path": "BSD-3-License.txt",
+          "sha256": "09b59353667f45705e4060126efc838ca1f954fe95723548f556f15d2f13e026",
+          "size": 1510,
+          "head": "Copyright (c) 2011, Nenad Rakocevic.\nAll rights reserved."
+        },
+        {
+          "path": "BSL-License.txt",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "size": 1338,
+          "head": "Boost Software License - Version 1.0 - August 17th, 2003\n\nPermission is hereby granted, free of charge, to any person or organization"
+        },
+        {
+          "path": "README.md",
+          "sha256": "67e5e00b0be69534c6a1da6fb7c62d1b9f1213dece985b493b63ba11b138e706",
+          "size": 11740,
+          "head": "[![Join the chat at https://gitter.im/red/red](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/red/red?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![Windows build](https://bs.red-lang.org/windows.svg)](https://ci.appveyor.com/project/red/red/branch/master)\n[![macOS build](https://bs.red-lang.org/macos.svg)](https://travis-ci.org/red/red)"
+        },
+        {
+          "path": "bridges/dotnet/README.md",
+          "sha256": "e0d328722d0b9bcfd6e164f08d97f402e1722d37ae0789b45bcc1919cc67ae8f",
+          "size": 1244,
+          "head": "Red/.NET Bridge\n------------------------"
+        },
+        {
+          "path": "bridges/java/README.md",
+          "sha256": "8169d4a432bf9f21039f5fa25e56e0634754a19aa75618c0436929684550cdba",
+          "size": 1215,
+          "head": "Red/Java Bridge\n------------------------"
+        },
+        {
+          "path": "build/README.md",
+          "sha256": "5c24aa0e4bfc30c2815c953142994c480dd9c860c50f9fc1998121dc17cc8bda",
+          "size": 1187,
+          "head": "Building Red binaries\n------------------------"
+        },
+        {
+          "path": "libRed/README.md",
+          "sha256": "84f6ec8947ed8ca945fa27a933faa93d6b571ab27c3b4dee8451b43eb5413c6b",
+          "size": 325,
+          "head": "### Generating .LIB file for Windows platform\n\n* Using Visual Studio Tools"
+        },
+        {
+          "path": "system/bridges/java/README.md",
+          "sha256": "90230ae28292234a91ed0244dbf96c0485692c90c1dbad2d11a78b682e5409ff",
+          "size": 900,
+          "head": "JNI low-level binding\n------------------------"
+        },
+        {
+          "path": "tests/libRed/README.md",
+          "sha256": "576f5187639dd74ec3305ca5b819a8e0de9695b42b0d0008370a7387aa70f59b",
+          "size": 1186,
+          "head": "### LibRed tests and demo files\n\nDownload `test.xlsm` and `libRed.dll` files and put them in a folder together, then you can run the Excel demos."
+        }
+      ],
+      "file_count": 538
+    },
+    {
+      "archive": "artifacts/rebol/source/rebol-rebol-25033f897.tar.gz",
+      "archive_sha256": "ffe75f829fd414aa61466bb357362c9df02849cc4daf5febefc3195074761244",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/rebol-rebol-25033f897",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "rebol-25033f897b2bd466068d7663563cd3ff64740b94"
+      ],
+      "version_evidence": [
+        {
+          "path": "src/boot/version.r",
+          "content": "2.101.0.3.1",
+          "sha256": "a8e843fd3ca8bce29a7998331e2eaac3dcab6a5b9e26c1f3cafb0928898b7a3f"
+        }
+      ],
+      "license_evidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "size": 11358,
+          "head": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/"
+        }
+      ],
+      "file_count": 220
+    },
+    {
+      "archive": "artifacts/rebol/source/ren-c-e31d5698d.tar.gz",
+      "archive_sha256": "273627e44f19e12e64efe5efa67043ffe83a1a45c880576a5c85b750873c26f8",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/ren-c-e31d5698d",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "ren-c-e31d5698d73678d797df319eb855b3995716d9f1"
+      ],
+      "version_evidence": [
+        {
+          "path": "src/specs/version.r",
+          "content": "2.102.0.0.0",
+          "sha256": "415d5bc11f3f037145025a5d2e87e1089549dddb7fbd0e082665bd85c4d3cfe2"
+        }
+      ],
+      "license_evidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "1a45b1d0a8603dfe2cfc644f9dab970b1762f92babe2aac6eb2f5d4572c4a680",
+          "size": 7653,
+          "head": "GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007"
+        },
+        {
+          "path": "README.md",
+          "sha256": "a64f3a3e3f64eafb2370ac9503b8a82e08585c601da669b05368ff51575d0386",
+          "size": 8301,
+          "head": "![Ren-C Logo][100]\n\n# Ren-C"
+        },
+        {
+          "path": ".github/workflows/README.md",
+          "sha256": "9fda084e4a15f47c3ef6b2c8f99cbe25548585d45e5278da3357292f2ff6bc33",
+          "size": 17924,
+          "head": "# GitHub Workflows for the Ren-C Project\n\nThis file documents the conventions used for the Continuous Integration service"
+        },
+        {
+          "path": "configs/README.md",
+          "sha256": "82541b94d48fca400f743d6cd160d9010de8b03053adb6e5a351ddca3959650f",
+          "size": 2502,
+          "head": "## Rebmake Configuration Files For Various Builds\n\nThe quirky and Byzantine Rebmake system actually had a fairly simple idea"
+        },
+        {
+          "path": "extensions/README.md",
+          "sha256": "eab9252f7b433c7744f0dd210f9a065e9ed55ad49f01e54d98b9b583c8ab1622",
+          "size": 5672,
+          "head": "# Rebol Extensions\n\nExtensions are like modules that can implement some of their functionality"
+        },
+        {
+          "path": "extensions/clipboard/README.md",
+          "sha256": "91c61109799da3ffdc934f868f3232fd7495f12f456db7047952c7e58ec7abf6",
+          "size": 827,
+          "head": "The `clipboard://` port is only implemented for Windows:\n\n[#2029: Extend clipboard:// implementation to all supported platforms](https://github.com/rebol/rebol-issues/issues/2029)"
+        },
+        {
+          "path": "extensions/console/README.md",
+          "sha256": "13806ba5d80bace9673582e934f8fdffb7f91a1f1e061f1f94d2f323b855da17",
+          "size": 184,
+          "head": "The console extension is designed to factor out the interactive and\nskinnable REPL into a function, whose I/O dependencies are on the\nability to gather INPUT and WRITE-STDOUT/PRINT."
+        },
+        {
+          "path": "extensions/crypt/README.md",
+          "sha256": "6149085ba3158859d088d731bc2da5acc98a9294a621cbe52bae66bb2e226c9a",
+          "size": 4011,
+          "head": "## Cryptography Extension\n\nCopyright (C) 2012 Saphirion AG"
+        },
+        {
+          "path": "extensions/debugger/README.md",
+          "sha256": "78d789db7d46ad7630125b149afdc4124d5e1ba055968ca317ec1c52fc4a8ad8",
+          "size": 1566,
+          "head": "> **Note**: Interactive debugging is a work in progress; R3-Alpha had no\n> breakpoint ability or otherwise, so this is all new."
+        },
+        {
+          "path": "extensions/dns/README.md",
+          "sha256": "9ee3ab05fae02114222554fb88dd2c26afad13872a3f1006649447721fd83400",
+          "size": 1630,
+          "head": "## DNS Extension\n\nR3-Alpha's DNS \"port\" was written to do forward and reverse resolves on"
+        },
+        {
+          "path": "extensions/environment/README.md",
+          "sha256": "f4360cbbbddec26c7f806627b5b0d78c46f4a37aa169eb8f32f098c8bcde10b3",
+          "size": 661,
+          "head": "# ENVIRONMENT! Extension\n\nThis adds the ENVIRONMENT! datatype, which is a psuedo-object that supports the"
+        },
+        {
+          "path": "extensions/filesystem/README.md",
+          "sha256": "d391854010f9b1b12683899fb1d57177b76e87e85b24459d39c6ea2a1da47326",
+          "size": 448,
+          "head": "## Filesystem Extension\n\nThis is a simple extraction of the R3-Alpha Windows and POSIX code for files"
+        },
+        {
+          "path": "extensions/javascript/README.md",
+          "sha256": "9378bb2c205615af5c195090b860ccf747184a5ff2bd98b39a3d0283bf14943d",
+          "size": 5579,
+          "head": "## JavaScript Extension\n\nThe JavaScript extension is designed to be used with the \"Emscripten\" build"
+        },
+        {
+          "path": "extensions/network/README.md",
+          "sha256": "a132a0d7f70b5659bbeb1b478dffc5f23b21e1c49db1246b0305660d910bed52",
+          "size": 21,
+          "head": "## Network Extension"
+        },
+        {
+          "path": "extensions/process/README.md",
+          "sha256": "8b8bfd4c2609529946944e4218c2770a95c40068b2274d19504f0b88fefeea9d",
+          "size": 561,
+          "head": "This extension implements a process spawning interface known as CALL.  CALL was \nin Rebol2, but was not a feature released in the open source R3-Alpha:"
+        },
+        {
+          "path": "extensions/stdio/README.md",
+          "sha256": "06da03dc4e423451f9e212a6529d081c942bda9309c3449e62ffbf6ac204f0c2",
+          "size": 44,
+          "head": "## Standard Input / Standard Output Device"
+        },
+        {
+          "path": "extensions/tcc/README.md",
+          "sha256": "2b8d0a4682dfee61e5bb6ec429c36e7ec7db9521cff06a452e4d37e8026b62f5",
+          "size": 11869,
+          "head": "## TCC User Natives Extension\n\nCopyright (C) 2016 Atronix Engineering"
+        },
+        {
+          "path": "extensions/time/README.md",
+          "sha256": "2a6f7c9af0b109eba490b93137624b07a631c2cb3e673167408e62234de7a9a9",
+          "size": 1079,
+          "head": "## Time Extension\n\nThe C language has standard time functions:"
+        },
+        {
+          "path": "extensions/utf/README.md",
+          "sha256": "e2c89ed75b6976c75ede00a62186842cccac498dc743ffd9326fd41f208b5878",
+          "size": 675,
+          "head": "## UTF-16/UTF-32 HANDLING EXTENSION\n\nR3-Alpha had an incomplete model for doing codecs, that required C coding"
+        },
+        {
+          "path": "extensions/view/README.md",
+          "sha256": "93366c9d76a2b7f414c728b926e2f3d28f56adca4425b417f8222edf077d6447",
+          "size": 352,
+          "head": "This extension is a placeholder for material that is being removed from Rebol\nCore and is relevant to a GUI environment."
+        },
+        {
+          "path": "prebuilt/README.md",
+          "sha256": "5a1a404d6dd9bd15df8d8421504c12f0132f266f1ca408e43f1a3da82ddee6fa",
+          "size": 1656,
+          "head": "## DIRECTORY FOR DOWNLOADING PRE-BUILT BOOTSTRAP REBOL EXECUTABLES TO\n\nBy convention, this `prebuilt` directory is where Rebol executables are kept"
+        },
+        {
+          "path": "src/core/functionals/README.md",
+          "sha256": "63bb06963ab01ff207c19fc94a0350717d03e118b74449ded329000479ee2521",
+          "size": 3133,
+          "head": "# \"FUNCTIONALS\" - Functions used to create other functions\n\nThis embraces the computer-science term \"functional\" for being [\"synonymous"
+        },
+        {
+          "path": "src/include/README.md",
+          "sha256": "e1933b3e6f15166aa212468f30e26b32914eca18bbce8e1ad0eb8b09fdc4251a",
+          "size": 1295,
+          "head": "## src/include/*\n\nThis directory contains include files for code that is written to the"
+        },
+        {
+          "path": "src/include/casts/README.md",
+          "sha256": "32b4ac58ffdc58f9db81a2b36f356ccc2e30d0c25b73f3a5d2e8b59d3a523a7a",
+          "size": 2256,
+          "head": "# cast() Validation Hooks for Ren-C Types\n\nIn C, `cast(Type, expression)` macros just turn into ordinary C parentheses"
+        },
+        {
+          "path": "src/include/enums/README.md",
+          "sha256": "06e4618852df3065e0fabc4a6fe3710bf34e2d3e16c889beb777221c5d9d0d59",
+          "size": 273,
+          "head": "## src/include/enums/*\n\nThis directory contains include files that wrap enumerated types.  Many of"
+        },
+        {
+          "path": "src/include/structs/README.md",
+          "sha256": "2e11b86cb25dcbf55047ba8872655e7f9ae5e9f582b8c40f73f02ac73b9a9198",
+          "size": 1495,
+          "head": "## Structure And Flag Definitions\n\nThis folder is meant to contain very little *code* (e.g. few functions or"
+        },
+        {
+          "path": "src/main/README.md",
+          "sha256": "fca61e799940574d2735aad22a1011c6689c12dc40d65b28e95c7b790ce44c53",
+          "size": 890,
+          "head": "## MAIN \"R3.EXE\" APPLICATION CODE\n\nThis directory contains %main.c.  It is a C program that does a very minimal"
+        },
+        {
+          "path": "src/specs/README.md",
+          "sha256": "df49e62efcac32aded2861c6226cc7810a7151cc00f7e25c2101016a96f4603f",
+          "size": 1121,
+          "head": "# SPECS DIRECTORY\n\nThis directory is for Rebol-syntax files that declaratively inform the building"
+        },
+        {
+          "path": "tests/LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "size": 11358,
+          "head": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/"
+        },
+        {
+          "path": "tests/README.md",
+          "sha256": "297cfe7231981c57ffed5302228758b808578e3b2181535f676ce24741741e06",
+          "size": 11545,
+          "head": "> These tests originated from the repository [on GitHub][1].  It was originally the work of Carl Sassenrath, Ladislav Mecir, Andreas Bolka, Brian Hawley, and John K.\n>\n> The Ren-C fork was moved from a submodule directly into the %tests/ subdirectory.  This is because development on the original repository ceased, and it makes keeping the tests in sync with the Ren-C version easier."
+        },
+        {
+          "path": "tests/cypress/README.md",
+          "sha256": "64159b553aaf2594dfe6a5f95de6cc418db3a2e38fa6e53a32753490356c03a9",
+          "size": 393,
+          "head": "This cypress test is special, because the e2e directory starts out empty, but it\ngathers tests out of URLs mentioned in %e2e/README.md"
+        },
+        {
+          "path": "tests/cypress/e2e/README.md",
+          "sha256": "97243e700cfe8b5e4baae0a7a8c6346f37330bab780522de008b791343b9aecb",
+          "size": 499,
+          "head": "This directory is where Cypress looks for the *.cy.js files that it will run\nas part of the greenlighting tests.  We don't commit files here--but rather, the\nGitHub workflow pulls them from these locations:"
+        },
+        {
+          "path": "tests/parse/README.md",
+          "sha256": "05694f8139a48944c6c84e3d9f6bfa66bec6973868511c421d7fe5f8024eee84",
+          "size": 2184,
+          "head": "This directory contains tests for several parse variants.\n\nSome of these tests were copied or adapted from %parse-test.red"
+        },
+        {
+          "path": "tools/README.md",
+          "sha256": "f138bae903f86fa370acf400b58f3badd6e68567b265596eaad607d157a173b6",
+          "size": 36,
+          "head": "These are tools for building Rebol."
+        },
+        {
+          "path": "tools/bash/README.md",
+          "sha256": "d8fb05ab754c5b24b9f0acac4d988c28b31778f32d848245c42c6f7c5ce72ecf",
+          "size": 2185,
+          "head": "# Stylized Bash Helper Scripts\n\nLong term, a goal is to use the Ren-C interpreter itself to perform most"
+        }
+      ],
+      "file_count": 1082
+    },
+    {
+      "archive": "artifacts/rebol/source/rebolsource-r3-98cdfcd6e.tar.gz",
+      "archive_sha256": "90932ec932e5f4dece8157821d14510f3c61b9ad53b28c9aafe28be3238c4b69",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/rebolsource-r3-98cdfcd6e",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "r3-98cdfcd6e439390756868b390b0ff8aa01d84551"
+      ],
+      "version_evidence": [
+        {
+          "path": "src/boot/version.r",
+          "content": "2.101.0.3.1",
+          "sha256": "a8e843fd3ca8bce29a7998331e2eaac3dcab6a5b9e26c1f3cafb0928898b7a3f"
+        }
+      ],
+      "license_evidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "size": 11358,
+          "head": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/"
+        }
+      ],
+      "file_count": 221
+    },
+    {
+      "archive": "artifacts/rebol/source/Oldes-Rebol3-d5b237cea.tar.gz",
+      "archive_sha256": "45ab2a0712f3eb8abf39e739ab60860e6c228b6817649bfe86aeb3356d285fbf",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/Oldes-Rebol3-d5b237cea",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "Rebol3-d5b237cea60d06b72c59bb6dbed0022b482f4c57"
+      ],
+      "version_evidence": [],
+      "license_evidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "size": 11358,
+          "head": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/"
+        },
+        {
+          "path": "README.md",
+          "sha256": "06d941bc3257a777d9b7f051ee472948147a129f7b45c62b55317005f9f7a19f",
+          "size": 10828,
+          "head": "[![rebol-3](https://github.com/user-attachments/assets/8b71fff1-b421-4254-a1c0-eea4f4791cc5)](https://rebol.tech)\n\n[![Rebol CI](https://github.com/Oldes/Rebol3/actions/workflows/main.yml/badge.svg)](https://github.com/Oldes/Rebol3/actions/workflows/main.yml)"
+        },
+        {
+          "path": "make/README.md",
+          "sha256": "04b3612db9eabc082890fb9e6b52d31a7631366c9bcc9e93da8da1aa165b325e",
+          "size": 930,
+          "head": "# How to build Rebol 3\n\n## Pre-Requisites"
+        },
+        {
+          "path": "rosetta/README.md",
+          "sha256": "2abdd6f4899952fc1026923c77d8c08547998ca7e8ebb99c1520aa195c8fcf74",
+          "size": 487,
+          "head": "[![rebol-rosettacode](https://github.com/user-attachments/assets/b74b23f8-a992-4d90-b749-f4872cf16de8)](https://github.com/Oldes/Rebol-RossetaCode)\n# Rosetta Code"
+        },
+        {
+          "path": "src/core/lz4/LICENSE",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c",
+          "size": 1311,
+          "head": "LZ4 Library\nCopyright (c) 2011-2020, Yann Collet\nAll rights reserved."
+        },
+        {
+          "path": "src/core/deflate/COPYING",
+          "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a",
+          "size": 1078,
+          "head": "Copyright 2016 Eric Biggers\nCopyright 2024 Google LLC"
+        },
+        {
+          "path": "src/core/mbedtls/README.md",
+          "sha256": "1d90318a49db46d64f34ce641482dc28ff080e3e6f2aa36a498b4b5cfa0c0cdf",
+          "size": 134,
+          "head": "In this directory is cherry-picked code from the Mbed TLS library.\nUsed version: 3.5.2 (https://github.com/Mbed-TLS/mbedtls/releases)"
+        }
+      ],
+      "file_count": 900
+    },
+    {
+      "archive": "artifacts/rebol/documentation/rebol-syntax-4ff113963.tar.gz",
+      "archive_sha256": "167850465379eced0f95cb5c2629d497cba466705b292b91a5e23950028a6c8a",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/rebol-syntax-4ff113963",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "rebol-syntax-4ff11396312d0ccd8490191571206f628be79e8e"
+      ],
+      "version_evidence": [],
+      "license_evidence": [
+        {
+          "path": "README.md",
+          "sha256": "839e2d6cca1925e10d831e774ce5550da7bca866cc16ec6093170fdf1f32c90b",
+          "size": 475,
+          "head": "This project aims to produce a formal specification of [REBOL][1] syntax. The\nmethod of specification used is REBOL 3's variant of the [PARSE dialect][2]."
+        }
+      ],
+      "file_count": 4
+    },
+    {
+      "archive": "artifacts/rebol/tests/rebol-test-409ef5c22.tar.gz",
+      "archive_sha256": "681a68b89c4c285d930d629865e9f6db7b4b2c066f3b3d3cff076bc205fddf99",
+      "project": "REBOL",
+      "extracted_to": "artifacts/derived/extracted/rebol-test-409ef5c22",
+      "extracted_at": "2026-08-31T17:29:24Z",
+      "note": "extraction is a derived copy for inspection; preserved archive above is the acquisition original",
+      "top_level": [
+        "rebol-test-409ef5c2270a766a6262d883e6fc5ea9d1ec6234"
+      ],
+      "version_evidence": [],
+      "license_evidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "size": 11358,
+          "head": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/"
+        }
+      ],
+      "file_count": 27
+    }
+  ],
+  "previous_session_lead": {
+    "role": "prior-session artifact found inside repo zip artifacts/archives/red-cognition-test-artifacts.zip; no acquisition URL recorded -> provenance UNKNOWN",
+    "provenance_status": "UNVERIFIED",
+    "container_zip_sha256": "56ce3c472cadf89f800d395c861f5fa49e59d3101b1092e8f2a71b54f48db081",
+    "sha256": "1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6",
+    "size": 369128,
+    "elf": {
+      "magic": "\u007fELF",
+      "class": "ELF32",
+      "endian": "LE"
+    },
+    "execution_feasibility": "ELF32 on x86_64-only host without i386 loader -> execution NOT attempted"
+  }
+}

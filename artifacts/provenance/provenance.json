@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-31T17:33:52Z",
+  "graph": [
+    {
+      "relationship": "release->tag",
+      "source": "GitHub release red/red v0.6.6 (published 2025-03-19)",
+      "target": "tag v0.6.6",
+      "evidence": "github-discovery.json releases[].tag_name=v0.6.6; target_commitish=master",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag->commit",
+      "source": "tag v0.6.6",
+      "target": "commit 6942c7a021253150c3e3cf90428305892340db03",
+      "evidence": "git rev-parse v0.6.6^{commit} in blobless clone (git-collection.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "commit->source-tree",
+      "source": "commit 6942c7a021253150c3e3cf90428305892340db03",
+      "target": "source tree (673 entries, red__v0.6.6.lsr)",
+      "evidence": "git ls-tree -r v0.6.6 deterministic manifest",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "source-tree->archive",
+      "source": "tree of commit 6942c7a0...",
+      "target": "artifacts/red/releases/red-0.6.6.tar.gz",
+      "evidence": "codeload.github.com/red/red/tar.gz/refs/tags/v0.6.6 (download pinned to tag->commit); version evidence encapper/version.r=0.6.6 inside",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->binary",
+      "source": "red-0.6.6.tar.gz tree (commit 6942c7a0...)",
+      "target": "artifacts/red/tests/libRed-v0.6.6/libRed.dll",
+      "evidence": "git blob SHA-1 26e21ac96ad441a6888052538f8c468b50a67105 == git hash-object of downloaded bytes (verified)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-tag->fork-tree",
+      "source": "red/red tag v0.6.4 (commit 755eb943...)",
+      "target": "workspace fork tree 742181a8...",
+      "evidence": "blob-SHA comparison: 248/530 upstream source files byte-identical; 253 differ; 334 fork-only; upstream rejects ref 742181a (not present)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-repo->historical-repo",
+      "source": "rebol/rebol master (25033f89..., 2014-03-03)",
+      "target": "rebolsource/r3 HEAD (98cdfcd6...)",
+      "evidence": "git merge-base(rebolsource_r3 HEAD, rebol/rebol master) == 25033f89... -> rebol/rebol master is ancestor of rebolsource/r3 HEAD",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "historical-repo->continuation",
+      "source": "rebolsource/r3 (98cdfcd6...)",
+      "target": "metaeducation/ren-c HEAD (e31d5698d...)",
+      "evidence": "git merge-base(ren-c HEAD, rebolsource/r3 master) == d5d6908f... (2015-04-14); 10176 ren-c commits after fork point; GitHub metadata parent=rebolsource/r3",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "upstream-repo->fork",
+      "source": "rebol/rebol master (25033f89...)",
+      "target": "Oldes/Rebol3 HEAD (d5b237ce...)",
+      "evidence": "git merge-base(Oldes_Rebol3 HEAD, rebol/rebol master) == 25033f89... -> fork of official R3 master",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-text-identity",
+      "source": "rebol/rebol LICENSE (sha256 c95bae1d...)",
+      "target": "rebolsource/r3, rebol-test, Oldes/Rebol3 LICENSE files",
+      "evidence": "identical SHA-256 of LICENSE file content in all four archives (source-inspection.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "license-text-divergence",
+      "source": "rebolsource/r3 (Apache-2.0)",
+      "target": "metaeducation/ren-c (LGPL-3.0)",
+      "evidence": "ren-c LICENSE sha256 1a45b1d0... = GNU LGPL v3 text; differs from lineage Apache-2.0",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bootstrap-claim",
+      "source": "red/red README (v0.6.4 line 12; v0.6.6 line 24)",
+      "target": "Rebol2 interpreter required during bootstrap phase",
+      "evidence": "verbatim: 'except for a Rebol2 interpreter, required during the bootstrap phase' (v0.6.4) / 'required during the alpha stage' (v0.6.6); red.r + build/ present in trees",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bootstrap-status",
+      "source": "Red bootstrap chain",
+      "target": "BOOTSTRAP_CLAIMED + BOOTSTRAP_SOURCE_PRESENT",
+      "evidence": "claim documented by upstream; build scripts present; NOTHING executed -> BOOTSTRAP_EXECUTED/REPRODUCED NOT established",
+      "status": "PARTIAL"
+    },
+    {
+      "relationship": "no-release-assets",
+      "source": "GitHub releases of red/red (v0.6.6, v0.6.4, v0.6.3)",
+      "target": "assets=0",
+      "evidence": "github-discovery.json: all three releases have empty assets arrays; binaries are distributed via official site (blocked from this environment)",
+      "status": "ESTABLISHED"
+    }
+  ]
+}
