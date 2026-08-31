@@ -399,6 +399,13 @@
       "target": "upstream HEADs at stage 16",
       "evidence": "0/11 repos advanced since collection; pinned archives unaffected (manifests/upstream-drift.json)",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "identification",
+      "source": "rebol-2.7.8 lead (1c902e0f\u2026)",
+      "target": "REBOL/Core 2.7.8.4.3 (6-Jan-2011) \u2014 official build 278-4-3 identity",
+      "evidence": "embedded banner strings + ELF32/i386 header; static analysis only; identification is NOT attribution",
+      "status": "PARTIAL"
     }
   ]
 }

@@ -155,6 +155,13 @@
       "result": "NETWORK_BLOCKED",
       "detail": "curl exit 52",
       "attempted_at": "2026-08-31T18:02:57Z"
+    },
+    {
+      "url": "https://static.red-lang.org/tmp/rebol",
+      "purpose": "REBOL interpreter used by official Red CI (v0.6.4 .travis.yml:89)",
+      "result": "NETWORK_BLOCKED",
+      "detail": "curl exit 35",
+      "attempted_at": "2026-08-31T18:22:46Z"
     }
   ],
   "note": "earlier /pub/platforms/ targets came from outdated historical docs; the pattern confirmed by official red/web-red source and all distro recipes is /downloads/v278/"

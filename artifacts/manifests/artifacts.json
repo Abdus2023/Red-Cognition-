@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 110,
+  "record_count": 112,
   "artifacts": [
     {
       "project": "RED",
@@ -644,14 +644,23 @@
       "provenance_status": "UNVERIFIED",
       "license_status": "MISSING",
       "elf": {
-        "magic": "\u007fELF",
         "class": "ELF32",
-        "endian": "LE"
+        "endian": "LE",
+        "e_type": "EXEC",
+        "e_machine": "i386"
       },
       "integrity_status": "HASHED",
       "execution": "NOT_EXECUTED (ELF32; no i386 runtime on host)",
-      "notes": "held as a lead only; original container zip preserved unchanged in artifacts/archives/",
-      "retrieved_at": "2026-08-31T17:33:52Z"
+      "notes": "LEAD identified via embedded banner as REBOL/Core 2.7.8.4.3 (6-Jan-2011), consistent with the official rebol.com build 278-4-3; provenance remains UNVERIFIED (identification != attribution)",
+      "retrieved_at": "2026-08-31T17:33:52Z",
+      "identification": "REBOL/Core 2.7.8.4.3 (6-Jan-2011), Linux x86 libc6-2.5 build per rebol.com official download table",
+      "identification_method": "STATIC string/ELF-header analysis only \u2014 NOT executed",
+      "embedded_banner": [
+        "2.7.8.4.3",
+        "Copyright 2011 REBOL Technologies",
+        "REBOL/Core 2.7.8.4.3 (6-Jan-2011)"
+      ],
+      "verification_path": "once rebol.com is reachable: download http://www.rebol.com/downloads/v278/rebol-core-278-4-3.tar.gz, extract, compare sha256 of releases/rebol-core/rebol against 1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6 (tarball-level reference hashes for sibling builds 4-2 are already on file)"
     },
     {
       "project": "RELATED",
@@ -2070,6 +2079,36 @@
       "integrity_status": "HASHED",
       "license_status": "n/a",
       "notes": "3 collected / 2 not-collected with reasons"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 17 static identification (banner + ELF header)",
+      "filename": "lead-binary-identification.json",
+      "path": "artifacts/manifests/lead-binary-identification.json",
+      "sha256": "7b3c2bb2a358945b21e1c84ce6e554088580d20bf3390b728066ad4320c8194f",
+      "size": 1169,
+      "retrieved_at": "2026-08-31T18:22:58Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "REBOL/Core 2.7.8.4.3 (6-Jan-2011), Linux x86 libc6-2.5 build per rebol.com official download table \u2014 provenance UNVERIFIED"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 17 header identification of committed fixture binaries",
+      "filename": "fixture-binary-identification.json",
+      "path": "artifacts/manifests/fixture-binary-identification.json",
+      "sha256": "1e6476b2e9872b150192e14d918ce0a6b4433490b5d51ed13fbcdcaeec708d2b",
+      "size": 807,
+      "retrieved_at": "2026-08-31T18:22:58Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "libRed.dll=PE/i386; libstructlib.so=ELF/i386; structlib.dll=PE/i386"
     }
   ]
 }

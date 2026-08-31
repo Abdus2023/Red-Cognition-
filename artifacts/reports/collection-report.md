@@ -517,3 +517,23 @@ _Generated: 2026-08-31T18:20:12Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**. Both verification dimensions available to this environment — archive layer (stage 14, executed reproduction) and metadata layer (this stage, exact regeneration) — are now proven consistent with upstream.
 
+## Continuation Addendum (stage 17 — forensic identification sweep)
+
+_Generated: 2026-08-31T18:22:58Z_
+
+### Lead binary identified via embedded banner (static analysis only)
+
+- The prior-session `rebol-2.7.8` lead self-identifies as **REBOL/Core 2.7.8.4.3 (6-Jan-2011), Linux x86 libc6-2.5 build per rebol.com official download table** (banner: "REBOL/Core 2.7.8.4.3 (6-Jan-2011)", "Copyright 2011 REBOL Technologies"; ELF32 LE i386 EXEC). This **upgrades the lead from filename-claimed to banner-identified**, consistent with the official rebol.com build 278-4-3 — but provenance remains **UNVERIFIED** (identification is not attribution). Verification path recorded: hash-compare against the official 278-4-3 tarball's binary once reachable.
+
+### Fixture binaries header-identified
+
+`libRed.dll` = PE/i386; `libstructlib.so` = ELF/i386; `structlib.dll` = PE/i386 — machine types recorded from headers (no execution).
+
+### CI bootstrap URL formally attempted
+
+- `static.red-lang.org/tmp/rebol` (the interpreter official Red CI downloads, v0.6.4 `.travis.yml:89`): curl exit 35 — blocked, logged as a distinct attempt.
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**; the only UNVERIFIED artifact in the collection is now precisely identified with a concrete one-step verification path.
+
