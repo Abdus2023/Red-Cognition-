@@ -68,6 +68,7 @@ TREE_VERIF = [
     ("red-0.6.6.tar.gz",  "artifacts/red/releases/red-0.6.6.tar.gz",  "red",               "6942c7a021253150c3e3cf90428305892340db03"),
     ("red-0.6.4.tar.gz",  "artifacts/red/releases/red-0.6.4.tar.gz",  "red",               "755eb943ccea9e78c2cab0f20b313a52404355cb"),
     ("red-0.6.5.tar.gz",  "artifacts/red/releases/red-0.6.5.tar.gz",  "red",               "3bafef2203661bbcaafec8b859405ba7235a5981"),
+    ("red-0.6.3.tar.gz",  "artifacts/red/releases/red-0.6.3.tar.gz",  "red",               "6a43c767fa2e85d668b83f749158a18e62c30f70"),
     ("rebol-rebol-25033f897.tar.gz", "artifacts/rebol/source/rebol-rebol-25033f897.tar.gz", "rebol_rebol", "25033f897b2bd466068d7663563cd3ff64740b94"),
     ("ren-c-e31d5698d.tar.gz",       "artifacts/rebol/source/ren-c-e31d5698d.tar.gz",       "metaeducation_ren-c", "e31d5698d73678d797df319eb855b3995716d9f1"),
     ("rebolsource-r3-98cdfcd6e.tar.gz", "artifacts/rebol/source/rebolsource-r3-98cdfcd6e.tar.gz", "rebolsource_r3", "98cdfcd6e439390756868b390b0ff8aa01d84551"),

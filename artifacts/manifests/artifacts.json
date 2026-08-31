@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-31T17:33:52Z",
   "generator": "acquisition-tools/05_finalize.py",
-  "record_count": 41,
+  "record_count": 47,
   "artifacts": [
     {
       "project": "RED",
@@ -859,6 +859,91 @@
     },
     {
       "project": "RED",
+      "version": "0.6.3",
+      "classification": "ARCHIVE",
+      "origin": "https://github.com/red/red (GitHub auto-generated tag archive, codeload)",
+      "url": "https://codeload.github.com/red/red/tar.gz/refs/tags/v0.6.3",
+      "repository": "https://github.com/red/red",
+      "commit": "6a43c767fa2e85d668b83f749158a18e62c30f70",
+      "tag": "v0.6.3",
+      "filename": "red-0.6.3.tar.gz",
+      "path": "artifacts/red/releases/red-0.6.3.tar.gz",
+      "sha256": "2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c",
+      "size": 1748647,
+      "retrieved_at": "2026-08-31T17:53:01Z",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASH_MATCHED",
+      "license_status": "CONFIRMED",
+      "license_evidence": "BSD-3-License.txt + BSL-License.txt in archive tree (v0.6.3)",
+      "notes": "release 'macOS GUI backend' (2017-07-18) exists but carries no assets; collected to complete 0.6.3..0.6.6 series"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 09 registry (git for-each-ref/ls-tree over all tags)",
+      "filename": "red-tags-registry.json",
+      "path": "artifacts/manifests/red-tags-registry.json",
+      "sha256": "6bf9b9c629d1a8dcf7a217f978c46b8564bd0a411827f8111c8b75fcde06f2d5",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "30 tags with commit/tree/date/subject/file-count"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 09 registry",
+      "filename": "oldes-tags-registry.json",
+      "path": "artifacts/manifests/oldes-tags-registry.json",
+      "sha256": "9efbeee606c2e0dddf69d8f6969b0f29bbd707e75a58c539830c7b7c9deeb1d7",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "30 tags registered"
+    },
+    {
+      "project": "RED",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 09 verbatim mining of pinned CI configs (v0.6.4, v0.6.6, v0.7, HEAD)",
+      "filename": "upstream-ci-rebol-urls.json",
+      "path": "artifacts/manifests/upstream-ci-rebol-urls.json",
+      "sha256": "7c74312bc784c30c4bda732df301d1bd71a51c32d8c5e3b25a75e674c21ad906",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "8 CI files carry upstream Rebol bootstrap/download URLs"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 09 in-tree license survey of bundled third-party code",
+      "filename": "oldes-bundled-license-evidence.json",
+      "path": "artifacts/manifests/oldes-bundled-license-evidence.json",
+      "sha256": "d7bb7f730205c148f2a96c113bd717fb4085e15270d0e3dfbbede36ee6d253cb",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "bundles: brotli, deflate, lz4"
+    },
+    {
+      "project": "REBOL",
+      "version": null,
+      "classification": "METADATA",
+      "origin": "stage 09 blob-SHA diff of the two pinned trees",
+      "filename": "rebol-vs-rebolsource-r3-diff.json",
+      "path": "artifacts/manifests/rebol-vs-rebolsource-r3-diff.json",
+      "sha256": "48313049963640c1f4d5cddf9612b51c49d4bed272a907c2d9326ade00dbfeb7",
+      "provenance_status": "VERIFIED",
+      "integrity_status": "HASHED",
+      "license_status": "n/a",
+      "notes": "37 differing files, by_top_dir={'src': 37}"
+    },
+    {
+      "project": "RED",
       "version": "0.6.5",
       "classification": "ARCHIVE",
       "origin": "https://github.com/red/red (GitHub auto-generated tag archive, codeload)",
@@ -875,95 +960,85 @@
       "integrity_status": "HASH_MATCHED",
       "license_status": "CONFIRMED",
       "license_evidence": "BSD-3-License.txt + BSL-License.txt in archive tree (v0.6.5)",
-      "notes": "tag v0.6.5 (2024-02-10) has NO GitHub release; collected to complete the 0.6.x series; relocation of compiler.r/lexer.r to encapper/ happens at this tag",
-      "tree_verification": {
-        "tree_entries": 638,
-        "archive_files": 638,
-        "matched": 638,
-        "mismatched": [],
-        "missing_from_archive": [],
-        "result": "HASH_MATCHED (whole tree)",
-        "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit",
-        "pinned_commit": "3bafef2203661bbcaafec8b859405ba7235a5981"
-      }
+      "notes": "tag v0.6.5 (2024-02-10) has no GitHub release; collected to complete the 0.6.x series"
     },
     {
       "project": "RED",
       "version": null,
       "classification": "METADATA",
-      "origin": "stage 08 blob-sha genealogy across pinned refs (red/red clone)",
+      "origin": "stage 08 genealogy",
       "filename": "red-compiler-relocation.json",
       "path": "artifacts/manifests/red-compiler-relocation.json",
       "sha256": "39ce6f846a23abcec801da324f65e0cd7ad9767089249f6f39c3a1036c23c549",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "compiler.r/lexer.r relocated root->encapper/ at tag v0.6.5; v0.7 (2019) retains root layout"
+      "notes": "root->encapper/ at v0.6.5"
     },
     {
       "project": "RED",
       "version": null,
       "classification": "METADATA",
-      "origin": "stage 08 verbatim quotes with line numbers + file hashes from committed archive trees",
+      "origin": "stage 08 verbatim quotes",
       "filename": "bootstrap-procedure-evidence.json",
       "path": "artifacts/manifests/bootstrap-procedure-evidence.json",
       "sha256": "88c5467799de85756a552a3c67e65e2cdb3a08ef64e3c75783a50e123d0cd906",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "documented build/bootstrap/distribution procedures (v0.6.4, v0.6.6, rebol/rebol README)"
+      "notes": "Rebol2/SDK bootstrap claims"
     },
     {
       "project": "RED_SYSTEM",
       "version": null,
       "classification": "METADATA",
-      "origin": "stage 08 inventory from committed red__v0.6.6.lsr tree manifest",
+      "origin": "stage 08 inventory",
       "filename": "red-system-inventory.json",
       "path": "artifacts/manifests/red-system-inventory.json",
       "sha256": "1f903aa9f3b50e3e58fffab0d5db7b01c918dad89b8c732bf251bc6a9f56390c",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "97 Red/System test files in 13 subdirectories under system/tests/"
+      "notes": "97 test files @ v0.6.6"
     },
     {
       "project": "RED",
       "version": null,
       "classification": "METADATA",
-      "origin": "stage 08 git diff --numstat between upstream v0.6.4 and fork 742181a (detached clone)",
+      "origin": "stage 08 numstat",
       "filename": "fork-diff-magnitudes.json",
       "path": "artifacts/manifests/fork-diff-magnitudes.json",
       "sha256": "128fbdb0039c3d5bb12d2234a9f44193527fa3bbf67c60abc85e690efe844b7e",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "content-diff magnitudes for 258/258 differing files; buckets={'light(<=10)': 67, 'moderate(<=100)': 99, 'heavy(>100)': 84, 'binary': 8}"
+      "notes": "258 differing files analyzed"
     },
     {
       "project": "RELATED",
       "version": null,
       "classification": "METADATA",
-      "origin": "continuation stage 07 (this session)",
+      "origin": "stage 07",
       "filename": "continuation-verification.json",
       "path": "artifacts/manifests/continuation-verification.json",
-      "sha256": null,
+      "sha256": "1269683304e5fbeee93ac7eb58d1567b66cbf9ae30647c9812ebeb3700067158",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "network recheck + archive/tree verification + lineage facts + fork deep-diff + license survey + bootstrap presence"
+      "notes": "10/10 archives whole-tree verified"
     },
     {
       "project": "RED",
       "version": null,
       "classification": "METADATA",
-      "origin": "stage 07 fork deep-diff (git blob SHA comparison)",
+      "origin": "stage 07",
       "filename": "fork-vs-upstream-v0.6.4.json",
       "path": "artifacts/manifests/fork-vs-upstream-v0.6.4.json",
-      "sha256": null,
+      "sha256": "7689d70f9866bc325d7d98d5572384e0216aa1839d3514548bde8e01a55d256d",
       "provenance_status": "VERIFIED",
       "integrity_status": "HASHED",
       "license_status": "n/a",
-      "notes": "251 identical / 258 differing / 609 fork-only / 29 missing vs upstream v0.6.4"
+      "notes": "fork file-level attribution"
     }
   ]
 }

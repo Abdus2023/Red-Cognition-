@@ -182,6 +182,34 @@
       "target": "Rebol2/Rebol-SDK dependency claims",
       "evidence": "verbatim quotes with line numbers + file hashes in manifests/bootstrap-procedure-evidence.json",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "archive->git-tree (whole-tree verification)",
+      "source": "red-0.6.3.tar.gz",
+      "target": "pinned commit 6a43c767fa2e\u2026",
+      "evidence": "git blob SHA-1 of all 503 archive members == git ls-tree blob SHAs of pinned commit",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "ci-evidence",
+      "source": "official red/red CI configs (pinned refs)",
+      "target": "Rebol interpreter download/bootstrap URLs",
+      "evidence": "8 CI files carry upstream URLs, e.g. v0.6.4 .travis.yml: 'curl -o /bin/rebol https://static.red-lang.org/tmp/rebol' (manifests/upstream-ci-rebol-urls.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "bundled-license-evidence",
+      "source": "Oldes/Rebol3 pinned tree (d5b237ce\u2026)",
+      "target": "bundled brotli/deflate/lz4 license material",
+      "evidence": "in-tree survey: license files + source-header copyright lines recorded with hashes (manifests/oldes-bundled-license-evidence.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "tag-registry",
+      "source": "red/red + Oldes/Rebol3 clones",
+      "target": "complete tag registries",
+      "evidence": "30 red tags + 30 Oldes tags with commit/tree/date/subject/file-count (manifests/*-tags-registry.json)",
+      "status": "ESTABLISHED"
     }
   ]
 }

@@ -246,6 +246,12 @@
           "HASH_MATCHED (whole tree)"
         ],
         [
+          "red-0.6.3.tar.gz",
+          "archive files=503",
+          "tree entries=503",
+          "HASH_MATCHED (whole tree)"
+        ],
+        [
           "rebol-rebol-25033f897.tar.gz",
           "archive files=220",
           "tree entries=220",
@@ -310,6 +316,60 @@
           "v0.6.6..v0.7 = 23 commits; v0.7..v0.6.6 = 4939 commits",
           "v0.7 is a diverged 2019 WIP line",
           "RECORDED (facts only; no resolution asserted)"
+        ]
+      ]
+    },
+    {
+      "id": "R13",
+      "artifact": "Upstream CI bootstrap URLs (pinned-tree evidence)",
+      "rows": [
+        [
+          "v0.6.4 .travis.yml",
+          "# Linux: hook up qemu, build 32bit image including curl and rebol",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.6.4 .appveyor.yml",
+          "## Download Rebol v276",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.6.6 .appveyor.yml",
+          "## Download Rebol v276",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.6.6 CI/Linux-32/Dockerfile",
+          "RUN apt-get update && apt-get -y install curl && curl -o /bin/rebol https://static.red-lang.org/tmp/rebol && chmod +x /b",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.6.6 CI/Linux-gtk/Dockerfile",
+          "RUN apt-get update && apt-get -y install curl libcurl4 libgtk-3-0 xvfb && curl -o /bin/rebol https://static.red-lang.org",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.7 .travis.yml",
+          "# Linux: hook up qemu, build 32bit image including curl and rebol",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "v0.7 .appveyor.yml",
+          "## Download Rebol v276",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
+        ],
+        [
+          "HEAD .appveyor.yml",
+          "## Download Rebol v276",
+          "-",
+          "EVIDENCE (upstream-authored URL)"
         ]
       ]
     }

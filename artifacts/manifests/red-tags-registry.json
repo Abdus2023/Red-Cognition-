@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-08-31T17:53:01Z",
+  "repo": "https://github.com/red/red",
+  "tag_count": 30,
+  "tags": {
+    "v0.1.0": {
+      "commit": "b252367f46df6a8889e824012db7a5a299d39313",
+      "tree": "d6d062836c85d1bc1f796463ef307428c6fb12c4",
+      "date_object": "2011-03-09T17:06:47+01:00 commit",
+      "commit_subject": "REL: alpha 1 of Red/System",
+      "file_count": 10
+    },
+    "v0.1.1": {
+      "commit": "2297f1261c4e6d13d7140c004de44ff9618cc90f",
+      "tree": "c1332375983e70ad42bb72006e988f3ada9697f3",
+      "date_object": "2011-04-09T13:12:44+02:00 tag",
+      "commit_subject": "FIX: Win32 runtime changed to enable standard output capturing from external app.",
+      "file_count": 20
+    },
+    "v0.2.0": {
+      "commit": "3bb185ec9b180ebf2c5ddde16bf09d9d973b316c",
+      "tree": "210a28adda058342fe739aa1d90e88e94da66cab",
+      "date_object": "2011-07-05T00:08:51+02:00 tag",
+      "commit_subject": "TESTS: quick-test v0.5.0 - concise report",
+      "file_count": 73
+    },
+    "v0.2.1": {
+      "commit": "b6a9e083cad42d1dfa01e2bc4891ebe4efd625f0",
+      "tree": "4d55796816b4f1453ff972c6bdb78b584ff5fe93",
+      "date_object": "2011-08-10T20:25:54+02:00 commit",
+      "commit_subject": "REL: v0.2.1 FEAT: redefined PRINT to use the new 'typed attribute (might break some scripts) FEAT: new PRINT-WIDE for printing like PRINT but with an extra space between items.",
+      "file_count": 101
+    },
+    "v0.2.2": {
+      "commit": "cf81376d0efc9d9aaba19dc67e955a30329e6bfa",
+      "tree": "daaa85d4e828045a1277bb6e3ee51f2dff1819ff",
+      "date_object": "2011-09-20T18:09:21+02:00 commit",
+      "commit_subject": "FIX: Linux syscalls now accept up to 6 arguments.",
+      "file_count": 104
+    },
+    "v0.2.3": {
+      "commit": "7efe0db16301b4c8754b658ecbf4641f5575c1f4",
+      "tree": "0a5697f35f6974e9f83908a08601d15e91c77ee9",
+      "date_object": "2011-12-26T15:24:15+01:00 tag",
+      "commit_subject": "FEAT: updated version in head banner.",
+      "file_count": 111
+    },
+    "v0.2.4": {
+      "commit": "e3a5e8ceb95789608a5c80aa3a8ce9487a4acc13",
+      "tree": "db5784c74ca5d2ba744091f0bd823039f33578ff",
+      "date_object": "2012-02-17T15:40:07+01:00 tag",
+      "commit_subject": "FIX: wrong last type when emitting NOT on a type casted expression. Fixes a regression in 0MQ binding.",
+      "file_count": 156
+    },
+    "v0.2.5": {
+      "commit": "7520e8fea6354a05dde6050aa3d1cb0ccc878a58",
+      "tree": "f8e6d81bf6b29f06f8d687063e84cbec667f4b6b",
+      "date_object": "2012-03-12T22:49:51+01:00 tag",
+      "commit_subject": "REL: v0.2.5",
+      "file_count": 160
+    },
+    "v0.2.6": {
+      "commit": "dbc36db3a817165fbe2cf984a9aaca26d05480d2",
+      "tree": "3d26501c72a225bc407b06fd70ff47c290d4ed3f",
+      "date_object": "2012-08-21T10:06:59+02:00 tag",
+      "commit_subject": "FIX: missing minor changes for v0.2.6 release",
+      "file_count": 129
+    },
+    "v0.3.0": {
+      "commit": "402a3583433066dfaebf8d5f589905d06ba86d84",
+      "tree": "1f7db0a95ec42b40c9105f4844d00831f9423338",
+      "date_object": "2012-10-28T15:51:51+01:00 tag",
+      "commit_subject": "FEAT: added warning message about antivirus false positives.",
+      "file_count": 171
+    },
+    "v0.3.1": {
+      "commit": "2931dc30fd0305822dd47e56a5c41e685826e4ef",
+      "tree": "6dfd603b690aea26335a6629994771d30631b8ca",
+      "date_object": "2012-12-15T19:16:59+01:00 tag",
+      "commit_subject": "TESTS: additonal equal tests",
+      "file_count": 191
+    },
+    "v0.3.2": {
+      "commit": "58ce5216626685c4339957fa3024d6e6dc26388d",
+      "tree": "0e58baeb6706b0ccab5bab31dcc216c8af2a6f90",
+      "date_object": "2013-03-24T01:18:42+01:00 tag",
+      "commit_subject": "FIX: TAB completion disabled in Readline for console (on non-Windows platforms).",
+      "file_count": 218
+    },
+    "v0.3.3": {
+      "commit": "8bd2545f611f971675fa6055e6307611e5eb5697",
+      "tree": "8954be0c1be98d3fdb498975792644421ab48dab",
+      "date_object": "2013-08-10T22:49:32+02:00 tag",
+      "commit_subject": "REL: 0.3.3",
+      "file_count": 273
+    },
+    "v0.4.0": {
+      "commit": "1e749cb844e7bf9426429403ed4bba583950edb5",
+      "tree": "4ee96162f2f5ec30fb5a9e997cc444b55f55f124",
+      "date_object": "2013-09-27T12:25:59+02:00 tag",
+      "commit_subject": "FIX: -t option used before -dlib was inducing an output file with double extension. FEAT: changed \"REPL\" in precompilation message back to \"console\". FEAT: increased linker's output file buffer default size to 512 KB.",
+      "file_count": 282
+    },
+    "v0.4.1": {
+      "commit": "0e83138bad2c707c8f7e16bb86d42892e43c6691",
+      "tree": "80e5195b096f4f28e68a34c8f1ef1cfbd5e3ffd7",
+      "date_object": "2013-11-30T12:32:34+01:00 tag",
+      "commit_subject": "REL: 0.4.1",
+      "file_count": 291
+    },
+    "v0.4.2": {
+      "commit": "3628ff6fa8591c67ba1e80dd96e7f96d1fac0d0c",
+      "tree": "cd83bc27ac3db67c18056fb68534392ac08337fe",
+      "date_object": "2014-04-29T20:51:24+02:00 tag",
+      "commit_subject": "REL: 0.4.2",
+      "file_count": 310
+    },
+    "v0.4.3": {
+      "commit": "1ddcdc66e85c1a4b9cd80985f4469b0c688d168c",
+      "tree": "8fbcd82fc45fcfe6909831d6248161e770cd2b63",
+      "date_object": "2014-08-04T00:27:11+08:00 tag",
+      "commit_subject": "REL: 0.4.3 Floating point support.",
+      "file_count": 323
+    },
+    "v0.5.0": {
+      "commit": "e1c44842852045653fb36641e7bc4327282d26b8",
+      "tree": "a12f2ee1c2df0b64f988cca6d75e1215e27cda87",
+      "date_object": "2014-12-24T16:02:38+08:00 tag",
+      "commit_subject": "Merge pull request #999 from qtxie/console-error",
+      "file_count": 335
+    },
+    "v0.5.1": {
+      "commit": "6c51011ef5a0be8531d1436524c939ae37b89385",
+      "tree": "a7dc7a3abf6c892c78bf1b3c1e3c54281df3cccb",
+      "date_object": "2015-03-15T13:35:27+08:00 tag",
+      "commit_subject": "REL: 0.5.1 New console and errors support",
+      "file_count": 352
+    },
+    "v0.5.2": {
+      "commit": "e195a35ba736ef148dceb267ef0132e33341c840",
+      "tree": "2dabdf81d0dd47d695fb5b7824217d936f594604",
+      "date_object": "2015-04-04T18:54:10+08:00 tag",
+      "commit_subject": "REL: 0.5.2 Case folding and hash! support.",
+      "file_count": 357
+    },
+    "v0.5.3": {
+      "commit": "d92e5477d797d45e92db659e1aab372186737f5b",
+      "tree": "260e0df093ca47f696f18c239a362f2246d0dd45",
+      "date_object": "2015-04-25T21:20:44+08:00 tag",
+      "commit_subject": "REL: 0.5.3 Redbin support and improved vector!",
+      "file_count": 360
+    },
+    "v0.5.4": {
+      "commit": "4b5cc5e8243b3ae16955c7d9678f560351067c50",
+      "tree": "aaed0f0970b3ec742e4b91ffd8cd108c9f4686aa",
+      "date_object": "2015-06-12T23:32:09+08:00 tag",
+      "commit_subject": "REL: 0.5.4",
+      "file_count": 365
+    },
+    "v0.6.0": {
+      "commit": "a3d70c1aff30f3dae4eb9873d5a2f4977d5d8259",
+      "tree": "77c8f38401d93b95a2e2153f5a0a19306216e371",
+      "date_object": "2016-03-26T02:49:08+08:00 tag",
+      "commit_subject": "REL: 0.6.0, GUI system",
+      "file_count": 428
+    },
+    "v0.6.1": {
+      "commit": "ce219eb4c1bc99dc344a79afbc1b1d64ea09e519",
+      "tree": "2aa5d15384c3e2ce93bb09dab65342e54a5020e3",
+      "date_object": "2016-06-30T05:25:07+08:00 tag",
+      "commit_subject": "REL: 0.6.1 - Reactive programming",
+      "file_count": 437
+    },
+    "v0.6.2": {
+      "commit": "28e70714b59d4c5beb87a1555063d8d6c0e13a9a",
+      "tree": "8b63c4c347da65f16ee73c57acf81dba210b8a50",
+      "date_object": "2017-03-26T22:44:33+08:00 tag",
+      "commit_subject": "REL: 0.6.2 - libRed and macros.",
+      "file_count": 470
+    },
+    "v0.6.3": {
+      "commit": "6a43c767fa2e85d668b83f749158a18e62c30f70",
+      "tree": "f78633ea9336390f86e07fae977c61506ddac589",
+      "date_object": "2017-07-17T21:26:31+08:00 tag",
+      "commit_subject": "REL: 0.6.3 - macOS GUI backend",
+      "file_count": 503
+    },
+    "v0.6.4": {
+      "commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
+      "tree": "d5297982615280dc7120e30062fe603abfbe1d9b",
+      "date_object": "2018-11-22T09:06:20+07:00 tag",
+      "commit_subject": "Merge pull request #3604 from x8x/add-macos-mojave",
+      "file_count": 538
+    },
+    "v0.6.5": {
+      "commit": "3bafef2203661bbcaafec8b859405ba7235a5981",
+      "tree": "f91cfae687c0f58304f951d720781c27b42cc936",
+      "date_object": "2024-02-10T00:36:45+01:00 commit",
+      "commit_subject": "FEAT: swaps map! and construction syntax delimiters.",
+      "file_count": 638
+    },
+    "v0.6.6": {
+      "commit": "6942c7a021253150c3e3cf90428305892340db03",
+      "tree": "717f8de396d48c55623543f601cd11f638a562cb",
+      "date_object": "2025-03-19T14:09:25+01:00 commit",
+      "commit_subject": "REL: v0.6.6 - Memory management improvements",
+      "file_count": 673
+    },
+    "v0.7": {
+      "commit": "abfa7affa32cc908893545aabff7953a02de6009",
+      "tree": "7ba99a22feb1d62087a24ffd5c208f186d413e38",
+      "date_object": "2019-09-11T18:35:42+02:00 commit",
+      "commit_subject": "WIP: Win: Implementing TLS by Schannel.",
+      "file_count": 581
+    }
+  }
+}

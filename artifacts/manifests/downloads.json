@@ -201,6 +201,21 @@
       "pinned_ref": "tag v0.6.5 -> commit 3bafef2203661bbcaafec8b859405ba7235a5981",
       "repository": "https://github.com/red/red",
       "note": "tag v0.6.5 (2024-02-10) has NO GitHub release; tag-only archive"
+    },
+    {
+      "url": "https://codeload.github.com/red/red/tar.gz/refs/tags/v0.6.3",
+      "dest": "artifacts/red/releases/red-0.6.3.tar.gz",
+      "http_status": 200,
+      "size": 1748647,
+      "sha256": "2ec78c1683a63149423661b35571ee4b74306217ab944b23f86efe7f0b216a6c",
+      "retrieved_at": "2026-08-31T17:52:43Z",
+      "origin": "https://github.com/red/red (GitHub auto-generated tag archive, codeload)",
+      "project": "RED",
+      "classification": "ARCHIVE",
+      "version_claim": "0.6.3",
+      "pinned_ref": "tag v0.6.3 -> commit 6a43c767fa2e85d668b83f749158a18e62c30f70",
+      "repository": "https://github.com/red/red",
+      "note": "tag v0.6.3 (2017-07-18 'macOS GUI backend') HAS a GitHub release object but it carries no assets"
     }
   ],
   "failures": []
