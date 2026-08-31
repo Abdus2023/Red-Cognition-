@@ -202,6 +202,12 @@
           "official download host",
           "TLS-blocked from sandbox",
           "BLOCKED"
+        ],
+        [
+          "Official binary URLs",
+          "static.red-lang.org/dl/auto/{mac,win,linux} pinned by official org packaging repos",
+          "hash policy: :no_check (homebrew) / none (scoop) / checksum added at chocolatey publish time",
+          "RECORDED (no public reference hash found for Red binaries in any collected source)"
         ]
       ]
     },
@@ -454,6 +460,42 @@
           "nixpkgs: unfree",
           "AUR: custom:REBOL End User License",
           "CONFLICT-free MATCH (unfree EULA; redistribution restricted)"
+        ]
+      ]
+    },
+    {
+      "id": "R16",
+      "artifact": "Red distribution-channel versions",
+      "rows": [
+        [
+          "GitHub release",
+          "0.6.6 (2025-03-19)",
+          "-",
+          "REFERENCE"
+        ],
+        [
+          "chocolatey (manual package)",
+          "0.6.4 (nuspec <version>)",
+          "lags latest release by one version",
+          "CONFLICT (distribution lag; recorded)"
+        ],
+        [
+          "homebrew / scoop",
+          "version :latest / \"nightly\" (auto binaries)",
+          "track the auto builds, not releases",
+          "NOTED"
+        ],
+        [
+          "nixpkgs",
+          "0.6.4 (package.nix version + pinned commit)",
+          "matches our v0.6.4 commit exactly",
+          "MATCH (to v0.6.4)"
+        ],
+        [
+          "bootstrap claim",
+          "chocolatey nuspec repeats the Rebol2-bootstrap wording verbatim",
+          "same claim as red/red READMEs",
+          "MATCH (independent channel, identical claim)"
         ]
       ]
     }

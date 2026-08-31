@@ -366,6 +366,51 @@
       "pinned_ref": "tag v0.1.1 -> commit 2297f1261c4e6d13d7140c004de44ff9618cc90f",
       "repository": "https://github.com/red/red",
       "note": "tag-only archive (no GitHub release object for this tag)"
+    },
+    {
+      "url": "https://codeload.github.com/red/Homebrew-red/tar.gz/e0b29b4228ce556739164a3f3893ed7094467dc2",
+      "dest": "artifacts/red/documentation/red_homebrew-red-e0b29b422.tar.gz",
+      "http_status": 200,
+      "size": 695,
+      "sha256": "8ccd227d3e6436357866472dcac88b7fcac7330b95342693028237b158bcec23",
+      "retrieved_at": "2026-08-31T18:15:08Z",
+      "origin": "https://github.com/red/Homebrew-red (pinned HEAD archive)",
+      "project": "RED",
+      "classification": "ARCHIVE",
+      "version_claim": "master",
+      "pinned_ref": "commit e0b29b4228ce556739164a3f3893ed7094467dc2",
+      "repository": "https://github.com/red/Homebrew-red",
+      "note": "official Red org packaging/distribution repo"
+    },
+    {
+      "url": "https://codeload.github.com/red/scoop-bucket/tar.gz/689288281fda7164c92401ad6ef04e3c53141e34",
+      "dest": "artifacts/red/documentation/red_scoop-bucket-689288281.tar.gz",
+      "http_status": 200,
+      "size": 952,
+      "sha256": "e028c185f9c6f1922992ddfabbbbc73b9f1b3fb414deae230ac2fb265e83d833",
+      "retrieved_at": "2026-08-31T18:15:08Z",
+      "origin": "https://github.com/red/scoop-bucket (pinned HEAD archive)",
+      "project": "RED",
+      "classification": "ARCHIVE",
+      "version_claim": "master",
+      "pinned_ref": "commit 689288281fda7164c92401ad6ef04e3c53141e34",
+      "repository": "https://github.com/red/scoop-bucket",
+      "note": "official Red org packaging/distribution repo"
+    },
+    {
+      "url": "https://codeload.github.com/red/chocolatey-packages/tar.gz/bcc69995c0761dff537abbf5f51e498778152783",
+      "dest": "artifacts/red/documentation/red_chocolatey-packages-bcc69995c.tar.gz",
+      "http_status": 200,
+      "size": 45668,
+      "sha256": "912300233fceefaf8e7ff4bc0f40130445dd2ecb26d2e7dc9e3e99e69eba16bc",
+      "retrieved_at": "2026-08-31T18:15:08Z",
+      "origin": "https://github.com/red/chocolatey-packages (pinned HEAD archive)",
+      "project": "RED",
+      "classification": "ARCHIVE",
+      "version_claim": "master",
+      "pinned_ref": "commit bcc69995c0761dff537abbf5f51e498778152783",
+      "repository": "https://github.com/red/chocolatey-packages",
+      "note": "official Red org packaging/distribution repo"
     }
   ],
   "failures": []

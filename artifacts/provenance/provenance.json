@@ -371,6 +371,20 @@
       "target": "full corpus re-derivation",
       "evidence": "exit 0; 22/22 archives re-downloaded + whole-tree verified (19s; logs/execution/reproduction-run.log)",
       "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "distribution-channel",
+      "source": "official Red org packaging repos (Homebrew/scoop/chocolatey)",
+      "target": "official binary URLs static.red-lang.org/dl/auto/{mac,win,linux}",
+      "evidence": "official-org-authored cask/manifest/nuspec pin the auto-binary URLs; hash policy :no_check / none (manifests/red-distribution-channels.json)",
+      "status": "ESTABLISHED"
+    },
+    {
+      "relationship": "prior-session-builds",
+      "source": "prior session (zip binaries/, commit f860bbe era)",
+      "target": "libRedRT.so + support files",
+      "evidence": "LOCAL BUILD products, UNVERIFIED; preserved with hashes; NOT upstream artifacts",
+      "status": "PARTIAL"
     }
   ]
 }

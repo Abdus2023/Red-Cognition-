@@ -462,3 +462,29 @@ _Generated: 2026-08-31T18:11:00Z_
 
 - Final gate remains **PARTIALLY_VERIFIED**; the reproduction dimension is now execution-proven for the acquisition layer.
 
+## Continuation Addendum (stage 15)
+
+_Generated: 2026-08-31T18:15:08Z_
+
+### Official distribution channels collected (recon R7 refresh + R16)
+
+- **red/Homebrew-red, red/scoop-bucket, red/chocolatey-packages** archived (Tier-1 org repos) with their definitions extracted as reference evidence.
+- Official Red binary URLs pinned by the org itself: `static.red-lang.org/dl/auto/mac/red-latest`, `…/win/red-latest.exe`, `…/linux/red-latest`. **Hash policy finding:** homebrew uses `sha256 :no_check`, scoop has no hash, chocolatey embeds the checksum only at publish time (chocolatey.org itself is blocked) — **no public reference hash exists for Red binaries in any collected source**; first-download hashing will be the original verification.
+- **Distribution-lag conflict (R16):** chocolatey manual package pins **0.6.4** while the latest release is 0.6.6; homebrew/scoop track nightlies; nixpkgs pins 0.6.4 (commit MATCH). The nuspec also repeats the Rebol2-bootstrap claim verbatim — independent-channel confirmation.
+
+### Prior-session build products archived (leads, not evidence)
+
+- 5 files from the repo zip's `binaries/` (libRedRT.so, checkum-repro, …) hashed and preserved in `derived/`: **LOCAL BUILD products** of the prior session (its logs show commit f860bbe, image red-cognition/rebol-bootstrap:2.7.8) — NOT upstream artifacts; provenance UNVERIFIED.
+
+### Red-org coverage statement
+
+- 33 org repos: **8 collected** (language, docs, proposals, history, distribution), **25 documented out-of-scope** (end-user ecosystem apps; leads preserved in `manifests/github-discovery.json`).
+
+### Egress recheck
+
+`http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz` → curl exit 52 (blocked); `https://static.red-lang.org/dl/auto/linux/red-latest` → curl exit 35 (blocked)
+
+### Status impact
+
+- Final gate remains **PARTIALLY_VERIFIED**. The distribution-channel layer of the Red ecosystem is now fully documented with pinned evidence.
+
