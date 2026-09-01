@@ -1,32 +1,30 @@
 # EV-01 CI evidence — current-head execution
 
-## EV-01c instrumentation (awaiting CI)
+## EV-01c group localization (commit `8b05636`, run `33532229557`)
 
-`tests/run-all.r` accepts `--group pre|comp1|comp2|interp|post|regression` (default: all groups, historical order). `tools/run-container-tests.sh --phase all` now runs those groups **sequentially** after identity + hello:
+GitHub Check annotations for job `99938034432` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33532229557):
 
-1. `red-pre` — lexer / unicode / preprocessor extras
-2. `red-comp1` — `run-all-comp1.red`
-3. `red-comp2` — `run-all-comp2.red`
-4. `red-interp` — `run-all-interp.red`
-5. `red-post` — post extras
-6. `red-regression` — compiler regression scripts
-7. `red-system` — only if every Red group **completed** (not skipped)
+| Phase | Result | Elapsed | Command |
+| --- | --- | ---: | --- |
+| Rebol identity | **COMPLETED exit=0** | 3s | `/opt/rebol/rebol -qws /artifacts/rebol-identity.r` |
+| red-hello | **COMPLETED exit=0** | **288s** | `/opt/rebol/rebol -qws red.r tests/hello.red` |
+| red-pre | START, then **FAILED exit=1** | **320s** | `tests/run-all.r --batch --group pre` |
+| red-comp1 | **START only** (no COMPLETE) | until job cancel | `tests/run-all.r --batch --group comp1` |
+| red-comp2 / interp / post / regression / red-system | no START | — | **NOT_RUN** (comp1 did not finish) |
 
-A hang does **not** become a skip or PASS: the running group stays `STARTED`/`TIMED_OUT`; later groups are recorded `NOT_RUN`; overall stays `INCOMPLETE`. Job `timeout-minutes: 20` is unchanged. No AF_ALG / Red semantic patch.
+Job `16:31:16Z`–`16:51:35Z` **cancelled** at 20m. Image build `16:31:32Z`–`16:35:35Z` PASS (~4m3s). Test step `16:35:35Z`–`16:51:30Z` cancelled (~15m55s). Artifact `red-container-test-results-33532229557` (10875 bytes).
 
-Checks annotations (budget ~10): identity COMPLETE, hello COMPLETE, **group START only**. Last START names the group that consumed the remaining budget.
+Approximate remaining-budget split inside the test step: identity 3s + hello 288s + pre 320s ≈ 611s; **comp1 occupied the leftover ~344s** until the job deadline.
 
-This section is **not** a result. Fill the table from the next `push` run.
+### Discriminating conclusion
 
-| Group | Expected annotation | Result |
-| --- | --- | --- |
-| rebol-identity | COMPLETE | *(pending)* |
-| red-hello | COMPLETE (~226s) | *(pending)* |
-| red-pre | START, then COMPLETE or last START | *(pending)* |
-| red-comp1 | START only if pre completed | *(pending)* |
-| red-comp2 | START only if comp1 completed | *(pending)* |
-| red-interp | START only if comp2 completed | *(pending)* |
-| red-post / regression / red-system | NOT_RUN unless earlier groups finished | *(pending)* |
+- Identity and `hello.red` still complete (hello ~4m48s this host; slow, not hung).
+- **`pre` is not the stall.** It finished in 320s with **exit 1** (test failures, not a hang). Failures in `pre` are **not** treated as the CI timeout cause and are **not** a license to patch Red semantics.
+- The group that was still running when the 20-minute job died is **`comp1`** (`run-all-comp1.red`).
+- `comp2`, `interp`, `post`, `regression`, and Red/System were **not reached**.
+- Timeout is **INCOMPLETE**, not skip/PASS. AF_ALG is still **not** implicated by this trace.
+
+This is EV-01c: remaining budget is consumed inside **`tests/run-all.r --group comp1`**. Next hierarchical step (not done here) would be a subgroup of `run-all-comp1.red`, not hundreds of per-test jobs, and not a timeout increase.
 
 ---
 
