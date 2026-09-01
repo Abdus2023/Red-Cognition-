@@ -1,5 +1,33 @@
 # EV-01 CI evidence — current-head execution
 
+## EV-01b localization (commit `43f5fa7`, run `33528808889`)
+
+GitHub Check annotations (readable without blob logs) for job `99926653096`:
+
+| Phase | Result | Elapsed | Command |
+| --- | --- | ---: | --- |
+| Rebol identity | **COMPLETED exit=0** | 2s | `/opt/rebol/rebol -qws /artifacts/rebol-identity.r` |
+| red-hello | **COMPLETED exit=0** | **226s** | `/opt/rebol/rebol -qws red.r tests/hello.red` |
+| red | **START only** (no COMPLETE) | until job cancel | `/opt/rebol/rebol -qws tests/run-all.r --batch` |
+
+Job `15:57:11Z`–`16:17:32Z` **cancelled** at 20m. Image `sha256:d499f39b0d9e1552e2ffed78c49704e1b4f78ffb32c26a01f87e98841c6bf5ee`. Test step `16:01:34Z`–`16:17:26Z` (~15m52s). Artifact published.
+
+### Discriminating conclusion
+
+- The 32-bit Rebol identity smoke **works**.
+- The Red compiler **can compile and run** `tests/hello.red` in ~3m46s on this CI host.
+- The 15-minute stall is **not** hello/bootstrap. It begins **after** hello, inside **`tests/run-all.r --batch`**.
+- AF_ALG is **not** implicated by this trace (hello does not exercise crypto; run-all never completed).
+- Red/System was **not reached**.
+
+This is EV-01b: execution localized to the Red test suite, not the compiler smoke.
+
+Do **not** patch Red source yet. Next diagnostic is suite partitioning (`run-all-comp1` / `comp2` / `interp`) with the same annotation pattern.
+
+---
+
+
+
 Observed 2026-09-01 via GitHub API. Azure blob log/artifact download from this environment fails with SSL EOF, so this file records **API-visible** facts only. It does not invent Red test results.
 
 ## Authoritative current-head run
