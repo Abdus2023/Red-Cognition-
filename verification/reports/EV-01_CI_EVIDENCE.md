@@ -1,30 +1,35 @@
 # EV-01 CI evidence — current-head execution
 
-## EV-01d instrumentation (awaiting CI)
+## EV-01d `comp1` partitions (commit `4d49b39`, run `33544163622`)
 
-`comp1` (the 34 odd-indexed files that historically make `run-all-comp1.red`) is now four sequential compile units. Default `run-all-comp1.red` is unchanged. CI `--phase all` runs `comp1a`→`comp1d` instead of the monolith.
+GitHub Check annotations for job `99977452017` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33544163622):
 
-| Partition | Files (odd indices of `all-tests.txt`) |
-| --- | --- |
-| `comp1a` | preprocessor, conditional, path, url, function, type, select, evaluation, lexer |
-| `comp1b` | case, comparison, append, move, mold, parse, strict-equal, integer, money |
-| `comp1c` | words-of, case-folding, vector, pair, time, convert, reactivity, debase, try |
-| `comp1d` | image, lexer-auto, scalars, stress, recycle, csv, redbin-codec |
+| Partition | State | Duration | Command |
+| --- | --- | ---: | --- |
+| Rebol identity | **COMPLETED exit=0** | 3s | `/opt/rebol/rebol -qws /artifacts/rebol-identity.r` |
+| red-hello | **COMPLETED exit=0** | **339s** | `red.r tests/hello.red` |
+| red-pre | **FAILED exit=1** | **371s** | `tests/run-all.r --batch --group pre` |
+| **red-comp1a** | **START only (INCOMPLETE)** | until cancel (~199s) | `--group comp1a` |
+| red-comp1b | no START | — | **NOT_RUN** |
+| red-comp1c | no START | — | **NOT_RUN** |
+| red-comp1d | no START | — | **NOT_RUN** |
+| comp2 / interp / post / regression / red-system | no START | — | **NOT_RUN** |
 
-Semantics: COMPLETE / FAILED / INCOMPLETE / NOT_RUN. No skip/PASS for unexecuted groups. Job timeout remains 20m. `pre` FAIL is independent of the `comp1` stall. Duration is recorded on every `comp1*` COMPLETE/FAILED annotation. Slow ≠ hung (`hello.red` ~288s).
+Job `18:31:53Z`–`18:52:14Z` **cancelled** at 20m. Image build `18:32:14Z`–`18:36:56Z` PASS (~4m42s). Test step `18:36:56Z`–`18:52:08Z` cancelled (~15m12s). Artifact `red-container-test-results-33544163622` (12132 bytes).
 
-This section is **not** a result. Fill from the next `push` run.
+Prefix cost inside the test step: identity 3s + hello 339s + pre 371s ≈ 713s. **`comp1a` occupied the leftover ~199s** until the deadline.
 
-| Partition | State | Duration |
-| --- | --- | ---: |
-| identity | *(pending)* |  |
-| hello | *(pending)* |  |
-| pre | *(pending)* |  |
-| comp1a | *(pending)* |  |
-| comp1b | *(pending)* |  |
-| comp1c | *(pending)* |  |
-| comp1d | *(pending)* |  |
-| later groups | NOT_RUN unless earlier finished |  |
+`comp1a` compile unit (odd indices 1–9 of `all-tests.txt`): preprocessor, conditional, path, url, function, type, select, evaluation, lexer.
+
+### Discriminating conclusion
+
+- `pre` again **completed** (FAIL 371s). Independent of the stall.
+- `hello.red` **339s** — this host is slow; duration alone is not a hang.
+- The first `comp1` partition that started and **did not terminate** is **`comp1a`**.
+- `comp1b`–`comp1d` were **NOT_RUN**. Overall **INCOMPLETE**, not skip/PASS.
+- AF_ALG still not implicated.
+
+EV-01d: remaining budget is consumed inside **`tests/run-all.r --group comp1a`**. Next cut is inside that 9-file unit only.
 
 ---
 
