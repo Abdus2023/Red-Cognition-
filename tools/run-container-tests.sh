@@ -21,7 +21,8 @@ Options:
   --no-gui                  Do not start Xvfb or set DISPLAY
   --heartbeat-seconds N     Heartbeat interval (default: 60)
   --skip-identity           Skip the Rebol identity smoke check
-  --phase PHASE             identity | hello | red | red-system | all (default: all)
+  --phase PHASE             identity | hello | red | red-system | all
+                            | pre | comp1 | comp2 | interp | post | regression
   --hello-timeout N         Seconds to allow red.r tests/hello.red (default: 480; 0 disables)
   --help                    Show this help
 EOF
@@ -46,10 +47,11 @@ while (($#)); do
     --no-gui) USE_GUI=0; shift ;;
     --heartbeat-seconds) HEARTBEAT_SECONDS=${2:?missing value for --heartbeat-seconds}; shift 2 ;;
     --skip-identity) RUN_IDENTITY=0; shift ;;
+    --hello-timeout) HELLO_TIMEOUT=${2:?missing value for --hello-timeout}; shift 2 ;;
     --phase)
       PHASE=${2:?missing value for --phase}
       case "$PHASE" in
-        identity|hello|red|red-system|all) ;;
+        identity|hello|red|red-system|all|pre|comp1|comp2|interp|post|regression) ;;
         *) echo "Unknown --phase: $PHASE" >&2; usage >&2; exit 2 ;;
       esac
       shift 2
@@ -127,6 +129,26 @@ exit_from_suite() {
   fi
   echo "==> phase=$PHASE suite=$name returning $rc"
   exit "$rc"
+}
+
+write_not_run() {
+  local name=$1
+  local reason=$2
+  python3 - "$OUT/${name}.execution.json" "$name" "$COMMIT" "$reason" <<'PY'
+import json, sys
+from pathlib import Path
+path, name, commit, reason = sys.argv[1:5]
+obj = {
+  "suite": name,
+  "state": "NOT_RUN",
+  "commit": commit,
+  "reason": reason,
+  "exit_code": None,
+}
+Path(path).write_text(json.dumps(obj, indent=2) + "\n")
+PY
+  printf 'not-run\n' >"$OUT/${name}.exit"
+  append_phase_status "NOT_RUN $name $reason"
 }
 
 preview_text() {
@@ -416,7 +438,7 @@ echo "    phase=$PHASE"
 echo "    image_id=$IMAGE_ID"
 echo "    hello_timeout=$HELLO_TIMEOUT"
 echo "    started=$START"
-gha_notice "EV-01 runner" "commit=$COMMIT phase=$PHASE image=$IMAGE image_id=$IMAGE_ID"
+echo "==> EV-01 runner commit=$COMMIT phase=$PHASE image=$IMAGE image_id=$IMAGE_ID"
 : >"$OUT/phase-status.txt"
 append_phase_status "RUNNER_START commit=$COMMIT phase=$PHASE"
 
@@ -473,7 +495,9 @@ EOF
   echo "    command=$cmd"
   echo "    log=$log"
   echo "    suite_timeout=$suite_timeout"
-  gha_notice "EV-01 $name" "START commit=$COMMIT command=$cmd"
+  if [[ ${ANNOTATE_START:-1} == 1 ]]; then
+    gha_notice "EV-01 $name" "START commit=$COMMIT command=$cmd"
+  fi
   append_phase_status "START $name $cmd"
 
   write_execution_record "$name" "$cmd" "STARTED" "$started_at" "$started_epoch" "$log" "$cname" ""
@@ -512,7 +536,11 @@ EOF
     gha_error "EV-01 $name" "TIMED_OUT after ${elapsed}s limit=${suite_timeout}s command=$cmd"
     append_phase_status "TIMED_OUT $name elapsed=${elapsed}s"
   elif [[ $rc -eq 0 ]]; then
-    gha_notice "EV-01 $name" "COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
+    if [[ $name == rebol-identity || $name == red-hello ]]; then
+      gha_notice "EV-01 $name" "COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
+    else
+      echo "==> $name COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
+    fi
     append_phase_status "COMPLETED $name elapsed=${elapsed}s"
   else
     state="FAILED"
@@ -530,6 +558,23 @@ EOF
   return 0
 }
 
+RED_GROUPS=(pre comp1 comp2 interp post regression)
+
+mark_remaining_not_run() {
+  local failed=$1
+  local seen=0
+  local g
+  for g in "${RED_GROUPS[@]}"; do
+    if [[ $seen -eq 1 ]]; then
+      write_not_run "red-$g" "$failed did not complete"
+    fi
+    if [[ $g == "$failed" ]]; then
+      seen=1
+    fi
+  done
+  write_not_run red-system "$failed did not complete"
+}
+
 if [[ $PHASE == all || $PHASE == identity ]] && (( RUN_IDENTITY )); then
   cat >"$OUT/rebol-identity.r" <<'EOF'
 REBOL [
@@ -539,7 +584,7 @@ print ["rebol-version:" system/version]
 print "rebol-identity-ok"
 quit
 EOF
-  run_suite rebol-identity /artifacts/rebol-identity.r
+  ANNOTATE_START=0 run_suite rebol-identity /artifacts/rebol-identity.r
   identity_rc=$(cat "$OUT/rebol-identity.exit" 2>/dev/null || echo missing)
   if [[ "$identity_rc" != "0" ]] || ! grep -q "rebol-identity-ok" "$OUT/rebol-identity.stdout.log" 2>/dev/null; then
     echo "WARNING: Rebol identity smoke check did not succeed (rc=$identity_rc)" >&2
@@ -560,9 +605,13 @@ fi
 if [[ $PHASE == all || $PHASE == hello ]]; then
   if [[ -f "$ROOT/tests/hello.red" ]]; then
     echo "==> Compiler smoke: red.r tests/hello.red"
-    run_suite red-hello red.r tests/hello.red
+    ANNOTATE_START=0 SUITE_TIMEOUT=$HELLO_TIMEOUT run_suite red-hello red.r tests/hello.red
     hello_rc=$(cat "$OUT/red-hello.exit" 2>/dev/null || echo missing)
-    if [[ "$hello_rc" != "0" ]]; then
+    if [[ "$hello_rc" == "124" ]]; then
+      gha_error "EV-01 localization" "hello TIMED_OUT after ${HELLO_TIMEOUT}s; not starting run-all groups"
+      mark_remaining_not_run hello
+      exit 124
+    elif [[ "$hello_rc" != "0" ]]; then
       echo "WARNING: red-hello compiler smoke rc=$hello_rc" >&2
     else
       echo "==> red-hello compiler smoke completed with exit 0"
@@ -576,12 +625,36 @@ if [[ $PHASE == all || $PHASE == hello ]]; then
   fi
 fi
 
+run_red_group() {
+  local g=$1
+  echo "==> Red group $g"
+  mark_remaining_not_run "$g"
+  run_suite "red-$g" tests/run-all.r --batch --group "$g"
+  local rc
+  rc=$(cat "$OUT/red-$g.exit" 2>/dev/null || echo missing)
+  if [[ "$rc" == "124" ]]; then
+    gha_error "EV-01c" "red-$g TIMED_OUT; later groups NOT_RUN"
+    mark_remaining_not_run "$g"
+    write_incomplete_summary "red-$g timed out; overall INCOMPLETE"
+    exit 124
+  fi
+}
+
 if [[ $PHASE == all || $PHASE == red ]]; then
-  run_suite red tests/run-all.r --batch
+  for g in "${RED_GROUPS[@]}"; do
+    run_red_group "$g"
+  done
   if [[ $PHASE == red ]]; then
-    exit_from_suite red
+    exit 0
   fi
 fi
+
+for g in "${RED_GROUPS[@]}"; do
+  if [[ $PHASE == "$g" ]]; then
+    run_red_group "$g"
+    exit_from_suite "red-$g"
+  fi
+done
 
 if [[ $PHASE == all || $PHASE == red-system ]]; then
   run_suite red-system system/tests/run-all.r --batch
@@ -697,9 +770,14 @@ if (out / "rebol-identity.exit").exists():
     lines.append(
         f"| Rebol identity | {identity_exec.get('state')} | {identity['exit_code']} |  |  |  | {identity.get('identity_ok')} |"
     )
-for s, label in zip(suites, ["Red", "Red/System"]):
+if (out / "red-hello.exit").exists() or (out / "red-hello.execution.json").exists():
+    hello_exec = load_execution("red-hello")
     lines.append(
-        f"| {label} | {s['execution'].get('state')} | {s['exit_code']} | {s['assertions']} | {s['passed']} | {s['failed']} | {s['failure_marker']} |"
+        f"| red-hello | {hello_exec.get('state')} | {hello_exec.get('exit_code')} |  |  |  |  |"
+    )
+for s in suites:
+    lines.append(
+        f"| {s['name']} | {s['execution'].get('state')} | {s['exit_code']} | {s['assertions']} | {s['passed']} | {s['failed']} | {s['failure_marker']} |"
     )
 lines += [
     "",

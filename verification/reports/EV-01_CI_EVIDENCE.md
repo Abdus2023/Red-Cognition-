@@ -1,5 +1,35 @@
 # EV-01 CI evidence — current-head execution
 
+## EV-01c instrumentation (awaiting CI)
+
+`tests/run-all.r` accepts `--group pre|comp1|comp2|interp|post|regression` (default: all groups, historical order). `tools/run-container-tests.sh --phase all` now runs those groups **sequentially** after identity + hello:
+
+1. `red-pre` — lexer / unicode / preprocessor extras
+2. `red-comp1` — `run-all-comp1.red`
+3. `red-comp2` — `run-all-comp2.red`
+4. `red-interp` — `run-all-interp.red`
+5. `red-post` — post extras
+6. `red-regression` — compiler regression scripts
+7. `red-system` — only if every Red group **completed** (not skipped)
+
+A hang does **not** become a skip or PASS: the running group stays `STARTED`/`TIMED_OUT`; later groups are recorded `NOT_RUN`; overall stays `INCOMPLETE`. Job `timeout-minutes: 20` is unchanged. No AF_ALG / Red semantic patch.
+
+Checks annotations (budget ~10): identity COMPLETE, hello COMPLETE, **group START only**. Last START names the group that consumed the remaining budget.
+
+This section is **not** a result. Fill the table from the next `push` run.
+
+| Group | Expected annotation | Result |
+| --- | --- | --- |
+| rebol-identity | COMPLETE | *(pending)* |
+| red-hello | COMPLETE (~226s) | *(pending)* |
+| red-pre | START, then COMPLETE or last START | *(pending)* |
+| red-comp1 | START only if pre completed | *(pending)* |
+| red-comp2 | START only if comp1 completed | *(pending)* |
+| red-interp | START only if comp2 completed | *(pending)* |
+| red-post / regression / red-system | NOT_RUN unless earlier groups finished | *(pending)* |
+
+---
+
 ## EV-01b localization (commit `43f5fa7`, run `33528808889`)
 
 GitHub Check annotations (readable without blob logs) for job `99926653096`:
