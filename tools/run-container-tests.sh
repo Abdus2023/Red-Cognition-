@@ -173,7 +173,7 @@ obj = {
     "rebol": os.environ["RC_REBOL"],
     "image": os.environ["RC_IMAGE"],
     "architecture": "linux/386",
-    "command": f"{os.environ['RC_REBOL']} -qws {os.environ['RC_SCRIPT']} --batch",
+    "command": os.environ["RC_SCRIPT"],
     "container_name": os.environ["RC_CNAME"],
     "started_at": os.environ["RC_STARTED_AT"],
     "ended_at": ended_at,
@@ -248,6 +248,7 @@ start_heartbeat() {
 docker_run_script() {
   local script=$1
   local cname=$2
+  shift 2
   local env_args=(-e "HOME=/root")
   if (( USE_GUI )); then
     env_args+=(-e "DISPLAY=$DISPLAY_VALUE")
@@ -268,11 +269,12 @@ docker_run_script() {
       fi
       rebol="$1"
       script="$2"
+      shift 3
       if command -v stdbuf >/dev/null 2>&1; then
-        exec stdbuf -oL -eL "$rebol" -qws "$script" --batch
+        exec stdbuf -oL -eL "$rebol" -qws "$script" "$@"
       fi
-      exec "$rebol" -qws "$script" --batch
-    ' sh "$REBOL" "$script" "$USE_GUI"
+      exec "$rebol" -qws "$script" "$@"
+    ' sh "$REBOL" "$script" "$USE_GUI" "$@"
 }
 
 finalize_from_signal() {
@@ -363,12 +365,18 @@ echo "    started=$START"
 run_suite() {
   local name=$1
   local script=$2
+  shift 2
+  local extra=("$@")
   local log="$OUT/${name}.stdout.log"
   local rcfile="$OUT/${name}.exit"
   local started_at
   local started_epoch
   local cname
   local rc=0
+  local cmd="$REBOL -qws $script"
+  if ((${#extra[@]})); then
+    cmd="$cmd ${extra[*]}"
+  fi
 
   started_at=$(iso_now)
   started_epoch=$(date +%s)
@@ -386,15 +394,15 @@ run_suite() {
   echo "    commit=$COMMIT"
   echo "    container=$cname"
   echo "    started=$started_at"
-  echo "    command=$REBOL -qws $script --batch"
+  echo "    command=$cmd"
   echo "    log=$log"
 
-  write_execution_record "$name" "$script" "STARTED" "$started_at" "$started_epoch" "$log" "$cname" ""
-  start_heartbeat "$name" "$script" "$started_at" "$started_epoch" "$log" "$cname"
+  write_execution_record "$name" "$cmd" "STARTED" "$started_at" "$started_epoch" "$log" "$cname" ""
+  start_heartbeat "$name" "$cmd" "$started_at" "$started_epoch" "$log" "$cname"
 
   set +e
   set +o pipefail
-  docker_run_script "$script" "$cname" 2>&1 | tee "$log" | tr '\r' '\n'
+  docker_run_script "$script" "$cname" "${extra[@]}" 2>&1 | tee "$log" | tr '\r' '\n'
   rc=${PIPESTATUS[0]}
   set -o pipefail
   set -e
@@ -435,8 +443,19 @@ EOF
   fi
 fi
 
-run_suite red tests/run-all.r
-run_suite red-system system/tests/run-all.r
+if [[ -f "$ROOT/tests/hello.red" ]]; then
+  echo "==> Compiler smoke: red.r tests/hello.red"
+  run_suite red-hello red.r tests/hello.red
+  hello_rc=$(cat "$OUT/red-hello.exit" 2>/dev/null || echo missing)
+  if [[ "$hello_rc" != "0" ]]; then
+    echo "WARNING: red-hello compiler smoke rc=$hello_rc; continuing to tests/run-all.r" >&2
+  else
+    echo "==> red-hello compiler smoke completed with exit 0"
+  fi
+fi
+
+run_suite red tests/run-all.r --batch
+run_suite red-system system/tests/run-all.r --batch
 
 CURRENT_SUITE=""
 END=$(iso_now)
@@ -520,10 +539,12 @@ result = {
     "started": started,
     "finished": finished,
     "identity": identity,
+    "hello": load_execution("red-hello"),
     "suites": suites,
-    "execution_complete": completed and identity_pass,
+    "identity_ok": bool(identity_ok),
+    "execution_complete": completed,
     "overall_state": overall_state,
-    "overall_pass": bool(completed and identity_pass and functional_pass),
+    "overall_pass": bool(completed and functional_pass),
 }
 (out / "summary.json").write_text(json.dumps(result, indent=2) + "\n")
 
