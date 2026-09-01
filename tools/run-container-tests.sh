@@ -21,6 +21,7 @@ Options:
   --no-gui                  Do not start Xvfb or set DISPLAY
   --heartbeat-seconds N     Heartbeat interval (default: 60)
   --skip-identity           Skip the Rebol identity smoke check
+  --phase PHASE             identity | hello | red | red-system | all (default: all)
   --help                    Show this help
 EOF
 }
@@ -32,6 +33,7 @@ DISPLAY_VALUE=":0"
 USE_GUI=1
 HEARTBEAT_SECONDS=60
 RUN_IDENTITY=1
+PHASE=all
 
 while (($#)); do
   case "$1" in
@@ -42,6 +44,14 @@ while (($#)); do
     --no-gui) USE_GUI=0; shift ;;
     --heartbeat-seconds) HEARTBEAT_SECONDS=${2:?missing value for --heartbeat-seconds}; shift 2 ;;
     --skip-identity) RUN_IDENTITY=0; shift ;;
+    --phase)
+      PHASE=${2:?missing value for --phase}
+      case "$PHASE" in
+        identity|hello|red|red-system|all) ;;
+        *) echo "Unknown --phase: $PHASE" >&2; usage >&2; exit 2 ;;
+      esac
+      shift 2
+      ;;
     --help|-h) usage; exit 0 ;;
     *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
   esac
@@ -349,6 +359,7 @@ platform=linux/386
 runner_pid=$RUNNER_PID
 heartbeat_seconds=$HEARTBEAT_SECONDS
 observability=stream+heartbeat+execution-json
+phase=$PHASE
 EOF
 
 write_incomplete_summary "runner started; no suite has completed yet"
@@ -423,7 +434,7 @@ run_suite() {
   return 0
 }
 
-if (( RUN_IDENTITY )); then
+if [[ $PHASE == all || $PHASE == identity ]] && (( RUN_IDENTITY )); then
   cat >"$OUT/rebol-identity.r" <<'EOF'
 REBOL [
     Title: "Rebol identity smoke check"
@@ -436,26 +447,52 @@ EOF
   identity_rc=$(cat "$OUT/rebol-identity.exit" 2>/dev/null || echo missing)
   if [[ "$identity_rc" != "0" ]] || ! grep -q "rebol-identity-ok" "$OUT/rebol-identity.stdout.log" 2>/dev/null; then
     echo "WARNING: Rebol identity smoke check did not succeed (rc=$identity_rc)" >&2
-    echo "WARNING: continuing to Red suites so EV-01 can observe tests/run-all.r" >&2
-    write_incomplete_summary "Rebol identity smoke check failed; continuing to Red"
+    if [[ $PHASE == identity ]]; then
+      write_incomplete_summary "Rebol identity smoke check failed"
+      exit_from_suite rebol-identity
+    fi
+    echo "WARNING: continuing so later phases can still run" >&2
+    write_incomplete_summary "Rebol identity smoke check failed; continuing"
   else
     echo "==> Rebol identity smoke check PASS"
+    if [[ $PHASE == identity ]]; then
+      exit 0
+    fi
   fi
 fi
 
-if [[ -f "$ROOT/tests/hello.red" ]]; then
-  echo "==> Compiler smoke: red.r tests/hello.red"
-  run_suite red-hello red.r tests/hello.red
-  hello_rc=$(cat "$OUT/red-hello.exit" 2>/dev/null || echo missing)
-  if [[ "$hello_rc" != "0" ]]; then
-    echo "WARNING: red-hello compiler smoke rc=$hello_rc; continuing to tests/run-all.r" >&2
-  else
-    echo "==> red-hello compiler smoke completed with exit 0"
+if [[ $PHASE == all || $PHASE == hello ]]; then
+  if [[ -f "$ROOT/tests/hello.red" ]]; then
+    echo "==> Compiler smoke: red.r tests/hello.red"
+    run_suite red-hello red.r tests/hello.red
+    hello_rc=$(cat "$OUT/red-hello.exit" 2>/dev/null || echo missing)
+    if [[ "$hello_rc" != "0" ]]; then
+      echo "WARNING: red-hello compiler smoke rc=$hello_rc" >&2
+    else
+      echo "==> red-hello compiler smoke completed with exit 0"
+    fi
+    if [[ $PHASE == hello ]]; then
+      exit_from_suite red-hello
+    fi
+  elif [[ $PHASE == hello ]]; then
+    echo "ERROR: tests/hello.red is missing" >&2
+    exit 2
   fi
 fi
 
-run_suite red tests/run-all.r --batch
-run_suite red-system system/tests/run-all.r --batch
+if [[ $PHASE == all || $PHASE == red ]]; then
+  run_suite red tests/run-all.r --batch
+  if [[ $PHASE == red ]]; then
+    exit_from_suite red
+  fi
+fi
+
+if [[ $PHASE == all || $PHASE == red-system ]]; then
+  run_suite red-system system/tests/run-all.r --batch
+  if [[ $PHASE == red-system ]]; then
+    exit_from_suite red-system
+  fi
+fi
 
 CURRENT_SUITE=""
 END=$(iso_now)

@@ -51,6 +51,21 @@ Observed 2026-09-01 via GitHub API. Azure blob log/artifact download from this e
 
 The 3400-byte artifact is larger than the historical 804-byte timeout artifact, which is consistent with wrapper telemetry files being written. Blob download from this sandbox could not read the files.
 
+## Follow-up run with in-process hello smoke (`dcc2974`)
+
+| Field | Value |
+| --- | --- |
+| Commit | `dcc29746d90414995cb8b9022911243412a5b281` |
+| Run | `33524579407` |
+| Job | `99912027493` |
+| URL | https://github.com/Abdus2023/Red-Cognition-/actions/runs/33524579407 |
+| Job | 15:15:09Z–15:35:30Z **cancelled** (20m) |
+| Image build | 15:15:31Z–15:19:52Z PASS (~4m21s) |
+| Bundled test step | 15:19:52Z–15:35:24Z **cancelled (~15m32s)** |
+| Artifact publish | success |
+
+Hello was still inside the same GitHub step as `tests/run-all.r`, so this run cannot tell compiler-smoke hang from suite hang. That is why the next commit splits phases into separate workflow steps.
+
 ## Earlier runs on this PR (not Red-phase evidence)
 
 | Commit | Run | Test-step duration | Exit | Classification |
