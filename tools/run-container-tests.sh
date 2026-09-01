@@ -22,6 +22,7 @@ Options:
   --heartbeat-seconds N     Heartbeat interval (default: 60)
   --skip-identity           Skip the Rebol identity smoke check
   --phase PHASE             identity | hello | red | red-system | all (default: all)
+  --hello-timeout N         Seconds to allow red.r tests/hello.red (default: 480; 0 disables)
   --help                    Show this help
 EOF
 }
@@ -34,6 +35,7 @@ USE_GUI=1
 HEARTBEAT_SECONDS=60
 RUN_IDENTITY=1
 PHASE=all
+HELLO_TIMEOUT=480
 
 while (($#)); do
   case "$1" in
@@ -78,6 +80,7 @@ if [[ ! -f "$ROOT/red.r" || ! -f "$ROOT/tests/run-all.r" || ! -f "$ROOT/system/t
 fi
 
 COMMIT=$(git rev-parse HEAD 2>/dev/null || printf 'unknown')
+IMAGE_ID=$(docker image inspect "$IMAGE" --format '{{.Id}}' 2>/dev/null || printf 'unknown')
 START=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 RUNNER_PID=$$
 CURRENT_SUITE=""
@@ -89,6 +92,42 @@ OVERALL_STATE="STARTED"
 TERMINATION_SIGNAL=""
 
 iso_now() { date -u +%Y-%m-%dT%H:%M:%SZ; }
+
+gha_notice() {
+  local title=$1
+  shift
+  echo "==> $*"
+  echo "::notice title=${title}::$*"
+}
+
+gha_error() {
+  local title=$1
+  shift
+  echo "==> $*" >&2
+  echo "::error title=${title}::$*"
+}
+
+gha_warning() {
+  local title=$1
+  shift
+  echo "==> $*" >&2
+  echo "::warning title=${title}::$*"
+}
+
+append_phase_status() {
+  printf '%s %s\n' "$(iso_now)" "$*" >>"$OUT/phase-status.txt"
+}
+
+exit_from_suite() {
+  local name=$1
+  local rcfile="$OUT/${name}.exit"
+  local rc=1
+  if [[ -f "$rcfile" ]]; then
+    rc=$(cat "$rcfile")
+  fi
+  echo "==> phase=$PHASE suite=$name returning $rc"
+  exit "$rc"
+}
 
 preview_text() {
   local path=$1
@@ -157,6 +196,7 @@ write_execution_record() {
   RC_COMMIT=$COMMIT \
   RC_REBOL=$REBOL \
   RC_IMAGE=$IMAGE \
+  RC_IMAGE_ID=$IMAGE_ID \
   python3 <<'PY'
 import json
 import os
@@ -296,6 +336,7 @@ finalize_from_signal() {
   fi
   echo "==> RUNNER RECEIVED SIG$sig" >&2
   echo "==> overall_state=$OVERALL_STATE suite=${CURRENT_SUITE:-none}" >&2
+  gha_error "EV-01 $OVERALL_STATE" "signal=SIG$sig suite=${CURRENT_SUITE:-none} commit=$COMMIT"
   if [[ -n "$CURRENT_SUITE" ]]; then
     copy_quick_test_logs "$CURRENT_SUITE"
     if [[ -f "$OUT/${CURRENT_SUITE}.execution.json" ]]; then
@@ -371,7 +412,13 @@ echo "    rebol=$REBOL"
 echo "    platform=linux/386"
 echo "    out=$OUT"
 echo "    heartbeat_seconds=$HEARTBEAT_SECONDS"
+echo "    phase=$PHASE"
+echo "    image_id=$IMAGE_ID"
+echo "    hello_timeout=$HELLO_TIMEOUT"
 echo "    started=$START"
+gha_notice "EV-01 runner" "commit=$COMMIT phase=$PHASE image=$IMAGE image_id=$IMAGE_ID"
+: >"$OUT/phase-status.txt"
+append_phase_status "RUNNER_START commit=$COMMIT phase=$PHASE"
 
 run_suite() {
   local name=$1
@@ -384,6 +431,8 @@ run_suite() {
   local started_epoch
   local cname
   local rc=0
+  local killer=""
+  local suite_timeout=${SUITE_TIMEOUT:-0}
   local cmd="$REBOL -qws $script"
   if ((${#extra[@]})); then
     cmd="$cmd ${extra[*]}"
@@ -397,8 +446,24 @@ run_suite() {
   OVERALL_STATE="RUNNING"
   : >"$log"
 
+  printf '%s\n' "$cmd" >"$OUT/${name}.command.txt"
+  cat >"$OUT/${name}.environment.txt" <<EOF
+commit=$COMMIT
+suite=$name
+image=$IMAGE
+image_id=$IMAGE_ID
+architecture=linux/386
+rebol=$REBOL
+command=$cmd
+started=$started_at
+suite_timeout=$suite_timeout
+heartbeat_seconds=$HEARTBEAT_SECONDS
+phase=$PHASE
+EOF
+
   echo "==> Running $name"
   echo "    image=$IMAGE"
+  echo "    image_id=$IMAGE_ID"
   echo "    script=$script"
   echo "    rebol=$REBOL"
   echo "    platform=linux/386"
@@ -407,9 +472,21 @@ run_suite() {
   echo "    started=$started_at"
   echo "    command=$cmd"
   echo "    log=$log"
+  echo "    suite_timeout=$suite_timeout"
+  gha_notice "EV-01 $name" "START commit=$COMMIT command=$cmd"
+  append_phase_status "START $name $cmd"
 
   write_execution_record "$name" "$cmd" "STARTED" "$started_at" "$started_epoch" "$log" "$cname" ""
   start_heartbeat "$name" "$cmd" "$started_at" "$started_epoch" "$log" "$cname"
+
+  if (( suite_timeout > 0 )); then
+    (
+      sleep "$suite_timeout"
+      echo "==> $name suite-timeout ${suite_timeout}s; killing $cname" >&2
+      docker kill "$cname" >/dev/null 2>&1 || true
+    ) &
+    killer=$!
+  fi
 
   set +e
   set +o pipefail
@@ -418,18 +495,37 @@ run_suite() {
   set -o pipefail
   set -e
 
+  if [[ -n "$killer" ]]; then
+    kill "$killer" 2>/dev/null || true
+    wait "$killer" 2>/dev/null || true
+  fi
+
   stop_heartbeat
   copy_quick_test_logs "$name"
-  printf '%s\n' "$rc" >"$rcfile"
 
+  local elapsed=$(( $(date +%s) - started_epoch ))
   local state="COMPLETED"
-  if [[ $rc -ne 0 ]]; then
+  if (( suite_timeout > 0 )) && { [[ $rc -eq 137 || $rc -eq 143 ]] || (( elapsed >= suite_timeout )); }; then
+    state="TIMED_OUT"
+    rc=124
+    TERMINATION_SIGNAL=${TERMINATION_SIGNAL:-TERM}
+    gha_error "EV-01 $name" "TIMED_OUT after ${elapsed}s limit=${suite_timeout}s command=$cmd"
+    append_phase_status "TIMED_OUT $name elapsed=${elapsed}s"
+  elif [[ $rc -eq 0 ]]; then
+    gha_notice "EV-01 $name" "COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
+    append_phase_status "COMPLETED $name elapsed=${elapsed}s"
+  else
     state="FAILED"
+    gha_warning "EV-01 $name" "FAILED exit=$rc elapsed=${elapsed}s command=$cmd"
+    append_phase_status "FAILED $name exit=$rc elapsed=${elapsed}s"
   fi
-  write_execution_record "$name" "$script" "$state" "$started_at" "$started_epoch" "$log" "$cname" "$rc"
+
+  printf '%s\n' "$rc" >"$rcfile"
+  write_execution_record "$name" "$cmd" "$state" "$started_at" "$started_epoch" "$log" "$cname" "$rc"
   CURRENT_CONTAINER=""
+  echo "==> $name state: $state"
   echo "==> $name exit code: $rc"
-  echo "==> $name elapsed: $(( $(date +%s) - started_epoch ))s"
+  echo "==> $name elapsed: ${elapsed}s"
   echo "==> $name stdout_bytes: $(wc -c <"$log" | tr -d ' ')"
   return 0
 }
