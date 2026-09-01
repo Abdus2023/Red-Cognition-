@@ -1,5 +1,33 @@
 # EV-01 CI evidence — current-head execution
 
+## EV-01d instrumentation (awaiting CI)
+
+`comp1` (the 34 odd-indexed files that historically make `run-all-comp1.red`) is now four sequential compile units. Default `run-all-comp1.red` is unchanged. CI `--phase all` runs `comp1a`→`comp1d` instead of the monolith.
+
+| Partition | Files (odd indices of `all-tests.txt`) |
+| --- | --- |
+| `comp1a` | preprocessor, conditional, path, url, function, type, select, evaluation, lexer |
+| `comp1b` | case, comparison, append, move, mold, parse, strict-equal, integer, money |
+| `comp1c` | words-of, case-folding, vector, pair, time, convert, reactivity, debase, try |
+| `comp1d` | image, lexer-auto, scalars, stress, recycle, csv, redbin-codec |
+
+Semantics: COMPLETE / FAILED / INCOMPLETE / NOT_RUN. No skip/PASS for unexecuted groups. Job timeout remains 20m. `pre` FAIL is independent of the `comp1` stall. Duration is recorded on every `comp1*` COMPLETE/FAILED annotation. Slow ≠ hung (`hello.red` ~288s).
+
+This section is **not** a result. Fill from the next `push` run.
+
+| Partition | State | Duration |
+| --- | --- | ---: |
+| identity | *(pending)* |  |
+| hello | *(pending)* |  |
+| pre | *(pending)* |  |
+| comp1a | *(pending)* |  |
+| comp1b | *(pending)* |  |
+| comp1c | *(pending)* |  |
+| comp1d | *(pending)* |  |
+| later groups | NOT_RUN unless earlier finished |  |
+
+---
+
 ## EV-01c group localization (commit `8b05636`, run `33532229557`)
 
 GitHub Check annotations for job `99938034432` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33532229557):
@@ -183,15 +211,10 @@ Windows workflow on these commits still fails at `Set up job`. That remains CI i
 
 ## EV-01 status
 
-**EV-01 diagnostic pass condition (observability of current-head Red launch) is met at the job-step level.**
+**EV-01a** (current-head launch) **PASS**. **EV-01b** (stall after hello inside `run-all.r`) **PASS**. **EV-01c** (which `run-all` group) **PASS → `comp1`**.
 
-**EV-01 log-localization is not met** until the streamed heartbeat / `quick-test.log` / execution JSON can be read.
-
-Timeout is still 20 minutes. Do not raise it yet.
+Timeout is still 20 minutes. Do not raise it yet. Do not patch AF_ALG or Red expected results from `pre` exit 1.
 
 ## Next diagnostic (not a Red semantic patch)
 
-Insert a `red.r tests/hello.red` compiler smoke **before** `tests/run-all.r`.
-
-- If hello hangs: the stall is compiler/bootstrap, not the full suite.
-- If hello completes and `run-all.r` then occupies the remaining budget: the stall is in the suite.
+EV-01d: four `comp1` compile-unit partitions. Do not split hundreds of tests. Do not treat timeout as skip/PASS. Do not raise the 20-minute job timeout.

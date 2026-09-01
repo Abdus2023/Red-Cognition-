@@ -22,7 +22,8 @@ Options:
   --heartbeat-seconds N     Heartbeat interval (default: 60)
   --skip-identity           Skip the Rebol identity smoke check
   --phase PHASE             identity | hello | red | red-system | all
-                            | pre | comp1 | comp2 | interp | post | regression
+                            | pre | comp1 | comp1a | comp1b | comp1c | comp1d
+                            | comp2 | interp | post | regression
   --hello-timeout N         Seconds to allow red.r tests/hello.red (default: 480; 0 disables)
   --help                    Show this help
 EOF
@@ -51,7 +52,7 @@ while (($#)); do
     --phase)
       PHASE=${2:?missing value for --phase}
       case "$PHASE" in
-        identity|hello|red|red-system|all|pre|comp1|comp2|interp|post|regression) ;;
+        identity|hello|red|red-system|all|pre|comp1|comp1a|comp1b|comp1c|comp1d|comp2|interp|post|regression) ;;
         *) echo "Unknown --phase: $PHASE" >&2; usage >&2; exit 2 ;;
       esac
       shift 2
@@ -536,7 +537,7 @@ EOF
     gha_error "EV-01 $name" "TIMED_OUT after ${elapsed}s limit=${suite_timeout}s command=$cmd"
     append_phase_status "TIMED_OUT $name elapsed=${elapsed}s"
   elif [[ $rc -eq 0 ]]; then
-    if [[ $name == rebol-identity || $name == red-hello ]]; then
+    if [[ $name == rebol-identity || $name == red-hello || $name == red-comp1a || $name == red-comp1b || $name == red-comp1c || $name == red-comp1d ]]; then
       gha_notice "EV-01 $name" "COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
     else
       echo "==> $name COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
@@ -558,12 +559,16 @@ EOF
   return 0
 }
 
-RED_GROUPS=(pre comp1 comp2 interp post regression)
+COMP1_PARTS=(comp1a comp1b comp1c comp1d)
+RED_GROUPS=(pre "${COMP1_PARTS[@]}" comp2 interp post regression)
 
 mark_remaining_not_run() {
   local failed=$1
   local seen=0
   local g
+  case $failed in
+    hello|identity) seen=1 ;;
+  esac
   for g in "${RED_GROUPS[@]}"; do
     if [[ $seen -eq 1 ]]; then
       write_not_run "red-$g" "$failed did not complete"
@@ -633,7 +638,7 @@ run_red_group() {
   local rc
   rc=$(cat "$OUT/red-$g.exit" 2>/dev/null || echo missing)
   if [[ "$rc" == "124" ]]; then
-    gha_error "EV-01c" "red-$g TIMED_OUT; later groups NOT_RUN"
+    gha_error "EV-01d" "red-$g TIMED_OUT; later groups NOT_RUN"
     mark_remaining_not_run "$g"
     write_incomplete_summary "red-$g timed out; overall INCOMPLETE"
     exit 124
@@ -647,6 +652,13 @@ if [[ $PHASE == all || $PHASE == red ]]; then
   if [[ $PHASE == red ]]; then
     exit 0
   fi
+fi
+
+if [[ $PHASE == comp1 ]]; then
+  for g in "${COMP1_PARTS[@]}"; do
+    run_red_group "$g"
+  done
+  exit 0
 fi
 
 for g in "${RED_GROUPS[@]}"; do
@@ -707,11 +719,19 @@ identity["execution"] = identity_exec
 identity["identity_ok"] = bool(re.search(r"rebol-identity-ok", (out / "rebol-identity.stdout.log").read_text(errors="replace") if (out / "rebol-identity.stdout.log").exists() else ""))
 
 suites = []
-for name, qlog_name in (("red", "red.quick-test.log"), ("red-system", "red-system.quick-test.log")):
+group_names = [
+    "red-pre", "red-comp1a", "red-comp1b", "red-comp1c", "red-comp1d",
+    "red-comp2", "red-interp", "red-post", "red-regression", "red-system",
+]
+legacy_red = out / "red.stdout.log"
+names = list(group_names)
+if legacy_red.exists() and not (out / "red-pre.stdout.log").exists() and not (out / "red-comp1a.stdout.log").exists():
+    names = ["red", "red-system"]
+for name in names:
     parsed = parse_file(out / f"{name}.stdout.log")
     parsed["name"] = name
     parsed["execution"] = load_execution(name)
-    qlog = out / qlog_name
+    qlog = out / f"{name}.quick-test.log"
     parsed["quick_test_log"] = str(qlog) if qlog.exists() else None
     if qlog.exists():
         q = parse_file(qlog)
@@ -721,10 +741,13 @@ for name, qlog_name in (("red", "red.quick-test.log"), ("red-system", "red-syste
         parsed["failure_marker"] = parsed["failure_marker"] or q["failure_marker"]
     suites.append(parsed)
 
-completed = all(
-    s["execution"].get("state") in ("COMPLETED", "FAILED") and s["exit_code"] is not None
-    for s in suites
-)
+def suite_finished(s):
+    st = s["execution"].get("state")
+    return st in ("COMPLETED", "FAILED") and s["exit_code"] is not None
+
+completed = all(suite_finished(s) for s in suites)
+if any(s["execution"].get("state") in ("NOT_RUN", "NOT_STARTED", "TIMED_OUT", "CANCELLED", "STARTED", "RUNNING") for s in suites):
+    completed = False
 functional_pass = all(
     s["exit_code"] == 0 and not s["failure_marker"] and (s["failed"] in (None, 0))
     for s in suites
@@ -768,16 +791,16 @@ lines = [
 ]
 if (out / "rebol-identity.exit").exists():
     lines.append(
-        f"| Rebol identity | {identity_exec.get('state')} | {identity['exit_code']} |  |  |  | {identity.get('identity_ok')} |"
+        f"| Rebol identity | {identity_exec.get('state')} | {identity['exit_code']} | {identity_exec.get('elapsed_seconds')} |  |  |  | {identity.get('identity_ok')} |"
     )
 if (out / "red-hello.exit").exists() or (out / "red-hello.execution.json").exists():
     hello_exec = load_execution("red-hello")
     lines.append(
-        f"| red-hello | {hello_exec.get('state')} | {hello_exec.get('exit_code')} |  |  |  |  |"
+        f"| red-hello | {hello_exec.get('state')} | {hello_exec.get('exit_code')} | {hello_exec.get('elapsed_seconds')} |  |  |  |  |"
     )
 for s in suites:
     lines.append(
-        f"| {s['name']} | {s['execution'].get('state')} | {s['exit_code']} | {s['assertions']} | {s['passed']} | {s['failed']} | {s['failure_marker']} |"
+        f"| {s['name']} | {s['execution'].get('state')} | {s['exit_code']} | {s['execution'].get('elapsed_seconds')} | {s['assertions']} | {s['passed']} | {s['failed']} | {s['failure_marker']} |"
     )
 lines += [
     "",

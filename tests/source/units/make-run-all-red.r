@@ -99,6 +99,35 @@ foreach file file-list-comp [
 ]
 write/append file-out {~~~end-file~~~^/} 
 
+;; EV-01d: same odd-indexed files as run-all-comp1.red, four compile units.
+;; Default run-all-comp1.red content is unchanged.
+comp1-files: copy []
+i: 0
+foreach file file-list-comp [
+	i: i + 1
+	if odd? i [append comp1-files copy file]
+]
+write-comp1-part: func [
+	suffix [string!]
+	start [integer!]
+	end [integer!]
+	/local file-out idx
+][
+	file-out: to file! rejoin [%auto-tests/run-all-comp1- suffix ".red"]
+	write-test-header file-out
+	write/append file-out rejoin [{~~~start-file~~~ "run-all-comp1-} suffix {"^/}]
+	idx: start
+	while [idx <= end] [
+		write/append file-out rejoin ["#include %" move-file pick comp1-files idx lf]
+		idx: idx + 1
+	]
+	write/append file-out {~~~end-file~~~^/}
+]
+write-comp1-part "a" 1 9
+write-comp1-part "b" 10 18
+write-comp1-part "c" 19 27
+write-comp1-part "d" 28 34
+
 file-out: %auto-tests/run-all-interp.red
 write-test-header file-out
 write/append file-out 
