@@ -25,7 +25,7 @@
       "blocking": false,
       "id": "OWNER-DECISION-004",
       "question": "Which same-filename groups are intentional platform variants, historical variants, or conflicts requiring resolution?",
-      "reason": "Duplicate analysis reports 50 same-filename groups requiring review.",
+      "reason": "Duplicate analysis reports 57 same-filename groups requiring review.",
       "topic": "Duplicate groups"
     },
     {
@@ -39,7 +39,7 @@
       "blocking": true,
       "id": "OWNER-DECISION-006",
       "question": "How should files diverged from upstream Red v0.6.4 be classified after maintainer review?",
-      "reason": "Comparison currently reports 258 same-path diverged files and 596 local-only/non-upstream files.",
+      "reason": "Comparison currently reports 258 same-path diverged files and 781 local-only/non-upstream files.",
       "topic": "Diverged upstream files"
     }
   ],
@@ -47,8 +47,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive owner decision register from audit, duplicate, bootstrap, CI, and upstream comparison evidence",
-    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
-    "timestamp_utc": "2026-08-31T20:31:51.389727+00:00",
+    "repository_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
+    "timestamp_utc": "2026-09-01T11:44:32.549182+00:00",
     "tool": "tools/source-audit/generate_repository_risk_reports.py"
   },
   "schema_version": 1,

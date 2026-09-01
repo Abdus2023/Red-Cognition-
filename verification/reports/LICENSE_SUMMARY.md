@@ -8,6 +8,6 @@ No legal interpretation or relicensing was performed.
 | License field | Count |
 |---|---:|
 | 'BSD | 1 |
-| BSD-3-Clause (as stated or indicated locally) | 250 |
+| BSD-3-Clause (as stated or indicated locally) | 288 |
 | Boost Software License 1.0 (as stated or indicated locally) | 246 |
-| UNKNOWN | 628 |
+| UNKNOWN | 775 |

@@ -32,6 +32,45 @@
         "BINARY"
       ],
       "paths": [
+        "artifacts/red/tests/libRed-v0.6.6/libRed.dll",
+        "tests/libRed/libRed.dll"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "5e523ee5adffaec632858955b031d4b5a2c5481c3c2f61655f56b062c2284b60"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
+        "artifacts/red/tests/libstruct-v0.6.6/libstructlib.so",
+        "system/tests/source/units/libs/libstructlib.so"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "780f072d9a0324ab3dddd56ebc1b4c70139d745bace584d6ae96bab0fc071cb0"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
+        "artifacts/red/tests/libstruct-v0.6.6/structlib.dll",
+        "system/tests/source/units/libs/structlib.dll"
+      ],
+      "relationship": "IDENTICAL",
+      "review_status": "PRESERVED; no deletion performed",
+      "sha256": "aa85993d2c6a8b59bff1bb4a866652f0c6a692e4ed774cd7a3e8ab3cd36d8353"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "paths": [
         "system/assets/red-mono.ico",
         "tests/red-mono.ico"
       ],
@@ -78,9 +117,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive duplicate groups from SHA-256, filename, and normalized-content groups in inventory",
-    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
+    "repository_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-08-31T20:31:50.220752+00:00",
+    "timestamp_utc": "2026-09-01T11:44:31.192100+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "normalized_content_groups": [],
@@ -296,6 +335,48 @@
     {
       "classification": "RELATED-VARIANT",
       "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "docs__architecture__rebol_red_monorepo.md",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/docs__architecture__REBOL_RED_MONOREPO.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/docs__architecture__REBOL_RED_MONOREPO.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "docs__bootstrap__bootstrap.md",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/docs__bootstrap__BOOTSTRAP.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/docs__bootstrap__BOOTSTRAP.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "docs__provenance__provenance.md",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/docs__provenance__PROVENANCE.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/docs__provenance__PROVENANCE.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
         "RED-SOURCE",
         "RED-TEST"
       ],
@@ -473,6 +554,34 @@
       "review_status": "OWNER REVIEW REQUIRED before any consolidation"
     },
     {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "libred.dll",
+      "paths": [
+        "artifacts/red/tests/libRed-v0.6.6/libRed.dll",
+        "tests/libRed/libRed.dll"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "libstructlib.so",
+      "paths": [
+        "artifacts/red/tests/libstruct-v0.6.6/libstructlib.so",
+        "system/tests/source/units/libs/libstructlib.so"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
       "classification": "RELATED-VARIANT",
       "classifications_present": [
         "RED-RUNTIME"
@@ -623,10 +732,11 @@
         "RED-TOOLING",
         "SPECIFICATION"
       ],
-      "distinct_sha256_count": 9,
+      "distinct_sha256_count": 11,
       "filename": "readme.md",
       "paths": [
         "README.md",
+        "artifacts/README.md",
         "bridges/java/README.md",
         "build/README.md",
         "docs/README.md",
@@ -634,7 +744,8 @@
         "knowledge-base/README.md",
         "libRed/README.md",
         "system/bridges/java/README.md",
-        "tests/libRed/README.md"
+        "tests/libRed/README.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/README.md"
       ],
       "relationship": "RELATED-VARIANT",
       "review_status": "OWNER REVIEW REQUIRED before any consolidation"
@@ -785,6 +896,20 @@
       "review_status": "OWNER REVIEW REQUIRED before any consolidation"
     },
     {
+      "classification": "IDENTICAL",
+      "classifications_present": [
+        "BINARY"
+      ],
+      "distinct_sha256_count": 1,
+      "filename": "structlib.dll",
+      "paths": [
+        "artifacts/red/tests/libstruct-v0.6.6/structlib.dll",
+        "system/tests/source/units/libs/structlib.dll"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
       "classification": "RELATED-VARIANT",
       "classifications_present": [
         "RED-RUNTIME"
@@ -874,6 +999,62 @@
     {
       "classification": "RELATED-VARIANT",
       "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "verification__hashes__sha256sums",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/verification__hashes__SHA256SUMS",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/verification__hashes__SHA256SUMS"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "verification__inventory__rebol_red_inventory.json",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/verification__inventory__REBOL_RED_INVENTORY.json",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/verification__inventory__REBOL_RED_INVENTORY.json"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "verification__inventory__rebol_red_inventory.md",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/verification__inventory__REBOL_RED_INVENTORY.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/verification__inventory__REBOL_RED_INVENTORY.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
+        "DOCUMENTATION"
+      ],
+      "distinct_sha256_count": 2,
+      "filename": "verification__reports__monorepo_audit.md",
+      "paths": [
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/ours/verification__reports__MONOREPO_AUDIT.md",
+        "verification/provenance/merge-conflicts/audio-update-2026-09-01/theirs/verification__reports__MONOREPO_AUDIT.md"
+      ],
+      "relationship": "RELATED-VARIANT",
+      "review_status": "OWNER REVIEW REQUIRED before any consolidation"
+    },
+    {
+      "classification": "RELATED-VARIANT",
+      "classifications_present": [
         "RED-SOURCE",
         "RED-TEST"
       ],
@@ -907,9 +1088,9 @@
   ],
   "schema_version": 1,
   "summary": {
-    "exact_sha256_groups": 5,
+    "exact_sha256_groups": 8,
     "normalized_content_groups": 0,
-    "owner_review_required_groups": 50,
-    "same_filename_groups": 55
+    "owner_review_required_groups": 57,
+    "same_filename_groups": 65
   }
 }

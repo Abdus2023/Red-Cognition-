@@ -5,9 +5,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive no-move migration baseline from inventory; no filesystem move operations performed",
-    "repository_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
+    "repository_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-08-31T20:31:50.216732+00:00",
+    "timestamp_utc": "2026-09-01T11:44:31.187699+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "policy": [
@@ -16,6 +16,6 @@
     "If hashes differ, mark transformation as content-changing and investigate before claiming preservation."
   ],
   "schema_version": 1,
-  "source_inventory_commit": "ddcb9b54b4a8a0155596e903721d07b8d4073365",
+  "source_inventory_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
   "status": "NO_MOVES_PERFORMED"
 }

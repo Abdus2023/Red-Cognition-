@@ -39,6 +39,7 @@ GENERATED_AUDIT_PATHS = {
     "verification/provenance/LICENSE_SUMMARY.json",
     "verification/provenance/PROVENANCE_MANIFEST.json",
     "verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json",
+    "verification/reports/AUDIO_UPDATE_MERGE.md",
     "verification/reports/BINARY_INVENTORY.md",
     "verification/reports/CI_EVIDENCE.md",
     "verification/reports/CONFLICT_REGISTER.md",

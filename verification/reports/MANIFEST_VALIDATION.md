@@ -21,13 +21,13 @@ This validates generated audit manifests and local SHA-256 records only. It does
 | json_manifest_schema | PASS | path=verification/provenance/LICENSE_SUMMARY.json |
 | json_manifest_schema | PASS | path=verification/provenance/RED_UPSTREAM_V0_6_4_COMPARISON.json |
 | json_manifest_schema | PASS | path=verification/reproducibility/OFFLINE_DEPENDENCIES.json |
-| inventory_cardinality_and_hashes | PASS | files_checked=1125 |
-| sha256sums | PASS | entries=1125 |
+| inventory_cardinality_and_hashes | PASS | files_checked=1310 |
+| sha256sums | PASS | entries=1310 |
 | migration_no_move_baseline | PASS |  |
-| conflict_register | PASS | conflicts=350 |
-| monorepo_path_map | PASS | mapped_entries=1125 |
+| conflict_register | PASS | conflicts=389 |
+| monorepo_path_map | PASS | mapped_entries=1310 |
 | duplicate_analysis_counts | PASS |  |
-| upstream_comparison_counts | PASS | local_entries=1118 |
+| upstream_comparison_counts | PASS | local_entries=1303 |
 | epistemic_overclaim_scan | PASS |  |
 
 ## Errors

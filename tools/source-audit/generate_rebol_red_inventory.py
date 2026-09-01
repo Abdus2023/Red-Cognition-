@@ -70,6 +70,7 @@ def tracked_files() -> list[str]:
         "verification/reports/TEST_STATUS.md",
         "verification/reports/LOCAL_EXECUTION_EVIDENCE.md",
         "verification/reports/CI_EVIDENCE.md",
+        "verification/reports/AUDIO_UPDATE_MERGE.md",
         "verification/reports/RED_UPSTREAM_V0_6_4_COMPARISON.md",
         "verification/reports/BINARY_INVENTORY.md",
         "verification/reports/LICENSE_SUMMARY.md",
@@ -208,6 +209,22 @@ def classify(path: str, sample: str, binary: bool) -> tuple[str, str]:
         return "RED-TOOLING", "Red build tooling path"
     if path in {"BSD-3-License.txt", "BSL-License.txt", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md"} or path.startswith("docs/governance/"):
         return "GOVERNANCE", "governance/license path"
+    if path.startswith("acquisition-tools/"):
+        return "RED-COGNITION", "provenance/acquisition tooling imported from audio branch"
+    if path.startswith("artifacts/logs/"):
+        return "DOCUMENTATION", "captured acquisition/execution log artifact"
+    if path.startswith("artifacts/manifests/"):
+        return "DOCUMENTATION", "captured acquisition/provenance manifest artifact"
+    if path.startswith("artifacts/provenance/"):
+        return "DOCUMENTATION", "captured provenance artifact"
+    if path.startswith("artifacts/reports/"):
+        return "DOCUMENTATION", "captured acquisition report artifact"
+    if path.startswith("verification/evidence/"):
+        return "DOCUMENTATION", "verification evidence artifact imported from audio branch"
+    if path.startswith("verification/provenance/merge-conflicts/"):
+        return "DOCUMENTATION", "preserved merge-conflict provenance snapshot"
+    if path == "verification-status.json":
+        return "DOCUMENTATION", "verification status manifest imported from audio branch"
     if path.startswith("rfcs/") or p.name.startswith("RFC-"):
         return "RFC", "RFC filename/path"
     if path.startswith(("specs/", "docs/specifications/")):
@@ -728,7 +745,8 @@ def write_audit(data: dict[str, Any]) -> None:
         "- `verification/reports/DUPLICATE_ANALYSIS.md`",
         "- `verification/reports/TEST_STATUS.md`",
         "- `verification/reports/LOCAL_EXECUTION_EVIDENCE.md`",
-        "- `verification/reports/CI_EVIDENCE.md`", 
+        "- `verification/reports/CI_EVIDENCE.md`",
+        "- `verification/reports/AUDIO_UPDATE_MERGE.md`", 
         "",
     ]
     out.write_text("\n".join(lines))
