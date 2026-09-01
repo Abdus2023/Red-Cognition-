@@ -110,9 +110,35 @@ Unchanged and still separate:
 - conflict register: 389 open
 - Red-Cognition product: not validated
 
+## First CI result against `ecfaedee` — wrapper defect, not Red
+
+Run: `33519143570`  
+Job: `99893662465`  
+Commit: `ecfaedee245b049bdd68c37ad9d7e6f309126379`
+
+| Step | Result |
+| --- | --- |
+| checkout / i386 / Buildx | PASS |
+| Rebol SHA-256 verify | PASS |
+| 32-bit image build | PASS (~4 min) |
+| Run Red and Red/System container tests | FAIL in **~1 second**, exit 1 |
+| Publish test reports | PASS |
+
+This is **not** the historical 20-minute Red hang. The new runner died before Docker launched Red.
+
+Local reproduction of `write_execution_record` produced:
+
+```
+NameError: name 'null' is not defined
+```
+
+The execution JSON writer interpolated JSON `null` into Python source. That is a wrapper bug. It has been replaced with an env-var Python writer that serializes `None` correctly.
+
+**Do not treat `ecfaedee` as Red-phase evidence.**
+
 ## Next evidence
 
-A fresh GitHub Actions run of **this** commit, not `805e75ce`.
+A fresh GitHub Actions run of the **fixed** commit, not `805e75ce` and not `ecfaedee`.
 
 Required fields:
 

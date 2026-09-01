@@ -80,18 +80,6 @@ TERMINATION_SIGNAL=""
 
 iso_now() { date -u +%Y-%m-%dT%H:%M:%SZ; }
 
-write_json() {
-  local dest=$1
-  shift
-  python3 - "$dest" "$@" <<'PY'
-import json, sys
-from pathlib import Path
-dest = Path(sys.argv[1])
-obj = json.loads(sys.argv[2])
-dest.write_text(json.dumps(obj, indent=2) + "\n")
-PY
-}
-
 preview_text() {
   local path=$1
   if [[ -f "$path" ]]; then
