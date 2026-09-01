@@ -1,18 +1,32 @@
 # EV-01 CI evidence — current-head execution
 
-## EV-01f instrumentation (awaiting CI)
+## EV-01f `comp1a1` one-file units (commit `93d1186`, run `33549483341`)
 
-`comp1a1` is three sequential one-file compile units. Historical `run-all-comp1-a1.red` is unchanged. CI `--phase all` runs `comp1a1a`→`comp1a1c` instead of the monolith.
+GitHub Check annotations for job `99995221280` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33549483341):
 
-| Partition | File |
-| --- | --- |
-| `comp1a1a` | preprocessor-test.red |
-| `comp1a1b` | conditional-test.red |
-| `comp1a1c` | path-test.red |
+| Partition | State | Duration | File / command |
+| --- | --- | ---: | --- |
+| Rebol identity | **COMPLETED exit=0** | 3s | identity smoke |
+| red-hello | **COMPLETED exit=0** | **342s** | `red.r tests/hello.red` |
+| red-pre | **FAILED exit=1** | **374s** | `--group pre` |
+| **red-comp1a1a** | **START only (INCOMPLETE)** | until cancel (~226s) | `preprocessor-test.red` |
+| red-comp1a1b | no START | — | **NOT_RUN** (`conditional-test.red`) |
+| red-comp1a1c | no START | — | **NOT_RUN** (`path-test.red`) |
+| later groups | no START | — | **NOT_RUN** |
 
-Same job, 20m timeout. COMPLETE / FAILED / INCOMPLETE / NOT_RUN. Leftover ~217s after hello+pre is not proof of a hang.
+Job `19:26:35Z`–`19:46:54Z` **cancelled** at 20m. Image build `19:26:52Z`–`19:31:04Z` PASS (~4m12s). Test step `19:31:04Z`–`19:46:49Z` cancelled (~15m45s). Artifact `red-container-test-results-33549483341` (14261 bytes).
 
-This section is **not** a result. Fill from the next `push` run.
+Prefix cost: identity 3s + hello 342s + pre 374s ≈ 719s. **`comp1a1a` occupied the leftover ~226s**.
+
+### Discriminating conclusion
+
+- `pre` completed FAIL 374s — still independent of the stall.
+- `hello.red` 342s — leftover ~226s is **not** proof that `preprocessor-test.red` is intrinsically hung.
+- The first unit that started and **did not terminate** is **`comp1a1a`** (`tests/source/units/preprocessor-test.red`).
+- `comp1a1b` / `comp1a1c` were **NOT_RUN**. Overall **INCOMPLETE**, not skip/PASS.
+- AF_ALG still not implicated.
+
+EV-01f: remaining budget is consumed inside **`tests/run-all.r --group comp1a1a`**. Next step is **source-level inspection of that preprocessor compile/run**, not finer CI partitions.
 
 ---
 
