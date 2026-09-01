@@ -1,171 +1,67 @@
 name: Red container tests
 
 on:
-
-push:
-
-workflow_dispatch:
+  push:
+  workflow_dispatch:
 
 permissions:
-
-contents: read
+  contents: read
 
 concurrency:
-
-group: red-container-tests-${{ github.ref }}
-
-cancel-in-progress: true
+  group: red-container-tests-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-
-container-tests:
-
-name: Rebol 2.7.8 / Red test suites
-
-runs-on: ubuntu-24.04
-
-# Intentionally unchanged: do not hide hangs by raising this until
-
-# streamed output localizes the Red-phase stall.
-
-timeout-minutes: 20
-
-steps:
-
-- name: Check out repository
-
-uses: actions/checkout@v4
-
-- name: Record execution identity
-
-run: |
-
-set -euo pipefail
-
-mkdir -p "$GITHUB_WORKSPACE/artifacts/test-run"
-
-cat > "$GITHUB_WORKSPACE/artifacts/test-run/github-identity.txt" <<EOF
-
-commit=${{ github.sha }}
-
-ref=${{ github.ref }}
-
-event=${{ github.event_name }}
-
-run_id=${{ github.run_id }}
-
-run_attempt=${{ github.run_attempt }}
-
-workflow=${{ github.workflow }}
-
-job=${{ github.job }}
-
-actor=${{ github.actor }}
-
-server_url=${{ github.server_url }}
-
-repository=${{ github.repository }}
-
-EOF
-
-sed 's/^ //' "$GITHUB_WORKSPACE/artifacts/test-run/github-identity.txt" | tee "$GITHUB_WORKSPACE/artifacts/test-run/github-identity.txt.normalized"
-
-mv "$GITHUB_WORKSPACE/artifacts/test-run/github-identity.txt.normalized" "$GITHUB_WORKSPACE/artifacts/test-run/github-identity.txt"
-
-echo "GITHUB_SHA=${{ github.sha }}"
-
-echo "GITHUB_RUN_ID=${{ github.run_id }}"
-
-- name: Enable i386 emulation
-
-uses: docker/setup-qemu-action@v3
-
-with:
-
-platforms: i386
-
-- name: Set up Docker Buildx
-
-uses: docker/setup-buildx-action@v3
-
-- name: Download and verify Rebol 2.7.8 bootstrap
-
-env:
-
-REBOL_URL: https://static.red-lang.org/tmp/rebol
-
-REBOL_SHA256: 1c902e0f75e994d739975e64663323832ce00f52208b3287cbfe5e7029d856d6
-
-run: |
-
-set -euo pipefail
-
-curl --fail --location --retry 3 --output rebol "$REBOL_URL"
-
-echo "$REBOL_SHA256 rebol" | sha256sum --check --strict
-
-chmod 0755 rebol
-
-file rebol
-
-sha256sum rebol | tee "$GITHUB_WORKSPACE/artifacts/test-run/rebol.sha256"
-
-- name: Build 32-bit Rebol test image
-
-run: |
-
-docker buildx build \
-
---platform linux/386 \
-
---tag red-cognition/rebol-bootstrap:2.7.8 \
-
---file docker/rebol-bootstrap/Dockerfile \
-
---load \
-
-.
-
-docker image inspect red-cognition/rebol-bootstrap:2.7.8 --format '{{.Id}} {{.Os}}/{{.Architecture}}' \
-
-| tee "$GITHUB_WORKSPACE/artifacts/test-run/image-identity.txt"
-
-- name: Run Red and Red/System container tests
-
-env:
-
-PYTHONUNBUFFERED: "1"
-
-run: |
-
-set -euo pipefail
-
-echo "==> launching tools/run-container-tests.sh"
-
-echo " commit=${{ github.sha }}"
-
-echo " run_id=${{ github.run_id }}"
-
-echo " timeout_minutes=20 (unchanged)"
-
-tools/run-container-tests.sh \
-
---image red-cognition/rebol-bootstrap:2.7.8 \
-
---out "$GITHUB_WORKSPACE/artifacts/test-run"
-
-- name: Publish test reports
-
-if: always()
-
-uses: actions/upload-artifact@v4
-
-with:
-
-name: red-container-test-results-${{ github.run_id }}
-
-path: artifacts/test-run
-
-if-no-files-found: warn
-
-retention-days: 14
+  container-tests:
+    name: Rebol 2.7.8 / Red test suites
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Enable i386 emulation
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: i386
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Download and verify Rebol 2.7.8 bootstrap
+        env:
+          REBOL_URL: https://static.red-lang.org/tmp/rebol
+          REBOL_SHA256: 1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output rebol "$REBOL_URL"
+          echo "$REBOL_SHA256  rebol" | sha256sum --check --strict
+          chmod 0755 rebol
+          file rebol
+
+      - name: Build 32-bit Rebol test image
+        run: |
+          docker buildx build \
+            --platform linux/386 \
+            --tag red-cognition/rebol-bootstrap:2.7.8 \
+            --file docker/rebol-bootstrap/Dockerfile \
+            --load \
+            .
+
+      - name: Run Red and Red/System container tests
+        run: |
+          set -o pipefail
+          mkdir -p "$GITHUB_WORKSPACE/artifacts/test-run"
+          tools/run-container-tests.sh \
+            --image red-cognition/rebol-bootstrap:2.7.8 \
+            --out "$GITHUB_WORKSPACE/artifacts/test-run"
+
+      - name: Publish test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: red-container-test-results-${{ github.run_id }}
+          path: artifacts/test-run
+          if-no-files-found: warn
+          retention-days: 14
