@@ -1,18 +1,18 @@
 # Rebol + Red Inventory
 
-Generated: 2026-09-01T12:07:09.384492+00:00
+Generated: 2026-08-31T20:31:50.143848+00:00
 Tool: `tools/source-audit/generate_rebol_red_inventory.py`
 Repository: `https://github.com/Abdus2023/Red-Cognition-`
 Branch: `arena/01a058c5-red-cognition`
-Commit: `cd00ea4c3b500913d08019924a2ff9a5b40766b9`
+Commit: `ddcb9b54b4a8a0155596e903721d07b8d4073365`
 
 ## Scope and Method
 git ls-files enumeration; local byte-size and SHA-256 hashing; conservative rule-based classification from path, extension, and source headers.
 No upstream source was moved or rewritten by this inventory phase.
 
 ## Summary
-- Total tracked files inventoried: 1310
-- Binary files: 60
+- Total tracked files inventoried: 1125
+- Binary files: 28
 - Files with `REBOL [` headers: 113
 - Files with `Red [` headers: 166
 - Files with `Red/System [` headers: 251
@@ -21,14 +21,14 @@ No upstream source was moved or rewritten by this inventory phase.
 ## Classification Counts
 | Classification | Count |
 |---|---:|
-| ARCHIVE | 30 |
-| BINARY | 30 |
-| BUILD-INFRASTRUCTURE | 13 |
-| DOCUMENTATION | 353 |
+| ARCHIVE | 1 |
+| BINARY | 27 |
+| BUILD-INFRASTRUCTURE | 11 |
+| DOCUMENTATION | 224 |
 | GOVERNANCE | 6 |
 | REBOL-BOOTSTRAP | 1 |
 | REBOL-SOURCE | 4 |
-| RED-COGNITION | 115 |
+| RED-COGNITION | 93 |
 | RED-COMPILER | 28 |
 | RED-FIXTURE | 16 |
 | RED-RUNTIME | 163 |
@@ -355,29 +355,7 @@ No upstream source was moved or rewritten by this inventory phase.
 - `tests/run-all.sh`
 - `tests/source/units/all-tests.txt`
 
-### RED-COGNITION (115)
-- `acquisition-tools/01_discover.py`
-- `acquisition-tools/02_git.py`
-- `acquisition-tools/03_download.py`
-- `acquisition-tools/04_inspect.py`
-- `acquisition-tools/05_finalize.py`
-- `acquisition-tools/06_report.py`
-- `acquisition-tools/07_continue.py`
-- `acquisition-tools/08_deepen.py`
-- `acquisition-tools/09_deepen2.py`
-- `acquisition-tools/10_docs_determinism.py`
-- `acquisition-tools/11_consolidate.py`
-- `acquisition-tools/12_series_reference.py`
-- `acquisition-tools/13_wrapup.py`
-- `acquisition-tools/14_fork_repro.py`
-- `acquisition-tools/15_distribution.py`
-- `acquisition-tools/16_consistency.py`
-- `acquisition-tools/17_identification.py`
-- `acquisition-tools/18_wikis_audit.py`
-- `acquisition-tools/19_closure.py`
-- `acquisition-tools/common.py`
-- `acquisition-tools/reproduce_acquisition.sh`
-- `acquisition-tools/verify_tree.sh`
+### RED-COGNITION (93)
 - `cognition/.gitkeep`
 - `dialects/.gitkeep`
 - `docs/implementation/concurrency-model.md`
@@ -436,7 +414,29 @@ No upstream source was moved or rewritten by this inventory phase.
 - `tools/impl_controller/provenance.py`
 - `tools/impl_controller/queue.py`
 - `tools/impl_controller/safety.py`
-- ... 35 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
+- `tools/impl_controller/tests/__init__.py`
+- `tools/impl_controller/tests/test_concurrency.py`
+- `tools/impl_controller/tests/test_controller.py`
+- `tools/impl_controller/tests/test_crash_consistency.py`
+- `tools/impl_controller/tests/test_criterion_validation.py`
+- `tools/impl_controller/tests/test_determinism.py`
+- `tools/impl_controller/tests/test_execution_integrity.py`
+- `tools/impl_controller/tests/test_external_consistency.py`
+- `tools/impl_controller/tests/test_global_invariants.py`
+- `tools/impl_controller/tests/test_hardening.py`
+- `tools/impl_controller/tests/test_pipeline.py`
+- `tools/impl_controller/tests/test_pipeline_attacks.py`
+- `tools/impl_controller/tests/test_pipeline_determinism.py`
+- `tools/impl_controller/tests/test_provenance_attacks.py`
+- `tools/impl_controller/tests/test_recovery_attacks.py`
+- `tools/impl_controller/tests/test_requirement_coverage.py`
+- `tools/impl_controller/tests/test_semantic_completeness.py`
+- `tools/impl_controller/tests/test_state_machine.py`
+- `tools/run-full-pipeline.py`
+- `tools/run-implementation-pipeline.py`
+- `tools/source-audit/compare_red_upstream.py`
+- `tools/source-audit/generate_conflict_register.py`
+- ... 13 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
 
 ### SPECIFICATION (90)
 - `docs/red-system/dark.css`
@@ -604,10 +604,7 @@ No upstream source was moved or rewritten by this inventory phase.
 - `rfcs/RFC-0060-cvm-iess-instruction-execution-scheduling.md`
 - ... 21 additional entries in `verification/inventory/REBOL_RED_INVENTORY.json`
 
-### BINARY (30)
-- `artifacts/red/tests/libRed-v0.6.6/libRed.dll`
-- `artifacts/red/tests/libstruct-v0.6.6/libstructlib.so`
-- `artifacts/red/tests/libstruct-v0.6.6/structlib.dll`
+### BINARY (27)
 - `bridges/android/dex/classes.dex`
 - `bridges/android/samples/eval/res/drawable-hdpi/ic_launcher.png`
 - `bridges/android/samples/eval/res/drawable-mdpi/ic_launcher.png`
@@ -636,40 +633,11 @@ No upstream source was moved or rewritten by this inventory phase.
 - `tests/red-mono.ico`
 - `tests/red.ico`
 
-### ARCHIVE (30)
+### ARCHIVE (1)
 - `artifacts/archives/red-cognition-test-artifacts.zip`
-- `artifacts/rebol/documentation/rebol-syntax-4ff113963.tar.gz`
-- `artifacts/rebol/source/Oldes-Rebol3-3.22.1.tar.gz`
-- `artifacts/rebol/source/Oldes-Rebol3-d5b237cea.tar.gz`
-- `artifacts/rebol/source/rebol-projects-master.tar.gz`
-- `artifacts/rebol/source/rebol-rebol-25033f897.tar.gz`
-- `artifacts/rebol/source/rebolsource-r3-98cdfcd6e.tar.gz`
-- `artifacts/rebol/source/red-RS-fossil-mirror-master.tar.gz`
-- `artifacts/rebol/source/ren-c-e31d5698d.tar.gz`
-- `artifacts/rebol/tests/rebol-test-409ef5c22.tar.gz`
-- `artifacts/red/documentation/red-red-wiki-b367696d4.tar.gz`
-- `artifacts/red/documentation/red_chocolatey-packages-bcc69995c.tar.gz`
-- `artifacts/red/documentation/red_docs-e62721663.tar.gz`
-- `artifacts/red/documentation/red_homebrew-red-e0b29b422.tar.gz`
-- `artifacts/red/documentation/red_rep-95d96a64a.tar.gz`
-- `artifacts/red/documentation/red_scoop-bucket-689288281.tar.gz`
-- `artifacts/red/documentation/ren-c-wiki-97c80da1c.tar.gz`
-- `artifacts/red/releases/red-0.1.1.tar.gz`
-- `artifacts/red/releases/red-0.2.6.tar.gz`
-- `artifacts/red/releases/red-0.3.3.tar.gz`
-- `artifacts/red/releases/red-0.4.3.tar.gz`
-- `artifacts/red/releases/red-0.5.4.tar.gz`
-- `artifacts/red/releases/red-0.6.0.tar.gz`
-- `artifacts/red/releases/red-0.6.1.tar.gz`
-- `artifacts/red/releases/red-0.6.2.tar.gz`
-- `artifacts/red/releases/red-0.6.3.tar.gz`
-- `artifacts/red/releases/red-0.6.4.tar.gz`
-- `artifacts/red/releases/red-0.6.5.tar.gz`
-- `artifacts/red/releases/red-0.6.6.tar.gz`
-- `red-cognition-verification.zip`
 
 ## Duplicate Analysis Summary
-- Exact SHA-256 duplicate groups: 8
-- Same filename groups: 65
+- Exact SHA-256 duplicate groups: 5
+- Same filename groups: 55
 - Normalized-content likely duplicate groups: 0
 - Policy: no duplicate deletion was performed.

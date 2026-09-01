@@ -1,0 +1,21 @@
+{
+  "blocked_reason": "Physical migration requires owner decision and stronger upstream provenance for historical Red/Rebol source trees.",
+  "entries": [],
+  "generated": {
+    "branch": "arena/01a058c5-red-cognition",
+    "date": "2026-08-31",
+    "method": "derive no-move migration baseline from inventory; no filesystem move operations performed",
+    "repository_commit": "cd00ea4c3b500913d08019924a2ff9a5b40766b9",
+    "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
+    "timestamp_utc": "2026-09-01T12:07:09.459610+00:00",
+    "tool": "tools/source-audit/generate_supplemental_manifests.py"
+  },
+  "policy": [
+    "Before any future move, record old_path, new_path, classification, origin, sha256_before.",
+    "After the move, calculate sha256_after and compare with sha256_before.",
+    "If hashes differ, mark transformation as content-changing and investigate before claiming preservation."
+  ],
+  "schema_version": 1,
+  "source_inventory_commit": "cd00ea4c3b500913d08019924a2ff9a5b40766b9",
+  "status": "NO_MOVES_PERFORMED"
+}
