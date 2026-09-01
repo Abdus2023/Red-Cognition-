@@ -1,0 +1,392 @@
+{
+  "generated_at": "2026-08-31T17:53:01Z",
+  "network_recheck": {
+    "checked_at": "2026-08-31T17:53:01Z",
+    "attempts": [
+      {
+        "url": "http://www.rebol.com/download-core.html",
+        "curl_exit": 52,
+        "result": "NETWORK_BLOCKED (unchanged)"
+      },
+      {
+        "url": "https://static.red-lang.org/dl/auto/linux/red-latest",
+        "curl_exit": 35,
+        "result": "NETWORK_BLOCKED (unchanged)"
+      },
+      {
+        "url": "https://archive.org/wayback/available?url=rebol.com",
+        "curl_exit": 35,
+        "result": "NETWORK_BLOCKED (unchanged)"
+      }
+    ]
+  },
+  "archive_tree_verification": [
+    {
+      "archive": "red-0.6.6.tar.gz",
+      "pinned_commit": "6942c7a021253150c3e3cf90428305892340db03",
+      "clone": "red",
+      "tree_entries": 673,
+      "archive_files": 673,
+      "matched": 673,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "red-0.6.4.tar.gz",
+      "pinned_commit": "755eb943ccea9e78c2cab0f20b313a52404355cb",
+      "clone": "red",
+      "tree_entries": 538,
+      "archive_files": 538,
+      "matched": 538,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "red-0.6.5.tar.gz",
+      "pinned_commit": "3bafef2203661bbcaafec8b859405ba7235a5981",
+      "clone": "red",
+      "tree_entries": 638,
+      "archive_files": 638,
+      "matched": 638,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "red-0.6.3.tar.gz",
+      "pinned_commit": "6a43c767fa2e85d668b83f749158a18e62c30f70",
+      "clone": "red",
+      "tree_entries": 503,
+      "archive_files": 503,
+      "matched": 503,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "rebol-rebol-25033f897.tar.gz",
+      "pinned_commit": "25033f897b2bd466068d7663563cd3ff64740b94",
+      "clone": "rebol_rebol",
+      "tree_entries": 220,
+      "archive_files": 220,
+      "matched": 220,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "ren-c-e31d5698d.tar.gz",
+      "pinned_commit": "e31d5698d73678d797df319eb855b3995716d9f1",
+      "clone": "metaeducation_ren-c",
+      "tree_entries": 1082,
+      "archive_files": 1082,
+      "matched": 1082,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "rebolsource-r3-98cdfcd6e.tar.gz",
+      "pinned_commit": "98cdfcd6e439390756868b390b0ff8aa01d84551",
+      "clone": "rebolsource_r3",
+      "tree_entries": 221,
+      "archive_files": 221,
+      "matched": 221,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "Oldes-Rebol3-d5b237cea.tar.gz",
+      "pinned_commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57",
+      "clone": "Oldes_Rebol3",
+      "tree_entries": 900,
+      "archive_files": 900,
+      "matched": 900,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "rebol-syntax-4ff113963.tar.gz",
+      "pinned_commit": "4ff11396312d0ccd8490191571206f628be79e8e",
+      "clone": "rebolsource_rebol-syntax",
+      "tree_entries": 4,
+      "archive_files": 4,
+      "matched": 4,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    },
+    {
+      "archive": "rebol-test-409ef5c22.tar.gz",
+      "pinned_commit": "409ef5c2270a766a6262d883e6fc5ea9d1ec6234",
+      "clone": "rebolsource_rebol-test",
+      "tree_entries": 27,
+      "archive_files": 27,
+      "matched": 27,
+      "mismatched": [],
+      "missing_from_archive": [],
+      "result": "HASH_MATCHED (whole tree)",
+      "method": "git blob SHA-1 of every archive member vs git ls-tree of pinned commit"
+    }
+  ],
+  "red_lineage_facts": {
+    "v0.6.4": "2018-11-22T09:06:20+07:00 tag",
+    "v0.6.5": "2024-02-10T00:36:45+01:00 commit",
+    "v0.6.6": "2025-03-19T14:09:25+01:00 commit",
+    "v0.7": "2019-09-11T18:35:42+02:00 commit",
+    "v0.6.4..v0.6.6": {
+      "commits_in_b_not_in_a": "5627",
+      "commits_in_a_not_in_b": "0",
+      "v0.6.4_is_ancestor_of_v0.6.6": true
+    },
+    "v0.6.6..v0.7": {
+      "commits_in_b_not_in_a": "23",
+      "commits_in_a_not_in_b": "4939",
+      "v0.6.6_is_ancestor_of_v0.7": false
+    },
+    "v0.7..HEAD": {
+      "commits_in_b_not_in_a": "5471",
+      "commits_in_a_not_in_b": "23",
+      "v0.7_is_ancestor_of_HEAD": false
+    },
+    "v0.6.6..HEAD": {
+      "commits_in_b_not_in_a": "532",
+      "commits_in_a_not_in_b": "0",
+      "v0.6.6_is_ancestor_of_HEAD": true
+    },
+    "v0.6.6->HEAD_commits": "532"
+  },
+  "rebol_rebol_vs_rebolsource_r3": {
+    "rebol_rebol_pinned": "25033f897b2bd466068d7663563cd3ff64740b94 (official master)",
+    "rebolsource_r3_pinned": "98cdfcd6e439390756868b390b0ff8aa01d84551 (historical host HEAD)",
+    "files_common_identical": 183,
+    "files_common_differing": 37,
+    "differing_examples": [
+      "src/boot/platforms.r",
+      "src/core/a-lib.c",
+      "src/core/b-init.c",
+      "src/core/c-do.c",
+      "src/core/c-error.c",
+      "src/core/c-word.c",
+      "src/core/d-dump.c",
+      "src/core/d-print.c",
+      "src/core/f-math.c",
+      "src/core/f-stubs.c",
+      "src/core/m-pools.c",
+      "src/core/m-series.c",
+      "src/core/n-control.c",
+      "src/core/s-crc.c",
+      "src/core/t-gob.c",
+      "src/core/t-object.c",
+      "src/core/t-vector.c",
+      "src/core/u-bmp.c",
+      "src/core/u-compress.c",
+      "src/core/u-jpg.c",
+      "src/core/u-md5.c",
+      "src/core/u-sha1.c",
+      "src/include/reb-c.h",
+      "src/include/reb-config.h",
+      "src/include/reb-event.h"
+    ],
+    "only_in_rebol_rebol": 0,
+    "only_in_rebolsource_r3": 1,
+    "only_in_rebolsource_examples": [
+      ".travis.yml"
+    ],
+    "method": "git ls-tree blob-SHA comparison of the two pinned commits"
+  },
+  "fork_deep_diff_summary": {
+    "identical": 251,
+    "differing_count": 258,
+    "fork_only_count": 609,
+    "missing_count": 29,
+    "differing_by_top_dir": {
+      ".github": 1,
+      ".travis.yml": 1,
+      "BSD-3-License.txt": 1,
+      "CODE_OF_CONDUCT.md": 1,
+      "CONTRIBUTING.md": 1,
+      "README.md": 1,
+      "boot.red": 1,
+      "build": 3,
+      "compiler.r": 1,
+      "docs": 1,
+      "environment": 22,
+      "lexer.r": 1,
+      "libRed": 2,
+      "modules": 39,
+      "quick-test": 3,
+      "red.r": 1,
+      "run-all.r": 1,
+      "runtime": 75,
+      "system": 43,
+      "tests": 54,
+      "usage.txt": 1,
+      "utils": 4
+    },
+    "fork_only_by_top_dir": {
+      ".dockerignore": 1,
+      ".gitattributes-sample": 1,
+      ".github": 2,
+      "artifacts": 1,
+      "cognition": 1,
+      "compiler": 1,
+      "dialects": 1,
+      "docker": 1,
+      "docs": 174,
+      "environment": 10,
+      "examples": 1,
+      "knowledge-base": 175,
+      "modules": 33,
+      "rfcs": 93,
+      "runtime": 15,
+      "specs": 13,
+      "system": 9,
+      "tests": 29,
+      "tools": 46,
+      "utils": 2
+    }
+  },
+  "oldes_license_survey": {
+    "root_LICENSE": {
+      "path": "LICENSE",
+      "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+      "head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" "
+    },
+    "license_files_found": 4,
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+        "head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" "
+      },
+      {
+        "path": "NOTICE",
+        "sha256": "498c321998e93f5ba2d7e8f1f418309ce9b7251b2ed153065ed4cbd1334694e6",
+        "head": "REBOL [R3] Language Interpreter and Run-time Environment Copyright 2012 REBOL Technologies Copyright 2012-2025 Rebol Open Source Developers REBOL is a trademark"
+      },
+      {
+        "path": "src/core/lz4/LICENSE",
+        "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c",
+        "head": "LZ4 Library Copyright (c) 2011-2020, Yann Collet All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permi"
+      },
+      {
+        "path": "src/core/deflate/COPYING",
+        "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a",
+        "head": "Copyright 2016 Eric Biggers Copyright 2024 Google LLC Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associat"
+      }
+    ],
+    "note": "survey of committed Oldes/Rebol3 tree (pinned d5b237ce); bundled third-party code licenses found where LICENSE files exist; absence of a LICENSE in a bundled dir is recorded as UNCLEAR for that dir"
+  },
+  "bootstrap_source_presence": {
+    "v0.6.4": {
+      "red.r": [
+        "red.r"
+      ],
+      "compiler.r": [
+        "compiler.r"
+      ],
+      "lexer.r": [
+        "lexer.r"
+      ],
+      "boot.red": [
+        "boot.red"
+      ],
+      "build": [
+        "build/README.md",
+        "build/build.r",
+        "build/encap-paths.r.sample",
+        "build/git-version.r",
+        "build/git.r",
+        "build/includes.r",
+        "build/precap.r"
+      ],
+      "modules/redc.r": [],
+      "system/compiler.r": [
+        "system/compiler.r"
+      ],
+      "compiler_r_anywhere": [
+        "compiler.r",
+        "system/compiler.r"
+      ],
+      "lexer_r_anywhere": [
+        "lexer.r"
+      ]
+    },
+    "v0.6.6": {
+      "red.r": [
+        "red.r"
+      ],
+      "compiler.r": [],
+      "lexer.r": [],
+      "boot.red": [],
+      "build": [
+        "build/README.md",
+        "build/build.r",
+        "build/encap-paths.r.sample",
+        "build/git-version.r",
+        "build/includes.r",
+        "build/precap.r"
+      ],
+      "modules/redc.r": [],
+      "system/compiler.r": [
+        "system/compiler.r"
+      ],
+      "compiler_r_anywhere": [
+        "encapper/compiler.r",
+        "system/compiler.r"
+      ],
+      "lexer_r_anywhere": [
+        "encapper/lexer.r"
+      ]
+    },
+    "v0.7": {
+      "red.r": [
+        "red.r"
+      ],
+      "compiler.r": [
+        "compiler.r"
+      ],
+      "lexer.r": [
+        "lexer.r"
+      ],
+      "boot.red": [
+        "boot.red"
+      ],
+      "build": [
+        "build/README.md",
+        "build/build.r",
+        "build/encap-paths.r.sample",
+        "build/git-version.r",
+        "build/git.r",
+        "build/includes.r",
+        "build/precap.r"
+      ],
+      "modules/redc.r": [],
+      "system/compiler.r": [
+        "system/compiler.r"
+      ],
+      "compiler_r_anywhere": [
+        "compiler.r",
+        "system/compiler.r"
+      ],
+      "lexer_r_anywhere": [
+        "lexer.r"
+      ]
+    },
+    "v0.6.6_note": "root compiler.r/lexer.r/boot.red absent in v0.6.6; red.r line 17 does: do-cache %encapper/compiler.r; build/README.md verbatim: 'You need a Rebol SDK copy with a valid license file in order to rebuild the Red binary, this is a constraint from using Rebol2 for the bootstrapping.'"
+  }
+}

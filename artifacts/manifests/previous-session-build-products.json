@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-08-31T18:15:08Z",
+  "role": "prior-session LOCAL BUILD products (embedded logs show a bootstrap/test run at commit f860bbe on 2026-08-30, image red-cognition/rebol-bootstrap:2.7.8) \u2014 NOT upstream artifacts; provenance UNVERIFIED (prior session, no reproducible link to this tree's commits)",
+  "container_zip_sha256": "56ce3c472cadf89f800d395c861f5fa49e59d3101b1092e8f2a71b54f48db081",
+  "products": [
+    {
+      "file": "checksum-repro",
+      "sha256": "6df2365e688b7a0f927022b54adcf4653f724570cbef626345f126067ca61916",
+      "size": 79488
+    },
+    {
+      "file": "libRedRT.so",
+      "sha256": "bc5815b16622ba3733168cf96c0e2350da17828240b74797c65ddea95f4e7d51",
+      "size": 1614480
+    },
+    {
+      "file": "libRedRT-defs.r",
+      "sha256": "5b574c197a77014abff58ca5596d81c8122683973cf817e8b7adbdfce272f956",
+      "size": 301423
+    },
+    {
+      "file": "libRedRT-extras.r",
+      "sha256": "74feb6d2d2fdcc49d333b2d1036609bf0145fb86f59e84f244177628bfb70fe5",
+      "size": 388
+    },
+    {
+      "file": "libRedRT-include.red",
+      "sha256": "efa91510080773921e58dab3540e1b1a17a920b343040bed7da8c7796c747498",
+      "size": 66110
+    }
+  ],
+  "note": "preserved unchanged in derived/; libRedRT.so is a Red compilation byproduct (evidence of a prior bootstrap EXECUTION by the prior session, not by this agent)"
+}

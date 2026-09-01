@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-31T18:22:58Z",
+  "artifact": "rebol-2.7.8 (prior-session lead)",
+  "sha256": "1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6",
+  "size": 369128,
+  "elf": {
+    "class": "ELF32",
+    "endian": "LE",
+    "e_type": "EXEC",
+    "e_machine": "i386"
+  },
+  "embedded_banner": [
+    "2.7.8.4.3",
+    "Copyright 2011 REBOL Technologies",
+    "REBOL/Core 2.7.8.4.3 (6-Jan-2011)"
+  ],
+  "identification": "REBOL/Core 2.7.8.4.3 (6-Jan-2011), Linux x86 libc6-2.5 build per rebol.com official download table",
+  "identification_method": "STATIC string/ELF-header analysis only \u2014 NOT executed",
+  "provenance_status": "UNVERIFIED",
+  "status_note": "identification is NOT attribution: the banner self-claims the official 278-4-3 build, but this copy's origin/re constructive integrity remain unknown",
+  "verification_path": "once rebol.com is reachable: download http://www.rebol.com/downloads/v278/rebol-core-278-4-3.tar.gz, extract, compare sha256 of releases/rebol-core/rebol against 1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6 (tarball-level reference hashes for sibling builds 4-2 are already on file)"
+}

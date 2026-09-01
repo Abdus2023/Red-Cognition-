@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-08-31T18:15:08Z",
+  "org": "red (GitHub org)",
+  "total_repos": 33,
+  "collected": [
+    {
+      "repo": "red/red",
+      "reason": "official language/toolchain source + releases"
+    },
+    {
+      "repo": "red/REP",
+      "reason": "official enhancement proposals"
+    },
+    {
+      "repo": "red/docs",
+      "reason": "official user documentation"
+    },
+    {
+      "repo": "red/RS-fossil-mirror",
+      "reason": "pre-GitHub Fossil history mirrors (Tier-2)"
+    },
+    {
+      "repo": "red/Homebrew-red",
+      "reason": "official mac distribution channel"
+    },
+    {
+      "repo": "red/scoop-bucket",
+      "reason": "official windows distribution channel"
+    },
+    {
+      "repo": "red/chocolatey-packages",
+      "reason": "official windows package channel"
+    },
+    {
+      "repo": "red/web-red",
+      "reason": "official website source (reference evidence only)"
+    }
+  ],
+  "not_collected": [
+    {
+      "repo": "red/Animation",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/RED-token",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/Red.jl",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/VScode-extension",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/binary-protocol",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/bincheck",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/code",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/community",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/dev-tools",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/ethereum-lists",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/promotion",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/red-type-hierarchy",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/red.github.io",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/redCV",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/redbox",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/redis",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/redlangserver",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/tokens",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/tree-sitter-red",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/wallet",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/web-foundation",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/web-fullstack",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/web-redlake",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/web-template",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    },
+    {
+      "repo": "red/zed-red",
+      "reason": "ecosystem/application material (wallets, editors, demos, promotion, web framework) \u2014 outside the toolchain/bootstrap acquisition scope"
+    }
+  ],
+  "note": "scope statement: language/toolchain/bootstrap/distribution material collected; end-user ecosystem apps not collected (leads preserved in github-discovery.json)"
+}

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-08-31T17:33:52Z",
+  "summary": "NO artifact was executed in this session. Execution claims made: NONE.",
+  "evidence": [
+    {
+      "artifact": "rebol-2.7.8 (prior-session lead, sha256 1c902e0f...)",
+      "action": "NOT_EXECUTED",
+      "reason": "ELF32 little-endian binary; host is x86_64 without i386 loader; provenance UNKNOWN so not trusted for execution",
+      "elf_header_evidence": "7f 45 4c 46 class=1(ELF32) endian=1(LE), recorded in source-inspection.json"
+    },
+    {
+      "artifact": "rebol3-core-linux-x64.gz (Oldes/Rebol3 v3.22.1 release asset)",
+      "action": "NOT_ACQUIRED",
+      "reason": "download blocked at release-assets.githubusercontent.com (TLS)",
+      "log": "logs/execution/blocked-github-release-assets-rebol3.log"
+    },
+    {
+      "artifact": "Red linux binary (static.red-lang.org)",
+      "action": "NOT_ACQUIRED",
+      "reason": "host TLS-blocked",
+      "log": "logs/execution/blocked-static-red-lang-org.log"
+    },
+    {
+      "artifact": "red/red test fixtures (libRed.dll, libstructlib.so, structlib.dll)",
+      "action": "NOT_EXECUTED",
+      "reason": "test-support libraries, not interpreters; execution out of scope for acquisition"
+    },
+    {
+      "artifact": "bootstrap reproduction (Red from source via Rebol 2.7.8)",
+      "action": "NOT_ATTEMPTED",
+      "reason": "no Rebol interpreter obtainable in this environment -> reproducibility NOT_REPRODUCED (no attempt made)"
+    }
+  ]
+}

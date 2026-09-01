@@ -1,0 +1,15 @@
+{
+  "archive": "Oldes-Rebol3-3.22.1.tar.gz",
+  "tag": "3.22.1",
+  "pinned_commit": "7fe158a9a9b0be8826c35a27596cb3c207b5ed6c",
+  "tree_entries": 898,
+  "matched": 898,
+  "mismatch": 0,
+  "missing": 0,
+  "extra": 0,
+  "result": "HASH_MATCHED (whole tree)",
+  "sha256": "9063516b0448e456efe9800d24ff063cf661a35b0f215231829c5f3fd9bd4f2a",
+  "size": 4324902,
+  "retrieved_at": "2026-08-31T18:07:23Z",
+  "ties": "release 3.22.1 (29-release registry, 1074 assets) -> its exact commit tree"
+}

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-08-31T17:49:41Z",
+  "items": [
+    {
+      "claim": "Red build requires Rebol2 during alpha/bootstrap phase (v0.6.6 README)",
+      "file": "README.md",
+      "file_sha256": "d329c0334f6783fd35d061cd24b2ae47e6b127f2707133425bb31c2fbcc21842",
+      "tree_source": "red/red tag v0.6.6",
+      "quotes": [
+        {
+          "line": 24,
+          "quote": "\nRed has its own complete cross-platform toolchain, featuring an encapper, a native compiler, an interpreter, and a linker, not depending on any third-party library, except for a Rebol2 interpreter, required during the alpha stage. Once 1.0 is reached, Red will be [self-hosted](http://en.wikipedia.org/wiki/Self-hosting). Currently, Red is still at <u>alpha stage</u> and <u>32-bit only</u>.\n"
+        }
+      ]
+    },
+    {
+      "claim": "Red binary rebuild requires licensed Rebol SDK encapper (v0.6.6 build/README.md)",
+      "file": "build/README.md",
+      "file_sha256": "0b44d43d52a8c4c2c5219798aa7cce7e4d49f682b610bb372c7ed9cfc6c996f4",
+      "tree_source": "red/red tag v0.6.6",
+      "quotes": [
+        {
+          "line": 8,
+          "quote": "\n_You need a [Rebol SDK](http://www.rebol.com/sdk.html) copy with a valid license file in order to rebuild the Red binary, this is a constraint from using Rebol2 for the bootstrapping. Once selfhosted, Red will not have such constraint._\n"
+        },
+        {
+          "line": 16,
+          "quote": "\n3. Edit **encap-paths.r** file and adjust the paths to your Rebol SDK folders.\n"
+        }
+      ]
+    },
+    {
+      "claim": "Running Red from the sources (v0.6.6 README contributor procedure)",
+      "file": "README.md",
+      "file_sha256": "d329c0334f6783fd35d061cd24b2ae47e6b127f2707133425bb31c2fbcc21842",
+      "tree_source": "red/red tag v0.6.6",
+      "quotes": [
+        {
+          "line": 234,
+          "quote": "# Running Red from the sources (for contributors)\n\nThe compiler and linker are currently written in Rebol. Please follow the instructions for installing the compiler toolchain in order to run it from sources:\n\n1. Clone this git repository or download an archive (`ZIP` button above or from [tagged packages](https://github.com/red/red/tags)).\n\n1. Download a Rebol interpreter suitable for your OS: [Windows](http://www.rebol.com/downloads/v278/rebol-core-278-3-1.exe), [Linux](http://www.maxvessi.net/rebsite/Linux/) (or [Linux](http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz)), [Mac OS X](http://www.rebol.com/downloads/v278/rebol-core-278-2-5.tar.gz), [FreeBSD](http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz), [OpenBSD](http://www.rebol.com/downloads/v278/rebol-core-278-9-4.tar.gz), [Solaris](http://www.rebol.com/downloads/v276/rebol-core-276-10-1.gz).\n\n1. Extract "
+        }
+      ]
+    },
+    {
+      "claim": "Bootstrap-phase claim, v0.6.4 wording",
+      "file": "README.md",
+      "file_sha256": "67e5e00b0be69534c6a1da6fb7c62d1b9f1213dece985b493b63ba11b138e706",
+      "tree_source": "red/red tag v0.6.4",
+      "quotes": [
+        {
+          "line": 12,
+          "quote": "\nRed has its own complete cross-platform toolchain, featuring two compilers, an interpreter and a linker, not depending on any third-party library, except for a Rebol2 interpreter, required during the bootstrap phase. Once complete, Red will be [self-hosted](http://en.wikipedia.org/wiki/Self-hosting).\n"
+        }
+      ]
+    }
+  ]
+}

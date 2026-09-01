@@ -1,0 +1,6 @@
+corrected official URL attempts (per red/web-red official download page + distro recipes)
+date: 2026-08-31T18:04:19Z
+http://www.rebol.com/downloads/v278/rebol-core-278-4-2.tar.gz -> curl exit 52
+http://www.rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz -> curl exit 52
+http://www.rebol.com/downloads/v278/rebol-core-278-7-2.tar.gz -> curl exit 52
+http://www.rebol.com/downloads/v278/rebol-view-278-4-2.tar.gz -> curl exit 52

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-08-31T18:22:58Z",
+  "method": "header magic + machine fields only (no execution)",
+  "binaries": [
+    {
+      "path": "artifacts/red/tests/libRed-v0.6.6/libRed.dll",
+      "sha256": "5e523ee5adffaec632858955b031d4b5a2c5481c3c2f61655f56b062c2284b60",
+      "format": "PE",
+      "machine": "i386"
+    },
+    {
+      "path": "artifacts/red/tests/libstruct-v0.6.6/libstructlib.so",
+      "sha256": "780f072d9a0324ab3dddd56ebc1b4c70139d745bace584d6ae96bab0fc071cb0",
+      "format": "ELF",
+      "class": "ELF32",
+      "endian": "LE",
+      "e_machine": "i386"
+    },
+    {
+      "path": "artifacts/red/tests/libstruct-v0.6.6/structlib.dll",
+      "sha256": "aa85993d2c6a8b59bff1bb4a866652f0c6a692e4ed774cd7a3e8ab3cd36d8353",
+      "format": "PE",
+      "machine": "i386"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "collected_at": "2026-08-31T17:24:40Z",
+  "repositories": {
+    "red/red": {
+      "requested": "red/red",
+      "status": "OK",
+      "url": "https://github.com/red/red",
+      "owner": "red",
+      "name": "red",
+      "full_name": "red/red",
+      "default_branch": "master",
+      "description": "Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single ~1MB file! ",
+      "license": "BSL-1.0",
+      "stars": 6037,
+      "forks": 415,
+      "fork": false,
+      "parent": null,
+      "archived": false,
+      "created_at": "2011-03-07T11:38:19Z",
+      "pushed_at": "2026-08-18T21:17:40Z",
+      "open_issues": 537,
+      "tags": [
+        "v0.7",
+        "v0.6.6",
+        "v0.6.5",
+        "v0.6.4",
+        "v0.6.3",
+        "v0.6.2",
+        "v0.6.1",
+        "v0.6.0",
+        "v0.5.4",
+        "v0.5.3",
+        "v0.5.2",
+        "v0.5.1",
+        "v0.5.0",
+        "v0.4.3",
+        "v0.4.2",
+        "v0.4.1",
+        "v0.4.0",
+        "v0.3.3",
+        "v0.3.2",
+        "v0.3.1",
+        "v0.3.0",
+        "v0.2.6",
+        "v0.2.5",
+        "v0.2.4",
+        "v0.2.3",
+        "v0.2.2",
+        "v0.2.1",
+        "v0.2.0",
+        "v0.1.1",
+        "v0.1.0"
+      ],
+      "releases": [
+        {
+          "tag": "v0.6.6",
+          "name": "0.6.6: Memory Management Improvements",
+          "url": "https://github.com/red/red/releases/tag/v0.6.6",
+          "created_at": "2025-03-19T13:09:25Z",
+          "published_at": "2025-03-19T16:36:23Z",
+          "target_commitish": "master",
+          "draft": false,
+          "prerelease": false,
+          "assets": []
+        },
+        {
+          "tag": "v0.6.4",
+          "name": "Simple GC",
+          "url": "https://github.com/red/red/releases/tag/v0.6.4",
+          "created_at": "2018-11-22T02:06:20Z",
+          "published_at": "2018-11-22T02:14:14Z",
+          "target_commitish": "master",
+          "draft": false,
+          "prerelease": false,
+          "assets": []
+        },
+        {
+          "tag": "v0.6.3",
+          "name": "macOS GUI backend",
+          "url": "https://github.com/red/red/releases/tag/v0.6.3",
+          "created_at": "2017-07-17T13:26:31Z",
+          "published_at": "2017-07-18T09:48:36Z",
+          "target_commitish": "master",
+          "draft": false,
+          "prerelease": false,
+          "assets": []
+        }
+      ]
+    },
+    "metaeducation/ren-c": {
+      "requested": "metaeducation/ren-c",
+      "status": "OK",
+      "url": "https://github.com/metaeducation/ren-c",
+      "owner": "metaeducation",
+      "name": "ren-c",
+      "full_name": "metaeducation/ren-c",
+      "default_branch": "master",
+      "description": "Library for embedding a Rebol interpreter into C codebases",
+      "license": "LGPL-3.0",
+      "stars": 140,
+      "forks": 27,
+      "fork": true,
+      "parent": "rebolsource/r3",
+      "archived": false,
+      "created_at": "2015-05-14T03:55:55Z",
+      "pushed_at": "2026-07-16T22:03:09Z",
+      "open_issues": 84,
+      "tags": [
+        "user-native-test-5",
+        "user-native-test-4",
+        "user-native-test-3",
+        "untagged-007b071e967d916c2a62",
+        "atronix-3.0.99",
+        "atronix-3.0.91",
+        "atronix-3.0.90"
+      ],
+      "releases": []
+    },
+    "rebol/rebol": {
+      "requested": "rebol/rebol",
+      "status": "OK",
+      "url": "https://github.com/rebol/rebol",
+      "owner": "rebol",
+      "name": "rebol",
+      "full_name": "rebol/rebol",
+      "default_branch": "master",
+      "description": "Source code for the Rebol interpreter",
+      "license": "Apache-2.0",
+      "stars": 889,
+      "forks": 247,
+      "fork": false,
+      "parent": null,
+      "archived": false,
+      "created_at": "2012-10-16T03:42:14Z",
+      "pushed_at": "2024-08-09T15:01:35Z",
+      "open_issues": 54
+    },
+    "Oldes/Rebol-legacy": {
+      "requested": "Oldes/Rebol-legacy",
+      "status": "NOT_FOUND",
+      "http_status": 404
+    },
+    "Oldes/Rebol3": {
+      "requested": "Oldes/Rebol3",
+      "status": "OK",
+      "url": "https://github.com/Oldes/Rebol3",
+      "owner": "Oldes",
+      "name": "Rebol3",
+      "full_name": "Oldes/Rebol3",
+      "default_branch": "master",
+      "description": "Source code for the Rebol [R3] interpreter",
+      "license": "Apache-2.0",
+      "stars": 113,
+      "forks": 15,
+      "fork": true,
+      "parent": "rebolsource/r3",
+      "archived": false,
+      "created_at": "2014-07-09T15:04:11Z",
+      "pushed_at": "2026-08-26T14:55:00Z",
+      "open_issues": 7
+    }
+  },
+  "searches": {
+    "rebol 2.7.8": [
+      {
+        "full_name": "TimeSeriesLord/rebol",
+        "url": "https://github.com/TimeSeriesLord/rebol",
+        "stars": 1,
+        "description": "dialects (aka \"scripts\") for REBOL 2.7.8"
+      }
+    ],
+    "red language compiler": [
+      {
+        "full_name": "red/red",
+        "url": "https://github.com/red/red",
+        "stars": 6037,
+        "description": "Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system prog"
+      },
+      {
+        "full_name": "jac3km4/redscript",
+        "url": "https://github.com/jac3km4/redscript",
+        "stars": 511,
+        "description": "Compiler/decompiler toolkit for redscript"
+      },
+      {
+        "full_name": "BradenEverson/redstone_description_language",
+        "url": "https://github.com/BradenEverson/redstone_description_language",
+        "stars": 30,
+        "description": "VHDL to Redstone Circuit Compiler"
+      },
+      {
+        "full_name": "tari/reduced-c",
+        "url": "https://github.com/tari/reduced-c",
+        "stars": 4,
+        "description": "Compiler for a simplistic C-like language targeted to programming education. Mirror of https://gitlab.com/taricorp/reduced-c"
+      },
+      {
+        "full_name": "tomdodd4598/Dodd-Redstone-Language-Compiler",
+        "url": "https://github.com/tomdodd4598/Dodd-Redstone-Language-Compiler",
+        "stars": 5,
+        "description": "A compiler for a simple, statically typed, procedural language, primarily designed to target a custom redstone computer."
+      },
+      {
+        "full_name": "bkmashiro/redscript",
+        "url": "https://github.com/bkmashiro/redscript",
+        "stars": 9,
+        "description": "A typed scripting language that compiles to Minecraft datapacks."
+      },
+      {
+        "full_name": "redstone-lang/redstone",
+        "url": "https://github.com/redstone-lang/redstone",
+        "stars": 6,
+        "description": "Statically compiled language with garbage collection"
+      },
+      {
+        "full_name": "eranws/red-false",
+        "url": "https://github.com/eranws/red-false",
+        "stars": 5,
+        "description": "a compiler for FALSE language written in Red (in less than 50 lines of code)"
+      },
+      {
+        "full_name": "PhongPham101190/Red-C-SDK",
+        "url": "https://github.com/PhongPham101190/Red-C-SDK",
+        "stars": 18,
+        "description": "MEGA SDK - Client Access Engine Coverity Scan Build Status MEGA --- The Privacy Company --- is a Secure Cloud Storage provider that protects your data thanks to"
+      },
+      {
+        "full_name": "davidgmbb/redflag",
+        "url": "https://github.com/davidgmbb/redflag",
+        "stars": 2,
+        "description": "My first attempt to write a programming language. Written in C with custom lexer and parser and LLVM backend."
+      }
+    ],
+    "red-system": [
+      {
+        "full_name": "zacharee/SystemUITunerRedesign",
+        "url": "https://github.com/zacharee/SystemUITunerRedesign",
+        "stars": 326,
+        "description": "Replacement/extension for the stock Android System UI Tuner."
+      },
+      {
+        "full_name": "RedHat-UX/red-hat-design-system",
+        "url": "https://github.com/RedHat-UX/red-hat-design-system",
+        "stars": 148,
+        "description": "Red Hat's Design System"
+      },
+      {
+        "full_name": "gor181/react-notification-system-redux",
+        "url": "https://github.com/gor181/react-notification-system-redux",
+        "stars": 323,
+        "description": "Redux wrapper for react-notification-system"
+      },
+      {
+        "full_name": "TonyTang1990/RedDotSystem",
+        "url": "https://github.com/TonyTang1990/RedDotSystem",
+        "stars": 89,
+        "description": "\u7ea2\u70b9\u7cfb\u7edf\u6846\u67b6(\u91c7\u7528\u7ea2\u70b9\u8fd0\u7b97\u6700\u5c0f\u5355\u5143\u7ec4\u88c5\u5b9a\u4e49\u7ea2\u70b9(\u9ad8\u5ea6\u81ea\u7531\u5316)\uff0c\u91c7\u7528\u6807\u810f\u5ef6\u8fdf\u8ba1\u7b97\u51cf\u5c11\u91cd\u590d\u8fd0\u7b97)"
+      },
+      {
+        "full_name": "HNGZY/RedDotSystem",
+        "url": "https://github.com/HNGZY/RedDotSystem",
+        "stars": 46,
+        "description": "\u57fa\u4e8e\u524d\u7f00\u6570\u7684\u7ea2\u70b9\u7cfb\u7edf"
+      },
+      {
+        "full_name": "LLAMATOR-Core/llamator",
+        "url": "https://github.com/LLAMATOR-Core/llamator",
+        "stars": 214,
+        "description": "Red Teaming python-framework for testing chatbots and GenAI systems."
+      },
+      {
+        "full_name": "RedFalconKen/RedFalconFlightSystem-Heliz",
+        "url": "https://github.com/RedFalconKen/RedFalconFlightSystem-Heliz",
+        "stars": 20,
+        "description": "Extra files and tutorials for DayZ RedFalcon Flight System - Heliz mod"
+      },
+      {
+        "full_name": "Ahmed-Abd-El-gawad/Red-Hat-System-Administration-I-9.0-RH124",
+        "url": "https://github.com/Ahmed-Abd-El-gawad/Red-Hat-System-Administration-I-9.0-RH124",
+        "stars": 88,
+        "description": "A learning guide to keep track of the content discussed or commands used."
+      },
+      {
+        "full_name": "Suraj-Bhandarkar-S/Django-Grievance-Redressal-System",
+        "url": "https://github.com/Suraj-Bhandarkar-S/Django-Grievance-Redressal-System",
+        "stars": 30,
+        "description": "Complaint Management System made using Django."
+      },
+      {
+        "full_name": "ivanmorenoj/RHCSA-Notes",
+        "url": "https://github.com/ivanmorenoj/RHCSA-Notes",
+        "stars": 22,
+        "description": "Red Hat Certified System Administrator Notes"
+      }
+    ]
+  },
+  "failures": [
+    {
+      "url": "repos/Oldes/Rebol-legacy",
+      "http_status": 404
+    }
+  ],
+  "red_org_repos": [
+    "red/Animation",
+    "red/Homebrew-red",
+    "red/RED-token",
+    "red/REP",
+    "red/RS-fossil-mirror",
+    "red/Red.jl",
+    "red/VScode-extension",
+    "red/binary-protocol",
+    "red/bincheck",
+    "red/chocolatey-packages",
+    "red/code",
+    "red/community",
+    "red/dev-tools",
+    "red/docs",
+    "red/ethereum-lists",
+    "red/promotion",
+    "red/red",
+    "red/red-type-hierarchy",
+    "red/red.github.io",
+    "red/redCV",
+    "red/redbox",
+    "red/redis",
+    "red/redlangserver",
+    "red/scoop-bucket",
+    "red/tokens",
+    "red/tree-sitter-red",
+    "red/wallet",
+    "red/web-foundation",
+    "red/web-fullstack",
+    "red/web-red",
+    "red/web-redlake",
+    "red/web-template",
+    "red/zed-red"
+  ],
+  "rebol_org": [
+    "rebol/projects",
+    "rebol/rebol"
+  ]
+}

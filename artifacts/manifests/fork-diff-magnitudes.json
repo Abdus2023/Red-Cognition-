@@ -1,0 +1,1381 @@
+{
+  "generated_at": "2026-08-31T17:49:41Z",
+  "method": "git diff --numstat 755eb943..742181a in detached clone of workspace repo (blobs lazily fetched from origin + upstream)",
+  "differing_files_analyzed": 258,
+  "of_total_differing": 258,
+  "magnitude_buckets": {
+    "light(<=10)": 67,
+    "moderate(<=100)": 99,
+    "heavy(>100)": 84,
+    "binary": 8
+  },
+  "top15_heaviest": [
+    {
+      "path": "modules/view/backends/windows/draw.reds",
+      "added": 2233,
+      "deleted": 3035
+    },
+    {
+      "path": "runtime/redbin.reds",
+      "added": 1985,
+      "deleted": 349
+    },
+    {
+      "path": "modules/view/backends/windows/base.reds",
+      "added": 993,
+      "deleted": 824
+    },
+    {
+      "path": "modules/view/backends/windows/direct2d.reds",
+      "added": 1425,
+      "deleted": 198
+    },
+    {
+      "path": "system/tests/source/units/float-test.reds",
+      "added": 1162,
+      "deleted": 2
+    },
+    {
+      "path": "system/tests/source/units/float32-test.reds",
+      "added": 1155,
+      "deleted": 0
+    },
+    {
+      "path": "runtime/datatypes/string.reds",
+      "added": 637,
+      "deleted": 319
+    },
+    {
+      "path": "runtime/hashtable.reds",
+      "added": 745,
+      "deleted": 88
+    },
+    {
+      "path": "runtime/natives.reds",
+      "added": 509,
+      "deleted": 320
+    },
+    {
+      "path": "system/compiler.r",
+      "added": 484,
+      "deleted": 107
+    },
+    {
+      "path": "system/targets/ARM.r",
+      "added": 420,
+      "deleted": 122
+    },
+    {
+      "path": "runtime/clipboard.reds",
+      "added": 506,
+      "deleted": 24
+    },
+    {
+      "path": "runtime/datatypes/block.reds",
+      "added": 342,
+      "deleted": 181
+    },
+    {
+      "path": "environment/console/GUI/highlight.red",
+      "added": 29,
+      "deleted": 485
+    },
+    {
+      "path": "compiler.r",
+      "added": 328,
+      "deleted": 182
+    }
+  ],
+  "per_file": {
+    "modules/view/backends/windows/font.reds": {
+      "added": 38,
+      "deleted": 9,
+      "churn": 47
+    },
+    "runtime/datatypes/event.reds": {
+      "added": 3,
+      "deleted": 1,
+      "churn": 4
+    },
+    "tests/source/units/all-tests.txt": {
+      "added": 16,
+      "deleted": 1,
+      "churn": 17
+    },
+    "system/tests/source/units/pointer-test.reds": {
+      "added": 29,
+      "deleted": 0,
+      "churn": 29
+    },
+    "runtime/allocator.reds": {
+      "added": 75,
+      "deleted": 48,
+      "churn": 123
+    },
+    "modules/view/backends/windows/draw.reds": {
+      "added": 2233,
+      "deleted": 3035,
+      "churn": 5268
+    },
+    "modules/view/backends/windows/rules.red": {
+      "added": 3,
+      "deleted": 0,
+      "churn": 3
+    },
+    "runtime/datatypes/common.reds": {
+      "added": 206,
+      "deleted": 36,
+      "churn": 242
+    },
+    "runtime/datatypes/symbol.reds": {
+      "added": 47,
+      "deleted": 89,
+      "churn": 136
+    },
+    "tests/source/units/comparison-test.red": {
+      "added": 32,
+      "deleted": 0,
+      "churn": 32
+    },
+    "environment/scalars.red": {
+      "added": 5,
+      "deleted": 3,
+      "churn": 8
+    },
+    "tests/source/environment/functions-test.red": {
+      "added": 58,
+      "deleted": 16,
+      "churn": 74
+    },
+    "environment/console/GUI/old/windows.reds": {
+      "added": 2,
+      "deleted": 1,
+      "churn": 3
+    },
+    "environment/console/GUI/settings.red": {
+      "added": 52,
+      "deleted": 27,
+      "churn": 79
+    },
+    "runtime/datatypes/tuple.reds": {
+      "added": 117,
+      "deleted": 29,
+      "churn": 146
+    },
+    "tests/source/units/system-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "runtime/datatypes/handle.reds": {
+      "added": 7,
+      "deleted": 0,
+      "churn": 7
+    },
+    "runtime/datatypes/map.reds": {
+      "added": 148,
+      "deleted": 141,
+      "churn": 289
+    },
+    "system/formats/ELF.r": {
+      "added": 49,
+      "deleted": 4,
+      "churn": 53
+    },
+    "tests/source/units/loop-test.red": {
+      "added": 86,
+      "deleted": 2,
+      "churn": 88
+    },
+    "system/tests/source/units/libs/structlib.dll": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "build/README.md": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "utils/preprocessor.r": {
+      "added": 94,
+      "deleted": 33,
+      "churn": 127
+    },
+    "runtime/datatypes/word.reds": {
+      "added": 57,
+      "deleted": 41,
+      "churn": 98
+    },
+    "runtime/datatypes/lit-word.reds": {
+      "added": 1,
+      "deleted": 6,
+      "churn": 7
+    },
+    "environment/natives.red": {
+      "added": 100,
+      "deleted": 43,
+      "churn": 143
+    },
+    "runtime/datatypes/datatype.reds": {
+      "added": 3,
+      "deleted": 11,
+      "churn": 14
+    },
+    "runtime/datatypes/native.reds": {
+      "added": 48,
+      "deleted": 14,
+      "churn": 62
+    },
+    "README.md": {
+      "added": 37,
+      "deleted": 20,
+      "churn": 57
+    },
+    "runtime/ownership.reds": {
+      "added": 16,
+      "deleted": 8,
+      "churn": 24
+    },
+    "system/emitter.r": {
+      "added": 94,
+      "deleted": 54,
+      "churn": 148
+    },
+    "system/runtime/start.reds": {
+      "added": 7,
+      "deleted": 7,
+      "churn": 14
+    },
+    "tests/source/units/integer-test.red": {
+      "added": 161,
+      "deleted": 98,
+      "churn": 259
+    },
+    "modules/view/backends/test/gui.reds": {
+      "added": 2,
+      "deleted": 1,
+      "churn": 3
+    },
+    "tests/source/units/checksum-test.red": {
+      "added": 110,
+      "deleted": 57,
+      "churn": 167
+    },
+    "system/tests/source/units/float-test.reds": {
+      "added": 1162,
+      "deleted": 2,
+      "churn": 1164
+    },
+    "tests/source/units/insert-test.red": {
+      "added": 18,
+      "deleted": 0,
+      "churn": 18
+    },
+    "modules/view/view.red": {
+      "added": 92,
+      "deleted": 44,
+      "churn": 136
+    },
+    "modules/view/styles.red": {
+      "added": 8,
+      "deleted": 1,
+      "churn": 9
+    },
+    "runtime/debug-tools.reds": {
+      "added": 2,
+      "deleted": 3,
+      "churn": 5
+    },
+    "modules/view/backends/windows/events.reds": {
+      "added": 306,
+      "deleted": 117,
+      "churn": 423
+    },
+    "runtime/datatypes/none.reds": {
+      "added": 1,
+      "deleted": 0,
+      "churn": 1
+    },
+    "tests/source/units/map-test.red": {
+      "added": 108,
+      "deleted": 23,
+      "churn": 131
+    },
+    "modules/view/backends/platform.red": {
+      "added": 125,
+      "deleted": 39,
+      "churn": 164
+    },
+    "modules/view/backends/test/text-box.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "system/runtime/common.reds": {
+      "added": 24,
+      "deleted": 3,
+      "churn": 27
+    },
+    "system/runtime/lib-names.reds": {
+      "added": 13,
+      "deleted": 4,
+      "churn": 17
+    },
+    "runtime/sort.reds": {
+      "added": 74,
+      "deleted": 92,
+      "churn": 166
+    },
+    "environment/console/help.red": {
+      "added": 45,
+      "deleted": 38,
+      "churn": 83
+    },
+    "tests/source/units/function-test.red": {
+      "added": 8,
+      "deleted": 6,
+      "churn": 14
+    },
+    "runtime/datatypes/bitset.reds": {
+      "added": 73,
+      "deleted": 31,
+      "churn": 104
+    },
+    "modules/view/backends/macOS/delegates.reds": {
+      "added": 113,
+      "deleted": 40,
+      "churn": 153
+    },
+    "system/runtime/debug.reds": {
+      "added": 32,
+      "deleted": 14,
+      "churn": 46
+    },
+    "runtime/simple-io.reds": {
+      "added": 334,
+      "deleted": 175,
+      "churn": 509
+    },
+    "tests/source/units/strict-equal-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "compiler.r": {
+      "added": 328,
+      "deleted": 182,
+      "churn": 510
+    },
+    "runtime/collector.reds": {
+      "added": 66,
+      "deleted": 28,
+      "churn": 94
+    },
+    "system/linker.r": {
+      "added": 19,
+      "deleted": 7,
+      "churn": 26
+    },
+    "runtime/redbin.reds": {
+      "added": 1985,
+      "deleted": 349,
+      "churn": 2334
+    },
+    "system/tests/source/units/integer-test.reds": {
+      "added": 2,
+      "deleted": 0,
+      "churn": 2
+    },
+    "environment/console/GUI/core.red": {
+      "added": 216,
+      "deleted": 97,
+      "churn": 313
+    },
+    "tests/failing-tests.red": {
+      "added": 10,
+      "deleted": 57,
+      "churn": 67
+    },
+    "modules/view/backends/macOS/menu.reds": {
+      "added": 8,
+      "deleted": 2,
+      "churn": 10
+    },
+    "modules/view/backends/macOS/classes.reds": {
+      "added": 5,
+      "deleted": 0,
+      "churn": 5
+    },
+    "modules/view/backends/windows/camera.reds": {
+      "added": 12,
+      "deleted": 24,
+      "churn": 36
+    },
+    "runtime/crypto.reds": {
+      "added": 29,
+      "deleted": 16,
+      "churn": 45
+    },
+    "runtime/interpreter.reds": {
+      "added": 74,
+      "deleted": 43,
+      "churn": 117
+    },
+    "runtime/datatypes/op.reds": {
+      "added": 41,
+      "deleted": 19,
+      "churn": 60
+    },
+    "tests/source/units/append-test.red": {
+      "added": 14,
+      "deleted": 18,
+      "churn": 32
+    },
+    "runtime/datatypes/url.reds": {
+      "added": 145,
+      "deleted": 106,
+      "churn": 251
+    },
+    "runtime/datatypes/structures.reds": {
+      "added": 34,
+      "deleted": 3,
+      "churn": 37
+    },
+    "runtime/stack.reds": {
+      "added": 68,
+      "deleted": 14,
+      "churn": 82
+    },
+    "system/utils/libRedRT-exports.r": {
+      "added": 58,
+      "deleted": 6,
+      "churn": 64
+    },
+    "utils/extractor.r": {
+      "added": 18,
+      "deleted": 2,
+      "churn": 20
+    },
+    "runtime/random.reds": {
+      "added": 44,
+      "deleted": 1,
+      "churn": 45
+    },
+    "modules/view/backends/windows/win32.reds": {
+      "added": 112,
+      "deleted": 10,
+      "churn": 122
+    },
+    "modules/view/backends/windows/menu.reds": {
+      "added": 4,
+      "deleted": 3,
+      "churn": 7
+    },
+    "docs/conversion-matrix.xlsx": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "environment/console/CLI/POSIX.reds": {
+      "added": 14,
+      "deleted": 25,
+      "churn": 39
+    },
+    "environment/actions.red": {
+      "added": 132,
+      "deleted": 85,
+      "churn": 217
+    },
+    ".travis.yml": {
+      "added": 79,
+      "deleted": 25,
+      "churn": 104
+    },
+    "runtime/datatypes/image.reds": {
+      "added": 205,
+      "deleted": 32,
+      "churn": 237
+    },
+    "runtime/datatypes/object.reds": {
+      "added": 212,
+      "deleted": 179,
+      "churn": 391
+    },
+    "tests/build-separate-arm-tests.r": {
+      "added": 3,
+      "deleted": 1,
+      "churn": 4
+    },
+    "tests/dyn-gui.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "tests/source/units/mold-test.red": {
+      "added": 45,
+      "deleted": 24,
+      "churn": 69
+    },
+    "environment/console/CLI/input.red": {
+      "added": 80,
+      "deleted": 28,
+      "churn": 108
+    },
+    "runtime/datatypes/context.reds": {
+      "added": 124,
+      "deleted": 134,
+      "churn": 258
+    },
+    "runtime/datatypes/logic.reds": {
+      "added": 2,
+      "deleted": 3,
+      "churn": 5
+    },
+    "runtime/actions.reds": {
+      "added": 193,
+      "deleted": 33,
+      "churn": 226
+    },
+    "modules/view/backends/macOS/text-box.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "system/tests/run-all.r": {
+      "added": 4,
+      "deleted": 0,
+      "churn": 4
+    },
+    "runtime/platform/win32.reds": {
+      "added": 51,
+      "deleted": 7,
+      "churn": 58
+    },
+    "system/tests/source/compiler/namespace-test.r": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "tests/source/units/bitset-test.red": {
+      "added": 24,
+      "deleted": 5,
+      "churn": 29
+    },
+    "modules/view/draw.red": {
+      "added": 118,
+      "deleted": 56,
+      "churn": 174
+    },
+    "system/runtime/libc.reds": {
+      "added": 83,
+      "deleted": 22,
+      "churn": 105
+    },
+    "runtime/datatypes/path.reds": {
+      "added": 6,
+      "deleted": 6,
+      "churn": 12
+    },
+    "system/targets/ARM.r": {
+      "added": 420,
+      "deleted": 122,
+      "churn": 542
+    },
+    "system/runtime/system.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "runtime/datatypes/issue.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "libRed/libRed.lib": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "modules/view/backends/windows/comdlgs.reds": {
+      "added": 23,
+      "deleted": 1,
+      "churn": 24
+    },
+    "tests/source/units/vector-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "runtime/datatypes/binary.reds": {
+      "added": 135,
+      "deleted": 109,
+      "churn": 244
+    },
+    "environment/console/GUI/old/terminal.reds": {
+      "added": 5,
+      "deleted": 14,
+      "churn": 19
+    },
+    "modules/view/backends/windows/classes.reds": {
+      "added": 5,
+      "deleted": 1,
+      "churn": 6
+    },
+    "runtime/natives.reds": {
+      "added": 509,
+      "deleted": 320,
+      "churn": 829
+    },
+    "runtime/platform/linux.reds": {
+      "added": 13,
+      "deleted": 2,
+      "churn": 15
+    },
+    "modules/view/VID.red": {
+      "added": 49,
+      "deleted": 25,
+      "churn": 74
+    },
+    "runtime/definitions.reds": {
+      "added": 228,
+      "deleted": 41,
+      "churn": 269
+    },
+    "tests/source/units/load-test.red": {
+      "added": 149,
+      "deleted": 9,
+      "churn": 158
+    },
+    "quick-test/quick-test.red": {
+      "added": 30,
+      "deleted": 0,
+      "churn": 30
+    },
+    "tests/source/units/binding-test.red": {
+      "added": 3,
+      "deleted": 1,
+      "churn": 4
+    },
+    "modules/view/utils.red": {
+      "added": 8,
+      "deleted": 11,
+      "churn": 19
+    },
+    "tests/source/compiler/print-test.r": {
+      "added": 26,
+      "deleted": 0,
+      "churn": 26
+    },
+    "tests/source/units/find-test.red": {
+      "added": 163,
+      "deleted": 16,
+      "churn": 179
+    },
+    "runtime/datatypes/hash.reds": {
+      "added": 6,
+      "deleted": 5,
+      "churn": 11
+    },
+    "system/formats/PE.r": {
+      "added": 89,
+      "deleted": 77,
+      "churn": 166
+    },
+    "tests/source/units/recycle-test.red": {
+      "added": 23,
+      "deleted": 15,
+      "churn": 38
+    },
+    "tests/source/units/evaluation-test.red": {
+      "added": 208,
+      "deleted": 21,
+      "churn": 229
+    },
+    "utils/redbin.r": {
+      "added": 42,
+      "deleted": 17,
+      "churn": 59
+    },
+    "runtime/hashtable.reds": {
+      "added": 745,
+      "deleted": 88,
+      "churn": 833
+    },
+    "modules/view/backends/macOS/font.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "runtime/datatypes/block.reds": {
+      "added": 342,
+      "deleted": 181,
+      "churn": 523
+    },
+    "modules/view/backends/macOS/events.reds": {
+      "added": 53,
+      "deleted": 9,
+      "churn": 62
+    },
+    "red.r": {
+      "added": 107,
+      "deleted": 103,
+      "churn": 210
+    },
+    "system/tests/source/units/libs/libstructlib-armhf.so": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "runtime/datatypes/action.reds": {
+      "added": 0,
+      "deleted": 11,
+      "churn": 11
+    },
+    "tests/source/units/object-test.red": {
+      "added": 177,
+      "deleted": 16,
+      "churn": 193
+    },
+    "environment/system.red": {
+      "added": 108,
+      "deleted": 40,
+      "churn": 148
+    },
+    "runtime/call.reds": {
+      "added": 21,
+      "deleted": 19,
+      "churn": 40
+    },
+    "runtime/datatypes/get-word.reds": {
+      "added": 1,
+      "deleted": 6,
+      "churn": 7
+    },
+    "tests/source/units/routine-test.red": {
+      "added": 29,
+      "deleted": 3,
+      "churn": 32
+    },
+    "runtime/platform/syllable.reds": {
+      "added": 1,
+      "deleted": 2,
+      "churn": 3
+    },
+    "tests/source/units/series-test.red": {
+      "added": 249,
+      "deleted": 20,
+      "churn": 269
+    },
+    "runtime/datatypes/typeset.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "utils/call.r": {
+      "added": 5,
+      "deleted": 4,
+      "churn": 9
+    },
+    "environment/console/auto-complete.red": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "tests/source/units/decompress-test.red": {
+      "added": 26,
+      "deleted": 3,
+      "churn": 29
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md": {
+      "added": 13,
+      "deleted": 6,
+      "churn": 19
+    },
+    "usage.txt": {
+      "added": 18,
+      "deleted": 4,
+      "churn": 22
+    },
+    "libRed/libRed.red": {
+      "added": 18,
+      "deleted": 3,
+      "churn": 21
+    },
+    "system/targets/IA-32.r": {
+      "added": 372,
+      "deleted": 90,
+      "churn": 462
+    },
+    "tests/source/units/time-test.red": {
+      "added": 21,
+      "deleted": 6,
+      "churn": 27
+    },
+    "system/utils/IEEE-754.r": {
+      "added": 50,
+      "deleted": 24,
+      "churn": 74
+    },
+    "modules/view/RTD.red": {
+      "added": 50,
+      "deleted": 24,
+      "churn": 74
+    },
+    "modules/view/backends/windows/direct2d.reds": {
+      "added": 1425,
+      "deleted": 198,
+      "churn": 1623
+    },
+    "modules/view/backends/macOS/draw.reds": {
+      "added": 262,
+      "deleted": 134,
+      "churn": 396
+    },
+    "runtime/datatypes/date.reds": {
+      "added": 127,
+      "deleted": 22,
+      "churn": 149
+    },
+    "tests/source/units/reactivity-test.red": {
+      "added": 160,
+      "deleted": 39,
+      "churn": 199
+    },
+    "system/tests/source/units/libs/structlib.c": {
+      "added": 149,
+      "deleted": 2,
+      "churn": 151
+    },
+    "runtime/platform/image-quartz.reds": {
+      "added": 171,
+      "deleted": 53,
+      "churn": 224
+    },
+    "modules/view/backends/macOS/rules.red": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "system/compiler.r": {
+      "added": 484,
+      "deleted": 107,
+      "churn": 591
+    },
+    "environment/console/GUI/highlight.red": {
+      "added": 29,
+      "deleted": 485,
+      "churn": 514
+    },
+    "system/config.r": {
+      "added": 46,
+      "deleted": 1,
+      "churn": 47
+    },
+    "build/includes.r": {
+      "added": 51,
+      "deleted": 11,
+      "churn": 62
+    },
+    "build/git-version.r": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "lexer.r": {
+      "added": 128,
+      "deleted": 50,
+      "churn": 178
+    },
+    "system/runtime/lib-natives.reds": {
+      "added": 6,
+      "deleted": 0,
+      "churn": 6
+    },
+    "runtime/platform/POSIX.reds": {
+      "added": 11,
+      "deleted": 1,
+      "churn": 12
+    },
+    "system/tests/source/units/float32-test.reds": {
+      "added": 1155,
+      "deleted": 0,
+      "churn": 1155
+    },
+    "tests/source/units/replace-test.red": {
+      "added": 6,
+      "deleted": 1,
+      "churn": 7
+    },
+    "tests/view-test.red": {
+      "added": 49,
+      "deleted": 4,
+      "churn": 53
+    },
+    "modules/view/backends/windows/para.reds": {
+      "added": 37,
+      "deleted": 31,
+      "churn": 68
+    },
+    "quick-test/quick-test.r": {
+      "added": 9,
+      "deleted": 6,
+      "churn": 15
+    },
+    "runtime/datatypes/pair.reds": {
+      "added": 25,
+      "deleted": 17,
+      "churn": 42
+    },
+    "runtime/parse.reds": {
+      "added": 175,
+      "deleted": 141,
+      "churn": 316
+    },
+    "CODE_OF_CONDUCT.md": {
+      "added": 84,
+      "deleted": 27,
+      "churn": 111
+    },
+    "system/tests/build-arm-tests.r": {
+      "added": 6,
+      "deleted": 4,
+      "churn": 10
+    },
+    "tests/source/compiler/lexer-test.r": {
+      "added": 41,
+      "deleted": 1,
+      "churn": 42
+    },
+    "tests/source/units/conditional-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "modules/view/backends/macOS/para.reds": {
+      "added": 2,
+      "deleted": 1,
+      "churn": 3
+    },
+    "system/utils/r2-forward.r": {
+      "added": 9,
+      "deleted": 0,
+      "churn": 9
+    },
+    "runtime/red.reds": {
+      "added": 35,
+      "deleted": 7,
+      "churn": 42
+    },
+    "tests/source/units/throw-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "tests/source/compiler/preprocessor-test.r": {
+      "added": 47,
+      "deleted": 0,
+      "churn": 47
+    },
+    "runtime/datatypes/integer.reds": {
+      "added": 87,
+      "deleted": 48,
+      "churn": 135
+    },
+    "system/formats/Mach-O.r": {
+      "added": 3,
+      "deleted": 1,
+      "churn": 4
+    },
+    "environment/console/GUI/gui-console.red": {
+      "added": 41,
+      "deleted": 33,
+      "churn": 74
+    },
+    "modules/view/backends/macOS/gui.reds": {
+      "added": 331,
+      "deleted": 79,
+      "churn": 410
+    },
+    "tests/source/compiler/compile-error-test.r": {
+      "added": 32,
+      "deleted": 0,
+      "churn": 32
+    },
+    "system/tests/source/units/system-test.reds": {
+      "added": 23,
+      "deleted": 1,
+      "churn": 24
+    },
+    "runtime/datatypes/file.reds": {
+      "added": 38,
+      "deleted": 6,
+      "churn": 44
+    },
+    "runtime/platform/win32-print.reds": {
+      "added": 7,
+      "deleted": 17,
+      "churn": 24
+    },
+    "tests/source/compiler/run-time-error-test.r": {
+      "added": 18,
+      "deleted": 0,
+      "churn": 18
+    },
+    "system/tests/source/units/modulo-test.reds": {
+      "added": 12,
+      "deleted": 23,
+      "churn": 35
+    },
+    "runtime/datatypes/time.reds": {
+      "added": 26,
+      "deleted": 14,
+      "churn": 40
+    },
+    "runtime/datatypes/vector.reds": {
+      "added": 5,
+      "deleted": 30,
+      "churn": 35
+    },
+    "boot.red": {
+      "added": 12,
+      "deleted": 9,
+      "churn": 21
+    },
+    "environment/routines.red": {
+      "added": 52,
+      "deleted": 8,
+      "churn": 60
+    },
+    "runtime/platform/image-gdiplus.reds": {
+      "added": 219,
+      "deleted": 52,
+      "churn": 271
+    },
+    "runtime/unicode.reds": {
+      "added": 144,
+      "deleted": 22,
+      "churn": 166
+    },
+    "system/tests/source/units/libs/libstructlib.dylib": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "system/utils/libRedRT.r": {
+      "added": 14,
+      "deleted": 4,
+      "churn": 18
+    },
+    "environment/datatypes.red": {
+      "added": 3,
+      "deleted": 1,
+      "churn": 4
+    },
+    "tests/source/units/date-test.red": {
+      "added": 13,
+      "deleted": 0,
+      "churn": 13
+    },
+    "system/tests/source/units/struct-test.reds": {
+      "added": 190,
+      "deleted": 11,
+      "churn": 201
+    },
+    "tests/source/units/select-test.red": {
+      "added": 12,
+      "deleted": 1,
+      "churn": 13
+    },
+    "modules/view/backends/windows/text-box.reds": {
+      "added": 81,
+      "deleted": 63,
+      "churn": 144
+    },
+    "modules/view/backends/windows/text-list.reds": {
+      "added": 60,
+      "deleted": 15,
+      "churn": 75
+    },
+    "environment/functions.red": {
+      "added": 299,
+      "deleted": 205,
+      "churn": 504
+    },
+    "runtime/datatypes/error.reds": {
+      "added": 140,
+      "deleted": 28,
+      "churn": 168
+    },
+    "tests/libRed/test.c": {
+      "added": 1,
+      "deleted": 0,
+      "churn": 1
+    },
+    "system/targets/target-class.r": {
+      "added": 5,
+      "deleted": 1,
+      "churn": 6
+    },
+    "modules/view/backends/windows/gui.reds": {
+      "added": 331,
+      "deleted": 153,
+      "churn": 484
+    },
+    "system/loader.r": {
+      "added": 3,
+      "deleted": 3,
+      "churn": 6
+    },
+    "system/tests/source/units/cast-test.reds": {
+      "added": 41,
+      "deleted": 0,
+      "churn": 41
+    },
+    "modules/view/backends/windows/tab-panel.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "modules/view/backends/macOS/cocoa.reds": {
+      "added": 21,
+      "deleted": 8,
+      "churn": 29
+    },
+    "runtime/platform/darwin.reds": {
+      "added": 1,
+      "deleted": 2,
+      "churn": 3
+    },
+    "CONTRIBUTING.md": {
+      "added": 13,
+      "deleted": 8,
+      "churn": 21
+    },
+    "runtime/macros.reds": {
+      "added": 111,
+      "deleted": 114,
+      "churn": 225
+    },
+    "runtime/platform/freebsd.reds": {
+      "added": 1,
+      "deleted": 2,
+      "churn": 3
+    },
+    "run-all.r": {
+      "added": 5,
+      "deleted": 1,
+      "churn": 6
+    },
+    "environment/console/CLI/win32.reds": {
+      "added": 33,
+      "deleted": 13,
+      "churn": 46
+    },
+    "runtime/datatypes/series.reds": {
+      "added": 111,
+      "deleted": 37,
+      "churn": 148
+    },
+    "tests/libRed/libRed.dll": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "tests/source/units/convert-test.red": {
+      "added": 167,
+      "deleted": 142,
+      "churn": 309
+    },
+    "BSD-3-License.txt": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "modules/view/backends/test/draw.reds": {
+      "added": 11,
+      "deleted": 5,
+      "churn": 16
+    },
+    "runtime/clipboard.reds": {
+      "added": 506,
+      "deleted": 24,
+      "churn": 530
+    },
+    "system/tests/source/units/libs/libstructlib.so": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "runtime/datatypes/char.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "runtime/datatypes/email.reds": {
+      "added": 4,
+      "deleted": 2,
+      "churn": 6
+    },
+    "runtime/case-folding.reds": {
+      "added": 5,
+      "deleted": 5,
+      "churn": 10
+    },
+    "runtime/datatypes/set-word.reds": {
+      "added": 1,
+      "deleted": 6,
+      "churn": 7
+    },
+    "runtime/utils.reds": {
+      "added": 105,
+      "deleted": 25,
+      "churn": 130
+    },
+    "system/runtime/POSIX-signals.reds": {
+      "added": 3,
+      "deleted": 3,
+      "churn": 6
+    },
+    "system/tests/all-tests.txt": {
+      "added": 2,
+      "deleted": 0,
+      "churn": 2
+    },
+    "tests/source/units/path-test.red": {
+      "added": 12,
+      "deleted": 1,
+      "churn": 13
+    },
+    "tests/source/units/same-test.red": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "system/runtime/utils.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "environment/console/engine.red": {
+      "added": 165,
+      "deleted": 90,
+      "churn": 255
+    },
+    "runtime/platform/COM.reds": {
+      "added": 51,
+      "deleted": 2,
+      "churn": 53
+    },
+    "tests/source/units/float-test.red": {
+      "added": 89,
+      "deleted": 14,
+      "churn": 103
+    },
+    "tests/run-all.r": {
+      "added": 19,
+      "deleted": 3,
+      "churn": 22
+    },
+    "tests/source/units/serialization-test.red": {
+      "added": 61,
+      "deleted": 3,
+      "churn": 64
+    },
+    "tests/build-arm-tests.r": {
+      "added": 5,
+      "deleted": 3,
+      "churn": 8
+    },
+    "environment/console/CLI/console.red": {
+      "added": 16,
+      "deleted": 2,
+      "churn": 18
+    },
+    "tests/source/units/pair-test.red": {
+      "added": 24,
+      "deleted": 0,
+      "churn": 24
+    },
+    "tests/complexpen-test.red": {
+      "added": 121,
+      "deleted": 58,
+      "churn": 179
+    },
+    "quick-test/tests/overwrite-test.reds": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "system/tests/source/units/prepare-dependencies.r": {
+      "added": 1,
+      "deleted": 1,
+      "churn": 2
+    },
+    "environment/reactivity.red": {
+      "added": 54,
+      "deleted": 42,
+      "churn": 96
+    },
+    "runtime/datatypes/string.reds": {
+      "added": 637,
+      "deleted": 319,
+      "churn": 956
+    },
+    "modules/view/backends/macOS/tab-panel.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "modules/view/backends/windows/base.reds": {
+      "added": 993,
+      "deleted": 824,
+      "churn": 1817
+    },
+    "tests/source/units/parse-test.red": {
+      "added": 242,
+      "deleted": 26,
+      "churn": 268
+    },
+    "runtime/crush.reds": {
+      "added": 2,
+      "deleted": 2,
+      "churn": 4
+    },
+    "tests/source/units/image-test.red": {
+      "added": 156,
+      "deleted": 0,
+      "churn": 156
+    },
+    "runtime/datatypes/function.reds": {
+      "added": 35,
+      "deleted": 26,
+      "churn": 61
+    },
+    "runtime/datatypes/float.reds": {
+      "added": 96,
+      "deleted": 41,
+      "churn": 137
+    },
+    "modules/view/backends/windows/button.reds": {
+      "added": 32,
+      "deleted": 21,
+      "churn": 53
+    },
+    "environment/operators.red": {
+      "added": 21,
+      "deleted": 21,
+      "churn": 42
+    },
+    "system/tests/source/units/libs/libstructlib-armsf.so": {
+      "added": null,
+      "deleted": null,
+      "churn": 0
+    },
+    "tests/scroller-test.red": {
+      "added": 8,
+      "deleted": 8,
+      "churn": 16
+    }
+  }
+}

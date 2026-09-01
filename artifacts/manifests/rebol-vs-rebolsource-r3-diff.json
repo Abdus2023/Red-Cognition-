@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-08-31T17:53:01Z",
+  "pair": [
+    "rebol/rebol @ 25033f897b2bd466068d7663563cd3ff64740b94",
+    "rebolsource/r3 @ 98cdfcd6e439390756868b390b0ff8aa01d84551"
+  ],
+  "differing_count": 37,
+  "by_top_dir": {
+    "src": 37
+  },
+  "files": [
+    {
+      "path": "src/boot/platforms.r",
+      "rebol_rebol_blob": "c4f454fbccc0b35f87a462535b96ed3c57e7d655",
+      "rebolsource_r3_blob": "cfcc3d5d778b6ff6893328dff989f787df10fae2"
+    },
+    {
+      "path": "src/core/a-lib.c",
+      "rebol_rebol_blob": "57833e3706e54dab80614eeab6e6394f7a9ccaba",
+      "rebolsource_r3_blob": "e6d111b802c7a7f68601527be9619eeff75242c9"
+    },
+    {
+      "path": "src/core/b-init.c",
+      "rebol_rebol_blob": "1978ae0a7eba778b9354f731415a1cbc4a4a8002",
+      "rebolsource_r3_blob": "aa1073f5300408099d031cf50138676d04aecf06"
+    },
+    {
+      "path": "src/core/c-do.c",
+      "rebol_rebol_blob": "481476d8918864f43b2a3d0f63270e1142c98634",
+      "rebolsource_r3_blob": "422d4a817ff36f64e91081ca40aaec7ea0a751c9"
+    },
+    {
+      "path": "src/core/c-error.c",
+      "rebol_rebol_blob": "d2acdee33ad05c687891c84273176ae7cc2c48dd",
+      "rebolsource_r3_blob": "1187bc9b7565c608d7789f5d4a4b0d619499235d"
+    },
+    {
+      "path": "src/core/c-word.c",
+      "rebol_rebol_blob": "7bbbc1a8d88ad3f32d6bc841c7503d4719cc0d04",
+      "rebolsource_r3_blob": "703ab0d883d2c8f177961f774bb6ea4b2a7257e3"
+    },
+    {
+      "path": "src/core/d-dump.c",
+      "rebol_rebol_blob": "3e879e0172dc11d6e46b16a3af43b6f9f329be2f",
+      "rebolsource_r3_blob": "e578d712e448077d521e79b4b63a741ea2305462"
+    },
+    {
+      "path": "src/core/d-print.c",
+      "rebol_rebol_blob": "06a6137fd0facc8244b7b9f896c50a8d16513b93",
+      "rebolsource_r3_blob": "bc839ae289a7b369f54015d25db456e4cd858e60"
+    },
+    {
+      "path": "src/core/f-math.c",
+      "rebol_rebol_blob": "5cbdbf2d1db7c99727576d0b08cb02d1a6b1e20e",
+      "rebolsource_r3_blob": "eda4ca486175100f340f3980fd43af4ee4dfe4ad"
+    },
+    {
+      "path": "src/core/f-stubs.c",
+      "rebol_rebol_blob": "86903768e7ed83515fa658316ccc323351df2bd0",
+      "rebolsource_r3_blob": "44d4a6bea6aed7bc0d0ce7129ce5902331f9ff4c"
+    },
+    {
+      "path": "src/core/m-pools.c",
+      "rebol_rebol_blob": "828e3c6e8afe4240829d7856fd58ed997a85c04f",
+      "rebolsource_r3_blob": "31243b0e332de2d6b69768b066cfef80089c26a7"
+    },
+    {
+      "path": "src/core/m-series.c",
+      "rebol_rebol_blob": "c7ac0fa0fbc1cb1663cda2a13ac6233573c68c1d",
+      "rebolsource_r3_blob": "4b6fd61af1363fdca036ea6f579bd3e8e76c62a3"
+    },
+    {
+      "path": "src/core/n-control.c",
+      "rebol_rebol_blob": "61e3fe0b5d4f60ce9fe186891ecfb7a71b65a667",
+      "rebolsource_r3_blob": "0324671b683ed8efbc69d4cc022aeb077c03e5a0"
+    },
+    {
+      "path": "src/core/s-crc.c",
+      "rebol_rebol_blob": "640c604b05383390b6da41641dfccb08d6e6f469",
+      "rebolsource_r3_blob": "401844be69c753aad94b535bca8e0234b92cb8e1"
+    },
+    {
+      "path": "src/core/t-gob.c",
+      "rebol_rebol_blob": "9df6cc1c4b9c77f98e5faa6fd51dfa212c2890c0",
+      "rebolsource_r3_blob": "5f6f5e1a5c8c9ee537ff608300009a3e5fa42987"
+    },
+    {
+      "path": "src/core/t-object.c",
+      "rebol_rebol_blob": "2228e88abff19781ac29d5fd70b56320e2214ba0",
+      "rebolsource_r3_blob": "456ea03f0f02c61102466f00b5411220ed25bc2a"
+    },
+    {
+      "path": "src/core/t-vector.c",
+      "rebol_rebol_blob": "f6cb0b2ce67c5f251d51057bbcd4cbb437620b9e",
+      "rebolsource_r3_blob": "1b06940b68348b98bbc41752488713eb6e7db3d8"
+    },
+    {
+      "path": "src/core/u-bmp.c",
+      "rebol_rebol_blob": "8ed8c1d58a952d13fcbd0258d6ae267cd3fe4e71",
+      "rebolsource_r3_blob": "8cdb6959e6df8eb74c1471fcdfa3920775d4e44b"
+    },
+    {
+      "path": "src/core/u-compress.c",
+      "rebol_rebol_blob": "0f3bd35b0290ad4f4ee0ff1f5281f888187972da",
+      "rebolsource_r3_blob": "45b3aef5f807ef21b4647ffb9b347bd2955cffee"
+    },
+    {
+      "path": "src/core/u-jpg.c",
+      "rebol_rebol_blob": "48dccb4ecae3af334e8d9aaa685ef93e74e8367c",
+      "rebolsource_r3_blob": "bb46d63b9c3fe1c9b825e39b2301714ae2a926f3"
+    },
+    {
+      "path": "src/core/u-md5.c",
+      "rebol_rebol_blob": "958e8707b5ddd460e17e438f455992263f4e6bc0",
+      "rebolsource_r3_blob": "730296d538ec928b6d34040a7666d76e0c20290e"
+    },
+    {
+      "path": "src/core/u-sha1.c",
+      "rebol_rebol_blob": "7eb450e2561ff65e5a9f59bf2de968cb766da955",
+      "rebolsource_r3_blob": "21bc6b4f1b68076ac452090eabb9a4a6b0f3612e"
+    },
+    {
+      "path": "src/include/reb-c.h",
+      "rebol_rebol_blob": "7aa7145d014cad78bd67b9779ad0b82695c70664",
+      "rebolsource_r3_blob": "c3556d216768deb5f1a8e0f26e82772d0115a78c"
+    },
+    {
+      "path": "src/include/reb-config.h",
+      "rebol_rebol_blob": "20de1dccba4d45911b7de5fe778e44b3ec8ea7dd",
+      "rebolsource_r3_blob": "07342c571fbbc0c25d1ab4d0439b0dfb0c6530c5"
+    },
+    {
+      "path": "src/include/reb-event.h",
+      "rebol_rebol_blob": "b9eef67b735ae4ac9a63fc3217790f6735fda495",
+      "rebolsource_r3_blob": "c89176780b2f85b43181783a3f409ea82f6cf1d1"
+    },
+    {
+      "path": "src/include/reb-value.h",
+      "rebol_rebol_blob": "7ac85c549335d79b4bbeccda18f0fdb970b6de70",
+      "rebolsource_r3_blob": "5f24fcb28f4adebe94472323b1e261b4aa2244c8"
+    },
+    {
+      "path": "src/include/sys-core.h",
+      "rebol_rebol_blob": "0dceae36b482cefad5ca659dafdd64a20bda4f68",
+      "rebolsource_r3_blob": "da9923bb62799303829cc9fe7fbfed0b0a562a04"
+    },
+    {
+      "path": "src/include/sys-globals.h",
+      "rebol_rebol_blob": "613a7ee8d0666fcce2451e711497ef9a3b683908",
+      "rebolsource_r3_blob": "649f50c0b2b5803e4732c3f9a769e53b8f8a555e"
+    },
+    {
+      "path": "src/include/sys-value.h",
+      "rebol_rebol_blob": "3ca5c1ced0a7a5e0c4ec5103bc275bd43999a3f8",
+      "rebolsource_r3_blob": "a0583bf0befd3b8edf93b3eb7f528525dcda942e"
+    },
+    {
+      "path": "src/mezz/mezz-control.r",
+      "rebol_rebol_blob": "6c04558d655907068772ec3ecf87d2d676a6e110",
+      "rebolsource_r3_blob": "c4c0b1f3ca278c038e79912723d59b2845deb4a1"
+    },
+    {
+      "path": "src/os/host-device.c",
+      "rebol_rebol_blob": "457a5f3bf4799724c784d3757a8943288b77e045",
+      "rebolsource_r3_blob": "9475d84a6b209e7cce46be969b6f9874526a5f27"
+    },
+    {
+      "path": "src/os/win32/host-event.c",
+      "rebol_rebol_blob": "b85da170ecf8e31f6715cda7375520e492f4bccd",
+      "rebolsource_r3_blob": "c4d562616080dfab1e1166576a1973769ebac72a"
+    },
+    {
+      "path": "src/os/win32/host-window.c",
+      "rebol_rebol_blob": "cd6219b863743189b9d592171aab2e5acbd8216e",
+      "rebolsource_r3_blob": "0ed57826b8f75bfe0b00036ed060acb0d58593fd"
+    },
+    {
+      "path": "src/tools/make-boot.r",
+      "rebol_rebol_blob": "58f6951459cd76c7a8a62ccea096401242b710bd",
+      "rebolsource_r3_blob": "407acb63dd8f326e6cbef8bda896fe0f9292c62a"
+    },
+    {
+      "path": "src/tools/make-make.r",
+      "rebol_rebol_blob": "d5881643f72fb891ec055c5be8b4228b0951fb68",
+      "rebolsource_r3_blob": "02ef0008988271fb10950b9697a796ae748f387e"
+    },
+    {
+      "path": "src/tools/make-reb-lib.r",
+      "rebol_rebol_blob": "b2208a851c05f19b9708873670ea6605ba5c7922",
+      "rebolsource_r3_blob": "5882054cbc402ac9c2bade7c381bdbd69b183906"
+    },
+    {
+      "path": "src/tools/systems.r",
+      "rebol_rebol_blob": "d6d1751a9d0656346d866616ae68976e5d227805",
+      "rebolsource_r3_blob": "b3d315c0f5ea0b3a1608e7602449eb0be34e4a4d"
+    }
+  ],
+  "only_in_rebolsource": [
+    ".travis.yml"
+  ]
+}

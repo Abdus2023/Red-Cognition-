@@ -1,0 +1,20 @@
+{
+  "ref": "v0.6.6",
+  "commit": "6942c7a021253150c3e3cf90428305892340db03",
+  "dirs": {
+    "system/tests/all-tests.txt": 1,
+    "system/tests/build-arm-tests.r": 1,
+    "system/tests/empty.reds": 1,
+    "system/tests/float-matrix-manual.reds": 1,
+    "system/tests/hello.reds": 1,
+    "system/tests/nan-tests-manual.reds": 1,
+    "system/tests/nan-tests-manual32.reds": 1,
+    "system/tests/readme.txt": 1,
+    "system/tests/run-all.r": 1,
+    "system/tests/run-all.sh": 1,
+    "system/tests/run-float.r": 1,
+    "system/tests/shared-lib.reds": 1,
+    "system/tests/source": 85
+  },
+  "total": 97
+}

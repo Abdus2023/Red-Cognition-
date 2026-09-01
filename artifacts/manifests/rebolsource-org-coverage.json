@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-08-31T18:20:12Z",
+  "org": "rebolsource",
+  "total_repos": 5,
+  "collected": [
+    {
+      "repo": "rebolsource/r3",
+      "reason": "historical R3 source host (lineage-relevant)"
+    },
+    {
+      "repo": "rebolsource/rebol-syntax",
+      "reason": "formal Rebol syntax specification"
+    },
+    {
+      "repo": "rebolsource/rebol-test",
+      "reason": "official R2+R3 regression suite"
+    }
+  ],
+  "not_collected": [
+    {
+      "repo": "rebolsource/r3-issues",
+      "reason": "issue tracking only, no artifacts"
+    },
+    {
+      "repo": "rebolsource/r3-hostkit",
+      "reason": "self-marked OBSOLETE: 'Superseded by open source R3: github.com/rebol/rebol'"
+    }
+  ]
+}

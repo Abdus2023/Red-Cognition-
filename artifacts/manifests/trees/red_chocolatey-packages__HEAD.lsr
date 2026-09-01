@@ -1,0 +1,7 @@
+100644 blob fbe7bcd18e6b09f6a076f9860630780aab9099c3	.gitignore
+100644 blob bd20b58809564193fb82b19c7d133763b2b1be51	README.md
+100644 blob 3243fcd5bc16a8ea5c37bf63d488a09adfefa7bb	automatic/red/build-package.ps1
+100644 blob 31ab79ea87001171b80f7a723b6380eadca60363	automatic/red/red.nuspec
+100644 blob 36e4cfc31af7f530c7b79b00c9dd154a35598505	icons/Red.png
+100644 blob 0c5f9ca43ebb6341f33e4d9dba4f66b39aa9174a	manual/red/red.nuspec
+100644 blob 70ff2243a180ff0e90ccf22e8da127fa1882590f	manual/red/tools/chocolateyinstall.ps1

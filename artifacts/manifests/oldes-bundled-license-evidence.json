@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-08-31T17:53:01Z",
+  "pinned_commit": "d5b237cea60d06b72c59bb6dbed0022b482f4c57",
+  "bundles": {
+    "brotli": {
+      "files": 104,
+      "license_files": [],
+      "header_evidence": [
+        {
+          "path": "src/core/brotli/common/constants.c",
+          "line": 1,
+          "text": "/* Copyright 2013 Google Inc. All Rights Reserved."
+        },
+        {
+          "path": "src/core/brotli/common/constants.h",
+          "line": 1,
+          "text": "/* Copyright 2016 Google Inc. All Rights Reserved."
+        },
+        {
+          "path": "src/core/brotli/common/context.h",
+          "line": 1,
+          "text": "/* Copyright 2013 Google Inc. All Rights Reserved."
+        }
+      ]
+    },
+    "deflate": {
+      "files": 41,
+      "license_files": [
+        {
+          "path": "src/core/deflate/COPYING",
+          "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a"
+        }
+      ],
+      "header_evidence": [
+        {
+          "path": "src/core/deflate/common_defs.h",
+          "line": 4,
+          "text": "* Copyright 2016 Eric Biggers"
+        },
+        {
+          "path": "src/core/deflate/lib/adler32.c",
+          "line": 4,
+          "text": "* Copyright 2016 Eric Biggers"
+        },
+        {
+          "path": "src/core/deflate/lib/bt_matchfinder.h",
+          "line": 4,
+          "text": "* Copyright 2016 Eric Biggers"
+        }
+      ]
+    },
+    "lz4": {
+      "files": 5,
+      "license_files": [
+        {
+          "path": "src/core/lz4/LICENSE",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c"
+        }
+      ],
+      "header_evidence": [
+        {
+          "path": "src/core/lz4/lz4.c",
+          "line": 3,
+          "text": "Copyright (c) Yann Collet. All rights reserved."
+        },
+        {
+          "path": "src/core/lz4/lz4.h",
+          "line": 4,
+          "text": "*  Copyright (c) Yann Collet. All rights reserved."
+        },
+        {
+          "path": "src/core/lz4/lz4hc.c",
+          "line": 3,
+          "text": "Copyright (c) Yann Collet. All rights reserved."
+        }
+      ]
+    }
+  }
+}
