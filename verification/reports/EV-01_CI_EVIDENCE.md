@@ -1,19 +1,33 @@
 # EV-01 CI evidence — current-head execution
 
-## EV-01e instrumentation (awaiting CI)
+## EV-01e `comp1a` partitions (commit `6434735`, run `33546727874`)
 
-`comp1a` (odd files 1–9) is four sequential compile units. Historical `run-all-comp1-a.red` is unchanged. CI `--phase all` runs `comp1a1`→`comp1a4` instead of the monolith.
+GitHub Check annotations for job `99986200693` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33546727874):
 
-| Partition | Files |
-| --- | --- |
-| `comp1a1` | preprocessor, conditional, path |
-| `comp1a2` | url, function, type |
-| `comp1a3` | select, evaluation |
-| `comp1a4` | lexer |
+| Partition | State | Duration | Files / command |
+| --- | --- | ---: | --- |
+| Rebol identity | **COMPLETED exit=0** | 3s | identity smoke |
+| red-hello | **COMPLETED exit=0** | **342s** | `red.r tests/hello.red` |
+| red-pre | **FAILED exit=1** | **375s** | `--group pre` |
+| **red-comp1a1** | **START only (INCOMPLETE)** | until cancel (~217s) | preprocessor, conditional, path |
+| red-comp1a2 | no START | — | **NOT_RUN** (url, function, type) |
+| red-comp1a3 | no START | — | **NOT_RUN** (select, evaluation) |
+| red-comp1a4 | no START | — | **NOT_RUN** (lexer) |
+| later groups | no START | — | **NOT_RUN** |
 
-Semantics: COMPLETE / FAILED / INCOMPLETE / NOT_RUN. No skip/PASS for unexecuted groups. Job timeout remains 20m. Duration on every `comp1aN` COMPLETE/FAILED. Slow ≠ hung.
+Job `18:58:44Z`–`19:19:06Z` **cancelled** at 20m. Image build `18:59:06Z`–`19:03:22Z` PASS (~4m16s). Test step `19:03:22Z`–`19:18:59Z` cancelled (~15m37s). Artifact `red-container-test-results-33546727874`.
 
-This section is **not** a result. Fill from the next `push` run.
+Prefix cost: identity 3s + hello 342s + pre 375s ≈ 720s. **`comp1a1` occupied the leftover ~217s**.
+
+### Discriminating conclusion
+
+- `pre` completed FAIL 375s — still independent of the stall.
+- `hello.red` 342s — slow host; leftover ~217s is not proof of a hang.
+- The first `comp1a` unit that started and **did not terminate** is **`comp1a1`** (preprocessor + conditional + path).
+- `comp1a2`–`a4` were **NOT_RUN**. Overall **INCOMPLETE**, not skip/PASS.
+- AF_ALG still not implicated.
+
+EV-01e: remaining budget is consumed inside **`tests/run-all.r --group comp1a1`**. Next cut is inside that 3-file unit only.
 
 ---
 
@@ -233,10 +247,12 @@ Windows workflow on these commits still fails at `Set up job`. That remains CI i
 
 ## EV-01 status
 
-**EV-01a** (current-head launch) **PASS**. **EV-01b** (stall after hello inside `run-all.r`) **PASS**. **EV-01c** (which `run-all` group) **PASS → `comp1`**. **EV-01d** (internal `comp1`) **PASS → `comp1a`**.
+**EV-01a** **PASS**. **EV-01b** **PASS**. **EV-01c** **PASS → `comp1`**. **EV-01d** **PASS → `comp1a`**. **EV-01e** **PASS → `comp1a1`**.
 
 Timeout is still 20 minutes. Do not raise it yet. Do not patch AF_ALG or Red expected results from `pre` exit 1.
 
+Disposition: **PARTIALLY VERIFIED — INTEGRITY PASS / EXECUTION PARTIALLY VERIFIED / FULL SUITE UNVERIFIED**.
+
 ## Next diagnostic (not a Red semantic patch)
 
-EV-01e: hierarchical cut **inside `comp1a` only** (preprocessor … lexer). Do not split hundreds of tests. Do not treat timeout as skip/PASS. Do not raise the 20-minute job timeout.
+EV-01f: hierarchical cut **inside `comp1a1` only** (preprocessor, conditional, path). Do not split to individual tests unless that 3-file unit is still too coarse after another semantic split. Do not treat timeout as skip/PASS. Do not raise the 20-minute job timeout.
