@@ -64,7 +64,50 @@ The 3400-byte artifact is larger than the historical 804-byte timeout artifact, 
 | Bundled test step | 15:19:52Z–15:35:24Z **cancelled (~15m32s)** |
 | Artifact publish | success |
 
-Hello was still inside the same GitHub step as `tests/run-all.r`, so this run cannot tell compiler-smoke hang from suite hang. That is why the next commit splits phases into separate workflow steps.
+Hello was still inside the same GitHub step as `tests/run-all.r`, so this run cannot tell compiler-smoke hang from suite hang.
+
+The runner now accepts `--phase identity|hello|red|red-system|all`. Updating `.github/workflows/red-container-tests.yml` was **rejected** from this session (`workflows` permission). The existing workflow still runs `--phase all` as one 20-minute step.
+
+Maintainer action required: apply the step split below from a GitHub identity that can write workflow files. Job `timeout-minutes: 20` stays unchanged.
+
+```yaml
+      - name: Rebol identity smoke
+        id: identity
+        timeout-minutes: 3
+        continue-on-error: true
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/artifacts/test-run"
+          tools/run-container-tests.sh --image red-cognition/rebol-bootstrap:2.7.8 \
+            --out "$GITHUB_WORKSPACE/artifacts/test-run" --heartbeat-seconds 15 --phase identity
+
+      - name: Red hello compiler smoke
+        id: hello
+        timeout-minutes: 8
+        if: always()
+        run: |
+          tools/run-container-tests.sh --image red-cognition/rebol-bootstrap:2.7.8 \
+            --out "$GITHUB_WORKSPACE/artifacts/test-run" --heartbeat-seconds 30 --phase hello
+
+      - name: Red tests/run-all.r
+        id: red
+        timeout-minutes: 10
+        if: steps.hello.outcome == 'success' || steps.hello.outcome == 'failure'
+        run: |
+          tools/run-container-tests.sh --image red-cognition/rebol-bootstrap:2.7.8 \
+            --out "$GITHUB_WORKSPACE/artifacts/test-run" --heartbeat-seconds 30 --phase red
+
+      - name: Red/System tests/run-all.r
+        timeout-minutes: 8
+        if: steps.red.outcome == 'success' || steps.red.outcome == 'failure'
+        run: |
+          tools/run-container-tests.sh --image red-cognition/rebol-bootstrap:2.7.8 \
+            --out "$GITHUB_WORKSPACE/artifacts/test-run" --heartbeat-seconds 30 --phase red-system
+```
+
+Interpretation after that YAML is applied:
+
+- `hello` **cancelled** at 8m → stall is compiler/bootstrap
+- `hello` completed and `red` **cancelled** → stall is `tests/run-all.r`
 
 ## Earlier runs on this PR (not Red-phase evidence)
 
