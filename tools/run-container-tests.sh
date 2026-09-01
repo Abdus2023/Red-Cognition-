@@ -134,55 +134,58 @@ write_execution_record() {
   local log=$6
   local cname=$7
   local rc=${8-}
-  local ended_at=""
-  local elapsed=0
-  local log_bytes=0
-  local qlog_bytes=0
-  now_epoch=$(date +%s)
-  elapsed=$((now_epoch - started_epoch))
-  if [[ "$state" != "STARTED" && "$state" != "RUNNING" ]]; then
-    ended_at=$(iso_now)
-  fi
-  if [[ -f "$log" ]]; then
-    log_bytes=$(wc -c <"$log" | tr -d ' ')
-  fi
-  if [[ -f "$OUT/${name}.quick-test.log" ]]; then
-    qlog_bytes=$(wc -c <"$OUT/${name}.quick-test.log" | tr -d ' ')
-  fi
-  local exit_json="null"
-  if [[ -n "$rc" ]]; then
-    exit_json=$rc
-  fi
-  local signal_json="null"
-  if [[ -n "$TERMINATION_SIGNAL" ]]; then
-    signal_json=$(printf '%s' "$TERMINATION_SIGNAL" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read().strip()))')
-  else
-    signal_json="null"
-  fi
-  python3 - "$OUT/${name}.execution.json" <<PY
+  RC_SUITE=$name \
+  RC_SCRIPT=$script \
+  RC_STATE=$state \
+  RC_STARTED_AT=$started_at \
+  RC_STARTED_EPOCH=$started_epoch \
+  RC_LOG=$log \
+  RC_CNAME=$cname \
+  RC_EXIT=$rc \
+  RC_SIGNAL=$TERMINATION_SIGNAL \
+  RC_OUT=$OUT \
+  RC_COMMIT=$COMMIT \
+  RC_REBOL=$REBOL \
+  RC_IMAGE=$IMAGE \
+  python3 <<'PY'
 import json
+import os
+from datetime import datetime, timezone
 from pathlib import Path
+
+out = Path(os.environ["RC_OUT"])
+name = os.environ["RC_SUITE"]
+state = os.environ["RC_STATE"]
+started_epoch = int(os.environ["RC_STARTED_EPOCH"])
+elapsed = int(__import__("time").time()) - started_epoch
+log = Path(os.environ["RC_LOG"])
+qlog = out / f"{name}.quick-test.log"
+exit_raw = os.environ.get("RC_EXIT", "")
+signal_raw = os.environ.get("RC_SIGNAL", "")
+ended_at = None
+if state not in ("STARTED", "RUNNING"):
+    ended_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 obj = {
-  "suite": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$name"),
-  "script": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$script"),
-  "state": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$state"),
-  "commit": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$COMMIT"),
-  "rebol": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$REBOL"),
-  "image": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$IMAGE"),
-  "architecture": "linux/386",
-  "command": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$REBOL -qws $script --batch"),
-  "container_name": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$cname"),
-  "started_at": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$started_at"),
-  "ended_at": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]) if sys.argv[1] else "null")' "$ended_at"),
-  "elapsed_seconds": $elapsed,
-  "exit_code": $exit_json,
-  "signal": $signal_json,
-  "log": $(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$log"),
-  "quick_test_log": str(Path("$OUT/${name}.quick-test.log")) if Path("$OUT/${name}.quick-test.log").exists() else None,
-  "log_bytes": $log_bytes,
-  "quick_test_log_bytes": $qlog_bytes,
+    "suite": name,
+    "script": os.environ["RC_SCRIPT"],
+    "state": state,
+    "commit": os.environ["RC_COMMIT"],
+    "rebol": os.environ["RC_REBOL"],
+    "image": os.environ["RC_IMAGE"],
+    "architecture": "linux/386",
+    "command": f"{os.environ['RC_REBOL']} -qws {os.environ['RC_SCRIPT']} --batch",
+    "container_name": os.environ["RC_CNAME"],
+    "started_at": os.environ["RC_STARTED_AT"],
+    "ended_at": ended_at,
+    "elapsed_seconds": elapsed,
+    "exit_code": int(exit_raw) if exit_raw != "" else None,
+    "signal": signal_raw or None,
+    "log": str(log),
+    "quick_test_log": str(qlog) if qlog.exists() else None,
+    "log_bytes": log.stat().st_size if log.exists() else 0,
+    "quick_test_log_bytes": qlog.stat().st_size if qlog.exists() else 0,
 }
-Path("$OUT/${name}.execution.json").write_text(json.dumps(obj, indent=2) + "\n")
+(out / f"{name}.execution.json").write_text(json.dumps(obj, indent=2) + "\n")
 PY
 }
 
