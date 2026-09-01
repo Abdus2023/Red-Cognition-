@@ -8,12 +8,31 @@ REBOL [
 
 ;; should we run non-interactively?
 each-mode: batch-mode: ci-each: debug-mode: no
+group-filter: none  ;; none = run every group (historical behavior)
 
 if args: any [system/script/args system/options/args][
 	batch-mode: find args "--batch"
 	each-mode:  find args "--each"
 	ci-each:  find args "--ci-each"
 	debug-mode: find args "--debug"
+	args-str: form args
+	if found: find args-str "--group" [
+		rest: trim copy skip found 7
+		either sp: find rest " " [
+			group-filter: trim copy/part rest sp
+		][
+			group-filter: rest
+		]
+		if any [none? group-filter  empty? group-filter][group-filter: none]
+	]
+]
+
+run-group?: func [name [word!]] [
+	any [
+		none? group-filter
+		group-filter = "all"
+		group-filter = form name
+	]
 ]
 
 ;; supress script messages
@@ -30,6 +49,7 @@ print ["Quick-Test v" qt/version]
 print ["REBOL " system/version]
 start-time: now/precise
 print ["This test started at" start-time]
+print ["run-all group:" any [group-filter "all"]]
 
 if debug-mode [qt/compile-flag: " -d "]
 
@@ -39,27 +59,76 @@ qt/script-header: "Red []"
 
 ***start-run-quiet*** "Red Test Suite"
 
-do %source/units/run-pre-extra-tests.r
+if run-group? 'pre [
+	do %source/units/run-pre-extra-tests.r
+]
 
 ===start-group=== "Main Red Tests"
     either any [each-mode ci-each][
-    	do %source/units/auto-tests/run-each-comp.r
-        do %source/units/auto-tests/run-each-interp.r
+    	if any [run-group? 'comp1 run-group? 'comp2][
+    		do %source/units/auto-tests/run-each-comp.r
+    	]
+        if run-group? 'interp [
+        	do %source/units/auto-tests/run-each-interp.r
+        ]
     ][
-        --run-test-file-quiet %source/units/auto-tests/run-all-comp1.red
-        --run-test-file-quiet %source/units/auto-tests/run-all-comp2.red
-        --run-test-file-quiet %source/units/auto-tests/run-all-interp.red
+        if run-group? 'comp1 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1.red
+        ]
+        if run-group? 'comp1a [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a.red
+        ]
+        if run-group? 'comp1a1 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a1.red
+        ]
+        if run-group? 'comp1a1a [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a1a.red
+        ]
+        if run-group? 'comp1a1b [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a1b.red
+        ]
+        if run-group? 'comp1a1c [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a1c.red
+        ]
+        if run-group? 'comp1a2 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a2.red
+        ]
+        if run-group? 'comp1a3 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a3.red
+        ]
+        if run-group? 'comp1a4 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a4.red
+        ]
+        if run-group? 'comp1b [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-b.red
+        ]
+        if run-group? 'comp1c [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-c.red
+        ]
+        if run-group? 'comp1d [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-d.red
+        ]
+        if run-group? 'comp2 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp2.red
+        ]
+        if run-group? 'interp [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-interp.red
+        ]
     ]
 ===end-group===
-do %source/units/run-post-extra-tests.r
+if run-group? 'post [
+	do %source/units/run-post-extra-tests.r
+]
 
-===start-group=== "Red Compiler Regression Tests"
-	--run-script-quiet %source/compiler/regression-test-redc-1.r
-	--run-script-quiet %source/compiler/regression-test-redc-2.r
-	--run-script-quiet %source/compiler/regression-test-redc-3.r
-	--run-script-quiet %source/compiler/regression-test-redc-4.r
-	--run-script-quiet %source/compiler/regression-test-redc-5.r
-===end-group===
+if run-group? 'regression [
+	===start-group=== "Red Compiler Regression Tests"
+		--run-script-quiet %source/compiler/regression-test-redc-1.r
+		--run-script-quiet %source/compiler/regression-test-redc-2.r
+		--run-script-quiet %source/compiler/regression-test-redc-3.r
+		--run-script-quiet %source/compiler/regression-test-redc-4.r
+		--run-script-quiet %source/compiler/regression-test-redc-5.r
+	===end-group===
+]
 
 ;===start-group=== "View Engine Tests"
 ;	--run-test-file-quiet %source/view/base-self-test.red
