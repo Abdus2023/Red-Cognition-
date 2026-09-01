@@ -80,7 +80,7 @@ run_suite() {
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
-      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
+      --tmpfs "/red/quick-test/runnable:exec,mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       -e "DISPLAY=$DISPLAY_VALUE" \
@@ -92,21 +92,21 @@ run_suite() {
           sleep 2
         fi
         exec "$1" -qws "$2" --batch
-      ' sh "$REBOL" "$script" >"$log" 2>&1
+      ' sh "$REBOL" "$script" 2>&1 | tee "$log"
+    local rc=${PIPESTATUS[0]}
   else
     docker run --rm --platform linux/386 \
       --mount "type=bind,src=$ROOT,dst=/red" \
       --mount "type=bind,src=$OUT,dst=/artifacts" \
-      --mount "type=tmpfs,dst=/red/quick-test/runnable,tmpfs-mode=1777" \
+      --tmpfs "/red/quick-test/runnable:exec,mode=1777" \
       --workdir /red \
       -e "HOME=/root" \
       --entrypoint "$REBOL" "$IMAGE" \
-      -qws "$script" --batch >"$log" 2>&1
+      -qws "$script" --batch 2>&1 | tee "$log"
+    local rc=${PIPESTATUS[0]}
   fi
-  local rc=$?
   set -e
   printf '%s\n' "$rc" >"$rcfile"
-  cat "$log"
   echo "==> $name exit code: $rc"
 }
 
