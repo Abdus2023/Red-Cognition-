@@ -103,8 +103,8 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "validate generated monorepo audit manifests and checksum records; no Red/Rebol build or test execution",
-    "repository_commit": "e3afc0997abc44b3ef33448ac3c0047124f7ef31",
-    "timestamp_utc": "2026-09-01T11:45:48.461019+00:00",
+    "repository_commit": "cd00ea4c3b500913d08019924a2ff9a5b40766b9",
+    "timestamp_utc": "2026-09-01T12:07:11.155637+00:00",
     "tool": "tools/source-audit/validate_monorepo_audit.py"
   },
   "result": "PASS",

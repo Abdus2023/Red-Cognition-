@@ -19656,9 +19656,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "derive proposed logical monorepo path map from classified inventory; no filesystem moves performed",
-    "repository_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
+    "repository_commit": "cd00ea4c3b500913d08019924a2ff9a5b40766b9",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-09-01T11:44:32.675092+00:00",
+    "timestamp_utc": "2026-09-01T12:07:10.908931+00:00",
     "tool": "tools/source-audit/generate_logical_path_map.py"
   },
   "policy": [

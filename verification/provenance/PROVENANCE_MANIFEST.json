@@ -3,9 +3,9 @@
     "branch": "arena/01a058c5-red-cognition",
     "date": "2026-08-31",
     "method": "summarize per-file provenance records from inventory",
-    "repository_commit": "acf09f70b72fee30d6cd4064dbf3c81ad79b35b2",
+    "repository_commit": "cd00ea4c3b500913d08019924a2ff9a5b40766b9",
     "source_inventory": "verification/inventory/REBOL_RED_INVENTORY.json",
-    "timestamp_utc": "2026-09-01T11:44:31.205362+00:00",
+    "timestamp_utc": "2026-09-01T12:07:09.474586+00:00",
     "tool": "tools/source-audit/generate_supplemental_manifests.py"
   },
   "groups": {
