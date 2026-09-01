@@ -78,6 +78,18 @@ if run-group? 'pre [
         if run-group? 'comp1a [
         	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a.red
         ]
+        if run-group? 'comp1a1 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a1.red
+        ]
+        if run-group? 'comp1a2 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a2.red
+        ]
+        if run-group? 'comp1a3 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a3.red
+        ]
+        if run-group? 'comp1a4 [
+        	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-a4.red
+        ]
         if run-group? 'comp1b [
         	--run-test-file-quiet %source/units/auto-tests/run-all-comp1-b.red
         ]

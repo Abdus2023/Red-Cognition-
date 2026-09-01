@@ -127,6 +127,11 @@ write-comp1-part "a" 1 9
 write-comp1-part "b" 10 18
 write-comp1-part "c" 19 27
 write-comp1-part "d" 28 34
+;; EV-01e: same files as run-all-comp1-a.red, four compile units.
+write-comp1-part "a1" 1 3
+write-comp1-part "a2" 4 6
+write-comp1-part "a3" 7 8
+write-comp1-part "a4" 9 9
 
 file-out: %auto-tests/run-all-interp.red
 write-test-header file-out

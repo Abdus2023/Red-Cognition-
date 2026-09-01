@@ -22,8 +22,8 @@ Options:
   --heartbeat-seconds N     Heartbeat interval (default: 60)
   --skip-identity           Skip the Rebol identity smoke check
   --phase PHASE             identity | hello | red | red-system | all
-                            | pre | comp1 | comp1a | comp1b | comp1c | comp1d
-                            | comp2 | interp | post | regression
+                            | pre | comp1 | comp1a | comp1a1 | comp1a2 | comp1a3 | comp1a4
+                            | comp1b | comp1c | comp1d | comp2 | interp | post | regression
   --hello-timeout N         Seconds to allow red.r tests/hello.red (default: 480; 0 disables)
   --help                    Show this help
 EOF
@@ -52,7 +52,7 @@ while (($#)); do
     --phase)
       PHASE=${2:?missing value for --phase}
       case "$PHASE" in
-        identity|hello|red|red-system|all|pre|comp1|comp1a|comp1b|comp1c|comp1d|comp2|interp|post|regression) ;;
+        identity|hello|red|red-system|all|pre|comp1|comp1a|comp1a1|comp1a2|comp1a3|comp1a4|comp1b|comp1c|comp1d|comp2|interp|post|regression) ;;
         *) echo "Unknown --phase: $PHASE" >&2; usage >&2; exit 2 ;;
       esac
       shift 2
@@ -537,7 +537,7 @@ EOF
     gha_error "EV-01 $name" "TIMED_OUT after ${elapsed}s limit=${suite_timeout}s command=$cmd"
     append_phase_status "TIMED_OUT $name elapsed=${elapsed}s"
   elif [[ $rc -eq 0 ]]; then
-    if [[ $name == rebol-identity || $name == red-hello || $name == red-comp1a || $name == red-comp1b || $name == red-comp1c || $name == red-comp1d ]]; then
+    if [[ $name == rebol-identity || $name == red-hello || $name == red-comp1a1 || $name == red-comp1a2 || $name == red-comp1a3 || $name == red-comp1a4 ]]; then
       gha_notice "EV-01 $name" "COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
     else
       echo "==> $name COMPLETED exit=0 elapsed=${elapsed}s command=$cmd"
@@ -559,7 +559,8 @@ EOF
   return 0
 }
 
-COMP1_PARTS=(comp1a comp1b comp1c comp1d)
+COMP1A_PARTS=(comp1a1 comp1a2 comp1a3 comp1a4)
+COMP1_PARTS=("${COMP1A_PARTS[@]}" comp1b comp1c comp1d)
 RED_GROUPS=(pre "${COMP1_PARTS[@]}" comp2 interp post regression)
 
 mark_remaining_not_run() {
@@ -638,7 +639,7 @@ run_red_group() {
   local rc
   rc=$(cat "$OUT/red-$g.exit" 2>/dev/null || echo missing)
   if [[ "$rc" == "124" ]]; then
-    gha_error "EV-01d" "red-$g TIMED_OUT; later groups NOT_RUN"
+    gha_error "EV-01e" "red-$g TIMED_OUT; later groups NOT_RUN"
     mark_remaining_not_run "$g"
     write_incomplete_summary "red-$g timed out; overall INCOMPLETE"
     exit 124
@@ -656,6 +657,13 @@ fi
 
 if [[ $PHASE == comp1 ]]; then
   for g in "${COMP1_PARTS[@]}"; do
+    run_red_group "$g"
+  done
+  exit 0
+fi
+
+if [[ $PHASE == comp1a ]]; then
+  for g in "${COMP1A_PARTS[@]}"; do
     run_red_group "$g"
   done
   exit 0
@@ -720,12 +728,13 @@ identity["identity_ok"] = bool(re.search(r"rebol-identity-ok", (out / "rebol-ide
 
 suites = []
 group_names = [
-    "red-pre", "red-comp1a", "red-comp1b", "red-comp1c", "red-comp1d",
+    "red-pre", "red-comp1a1", "red-comp1a2", "red-comp1a3", "red-comp1a4",
+    "red-comp1b", "red-comp1c", "red-comp1d",
     "red-comp2", "red-interp", "red-post", "red-regression", "red-system",
 ]
 legacy_red = out / "red.stdout.log"
 names = list(group_names)
-if legacy_red.exists() and not (out / "red-pre.stdout.log").exists() and not (out / "red-comp1a.stdout.log").exists():
+if legacy_red.exists() and not (out / "red-pre.stdout.log").exists() and not (out / "red-comp1a1.stdout.log").exists():
     names = ["red", "red-system"]
 for name in names:
     parsed = parse_file(out / f"{name}.stdout.log")
@@ -786,8 +795,8 @@ lines = [
     f"- Finished: `{finished}`",
     f"- Overall state: `{overall_state}`",
     "",
-    "| Suite | State | Exit | Assertions | Passed | Failed | Failure marker |",
-    "|---|---|---:|---:|---:|---:|---|",
+    "| Suite | State | Exit | Elapsed s | Assertions | Passed | Failed | Failure marker |",
+    "|---|---|---:|---:|---:|---:|---:|---|",
 ]
 if (out / "rebol-identity.exit").exists():
     lines.append(

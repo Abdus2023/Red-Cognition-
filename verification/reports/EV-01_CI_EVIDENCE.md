@@ -1,5 +1,22 @@
 # EV-01 CI evidence — current-head execution
 
+## EV-01e instrumentation (awaiting CI)
+
+`comp1a` (odd files 1–9) is four sequential compile units. Historical `run-all-comp1-a.red` is unchanged. CI `--phase all` runs `comp1a1`→`comp1a4` instead of the monolith.
+
+| Partition | Files |
+| --- | --- |
+| `comp1a1` | preprocessor, conditional, path |
+| `comp1a2` | url, function, type |
+| `comp1a3` | select, evaluation |
+| `comp1a4` | lexer |
+
+Semantics: COMPLETE / FAILED / INCOMPLETE / NOT_RUN. No skip/PASS for unexecuted groups. Job timeout remains 20m. Duration on every `comp1aN` COMPLETE/FAILED. Slow ≠ hung.
+
+This section is **not** a result. Fill from the next `push` run.
+
+---
+
 ## EV-01d `comp1` partitions (commit `4d49b39`, run `33544163622`)
 
 GitHub Check annotations for job `99977452017` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33544163622):
@@ -216,10 +233,10 @@ Windows workflow on these commits still fails at `Set up job`. That remains CI i
 
 ## EV-01 status
 
-**EV-01a** (current-head launch) **PASS**. **EV-01b** (stall after hello inside `run-all.r`) **PASS**. **EV-01c** (which `run-all` group) **PASS → `comp1`**.
+**EV-01a** (current-head launch) **PASS**. **EV-01b** (stall after hello inside `run-all.r`) **PASS**. **EV-01c** (which `run-all` group) **PASS → `comp1`**. **EV-01d** (internal `comp1`) **PASS → `comp1a`**.
 
 Timeout is still 20 minutes. Do not raise it yet. Do not patch AF_ALG or Red expected results from `pre` exit 1.
 
 ## Next diagnostic (not a Red semantic patch)
 
-EV-01d: four `comp1` compile-unit partitions. Do not split hundreds of tests. Do not treat timeout as skip/PASS. Do not raise the 20-minute job timeout.
+EV-01e: hierarchical cut **inside `comp1a` only** (preprocessor … lexer). Do not split hundreds of tests. Do not treat timeout as skip/PASS. Do not raise the 20-minute job timeout.
