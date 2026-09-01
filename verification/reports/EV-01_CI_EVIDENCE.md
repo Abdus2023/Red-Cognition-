@@ -68,7 +68,12 @@ Hello was still inside the same GitHub step as `tests/run-all.r`, so this run ca
 
 The runner now accepts `--phase identity|hello|red|red-system|all`. Updating `.github/workflows/red-container-tests.yml` was **rejected** from this session (`workflows` permission). The existing workflow still runs `--phase all` as one 20-minute step.
 
-Maintainer action required: apply the step split below from a GitHub identity that can write workflow files. Job `timeout-minutes: 20` stays unchanged.
+Runner-side localization (no workflow YAML): `run-container-tests.sh` now emits GitHub `::notice`/`::error` annotations per phase and bounds `hello` at 480s. If hello times out, the script exits 124 and **does not start** `tests/run-all.r`. Those annotations are readable via the Checks API without Azure blob logs.
+
+- Job **fails ~12m** with hello TIMED_OUT annotation → stall is compiler/bootstrap
+- Job **cancels at 20m** with hello COMPLETED annotation → stall is `tests/run-all.r`
+
+Maintainer action still useful: apply the step split below from a GitHub identity that can write workflow files. Job `timeout-minutes: 20` stays unchanged.
 
 ```yaml
       - name: Rebol identity smoke
