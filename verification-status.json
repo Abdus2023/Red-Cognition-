@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-08-31T19:23:00Z",
+  "repository": "Abdus2023/Red-Cognition-",
+  "branch": "arena/01a058d7-red-cognition",
+  "repository_head": "35a7e3208a359ee1c4f5241eb7e4074fe68922de",
+  "workspace": "/home/ubuntu/red-cognition-verification",
+  "statuses": {
+    "acquisition_integrity": "VERIFIED",
+    "rebol_archive": "ACQUIRED",
+    "rebol_identity": "IDENTITY_CONFIRMED",
+    "rebol_safe_execution": "EXECUTED",
+    "rebol_general_correctness": "UNRESOLVED",
+    "red_v066_minimal_bootstrap": "REPRODUCED",
+    "generated_red_binary": "EXECUTED",
+    "generated_red_smoke_pass": "PASS_FOR_OUTPUT_EXPLICIT_TERMINATION_REQUIRED",
+    "broader_console_compiler_smoke": "EXECUTED_OUTPUT_PASS_IMPLICIT_EXIT_255",
+    "full_red_test_corpus": "ATTEMPTED_FAILED_INCOMPLETE",
+    "independent_clean_reproduction": "NOT_ATTEMPTED",
+    "official_red_binary_identity": "UNRESOLVED"
+  },
+  "artifacts": {
+    "rebol_archive": {
+      "url": "http://www.rebol.com/downloads/v278/rebol-core-278-4-3.tar.gz",
+      "sha256": "b0080df93905f56209875d811c6632c825c385e05d390b220c5d9555a8d38eee",
+      "md5": "0918513c5e30209c36a88bcf446ddd77"
+    },
+    "rebol_executable": {
+      "sha256": "1c902e0f75e994d739975e12963323832ce00f52208b3287cbfe5e7029d856d6",
+      "architecture": "ELF32 i386 little-endian"
+    },
+    "generated_red_hello": {
+      "sha256": "9e1ebb811908ddafbdcd9a944f656fdc7f9eb865193b7796287a0ec5be1884ec",
+      "architecture": "ELF32 i386 little-endian",
+      "execution_exit_code": 255,
+      "termination_trace": "exit_group(-1)",
+      "interpretation": "implicit termination result of original source; not a loader failure"
+    },
+    "generated_red_explicit_zero": {
+      "sha256": "2912ec3187b3e49a491db20182d4a42946ba8c5f515a580709c0be33e67aa79b",
+      "execution_exit_code": 0,
+      "source": "tests/hello-quit0.red",
+      "purpose": "controlled comparison with explicit quit-return 0"
+    },
+    "generated_red_print_test": {
+      "sha256": "acaa86f3ecab08c9f333c2f1c2460b545be26a9c38ede50af6bdddc4736ddce4",
+      "source": "tests/source/compiler/print-test.red",
+      "output": "1",
+      "execution_exit_code": 255,
+      "interpretation": "implicit termination behavior consistent with hello"
+    },
+    "batch_harness": {
+      "command": "absolute-rebol --do \\\"do/args %tests/run-all.r --batch\\\"",
+      "lexer": "34/34",
+      "lexer_auto": "18/18",
+      "unicode": "67/67",
+      "preprocessor": "43/43",
+      "run_all_comp1": "8993/8993",
+      "run_all_comp2": "6245/6297",
+      "run_all_interp": "TIMEOUT_300S_AFTER_5099_BEFORE_5114_BENCHMARK",
+      "status": "ATTEMPTED_FAILED_INCOMPLETE",
+      "comp2_failure_diagnosis": "51 crypto assertions: AF_ALG EAFNOSUPPORT; one path-thru assertion: red-lang.com DNS failure",
+      "interp_timeout_diagnosis": "Reached #5099 output; next test #5114 performs approximately 100 million inner-loop iterations",
+      "crypto_source_diagnosis": "runtime/crypto.reds lines 640-679 ignore AF_ALG socket/bind/accept/write/read errors; host returns EAFNOSUPPORT and invalid digest buffer is returned",
+      "crypto_remediation": "NOT_APPLIED; requires supported AF_ALG host or validated alternate crypto backend"
+    },
+    "generated_libRedRT": {
+      "sha256": "c1cf637c5164cd9be989d5ab240e1d320a0dcc49214fb1948ba677c5c86d159a"
+    }
+  },
+  "notes": [
+    "The repository was already dirty before this verification began; pre-existing changes were preserved.",
+    "The minimal v0.6.6 hello bootstrap completed with exit code 0.",
+    "The generated hello binary printed expected multilingual output and implicitly exited with code 255; strace recorded exit_group(-1).",
+    "A controlled explicit quit-return 0 variant printed correctly and exited with code 0.",
+    "A second non-GUI print-test source compiled with exit code 0, printed 1, and implicitly exited with code 255.",
+    "No claim is made for full product validation or a clean full test-corpus pass; the bounded batch harness was incomplete and non-green."
+  ]
+}
