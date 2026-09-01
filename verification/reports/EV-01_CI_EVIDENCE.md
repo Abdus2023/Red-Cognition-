@@ -1,5 +1,21 @@
 # EV-01 CI evidence — current-head execution
 
+## EV-01f instrumentation (awaiting CI)
+
+`comp1a1` is three sequential one-file compile units. Historical `run-all-comp1-a1.red` is unchanged. CI `--phase all` runs `comp1a1a`→`comp1a1c` instead of the monolith.
+
+| Partition | File |
+| --- | --- |
+| `comp1a1a` | preprocessor-test.red |
+| `comp1a1b` | conditional-test.red |
+| `comp1a1c` | path-test.red |
+
+Same job, 20m timeout. COMPLETE / FAILED / INCOMPLETE / NOT_RUN. Leftover ~217s after hello+pre is not proof of a hang.
+
+This section is **not** a result. Fill from the next `push` run.
+
+---
+
 ## EV-01e `comp1a` partitions (commit `6434735`, run `33546727874`)
 
 GitHub Check annotations for job `99986200693` (https://github.com/Abdus2023/Red-Cognition-/actions/runs/33546727874):
@@ -15,7 +31,7 @@ GitHub Check annotations for job `99986200693` (https://github.com/Abdus2023/Red
 | red-comp1a4 | no START | — | **NOT_RUN** (lexer) |
 | later groups | no START | — | **NOT_RUN** |
 
-Job `18:58:44Z`–`19:19:06Z` **cancelled** at 20m. Image build `18:59:06Z`–`19:03:22Z` PASS (~4m16s). Test step `19:03:22Z`–`19:18:59Z` cancelled (~15m37s). Artifact `red-container-test-results-33546727874`.
+Job `18:58:44Z`–`19:19:06Z` **cancelled** at 20m. Image build `18:59:06Z`–`19:03:22Z` PASS (~4m16s). Test step `19:03:22Z`–`19:18:59Z` cancelled (~15m37s). Artifact `red-container-test-results-33546727874` (13396 bytes).
 
 Prefix cost: identity 3s + hello 342s + pre 375s ≈ 720s. **`comp1a1` occupied the leftover ~217s**.
 
